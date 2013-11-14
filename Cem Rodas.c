@@ -23,14 +23,14 @@ typedef aluno ALUNOS[NA];
 
 typedef struct 
 {
-		int numero;
-		char nome[50];
-		char morada[200];
-		int telefone;
-		char data_nascimento[11];
-		int estado;
+	int numero;
+	char nome[50];
+	char morada[200];
+	int telefone;
+	char data_nascimento[11];
+	int estado;
 }condutor;
-
+/*
 void ler_alunos(ALUNOS *x, int *na)
 {
 	FILE *f;
@@ -53,7 +53,7 @@ void ler_alunos(ALUNOS *x, int *na)
 	fclose(f);
 	printf("\n\n\nFicheiro Lido <Enter para Continuar>");getch();
 }
-
+*/
 void mostrar_cli(aluno *x)
 {
 	int n;
@@ -140,53 +140,49 @@ void gravar_cli(aluno *x)
 }
 
 int menu_clientes(ALUNOS *alunos, int *na)
-	{
-              char op;
-	          int n;
-              aluno alu[NR];
-	          for(n=0;n<*na;n++)
-		      alu[n].estado=0;
-	          int tipo2;
-         do {
- 	      system ("cls");
-	      printf("\n1- Ler Ficheiro\n2- Inserir\n3- Alterar\n4- Eliminar\n5- Gravar\n0- Menu Principal\n\n");
-             do{
-	         printf("Qual a sua opcao? "); 
-             op=getch();
-               } while (op < '0' || op > '5');
-	         switch(op)
-		   {          
-			case '2': inserir_cli(alu); break;
-			case '4': eliminar_cli(alunos, na); break;
-			case '5': gravar_cli(alu); break;
-	        case '0': menu();
-		   }
-            }while(op!='0');
-    }
+{
+	char op;
+	int n;
+	/* aluno alu[NR];
+	* for(n=0;n<*na;n++)
+	*	alu[n].estado=0;
+	* acho que este pedaço de código não é necessário, está ainda aqui se for necessário
+	*/
+	system ("cls");
+	printf("\n1- Ler Ficheiro\n2- Inserir\n3- Alterar\n4- Eliminar\n5- Gravar\n0- Menu Principal\n\n");
+	do{
+		printf("Qual a sua opção? "); 
+		op=getch();
+	} while (op < '0' || op > '5');
+	switch(op)
+	{          
+		case '2': inserir_cli(alu); break;
+		case '4': eliminar_cli(alunos, na); break;
+		case '5': gravar_cli(alu); break;
+		case '0': menu();
+	}
+}
     
 int menu_condutores()
 {
-          char op;
-          int n;
-          condutor con[NR];
-          for(n=0;n<NR;n++)
-	      con[n].estado=0;
-          int tipo2;
-     do {
-      system ("cls");
-      printf("\n1- Inserir\n2- Alterar\n3- Eliminar\n4- Gravar\n0- Menu Principal\n\n");
-         do{
-         printf("Qual a sua opcao? "); 
-         op=getch();
-           } while (op < '0' || op > '4');
-         switch(op)
-	   {
+	char op;
+	int n;
+	condutor con[NR];
+	for(n=0;n<NR;n++)
+		con[n].estado=0;
+	system ("cls");
+	printf("\n1- Inserir\n2- Alterar\n3- Eliminar\n4- Gravar\n0- Menu Principal\n\n");
+	do{
+		printf("Qual a sua opção? "); 
+		op=getch();
+	} while (op < '0' || op > '4');
+	switch(op)
+	{
 		case '1': inserir_con(con); break;
 		//case '3': eliminar_con(con); break;
 		//case '4': gravar_con(con); break;
-        case '0': menu();
-	   }
-        }while(op!='0');
+		case '0': menu();
+	}
 }
 
 //void gravar_con(condutor *x)
@@ -211,6 +207,7 @@ int menu_condutores()
 //	printf("\n\n\nFicheiro Gravado <Enter para Continuar>"); 
 //    getch();
 //}
+// há problema com este código?
 
 
 //int eliminar_con(condutor *x)
@@ -265,83 +262,83 @@ int inserir_con(condutor *x)
 }
 	
 int listagens()
-	{
-    char op;
+{
+	char op;
 	int n;
 	aluno alu[NR];
 	for(n=0;n<NR;n++)
-	alu[n].estado=0;
-	 int tipo2;
-	 system ("cls");
-	 printf("\n1- Clientes\n2- Camioes\n3- Condutores\n4- Cargas\n0- Menu Principal\n\n");
-	 do{
-     	printf("Qual a sua opcao? "); op=getch();
-	 	} while (op < '0' || op > '4');
-		switch(op)
-		{
-			case '1': mostrar_cli(alu); break;
-	        case '0': exit(0);
-		}
-	while (op!='S' && op!='s');
-  }  
+		alu[n].estado=0; //acho que esta parte ainda não está completa
+	int tipo2;
+	system ("cls");
+	printf("\n1- Clientes\n2- Camiões\n3- Condutores\n4- Cargas\n0- Menu Principal\n\n");
+	do{
+		printf("Qual a sua opção? "); op=getch();
+	} while (op < '0' || op > '4');
+	switch(op)
+	{
+		case '1': mostrar_cli(alu); break;
+		case '0': exit(0);
+	}
+}  
   
 int orcamento()
 {
-    int klm,toneladas;
-    float res1;
-    char op;
-    system("cls");
-        printf("\n\t|============================================|");
-    	printf("\n\t|            O R C A M E N T O S             |");
-    	printf("\n\t|             C E M   R O D A S              |");
-    	printf("\n\t|                                            |");
-    	printf("\n\t|============================================|");
-         do { 
-        printf("\n\t Introduza o numero de kilometros da viagem: ");
-    	scanf("%d",&klm);
-    	printf("\n\t Introduza o numero de toneladas a transportar: ");
-    	scanf("%d",&toneladas);
-    	res1=1*klm+50*toneladas;
-    	printf("\n\t O Orcamento é de:%f euros",res1);
-        printf("\n\n\n\t Orcamento Concluido <Enter para Continuar>");
-        getch();return(0);
-        }while(op!='0');
+	int klm,toneladas;
+	float res1;
+	char op;
+	system("cls");
+	printf("\n\t|============================================|");
+	printf("\n\t|                                            |");
+	printf("\n\t|            O R C A M E N T O S             |");
+	printf("\n\t|             C E M   R O D A S              |");
+	printf("\n\t|                                            |");
+	printf("\n\t|============================================|");
+	do { 
+		printf("\n\t Introduza o numero de kilómetros da viagem: ");
+		scanf("%d",&klm);
+		printf("\n\t Introduza o numero de toneladas a transportar: ");
+		scanf("%d",&toneladas);
+		res1=1*klm+50*toneladas;
+		printf("\n\t O Orçamento é de:%f euros",res1);
+		printf("\n\n\n\t Orcamento Concluido");
+		system("pause");
+		return(0); //acho que esta instrução faz com que não verifique o ciclo
+	}while(op!='0');
 }   	
-    	
-int main(void)          
-	{
- ALUNOS alunos;
- int na;
-     ler_alunos(&alunos, &na);                   
-	 menu();
-	} 
-	
 
 int menu(ALUNOS *alunos, int *na)
-	{
-        char op;
-        system("chcp 1252");      
-		system ("cls"); 
-        printf("\n\t|============================================|");
-    	printf("\n\t|                                            |");
-    	printf("\n\t|             C E M   R O D A S              |");
-    	printf("\n\t|                                            |");
-    	printf("\n\t|============================================|");
-		printf("\n\t1 - Clientes\n\t2 - Camioes\n");
-		printf("\t3 - Condutores\n\t4 - Cargas\n");
-		printf("\t5 - Listagens\n\t6 - Pesquisa\n");
-        printf("\t7 - Estatisticas\n\t8 - Orçamento\n");
-		printf("\t9 - Iniciar Viagem\n\t0 - Sair\n\n");
-		do {
-            printf("\n\tQual a sua opcao? ");
-            op=getch();
-        } while (op < '0' || op > '9');
-		switch(op)
-    	{         
-    	 case '1': menu_clientes(alunos, na); break;
-    	 case '3': menu_condutores(); break;
-    	 case '5': listagens(); break; 
-         case '8': orcamento(); break;   
-     	 case '0': exit(0);
-       }
+{
+	char op;
+	system("chcp 1252");      
+	system ("cls"); 
+	printf("\n\t|============================================|");
+	printf("\n\t|                                            |");
+	printf("\n\t|             C E M   R O D A S              |");
+	printf("\n\t|                                            |");
+	printf("\n\t|============================================|");
+	printf("\n\t1 - Clientes\n\t2 - Camiões\n");
+	printf("\t3 - Condutores\n\t4 - Cargas\n");
+	printf("\t5 - Listagens\n\t6 - Pesquisa\n");
+	printf("\t7 - Estatísticas\n\t8 - Orçamento\n");
+	printf("\t9 - Iniciar Viagem\n\t0 - Sair\n\n");
+	do {
+		printf("\n\tQual a sua opção? ");
+		op=getch();
+	} while (op < '0' || op > '9');
+	switch(op)
+	{         
+	 case '1': menu_clientes(alunos, na); break;
+	 case '3': menu_condutores(); break;
+	 case '5': listagens(); break; 
+	 case '8': orcamento(); break;   
+	 case '0': exit(0);
+   }
 }
+
+int main(void)          
+{
+	ALUNOS alunos;
+	int na;
+	ler_alunos(&alunos, &na);                   
+	menu();
+} 
