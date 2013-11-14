@@ -1,0 +1,24 @@
+int inserir_con(condutor *x)			// Funcao destinada a inserir condutor (no menu condutores)
+{
+	int n;
+	long int inser;
+	system ("cls");
+	printf("Qual o Numero do cliente que quer Inserir? ");
+	scanf("%ld",&inser);
+	for(n=1;n<NR;n++)
+	{
+		if(x[n].estado!=1)
+		{
+			x[n].numero=inser;
+			printf("\n\nNome: ");scanf("%s", x[n].nome);
+			printf("\n\nMorada: ");scanf("%s", &x[n].morada);
+			printf("\n\nTelefone: ");scanf("%ld", &x[n].telefone);
+			printf("\n\nData de Nascimento: ");scanf("%ld", &x[n].data_nascimento);
+			x[n].estado=1;
+			printf("\n\n\nRegisto Inserido <Enter para Continuar>");
+			getch();
+            return(1);	
+		}
+	}
+	printf("ERRO! Nao foi possivel Inserir"); getch();return(0); 
+}
