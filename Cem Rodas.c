@@ -335,10 +335,12 @@ int menu(ALUNOS *alunos, int *na)
    }
 }
 
-int main(void)          
+void main(void)          
 {
-	ALUNOS alunos;
-	int na;
-	ler_alunos(&alunos, &na);                   
+	//ALUNOS alunos;
+	//int na;
+	//ler_alunos(&alunos, &na); 
+	//não tenho a certeza se as instruções acima são necessárias
+	//acho que só uma função que abre o ficheiro é suficiente
 	menu();
 } 
