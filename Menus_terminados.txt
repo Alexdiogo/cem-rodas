@@ -288,16 +288,28 @@ int orcamento()
     	printf("\n\t|                 O R C A M E N T O S                  |");
     	printf("\n\t|                                                      |");
     	printf("\n\t|======================================================|");
-         	do 
-		 { 
-	    	printf("\n\t Introduza o numero de kilometros da viagem: ");
-	    	scanf("%f",&klm);
-	    	printf("\n\t Introduza o numero de toneladas a transportar: ");
-	    	scanf("%f",&toneladas);
-	    	res1=1*klm+50*toneladas;
-	    	printf("\n\t A sua viagem tem o valor de: %.2f euros",res1);
-	        printf("\n\n\n\t Orcamento Concluido <Enter para Continuar>");
-	        getch();system ("cls");return(0);
+         	
+		do{ 
+	    		do {
+			printf("\n\t Introduza o numero de kilometros da viagem: ");
+	    		scanf("%f",&klm);
+	    		if (klm<100) {
+				printf("\t Valor minimo: 100 kilometros!");
+	    		}else break;
+			} while (1);
+			
+			do {
+			printf("\n\t Introduza o numero de toneladas a transportar: ");
+	    		scanf("%f",&toneladas);
+	    		if (toneladas<1) {
+	    			printf("\t Valor minimo: 1 Tonelada!");
+			}else break;
+			} while (1);
+			
+			res1=1*klm+50*toneladas;
+	    		printf("\n\t A sua viagem tem o valor de: %.2f euros",res1);
+	        	printf("\n\n\n\t Orcamento Concluido <Enter para Continuar>");
+	        	getch();system ("cls");return(0);
 	     	}while(op!='0');
 }  
 
