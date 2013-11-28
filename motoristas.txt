@@ -1,0 +1,99 @@
+#include <stdio.h>
+#include <windows.h> 
+#define NR 200
+
+typedef struct
+{
+    int dia;
+    int mes;
+    int ano;
+}data;        
+
+typedef struct
+{
+	long int numero;
+	char nome[60];
+    data data_nas;			
+	long int telefone;
+	char morada[30];
+	int estado;	
+}motorista;
+
+int inserir(motorista *x)
+{
+	int n;
+	long int inser;
+	system ("cls");
+	printf("Qual o Numero do motorista que quer Inserir? ");
+	scanf("%ld",&inser);
+	for(n=1;n<NR;n++)
+	{
+		if(x[n].estado!=1)
+		{
+			x[n].numero=inser;
+			printf("\n\nNome=?");scanf("%s", x[n].nome);
+			printf("\n\nDia de Nascimento=?");scanf("%d",&(x[n].data_nas.dia));
+			printf("\n\nMes de Nascimento=?");scanf("%d",&(x[n].data_nas.mes));
+			printf("\n\nAno de Nascimento=?");scanf("%d",&(x[n].data_nas.ano));
+			printf("\n\nTelefone=?");scanf("%ld", &x[n].telefone);
+			printf("\n\nMorada=?");scanf("%s",&x[n].morada);
+			x[n].estado=1;
+			printf("\n\n\nRegisto Inserido <Enter para Continuar>");
+			getch();
+			return(1);
+		}
+	}
+	printf("ERRO! Nao foi possivel Inserir"); getch(); return(0);
+}
+
+void gravar(motorista *x)
+{
+	FILE *f;
+	int n;
+	if(!(f=fopen("i:\\motoristas1.txt","a")))
+	{
+		printf("\n\n\nErro na Abertura para Gravar <Enter para Sair>");
+		getch();  exit(0);
+	}
+
+	for(n=1;n<NR;n++)
+	{
+		if(x[n].estado==1)
+		{
+			fprintf(f,"%ld\n%s\n%d\n%d\n%d\n%ld\n%s\n",x[n].numero,x[n].nome,x[n].data_nas.dia,x[n].data_nas.mes,x[n].data_nas.ano,
+						      x[n].telefone,x[n].morada, x[n].estado);
+		}
+	}
+	fclose(f);
+	printf("\n\n\nFicheiro Gravado <Enter para Continuar>"); getch();
+}
+
+int main()
+{
+	char op;
+	int n;
+	motorista mot[NR];
+	for(n=0;n<NR;n++)
+	mot[n].estado=0;   
+	do{
+		system ("cls");
+    printf("\n|============================================|");
+	printf("\n|                                            |");
+	printf("\n|             C E M   R O D A S              |");
+	printf("\n|                                            |");
+	printf("\n|============================================|");
+		printf("L - Ler Ficheiro\nM - Mostrar Registos\n");
+		printf("I - Inserir Registo\nE - Eliminar Registo\n");
+		printf("G - Gravar Ficheiro\nS - Sair\n\n");
+		printf("Qual a sua opcao? "); op=getch();
+		switch(op)
+		{
+		//	case 'L': case 'l': ler(alu); break;
+//			case 'M': case 'm': mostrar(alu); break;
+			case 'I': case 'i': inserir(mot); break;
+		//	case 'E': case 'e': eliminar(alu); break;
+			case 'G': case 'g': gravar(mot); break;
+			case 'S': case 's': exit(0);
+		}
+	}while (op!='S' && op!='s');
+}
