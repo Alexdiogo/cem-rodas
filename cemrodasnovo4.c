@@ -3,6 +3,7 @@
 #include <math.h>
 #include <conio.h>
 #define NR 300                          /* Numero maximo de Registos  */            	
+int n_clientes = 0;
 
 void gotoxy(int x, int y)
 {
@@ -100,16 +101,20 @@ typedef struct
 	{
 		FILE *f;
 		int n;
-		if(!(f=fopen("\\clientes.txt","r")))
+		if(!(f=fopen("clientes.txt","r")))
 		{
 			printf("Erro na Abertura de Leitura <Enter para Sair>");
 			exit(0);
 		}
-		for(n=1;n<NR;n++)
+		fscanf(f,"%d",&n_clientes);
+		printf("Numero de clientes = %d", n_clientes);
+		getch();	
+		for(n=0; n<n_clientes; n++)
 		{
 			fscanf(f,"%ld\n%s\n%s\n%s\n%ld\n%d\n", &x[n].numero,x[n].nome,
 					      x[n].apelido, x[n].morada, &x[n].telefone, &x[n].estado);
-						  
+			printf("%ld\n%s\n%s\n%s\n%ld\n%d\n", x[n].numero,x[n].nome,
+					      x[n].apelido, x[n].morada, x[n].telefone, x[n].estado);						  
 		}
 		fclose(f);
 		printf("\n\n\nFicheiro Lido <Enter para Continuar>");getch();
@@ -129,54 +134,68 @@ typedef struct
 		}
 		printf("\n\n\nListagem Concluida <Enter para Continuar>");getch();
 	}
-	
-	int inserir(clientes *x)
-	{
-		int n;
-		long int inser;
-		system ("cls");
-		printf("\n\nQual o Numero de cliente que quer Inserir? ");
-		scanf("%ld",&inser);
-		for(n=1;n<NR;n++)
-		{
-			if(x[n].estado!=1)
-			{
-				x[n].numero=inser;
-				printf("\n\nNOME= ");scanf("%s", x[n].nome);
-                printf("\n\nAPELIDO= ");scanf("%s", x[n].apelido); 
-                printf("\n\nMORADA= ");scanf("%s", x[n].morada);  
-				printf("\n\nTELEFONE= ");scanf("%ld", &x[n].telefone);
-				x[n].estado=1;
-				printf("\n\n\nRegisto Inserido e gravado <Enter para Continuar>");
-				getch();
-				
-				
+
+
+
+	/**
+		grava o array dos clientes num ficheiro
+	*/
+	void gravar_clientes(clientes *x){
 		FILE *f;
 		
 		int n;
-		if(!(f=fopen("\\clientes.txt","w")))
+		if(!(f=fopen("clientes.txt","w")))
 		{
 			printf("\n\n\nErro na Abertura para Gravar <Enter para Sair>");
 			getch();  exit(0);
 		}
-	
-		for(n=1;n<NR;n++)
-		{
+
+		fprintf(f, "%d\n", n_clientes);
+		for(n = 0; n < NR; n++){
 			if(x[n].estado==1)
 			{
-				
+				printf("a gravar cliente %d\n",n);
 				fprintf(f,"%ld\n%s\n%s\n%s\n%ld\n%d\n", x[n].numero,x[n].nome,
 					      x[n].apelido, x[n].morada, x[n].telefone, x[n].estado);		     
 			}
 		}
 		fclose(f);
 		printf("\n\n\nFicheiro Gravado <Enter para Continuar>"); 
-				
-				
-				return(1);
+		getch();
+	}
+
+
+	/**
+		pede ao tulizador os dados de um novo cleitne		
+	*/
+	
+	int inserir_cliente(clientes *x)
+	{
+		long int n;
+		system ("cls");
+		printf("\n\nQual o Numero de cliente que quer Inserir [0-%d]? ", NR);
+		do{
+			scanf("%ld",&n);
+			if (n<0 || n >= NR){
+				printf("toto");
 			}
-		}
-		printf("ERRO! Nao foi possivel Inserir"); getch(); return(0);
+			else 
+				break;
+		}while(1);
+		
+		x[n].numero= n;
+		if (x[n].estado == 0)
+			n_clientes++;
+			
+		x[n].estado = 1;
+		printf("\n\nNOME= ");scanf("%s", x[n].nome);
+        printf("\n\nAPELIDO= ");scanf("%s", x[n].apelido); 
+        printf("\n\nMORADA= ");scanf("%s", x[n].morada);  
+		printf("\n\nTELEFONE= ");scanf("%ld", &x[n].telefone);
+		printf("\n\n\nRegisto Inserido e gravado <Enter para Continuar>");
+		getch();
+				
+				
 	}
 	
 	int eliminar(clientes *x)
@@ -274,7 +293,7 @@ typedef struct
 
 
 	
-	void le(camioes *x)
+	void ler_camioes(camioes *x)
 	{
 		FILE *f;
 		int c;
@@ -514,11 +533,13 @@ int menu_clientes()
 				scanf("%d",&op);
                int n;
 					switch (op) {
-                        case 1: inserir(cli); break;
+                        case 1: inserir_cliente(cli); break;
                         case 2: alterar(cli); break;
                         case 3: eliminar(cli); break;
 						case 4: mostrar(cli); break;
-                        case 0: system ("cls"); break;
+                        case 0:
+							gravar_clientes(cli); 
+							system ("cls"); break;
                         default: printf("Opcao invalida!\n");
                 }
         } while (op!=0);return (0);
@@ -534,7 +555,7 @@ int menu_camioes ()
 	       for(c=0;c<NR;c++)
 		   cam[c].estado=0;   /* limpa todo o Array de registos */
         system ("cls"); gotoxy(20,10);
-        ler(cam);
+        ler_camioes(cam);
 	do {
 		system ("cls");						        
 		printf("\n\t|============================================|"); system("COLOR 0B");
