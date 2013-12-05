@@ -13,7 +13,7 @@ void inserir_carga(carga *x)
 	int n;
 	long int inser;
 	FILE *f;
-	if(!(f=fopen("f:\\alunos.txt","r")))
+	if(!(f=fopen("f:\\alunos.txt","w")))
 	{
 		printf("Erro na Abertura de Leitura\n");
 		system("pause"); exit(0);
@@ -46,7 +46,7 @@ void alterar_carga(carga *x) //não tenho a certeza se este menu está correto, os
 	int n;
 	long int alt;
 	FILE *f;
-	if(!(f=fopen("f:\\alunos.txt","r")))
+	if(!(f=fopen("f:\\alunos.txt","w")))
 	{
 		printf("Erro na Abertura de Leitura\n");
 		system("pause"); exit(0);
@@ -59,7 +59,7 @@ void alterar_carga(carga *x) //não tenho a certeza se este menu está correto, os
 		if((*x)[n].numero==alt)
 		{
 			x[n].numero_carga=inser;
-			printf("\n\nCliente correspondente: %d, Novo: ",x[n].numero_cliente);scanf("%d", &x[n].numero_cliente); if (x[n].numero_cliente != "") fprintf(f,"%d", &x[n].peso);
+			printf("\n\nCliente correspondente: %d, Novo: ",x[n].numero_cliente);scanf("%d", &x[n].numero_cliente); if (x[n].numero_cliente != "") fprintf(f,"%d", &x[n].numero_cliente);
 			printf("\n\nOrigem: %d, Novo: ",x[n].local_origem);gets(x[n].local_origem);if (x[n].local_origem != "")fputs(x[n].local_origem,f);
 			printf("\n\nDestino: %d, Novo: ",x[n].local_destino);gets(x[n].local_destino);if (x[n].local_destino != "") fputs(x[n].local_destino,f);
 			printf("\n\nDistância: %d, Novo: ",x[n].distancia);scanf("%d", &x[n].distancia);if (x[n].distancia != 0) fprintf(f,"%d\n", &x[n].distancia);
@@ -70,7 +70,7 @@ void alterar_carga(carga *x) //não tenho a certeza se este menu está correto, os
            		return(1);	
 		}
 	}
-	printf("ERRO! Numero nao Encontrado \n");
+	printf("ERRO! Número nao Encontrado \n");
 	system("PAUSE"); return(0);
 }
 
@@ -100,37 +100,35 @@ int eliminar_carga(carga *x, int *na)
 int menu_cargas ()
 {
 	int op;
-	do {
 	system ("cls");						        
 	printf("\n\t|============================================|"); system("COLOR 08");
-    	printf("\n\t|              C E M  R O D A S              |");
-    	printf("\n\t|                                            |");
+	printf("\n\t|              C E M  R O D A S              |");
 	printf("\n\t|                                            |");
-    	printf("\n\t|                 C A R G A S                |");
-    	printf("\n\t|                                            |");
-    	printf("\n\t|============================================|");
-        printf("\n\t*                                            *"); 
-        printf("\n\t*               1 - Inserir                  *");
-        printf("\n\t*                                            *"); 
-        printf("\n\t*               2 - Alterar                  *");
+	printf("\n\t|                                            |");
+	printf("\n\t|                 C A R G A S                |");
+	printf("\n\t|                                            |");
+	printf("\n\t|============================================|");
 	printf("\n\t*                                            *"); 
-        printf("\n\t*               3 - Eliminar                 *");
-        printf("\n\t*                                            *");
-        printf("\n\t*               0 - Menu Principal           *");
+	printf("\n\t*               1 - Inserir                  *");
+	printf("\n\t*                                            *"); 
+	printf("\n\t*               2 - Alterar                  *");
+	printf("\n\t*                                            *"); 
+	printf("\n\t*               3 - Eliminar                 *");
 	printf("\n\t*                                            *");
-        printf("\n\t**********************************************");
-        printf("\n\n\t             Qual a sua opcao? ");
-				
-		scanf("%d",&op);
+	printf("\n\t*               0 - Menu Principal           *");
+	printf("\n\t*                                            *");
+	printf("\n\t**********************************************");
+	do {
+		printf("\n\n\t             Qual a sua opção? ");
+		getch(op);
+	} while (op!=0);
                
-		switch (op) {
-                        case 1: inserir_carga(&carga) break;
-                        case 2: printf("..."); break;
-                        case 3: eliminar_carga(&carga,na); break;
-			case 0: system ("cls"); break;
-                        default: printf("Opcao invalida!\n");
-                	}
-    	} while (op!=0);
+	switch (op) {
+		case 1: inserir_carga(&carga) break;
+		case 2: alterar_carga(&carga) break;
+		case 3: eliminar_carga(&carga,na); break;
+		case 0: system ("cls"); break;
+	}
 	
 }
         
