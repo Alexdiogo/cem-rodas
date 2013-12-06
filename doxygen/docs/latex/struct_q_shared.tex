@@ -1,0 +1,50 @@
+\hypertarget{struct_q_shared}{\section{Referência à classe Q\-Shared}
+\label{struct_q_shared}\index{Q\-Shared@{Q\-Shared}}
+}
+
+
+The \hyperlink{struct_q_shared}{Q\-Shared} struct is internally used for implementing shared classes.  
+
+
+
+
+{\ttfamily \#include $<$qshared.\-h$>$}
+
+Diagrama de heranças da classe Q\-Shared\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=8.400000cm]{struct_q_shared}
+\end{center}
+\end{figure}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{struct_q_shared_ae84429cc5d55e687f3abbd5c0bfe7430}{void {\bfseries ref} ()}\label{struct_q_shared_ae84429cc5d55e687f3abbd5c0bfe7430}
+
+\item 
+\hypertarget{struct_q_shared_ade4d3f74b88a085b2e905c3a108c57f6}{bool {\bfseries deref} ()}\label{struct_q_shared_ade4d3f74b88a085b2e905c3a108c57f6}
+
+\end{DoxyCompactItemize}
+\subsection*{Campos de Dados}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{struct_q_shared_ab77ade2208ba49f6e2b934ef32622c48}{uint {\bfseries count}}\label{struct_q_shared_ab77ade2208ba49f6e2b934ef32622c48}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+The \hyperlink{struct_q_shared}{Q\-Shared} struct is internally used for implementing shared classes. 
+
+It only contains a reference count and member functions to increment and decrement it.
+
+Shared classes normally have internal classes that inherit \hyperlink{struct_q_shared}{Q\-Shared} and add the shared data.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{}{Shared Classes} 
+\end{DoxySeeAlso}
+
+
+A documentação para esta classe foi gerada a partir do seguinte ficheiro\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/qtools/qshared.\-h\end{DoxyCompactItemize}

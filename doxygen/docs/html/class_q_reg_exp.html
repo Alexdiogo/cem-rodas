@@ -1,0 +1,663 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>CEM RODAS: Referência à classe QRegExp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">CEM RODAS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Localizar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="modules.html"><span>Módulos</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Estruturas&#160;de&#160;dados</span></a></li>
+      <li><a href="files.html"><span>Ficheiros</span></a></li>
+      <li><a href="examples.html"><span>Exemplos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Localizar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Estruturas&#160;de&#160;dados</span></a></li>
+      <li><a href="classes.html"><span>Índice&#160;das&#160;estruturas&#160;de&#160;dados</span></a></li>
+      <li><a href="hierarchy.html"><span>Hierarquia&#160;de&#160;classes</span></a></li>
+      <li><a href="functions.html"><span>Campos&#160;de&#160;dados</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tudo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Estruturas de dados</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Ficheiros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variáveis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Definições de tipos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerações</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Valores da enumeração</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Amigos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Grupos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Membros públicos</a> &#124;
+<a href="#pro-methods">Membros protegidos</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência à classe QRegExp</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>The <a class="el" href="class_q_reg_exp.html" title="The QRegExp class provides pattern matching using regular expressions or wildcards. ">QRegExp</a> class provides pattern matching using regular expressions or wildcards.  
+ <a href="class_q_reg_exp.html#details">Mais...</a></p>
+
+<p><code>#include &lt;<a class="el" href="qregexp_8h_source.html">qregexp.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Membros públicos</h2></td></tr>
+<tr class="memitem:accfc7c82e1b7db623714eac69afb4bfd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_reg_exp.html#accfc7c82e1b7db623714eac69afb4bfd">QRegExp</a> ()</td></tr>
+<tr class="separator:accfc7c82e1b7db623714eac69afb4bfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfe2e32eb3908054243c8cdc17a874a2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_reg_exp.html#adfe2e32eb3908054243c8cdc17a874a2">QRegExp</a> (const <a class="el" href="class_q_c_string.html">QCString</a> &amp;, bool <a class="el" href="class_q_reg_exp.html#a8ffc24a7e547c9f11973ad94ce366080">caseSensitive</a>=TRUE, bool <a class="el" href="class_q_reg_exp.html#ad838556c640e5d5c418e8d1fb9cbf5cb">wildcard</a>=FALSE)</td></tr>
+<tr class="separator:adfe2e32eb3908054243c8cdc17a874a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9b9b013a5504bb99f17e2d271496dfb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_reg_exp.html#af9b9b013a5504bb99f17e2d271496dfb">QRegExp</a> (const <a class="el" href="class_q_reg_exp.html">QRegExp</a> &amp;)</td></tr>
+<tr class="separator:af9b9b013a5504bb99f17e2d271496dfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec7f8fdca4bbef3530d3d78fd044090c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_reg_exp.html#aec7f8fdca4bbef3530d3d78fd044090c">~QRegExp</a> ()</td></tr>
+<tr class="separator:aec7f8fdca4bbef3530d3d78fd044090c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af81cccecd2612b1ac95627572ab019ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_reg_exp.html">QRegExp</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_reg_exp.html#af81cccecd2612b1ac95627572ab019ec">operator=</a> (const <a class="el" href="class_q_reg_exp.html">QRegExp</a> &amp;)</td></tr>
+<tr class="separator:af81cccecd2612b1ac95627572ab019ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a534333e6c045b60718bc3100ad807c89"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_reg_exp.html">QRegExp</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_reg_exp.html#a534333e6c045b60718bc3100ad807c89">operator=</a> (const <a class="el" href="class_q_c_string.html">QCString</a> &amp;<a class="el" href="class_q_reg_exp.html#af38e77edbe06b9cb201001d58a50f49d">pattern</a>)</td></tr>
+<tr class="separator:a534333e6c045b60718bc3100ad807c89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78a57f859f635432ed344c7c716a787f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_reg_exp.html#a78a57f859f635432ed344c7c716a787f">operator==</a> (const <a class="el" href="class_q_reg_exp.html">QRegExp</a> &amp;) const </td></tr>
+<tr class="separator:a78a57f859f635432ed344c7c716a787f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8374ead8ac6a0ebdaf54e440e7d8d9ce"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_reg_exp.html#a8374ead8ac6a0ebdaf54e440e7d8d9ce">operator!=</a> (const <a class="el" href="class_q_reg_exp.html">QRegExp</a> &amp;r) const </td></tr>
+<tr class="separator:a8374ead8ac6a0ebdaf54e440e7d8d9ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a479432127ee77145cc19d6a2d1590821"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_reg_exp.html#a479432127ee77145cc19d6a2d1590821">isEmpty</a> () const </td></tr>
+<tr class="separator:a479432127ee77145cc19d6a2d1590821"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac1b70a2ed67ead038c4d3f5ac4d8a81"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_reg_exp.html#aac1b70a2ed67ead038c4d3f5ac4d8a81">isValid</a> () const </td></tr>
+<tr class="separator:aac1b70a2ed67ead038c4d3f5ac4d8a81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ffc24a7e547c9f11973ad94ce366080"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_reg_exp.html#a8ffc24a7e547c9f11973ad94ce366080">caseSensitive</a> () const </td></tr>
+<tr class="separator:a8ffc24a7e547c9f11973ad94ce366080"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a032175887f1e496e4099313b7ec1063f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_reg_exp.html#a032175887f1e496e4099313b7ec1063f">setCaseSensitive</a> (bool)</td></tr>
+<tr class="separator:a032175887f1e496e4099313b7ec1063f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad838556c640e5d5c418e8d1fb9cbf5cb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_reg_exp.html#ad838556c640e5d5c418e8d1fb9cbf5cb">wildcard</a> () const </td></tr>
+<tr class="separator:ad838556c640e5d5c418e8d1fb9cbf5cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ac74ec243f51186b8c2e06e00ea0749"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_reg_exp.html#a6ac74ec243f51186b8c2e06e00ea0749">setWildcard</a> (bool)</td></tr>
+<tr class="separator:a6ac74ec243f51186b8c2e06e00ea0749"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af38e77edbe06b9cb201001d58a50f49d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_reg_exp.html#af38e77edbe06b9cb201001d58a50f49d">pattern</a> () const </td></tr>
+<tr class="separator:af38e77edbe06b9cb201001d58a50f49d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae13f3d949a61ba869d63789763374577"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_reg_exp.html#ae13f3d949a61ba869d63789763374577">setPattern</a> (const <a class="el" href="class_q_c_string.html">QCString</a> &amp;<a class="el" href="class_q_reg_exp.html#af38e77edbe06b9cb201001d58a50f49d">pattern</a>)</td></tr>
+<tr class="separator:ae13f3d949a61ba869d63789763374577"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c7e384c5df80bfe711ab7890f6a07db"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_reg_exp.html#a8c7e384c5df80bfe711ab7890f6a07db">match</a> (const <a class="el" href="class_q_c_string.html">QCString</a> &amp;str, int index=0, int *len=0, bool indexIsStart=TRUE) const </td></tr>
+<tr class="separator:a8c7e384c5df80bfe711ab7890f6a07db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a464c432b16caef875a4aa96af48a54e3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_reg_exp.html#a464c432b16caef875a4aa96af48a54e3">find</a> (const <a class="el" href="class_q_c_string.html">QCString</a> &amp;str, int index)</td></tr>
+<tr class="separator:a464c432b16caef875a4aa96af48a54e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Membros protegidos</h2></td></tr>
+<tr class="memitem:acafe5ede9412674127cd08795647f26a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acafe5ede9412674127cd08795647f26a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>compile</b> ()</td></tr>
+<tr class="separator:acafe5ede9412674127cd08795647f26a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ddf296f5e56c7c565e1049175fd8c9f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4ddf296f5e56c7c565e1049175fd8c9f"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>matchstr</b> (uint *, const char *, uint, const char *) const </td></tr>
+<tr class="separator:a4ddf296f5e56c7c565e1049175fd8c9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>The <a class="el" href="class_q_reg_exp.html" title="The QRegExp class provides pattern matching using regular expressions or wildcards. ">QRegExp</a> class provides pattern matching using regular expressions or wildcards. </p>
+<p><a class="el" href="class_q_reg_exp.html" title="The QRegExp class provides pattern matching using regular expressions or wildcards. ">QRegExp</a> knows these regexp primitives: </p>
+<ul>
+<li>
+<code>c</code> matches the character 'c' </li>
+<li>
+<code>.</code> matches any character </li>
+<li>
+<code>^</code> matches start of input </li>
+<li>
+<code>$</code> matches end of input </li>
+<li>
+<code>[]</code> matches a defined set of characters - see below. </li>
+<li>
+<code>a*</code> matches a sequence of zero or more a's </li>
+<li>
+<code>a+</code> matches a sequence of one or more a's </li>
+<li>
+<code>a?</code> matches an optional a </li>
+<li>
+<code><code></code> </code> escape code for matching special characters such as \, [, *, +, . etc. </li>
+<li>
+<code></code> matches the TAB character (9) </li>
+<li>
+<code><br/>
+</code> matches newline (10) </li>
+<li>
+<code></code> matches return (13) </li>
+<li>
+<code></code> matches a white space (defined as any character for which <a class="el" href="class_q_char.html#a9aedb2cee15aa1efb95a4b548a22d1f5">QChar::isSpace()</a> returns TRUE. This includes at least ASCII characters 9 (TAB), 10 (LF), 11 (VT), 12(FF), 13 (CR) and 32 (Space)). </li>
+<li>
+<code></code> matches a digit (defined as any character for which <a class="el" href="class_q_char.html#a610bceef174c008df7c7acbbdb76cdf3">QChar::isDigit()</a> returns TRUE. This includes at least ASCII characters '0'-'9'). </li>
+<li>
+<code></code> matches the character with unicode point U1f6b (hexadecimal 1f6b).  will match the ASCII/Latin1 character 0x12 (18 decimal, 12 hexadecimal). </li>
+<li>
+<code>\022</code> matches the ASCII/Latin1 character 022 (18 decimal, 22 octal). </li>
+</ul>
+<p>In wildcard mode, it only knows four primitives: </p>
+<ul>
+<li>
+<code>c</code> matches the character 'c' </li>
+<li>
+<code>?</code> matches any character </li>
+<li>
+<code>*</code> matches any sequence of characters </li>
+<li>
+<code>[]</code> matches a defined set of characters - see below. </li>
+</ul>
+<p><a class="el" href="class_q_reg_exp.html" title="The QRegExp class provides pattern matching using regular expressions or wildcards. ">QRegExp</a> supports Unicode both in the pattern strings and in the strings to be matched.</p>
+<p>When writing regular expressions in C++ code, remember that C++ processes \ characters. So in order to match e.g. a "." character, you must write "\\." in C++ source, not "\.".</p>
+<p><a class="el" href="class_a.html">A</a> character set matches a defined set of characters. For example, [BSD] matches any of '<a class="el" href="class_b.html">B</a>', '<a class="el" href="class_d.html">D</a>' and '<a class="el" href="struct_s.html">S</a>'. Within a character set, the special characters '.', '*', '?', '^', '$', '+' and '[' lose their special meanings. The following special characters apply: </p>
+<ul>
+<li>
+<code>^</code> When placed first in the list, changes the character set to match any character <em>not</em> in the list. To include the character '^' itself in the set, escape it or place it anywhere but first. </li>
+<li>
+<code>-</code> Defines a range of characters. To include the character '-' itself in the set, escape it or place it last. </li>
+<li>
+<code>]</code> Ends the character set definition. To include the character ']' itself in the set, escape it or place it first (but after the negation operator '^', if present) </li>
+</ul>
+<p>Thus, [a-zA-Z0-9.] matches upper and lower case ASCII letters, digits and dot; and [^] matches everything except white space.</p>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000003">Bug:</a></b></dt><dd>Case insensitive matching is not supported for non-ASCII/Latin1 (non-8bit) characters. Any character with a non-zero <a class="el" href="class_q_char.html#aa0362ae052f9a76a268e0d23859a62f5">QChar.row()</a> is matched case sensitively even if the <a class="el" href="class_q_reg_exp.html" title="The QRegExp class provides pattern matching using regular expressions or wildcards. ">QRegExp</a> is in case insensitive mode.</dd></dl>
+<dl class="section note"><dt>Nota</dt><dd>In Qt 3.0, the language of regular expressions will contain five more special characters, namely '(', ')', '{', '|' and '}'. To ease porting, it's a good idea to escape these characters with a backslash in all the regular expressions you'll write from now on. </dd></dl>
+</div><h2 class="groupheader">Documentação dos Construtores &amp; Destrutor</h2>
+<a class="anchor" id="accfc7c82e1b7db623714eac69afb4bfd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_reg_exp.html">QRegExp</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Constructs an empty regular expression. </p>
+
+</div>
+</div>
+<a class="anchor" id="adfe2e32eb3908054243c8cdc17a874a2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_reg_exp.html">QRegExp</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_q_c_string.html">QCString</a> &amp;&#160;</td>
+          <td class="paramname"><em>pattern</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>caseSensitive</em> = <code>TRUE</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>wildcard</em> = <code>FALSE</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Constructs a regular expression.</p>
+<ul>
+<li><em>pattern</em> is the regular expression pattern string. </li>
+<li><em>caseSensitive</em> specifies whether or not to use case sensitive matching. </li>
+<li><em>wildcard</em> specifies whether the pattern string should be used for wildcard matching (also called globbing expression), normally used for matching file names.</li>
+</ul>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_reg_exp.html#a6ac74ec243f51186b8c2e06e00ea0749">setWildcard()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af9b9b013a5504bb99f17e2d271496dfb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_reg_exp.html">QRegExp</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_q_reg_exp.html">QRegExp</a> &amp;&#160;</td>
+          <td class="paramname"><em>r</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Constructs a regular expression which is a copy of <em>r</em>. </p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_reg_exp.html#af81cccecd2612b1ac95627572ab019ec">operator=(const QRegExp&amp;)</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aec7f8fdca4bbef3530d3d78fd044090c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">~<a class="el" href="class_q_reg_exp.html">QRegExp</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Destructs the regular expression and cleans up its internal data. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentação dos métodos</h2>
+<a class="anchor" id="a8ffc24a7e547c9f11973ad94ce366080"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool caseSensitive </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns TRUE if case sensitivity is enabled, otherwise FALSE. The default is TRUE.</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_reg_exp.html#a032175887f1e496e4099313b7ec1063f">setCaseSensitive()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a464c432b16caef875a4aa96af48a54e3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int find </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_q_c_string.html">QCString</a> &amp;&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Attempts to match in <em>str</em>, starting from position <em>index</em>. Returns the position of the match, or -1 if there was no match.</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_reg_exp.html#a8c7e384c5df80bfe711ab7890f6a07db">match()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a479432127ee77145cc19d6a2d1590821"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isEmpty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns TRUE if the regexp is empty. </p>
+
+</div>
+</div>
+<a class="anchor" id="aac1b70a2ed67ead038c4d3f5ac4d8a81"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isValid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns TRUE if the regexp is valid, or FALSE if it is invalid.</p>
+<p>The pattern "[a-z" is an example of an invalid pattern, since it lacks a closing bracket. </p>
+
+</div>
+</div>
+<a class="anchor" id="a8c7e384c5df80bfe711ab7890f6a07db"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int match </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_q_c_string.html">QCString</a> &amp;&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>len</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>indexIsStart</em> = <code>TRUE</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Attempts to match in <em>str</em>, starting from position <em>index</em>. Returns the position of the match, or -1 if there was no match.</p>
+<p>If <em>len</em> is not a null pointer, the length of the match is stored in <em>*len</em>.</p>
+<p>If <em>indexIsStart</em> is TRUE (the default), the position <em>index</em> in the string will match the start-of-input primitive (^) in the regexp, if present. Otherwise, position 0 in <em>str</em> will match.</p>
+<p><a class="el" href="struct_example.html">Example</a>: </p>
+<div class="fragment"><div class="line"><a class="code" href="class_q_reg_exp.html">QRegExp</a> r(<span class="stringliteral">&quot;[0-9]*\\.[0-9]+&quot;</span>);     <span class="comment">// matches floating point</span></div>
+<div class="line"><span class="keywordtype">int</span> len;</div>
+<div class="line">r.match(<span class="stringliteral">&quot;pi = 3.1416&quot;</span>, 0, &amp;len);      <span class="comment">// returns 5, len == 6</span></div>
+</div><!-- fragment --><dl class="section note"><dt>Nota</dt><dd>In Qt 3.0, this function will be replaced by <a class="el" href="class_q_reg_exp.html#a464c432b16caef875a4aa96af48a54e3">find()</a>. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8374ead8ac6a0ebdaf54e440e7d8d9ce"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_q_reg_exp.html">QRegExp</a> &amp;&#160;</td>
+          <td class="paramname"><em>r</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns TRUE if this regexp is <em>not</em> equal to <em>r</em>.</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_reg_exp.html#a78a57f859f635432ed344c7c716a787f">operator==()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af81cccecd2612b1ac95627572ab019ec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_reg_exp.html">QRegExp</a> &amp; operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_q_reg_exp.html">QRegExp</a> &amp;&#160;</td>
+          <td class="paramname"><em>r</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Copies the regexp <em>r</em> and returns a reference to this regexp. The case sensitivity and wildcard options are copied, as well. </p>
+
+</div>
+</div>
+<a class="anchor" id="a534333e6c045b60718bc3100ad807c89"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_reg_exp.html">QRegExp</a> &amp; operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_q_c_string.html">QCString</a> &amp;&#160;</td>
+          <td class="paramname"><em>pattern</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Consider using <a class="el" href="class_q_reg_exp.html#ae13f3d949a61ba869d63789763374577">setPattern()</a> instead of this method.</p>
+<p>Sets the pattern string to <em>pattern</em> and returns a reference to this regexp. The case sensitivity or wildcard options do not change. </p>
+
+</div>
+</div>
+<a class="anchor" id="a78a57f859f635432ed344c7c716a787f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_q_reg_exp.html">QRegExp</a> &amp;&#160;</td>
+          <td class="paramname"><em>r</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns TRUE if this regexp is equal to <em>r</em>.</p>
+<p>Two regexp objects are equal if they have equal pattern strings, case sensitivity options and wildcard options. </p>
+
+</div>
+</div>
+<a class="anchor" id="af38e77edbe06b9cb201001d58a50f49d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_c_string.html">QCString</a> pattern </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the pattern string of the regexp. </p>
+
+</div>
+</div>
+<a class="anchor" id="a032175887f1e496e4099313b7ec1063f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setCaseSensitive </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Enables or disables case sensitive matching.</p>
+<p>In case sensitive mode, "a.e" matches "axe" but not "Axe".</p>
+<p>See also: <a class="el" href="class_q_reg_exp.html#a8ffc24a7e547c9f11973ad94ce366080">caseSensitive()</a> </p>
+
+</div>
+</div>
+<a class="anchor" id="ae13f3d949a61ba869d63789763374577"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setPattern </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_q_c_string.html">QCString</a> &amp;&#160;</td>
+          <td class="paramname"><em>pattern</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the pattern string to <em>pattern</em> and returns a reference to this regexp. The case sensitivity or wildcard options do not change. </p>
+
+</div>
+</div>
+<a class="anchor" id="a6ac74ec243f51186b8c2e06e00ea0749"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setWildcard </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>wildcard</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets the wildcard option for the regular expression. The default is FALSE.</p>
+<p>Setting <em>wildcard</em> to TRUE makes it convenient to match filenames instead of plain text.</p>
+<p>For example, "qr*.cpp" matches the string "qregexp.cpp" in wildcard mode, but not "qicpp" (which would be matched in normal mode).</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_reg_exp.html#ad838556c640e5d5c418e8d1fb9cbf5cb">wildcard()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad838556c640e5d5c418e8d1fb9cbf5cb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool wildcard </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns TRUE if wildcard mode is on, otherwise FALSE. </p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_reg_exp.html#a6ac74ec243f51186b8c2e06e00ea0749">setWildcard()</a>. </dd></dl>
+
+</div>
+</div>
+<hr/>A documentação para esta classe foi gerada a partir dos seguintes ficheiros:<ul>
+<li>C:/Users/teste/git/doxygen/qtools/<a class="el" href="qregexp_8h_source.html">qregexp.h</a></li>
+<li>C:/Users/teste/git/doxygen/qtools/qregexp.cpp</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado em Quinta, 28 de Novembro de 2013 22:44:31 para CEM RODAS por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

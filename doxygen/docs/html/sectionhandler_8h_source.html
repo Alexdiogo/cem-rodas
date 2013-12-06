@@ -1,0 +1,241 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>CEM RODAS: Código-Fonte de C:/Users/teste/git/doxygen/addon/doxmlparser/src/sectionhandler.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">CEM RODAS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Localizar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="modules.html"><span>Módulos</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li><a href="annotated.html"><span>Estruturas&#160;de&#160;dados</span></a></li>
+      <li class="current"><a href="files.html"><span>Ficheiros</span></a></li>
+      <li><a href="examples.html"><span>Exemplos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Localizar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;ficheiros</span></a></li>
+      <li><a href="globals.html"><span>Globais</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tudo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Estruturas de dados</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Ficheiros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variáveis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Definições de tipos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerações</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Valores da enumeração</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Amigos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Grupos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d522931ffa1371640980b621734a4381.html">Users</a></li><li class="navelem"><a class="el" href="dir_2e4d37bf6c59b7d6a66d896b4b0a78a6.html">teste</a></li><li class="navelem"><a class="el" href="dir_247f86f4b306b1aec49183475e6f51e7.html">git</a></li><li class="navelem"><a class="el" href="dir_36df5c96a2e6385715fd63984863e968.html">doxygen</a></li><li class="navelem"><a class="el" href="dir_a956898ba2fb02961ff393e776319904.html">addon</a></li><li class="navelem"><a class="el" href="dir_6c53e2ab3dd80441eb657bbbd2bf5fa1.html">doxmlparser</a></li><li class="navelem"><a class="el" href="dir_7366ed2c5308d97558ae9a63316a0c63.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">sectionhandler.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/******************************************************************************</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * $Id$</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * Copyright (C) 1997-2013 by Dimitri van Heesch.</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * Permission to use, copy, modify, and distribute this software and its</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * documentation under the terms of the GNU General Public License is hereby </span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> * granted. No representations are made about the suitability of this software </span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * for any purpose. It is provided &quot;as is&quot; without express or implied warranty.</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * See the GNU General Public License for more details.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#ifndef _SECTIONHANDLER_H</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _SECTIONHANDLER_H</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;qstring.h&gt;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;qlist.h&gt;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;qxml.h&gt;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;doxmlintf.h&gt;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;basehandler.h&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_section_iterator.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_section_iterator.html">SectionIterator</a> : </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;     <span class="keyword">public</span> <a class="code" href="class_base_iterator.html">BaseIterator</a>&lt;ISectionIterator,ISection,SectionHandler&gt;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="class_section_iterator.html">SectionIterator</a>(<span class="keyword">const</span> <a class="code" href="class_q_list.html">QList&lt;SectionHandler&gt;</a> &amp;list) : </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      <a class="code" href="class_base_iterator.html">BaseIterator&lt;ISectionIterator,ISection,SectionHandler&gt;</a>(list) {}</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;};</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_section_handler.html">   35</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_section_handler.html">SectionHandler</a> : <span class="keyword">public</span> <a class="code" href="class_i_user_defined.html">IUserDefined</a>, <span class="keyword">public</span> <a class="code" href="class_base_handler.html">BaseHandler</a>&lt;SectionHandler&gt;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> startMember(<span class="keyword">const</span> <a class="code" href="class_q_xml_attributes.html">QXmlAttributes</a>&amp; attrib);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> startHeader(<span class="keyword">const</span> <a class="code" href="class_q_xml_attributes.html">QXmlAttributes</a>&amp; attrib);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> startSection(<span class="keyword">const</span> <a class="code" href="class_q_xml_attributes.html">QXmlAttributes</a>&amp; attrib);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> startDescription(<span class="keyword">const</span> <a class="code" href="class_q_xml_attributes.html">QXmlAttributes</a>&amp; attrib);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> endSection();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> endHeader();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="class_section_handler.html">SectionHandler</a>(<a class="code" href="class_i_base_handler.html">IBaseHandler</a> *parent);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="class_section_handler.html">SectionHandler</a>();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">// ISection</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_section_handler.html#a9d1b8d88b3f77b9e3326cd04cac62504">   49</a></span>&#160;    <span class="keyword">virtual</span> <span class="keyword">const</span> <a class="code" href="class_i_string.html">IString</a> *<a class="code" href="class_section_handler.html#a9d1b8d88b3f77b9e3326cd04cac62504">kindString</a>()<span class="keyword"> const </span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">    </span>{ <span class="keywordflow">return</span> &amp;m_kindString; }</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_section_handler.html#a7e3aadffc7b3089136879aa53c04cb5a">   51</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_i_section.html#a7082fb45267dee090a2ecc569f5b1c9c">SectionKind</a> <a class="code" href="class_section_handler.html#a7e3aadffc7b3089136879aa53c04cb5a">kind</a>()<span class="keyword"> const </span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">    </span>{ <span class="keywordflow">return</span> m_kind; }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="class_i_doc_root.html">IDocRoot</a> *<a class="code" href="class_section_handler.html#a82b3b70f767b9723b25005aeb6b4c335">description</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_i_member_iterator.html">IMemberIterator</a> *<a class="code" href="class_section_handler.html#a94b970d37313c8530611b18b37b992bc">members</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_section_handler.html#ae185e7061f648b432db7a949d84571a0">   55</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_section_handler.html#ae185e7061f648b432db7a949d84571a0">isStatic</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">    </span>{ </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      <span class="keywordflow">return</span> m_kind==<a class="code" href="class_i_section.html#a7082fb45267dee090a2ecc569f5b1c9ca79ec8ad196a97cee565f59de87554c49">PubStatFuncs</a> || m_kind==<a class="code" href="class_i_section.html#a7082fb45267dee090a2ecc569f5b1c9ca65ff0e26aeef0f7f6f9182425bba436b">PubStatAttribs</a> || </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;             m_kind==<a class="code" href="class_i_section.html#a7082fb45267dee090a2ecc569f5b1c9cabb6cdde38337267bb490ecce43eb9232">ProStatFuncs</a> || m_kind==<a class="code" href="class_i_section.html#a7082fb45267dee090a2ecc569f5b1c9cadc618036101508f3aa215d4f0de23b63">ProStatAttribs</a> || </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;             m_kind==<a class="code" href="class_i_section.html#a7082fb45267dee090a2ecc569f5b1c9ca02de5772e123ec76e144723158eee0d8">PriStatFuncs</a> || m_kind==<a class="code" href="class_i_section.html#a7082fb45267dee090a2ecc569f5b1c9ca6d19298e9abcf707d415c5b4b180e32f">PriStatAttribs</a>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="class_section_handler.html#a0a0ba391ac373fa2e8ea6af7c9ee4e77">   61</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_section_handler.html#a0a0ba391ac373fa2e8ea6af7c9ee4e77">isPublic</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      <span class="keywordflow">return</span> !<a class="code" href="class_section_handler.html#a7f22afb2637680b08324f3c9da9433da">isProtected</a>() &amp;&amp; !<a class="code" href="class_section_handler.html#a950c4be289e9abc8ac9047bf79da29ab">isPrivate</a>();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="class_section_handler.html#a7f22afb2637680b08324f3c9da9433da">   65</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_section_handler.html#a7f22afb2637680b08324f3c9da9433da">isProtected</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      <span class="keywordflow">return</span> m_kind==<a class="code" href="class_i_section.html#a7082fb45267dee090a2ecc569f5b1c9cad70523ef53b48266397b1c319d0ebacf">ProTypes</a> || m_kind==<a class="code" href="class_i_section.html#a7082fb45267dee090a2ecc569f5b1c9caaf65b08f99761e52f045391971cff31c">ProFuncs</a> || m_kind==<a class="code" href="class_i_section.html#a7082fb45267dee090a2ecc569f5b1c9ca6b3b392acdc0fa820fdd7b547c533c45">ProAttribs</a> ||</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;             m_kind==<a class="code" href="class_i_section.html#a7082fb45267dee090a2ecc569f5b1c9ca08e2af8f1fa12c43d557ca7b5dbfc4ba">ProSlots</a> || m_kind==<a class="code" href="class_i_section.html#a7082fb45267dee090a2ecc569f5b1c9cabb6cdde38337267bb490ecce43eb9232">ProStatFuncs</a> || m_kind==<a class="code" href="class_i_section.html#a7082fb45267dee090a2ecc569f5b1c9cadc618036101508f3aa215d4f0de23b63">ProStatAttribs</a>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="class_section_handler.html#a950c4be289e9abc8ac9047bf79da29ab">   70</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_section_handler.html#a950c4be289e9abc8ac9047bf79da29ab">isPrivate</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      <span class="keywordflow">return</span> m_kind==<a class="code" href="class_i_section.html#a7082fb45267dee090a2ecc569f5b1c9ca58026e87e35d590d4c806afd1bb6560f">PriTypes</a> || m_kind==<a class="code" href="class_i_section.html#a7082fb45267dee090a2ecc569f5b1c9ca9b2bd4cdbdd0d5b78e6014256a0f68da">PriFuncs</a> || m_kind==<a class="code" href="class_i_section.html#a7082fb45267dee090a2ecc569f5b1c9caac58438646a45a33ba3dddb3c76dc107">PriAttribs</a> ||</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;             m_kind==<a class="code" href="class_i_section.html#a7082fb45267dee090a2ecc569f5b1c9ca1fac43ecfad8f0edf92f42070b9a8640">PriSlots</a> || m_kind==<a class="code" href="class_i_section.html#a7082fb45267dee090a2ecc569f5b1c9ca02de5772e123ec76e144723158eee0d8">PriStatFuncs</a> || m_kind==<a class="code" href="class_i_section.html#a7082fb45267dee090a2ecc569f5b1c9ca6d19298e9abcf707d415c5b4b180e32f">PriStatAttribs</a>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">void</span> initialize(<a class="code" href="class_compound_handler.html">CompoundHandler</a> *c);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment">// IUserDefined implementation</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keyword">virtual</span> <span class="keyword">const</span> <a class="code" href="class_i_string.html">IString</a> *header()<span class="keyword"> const </span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      <span class="keywordflow">return</span> &amp;m_header;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="code" href="class_i_base_handler.html">IBaseHandler</a> *m_parent;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                                               <span class="comment">// XML elements:</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                                               <span class="comment">// -------------</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="class_string_impl.html">StringImpl</a> m_header;                       <span class="comment">// header</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <a class="code" href="class_doc_handler.html">DocHandler</a>* m_description;                 <span class="comment">// description</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <a class="code" href="class_q_list.html">QList&lt;MemberHandler&gt;</a> m_members;            <span class="comment">// memberdef</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                                               <span class="comment">// XML attributes:</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                                               <span class="comment">// ---------------</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <a class="code" href="class_i_section.html#a7082fb45267dee090a2ecc569f5b1c9c">SectionKind</a> m_kind;                        <span class="comment">// kind</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <a class="code" href="class_string_impl.html">StringImpl</a> m_kindString;                   <span class="comment">// kind as a string</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;};</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keywordtype">void</span> sectionhandler_init();</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keywordtype">void</span> sectionhandler_exit();</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="class_compound_handler_html"><div class="ttname"><a href="class_compound_handler.html">CompoundHandler</a></div><div class="ttdef"><b>Definition:</b> compoundhandler.h:104</div></div>
+<div class="ttc" id="class_i_base_handler_html"><div class="ttname"><a href="class_i_base_handler.html">IBaseHandler</a></div><div class="ttdef"><b>Definition:</b> basehandler.h:27</div></div>
+<div class="ttc" id="class_i_section_html_a7082fb45267dee090a2ecc569f5b1c9cabb6cdde38337267bb490ecce43eb9232"><div class="ttname"><a href="class_i_section.html#a7082fb45267dee090a2ecc569f5b1c9cabb6cdde38337267bb490ecce43eb9232">ISection::ProStatFuncs</a></div><div class="ttdoc">Protected static member functions. </div><div class="ttdef"><b>Definition:</b> doxmlintf.h:769</div></div>
+<div class="ttc" id="class_section_handler_html_a94b970d37313c8530611b18b37b992bc"><div class="ttname"><a href="class_section_handler.html#a94b970d37313c8530611b18b37b992bc">SectionHandler::members</a></div><div class="ttdeci">virtual IMemberIterator * members() const </div><div class="ttdef"><b>Definition:</b> sectionhandler.cpp:164</div></div>
+<div class="ttc" id="class_i_doc_root_html"><div class="ttname"><a href="class_i_doc_root.html">IDocRoot</a></div><div class="ttdef"><b>Definition:</b> doxmlintf.h:499</div></div>
+<div class="ttc" id="class_i_section_html_a7082fb45267dee090a2ecc569f5b1c9ca65ff0e26aeef0f7f6f9182425bba436b"><div class="ttname"><a href="class_i_section.html#a7082fb45267dee090a2ecc569f5b1c9ca65ff0e26aeef0f7f6f9182425bba436b">ISection::PubStatAttribs</a></div><div class="ttdoc">Public static attributes. </div><div class="ttdef"><b>Definition:</b> doxmlintf.h:764</div></div>
+<div class="ttc" id="class_section_handler_html_a0a0ba391ac373fa2e8ea6af7c9ee4e77"><div class="ttname"><a href="class_section_handler.html#a0a0ba391ac373fa2e8ea6af7c9ee4e77">SectionHandler::isPublic</a></div><div class="ttdeci">virtual bool isPublic() const </div><div class="ttdef"><b>Definition:</b> sectionhandler.h:61</div></div>
+<div class="ttc" id="class_i_section_html_a7082fb45267dee090a2ecc569f5b1c9ca02de5772e123ec76e144723158eee0d8"><div class="ttname"><a href="class_i_section.html#a7082fb45267dee090a2ecc569f5b1c9ca02de5772e123ec76e144723158eee0d8">ISection::PriStatFuncs</a></div><div class="ttdoc">Private static member functions. </div><div class="ttdef"><b>Definition:</b> doxmlintf.h:780</div></div>
+<div class="ttc" id="class_section_iterator_html"><div class="ttname"><a href="class_section_iterator.html">SectionIterator</a></div><div class="ttdef"><b>Definition:</b> sectionhandler.h:26</div></div>
+<div class="ttc" id="class_i_section_html_a7082fb45267dee090a2ecc569f5b1c9ca9b2bd4cdbdd0d5b78e6014256a0f68da"><div class="ttname"><a href="class_i_section.html#a7082fb45267dee090a2ecc569f5b1c9ca9b2bd4cdbdd0d5b78e6014256a0f68da">ISection::PriFuncs</a></div><div class="ttdoc">Private member functions. </div><div class="ttdef"><b>Definition:</b> doxmlintf.h:777</div></div>
+<div class="ttc" id="class_section_handler_html_a950c4be289e9abc8ac9047bf79da29ab"><div class="ttname"><a href="class_section_handler.html#a950c4be289e9abc8ac9047bf79da29ab">SectionHandler::isPrivate</a></div><div class="ttdeci">virtual bool isPrivate() const </div><div class="ttdef"><b>Definition:</b> sectionhandler.h:70</div></div>
+<div class="ttc" id="class_i_section_html_a7082fb45267dee090a2ecc569f5b1c9ca79ec8ad196a97cee565f59de87554c49"><div class="ttname"><a href="class_i_section.html#a7082fb45267dee090a2ecc569f5b1c9ca79ec8ad196a97cee565f59de87554c49">ISection::PubStatFuncs</a></div><div class="ttdoc">Public static member functions. </div><div class="ttdef"><b>Definition:</b> doxmlintf.h:763</div></div>
+<div class="ttc" id="class_i_section_html_a7082fb45267dee090a2ecc569f5b1c9ca6b3b392acdc0fa820fdd7b547c533c45"><div class="ttname"><a href="class_i_section.html#a7082fb45267dee090a2ecc569f5b1c9ca6b3b392acdc0fa820fdd7b547c533c45">ISection::ProAttribs</a></div><div class="ttdoc">Protected member attributes. </div><div class="ttdef"><b>Definition:</b> doxmlintf.h:767</div></div>
+<div class="ttc" id="class_i_section_html_a7082fb45267dee090a2ecc569f5b1c9cad70523ef53b48266397b1c319d0ebacf"><div class="ttname"><a href="class_i_section.html#a7082fb45267dee090a2ecc569f5b1c9cad70523ef53b48266397b1c319d0ebacf">ISection::ProTypes</a></div><div class="ttdoc">Protected member typedefs. </div><div class="ttdef"><b>Definition:</b> doxmlintf.h:765</div></div>
+<div class="ttc" id="class_i_string_html"><div class="ttname"><a href="class_i_string.html">IString</a></div><div class="ttdoc">Read only interface to a string. </div><div class="ttdef"><b>Definition:</b> doxmlintf.h:42</div></div>
+<div class="ttc" id="class_base_iterator_html"><div class="ttname"><a href="class_base_iterator.html">BaseIterator</a></div><div class="ttdef"><b>Definition:</b> baseiterator.h:21</div></div>
+<div class="ttc" id="class_i_section_html_a7082fb45267dee090a2ecc569f5b1c9cadc618036101508f3aa215d4f0de23b63"><div class="ttname"><a href="class_i_section.html#a7082fb45267dee090a2ecc569f5b1c9cadc618036101508f3aa215d4f0de23b63">ISection::ProStatAttribs</a></div><div class="ttdoc">Protected static member attributes. </div><div class="ttdef"><b>Definition:</b> doxmlintf.h:770</div></div>
+<div class="ttc" id="class_section_handler_html_a7e3aadffc7b3089136879aa53c04cb5a"><div class="ttname"><a href="class_section_handler.html#a7e3aadffc7b3089136879aa53c04cb5a">SectionHandler::kind</a></div><div class="ttdeci">virtual SectionKind kind() const </div><div class="ttdef"><b>Definition:</b> sectionhandler.h:51</div></div>
+<div class="ttc" id="class_string_impl_html"><div class="ttname"><a href="class_string_impl.html">StringImpl</a></div><div class="ttdef"><b>Definition:</b> stringimpl.h:7</div></div>
+<div class="ttc" id="class_q_xml_attributes_html"><div class="ttname"><a href="class_q_xml_attributes.html">QXmlAttributes</a></div><div class="ttdoc">The QXmlAttributes class provides XML attributes. </div><div class="ttdef"><b>Definition:</b> qxml.h:128</div></div>
+<div class="ttc" id="class_doc_handler_html"><div class="ttname"><a href="class_doc_handler.html">DocHandler</a></div><div class="ttdoc">Node representing a documentation block. </div><div class="ttdef"><b>Definition:</b> dochandler.h:1315</div></div>
+<div class="ttc" id="class_section_handler_html"><div class="ttname"><a href="class_section_handler.html">SectionHandler</a></div><div class="ttdef"><b>Definition:</b> sectionhandler.h:35</div></div>
+<div class="ttc" id="class_section_handler_html_a82b3b70f767b9723b25005aeb6b4c335"><div class="ttname"><a href="class_section_handler.html#a82b3b70f767b9723b25005aeb6b4c335">SectionHandler::description</a></div><div class="ttdeci">IDocRoot * description() const </div><div class="ttdef"><b>Definition:</b> sectionhandler.cpp:159</div></div>
+<div class="ttc" id="class_section_handler_html_a9d1b8d88b3f77b9e3326cd04cac62504"><div class="ttname"><a href="class_section_handler.html#a9d1b8d88b3f77b9e3326cd04cac62504">SectionHandler::kindString</a></div><div class="ttdeci">virtual const IString * kindString() const </div><div class="ttdef"><b>Definition:</b> sectionhandler.h:49</div></div>
+<div class="ttc" id="class_i_section_html_a7082fb45267dee090a2ecc569f5b1c9caaf65b08f99761e52f045391971cff31c"><div class="ttname"><a href="class_i_section.html#a7082fb45267dee090a2ecc569f5b1c9caaf65b08f99761e52f045391971cff31c">ISection::ProFuncs</a></div><div class="ttdoc">Protected member functions. </div><div class="ttdef"><b>Definition:</b> doxmlintf.h:766</div></div>
+<div class="ttc" id="class_i_section_html_a7082fb45267dee090a2ecc569f5b1c9ca6d19298e9abcf707d415c5b4b180e32f"><div class="ttname"><a href="class_i_section.html#a7082fb45267dee090a2ecc569f5b1c9ca6d19298e9abcf707d415c5b4b180e32f">ISection::PriStatAttribs</a></div><div class="ttdoc">Private static member attributes. </div><div class="ttdef"><b>Definition:</b> doxmlintf.h:781</div></div>
+<div class="ttc" id="class_i_section_html_a7082fb45267dee090a2ecc569f5b1c9c"><div class="ttname"><a href="class_i_section.html#a7082fb45267dee090a2ecc569f5b1c9c">ISection::SectionKind</a></div><div class="ttdeci">SectionKind</div><div class="ttdef"><b>Definition:</b> doxmlintf.h:752</div></div>
+<div class="ttc" id="class_section_handler_html_a7f22afb2637680b08324f3c9da9433da"><div class="ttname"><a href="class_section_handler.html#a7f22afb2637680b08324f3c9da9433da">SectionHandler::isProtected</a></div><div class="ttdeci">virtual bool isProtected() const </div><div class="ttdef"><b>Definition:</b> sectionhandler.h:65</div></div>
+<div class="ttc" id="class_i_section_html_a7082fb45267dee090a2ecc569f5b1c9ca58026e87e35d590d4c806afd1bb6560f"><div class="ttname"><a href="class_i_section.html#a7082fb45267dee090a2ecc569f5b1c9ca58026e87e35d590d4c806afd1bb6560f">ISection::PriTypes</a></div><div class="ttdoc">Private member typedefs. </div><div class="ttdef"><b>Definition:</b> doxmlintf.h:776</div></div>
+<div class="ttc" id="class_q_list_html"><div class="ttname"><a href="class_q_list.html">QList&lt; SectionHandler &gt;</a></div></div>
+<div class="ttc" id="class_i_section_html_a7082fb45267dee090a2ecc569f5b1c9caac58438646a45a33ba3dddb3c76dc107"><div class="ttname"><a href="class_i_section.html#a7082fb45267dee090a2ecc569f5b1c9caac58438646a45a33ba3dddb3c76dc107">ISection::PriAttribs</a></div><div class="ttdoc">Private member attributes. </div><div class="ttdef"><b>Definition:</b> doxmlintf.h:778</div></div>
+<div class="ttc" id="class_i_user_defined_html"><div class="ttname"><a href="class_i_user_defined.html">IUserDefined</a></div><div class="ttdef"><b>Definition:</b> doxmlintf.h:825</div></div>
+<div class="ttc" id="class_i_section_html_a7082fb45267dee090a2ecc569f5b1c9ca08e2af8f1fa12c43d557ca7b5dbfc4ba"><div class="ttname"><a href="class_i_section.html#a7082fb45267dee090a2ecc569f5b1c9ca08e2af8f1fa12c43d557ca7b5dbfc4ba">ISection::ProSlots</a></div><div class="ttdoc">Protected slots. </div><div class="ttdef"><b>Definition:</b> doxmlintf.h:768</div></div>
+<div class="ttc" id="class_base_handler_html"><div class="ttname"><a href="class_base_handler.html">BaseHandler</a></div><div class="ttdef"><b>Definition:</b> basehandler.h:126</div></div>
+<div class="ttc" id="class_section_handler_html_ae185e7061f648b432db7a949d84571a0"><div class="ttname"><a href="class_section_handler.html#ae185e7061f648b432db7a949d84571a0">SectionHandler::isStatic</a></div><div class="ttdeci">virtual bool isStatic() const </div><div class="ttdef"><b>Definition:</b> sectionhandler.h:55</div></div>
+<div class="ttc" id="class_i_section_html_a7082fb45267dee090a2ecc569f5b1c9ca1fac43ecfad8f0edf92f42070b9a8640"><div class="ttname"><a href="class_i_section.html#a7082fb45267dee090a2ecc569f5b1c9ca1fac43ecfad8f0edf92f42070b9a8640">ISection::PriSlots</a></div><div class="ttdoc">Private Qt slots. </div><div class="ttdef"><b>Definition:</b> doxmlintf.h:779</div></div>
+<div class="ttc" id="class_i_member_iterator_html"><div class="ttname"><a href="class_i_member_iterator.html">IMemberIterator</a></div><div class="ttdef"><b>Definition:</b> doxmlintf.h:719</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado em Quinta, 28 de Novembro de 2013 22:43:34 para CEM RODAS por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

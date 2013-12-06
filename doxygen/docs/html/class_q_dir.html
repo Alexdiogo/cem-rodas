@@ -1,0 +1,1778 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>CEM RODAS: Referência à classe QDir</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">CEM RODAS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Localizar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="modules.html"><span>Módulos</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Estruturas&#160;de&#160;dados</span></a></li>
+      <li><a href="files.html"><span>Ficheiros</span></a></li>
+      <li><a href="examples.html"><span>Exemplos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Localizar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Estruturas&#160;de&#160;dados</span></a></li>
+      <li><a href="classes.html"><span>Índice&#160;das&#160;estruturas&#160;de&#160;dados</span></a></li>
+      <li><a href="hierarchy.html"><span>Hierarquia&#160;de&#160;classes</span></a></li>
+      <li><a href="functions.html"><span>Campos&#160;de&#160;dados</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tudo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Estruturas de dados</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Ficheiros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variáveis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Definições de tipos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerações</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Valores da enumeração</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Amigos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Grupos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Tipos Públicos</a> &#124;
+<a href="#pub-methods">Membros públicos</a> &#124;
+<a href="#pub-static-methods">Membros públicos estáticos</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência à classe QDir</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Traverses directory structures and contents in a platform-independent way.  
+ <a href="class_q_dir.html#details">Mais...</a></p>
+
+<p><code>#include &lt;<a class="el" href="qdir_8h_source.html">qdir.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Tipos Públicos</h2></td></tr>
+<tr class="memitem:ae5939bcf9175d1742ed9c51e042efd50"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_dir.html#ae5939bcf9175d1742ed9c51e042efd50">FilterSpec</a> { <br/>
+&#160;&#160;<b>Dirs</b> = 0x001, 
+<b>Files</b> = 0x002, 
+<b>Drives</b> = 0x004, 
+<b>NoSymLinks</b> = 0x008, 
+<br/>
+&#160;&#160;<b>All</b> = 0x007, 
+<b>TypeMask</b> = 0x00F, 
+<b>Readable</b> = 0x010, 
+<b>Writable</b> = 0x020, 
+<br/>
+&#160;&#160;<b>Executable</b> = 0x040, 
+<b>RWEMask</b> = 0x070, 
+<b>Modified</b> = 0x080, 
+<b>Hidden</b> = 0x100, 
+<br/>
+&#160;&#160;<b>System</b> = 0x200, 
+<b>AccessMask</b> = 0x3F0, 
+<b>DefaultFilter</b> = -1
+<br/>
+ }</td></tr>
+<tr class="separator:ae5939bcf9175d1742ed9c51e042efd50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab098a8b38ab309d7073f6920c4811af4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_dir.html#ab098a8b38ab309d7073f6920c4811af4">SortSpec</a> { <br/>
+&#160;&#160;<b>Name</b> = 0x00, 
+<b>Time</b> = 0x01, 
+<b>Size</b> = 0x02, 
+<b>Unsorted</b> = 0x03, 
+<br/>
+&#160;&#160;<b>SortByMask</b> = 0x03, 
+<b>DirsFirst</b> = 0x04, 
+<b>Reversed</b> = 0x08, 
+<b>IgnoreCase</b> = 0x10, 
+<br/>
+&#160;&#160;<b>DefaultSort</b> = -1
+<br/>
+ }</td></tr>
+<tr class="separator:ab098a8b38ab309d7073f6920c4811af4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Membros públicos</h2></td></tr>
+<tr class="memitem:ac92af10ffd2a612dcddbb6b76daacd79"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_dir.html#ac92af10ffd2a612dcddbb6b76daacd79">QDir</a> ()</td></tr>
+<tr class="separator:ac92af10ffd2a612dcddbb6b76daacd79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada2fef9adbc6d956ffeb771ff82b089f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_dir.html#ada2fef9adbc6d956ffeb771ff82b089f">QDir</a> (const <a class="el" href="class_q_string.html">QString</a> &amp;<a class="el" href="class_q_dir.html#abef507bc8e9b061531a77dc84e991255">path</a>, const <a class="el" href="class_q_string.html">QString</a> &amp;<a class="el" href="class_q_dir.html#a52e506d0a7174c22b22f5f7c663b7e24">nameFilter</a>=QString::null, int sortSpec=Name|IgnoreCase, int filterSpec=All)</td></tr>
+<tr class="separator:ada2fef9adbc6d956ffeb771ff82b089f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6166c6567dc4f3e9f1ebdc7afb59ee83"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_dir.html#a6166c6567dc4f3e9f1ebdc7afb59ee83">QDir</a> (const <a class="el" href="class_q_dir.html">QDir</a> &amp;)</td></tr>
+<tr class="separator:a6166c6567dc4f3e9f1ebdc7afb59ee83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dc50efd2789dc7f184143a40e122304"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_dir.html#a3dc50efd2789dc7f184143a40e122304">~QDir</a> ()</td></tr>
+<tr class="separator:a3dc50efd2789dc7f184143a40e122304"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbd8dd48a4d66c4149c4af35184988e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_dir.html">QDir</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_dir.html#adbd8dd48a4d66c4149c4af35184988e4">operator=</a> (const <a class="el" href="class_q_dir.html">QDir</a> &amp;)</td></tr>
+<tr class="separator:adbd8dd48a4d66c4149c4af35184988e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b1b140d489398d746bdc48e69f3b5a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_dir.html">QDir</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_dir.html#a0b1b140d489398d746bdc48e69f3b5a4">operator=</a> (const <a class="el" href="class_q_string.html">QString</a> &amp;<a class="el" href="class_q_dir.html#abef507bc8e9b061531a77dc84e991255">path</a>)</td></tr>
+<tr class="separator:a0b1b140d489398d746bdc48e69f3b5a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4c459056e34ddd0050ab9473def6db1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_dir.html#af4c459056e34ddd0050ab9473def6db1">setPath</a> (const <a class="el" href="class_q_string.html">QString</a> &amp;<a class="el" href="class_q_dir.html#abef507bc8e9b061531a77dc84e991255">path</a>)</td></tr>
+<tr class="separator:af4c459056e34ddd0050ab9473def6db1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abef507bc8e9b061531a77dc84e991255"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_q_string.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_dir.html#abef507bc8e9b061531a77dc84e991255">path</a> () const </td></tr>
+<tr class="separator:abef507bc8e9b061531a77dc84e991255"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57ff66cd13af0071d9869dd5e10db5c5"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_q_string.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_dir.html#a57ff66cd13af0071d9869dd5e10db5c5">absPath</a> () const </td></tr>
+<tr class="separator:a57ff66cd13af0071d9869dd5e10db5c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82d81d953399417ba00a3d9a7ea3ef60"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a82d81d953399417ba00a3d9a7ea3ef60"></a>
+virtual <a class="el" href="class_q_string.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>canonicalPath</b> () const </td></tr>
+<tr class="separator:a82d81d953399417ba00a3d9a7ea3ef60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66689b909d65b23eb7c218abf3803d84"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_q_string.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_dir.html#a66689b909d65b23eb7c218abf3803d84">dirName</a> () const </td></tr>
+<tr class="separator:a66689b909d65b23eb7c218abf3803d84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbf5afb212923b3b8372ca0a6cedb7b5"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_q_string.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_dir.html#acbf5afb212923b3b8372ca0a6cedb7b5">filePath</a> (const <a class="el" href="class_q_string.html">QString</a> &amp;fileName, bool acceptAbsPath=TRUE) const </td></tr>
+<tr class="separator:acbf5afb212923b3b8372ca0a6cedb7b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad95e4b854527ddde65755cdea20e6743"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_q_string.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_dir.html#ad95e4b854527ddde65755cdea20e6743">absFilePath</a> (const <a class="el" href="class_q_string.html">QString</a> &amp;fileName, bool acceptAbsPath=TRUE) const </td></tr>
+<tr class="separator:ad95e4b854527ddde65755cdea20e6743"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfc428d349712e9d797fc713837e3c43"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_dir.html#abfc428d349712e9d797fc713837e3c43">cd</a> (const <a class="el" href="class_q_string.html">QString</a> &amp;<a class="el" href="class_q_dir.html#a66689b909d65b23eb7c218abf3803d84">dirName</a>, bool acceptAbsPath=TRUE)</td></tr>
+<tr class="separator:abfc428d349712e9d797fc713837e3c43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb27c61db0ff785666cbd38b73e72af3"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_dir.html#abb27c61db0ff785666cbd38b73e72af3">cdUp</a> ()</td></tr>
+<tr class="separator:abb27c61db0ff785666cbd38b73e72af3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52e506d0a7174c22b22f5f7c663b7e24"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_string.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_dir.html#a52e506d0a7174c22b22f5f7c663b7e24">nameFilter</a> () const </td></tr>
+<tr class="separator:a52e506d0a7174c22b22f5f7c663b7e24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a8c724a5be5ad5af7956b00d220f9b9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_dir.html#a7a8c724a5be5ad5af7956b00d220f9b9">setNameFilter</a> (const <a class="el" href="class_q_string.html">QString</a> &amp;<a class="el" href="class_q_dir.html#a52e506d0a7174c22b22f5f7c663b7e24">nameFilter</a>)</td></tr>
+<tr class="separator:a7a8c724a5be5ad5af7956b00d220f9b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1087ca52300e3a6e4aa3af11f3e531d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_dir.html#ae5939bcf9175d1742ed9c51e042efd50">FilterSpec</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_dir.html#a1087ca52300e3a6e4aa3af11f3e531d4">filter</a> () const </td></tr>
+<tr class="separator:a1087ca52300e3a6e4aa3af11f3e531d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45b37db847b9f966f764cd875a3f970c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_dir.html#a45b37db847b9f966f764cd875a3f970c">setFilter</a> (int filterSpec)</td></tr>
+<tr class="separator:a45b37db847b9f966f764cd875a3f970c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abafa20cd6c524655d4d509d7fbc617df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_dir.html#ab098a8b38ab309d7073f6920c4811af4">SortSpec</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_dir.html#abafa20cd6c524655d4d509d7fbc617df">sorting</a> () const </td></tr>
+<tr class="separator:abafa20cd6c524655d4d509d7fbc617df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89d3108e4cc3baff1f70b740caf94bfa"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_dir.html#a89d3108e4cc3baff1f70b740caf94bfa">setSorting</a> (int sortSpec)</td></tr>
+<tr class="separator:a89d3108e4cc3baff1f70b740caf94bfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8adb47f23eab4cb8d65e7f9a66d3895a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_dir.html#a8adb47f23eab4cb8d65e7f9a66d3895a">matchAllDirs</a> () const </td></tr>
+<tr class="separator:a8adb47f23eab4cb8d65e7f9a66d3895a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b4ed48f68e5fd116f09dcfb820f56f5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_dir.html#a4b4ed48f68e5fd116f09dcfb820f56f5">setMatchAllDirs</a> (bool)</td></tr>
+<tr class="separator:a4b4ed48f68e5fd116f09dcfb820f56f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a774149fc271ebaba2aabcd183a836e8f"><td class="memItemLeft" align="right" valign="top">uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_dir.html#a774149fc271ebaba2aabcd183a836e8f">count</a> () const </td></tr>
+<tr class="separator:a774149fc271ebaba2aabcd183a836e8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac47d67a1955be4e674d90f0621ba0937"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_string.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_dir.html#ac47d67a1955be4e674d90f0621ba0937">operator[]</a> (int) const </td></tr>
+<tr class="separator:ac47d67a1955be4e674d90f0621ba0937"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaeaab159aa6fee8d2cb8b6dfdf3836f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_q_str_list.html">QStrList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_dir.html#aaaeaab159aa6fee8d2cb8b6dfdf3836f">encodedEntryList</a> (int filterSpec=DefaultFilter, int sortSpec=DefaultSort) const </td></tr>
+<tr class="separator:aaaeaab159aa6fee8d2cb8b6dfdf3836f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec1c87e9f191b1bef76b75d2001f7287"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_q_str_list.html">QStrList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_dir.html#aec1c87e9f191b1bef76b75d2001f7287">encodedEntryList</a> (const <a class="el" href="class_q_string.html">QString</a> &amp;<a class="el" href="class_q_dir.html#a52e506d0a7174c22b22f5f7c663b7e24">nameFilter</a>, int filterSpec=DefaultFilter, int sortSpec=DefaultSort) const </td></tr>
+<tr class="separator:aec1c87e9f191b1bef76b75d2001f7287"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31d8fe19dd240c844af9cf44e988384f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_q_string_list.html">QStringList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_dir.html#a31d8fe19dd240c844af9cf44e988384f">entryList</a> (int filterSpec=DefaultFilter, int sortSpec=DefaultSort) const </td></tr>
+<tr class="separator:a31d8fe19dd240c844af9cf44e988384f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c12091d0c7b067971e244fb1291d354"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_q_string_list.html">QStringList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_dir.html#a4c12091d0c7b067971e244fb1291d354">entryList</a> (const <a class="el" href="class_q_string.html">QString</a> &amp;<a class="el" href="class_q_dir.html#a52e506d0a7174c22b22f5f7c663b7e24">nameFilter</a>, int filterSpec=DefaultFilter, int sortSpec=DefaultSort) const </td></tr>
+<tr class="separator:a4c12091d0c7b067971e244fb1291d354"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a455adcdcb8360dda877b634a8aca27fe"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="class_q_list.html">QFileInfoList</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_dir.html#a455adcdcb8360dda877b634a8aca27fe">entryInfoList</a> (int filterSpec=DefaultFilter, int sortSpec=DefaultSort) const </td></tr>
+<tr class="separator:a455adcdcb8360dda877b634a8aca27fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49cccb861848a5eb8f068be21af6d7bb"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="class_q_list.html">QFileInfoList</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_dir.html#a49cccb861848a5eb8f068be21af6d7bb">entryInfoList</a> (const <a class="el" href="class_q_string.html">QString</a> &amp;<a class="el" href="class_q_dir.html#a52e506d0a7174c22b22f5f7c663b7e24">nameFilter</a>, int filterSpec=DefaultFilter, int sortSpec=DefaultSort) const </td></tr>
+<tr class="separator:a49cccb861848a5eb8f068be21af6d7bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14984b052293bc6219a8bb200b676bf0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a14984b052293bc6219a8bb200b676bf0"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>mkdir</b> (const <a class="el" href="class_q_string.html">QString</a> &amp;<a class="el" href="class_q_dir.html#a66689b909d65b23eb7c218abf3803d84">dirName</a>, bool acceptAbsPath=TRUE) const </td></tr>
+<tr class="separator:a14984b052293bc6219a8bb200b676bf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7c9723df3ef1bcf6441d18c27e781d0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac7c9723df3ef1bcf6441d18c27e781d0"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>rmdir</b> (const <a class="el" href="class_q_string.html">QString</a> &amp;<a class="el" href="class_q_dir.html#a66689b909d65b23eb7c218abf3803d84">dirName</a>, bool acceptAbsPath=TRUE) const </td></tr>
+<tr class="separator:ac7c9723df3ef1bcf6441d18c27e781d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d7f091ba732d3899bcb34dde9fbfd63"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3d7f091ba732d3899bcb34dde9fbfd63"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>isReadable</b> () const </td></tr>
+<tr class="separator:a3d7f091ba732d3899bcb34dde9fbfd63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74bdced855aaba94868b77f21398775c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_dir.html#a74bdced855aaba94868b77f21398775c">exists</a> () const </td></tr>
+<tr class="separator:a74bdced855aaba94868b77f21398775c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb67b2a249620b49f23a8bc03cbdb3b0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adb67b2a249620b49f23a8bc03cbdb3b0"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>isRoot</b> () const </td></tr>
+<tr class="separator:adb67b2a249620b49f23a8bc03cbdb3b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6802e0e235015f0503e36db60d819e8"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_dir.html#ad6802e0e235015f0503e36db60d819e8">isRelative</a> () const </td></tr>
+<tr class="separator:ad6802e0e235015f0503e36db60d819e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92c71858159be3400795711ad6d8f584"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_dir.html#a92c71858159be3400795711ad6d8f584">convertToAbs</a> ()</td></tr>
+<tr class="separator:a92c71858159be3400795711ad6d8f584"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3928ea4a4e6a7b29212b20aa97d81c93"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_dir.html#a3928ea4a4e6a7b29212b20aa97d81c93">operator==</a> (const <a class="el" href="class_q_dir.html">QDir</a> &amp;) const </td></tr>
+<tr class="separator:a3928ea4a4e6a7b29212b20aa97d81c93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a311829a9fc8fd8ad8d9aefbdc876d8f7"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_dir.html#a311829a9fc8fd8ad8d9aefbdc876d8f7">operator!=</a> (const <a class="el" href="class_q_dir.html">QDir</a> &amp;) const </td></tr>
+<tr class="separator:a311829a9fc8fd8ad8d9aefbdc876d8f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbe0d2cbf0b30d6231f8bb9892551282"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_dir.html#acbe0d2cbf0b30d6231f8bb9892551282">remove</a> (const <a class="el" href="class_q_string.html">QString</a> &amp;fileName, bool acceptAbsPath=TRUE)</td></tr>
+<tr class="separator:acbe0d2cbf0b30d6231f8bb9892551282"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20c80ba9cd68d8518cf6f6fdb04ebf87"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a20c80ba9cd68d8518cf6f6fdb04ebf87"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>rename</b> (const <a class="el" href="class_q_string.html">QString</a> &amp;name, const <a class="el" href="class_q_string.html">QString</a> &amp;newName, bool acceptAbsPaths=TRUE)</td></tr>
+<tr class="separator:a20c80ba9cd68d8518cf6f6fdb04ebf87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3b618b65c524ca053bc9acdda935a21"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_dir.html#ae3b618b65c524ca053bc9acdda935a21">exists</a> (const <a class="el" href="class_q_string.html">QString</a> &amp;name, bool acceptAbsPath=TRUE)</td></tr>
+<tr class="separator:ae3b618b65c524ca053bc9acdda935a21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Membros públicos estáticos</h2></td></tr>
+<tr class="memitem:afbdfe81a3dbef9637c37fb9455d1ffcc"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_q_string.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_dir.html#afbdfe81a3dbef9637c37fb9455d1ffcc">convertSeparators</a> (const <a class="el" href="class_q_string.html">QString</a> &amp;pathName)</td></tr>
+<tr class="separator:afbdfe81a3dbef9637c37fb9455d1ffcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2e73a1b51c4db7b9a18fdd407f485b1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa2e73a1b51c4db7b9a18fdd407f485b1"></a>
+static const <a class="el" href="class_q_list.html">QFileInfoList</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>drives</b> ()</td></tr>
+<tr class="separator:aa2e73a1b51c4db7b9a18fdd407f485b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5be6dd0988dcb207e512241b82d5dcfd"><td class="memItemLeft" align="right" valign="top">static char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_dir.html#a5be6dd0988dcb207e512241b82d5dcfd">separator</a> ()</td></tr>
+<tr class="separator:a5be6dd0988dcb207e512241b82d5dcfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa119df838eef033593c6293fe704ff4e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa119df838eef033593c6293fe704ff4e"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>setCurrent</b> (const <a class="el" href="class_q_string.html">QString</a> &amp;<a class="el" href="class_q_dir.html#abef507bc8e9b061531a77dc84e991255">path</a>)</td></tr>
+<tr class="separator:aa119df838eef033593c6293fe704ff4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1050f05c18394b424efe759f5306a389"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_q_dir.html">QDir</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_dir.html#a1050f05c18394b424efe759f5306a389">current</a> ()</td></tr>
+<tr class="separator:a1050f05c18394b424efe759f5306a389"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaab36122db9259296c1a1e4c0c47ad4c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_q_dir.html">QDir</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_dir.html#aaab36122db9259296c1a1e4c0c47ad4c">home</a> ()</td></tr>
+<tr class="separator:aaab36122db9259296c1a1e4c0c47ad4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6affbb3c1c91145c6daa130d5c45ebe6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_q_dir.html">QDir</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_dir.html#a6affbb3c1c91145c6daa130d5c45ebe6">root</a> ()</td></tr>
+<tr class="separator:a6affbb3c1c91145c6daa130d5c45ebe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af51df33280d66ef9b2764d56c4a9fce4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af51df33280d66ef9b2764d56c4a9fce4"></a>
+static <a class="el" href="class_q_string.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>currentDirPath</b> ()</td></tr>
+<tr class="separator:af51df33280d66ef9b2764d56c4a9fce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15b58f0bf61cb8ffd19faa599fefde1b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_q_string.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_dir.html#a15b58f0bf61cb8ffd19faa599fefde1b">homeDirPath</a> ()</td></tr>
+<tr class="separator:a15b58f0bf61cb8ffd19faa599fefde1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaeb0aa1b8d3411c119ecedd5be584c5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abaeb0aa1b8d3411c119ecedd5be584c5"></a>
+static <a class="el" href="class_q_string.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>rootDirPath</b> ()</td></tr>
+<tr class="separator:abaeb0aa1b8d3411c119ecedd5be584c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addb572de5a0147501ad71f705c2f0e2b"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_dir.html#addb572de5a0147501ad71f705c2f0e2b">match</a> (const <a class="el" href="class_q_string_list.html">QStringList</a> &amp;filters, const <a class="el" href="class_q_string.html">QString</a> &amp;fileName)</td></tr>
+<tr class="separator:addb572de5a0147501ad71f705c2f0e2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b5e9a0892e4534776c6091c72a2e4a3"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_dir.html#a9b5e9a0892e4534776c6091c72a2e4a3">match</a> (const <a class="el" href="class_q_string.html">QString</a> &amp;<a class="el" href="class_q_dir.html#a1087ca52300e3a6e4aa3af11f3e531d4">filter</a>, const <a class="el" href="class_q_string.html">QString</a> &amp;fileName)</td></tr>
+<tr class="separator:a9b5e9a0892e4534776c6091c72a2e4a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72a4ae1acab673f29c2bcc3ac7fd0c00"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_q_string.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_dir.html#a72a4ae1acab673f29c2bcc3ac7fd0c00">cleanDirPath</a> (const <a class="el" href="class_q_string.html">QString</a> &amp;dirPath)</td></tr>
+<tr class="separator:a72a4ae1acab673f29c2bcc3ac7fd0c00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cbbd110fc47ce6e6d02efd2a35f928f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0cbbd110fc47ce6e6d02efd2a35f928f"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>isRelativePath</b> (const <a class="el" href="class_q_string.html">QString</a> &amp;<a class="el" href="class_q_dir.html#abef507bc8e9b061531a77dc84e991255">path</a>)</td></tr>
+<tr class="separator:a0cbbd110fc47ce6e6d02efd2a35f928f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Traverses directory structures and contents in a platform-independent way. </p>
+<p><a class="el" href="class_a.html">A</a> <a class="el" href="class_q_dir.html" title="Traverses directory structures and contents in a platform-independent way. ">QDir</a> can point to a file using either a relative or an absolute file path. Absolute file paths begin with the directory separator ('/') or a drive specification (not applicable to UNIX). Relative file names begin with a directory name or a file name and specify a path relative to the current directory.</p>
+<p>An example of an absolute path is the string "/tmp/quartz", a relative path might look like "src/fatlib". You can use the function <a class="el" href="class_q_dir.html#ad6802e0e235015f0503e36db60d819e8">isRelative()</a> to check if a <a class="el" href="class_q_dir.html" title="Traverses directory structures and contents in a platform-independent way. ">QDir</a> is using a relative or an absolute file path. You can call the function <a class="el" href="class_q_dir.html#a92c71858159be3400795711ad6d8f584">convertToAbs()</a> to convert a relative <a class="el" href="class_q_dir.html" title="Traverses directory structures and contents in a platform-independent way. ">QDir</a> to an absolute one.</p>
+<p>The directory "example" under the current directory is checked for existence in the example below:</p>
+<div class="fragment"><div class="line"><a class="code" href="class_q_dir.html">QDir</a> d( <span class="stringliteral">&quot;example&quot;</span> );          <span class="comment">// &quot;./example&quot;</span></div>
+<div class="line"><span class="keywordflow">if</span> ( !d.exists() )</div>
+<div class="line">qWarning( <span class="stringliteral">&quot;Cannot find the example directory&quot;</span> );</div>
+</div><!-- fragment --><p>If you always use '/' as a directory separator, Qt will translate your paths to conform to the underlying operating system.</p>
+<p><a class="el" href="class_q_dir.html#abfc428d349712e9d797fc713837e3c43">cd()</a> and <a class="el" href="class_q_dir.html#abb27c61db0ff785666cbd38b73e72af3">cdUp()</a> can be used to navigate the directory tree. Note that the logical cd and cdUp operations are not performed if the new directory does not exist.</p>
+<p><a class="el" href="struct_example.html">Example</a>: </p>
+<div class="fragment"><div class="line"><a class="code" href="class_q_dir.html">QDir</a> d = <a class="code" href="class_q_dir.html#a6affbb3c1c91145c6daa130d5c45ebe6">QDir::root</a>();            <span class="comment">// &quot;/&quot;</span></div>
+<div class="line"><span class="keywordflow">if</span> ( !d.<a class="code" href="class_q_dir.html#abfc428d349712e9d797fc713837e3c43">cd</a>(<span class="stringliteral">&quot;tmp&quot;</span>) ) {         <span class="comment">// &quot;/tmp&quot;</span></div>
+<div class="line">qWarning( <span class="stringliteral">&quot;Cannot find the \&quot;/tmp\&quot; directory&quot;</span> );</div>
+<div class="line">} <span class="keywordflow">else</span> {</div>
+<div class="line"><a class="code" href="class_q_file.html">QFile</a> f( d.<a class="code" href="class_q_dir.html#acbf5afb212923b3b8372ca0a6cedb7b5">filePath</a>(<span class="stringliteral">&quot;ex1.txt&quot;</span>) ); <span class="comment">// &quot;/tmp/ex1.txt&quot;</span></div>
+<div class="line"><span class="keywordflow">if</span> ( !f.open(IO_ReadWrite) )</div>
+<div class="line">    qWarning( <span class="stringliteral">&quot;Cannot create the file %s&quot;</span>, f.name() );</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>To read the contents of a directory you can use the <a class="el" href="class_q_dir.html#a31d8fe19dd240c844af9cf44e988384f">entryList()</a> and <a class="el" href="class_q_dir.html#a455adcdcb8360dda877b634a8aca27fe">entryInfoList()</a> functions.</p>
+<p><a class="el" href="struct_example.html">Example</a>: </p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;qdir.h&gt;</span></div>
+<div class="line"></div>
+<div class="line"><span class="comment">//</span></div>
+<div class="line"><span class="comment">// This program scans the current directory and lists all files</span></div>
+<div class="line"><span class="comment">// that are not symbolic links, sorted by size with the smallest files</span></div>
+<div class="line"><span class="comment">// first.</span></div>
+<div class="line"><span class="comment">//</span></div>
+<div class="line"></div>
+<div class="line"><span class="keywordtype">int</span> main( <span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> **argv )</div>
+<div class="line">{</div>
+<div class="line"><a class="code" href="class_q_dir.html">QDir</a> d;</div>
+<div class="line">d.<a class="code" href="class_q_dir.html#a45b37db847b9f966f764cd875a3f970c">setFilter</a>( QDir::Files | QDir::Hidden | QDir::NoSymLinks );</div>
+<div class="line">d.<a class="code" href="class_q_dir.html#a89d3108e4cc3baff1f70b740caf94bfa">setSorting</a>( QDir::Size | QDir::Reversed );</div>
+<div class="line"></div>
+<div class="line"><span class="keyword">const</span> <a class="code" href="class_q_list.html">QFileInfoList</a> *list = d.<a class="code" href="class_q_dir.html#a455adcdcb8360dda877b634a8aca27fe">entryInfoList</a>();</div>
+<div class="line"><a class="code" href="class_q_list_iterator.html">QFileInfoListIterator</a> it( *list );    <span class="comment">// create list iterator</span></div>
+<div class="line"><a class="code" href="class_q_file_info.html">QFileInfo</a> *fi;                <span class="comment">// pointer for traversing</span></div>
+<div class="line"></div>
+<div class="line">printf( <span class="stringliteral">&quot;     BYTES FILENAME\n&quot;</span> );    <span class="comment">// print header</span></div>
+<div class="line"><span class="keywordflow">while</span> ( (fi=it.current()) ) {     <span class="comment">// for each file...</span></div>
+<div class="line">    printf( <span class="stringliteral">&quot;%10li %s\n&quot;</span>, fi-&gt;<a class="code" href="class_q_file_info.html#a7e63723212bed1ca52f0fe57e58b812e">size</a>(), fi-&gt;<a class="code" href="class_q_file_info.html#a5a82962b4e77435323352ef77597016a">fileName</a>().<a class="code" href="class_q_string.html#a3030b6aaaab96d31eb5b62c44a54aeaf">data</a>() );</div>
+<div class="line">    ++it;             <span class="comment">// goto next list element</span></div>
+<div class="line">}</div>
+<div class="line">}</div>
+</div><!-- fragment --> </div><h2 class="groupheader">Documentação das enumerações</h2>
+<a class="anchor" id="ae5939bcf9175d1742ed9c51e042efd50"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_q_dir.html#ae5939bcf9175d1742ed9c51e042efd50">FilterSpec</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This enum describes how <a class="el" href="class_q_dir.html" title="Traverses directory structures and contents in a platform-independent way. ">QDir</a> is to select what entries in a directory to return. The filter value is specified by or-ing together values from the following list: </p>
+<ul>
+<li>
+<code>Dirs</code> - List directories only </li>
+<li>
+<p class="startli"><code>Files</code> - List files only</p>
+<p class="endli"></p>
+</li>
+<li>
+<code>Drives</code> - List disk drives (does nothing under unix) </li>
+<li>
+<code>NoSymLinks</code> - Do not list symbolic links (where they exist) </li>
+<li>
+<code>Readable</code> - List files for which the application has read access. </li>
+<li>
+<code>Writable</code> - List files for which the application has write access. </li>
+<li>
+<code>Executable</code> - List files for which the application has execute access </li>
+<li>
+<code>Modified</code> - Only list files that have been modified (does nothing under unix) </li>
+<li>
+<code>Hidden</code> - List hidden files (on unix, files starting with a .) </li>
+<li>
+<code>System</code> - List system files (does nothing under unix) </li>
+</ul>
+<p>If you do not set any of <code>Readable</code>, <code>Writable</code> or <code>Executable</code>, <a class="el" href="class_q_dir.html" title="Traverses directory structures and contents in a platform-independent way. ">QDir</a> will set all three of them. This makes the default easy to write and at the same time useful.</p>
+<p>Examples: <code>Readable|Writable</code> means list all files for which the application has read access, write access or both. <code>Dirs|Drives</code> means list drives, directories, all files that the application can read, write or execute, and also symlinks to such files/directories. </p>
+
+</div>
+</div>
+<a class="anchor" id="ab098a8b38ab309d7073f6920c4811af4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_q_dir.html#ab098a8b38ab309d7073f6920c4811af4">SortSpec</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This enum describes how <a class="el" href="class_q_dir.html" title="Traverses directory structures and contents in a platform-independent way. ">QDir</a> is to sort entries in a directory when it returns a list of them. The sort value is specified by or-ing together values from the following list: </p>
+<ul>
+<li>
+<code>Name</code> - sort by name </li>
+<li>
+<code>Time</code> - sort by time (modification time) </li>
+<li>
+<code>Size</code> - sort by file size </li>
+<li>
+<p class="startli"><code>Unsorted</code> - do not sort</p>
+<p class="endli"></p>
+</li>
+<li>
+<code>DirsFirst</code> - put all directories first in the list </li>
+<li>
+<code>Reversed</code> - reverse the sort order </li>
+<li>
+<p class="startli"><code>IgnoreCase</code> - sort case-insensitively</p>
+<p class="endli"></p>
+</li>
+</ul>
+<p>You can only specify one of the first four. If you specify both <code>DirsFirst</code> and <code>Reversed</code>, directories are still put first but the list is otherwise reversed. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentação dos Construtores &amp; Destrutor</h2>
+<a class="anchor" id="ac92af10ffd2a612dcddbb6b76daacd79"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_dir.html">QDir</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Constructs a <a class="el" href="class_q_dir.html" title="Traverses directory structures and contents in a platform-independent way. ">QDir</a> pointing to the current directory. </p>
+<dl class="section see"><dt>Veja também</dt><dd>currentDirPath() </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ada2fef9adbc6d956ffeb771ff82b089f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_dir.html">QDir</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_q_string.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_q_string.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>nameFilter</em> = <code>QString::null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sortSpec</em> = <code>Name&#160;|&#160;IgnoreCase</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>filterSpec</em> = <code>All</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Constructs a <a class="el" href="class_q_dir.html" title="Traverses directory structures and contents in a platform-independent way. ">QDir</a>.</p>
+<ul>
+<li><em>path</em> is the directory. </li>
+<li><em>nameFilter</em> is the file name filter. </li>
+<li><em>sortSpec</em> is the sort specification, which describes how to sort the files in the directory. </li>
+<li><em>filterSpec</em> is the filter specification, which describes how to filter the files in the directory.</li>
+</ul>
+<p>Most of these arguments (except <em>path</em>) have optional values.</p>
+<p><a class="el" href="struct_example.html">Example</a>: </p>
+<div class="fragment"><div class="line"><span class="comment">// lists all files in /tmp</span></div>
+<div class="line"></div>
+<div class="line"><a class="code" href="class_q_dir.html">QDir</a> d( <span class="stringliteral">&quot;/tmp&quot;</span> );</div>
+<div class="line"><span class="keywordflow">for</span> ( <span class="keywordtype">int</span> i=0; i&lt;d.<a class="code" href="class_q_dir.html#a774149fc271ebaba2aabcd183a836e8f">count</a>(); i++ )</div>
+<div class="line">printf( <span class="stringliteral">&quot;%s\n&quot;</span>, d[i] );</div>
+</div><!-- fragment --><p>If <em>path</em> is "" or null, the directory is set to "." (the current directory). If <em>nameFilter</em> is "" or null, it is set to "*" (all files).</p>
+<p>No check is made to ensure that the directory exists.</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_dir.html#a74bdced855aaba94868b77f21398775c">exists()</a>, <a class="el" href="class_q_dir.html#af4c459056e34ddd0050ab9473def6db1">setPath()</a>, <a class="el" href="class_q_dir.html#a7a8c724a5be5ad5af7956b00d220f9b9">setNameFilter()</a>, <a class="el" href="class_q_dir.html#a45b37db847b9f966f764cd875a3f970c">setFilter()</a>, <a class="el" href="class_q_dir.html#a89d3108e4cc3baff1f70b740caf94bfa">setSorting()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6166c6567dc4f3e9f1ebdc7afb59ee83"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_dir.html">QDir</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_q_dir.html">QDir</a> &amp;&#160;</td>
+          <td class="paramname"><em>d</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Constructs a <a class="el" href="class_q_dir.html" title="Traverses directory structures and contents in a platform-independent way. ">QDir</a> that is a copy of the given directory. </p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_dir.html#adbd8dd48a4d66c4149c4af35184988e4">operator=()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3dc50efd2789dc7f184143a40e122304"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">~<a class="el" href="class_q_dir.html">QDir</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Destructs the <a class="el" href="class_q_dir.html" title="Traverses directory structures and contents in a platform-independent way. ">QDir</a> and cleans up. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentação dos métodos</h2>
+<a class="anchor" id="ad95e4b854527ddde65755cdea20e6743"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_string.html">QString</a> absFilePath </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_q_string.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>fileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>acceptAbsPath</em> = <code>TRUE</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the absolute path name of a file in the directory. Does NOT check if the file actually exists in the directory. Redundant multiple separators or "." and ".." directories in <em>fileName</em> will NOT be removed (see <a class="el" href="class_q_dir.html#a72a4ae1acab673f29c2bcc3ac7fd0c00">cleanDirPath()</a>).</p>
+<p>If <em>acceptAbsPath</em> is TRUE a <em>fileName</em> starting with a separator ('/') will be returned without change. if <em>acceptAbsPath</em> is FALSE an absolute path will be appended to the directory path.</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_dir.html#acbf5afb212923b3b8372ca0a6cedb7b5">filePath()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a57ff66cd13af0071d9869dd5e10db5c5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_string.html">QString</a> absPath </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the absolute (a path that starts with '/') path, which may contain symbolic links, but never contains redundant ".", ".." or multiple separators.</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_dir.html#af4c459056e34ddd0050ab9473def6db1">setPath()</a>, canonicalPath(), <a class="el" href="class_q_dir.html#a74bdced855aaba94868b77f21398775c">exists()</a>, <a class="el" href="class_q_dir.html#a72a4ae1acab673f29c2bcc3ac7fd0c00">cleanDirPath()</a>, <a class="el" href="class_q_dir.html#a66689b909d65b23eb7c218abf3803d84">dirName()</a>, <a class="el" href="class_q_dir.html#ad95e4b854527ddde65755cdea20e6743">absFilePath()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="abfc428d349712e9d797fc713837e3c43"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool cd </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_q_string.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>dirName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>acceptAbsPath</em> = <code>TRUE</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Changes directory by descending into the given directory. Returns TRUE if the new directory exists and is readable. Note that the logical cd operation is NOT performed if the new directory does not exist.</p>
+<p>If <em>acceptAbsPath</em> is TRUE a path starting with a separator ('/') will cd to the absolute directory, if <em>acceptAbsPath</em> is FALSE any number of separators at the beginning of <em>dirName</em> will be removed.</p>
+<p><a class="el" href="struct_example.html">Example</a>: </p>
+<div class="fragment"><div class="line"><a class="code" href="class_q_dir.html">QDir</a> d = <a class="code" href="class_q_dir.html#aaab36122db9259296c1a1e4c0c47ad4c">QDir::home</a>();  <span class="comment">// now points to home directory</span></div>
+<div class="line"><span class="keywordflow">if</span> ( !d.<a class="code" href="class_q_dir.html#abfc428d349712e9d797fc713837e3c43">cd</a>(<span class="stringliteral">&quot;c++&quot;</span>) ) {     <span class="comment">// now points to &quot;c++&quot; under home directory if OK</span></div>
+<div class="line">    <a class="code" href="class_q_file_info.html">QFileInfo</a> fi( d, <span class="stringliteral">&quot;c++&quot;</span> );</div>
+<div class="line">    <span class="keywordflow">if</span> ( fi.<a class="code" href="class_q_file_info.html#a74bdced855aaba94868b77f21398775c">exists</a>() ) {</div>
+<div class="line">    <span class="keywordflow">if</span> ( fi.<a class="code" href="class_q_file_info.html#a50918fb073b73ccef883870dfb705d74">isDir</a>() )</div>
+<div class="line">        qWarning( <span class="stringliteral">&quot;Cannot cd into \&quot;%s\&quot;.&quot;</span>, (<span class="keywordtype">char</span>*)d.<a class="code" href="class_q_dir.html#ad95e4b854527ddde65755cdea20e6743">absFilePath</a>(<span class="stringliteral">&quot;c++&quot;</span>) );</div>
+<div class="line">    <span class="keywordflow">else</span></div>
+<div class="line">        qWarning( <span class="stringliteral">&quot;Cannot create directory \&quot;%s\&quot;\n&quot;</span></div>
+<div class="line">           <span class="stringliteral">&quot;A file named \&quot;c++\&quot; already exists in \&quot;%s\&quot;&quot;</span>,</div>
+<div class="line">           (<span class="keyword">const</span> <span class="keywordtype">char</span> *)d.<a class="code" href="class_q_dir.html#ad95e4b854527ddde65755cdea20e6743">absFilePath</a>(<span class="stringliteral">&quot;c++&quot;</span>),</div>
+<div class="line">           (<span class="keyword">const</span> <span class="keywordtype">char</span> *)d.<a class="code" href="class_q_dir.html#abef507bc8e9b061531a77dc84e991255">path</a>() );</div>
+<div class="line">    <span class="keywordflow">return</span>;</div>
+<div class="line">    } <span class="keywordflow">else</span> {</div>
+<div class="line">    qWarning( <span class="stringliteral">&quot;Creating directory \&quot;%s\&quot;&quot;</span>,</div>
+<div class="line">       (<span class="keyword">const</span> <span class="keywordtype">char</span> *) d.<a class="code" href="class_q_dir.html#ad95e4b854527ddde65755cdea20e6743">absFilePath</a>(<span class="stringliteral">&quot;c++&quot;</span>) );</div>
+<div class="line">    <span class="keywordflow">if</span> ( !d.mkdir( <span class="stringliteral">&quot;c++&quot;</span> ) ) {</div>
+<div class="line">        qWarning(<span class="stringliteral">&quot;Could not create directory \&quot;%s\&quot;&quot;</span>,</div>
+<div class="line">          (<span class="keyword">const</span> <span class="keywordtype">char</span> *)d.<a class="code" href="class_q_dir.html#ad95e4b854527ddde65755cdea20e6743">absFilePath</a>(<span class="stringliteral">&quot;c++&quot;</span>) );</div>
+<div class="line">        <span class="keywordflow">return</span>;</div>
+<div class="line">    }</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Calling cd( ".." ) is equivalent to calling <a class="el" href="class_q_dir.html#abb27c61db0ff785666cbd38b73e72af3">cdUp()</a>.</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_dir.html#abb27c61db0ff785666cbd38b73e72af3">cdUp()</a>, isReadable(), <a class="el" href="class_q_dir.html#a74bdced855aaba94868b77f21398775c">exists()</a>, <a class="el" href="class_q_dir.html#abef507bc8e9b061531a77dc84e991255">path()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="abb27c61db0ff785666cbd38b73e72af3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool cdUp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Changes directory by moving one directory up the path followed to arrive at the current directory.</p>
+<p>Returns TRUE if the new directory exists and is readable. Note that the logical <a class="el" href="class_q_dir.html#abb27c61db0ff785666cbd38b73e72af3">cdUp()</a> operation is not performed if the new directory does not exist.</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_dir.html#abfc428d349712e9d797fc713837e3c43">cd()</a>, isReadable(), <a class="el" href="class_q_dir.html#a74bdced855aaba94868b77f21398775c">exists()</a>, <a class="el" href="class_q_dir.html#abef507bc8e9b061531a77dc84e991255">path()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a72a4ae1acab673f29c2bcc3ac7fd0c00"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_string.html">QString</a> cleanDirPath </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_q_string.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>filePath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Removes all multiple directory separators ('/') and resolves any "." or ".." found in the path.</p>
+<p>Symbolic links are kept. This function does not return the canonical path, but rather the most simplified version of the input. "../stuff" becomes "stuff", "stuff/../nonsense" becomes "nonsense" and "\\stuff\\more\\..\\nonsense" becomes "\\stuff\\nonsense".</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_dir.html#a57ff66cd13af0071d9869dd5e10db5c5">absPath()</a> canonicalPath() </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="afbdfe81a3dbef9637c37fb9455d1ffcc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_string.html">QString</a> convertSeparators </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_q_string.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>pathName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Converts the '/' separators in <em>pathName</em> to system native separators. Returns the translated string.</p>
+<p>On Windows, convertSeparators("c:/winnt/system32") returns "c:\winnt\system32".</p>
+<p>No conversion is done on UNIX. </p>
+
+</div>
+</div>
+<a class="anchor" id="a92c71858159be3400795711ad6d8f584"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void convertToAbs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Converts the directory path to an absolute path. If it is already absolute nothing is done.</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_dir.html#ad6802e0e235015f0503e36db60d819e8">isRelative()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a774149fc271ebaba2aabcd183a836e8f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint count </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the number of files that was found. Equivalent to <a class="el" href="class_q_dir.html#a31d8fe19dd240c844af9cf44e988384f">entryList()</a>.<a class="el" href="class_q_dir.html#a774149fc271ebaba2aabcd183a836e8f">count()</a>. </p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_dir.html#ac47d67a1955be4e674d90f0621ba0937">operator[]()</a>, <a class="el" href="class_q_dir.html#a31d8fe19dd240c844af9cf44e988384f">entryList()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1050f05c18394b424efe759f5306a389"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_dir.html">QDir</a> current </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the current directory. </p>
+<dl class="section see"><dt>Veja também</dt><dd>currentDirPath(), <a class="el" href="class_q_dir.html#ac92af10ffd2a612dcddbb6b76daacd79">QDir::QDir()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a66689b909d65b23eb7c218abf3803d84"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_string.html">QString</a> dirName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the name of the directory, this is NOT the same as the path, e.g. a directory with the name "mail", might have the path "/var/spool/mail". If the directory has no name (e.g. the root directory) a null string is returned.</p>
+<p>No check is made to ensure that a directory with this name actually exists.</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_dir.html#abef507bc8e9b061531a77dc84e991255">path()</a>, <a class="el" href="class_q_dir.html#a57ff66cd13af0071d9869dd5e10db5c5">absPath()</a>, <a class="el" href="class_q_dir.html#ad95e4b854527ddde65755cdea20e6743">absFilePath()</a>, <a class="el" href="class_q_dir.html#a74bdced855aaba94868b77f21398775c">exists()</a>, <a class="el" href="class_q_string.html#ac02f2a4d7312eb91f40980adfd4e31b2">QString::isNull()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aaaeaab159aa6fee8d2cb8b6dfdf3836f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_str_list.html">QStrList</a> encodedEntryList </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>filterSpec</em> = <code>DefaultFilter</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sortSpec</em> = <code>DefaultSort</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This function is included to easy porting from Qt 1.x to Qt 2.0, it is the same as <a class="el" href="class_q_dir.html#a31d8fe19dd240c844af9cf44e988384f">entryList()</a>, but encodes the filenames as 8-bit strings using QFile::encodedName().</p>
+<p>It is more efficient to use <a class="el" href="class_q_dir.html#a31d8fe19dd240c844af9cf44e988384f">entryList()</a>. </p>
+
+</div>
+</div>
+<a class="anchor" id="aec1c87e9f191b1bef76b75d2001f7287"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_str_list.html">QStrList</a> encodedEntryList </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_q_string.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>nameFilter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>filterSpec</em> = <code>DefaultFilter</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sortSpec</em> = <code>DefaultSort</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This function is included to easy porting from Qt 1.x to Qt 2.0, it is the same as <a class="el" href="class_q_dir.html#a31d8fe19dd240c844af9cf44e988384f">entryList()</a>, but encodes the filenames as 8-bit strings using QFile::encodedName().</p>
+<p>It is more efficient to use <a class="el" href="class_q_dir.html#a31d8fe19dd240c844af9cf44e988384f">entryList()</a>. </p>
+
+</div>
+</div>
+<a class="anchor" id="a455adcdcb8360dda877b634a8aca27fe"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_q_list.html">QFileInfoList</a> * entryInfoList </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>filterSpec</em> = <code>DefaultFilter</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sortSpec</em> = <code>DefaultSort</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns a list of <a class="el" href="class_q_file_info.html" title="The QFileInfo class provides system-independent file information. ">QFileInfo</a> objects for all files and directories in the directory pointed to using the <a class="el" href="class_q_dir.html#a89d3108e4cc3baff1f70b740caf94bfa">setSorting()</a>, <a class="el" href="class_q_dir.html#a45b37db847b9f966f764cd875a3f970c">setFilter()</a> and <a class="el" href="class_q_dir.html#a7a8c724a5be5ad5af7956b00d220f9b9">setNameFilter()</a> specifications.</p>
+<p>The the filter and sorting specifications can be overridden using the <em>filterSpec</em> and <em>sortSpec</em> arguments.</p>
+<p>Returns 0 if the directory is unreadable or does not exist.</p>
+<p>The returned pointer is a const pointer to a QFileInfoList. The list is owned by the <a class="el" href="class_q_dir.html" title="Traverses directory structures and contents in a platform-independent way. ">QDir</a> object and will be reused on the next call to <a class="el" href="class_q_dir.html#a455adcdcb8360dda877b634a8aca27fe">entryInfoList()</a> for the same <a class="el" href="class_q_dir.html" title="Traverses directory structures and contents in a platform-independent way. ">QDir</a> instance. If you want to keep the entries of the list after a subsequent call to this function you will need to copy them.</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_dir.html#a31d8fe19dd240c844af9cf44e988384f">entryList()</a>, <a class="el" href="class_q_dir.html#a7a8c724a5be5ad5af7956b00d220f9b9">setNameFilter()</a>, <a class="el" href="class_q_dir.html#a89d3108e4cc3baff1f70b740caf94bfa">setSorting()</a>, <a class="el" href="class_q_dir.html#a45b37db847b9f966f764cd875a3f970c">setFilter()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a49cccb861848a5eb8f068be21af6d7bb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_q_list.html">QFileInfoList</a> * entryInfoList </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_q_string.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>nameFilter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>filterSpec</em> = <code>DefaultFilter</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sortSpec</em> = <code>DefaultSort</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns a list of <a class="el" href="class_q_file_info.html" title="The QFileInfo class provides system-independent file information. ">QFileInfo</a> objects for all files and directories in the directory pointed to using the <a class="el" href="class_q_dir.html#a89d3108e4cc3baff1f70b740caf94bfa">setSorting()</a>, <a class="el" href="class_q_dir.html#a45b37db847b9f966f764cd875a3f970c">setFilter()</a> and <a class="el" href="class_q_dir.html#a7a8c724a5be5ad5af7956b00d220f9b9">setNameFilter()</a> specifications.</p>
+<p>The the filter and sorting specifications can be overridden using the <em>nameFilter</em>, <em>filterSpec</em> and <em>sortSpec</em> arguments.</p>
+<p>Returns 0 if the directory is unreadable or does not exist.</p>
+<p>The returned pointer is a const pointer to a QFileInfoList. The list is owned by the <a class="el" href="class_q_dir.html" title="Traverses directory structures and contents in a platform-independent way. ">QDir</a> object and will be reused on the next call to <a class="el" href="class_q_dir.html#a455adcdcb8360dda877b634a8aca27fe">entryInfoList()</a> for the same <a class="el" href="class_q_dir.html" title="Traverses directory structures and contents in a platform-independent way. ">QDir</a> instance. If you want to keep the entries of the list after a subsequent call to this function you will need to copy them.</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_dir.html#a31d8fe19dd240c844af9cf44e988384f">entryList()</a>, <a class="el" href="class_q_dir.html#a7a8c724a5be5ad5af7956b00d220f9b9">setNameFilter()</a>, <a class="el" href="class_q_dir.html#a89d3108e4cc3baff1f70b740caf94bfa">setSorting()</a>, <a class="el" href="class_q_dir.html#a45b37db847b9f966f764cd875a3f970c">setFilter()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a31d8fe19dd240c844af9cf44e988384f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_string_list.html">QStringList</a> entryList </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>filterSpec</em> = <code>DefaultFilter</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sortSpec</em> = <code>DefaultSort</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns a list of the names of all files and directories in the directory indicated by the <a class="el" href="class_q_dir.html#a89d3108e4cc3baff1f70b740caf94bfa">setSorting()</a>, <a class="el" href="class_q_dir.html#a45b37db847b9f966f764cd875a3f970c">setFilter()</a> and <a class="el" href="class_q_dir.html#a7a8c724a5be5ad5af7956b00d220f9b9">setNameFilter()</a> specifications.</p>
+<p>The the filter and sorting specifications can be overridden using the <em>filterSpec</em> and <em>sortSpec</em> arguments.</p>
+<p>Returns an empty list if the directory is unreadable or does not exist.</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_dir.html#a455adcdcb8360dda877b634a8aca27fe">entryInfoList()</a>, <a class="el" href="class_q_dir.html#a7a8c724a5be5ad5af7956b00d220f9b9">setNameFilter()</a>, <a class="el" href="class_q_dir.html#a89d3108e4cc3baff1f70b740caf94bfa">setSorting()</a>, <a class="el" href="class_q_dir.html#a45b37db847b9f966f764cd875a3f970c">setFilter()</a>, <a class="el" href="class_q_dir.html#aaaeaab159aa6fee8d2cb8b6dfdf3836f">encodedEntryList()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4c12091d0c7b067971e244fb1291d354"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_string_list.html">QStringList</a> entryList </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_q_string.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>nameFilter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>filterSpec</em> = <code>DefaultFilter</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sortSpec</em> = <code>DefaultSort</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns a list of the names of all files and directories in the directory indicated by the <a class="el" href="class_q_dir.html#a89d3108e4cc3baff1f70b740caf94bfa">setSorting()</a>, <a class="el" href="class_q_dir.html#a45b37db847b9f966f764cd875a3f970c">setFilter()</a> and <a class="el" href="class_q_dir.html#a7a8c724a5be5ad5af7956b00d220f9b9">setNameFilter()</a> specifications.</p>
+<p>The the filter and sorting specifications can be overridden using the <em>nameFilter</em>, <em>filterSpec</em> and <em>sortSpec</em> arguments.</p>
+<p>Returns and empty list if the directory is unreadable or does not exist.</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_dir.html#a455adcdcb8360dda877b634a8aca27fe">entryInfoList()</a>, <a class="el" href="class_q_dir.html#a7a8c724a5be5ad5af7956b00d220f9b9">setNameFilter()</a>, <a class="el" href="class_q_dir.html#a89d3108e4cc3baff1f70b740caf94bfa">setSorting()</a>, <a class="el" href="class_q_dir.html#a45b37db847b9f966f764cd875a3f970c">setFilter()</a>, <a class="el" href="class_q_dir.html#aaaeaab159aa6fee8d2cb8b6dfdf3836f">encodedEntryList()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a74bdced855aaba94868b77f21398775c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool exists </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns TRUE if the directory exists. (If a file with the same name is found this function will of course return FALSE).</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_file_info.html#a74bdced855aaba94868b77f21398775c">QFileInfo::exists()</a>, <a class="el" href="class_q_file.html#a74bdced855aaba94868b77f21398775c">QFile::exists()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae3b618b65c524ca053bc9acdda935a21"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool exists </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_q_string.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>acceptAbsPath</em> = <code>TRUE</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Checks for existence of a file.</p>
+<p>If <em>acceptAbsPaths</em> is TRUE a path starting with a separator ('/') will check the file with the absolute path, if <em>acceptAbsPath</em> is FALSE any number of separators at the beginning of <em>name</em> will be removed.</p>
+<p>Returns TRUE if the file exists, otherwise FALSE.</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_file_info.html#a74bdced855aaba94868b77f21398775c">QFileInfo::exists()</a>, <a class="el" href="class_q_file.html#a74bdced855aaba94868b77f21398775c">QFile::exists()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="acbf5afb212923b3b8372ca0a6cedb7b5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_string.html">QString</a> filePath </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_q_string.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>fileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>acceptAbsPath</em> = <code>TRUE</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the path name of a file in the directory. Does NOT check if the file actually exists in the directory. If the <a class="el" href="class_q_dir.html" title="Traverses directory structures and contents in a platform-independent way. ">QDir</a> is relative the returned path name will also be relative. Redundant multiple separators or "." and ".." directories in <em>fileName</em> will not be removed (see <a class="el" href="class_q_dir.html#a72a4ae1acab673f29c2bcc3ac7fd0c00">cleanDirPath()</a>).</p>
+<p>If <em>acceptAbsPath</em> is TRUE a <em>fileName</em> starting with a separator ('/') will be returned without change. If <em>acceptAbsPath</em> is FALSE an absolute path will be appended to the directory path.</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_dir.html#ad95e4b854527ddde65755cdea20e6743">absFilePath()</a>, <a class="el" href="class_q_dir.html#ad6802e0e235015f0503e36db60d819e8">isRelative()</a>, canonicalPath() </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1087ca52300e3a6e4aa3af11f3e531d4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_dir.html#ae5939bcf9175d1742ed9c51e042efd50">QDir::FilterSpec</a> filter </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the value set by <a class="el" href="class_q_dir.html#a45b37db847b9f966f764cd875a3f970c">setFilter()</a> </p>
+
+</div>
+</div>
+<a class="anchor" id="aaab36122db9259296c1a1e4c0c47ad4c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_dir.html">QDir</a> home </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the home directory. </p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_dir.html#a15b58f0bf61cb8ffd19faa599fefde1b">homeDirPath()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a15b58f0bf61cb8ffd19faa599fefde1b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_string.html">QString</a> homeDirPath </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the absolute path for the user's home directory, </p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_dir.html#aaab36122db9259296c1a1e4c0c47ad4c">home()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad6802e0e235015f0503e36db60d819e8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isRelative </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns TRUE if the directory path is relative to the current directory, FALSE if the path is absolute (e.g. under UNIX a path is relative if it does not start with a '/').</p>
+<p>According to Einstein this function should always return TRUE.</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_dir.html#a92c71858159be3400795711ad6d8f584">convertToAbs()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="addb572de5a0147501ad71f705c2f0e2b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool match </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_q_string_list.html">QStringList</a> &amp;&#160;</td>
+          <td class="paramname"><em>filters</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_q_string.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>fileName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns TRUE if the <em>fileName</em> matches one of the wildcards in the list <em>filters</em>. </p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_reg_exp.html" title="The QRegExp class provides pattern matching using regular expressions or wildcards. ">QRegExp</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9b5e9a0892e4534776c6091c72a2e4a3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool match </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_q_string.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>filter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_q_string.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>fileName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns TRUE if the <em>fileName</em> matches the wildcard <em>filter</em>. <em>Filter</em> may also contain multiple wildcards separated by spaces or semicolons. </p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_reg_exp.html" title="The QRegExp class provides pattern matching using regular expressions or wildcards. ">QRegExp</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8adb47f23eab4cb8d65e7f9a66d3895a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool matchAllDirs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the value set by <a class="el" href="class_q_dir.html#a4b4ed48f68e5fd116f09dcfb820f56f5">setMatchAllDirs()</a></p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_dir.html#a4b4ed48f68e5fd116f09dcfb820f56f5">setMatchAllDirs()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a52e506d0a7174c22b22f5f7c663b7e24"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_string.html">QString</a> nameFilter </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the string set by <a class="el" href="class_q_dir.html#a7a8c724a5be5ad5af7956b00d220f9b9">setNameFilter()</a> </p>
+
+</div>
+</div>
+<a class="anchor" id="a311829a9fc8fd8ad8d9aefbdc876d8f7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_q_dir.html">QDir</a> &amp;&#160;</td>
+          <td class="paramname"><em>d</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns TRUE if the <em>d</em> and this dir have different path or different sort/filter settings, otherwise FALSE. </p>
+
+</div>
+</div>
+<a class="anchor" id="adbd8dd48a4d66c4149c4af35184988e4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_dir.html">QDir</a> &amp; operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_q_dir.html">QDir</a> &amp;&#160;</td>
+          <td class="paramname"><em>d</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Makes a copy of d and assigns it to this <a class="el" href="class_q_dir.html" title="Traverses directory structures and contents in a platform-independent way. ">QDir</a>. </p>
+
+</div>
+</div>
+<a class="anchor" id="a0b1b140d489398d746bdc48e69f3b5a4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_dir.html">QDir</a> &amp; operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_q_string.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets the directory path to be the given path. </p>
+
+</div>
+</div>
+<a class="anchor" id="a3928ea4a4e6a7b29212b20aa97d81c93"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_q_dir.html">QDir</a> &amp;&#160;</td>
+          <td class="paramname"><em>d</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns TRUE if the <em>d</em> and this dir have the same path and all sort and filter settings are equal, otherwise FALSE. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac47d67a1955be4e674d90f0621ba0937"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_string.html">QString</a> operator[] </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the file name at position <em>index</em> in the list of found file names. Equivalent to <a class="el" href="class_q_dir.html#a31d8fe19dd240c844af9cf44e988384f">entryList()</a>.at(index).</p>
+<p>Returns null if the <em>index</em> is out of range or if the <a class="el" href="class_q_dir.html#a31d8fe19dd240c844af9cf44e988384f">entryList()</a> function failed.</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_dir.html#a774149fc271ebaba2aabcd183a836e8f">count()</a>, <a class="el" href="class_q_dir.html#a31d8fe19dd240c844af9cf44e988384f">entryList()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="abef507bc8e9b061531a77dc84e991255"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_string.html">QString</a> path </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the path, this may contain symbolic links, but never contains redundant ".", ".." or multiple separators.</p>
+<p>The returned path can be either absolute or relative (see <a class="el" href="class_q_dir.html#af4c459056e34ddd0050ab9473def6db1">setPath()</a>).</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_dir.html#af4c459056e34ddd0050ab9473def6db1">setPath()</a>, <a class="el" href="class_q_dir.html#a57ff66cd13af0071d9869dd5e10db5c5">absPath()</a>, <a class="el" href="class_q_dir.html#a74bdced855aaba94868b77f21398775c">exists()</a>, <a class="el" href="class_q_dir.html#a72a4ae1acab673f29c2bcc3ac7fd0c00">cleanDirPath()</a>, <a class="el" href="class_q_dir.html#a66689b909d65b23eb7c218abf3803d84">dirName()</a>, <a class="el" href="class_q_dir.html#ad95e4b854527ddde65755cdea20e6743">absFilePath()</a>, <a class="el" href="class_q_dir.html#afbdfe81a3dbef9637c37fb9455d1ffcc">convertSeparators()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="acbe0d2cbf0b30d6231f8bb9892551282"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool remove </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_q_string.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>fileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>acceptAbsPath</em> = <code>TRUE</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Removes a file.</p>
+<p>If <em>acceptAbsPath</em> is TRUE a path starting with a separator ('/') will remove the file with the absolute path, if <em>acceptAbsPath</em> is FALSE any number of separators at the beginning of <em>fileName</em> will be removed.</p>
+<p>Returns TRUE if successful, otherwise FALSE. </p>
+
+</div>
+</div>
+<a class="anchor" id="a6affbb3c1c91145c6daa130d5c45ebe6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_dir.html">QDir</a> root </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the root directory. </p>
+<dl class="section see"><dt>Veja também</dt><dd>rootDirPath() drives() </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5be6dd0988dcb207e512241b82d5dcfd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char separator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the native directory separator; '/' under UNIX and '\' under MS-DOS, Windows NT and OS/2.</p>
+<p>You do not need to use this function to build file paths. If you always use '/', Qt will translate your paths to conform to the underlying operating system. </p>
+
+</div>
+</div>
+<a class="anchor" id="a45b37db847b9f966f764cd875a3f970c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setFilter </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>filterSpec</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the filter used by <a class="el" href="class_q_dir.html#a31d8fe19dd240c844af9cf44e988384f">entryList()</a> and <a class="el" href="class_q_dir.html#a455adcdcb8360dda877b634a8aca27fe">entryInfoList()</a>. The filter is used to specify the kind of files that should be returned by <a class="el" href="class_q_dir.html#a31d8fe19dd240c844af9cf44e988384f">entryList()</a> and <a class="el" href="class_q_dir.html#a455adcdcb8360dda877b634a8aca27fe">entryInfoList()</a>.</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_dir.html#a1087ca52300e3a6e4aa3af11f3e531d4">filter()</a>, <a class="el" href="class_q_dir.html#a7a8c724a5be5ad5af7956b00d220f9b9">setNameFilter()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4b4ed48f68e5fd116f09dcfb820f56f5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setMatchAllDirs </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>If <em>enable</em> is TRUE, all directories will be listed (even if they do not match the filter or the name filter), otherwise only matched directories will be listed.</p>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000002">Bug:</a></b></dt><dd>Currently, directories that do not match the filter will not be included (the name filter will be ignored as expected).</dd></dl>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_dir.html#a8adb47f23eab4cb8d65e7f9a66d3895a">matchAllDirs()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7a8c724a5be5ad5af7956b00d220f9b9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setNameFilter </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_q_string.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>nameFilter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the name filter used by <a class="el" href="class_q_dir.html#a31d8fe19dd240c844af9cf44e988384f">entryList()</a> and <a class="el" href="class_q_dir.html#a455adcdcb8360dda877b634a8aca27fe">entryInfoList()</a>.</p>
+<p>The name filter is a wildcarding filter that understands "*" and "?" wildcards, You may specify several filter entries separated by a " " or a ";". If you want <a class="el" href="class_q_dir.html#a31d8fe19dd240c844af9cf44e988384f">entryList()</a> and <a class="el" href="class_q_dir.html#a455adcdcb8360dda877b634a8aca27fe">entryInfoList()</a> to list all files ending with ".cpp" and all files ending with ".h", you simply call dir.setNameFilter("*.cpp *.h") or dir.setNameFilter("*.cpp;*.h")</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_dir.html#a52e506d0a7174c22b22f5f7c663b7e24">nameFilter()</a>, <a class="el" href="class_q_dir.html#a45b37db847b9f966f764cd875a3f970c">setFilter()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af4c459056e34ddd0050ab9473def6db1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setPath </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_q_string.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the path of the directory. The path is cleaned of redundant ".", ".." and multiple separators. No check is made to ensure that a directory with this path exists.</p>
+<p>The path can be either absolute or relative. Absolute paths begin with the directory separator ('/') or a drive specification (not applicable to UNIX). Relative file names begin with a directory name or a file name and specify a path relative to the current directory. An example of an absolute path is the string "/tmp/quartz", a relative path might look like "src/fatlib". You can use the function <a class="el" href="class_q_dir.html#ad6802e0e235015f0503e36db60d819e8">isRelative()</a> to check if a <a class="el" href="class_q_dir.html" title="Traverses directory structures and contents in a platform-independent way. ">QDir</a> is using a relative or an absolute file path. You can call the function <a class="el" href="class_q_dir.html#a92c71858159be3400795711ad6d8f584">convertToAbs()</a> to convert a relative <a class="el" href="class_q_dir.html" title="Traverses directory structures and contents in a platform-independent way. ">QDir</a> to an absolute one.</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_dir.html#abef507bc8e9b061531a77dc84e991255">path()</a>, <a class="el" href="class_q_dir.html#a57ff66cd13af0071d9869dd5e10db5c5">absPath()</a>, <a class="el" href="class_q_dir.html#a74bdced855aaba94868b77f21398775c">exists()</a>, <a class="el" href="class_q_dir.html#a72a4ae1acab673f29c2bcc3ac7fd0c00">cleanDirPath()</a>, <a class="el" href="class_q_dir.html#a66689b909d65b23eb7c218abf3803d84">dirName()</a>, <a class="el" href="class_q_dir.html#ad95e4b854527ddde65755cdea20e6743">absFilePath()</a>, <a class="el" href="class_q_dir.html#ad6802e0e235015f0503e36db60d819e8">isRelative()</a>, <a class="el" href="class_q_dir.html#a92c71858159be3400795711ad6d8f584">convertToAbs()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a89d3108e4cc3baff1f70b740caf94bfa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setSorting </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sortSpec</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the sorting order used by <a class="el" href="class_q_dir.html#a31d8fe19dd240c844af9cf44e988384f">entryList()</a> and <a class="el" href="class_q_dir.html#a455adcdcb8360dda877b634a8aca27fe">entryInfoList()</a>.</p>
+<p>The <em>sortSpec</em> is specified by or-ing values from the enum SortSpec. The different values are:</p>
+<p>One of these: </p>
+<dl>
+<dt>Name</dt>
+<dd>Sort by name (alphabetical order). </dd>
+<dt>Time</dt>
+<dd>Sort by time (most recent first). </dd>
+<dt>Size</dt>
+<dd>Sort by size (largest first). </dd>
+<dt>Unsorted</dt>
+<dd><p class="startdd">Use the operating system order (UNIX does NOT sort alphabetically).</p>
+<p>ORed with zero or more of these:</p>
+<p class="enddd"></p>
+</dd>
+<dt>DirsFirst</dt>
+<dd>Always put directory names first. </dd>
+<dt>Reversed</dt>
+<dd>Reverse sort order. </dd>
+<dt>IgnoreCase</dt>
+<dd>Ignore case when sorting by name. </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="abafa20cd6c524655d4d509d7fbc617df"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_dir.html#ab098a8b38ab309d7073f6920c4811af4">QDir::SortSpec</a> sorting </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the value set by <a class="el" href="class_q_dir.html#a89d3108e4cc3baff1f70b740caf94bfa">setSorting()</a></p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_dir.html#a89d3108e4cc3baff1f70b740caf94bfa">setSorting()</a> </dd></dl>
+
+</div>
+</div>
+<hr/>A documentação para esta classe foi gerada a partir dos seguintes ficheiros:<ul>
+<li>C:/Users/teste/git/doxygen/qtools/<a class="el" href="qdir_8h_source.html">qdir.h</a></li>
+<li>C:/Users/teste/git/doxygen/qtools/qdir.cpp</li>
+<li>C:/Users/teste/git/doxygen/qtools/qdir_unix.cpp</li>
+<li>C:/Users/teste/git/doxygen/qtools/qdir_win32.cpp</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado em Quinta, 28 de Novembro de 2013 22:44:28 para CEM RODAS por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

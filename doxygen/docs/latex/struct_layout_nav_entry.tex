@@ -1,0 +1,96 @@
+\hypertarget{struct_layout_nav_entry}{\section{Referência à estrutura Layout\-Nav\-Entry}
+\label{struct_layout_nav_entry}\index{Layout\-Nav\-Entry@{Layout\-Nav\-Entry}}
+}
+
+
+Base class for the layout of a navigation item at the top of the H\-T\-M\-L pages.  
+
+
+
+
+{\ttfamily \#include $<$layout.\-h$>$}
+
+\subsection*{Tipos Públicos}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Kind} \{ \\*
+{\bfseries Main\-Page}, 
+{\bfseries Pages}, 
+{\bfseries Modules}, 
+{\bfseries Namespaces}, 
+\\*
+{\bfseries Namespace\-List}, 
+{\bfseries Namespace\-Members}, 
+{\bfseries Classes}, 
+{\bfseries Class\-List}, 
+\\*
+{\bfseries Class\-Index}, 
+{\bfseries Class\-Hierarchy}, 
+{\bfseries Class\-Members}, 
+{\bfseries Files}, 
+\\*
+{\bfseries File\-List}, 
+{\bfseries File\-Globals}, 
+{\bfseries Examples}, 
+{\bfseries User}, 
+\\*
+{\bfseries User\-Group}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{struct_layout_nav_entry_aaf8e4783172c8bc1810d4f166aca1ed6}{{\bfseries Layout\-Nav\-Entry} (\hyperlink{struct_layout_nav_entry}{Layout\-Nav\-Entry} $\ast$parent, Kind k, bool vs, const \hyperlink{class_q_c_string}{Q\-C\-String} \&bf, const \hyperlink{class_q_c_string}{Q\-C\-String} \&tl, const \hyperlink{class_q_c_string}{Q\-C\-String} \&intro, bool prepend=F\-A\-L\-S\-E)}\label{struct_layout_nav_entry_aaf8e4783172c8bc1810d4f166aca1ed6}
+
+\item 
+\hypertarget{struct_layout_nav_entry_ae3becba3d5a12aeef0fa8fbe6e29c892}{\hyperlink{struct_layout_nav_entry}{Layout\-Nav\-Entry} $\ast$ {\bfseries parent} () const }\label{struct_layout_nav_entry_ae3becba3d5a12aeef0fa8fbe6e29c892}
+
+\item 
+\hypertarget{struct_layout_nav_entry_aa9d037bed9f9a083d0cd01485637d843}{Kind {\bfseries kind} () const }\label{struct_layout_nav_entry_aa9d037bed9f9a083d0cd01485637d843}
+
+\item 
+\hypertarget{struct_layout_nav_entry_a1dda37c37ec67d8605b84452767403d9}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries base\-File} () const }\label{struct_layout_nav_entry_a1dda37c37ec67d8605b84452767403d9}
+
+\item 
+\hypertarget{struct_layout_nav_entry_adf5241b59706e696c508de8baa4c2f97}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries title} () const }\label{struct_layout_nav_entry_adf5241b59706e696c508de8baa4c2f97}
+
+\item 
+\hypertarget{struct_layout_nav_entry_ac90ba2b5b7db86905c2b30192e4c53eb}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries intro} () const }\label{struct_layout_nav_entry_ac90ba2b5b7db86905c2b30192e4c53eb}
+
+\item 
+\hypertarget{struct_layout_nav_entry_a33ca03a1959afc82bd99d7c515a9f599}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries url} () const }\label{struct_layout_nav_entry_a33ca03a1959afc82bd99d7c515a9f599}
+
+\item 
+\hypertarget{struct_layout_nav_entry_aac61ea8e617a34587fb183c1ee6466ad}{bool {\bfseries visible} ()}\label{struct_layout_nav_entry_aac61ea8e617a34587fb183c1ee6466ad}
+
+\item 
+\hypertarget{struct_layout_nav_entry_ac8bb3912a3ce86b15842e79d0b421204}{void {\bfseries clear} ()}\label{struct_layout_nav_entry_ac8bb3912a3ce86b15842e79d0b421204}
+
+\item 
+\hypertarget{struct_layout_nav_entry_afedaca377f98b816c27447ad30e92f77}{void {\bfseries add\-Child} (\hyperlink{struct_layout_nav_entry}{Layout\-Nav\-Entry} $\ast$e)}\label{struct_layout_nav_entry_afedaca377f98b816c27447ad30e92f77}
+
+\item 
+\hypertarget{struct_layout_nav_entry_a8c7fd25e523c314739c516c3fa028f2c}{void {\bfseries prepend\-Child} (\hyperlink{struct_layout_nav_entry}{Layout\-Nav\-Entry} $\ast$e)}\label{struct_layout_nav_entry_a8c7fd25e523c314739c516c3fa028f2c}
+
+\item 
+\hypertarget{struct_layout_nav_entry_ad023a2b72cfbfd45b3f4ec65c2953667}{const \hyperlink{class_q_list}{Q\-List}$<$ \hyperlink{struct_layout_nav_entry}{Layout\-Nav\-Entry} $>$ \& {\bfseries children} () const }\label{struct_layout_nav_entry_ad023a2b72cfbfd45b3f4ec65c2953667}
+
+\item 
+\hypertarget{struct_layout_nav_entry_accc2741668a42b0d2f4a41ff6c095cee}{\hyperlink{struct_layout_nav_entry}{Layout\-Nav\-Entry} $\ast$ {\bfseries find} (Layout\-Nav\-Entry\-::\-Kind k, const char $\ast$file=0) const }\label{struct_layout_nav_entry_accc2741668a42b0d2f4a41ff6c095cee}
+
+\end{DoxyCompactItemize}
+\subsection*{Amigos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{struct_layout_nav_entry_af6431c54f9737e0168be5926d2d9b5e9}{class {\bfseries Layout\-Doc\-Manager}}\label{struct_layout_nav_entry_af6431c54f9737e0168be5926d2d9b5e9}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+Base class for the layout of a navigation item at the top of the H\-T\-M\-L pages. 
+
+A documentação para esta estrutura foi gerada a partir dos seguintes ficheiros\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/src/layout.\-h\item 
+C\-:/\-Users/teste/git/doxygen/src/layout.\-cpp\end{DoxyCompactItemize}

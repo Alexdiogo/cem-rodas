@@ -1,0 +1,168 @@
+\hypertarget{class_template_context}{\section{Referência à classe Template\-Context}
+\label{class_template_context}\index{Template\-Context@{Template\-Context}}
+}
+
+
+Abstract interface for a template context.  
+
+
+
+
+{\ttfamily \#include $<$template.\-h$>$}
+
+Diagrama de heranças da classe Template\-Context\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_template_context}
+\end{center}
+\end{figure}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_template_context_a7a28d6e6a6ded476c1774baac1cb3448}{push} ()=0
+\item 
+virtual void \hyperlink{class_template_context_a155389a22ff3694e7a6af1777f6d7182}{pop} ()=0
+\item 
+virtual void \hyperlink{class_template_context_af83899afa5416ea422089aed8facf318}{set} (const char $\ast$name, const \hyperlink{class_template_variant}{Template\-Variant} \&v)=0
+\item 
+virtual \hyperlink{class_template_variant}{Template\-Variant} \hyperlink{class_template_context_adb49a5675ac3cb569a86fbaf8409e9e8}{get} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&name) const =0
+\item 
+virtual const \hyperlink{class_template_variant}{Template\-Variant} $\ast$ \hyperlink{class_template_context_a3a146aa3fd2f25dccb45f2b3eda64174}{get\-Ref} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&name) const =0
+\item 
+virtual void \hyperlink{class_template_context_ace9ddbfb0b3770eea371a78a16060a73}{set\-Output\-Directory} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&dir)=0
+\item 
+virtual void \hyperlink{class_template_context_ac592d6d28ead803976089a11e60613af}{set\-Escape\-Intf} (\hyperlink{class_template_escape_intf}{Template\-Escape\-Intf} $\ast$intf)=0
+\item 
+virtual void \hyperlink{class_template_context_a01a5c35d9a02935589e8dbef1c8568bf}{set\-Spaceless\-Intf} (\hyperlink{class_template_spaceless_intf}{Template\-Spaceless\-Intf} $\ast$intf)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+Abstract interface for a template context. 
+
+\hyperlink{class_a}{A} Context consists of a stack of dictionaries. \hyperlink{class_a}{A} dictionary consists of a mapping of string keys onto \hyperlink{class_template_variant}{Template\-Variant} values. \hyperlink{class_a}{A} key is searched starting with the dictionary at the top of the stack and searching downwards until it is found. The stack is used to create local scopes. \begin{DoxyNote}{Nota}
+This object must be created by \hyperlink{class_template_engine}{Template\-Engine} 
+\end{DoxyNote}
+
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_template_context_adb49a5675ac3cb569a86fbaf8409e9e8}{\index{Template\-Context@{Template\-Context}!get@{get}}
+\index{get@{get}!TemplateContext@{Template\-Context}}
+\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Template\-Variant} get (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-C\-String} \&}]{name}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_template_context_adb49a5675ac3cb569a86fbaf8409e9e8}
+Gets the value for a given key 
+\begin{DoxyParams}[1]{Parâmetros}
+\mbox{\tt in}  & {\em name} & The name of key. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+The value, which can be an invalid variant in case the key was not found. 
+\end{DoxyReturn}
+
+
+Implementado em \hyperlink{class_template_context_impl_a2aac951f4e5ddfe91fc71f55c75730b7}{Template\-Context\-Impl}.
+
+\hypertarget{class_template_context_a3a146aa3fd2f25dccb45f2b3eda64174}{\index{Template\-Context@{Template\-Context}!get\-Ref@{get\-Ref}}
+\index{get\-Ref@{get\-Ref}!TemplateContext@{Template\-Context}}
+\subsubsection[{get\-Ref}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf Template\-Variant}$\ast$ get\-Ref (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-C\-String} \&}]{name}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_template_context_a3a146aa3fd2f25dccb45f2b3eda64174}
+Returns a pointer to the value corresponding to a given key. 
+\begin{DoxyParams}[1]{Parâmetros}
+\mbox{\tt in}  & {\em name} & The name of key. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+\hyperlink{class_a}{A} pointer to the value, or 0 in case the key was not found. 
+\end{DoxyReturn}
+
+
+Implementado em \hyperlink{class_template_context_impl_adcff56f208600381453d3dc6af9dd887}{Template\-Context\-Impl}.
+
+\hypertarget{class_template_context_a155389a22ff3694e7a6af1777f6d7182}{\index{Template\-Context@{Template\-Context}!pop@{pop}}
+\index{pop@{pop}!TemplateContext@{Template\-Context}}
+\subsubsection[{pop}]{\setlength{\rightskip}{0pt plus 5cm}virtual void pop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_template_context_a155389a22ff3694e7a6af1777f6d7182}
+Pop the current scope from the stack. 
+
+Implementado em \hyperlink{class_template_context_impl_a312e7f6c761a199c1369fbe651e084f0}{Template\-Context\-Impl}.
+
+\hypertarget{class_template_context_a7a28d6e6a6ded476c1774baac1cb3448}{\index{Template\-Context@{Template\-Context}!push@{push}}
+\index{push@{push}!TemplateContext@{Template\-Context}}
+\subsubsection[{push}]{\setlength{\rightskip}{0pt plus 5cm}virtual void push (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_template_context_a7a28d6e6a6ded476c1774baac1cb3448}
+Push a new scope on the stack. 
+
+Implementado em \hyperlink{class_template_context_impl_a98b45e0a7ed122b6710df00209b67827}{Template\-Context\-Impl}.
+
+\hypertarget{class_template_context_af83899afa5416ea422089aed8facf318}{\index{Template\-Context@{Template\-Context}!set@{set}}
+\index{set@{set}!TemplateContext@{Template\-Context}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}virtual void set (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name, }
+\item[{const {\bf Template\-Variant} \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_template_context_af83899afa5416ea422089aed8facf318}
+Sets a value in the current scope. 
+\begin{DoxyParams}[1]{Parâmetros}
+\mbox{\tt in}  & {\em name} & The name of the value; the key in the dictionary. \\
+\hline
+\mbox{\tt in}  & {\em v} & The value associated with the key. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Nota}
+When a given key is already present, its value will be replaced by {\itshape v} 
+\end{DoxyNote}
+
+
+Implementado em \hyperlink{class_template_context_impl_a258e17f8e7e0f12f8cf405976214f489}{Template\-Context\-Impl}.
+
+\hypertarget{class_template_context_ac592d6d28ead803976089a11e60613af}{\index{Template\-Context@{Template\-Context}!set\-Escape\-Intf@{set\-Escape\-Intf}}
+\index{set\-Escape\-Intf@{set\-Escape\-Intf}!TemplateContext@{Template\-Context}}
+\subsubsection[{set\-Escape\-Intf}]{\setlength{\rightskip}{0pt plus 5cm}virtual void set\-Escape\-Intf (
+\begin{DoxyParamCaption}
+\item[{{\bf Template\-Escape\-Intf} $\ast$}]{intf}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_template_context_ac592d6d28ead803976089a11e60613af}
+Sets the interface that will be used for escaping the result of variable expansion before writing it to the output. 
+
+Implementado em \hyperlink{class_template_context_impl_aa279b8b31debd1e17e7c37b9630f2e5c}{Template\-Context\-Impl}.
+
+\hypertarget{class_template_context_ace9ddbfb0b3770eea371a78a16060a73}{\index{Template\-Context@{Template\-Context}!set\-Output\-Directory@{set\-Output\-Directory}}
+\index{set\-Output\-Directory@{set\-Output\-Directory}!TemplateContext@{Template\-Context}}
+\subsubsection[{set\-Output\-Directory}]{\setlength{\rightskip}{0pt plus 5cm}virtual void set\-Output\-Directory (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-C\-String} \&}]{dir}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_template_context_ace9ddbfb0b3770eea371a78a16060a73}
+When files are create (i.\-e. by \{\% create ... \%\}) they written to the directory {\itshape dir}. 
+
+Implementado em \hyperlink{class_template_context_impl_ab6895f5081a3cb25b6d9fae349a3d848}{Template\-Context\-Impl}.
+
+\hypertarget{class_template_context_a01a5c35d9a02935589e8dbef1c8568bf}{\index{Template\-Context@{Template\-Context}!set\-Spaceless\-Intf@{set\-Spaceless\-Intf}}
+\index{set\-Spaceless\-Intf@{set\-Spaceless\-Intf}!TemplateContext@{Template\-Context}}
+\subsubsection[{set\-Spaceless\-Intf}]{\setlength{\rightskip}{0pt plus 5cm}virtual void set\-Spaceless\-Intf (
+\begin{DoxyParamCaption}
+\item[{{\bf Template\-Spaceless\-Intf} $\ast$}]{intf}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_template_context_a01a5c35d9a02935589e8dbef1c8568bf}
+Sets the interface that will be used inside a spaceless block to remove any redundant whitespace. 
+
+Implementado em \hyperlink{class_template_context_impl_a3c2881415b6438de297c967bd3d6bbc4}{Template\-Context\-Impl}.
+
+
+
+A documentação para esta classe foi gerada a partir do seguinte ficheiro\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/src/template.\-h\end{DoxyCompactItemize}

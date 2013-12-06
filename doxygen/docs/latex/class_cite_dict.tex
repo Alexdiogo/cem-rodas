@@ -1,0 +1,95 @@
+\hypertarget{class_cite_dict}{\section{Referência à classe Cite\-Dict}
+\label{class_cite_dict}\index{Cite\-Dict@{Cite\-Dict}}
+}
+
+
+Cite database access class.  
+
+
+
+
+{\ttfamily \#include $<$cite.\-h$>$}
+
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_cite_dict_aa5c973f82a208e2167cc72a7c3cfa87e}{Cite\-Dict} (int size)
+\item 
+void \hyperlink{class_cite_dict_a4d291905bea29c7c01d5439367b4ea0e}{insert} (const char $\ast$label)
+\item 
+\hyperlink{struct_cite_info}{Cite\-Info} $\ast$ \hyperlink{class_cite_dict_a82b8ee1e48d86fdaad9690807121544b}{find} (const char $\ast$label) const 
+\item 
+void \hyperlink{class_cite_dict_a980f4d357d9b293e1181680db1d2959f}{generate\-Page} () const 
+\item 
+void \hyperlink{class_cite_dict_ac8bb3912a3ce86b15842e79d0b421204}{clear} ()
+\item 
+bool \hyperlink{class_cite_dict_a479432127ee77145cc19d6a2d1590821}{is\-Empty} () const 
+\item 
+void \hyperlink{class_cite_dict_aadd2b1f13a145a6d369a274929f862c6}{write\-Latex\-Bibliography} (\hyperlink{class_f_text_stream}{F\-Text\-Stream} \&t)
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+Cite database access class. 
+
+This class provides access do the database of bibliographic references through the bibtex backend. 
+
+\subsection{Documentação dos Construtores \& Destrutor}
+\hypertarget{class_cite_dict_aa5c973f82a208e2167cc72a7c3cfa87e}{\index{Cite\-Dict@{Cite\-Dict}!Cite\-Dict@{Cite\-Dict}}
+\index{Cite\-Dict@{Cite\-Dict}!CiteDict@{Cite\-Dict}}
+\subsubsection[{Cite\-Dict}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cite\-Dict} (
+\begin{DoxyParamCaption}
+\item[{int}]{size}
+\end{DoxyParamCaption}
+)}}\label{class_cite_dict_aa5c973f82a208e2167cc72a7c3cfa87e}
+Create the database, with an expected maximum of {\itshape size} entries 
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_cite_dict_ac8bb3912a3ce86b15842e79d0b421204}{\index{Cite\-Dict@{Cite\-Dict}!clear@{clear}}
+\index{clear@{clear}!CiteDict@{Cite\-Dict}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}void clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_cite_dict_ac8bb3912a3ce86b15842e79d0b421204}
+clears the database \hypertarget{class_cite_dict_a82b8ee1e48d86fdaad9690807121544b}{\index{Cite\-Dict@{Cite\-Dict}!find@{find}}
+\index{find@{find}!CiteDict@{Cite\-Dict}}
+\subsubsection[{find}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cite\-Info} $\ast$ find (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{label}
+\end{DoxyParamCaption}
+) const}}\label{class_cite_dict_a82b8ee1e48d86fdaad9690807121544b}
+Return the citation info for a given {\itshape label} \hypertarget{class_cite_dict_a980f4d357d9b293e1181680db1d2959f}{\index{Cite\-Dict@{Cite\-Dict}!generate\-Page@{generate\-Page}}
+\index{generate\-Page@{generate\-Page}!CiteDict@{Cite\-Dict}}
+\subsubsection[{generate\-Page}]{\setlength{\rightskip}{0pt plus 5cm}void generate\-Page (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_cite_dict_a980f4d357d9b293e1181680db1d2959f}
+Generate the citations page \hypertarget{class_cite_dict_a4d291905bea29c7c01d5439367b4ea0e}{\index{Cite\-Dict@{Cite\-Dict}!insert@{insert}}
+\index{insert@{insert}!CiteDict@{Cite\-Dict}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}void insert (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{label}
+\end{DoxyParamCaption}
+)}}\label{class_cite_dict_a4d291905bea29c7c01d5439367b4ea0e}
+Resolve references to citations Insert a citation identified by {\itshape label} into the database \hypertarget{class_cite_dict_a479432127ee77145cc19d6a2d1590821}{\index{Cite\-Dict@{Cite\-Dict}!is\-Empty@{is\-Empty}}
+\index{is\-Empty@{is\-Empty}!CiteDict@{Cite\-Dict}}
+\subsubsection[{is\-Empty}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_cite_dict_a479432127ee77145cc19d6a2d1590821}
+return T\-R\-U\-E if there are no citations. Only valid after calling resolve() \hypertarget{class_cite_dict_aadd2b1f13a145a6d369a274929f862c6}{\index{Cite\-Dict@{Cite\-Dict}!write\-Latex\-Bibliography@{write\-Latex\-Bibliography}}
+\index{write\-Latex\-Bibliography@{write\-Latex\-Bibliography}!CiteDict@{Cite\-Dict}}
+\subsubsection[{write\-Latex\-Bibliography}]{\setlength{\rightskip}{0pt plus 5cm}void write\-Latex\-Bibliography (
+\begin{DoxyParamCaption}
+\item[{{\bf F\-Text\-Stream} \&}]{t}
+\end{DoxyParamCaption}
+)}}\label{class_cite_dict_aadd2b1f13a145a6d369a274929f862c6}
+writes the latex code for the standard bibliography section to text stream {\itshape t} 
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/src/cite.\-h\item 
+C\-:/\-Users/teste/git/doxygen/src/cite.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,538 @@
+\hypertarget{class_entry}{\section{Referência à classe Entry}
+\label{class_entry}\index{Entry@{Entry}}
+}
+
+
+{\ttfamily \#include $<$entry.\-h$>$}
+
+\subsection*{Tipos Públicos}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_entry_a6ff2d3555e17f89856c76b840772d461}{Sections} \{ \\*
+{\bfseries C\-L\-A\-S\-S\-\_\-\-S\-E\-C} = 0x00000001, 
+{\bfseries N\-A\-M\-E\-S\-P\-A\-C\-E\-\_\-\-S\-E\-C} = 0x00000010, 
+{\bfseries C\-O\-M\-P\-O\-U\-N\-D\-\_\-\-M\-A\-S\-K} = C\-L\-A\-S\-S\-\_\-\-S\-E\-C, 
+{\bfseries S\-C\-O\-P\-E\-\_\-\-M\-A\-S\-K} = C\-O\-M\-P\-O\-U\-N\-D\-\_\-\-M\-A\-S\-K $|$ N\-A\-M\-E\-S\-P\-A\-C\-E\-\_\-\-S\-E\-C, 
+\\*
+{\bfseries C\-L\-A\-S\-S\-D\-O\-C\-\_\-\-S\-E\-C} = 0x00000800, 
+{\bfseries S\-T\-R\-U\-C\-T\-D\-O\-C\-\_\-\-S\-E\-C} = 0x00001000, 
+{\bfseries U\-N\-I\-O\-N\-D\-O\-C\-\_\-\-S\-E\-C} = 0x00002000, 
+{\bfseries E\-X\-C\-E\-P\-T\-I\-O\-N\-D\-O\-C\-\_\-\-S\-E\-C} = 0x00004000, 
+\\*
+{\bfseries N\-A\-M\-E\-S\-P\-A\-C\-E\-D\-O\-C\-\_\-\-S\-E\-C} = 0x00008000, 
+{\bfseries I\-N\-T\-E\-R\-F\-A\-C\-E\-D\-O\-C\-\_\-\-S\-E\-C} = 0x00010000, 
+{\bfseries P\-R\-O\-T\-O\-C\-O\-L\-D\-O\-C\-\_\-\-S\-E\-C} = 0x00020000, 
+{\bfseries C\-A\-T\-E\-G\-O\-R\-Y\-D\-O\-C\-\_\-\-S\-E\-C} = 0x00040000, 
+\\*
+{\bfseries S\-E\-R\-V\-I\-C\-E\-D\-O\-C\-\_\-\-S\-E\-C} = 0x00080000, 
+{\bfseries S\-I\-N\-G\-L\-E\-T\-O\-N\-D\-O\-C\-\_\-\-S\-E\-C} = 0x00100000, 
+{\bfseries C\-O\-M\-P\-O\-U\-N\-D\-D\-O\-C\-\_\-\-M\-A\-S\-K}, 
+{\bfseries S\-O\-U\-R\-C\-E\-\_\-\-S\-E\-C} = 0x00400000, 
+\\*
+{\bfseries H\-E\-A\-D\-E\-R\-\_\-\-S\-E\-C} = 0x00800000, 
+{\bfseries F\-I\-L\-E\-\_\-\-M\-A\-S\-K} = S\-O\-U\-R\-C\-E\-\_\-\-S\-E\-C $|$ H\-E\-A\-D\-E\-R\-\_\-\-S\-E\-C, 
+{\bfseries E\-N\-U\-M\-D\-O\-C\-\_\-\-S\-E\-C} = 0x01000000, 
+{\bfseries E\-N\-U\-M\-\_\-\-S\-E\-C} = 0x02000000, 
+\\*
+{\bfseries E\-M\-P\-T\-Y\-\_\-\-S\-E\-C} = 0x03000000, 
+{\bfseries P\-A\-G\-E\-D\-O\-C\-\_\-\-S\-E\-C} = 0x04000000, 
+{\bfseries V\-A\-R\-I\-A\-B\-L\-E\-\_\-\-S\-E\-C} = 0x05000000, 
+{\bfseries F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-S\-E\-C} = 0x06000000, 
+\\*
+{\bfseries T\-Y\-P\-E\-D\-E\-F\-\_\-\-S\-E\-C} = 0x07000000, 
+{\bfseries M\-E\-M\-B\-E\-R\-D\-O\-C\-\_\-\-S\-E\-C} = 0x08000000, 
+{\bfseries O\-V\-E\-R\-L\-O\-A\-D\-D\-O\-C\-\_\-\-S\-E\-C} = 0x09000000, 
+{\bfseries E\-X\-A\-M\-P\-L\-E\-\_\-\-S\-E\-C} = 0x0a000000, 
+\\*
+{\bfseries V\-A\-R\-I\-A\-B\-L\-E\-D\-O\-C\-\_\-\-S\-E\-C} = 0x0b000000, 
+{\bfseries F\-I\-L\-E\-D\-O\-C\-\_\-\-S\-E\-C} = 0x0c000000, 
+{\bfseries D\-E\-F\-I\-N\-E\-D\-O\-C\-\_\-\-S\-E\-C} = 0x0d000000, 
+{\bfseries I\-N\-C\-L\-U\-D\-E\-\_\-\-S\-E\-C} = 0x0e000000, 
+\\*
+{\bfseries D\-E\-F\-I\-N\-E\-\_\-\-S\-E\-C} = 0x0f000000, 
+{\bfseries G\-R\-O\-U\-P\-D\-O\-C\-\_\-\-S\-E\-C} = 0x10000000, 
+{\bfseries U\-S\-I\-N\-G\-D\-I\-R\-\_\-\-S\-E\-C} = 0x11000000, 
+{\bfseries M\-A\-I\-N\-P\-A\-G\-E\-D\-O\-C\-\_\-\-S\-E\-C} = 0x12000000, 
+\\*
+{\bfseries M\-E\-M\-B\-E\-R\-G\-R\-P\-\_\-\-S\-E\-C} = 0x13000000, 
+{\bfseries U\-S\-I\-N\-G\-D\-E\-C\-L\-\_\-\-S\-E\-C} = 0x14000000, 
+{\bfseries P\-A\-C\-K\-A\-G\-E\-\_\-\-S\-E\-C} = 0x15000000, 
+{\bfseries P\-A\-C\-K\-A\-G\-E\-D\-O\-C\-\_\-\-S\-E\-C} = 0x16000000, 
+\\*
+{\bfseries O\-B\-J\-C\-I\-M\-P\-L\-\_\-\-S\-E\-C} = 0x17000000, 
+{\bfseries D\-I\-R\-D\-O\-C\-\_\-\-S\-E\-C} = 0x18000000, 
+{\bfseries E\-X\-P\-O\-R\-T\-E\-D\-\_\-\-I\-N\-T\-E\-R\-F\-A\-C\-E\-\_\-\-S\-E\-C} = 0x19000000, 
+{\bfseries I\-N\-C\-L\-U\-D\-E\-D\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-S\-E\-C} = 0x1\-A000000
+ \}
+\item 
+enum \hyperlink{class_entry_ac51ac416856cada4f7237ba7da7f3938}{Group\-Doc\-Type} \{ \hyperlink{class_entry_ac51ac416856cada4f7237ba7da7f3938a0ff533df76bb839903674baa032f7954}{G\-R\-O\-U\-P\-D\-O\-C\-\_\-\-N\-O\-R\-M\-A\-L}, 
+\hyperlink{class_entry_ac51ac416856cada4f7237ba7da7f3938a78841583472139a970c65120decf9ddf}{G\-R\-O\-U\-P\-D\-O\-C\-\_\-\-A\-D\-D}, 
+\hyperlink{class_entry_ac51ac416856cada4f7237ba7da7f3938ab4cca3a9646f958088c5ed9a5799cf4e}{G\-R\-O\-U\-P\-D\-O\-C\-\_\-\-W\-E\-A\-K}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_entry_a81e72a4ed093c655d6c927ce5aad613a}{{\bfseries Entry} (const \hyperlink{class_entry}{Entry} \&)}\label{class_entry_a81e72a4ed093c655d6c927ce5aad613a}
+
+\item 
+int \hyperlink{class_entry_a3c4029b904a61a9873e6d12785ce19a1}{get\-Size} ()
+\item 
+\hypertarget{class_entry_afa7d682919e0bf1789926d35c2623275}{void {\bfseries add\-Special\-List\-Item} (const char $\ast$list\-Name, int index)}\label{class_entry_afa7d682919e0bf1789926d35c2623275}
+
+\item 
+\hypertarget{class_entry_a2f8fb900ff4b8719653c068a5ee56435}{void {\bfseries create\-Navigation\-Index} (\hyperlink{class_entry_nav}{Entry\-Nav} $\ast$root\-Nav, \hyperlink{class_file_storage}{File\-Storage} $\ast$storage, \hyperlink{class_file_def}{File\-Def} $\ast$fd)}\label{class_entry_a2f8fb900ff4b8719653c068a5ee56435}
+
+\item 
+\hypertarget{class_entry_ad8755d91fef6458f89ad39aa0e1b8af0}{void {\bfseries set\-Parent} (\hyperlink{class_entry}{Entry} $\ast$\hyperlink{class_entry_a91b186338f7942fb250257a72cc4f24d}{parent})}\label{class_entry_ad8755d91fef6458f89ad39aa0e1b8af0}
+
+\item 
+\hyperlink{class_entry}{Entry} $\ast$ \hyperlink{class_entry_a91b186338f7942fb250257a72cc4f24d}{parent} () const 
+\item 
+const \hyperlink{class_q_list}{Q\-List}$<$ \hyperlink{class_entry}{Entry} $>$ $\ast$ \hyperlink{class_entry_ada9c959bb88621579f8b3efe4fd309b0}{children} () const 
+\item 
+void \hyperlink{class_entry_aa73476091529bb28701f01b8256281f7}{add\-Sub\-Entry} (\hyperlink{class_entry}{Entry} $\ast$e)
+\item 
+\hyperlink{class_entry}{Entry} $\ast$ \hyperlink{class_entry_a2bb4eeecfb6d1f565b27d83099f0ea4e}{remove\-Sub\-Entry} (\hyperlink{class_entry}{Entry} $\ast$e)
+\item 
+void \hyperlink{class_entry_ad20897c5c8bd47f5d4005989bead0e55}{reset} ()
+\item 
+void \hyperlink{class_entry_a7724557fcfa85c6aa15bc9cc6d5353f5}{marshall} (\hyperlink{class_storage_intf}{Storage\-Intf} $\ast$)
+\item 
+void \hyperlink{class_entry_a7d8a1be06f5f14602fcdab73352224cd}{unmarshall} (\hyperlink{class_storage_intf}{Storage\-Intf} $\ast$)
+\item 
+\hypertarget{class_entry_aca769d162f9505de5608a2eb9c3086d6}{const char $\ast$ \hyperlink{class_entry_aca769d162f9505de5608a2eb9c3086d6}{group\-Doc\-Cmd} () const }\label{class_entry_aca769d162f9505de5608a2eb9c3086d6}
+
+\begin{DoxyCompactList}\small\item\em return the command name used to define G\-R\-O\-U\-P\-D\-O\-C\-\_\-\-S\-E\-C \end{DoxyCompactList}\item 
+\hypertarget{class_entry_a5db3115a83b3912e36706a4270871229}{\hyperlink{struct_grouping_ae0be00a2b5dfbbc6c4558e88dddc9d81}{Grouping\-::\-Group\-Pri\-\_\-t} {\bfseries grouping\-Pri} () const }\label{class_entry_a5db3115a83b3912e36706a4270871229}
+
+\end{DoxyCompactItemize}
+\subsection*{Campos de Dados}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_entry_ab217561ce555727ff977aa053656a686}{int \hyperlink{class_entry_ab217561ce555727ff977aa053656a686}{section}}\label{class_entry_ab217561ce555727ff977aa053656a686}
+
+\begin{DoxyCompactList}\small\item\em entry type (see Sections); \end{DoxyCompactList}\item 
+\hypertarget{class_entry_a0d4463771e24026060ae68b04822d7af}{\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_entry_a0d4463771e24026060ae68b04822d7af}{type}}\label{class_entry_a0d4463771e24026060ae68b04822d7af}
+
+\begin{DoxyCompactList}\small\item\em member type \end{DoxyCompactList}\item 
+\hypertarget{class_entry_adc0097c7bd1e61ad32058fcde425bc7a}{\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_entry_adc0097c7bd1e61ad32058fcde425bc7a}{name}}\label{class_entry_adc0097c7bd1e61ad32058fcde425bc7a}
+
+\begin{DoxyCompactList}\small\item\em member name \end{DoxyCompactList}\item 
+\hypertarget{class_entry_abb1162dded11db5cb67c8ce3d52ec4e4}{\hyperlink{struct_tag_info}{Tag\-Info} $\ast$ \hyperlink{class_entry_abb1162dded11db5cb67c8ce3d52ec4e4}{tag\-Info}}\label{class_entry_abb1162dded11db5cb67c8ce3d52ec4e4}
+
+\begin{DoxyCompactList}\small\item\em tag file info \end{DoxyCompactList}\item 
+\hypertarget{class_entry_aaadb86b22caf2b07f0b45b35bfdbe25f}{\hyperlink{types_8h_a90e352184df58cd09455fe9996cd4ded}{Protection} \hyperlink{class_entry_aaadb86b22caf2b07f0b45b35bfdbe25f}{protection}}\label{class_entry_aaadb86b22caf2b07f0b45b35bfdbe25f}
+
+\begin{DoxyCompactList}\small\item\em class protection \end{DoxyCompactList}\item 
+\hypertarget{class_entry_a33ee87c9268990e6e381e2b622a3a330}{\hyperlink{types_8h_a0872178db42722c310fe6117189ed441}{Method\-Types} \hyperlink{class_entry_a33ee87c9268990e6e381e2b622a3a330}{mtype}}\label{class_entry_a33ee87c9268990e6e381e2b622a3a330}
+
+\begin{DoxyCompactList}\small\item\em signal, slot, (dcop) method, or property? \end{DoxyCompactList}\item 
+\hypertarget{class_entry_ab185cff582e0684a926b4da23bca207d}{uint64 \hyperlink{class_entry_ab185cff582e0684a926b4da23bca207d}{spec}}\label{class_entry_ab185cff582e0684a926b4da23bca207d}
+
+\begin{DoxyCompactList}\small\item\em class/member specifiers \end{DoxyCompactList}\item 
+\hypertarget{class_entry_ace9aa92b66f9f1477ec56188a77416ee}{int \hyperlink{class_entry_ace9aa92b66f9f1477ec56188a77416ee}{init\-Lines}}\label{class_entry_ace9aa92b66f9f1477ec56188a77416ee}
+
+\begin{DoxyCompactList}\small\item\em define/variable initializer lines to show \end{DoxyCompactList}\item 
+\hypertarget{class_entry_a56b4ed32e2ef0fbae76b125d7ad98acd}{bool \hyperlink{class_entry_a56b4ed32e2ef0fbae76b125d7ad98acd}{stat}}\label{class_entry_a56b4ed32e2ef0fbae76b125d7ad98acd}
+
+\begin{DoxyCompactList}\small\item\em static ? \end{DoxyCompactList}\item 
+\hypertarget{class_entry_aff7273087cbd5150e8a1d35121b767b5}{bool \hyperlink{class_entry_aff7273087cbd5150e8a1d35121b767b5}{explicit\-External}}\label{class_entry_aff7273087cbd5150e8a1d35121b767b5}
+
+\begin{DoxyCompactList}\small\item\em explicitly defined as external? \end{DoxyCompactList}\item 
+\hypertarget{class_entry_a98b3155ab216f9fbf72c95d6c22bdeb5}{bool \hyperlink{class_entry_a98b3155ab216f9fbf72c95d6c22bdeb5}{proto}}\label{class_entry_a98b3155ab216f9fbf72c95d6c22bdeb5}
+
+\begin{DoxyCompactList}\small\item\em prototype ? \end{DoxyCompactList}\item 
+\hypertarget{class_entry_a6c0b6dfd8da3027f83dfdbfeffce7706}{bool \hyperlink{class_entry_a6c0b6dfd8da3027f83dfdbfeffce7706}{sub\-Grouping}}\label{class_entry_a6c0b6dfd8da3027f83dfdbfeffce7706}
+
+\begin{DoxyCompactList}\small\item\em automatically group class members? \end{DoxyCompactList}\item 
+\hypertarget{class_entry_a96821a926ce09ac135f980b6b23e82d7}{bool \hyperlink{class_entry_a96821a926ce09ac135f980b6b23e82d7}{call\-Graph}}\label{class_entry_a96821a926ce09ac135f980b6b23e82d7}
+
+\begin{DoxyCompactList}\small\item\em do we need to draw the call graph? \end{DoxyCompactList}\item 
+\hypertarget{class_entry_af314ff2b6a29ca01c32849ae6e65d4d6}{bool \hyperlink{class_entry_af314ff2b6a29ca01c32849ae6e65d4d6}{caller\-Graph}}\label{class_entry_af314ff2b6a29ca01c32849ae6e65d4d6}
+
+\begin{DoxyCompactList}\small\item\em do we need to draw the caller graph? \end{DoxyCompactList}\item 
+\hypertarget{class_entry_aa05b4729c780621416429c6aac10fccf}{\hyperlink{types_8h_ab16236bdd10ddf4d73a9847350f0017e}{Specifier} \hyperlink{class_entry_aa05b4729c780621416429c6aac10fccf}{virt}}\label{class_entry_aa05b4729c780621416429c6aac10fccf}
+
+\begin{DoxyCompactList}\small\item\em virtualness of the entry \end{DoxyCompactList}\item 
+\hypertarget{class_entry_a5691dacbac7b651cd43288adc0d0328b}{\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_entry_a5691dacbac7b651cd43288adc0d0328b}{args}}\label{class_entry_a5691dacbac7b651cd43288adc0d0328b}
+
+\begin{DoxyCompactList}\small\item\em member argument string \end{DoxyCompactList}\item 
+\hypertarget{class_entry_a3bef1412e2350a4b21ad3fcecb18771a}{\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_entry_a3bef1412e2350a4b21ad3fcecb18771a}{bitfields}}\label{class_entry_a3bef1412e2350a4b21ad3fcecb18771a}
+
+\begin{DoxyCompactList}\small\item\em member's bit fields \end{DoxyCompactList}\item 
+\hypertarget{class_entry_ab7d5b9036bd044781194964d2dfd59bd}{\hyperlink{class_argument_list}{Argument\-List} $\ast$ \hyperlink{class_entry_ab7d5b9036bd044781194964d2dfd59bd}{arg\-List}}\label{class_entry_ab7d5b9036bd044781194964d2dfd59bd}
+
+\begin{DoxyCompactList}\small\item\em member arguments as a list \end{DoxyCompactList}\item 
+\hypertarget{class_entry_ae5ebd428a5652b1bd0cf92f0d98618bf}{\hyperlink{class_q_list}{Q\-List}$<$ \hyperlink{class_argument_list}{Argument\-List} $>$ $\ast$ \hyperlink{class_entry_ae5ebd428a5652b1bd0cf92f0d98618bf}{t\-Arg\-Lists}}\label{class_entry_ae5ebd428a5652b1bd0cf92f0d98618bf}
+
+\begin{DoxyCompactList}\small\item\em template argument declarations \end{DoxyCompactList}\item 
+\hypertarget{class_entry_adf5793d76eb2b16815a8017bed81468c}{\hyperlink{class_q_g_string}{Q\-G\-String} \hyperlink{class_entry_adf5793d76eb2b16815a8017bed81468c}{program}}\label{class_entry_adf5793d76eb2b16815a8017bed81468c}
+
+\begin{DoxyCompactList}\small\item\em the program text \end{DoxyCompactList}\item 
+\hypertarget{class_entry_a5efc3fc94544cf734c02ea402c536238}{\hyperlink{class_q_g_string}{Q\-G\-String} \hyperlink{class_entry_a5efc3fc94544cf734c02ea402c536238}{initializer}}\label{class_entry_a5efc3fc94544cf734c02ea402c536238}
+
+\begin{DoxyCompactList}\small\item\em initial value (for variables) \end{DoxyCompactList}\item 
+\hypertarget{class_entry_acfe66de2209d5fd9ea9f104c3062456b}{\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_entry_acfe66de2209d5fd9ea9f104c3062456b}{include\-File}}\label{class_entry_acfe66de2209d5fd9ea9f104c3062456b}
+
+\begin{DoxyCompactList}\small\item\em include file (2 arg of \textbackslash{}class, must be unique) \end{DoxyCompactList}\item 
+\hypertarget{class_entry_ab79d462c125865b06a1d6f9ee3e66260}{\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_entry_ab79d462c125865b06a1d6f9ee3e66260}{include\-Name}}\label{class_entry_ab79d462c125865b06a1d6f9ee3e66260}
+
+\begin{DoxyCompactList}\small\item\em include name (3 arg of \textbackslash{}class) \end{DoxyCompactList}\item 
+\hypertarget{class_entry_a9910424bf5401d657c3b3fdff6fcc152}{\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_entry_a9910424bf5401d657c3b3fdff6fcc152}{doc}}\label{class_entry_a9910424bf5401d657c3b3fdff6fcc152}
+
+\begin{DoxyCompactList}\small\item\em documentation block (partly parsed) \end{DoxyCompactList}\item 
+\hypertarget{class_entry_a6abf8fcedd015c9c2e235d332d2bdb9b}{int \hyperlink{class_entry_a6abf8fcedd015c9c2e235d332d2bdb9b}{doc\-Line}}\label{class_entry_a6abf8fcedd015c9c2e235d332d2bdb9b}
+
+\begin{DoxyCompactList}\small\item\em line number at which the documentation was found \end{DoxyCompactList}\item 
+\hypertarget{class_entry_a9e442ea1f041f60c49f78a7716ef5e20}{\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_entry_a9e442ea1f041f60c49f78a7716ef5e20}{doc\-File}}\label{class_entry_a9e442ea1f041f60c49f78a7716ef5e20}
+
+\begin{DoxyCompactList}\small\item\em file in which the documentation was found \end{DoxyCompactList}\item 
+\hypertarget{class_entry_ae58e255b2a13ba38c9d7cbe225ed91cc}{\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_entry_ae58e255b2a13ba38c9d7cbe225ed91cc}{brief}}\label{class_entry_ae58e255b2a13ba38c9d7cbe225ed91cc}
+
+\begin{DoxyCompactList}\small\item\em brief description (doc block) \end{DoxyCompactList}\item 
+\hypertarget{class_entry_a6391b011b6da7907bebc9c8cee6b2754}{int \hyperlink{class_entry_a6391b011b6da7907bebc9c8cee6b2754}{brief\-Line}}\label{class_entry_a6391b011b6da7907bebc9c8cee6b2754}
+
+\begin{DoxyCompactList}\small\item\em line number at which the brief desc. was found \end{DoxyCompactList}\item 
+\hypertarget{class_entry_af327d9fd2f66ee986a26518240cae024}{\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_entry_af327d9fd2f66ee986a26518240cae024}{brief\-File}}\label{class_entry_af327d9fd2f66ee986a26518240cae024}
+
+\begin{DoxyCompactList}\small\item\em file in which the brief desc. was found \end{DoxyCompactList}\item 
+\hypertarget{class_entry_a40e93805b4cee362f6244037609e8fcd}{\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_entry_a40e93805b4cee362f6244037609e8fcd}{inbody\-Docs}}\label{class_entry_a40e93805b4cee362f6244037609e8fcd}
+
+\begin{DoxyCompactList}\small\item\em documentation inside the body of a function \end{DoxyCompactList}\item 
+\hypertarget{class_entry_a4e3cb6f22c256238cb85a53b53b58ecc}{int \hyperlink{class_entry_a4e3cb6f22c256238cb85a53b53b58ecc}{inbody\-Line}}\label{class_entry_a4e3cb6f22c256238cb85a53b53b58ecc}
+
+\begin{DoxyCompactList}\small\item\em line number at which the body doc was found \end{DoxyCompactList}\item 
+\hypertarget{class_entry_a1ee854f4b1e91af928cf49d00b3f757c}{\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_entry_a1ee854f4b1e91af928cf49d00b3f757c}{inbody\-File}}\label{class_entry_a1ee854f4b1e91af928cf49d00b3f757c}
+
+\begin{DoxyCompactList}\small\item\em file in which the body doc was found \end{DoxyCompactList}\item 
+\hypertarget{class_entry_a3f1236e1519f2053aa7f6852a2d10c8a}{\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_entry_a3f1236e1519f2053aa7f6852a2d10c8a}{relates}}\label{class_entry_a3f1236e1519f2053aa7f6852a2d10c8a}
+
+\begin{DoxyCompactList}\small\item\em related class (doc block) \end{DoxyCompactList}\item 
+\hypertarget{class_entry_a8ea807048e777094c808256e2fbf3775}{\hyperlink{types_8h_aa370e9ca1d3ff266cab92689bcc37d9e}{Relates\-Type} \hyperlink{class_entry_a8ea807048e777094c808256e2fbf3775}{relates\-Type}}\label{class_entry_a8ea807048e777094c808256e2fbf3775}
+
+\begin{DoxyCompactList}\small\item\em how relates is handled \end{DoxyCompactList}\item 
+\hypertarget{class_entry_abea14364ae37e59a4283801a3e825fac}{\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_entry_abea14364ae37e59a4283801a3e825fac}{read}}\label{class_entry_abea14364ae37e59a4283801a3e825fac}
+
+\begin{DoxyCompactList}\small\item\em property read accessor \end{DoxyCompactList}\item 
+\hypertarget{class_entry_a73384a275627dc3584d6924c03fba6b2}{\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_entry_a73384a275627dc3584d6924c03fba6b2}{write}}\label{class_entry_a73384a275627dc3584d6924c03fba6b2}
+
+\begin{DoxyCompactList}\small\item\em property write accessor \end{DoxyCompactList}\item 
+\hypertarget{class_entry_adea7bafd4e6307efe73aafc679b304f9}{\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_entry_adea7bafd4e6307efe73aafc679b304f9}{inside}}\label{class_entry_adea7bafd4e6307efe73aafc679b304f9}
+
+\begin{DoxyCompactList}\small\item\em name of the class in which documents are found \end{DoxyCompactList}\item 
+\hypertarget{class_entry_a280291809e546dd34aba1403610c285a}{\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_entry_a280291809e546dd34aba1403610c285a}{exception}}\label{class_entry_a280291809e546dd34aba1403610c285a}
+
+\begin{DoxyCompactList}\small\item\em throw specification \end{DoxyCompactList}\item 
+\hypertarget{class_entry_af23889e5103d8fe74c2e27e379c13b7c}{\hyperlink{class_argument_list}{Argument\-List} $\ast$ \hyperlink{class_entry_af23889e5103d8fe74c2e27e379c13b7c}{type\-Constr}}\label{class_entry_af23889e5103d8fe74c2e27e379c13b7c}
+
+\begin{DoxyCompactList}\small\item\em where clause (\hyperlink{class_c}{C}\#) for type constraints \end{DoxyCompactList}\item 
+\hypertarget{class_entry_a65f510d2097d6d763dbfe0d9d338985c}{int \hyperlink{class_entry_a65f510d2097d6d763dbfe0d9d338985c}{body\-Line}}\label{class_entry_a65f510d2097d6d763dbfe0d9d338985c}
+
+\begin{DoxyCompactList}\small\item\em line number of the definition in the source \end{DoxyCompactList}\item 
+\hypertarget{class_entry_a525bd36b30664a88951a5ddaa21b716d}{int \hyperlink{class_entry_a525bd36b30664a88951a5ddaa21b716d}{end\-Body\-Line}}\label{class_entry_a525bd36b30664a88951a5ddaa21b716d}
+
+\begin{DoxyCompactList}\small\item\em line number where the definition ends \end{DoxyCompactList}\item 
+\hypertarget{class_entry_ad0a0e82223e5b37e410022d8ffe6ec3b}{int \hyperlink{class_entry_ad0a0e82223e5b37e410022d8ffe6ec3b}{m\-Grp\-Id}}\label{class_entry_ad0a0e82223e5b37e410022d8ffe6ec3b}
+
+\begin{DoxyCompactList}\small\item\em member group id \end{DoxyCompactList}\item 
+\hypertarget{class_entry_a15940f265602de9ceb62a5aa0b8cd878}{\hyperlink{class_q_list}{Q\-List}$<$ \hyperlink{struct_base_info}{Base\-Info} $>$ $\ast$ \hyperlink{class_entry_a15940f265602de9ceb62a5aa0b8cd878}{extends}}\label{class_entry_a15940f265602de9ceb62a5aa0b8cd878}
+
+\begin{DoxyCompactList}\small\item\em list of base classes \end{DoxyCompactList}\item 
+\hypertarget{class_entry_ada3048eb609f8d3206b28001468be458}{\hyperlink{class_q_list}{Q\-List}$<$ \hyperlink{struct_grouping}{Grouping} $>$ $\ast$ \hyperlink{class_entry_ada3048eb609f8d3206b28001468be458}{groups}}\label{class_entry_ada3048eb609f8d3206b28001468be458}
+
+\begin{DoxyCompactList}\small\item\em list of groups this entry belongs to \end{DoxyCompactList}\item 
+\hypertarget{class_entry_afa8445c98ad707c1defc8261c9ce0b37}{\hyperlink{class_q_list}{Q\-List}$<$ \hyperlink{struct_section_info}{Section\-Info} $>$ $\ast$ \hyperlink{class_entry_afa8445c98ad707c1defc8261c9ce0b37}{anchors}}\label{class_entry_afa8445c98ad707c1defc8261c9ce0b37}
+
+\begin{DoxyCompactList}\small\item\em list of anchors defined in this entry \end{DoxyCompactList}\item 
+\hypertarget{class_entry_abb9cd3e430c4eaf05aa259fa96f32305}{\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_entry_abb9cd3e430c4eaf05aa259fa96f32305}{file\-Name}}\label{class_entry_abb9cd3e430c4eaf05aa259fa96f32305}
+
+\begin{DoxyCompactList}\small\item\em file this entry was extracted from \end{DoxyCompactList}\item 
+\hypertarget{class_entry_aae69f615454d4cce6fddf760c20e9eb2}{int \hyperlink{class_entry_aae69f615454d4cce6fddf760c20e9eb2}{start\-Line}}\label{class_entry_aae69f615454d4cce6fddf760c20e9eb2}
+
+\begin{DoxyCompactList}\small\item\em start line of entry in the source \end{DoxyCompactList}\item 
+\hypertarget{class_entry_a812398f271aebf690d281beac813fd64}{int \hyperlink{class_entry_a812398f271aebf690d281beac813fd64}{start\-Column}}\label{class_entry_a812398f271aebf690d281beac813fd64}
+
+\begin{DoxyCompactList}\small\item\em start column of entry in the source \end{DoxyCompactList}\item 
+\hypertarget{class_entry_ab7e21392b0b15c2488254deb7a88ae43}{\hyperlink{class_q_list}{Q\-List}$<$ \hyperlink{struct_list_item_info}{List\-Item\-Info} $>$ $\ast$ \hyperlink{class_entry_ab7e21392b0b15c2488254deb7a88ae43}{sli}}\label{class_entry_ab7e21392b0b15c2488254deb7a88ae43}
+
+\begin{DoxyCompactList}\small\item\em special lists (test/todo/bug/deprecated/..) this entry is in \end{DoxyCompactList}\item 
+\hypertarget{class_entry_a8fb5884a6d7ef3c2caf306ee89a7f79e}{\hyperlink{types_8h_a9974623ce72fc23df5d64426b9178bf2}{Src\-Lang\-Ext} \hyperlink{class_entry_a8fb5884a6d7ef3c2caf306ee89a7f79e}{lang}}\label{class_entry_a8fb5884a6d7ef3c2caf306ee89a7f79e}
+
+\begin{DoxyCompactList}\small\item\em programming language in which this entry was found \end{DoxyCompactList}\item 
+\hypertarget{class_entry_a4aefc4965852492e2f02de00f05e6698}{bool \hyperlink{class_entry_a4aefc4965852492e2f02de00f05e6698}{hidden}}\label{class_entry_a4aefc4965852492e2f02de00f05e6698}
+
+\begin{DoxyCompactList}\small\item\em does this represent an entity that is hidden from the output \end{DoxyCompactList}\item 
+\hypertarget{class_entry_a222a9730f2a9e6da0081d74932318d87}{bool \hyperlink{class_entry_a222a9730f2a9e6da0081d74932318d87}{artificial}}\label{class_entry_a222a9730f2a9e6da0081d74932318d87}
+
+\begin{DoxyCompactList}\small\item\em Artificially introduced item. \end{DoxyCompactList}\item 
+\hypertarget{class_entry_a02055a6eda1a64400d38b3ed37ba9328}{\hyperlink{class_entry_ac51ac416856cada4f7237ba7da7f3938}{Group\-Doc\-Type} {\bfseries group\-Doc\-Type}}\label{class_entry_a02055a6eda1a64400d38b3ed37ba9328}
+
+\item 
+\hypertarget{class_entry_ac4d9c74c3dc66b375a8567a153a09fc2}{\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_entry_ac4d9c74c3dc66b375a8567a153a09fc2}{id}}\label{class_entry_ac4d9c74c3dc66b375a8567a153a09fc2}
+
+\begin{DoxyCompactList}\small\item\em libclang id \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos Públicos Estáticos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_entry_a2b0e47b5cd4ac15479171542157550af}{static const uint64 {\bfseries Template} = (1\-U\-L\-L$<$$<$0)}\label{class_entry_a2b0e47b5cd4ac15479171542157550af}
+
+\item 
+\hypertarget{class_entry_ad359a15af7b39222378e853f0fe4013b}{static const uint64 {\bfseries Generic} = (1\-U\-L\-L$<$$<$1)}\label{class_entry_ad359a15af7b39222378e853f0fe4013b}
+
+\item 
+\hypertarget{class_entry_a976e7874bcc453799a28ff08632dfa3f}{static const uint64 {\bfseries Ref} = (1\-U\-L\-L$<$$<$2)}\label{class_entry_a976e7874bcc453799a28ff08632dfa3f}
+
+\item 
+\hypertarget{class_entry_a7bac6187b40d57420acf709dbde30f4b}{static const uint64 {\bfseries Value} = (1\-U\-L\-L$<$$<$3)}\label{class_entry_a7bac6187b40d57420acf709dbde30f4b}
+
+\item 
+\hypertarget{class_entry_a2d78a9f33d664808c94018b3c263059b}{static const uint64 {\bfseries Interface} = (1\-U\-L\-L$<$$<$4)}\label{class_entry_a2d78a9f33d664808c94018b3c263059b}
+
+\item 
+\hypertarget{class_entry_ae23e2515fe8a737f60e9d563daeabb34}{static const uint64 {\bfseries Struct} = (1\-U\-L\-L$<$$<$5)}\label{class_entry_ae23e2515fe8a737f60e9d563daeabb34}
+
+\item 
+\hypertarget{class_entry_a87d0202cdb45a47ff533b24588975e7f}{static const uint64 {\bfseries Union} = (1\-U\-L\-L$<$$<$6)}\label{class_entry_a87d0202cdb45a47ff533b24588975e7f}
+
+\item 
+\hypertarget{class_entry_a88b35594247ef004425a1705ddaf9e6a}{static const uint64 {\bfseries Exception} = (1\-U\-L\-L$<$$<$7)}\label{class_entry_a88b35594247ef004425a1705ddaf9e6a}
+
+\item 
+\hypertarget{class_entry_a228b4fdcf3fe490bc5dfc7ac471d84d8}{static const uint64 {\bfseries Protocol} = (1\-U\-L\-L$<$$<$8)}\label{class_entry_a228b4fdcf3fe490bc5dfc7ac471d84d8}
+
+\item 
+\hypertarget{class_entry_a8553ff79a2eb448d989de84158be11f7}{static const uint64 {\bfseries Category} = (1\-U\-L\-L$<$$<$9)}\label{class_entry_a8553ff79a2eb448d989de84158be11f7}
+
+\item 
+\hypertarget{class_entry_adf493d36e7824c58e7c5d3e990ccb2db}{static const uint64 {\bfseries Sealed\-Class} = (1\-U\-L\-L$<$$<$10)}\label{class_entry_adf493d36e7824c58e7c5d3e990ccb2db}
+
+\item 
+\hypertarget{class_entry_afe4ac42aa2931726328b75e133127c1a}{static const uint64 {\bfseries Abstract\-Class} = (1\-U\-L\-L$<$$<$11)}\label{class_entry_afe4ac42aa2931726328b75e133127c1a}
+
+\item 
+\hypertarget{class_entry_ae9e0131ab0b75769cdf2e78ab49d2f1b}{static const uint64 {\bfseries Enum} = (1\-U\-L\-L$<$$<$12)}\label{class_entry_ae9e0131ab0b75769cdf2e78ab49d2f1b}
+
+\item 
+\hypertarget{class_entry_af169e4da0c224420f2b0932916f776b5}{static const uint64 {\bfseries Service} = (1\-U\-L\-L$<$$<$13)}\label{class_entry_af169e4da0c224420f2b0932916f776b5}
+
+\item 
+\hypertarget{class_entry_ae2beb99a622ad9c36683b722f7ce3f1f}{static const uint64 {\bfseries Singleton} = (1\-U\-L\-L$<$$<$14)}\label{class_entry_ae2beb99a622ad9c36683b722f7ce3f1f}
+
+\item 
+\hypertarget{class_entry_a48c58c5654f0e249c909f7469952da28}{static const uint64 {\bfseries Inline} = (1\-U\-L\-L$<$$<$24)}\label{class_entry_a48c58c5654f0e249c909f7469952da28}
+
+\item 
+\hypertarget{class_entry_a4a3e77dca7768313c9414811eaff7ec2}{static const uint64 {\bfseries Explicit} = (1\-U\-L\-L$<$$<$25)}\label{class_entry_a4a3e77dca7768313c9414811eaff7ec2}
+
+\item 
+\hypertarget{class_entry_a64a009c590753ba70702ea6ca136e7d4}{static const uint64 {\bfseries Mutable} = (1\-U\-L\-L$<$$<$26)}\label{class_entry_a64a009c590753ba70702ea6ca136e7d4}
+
+\item 
+\hypertarget{class_entry_a815f31685203283ae3efd08535f246ff}{static const uint64 {\bfseries Settable} = (1\-U\-L\-L$<$$<$27)}\label{class_entry_a815f31685203283ae3efd08535f246ff}
+
+\item 
+\hypertarget{class_entry_a60716f4c18230f0c525942d717ddc1a9}{static const uint64 {\bfseries Gettable} = (1\-U\-L\-L$<$$<$28)}\label{class_entry_a60716f4c18230f0c525942d717ddc1a9}
+
+\item 
+\hypertarget{class_entry_ad03632f35c9065e21a438a80e3f132bd}{static const uint64 {\bfseries Readable} = (1\-U\-L\-L$<$$<$29)}\label{class_entry_ad03632f35c9065e21a438a80e3f132bd}
+
+\item 
+\hypertarget{class_entry_ac27432292f9fe943794a08ca75adcb7f}{static const uint64 {\bfseries Writable} = (1\-U\-L\-L$<$$<$30)}\label{class_entry_ac27432292f9fe943794a08ca75adcb7f}
+
+\item 
+\hypertarget{class_entry_a4428b3fe059de0241a4ced90352f1b48}{static const uint64 {\bfseries Final} = (1\-U\-L\-L$<$$<$31)}\label{class_entry_a4428b3fe059de0241a4ced90352f1b48}
+
+\item 
+\hypertarget{class_entry_aa584f178f9face10dc1d5d790b96dcb5}{static const uint64 {\bfseries Abstract} = (1\-U\-L\-L$<$$<$32)}\label{class_entry_aa584f178f9face10dc1d5d790b96dcb5}
+
+\item 
+\hypertarget{class_entry_abcdd502e91eac117a635b51f7ed5b0cd}{static const uint64 {\bfseries Addable} = (1\-U\-L\-L$<$$<$33)}\label{class_entry_abcdd502e91eac117a635b51f7ed5b0cd}
+
+\item 
+\hypertarget{class_entry_a094d98fd6de6d0a7a1e8153e09d38fd3}{static const uint64 {\bfseries Removable} = (1\-U\-L\-L$<$$<$34)}\label{class_entry_a094d98fd6de6d0a7a1e8153e09d38fd3}
+
+\item 
+\hypertarget{class_entry_a65f63e50efa370d68e64e0acc5226aea}{static const uint64 {\bfseries Raisable} = (1\-U\-L\-L$<$$<$35)}\label{class_entry_a65f63e50efa370d68e64e0acc5226aea}
+
+\item 
+\hypertarget{class_entry_a80b8d1eb8fe7f4a2facaaab46860e238}{static const uint64 {\bfseries Override} = (1\-U\-L\-L$<$$<$36)}\label{class_entry_a80b8d1eb8fe7f4a2facaaab46860e238}
+
+\item 
+\hypertarget{class_entry_aef5749e3ed01ac73ab20a0e70333b53d}{static const uint64 {\bfseries New} = (1\-U\-L\-L$<$$<$37)}\label{class_entry_aef5749e3ed01ac73ab20a0e70333b53d}
+
+\item 
+\hypertarget{class_entry_a387ed35a765c7a28bffdd4ce07720532}{static const uint64 {\bfseries Sealed} = (1\-U\-L\-L$<$$<$38)}\label{class_entry_a387ed35a765c7a28bffdd4ce07720532}
+
+\item 
+\hypertarget{class_entry_aa574a05a8ab18400f14ecefde3d4a778}{static const uint64 {\bfseries Initonly} = (1\-U\-L\-L$<$$<$39)}\label{class_entry_aa574a05a8ab18400f14ecefde3d4a778}
+
+\item 
+\hypertarget{class_entry_a1323402c743aadde59a1f73175ce865c}{static const uint64 {\bfseries Optional} = (1\-U\-L\-L$<$$<$40)}\label{class_entry_a1323402c743aadde59a1f73175ce865c}
+
+\item 
+\hypertarget{class_entry_aa58fc110cd216a818832212682fc7a51}{static const uint64 {\bfseries Required} = (1\-U\-L\-L$<$$<$41)}\label{class_entry_aa58fc110cd216a818832212682fc7a51}
+
+\item 
+\hypertarget{class_entry_af0e79c69ed19fc9a9f5f840b2a364707}{static const uint64 {\bfseries Non\-Atomic} = (1\-U\-L\-L$<$$<$42)}\label{class_entry_af0e79c69ed19fc9a9f5f840b2a364707}
+
+\item 
+\hypertarget{class_entry_a4e82a183e0a7ac9b83ff735e2e423b01}{static const uint64 {\bfseries Copy} = (1\-U\-L\-L$<$$<$43)}\label{class_entry_a4e82a183e0a7ac9b83ff735e2e423b01}
+
+\item 
+\hypertarget{class_entry_a774a5ed06801b4c9486d2a581221ccf6}{static const uint64 {\bfseries Retain} = (1\-U\-L\-L$<$$<$44)}\label{class_entry_a774a5ed06801b4c9486d2a581221ccf6}
+
+\item 
+\hypertarget{class_entry_a1323e5a35a8f98e88ad9efce3ec4fb03}{static const uint64 {\bfseries Assign} = (1\-U\-L\-L$<$$<$45)}\label{class_entry_a1323e5a35a8f98e88ad9efce3ec4fb03}
+
+\item 
+\hypertarget{class_entry_a2456f0bdcde215139014d6fd67322809}{static const uint64 {\bfseries Strong} = (1\-U\-L\-L$<$$<$46)}\label{class_entry_a2456f0bdcde215139014d6fd67322809}
+
+\item 
+\hypertarget{class_entry_a6473ce0978e316c2323da5727c1da1b4}{static const uint64 {\bfseries Weak} = (1\-U\-L\-L$<$$<$47)}\label{class_entry_a6473ce0978e316c2323da5727c1da1b4}
+
+\item 
+\hypertarget{class_entry_a61bf7fa059ac0b1eb8c243bef3c5e5b6}{static const uint64 {\bfseries Unretained} = (1\-U\-L\-L$<$$<$48)}\label{class_entry_a61bf7fa059ac0b1eb8c243bef3c5e5b6}
+
+\item 
+\hypertarget{class_entry_aa1aec4360744c5de6187875757aca55d}{static const uint64 {\bfseries Alias} = (1\-U\-L\-L$<$$<$49)}\label{class_entry_aa1aec4360744c5de6187875757aca55d}
+
+\item 
+\hypertarget{class_entry_ad102a60ca7fc04ba3e974e58076e30a0}{static const uint64 {\bfseries Const\-Exp} = (1\-U\-L\-L$<$$<$50)}\label{class_entry_ad102a60ca7fc04ba3e974e58076e30a0}
+
+\item 
+\hypertarget{class_entry_a91674b60f1520366e44a48f57309f1cf}{static const uint64 {\bfseries Default} = (1\-U\-L\-L$<$$<$51)}\label{class_entry_a91674b60f1520366e44a48f57309f1cf}
+
+\item 
+\hypertarget{class_entry_a0cff8bb2f7efc049b59a65735b093cb3}{static const uint64 {\bfseries Delete} = (1\-U\-L\-L$<$$<$52)}\label{class_entry_a0cff8bb2f7efc049b59a65735b093cb3}
+
+\item 
+\hypertarget{class_entry_aa14389baa12c2800f010ed33b3fb04d1}{static const uint64 {\bfseries No\-Except} = (1\-U\-L\-L$<$$<$53)}\label{class_entry_aa14389baa12c2800f010ed33b3fb04d1}
+
+\item 
+\hypertarget{class_entry_a67d649daf5b928759597e1f52d5aa212}{static const uint64 {\bfseries Attribute} = (1\-U\-L\-L$<$$<$54)}\label{class_entry_a67d649daf5b928759597e1f52d5aa212}
+
+\item 
+\hypertarget{class_entry_afa75e8bcb10826642331314eba1f85d6}{static const uint64 {\bfseries Property} = (1\-U\-L\-L$<$$<$55)}\label{class_entry_afa75e8bcb10826642331314eba1f85d6}
+
+\item 
+\hypertarget{class_entry_acc065c94e57bcf994bb28a5ecba65fb8}{static const uint64 {\bfseries Readonly} = (1\-U\-L\-L$<$$<$56)}\label{class_entry_acc065c94e57bcf994bb28a5ecba65fb8}
+
+\item 
+\hypertarget{class_entry_adf9fb8196ee2db26a7b9a07897f2643c}{static const uint64 {\bfseries Bound} = (1\-U\-L\-L$<$$<$57)}\label{class_entry_adf9fb8196ee2db26a7b9a07897f2643c}
+
+\item 
+\hypertarget{class_entry_a3270eee7656c68d357ba98edf099d74e}{static const uint64 {\bfseries Constrained} = (1\-U\-L\-L$<$$<$58)}\label{class_entry_a3270eee7656c68d357ba98edf099d74e}
+
+\item 
+\hypertarget{class_entry_a7106fe96f7abc67a366bfbbd2e1ee850}{static const uint64 {\bfseries Transient} = (1\-U\-L\-L$<$$<$59)}\label{class_entry_a7106fe96f7abc67a366bfbbd2e1ee850}
+
+\item 
+\hypertarget{class_entry_a37ff3f5c63fef677986b82f4f528c116}{static const uint64 {\bfseries Maybe\-Void} = (1\-U\-L\-L$<$$<$60)}\label{class_entry_a37ff3f5c63fef677986b82f4f528c116}
+
+\item 
+\hypertarget{class_entry_aa225a5e178d805c02e80adb3f67490b6}{static const uint64 {\bfseries Maybe\-Default} = (1\-U\-L\-L$<$$<$61)}\label{class_entry_aa225a5e178d805c02e80adb3f67490b6}
+
+\item 
+\hypertarget{class_entry_a33ee40d8e6f015305a4d3559f18f56d9}{static const uint64 {\bfseries Maybe\-Ambiguous} = (1\-U\-L\-L$<$$<$62)}\label{class_entry_a33ee40d8e6f015305a4d3559f18f56d9}
+
+\item 
+\hypertarget{class_entry_a195b099e5245f59a8d7ef10cf78b1fcd}{static const uint64 {\bfseries Published} = (1\-U\-L\-L$<$$<$63)}\label{class_entry_a195b099e5245f59a8d7ef10cf78b1fcd}
+
+\item 
+\hypertarget{class_entry_a86cf672daa4e0ad11ad10efc894d19c8}{static int \hyperlink{class_entry_a86cf672daa4e0ad11ad10efc894d19c8}{num} =0}\label{class_entry_a86cf672daa4e0ad11ad10efc894d19c8}
+
+\begin{DoxyCompactList}\small\item\em counts the total number of entries \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+Represents an unstructured piece of information, about an entity found in the sources.
+
+parse\-Main() in scanner.\-l will generate a tree of these entries. 
+
+\subsection{Documentação das enumerações}
+\hypertarget{class_entry_ac51ac416856cada4f7237ba7da7f3938}{\index{Entry@{Entry}!Group\-Doc\-Type@{Group\-Doc\-Type}}
+\index{Group\-Doc\-Type@{Group\-Doc\-Type}!Entry@{Entry}}
+\subsubsection[{Group\-Doc\-Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Group\-Doc\-Type}}}\label{class_entry_ac51ac416856cada4f7237ba7da7f3938}
+\begin{Desc}
+\item[Valores da enumeração]\par
+\begin{description}
+\index{G\-R\-O\-U\-P\-D\-O\-C\-\_\-\-N\-O\-R\-M\-A\-L@{G\-R\-O\-U\-P\-D\-O\-C\-\_\-\-N\-O\-R\-M\-A\-L}!Entry@{Entry}}\index{Entry@{Entry}!G\-R\-O\-U\-P\-D\-O\-C\-\_\-\-N\-O\-R\-M\-A\-L@{G\-R\-O\-U\-P\-D\-O\-C\-\_\-\-N\-O\-R\-M\-A\-L}}\item[{\em 
+\hypertarget{class_entry_ac51ac416856cada4f7237ba7da7f3938a0ff533df76bb839903674baa032f7954}{G\-R\-O\-U\-P\-D\-O\-C\-\_\-\-N\-O\-R\-M\-A\-L}\label{class_entry_ac51ac416856cada4f7237ba7da7f3938a0ff533df76bb839903674baa032f7954}
+}]defgroup \index{G\-R\-O\-U\-P\-D\-O\-C\-\_\-\-A\-D\-D@{G\-R\-O\-U\-P\-D\-O\-C\-\_\-\-A\-D\-D}!Entry@{Entry}}\index{Entry@{Entry}!G\-R\-O\-U\-P\-D\-O\-C\-\_\-\-A\-D\-D@{G\-R\-O\-U\-P\-D\-O\-C\-\_\-\-A\-D\-D}}\item[{\em 
+\hypertarget{class_entry_ac51ac416856cada4f7237ba7da7f3938a78841583472139a970c65120decf9ddf}{G\-R\-O\-U\-P\-D\-O\-C\-\_\-\-A\-D\-D}\label{class_entry_ac51ac416856cada4f7237ba7da7f3938a78841583472139a970c65120decf9ddf}
+}]addgroup \index{G\-R\-O\-U\-P\-D\-O\-C\-\_\-\-W\-E\-A\-K@{G\-R\-O\-U\-P\-D\-O\-C\-\_\-\-W\-E\-A\-K}!Entry@{Entry}}\index{Entry@{Entry}!G\-R\-O\-U\-P\-D\-O\-C\-\_\-\-W\-E\-A\-K@{G\-R\-O\-U\-P\-D\-O\-C\-\_\-\-W\-E\-A\-K}}\item[{\em 
+\hypertarget{class_entry_ac51ac416856cada4f7237ba7da7f3938ab4cca3a9646f958088c5ed9a5799cf4e}{G\-R\-O\-U\-P\-D\-O\-C\-\_\-\-W\-E\-A\-K}\label{class_entry_ac51ac416856cada4f7237ba7da7f3938ab4cca3a9646f958088c5ed9a5799cf4e}
+}]weakgroup \end{description}
+\end{Desc}
+\hypertarget{class_entry_a6ff2d3555e17f89856c76b840772d461}{\index{Entry@{Entry}!Sections@{Sections}}
+\index{Sections@{Sections}!Entry@{Entry}}
+\subsubsection[{Sections}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Sections}}}\label{class_entry_a6ff2d3555e17f89856c76b840772d461}
+Kind of entries that are supported 
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_entry_aa73476091529bb28701f01b8256281f7}{\index{Entry@{Entry}!add\-Sub\-Entry@{add\-Sub\-Entry}}
+\index{add\-Sub\-Entry@{add\-Sub\-Entry}!Entry@{Entry}}
+\subsubsection[{add\-Sub\-Entry}]{\setlength{\rightskip}{0pt plus 5cm}void add\-Sub\-Entry (
+\begin{DoxyParamCaption}
+\item[{{\bf Entry} $\ast$}]{e}
+\end{DoxyParamCaption}
+)}}\label{class_entry_aa73476091529bb28701f01b8256281f7}
+Adds entry {\itshape e} as a child to this entry \hypertarget{class_entry_ada9c959bb88621579f8b3efe4fd309b0}{\index{Entry@{Entry}!children@{children}}
+\index{children@{children}!Entry@{Entry}}
+\subsubsection[{children}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Q\-List}$<${\bf Entry}$>$$\ast$ children (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_entry_ada9c959bb88621579f8b3efe4fd309b0}
+Returns the list of children for this \hyperlink{class_entry}{Entry} \begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_entry_aa73476091529bb28701f01b8256281f7}{add\-Sub\-Entry()} and \hyperlink{class_entry_a2bb4eeecfb6d1f565b27d83099f0ea4e}{remove\-Sub\-Entry()} 
+\end{DoxySeeAlso}
+\hypertarget{class_entry_a3c4029b904a61a9873e6d12785ce19a1}{\index{Entry@{Entry}!get\-Size@{get\-Size}}
+\index{get\-Size@{get\-Size}!Entry@{Entry}}
+\subsubsection[{get\-Size}]{\setlength{\rightskip}{0pt plus 5cm}int get\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_entry_a3c4029b904a61a9873e6d12785ce19a1}
+Returns the static size of the \hyperlink{class_entry}{Entry} (so excluding any dynamic memory) \hypertarget{class_entry_a7724557fcfa85c6aa15bc9cc6d5353f5}{\index{Entry@{Entry}!marshall@{marshall}}
+\index{marshall@{marshall}!Entry@{Entry}}
+\subsubsection[{marshall}]{\setlength{\rightskip}{0pt plus 5cm}void marshall (
+\begin{DoxyParamCaption}
+\item[{{\bf Storage\-Intf} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{class_entry_a7724557fcfa85c6aa15bc9cc6d5353f5}
+Serialize this entry to a persistent storage stream. \hypertarget{class_entry_a91b186338f7942fb250257a72cc4f24d}{\index{Entry@{Entry}!parent@{parent}}
+\index{parent@{parent}!Entry@{Entry}}
+\subsubsection[{parent}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Entry}$\ast$ parent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_entry_a91b186338f7942fb250257a72cc4f24d}
+Returns the parent for this \hyperlink{class_entry}{Entry} or 0 if this entry has no parent. \hypertarget{class_entry_a2bb4eeecfb6d1f565b27d83099f0ea4e}{\index{Entry@{Entry}!remove\-Sub\-Entry@{remove\-Sub\-Entry}}
+\index{remove\-Sub\-Entry@{remove\-Sub\-Entry}!Entry@{Entry}}
+\subsubsection[{remove\-Sub\-Entry}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Entry} $\ast$ remove\-Sub\-Entry (
+\begin{DoxyParamCaption}
+\item[{{\bf Entry} $\ast$}]{e}
+\end{DoxyParamCaption}
+)}}\label{class_entry_a2bb4eeecfb6d1f565b27d83099f0ea4e}
+Removes entry {\itshape e} from the list of children. Returns a pointer to the entry or 0 if the entry was not a child. Note the entry will not be deleted. \hypertarget{class_entry_ad20897c5c8bd47f5d4005989bead0e55}{\index{Entry@{Entry}!reset@{reset}}
+\index{reset@{reset}!Entry@{Entry}}
+\subsubsection[{reset}]{\setlength{\rightskip}{0pt plus 5cm}void reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_entry_ad20897c5c8bd47f5d4005989bead0e55}
+Restore the state of this \hyperlink{class_entry}{Entry} to the default value it has at construction time. \hypertarget{class_entry_a7d8a1be06f5f14602fcdab73352224cd}{\index{Entry@{Entry}!unmarshall@{unmarshall}}
+\index{unmarshall@{unmarshall}!Entry@{Entry}}
+\subsubsection[{unmarshall}]{\setlength{\rightskip}{0pt plus 5cm}void unmarshall (
+\begin{DoxyParamCaption}
+\item[{{\bf Storage\-Intf} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{class_entry_a7d8a1be06f5f14602fcdab73352224cd}
+Reinitialize this entry from a persistent storage stream. 
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/src/entry.\-h\item 
+C\-:/\-Users/teste/git/doxygen/src/entry.\-cpp\end{DoxyCompactItemize}

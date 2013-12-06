@@ -1,0 +1,72 @@
+\hypertarget{class_entry_nav}{\section{Referência à classe Entry\-Nav}
+\label{class_entry_nav}\index{Entry\-Nav@{Entry\-Nav}}
+}
+
+
+{\ttfamily \#include $<$entry.\-h$>$}
+
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_entry_nav_a941a76ca9bbfb2be735c0758ed69600d}{{\bfseries Entry\-Nav} (\hyperlink{class_entry_nav}{Entry\-Nav} $\ast$parent, \hyperlink{class_entry}{Entry} $\ast$e)}\label{class_entry_nav_a941a76ca9bbfb2be735c0758ed69600d}
+
+\item 
+\hypertarget{class_entry_nav_a2f6cf657944d22216f8fb8ef156254c2}{void {\bfseries add\-Child} (\hyperlink{class_entry_nav}{Entry\-Nav} $\ast$)}\label{class_entry_nav_a2f6cf657944d22216f8fb8ef156254c2}
+
+\item 
+\hypertarget{class_entry_nav_a01f0f9155d1a602479a171be7e85f250}{bool {\bfseries load\-Entry} (\hyperlink{class_file_storage}{File\-Storage} $\ast$storage)}\label{class_entry_nav_a01f0f9155d1a602479a171be7e85f250}
+
+\item 
+\hypertarget{class_entry_nav_a80c62156ea1d2a0b7e81727002786f41}{bool {\bfseries save\-Entry} (\hyperlink{class_entry}{Entry} $\ast$e, \hyperlink{class_file_storage}{File\-Storage} $\ast$storage)}\label{class_entry_nav_a80c62156ea1d2a0b7e81727002786f41}
+
+\item 
+\hypertarget{class_entry_nav_ab3125be2faca69b4f73e67af9b4dbc98}{void {\bfseries set\-Entry} (\hyperlink{class_entry}{Entry} $\ast$e)}\label{class_entry_nav_ab3125be2faca69b4f73e67af9b4dbc98}
+
+\item 
+\hypertarget{class_entry_nav_ab80523e614455295217753c3869ac309}{void {\bfseries release\-Entry} ()}\label{class_entry_nav_ab80523e614455295217753c3869ac309}
+
+\item 
+\hypertarget{class_entry_nav_aff69524700397548f4b68cb18b7a8c98}{void {\bfseries change\-Section} (int section)}\label{class_entry_nav_aff69524700397548f4b68cb18b7a8c98}
+
+\item 
+\hypertarget{class_entry_nav_aaf99d2e7b4d7431a00fe3e970bc7f6e8}{void {\bfseries set\-File\-Def} (\hyperlink{class_file_def}{File\-Def} $\ast$fd)}\label{class_entry_nav_aaf99d2e7b4d7431a00fe3e970bc7f6e8}
+
+\item 
+\hypertarget{class_entry_nav_aec32fc35e858f7292693597fe189ac25}{\hyperlink{class_entry}{Entry} $\ast$ {\bfseries entry} () const }\label{class_entry_nav_aec32fc35e858f7292693597fe189ac25}
+
+\item 
+\hypertarget{class_entry_nav_a809ffcaa201168c4501010c16fb012eb}{int {\bfseries section} () const }\label{class_entry_nav_a809ffcaa201168c4501010c16fb012eb}
+
+\item 
+\hypertarget{class_entry_nav_a6851a45596153abed2c99e73b5e69015}{\hyperlink{types_8h_a9974623ce72fc23df5d64426b9178bf2}{Src\-Lang\-Ext} {\bfseries lang} () const }\label{class_entry_nav_a6851a45596153abed2c99e73b5e69015}
+
+\item 
+\hypertarget{class_entry_nav_a389bc2d712e8ac443808bda2931cd001}{const \hyperlink{class_q_c_string}{Q\-C\-String} \& {\bfseries type} () const }\label{class_entry_nav_a389bc2d712e8ac443808bda2931cd001}
+
+\item 
+\hypertarget{class_entry_nav_a2c310e06c9aadc6fb218f80fcbb5c695}{const \hyperlink{class_q_c_string}{Q\-C\-String} \& {\bfseries name} () const }\label{class_entry_nav_a2c310e06c9aadc6fb218f80fcbb5c695}
+
+\item 
+\hypertarget{class_entry_nav_a6aaa67344b770066a14efec5d12d0f3e}{\hyperlink{struct_tag_info}{Tag\-Info} $\ast$ {\bfseries tag\-Info} () const }\label{class_entry_nav_a6aaa67344b770066a14efec5d12d0f3e}
+
+\item 
+\hypertarget{class_entry_nav_a1de288573116167a337af9cc7ee40c2a}{const \hyperlink{class_q_list}{Q\-List}$<$ \hyperlink{class_entry_nav}{Entry\-Nav} $>$ $\ast$ {\bfseries children} () const }\label{class_entry_nav_a1de288573116167a337af9cc7ee40c2a}
+
+\item 
+\hypertarget{class_entry_nav_a49d6e5d92c9080740183f50c74081402}{\hyperlink{class_entry_nav}{Entry\-Nav} $\ast$ {\bfseries parent} () const }\label{class_entry_nav_a49d6e5d92c9080740183f50c74081402}
+
+\item 
+\hypertarget{class_entry_nav_af8f927f77e7ab9ec6d052e73731e0810}{\hyperlink{class_file_def}{File\-Def} $\ast$ {\bfseries file\-Def} () const }\label{class_entry_nav_af8f927f77e7ab9ec6d052e73731e0810}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+Wrapper for a node in the \hyperlink{class_entry}{Entry} tree.
+
+Allows navigating through the \hyperlink{class_entry}{Entry} tree and load and storing \hyperlink{class_entry}{Entry} objects persistently to disk. 
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/src/entry.\-h\item 
+C\-:/\-Users/teste/git/doxygen/src/entry.\-cpp\end{DoxyCompactItemize}

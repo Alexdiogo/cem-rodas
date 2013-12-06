@@ -1,0 +1,146 @@
+\hypertarget{class_flow_chart}{\section{Referência à classe Flow\-Chart}
+\label{class_flow_chart}\index{Flow\-Chart@{Flow\-Chart}}
+}
+\subsection*{Tipos Públicos}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries node\-Types} \{ \\*
+{\bfseries I\-F\-\_\-\-N\-O} = 1$<$$<$1, 
+{\bfseries E\-L\-S\-I\-F\-\_\-\-N\-O} = 1$<$$<$2, 
+{\bfseries E\-L\-S\-E\-\_\-\-N\-O} = 1$<$$<$3, 
+{\bfseries C\-A\-S\-E\-\_\-\-N\-O} = 1$<$$<$4, 
+\\*
+{\bfseries W\-H\-E\-N\-\_\-\-N\-O} = 1$<$$<$5, 
+{\bfseries E\-X\-I\-T\-\_\-\-N\-O} = 1$<$$<$6, 
+{\bfseries E\-N\-D\-\_\-\-N\-O} = 1$<$$<$7, 
+{\bfseries T\-E\-X\-T\-\_\-\-N\-O} = 1$<$$<$8, 
+\\*
+{\bfseries S\-T\-A\-R\-T\-\_\-\-N\-O} = 1$<$$<$9, 
+{\bfseries E\-N\-D\-I\-F\-\_\-\-N\-O} = 1$<$$<$10, 
+{\bfseries F\-O\-R\-\_\-\-N\-O} = 1$<$$<$11, 
+{\bfseries W\-H\-I\-L\-E\-\_\-\-N\-O} = 1$<$$<$12, 
+\\*
+{\bfseries E\-N\-D\-\_\-\-L\-O\-O\-P} = 1$<$$<$13, 
+{\bfseries E\-N\-D\-\_\-\-C\-A\-S\-E} = 1$<$$<$14, 
+{\bfseries V\-A\-R\-I\-A\-B\-L\-E\-\_\-\-N\-O} = 1$<$$<$15, 
+{\bfseries R\-E\-T\-U\-R\-N\-\_\-\-N\-O} = 1$<$$<$16, 
+\\*
+{\bfseries L\-O\-O\-P\-\_\-\-N\-O} = 1$<$$<$17, 
+{\bfseries N\-E\-X\-T\-\_\-\-N\-O} = 1$<$$<$18, 
+{\bfseries E\-M\-P\-T\-Y\-\_\-\-N\-O} = 1$<$$<$19, 
+{\bfseries C\-O\-M\-M\-E\-N\-T\-\_\-\-N\-O} = 1$<$$<$20, 
+\\*
+{\bfseries B\-E\-G\-I\-N\-\_\-\-N\-O} = 1$<$$<$21
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_flow_chart_a1fe8cbb301fa9c48e5d70df0435d6f37}{{\bfseries Flow\-Chart} (int typ, const char $\ast$t, const char $\ast$ex, const char $\ast$label=0)}\label{class_flow_chart_a1fe8cbb301fa9c48e5d70df0435d6f37}
+
+\end{DoxyCompactItemize}
+\subsection*{Membros públicos estáticos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_flow_chart_a352e5c221ab62d0ac5ad560028f80ccb}{static void {\bfseries create\-S\-V\-G} ()}\label{class_flow_chart_a352e5c221ab62d0ac5ad560028f80ccb}
+
+\item 
+\hypertarget{class_flow_chart_a9b769b1304d209cc77cf29814acfa854}{static void {\bfseries start\-Dot} (\hyperlink{class_f_text_stream}{F\-Text\-Stream} \&t)}\label{class_flow_chart_a9b769b1304d209cc77cf29814acfa854}
+
+\item 
+\hypertarget{class_flow_chart_a7475f497672a2e94b069484347b637e7}{static void {\bfseries end\-Dot} (\hyperlink{class_f_text_stream}{F\-Text\-Stream} \&t)}\label{class_flow_chart_a7475f497672a2e94b069484347b637e7}
+
+\item 
+\hypertarget{class_flow_chart_ae444d08ff2ef621e17a085ac3d5b4d49}{static void {\bfseries codify} (\hyperlink{class_f_text_stream}{F\-Text\-Stream} \&t, const char $\ast$str)}\label{class_flow_chart_ae444d08ff2ef621e17a085ac3d5b4d49}
+
+\item 
+\hypertarget{class_flow_chart_a3dbf9249c71dbe01b88ab296b899ca95}{static void {\bfseries write\-Shape} (\hyperlink{class_f_text_stream}{F\-Text\-Stream} \&t, const \hyperlink{class_flow_chart}{Flow\-Chart} $\ast$fl)}\label{class_flow_chart_a3dbf9249c71dbe01b88ab296b899ca95}
+
+\item 
+\hypertarget{class_flow_chart_ada21a02bec3838187e8c34c9ecaa1732}{static void {\bfseries write\-Edge} (\hyperlink{class_f_text_stream}{F\-Text\-Stream} \&t, int fl\-\_\-from, int fl\-\_\-to, int i, bool b\-From=F\-A\-L\-S\-E, bool b\-To=F\-A\-L\-S\-E)}\label{class_flow_chart_ada21a02bec3838187e8c34c9ecaa1732}
+
+\item 
+\hypertarget{class_flow_chart_a9c26f59b62514e144fc20baf83551b86}{static void {\bfseries write\-Edge} (\hyperlink{class_f_text_stream}{F\-Text\-Stream} \&t, const \hyperlink{class_flow_chart}{Flow\-Chart} $\ast$fl\-\_\-from, const \hyperlink{class_flow_chart}{Flow\-Chart} $\ast$fl\-\_\-to, int i)}\label{class_flow_chart_a9c26f59b62514e144fc20baf83551b86}
+
+\item 
+\hypertarget{class_flow_chart_a0c703f16c3e0e7a553ba220e607b0499}{static void {\bfseries write\-Flow\-Links} (\hyperlink{class_f_text_stream}{F\-Text\-Stream} \&t)}\label{class_flow_chart_a0c703f16c3e0e7a553ba220e607b0499}
+
+\item 
+\hypertarget{class_flow_chart_a5453a46f0c6caf84eb262e8dd3b245d9}{static \hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries get\-Node\-Name} (int n)}\label{class_flow_chart_a5453a46f0c6caf84eb262e8dd3b245d9}
+
+\item 
+\hypertarget{class_flow_chart_af89f20f5e1dcfef2d3c96661deacd265}{static void {\bfseries col\-Text\-Nodes} ()}\label{class_flow_chart_af89f20f5e1dcfef2d3c96661deacd265}
+
+\item 
+\hypertarget{class_flow_chart_adb650dc770f391944034e4d0cd13f4f1}{static int {\bfseries get\-Next\-Text\-Link} (const \hyperlink{class_flow_chart}{Flow\-Chart} $\ast$fl, uint index)}\label{class_flow_chart_adb650dc770f391944034e4d0cd13f4f1}
+
+\item 
+\hypertarget{class_flow_chart_adf46cfab36f43f01d565a37fda0f2360}{static int {\bfseries get\-Next\-If\-Link} (const \hyperlink{class_flow_chart}{Flow\-Chart} $\ast$, uint)}\label{class_flow_chart_adf46cfab36f43f01d565a37fda0f2360}
+
+\item 
+\hypertarget{class_flow_chart_a4747ea073655ff81cb8131a71ce162c6}{static int {\bfseries get\-Next\-Node} (int, int)}\label{class_flow_chart_a4747ea073655ff81cb8131a71ce162c6}
+
+\item 
+\hypertarget{class_flow_chart_a9e228eb13a595658b37f12ab9b7ca059}{static int {\bfseries find\-Node} (int index, int stamp, int type)}\label{class_flow_chart_a9e228eb13a595658b37f12ab9b7ca059}
+
+\item 
+\hypertarget{class_flow_chart_a5e46ab1e085d83b2ae0098ffa6f0777d}{static int {\bfseries find\-Node} (int index, int type)}\label{class_flow_chart_a5e46ab1e085d83b2ae0098ffa6f0777d}
+
+\item 
+\hypertarget{class_flow_chart_ac91e24f637c965d7754091e9fb9743ce}{static int {\bfseries find\-Next\-Loop} (int j, int stamp)}\label{class_flow_chart_ac91e24f637c965d7754091e9fb9743ce}
+
+\item 
+\hypertarget{class_flow_chart_ab88ec11da65512f5864191d6de262fbf}{static int {\bfseries find\-Prev\-Loop} (int j, int stamp, bool endif=F\-A\-L\-S\-E)}\label{class_flow_chart_ab88ec11da65512f5864191d6de262fbf}
+
+\item 
+\hypertarget{class_flow_chart_a9f3964d3c047588a2add731bdb21836b}{static int {\bfseries find\-Label} (int j, \hyperlink{class_q_c_string}{Q\-C\-String} \&)}\label{class_flow_chart_a9f3964d3c047588a2add731bdb21836b}
+
+\item 
+\hypertarget{class_flow_chart_a67e04d0555e2b1636177a690678a6475}{static void {\bfseries del\-Flow\-List} ()}\label{class_flow_chart_a67e04d0555e2b1636177a690678a6475}
+
+\item 
+\hypertarget{class_flow_chart_a54d7c658970da0de89bdf27b742bbfaf}{static const char $\ast$ {\bfseries get\-Node\-Type} (int c)}\label{class_flow_chart_a54d7c658970da0de89bdf27b742bbfaf}
+
+\item 
+\hypertarget{class_flow_chart_aecb6d5c965b6e53a761553fdc21a82ff}{static void {\bfseries add\-Flow\-Chart} (int type, const char $\ast$text, const char $\ast$exp, const char $\ast$label=N\-U\-L\-L)}\label{class_flow_chart_aecb6d5c965b6e53a761553fdc21a82ff}
+
+\item 
+\hypertarget{class_flow_chart_a8c2918861c2b19e1db8d38f45e05f302}{static void {\bfseries move\-To\-Prev\-Level} ()}\label{class_flow_chart_a8c2918861c2b19e1db8d38f45e05f302}
+
+\item 
+\hypertarget{class_flow_chart_a8478b0a1e74689fe3ce9103d53f36d66}{static int {\bfseries get\-Time\-Stamp} ()}\label{class_flow_chart_a8478b0a1e74689fe3ce9103d53f36d66}
+
+\item 
+\hypertarget{class_flow_chart_a7fee738dadd5f77768409e47641292cc}{static void {\bfseries write\-Flow\-Chart} ()}\label{class_flow_chart_a7fee738dadd5f77768409e47641292cc}
+
+\item 
+\hypertarget{class_flow_chart_a114de9f6639178cf5554f997e19d6e6c}{static void {\bfseries align\-Func\-Proc} (\hyperlink{class_q_c_string}{Q\-C\-String} \&q, const \hyperlink{class_argument_list}{Argument\-List} $\ast$al, bool is\-Func)}\label{class_flow_chart_a114de9f6639178cf5554f997e19d6e6c}
+
+\item 
+\hypertarget{class_flow_chart_a797b835cc99ae253de7a3c26d5308cfc}{static \hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries convert\-Name\-To\-File\-Name} ()}\label{class_flow_chart_a797b835cc99ae253de7a3c26d5308cfc}
+
+\item 
+\hypertarget{class_flow_chart_af6d04df492d01f0496344aeb4be13edb}{static void {\bfseries print\-Node} (const \hyperlink{class_flow_chart}{Flow\-Chart} $\ast$n)}\label{class_flow_chart_af6d04df492d01f0496344aeb4be13edb}
+
+\item 
+\hypertarget{class_flow_chart_a1960f2d8ec6e4ed5d727921d93f6aa9b}{static void {\bfseries print\-Flow\-Tree} ()}\label{class_flow_chart_a1960f2d8ec6e4ed5d727921d93f6aa9b}
+
+\item 
+\hypertarget{class_flow_chart_a4fcec195075c5ed58a1b47272c2eb9d7}{static void {\bfseries build\-Comment\-Nodes} (\hyperlink{class_f_text_stream}{F\-Text\-Stream} \&t)}\label{class_flow_chart_a4fcec195075c5ed58a1b47272c2eb9d7}
+
+\item 
+\hypertarget{class_flow_chart_a46d54f53f2b4e728ddfb96e55f983979}{static void {\bfseries align\-Comment\-Node} (\hyperlink{class_f_text_stream}{F\-Text\-Stream} \&t, \hyperlink{class_q_c_string}{Q\-C\-String} com)}\label{class_flow_chart_a46d54f53f2b4e728ddfb96e55f983979}
+
+\end{DoxyCompactItemize}
+\subsection*{Atributos Públicos Estáticos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_flow_chart_aaaf66169c62322d1d58dc20291e1b2a2}{static \hyperlink{class_q_list}{Q\-List}$<$ \hyperlink{class_flow_chart}{Flow\-Chart} $>$ {\bfseries flow\-List}}\label{class_flow_chart_aaaf66169c62322d1d58dc20291e1b2a2}
+
+\end{DoxyCompactItemize}
+
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/src/vhdldocgen.\-h\item 
+C\-:/\-Users/teste/git/doxygen/src/vhdldocgen.\-cpp\end{DoxyCompactItemize}

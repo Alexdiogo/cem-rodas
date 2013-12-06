@@ -1,0 +1,99 @@
+\hypertarget{class_template_list_intf_1_1_const_iterator}{\section{Referência à classe Template\-List\-Intf\-:\-:Const\-Iterator}
+\label{class_template_list_intf_1_1_const_iterator}\index{Template\-List\-Intf\-::\-Const\-Iterator@{Template\-List\-Intf\-::\-Const\-Iterator}}
+}
+
+
+Abstract interface for a iterator of a list.  
+
+
+
+
+{\ttfamily \#include $<$template.\-h$>$}
+
+Diagrama de heranças da classe Template\-List\-Intf\-:\-:Const\-Iterator\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_template_list_intf_1_1_const_iterator}
+\end{center}
+\end{figure}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_template_list_intf_1_1_const_iterator_ad4923f0e0089c0ca746b52e980367068}{$\sim$\-Const\-Iterator} ()
+\item 
+virtual void \hyperlink{class_template_list_intf_1_1_const_iterator_a86b87aa42e3e820d2c21ae552bd0a55d}{to\-First} ()=0
+\item 
+virtual void \hyperlink{class_template_list_intf_1_1_const_iterator_a9c80b2b75a3575aeea8a5b211119c6d3}{to\-Last} ()=0
+\item 
+virtual void \hyperlink{class_template_list_intf_1_1_const_iterator_a03ab44b53fe4f1b143b50a3ff118c831}{to\-Next} ()=0
+\item 
+virtual void \hyperlink{class_template_list_intf_1_1_const_iterator_a35c099174eca466a4277050c864efc8e}{to\-Prev} ()=0
+\item 
+\hypertarget{class_template_list_intf_1_1_const_iterator_ae3b4de44e9fb449d7052cb15cdb14d08}{virtual bool {\bfseries current} (\hyperlink{class_template_variant}{Template\-Variant} \&v) const =0}\label{class_template_list_intf_1_1_const_iterator_ae3b4de44e9fb449d7052cb15cdb14d08}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+Abstract interface for a iterator of a list. 
+
+\subsection{Documentação dos Construtores \& Destrutor}
+\hypertarget{class_template_list_intf_1_1_const_iterator_ad4923f0e0089c0ca746b52e980367068}{\index{Template\-List\-Intf\-::\-Const\-Iterator@{Template\-List\-Intf\-::\-Const\-Iterator}!$\sim$\-Const\-Iterator@{$\sim$\-Const\-Iterator}}
+\index{$\sim$\-Const\-Iterator@{$\sim$\-Const\-Iterator}!TemplateListIntf::ConstIterator@{Template\-List\-Intf\-::\-Const\-Iterator}}
+\subsubsection[{$\sim$\-Const\-Iterator}]{\setlength{\rightskip}{0pt plus 5cm}virtual $\sim${\bf Const\-Iterator} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_template_list_intf_1_1_const_iterator_ad4923f0e0089c0ca746b52e980367068}
+Destructor for the iterator 
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_template_list_intf_1_1_const_iterator_a86b87aa42e3e820d2c21ae552bd0a55d}{\index{Template\-List\-Intf\-::\-Const\-Iterator@{Template\-List\-Intf\-::\-Const\-Iterator}!to\-First@{to\-First}}
+\index{to\-First@{to\-First}!TemplateListIntf::ConstIterator@{Template\-List\-Intf\-::\-Const\-Iterator}}
+\subsubsection[{to\-First}]{\setlength{\rightskip}{0pt plus 5cm}virtual void to\-First (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_template_list_intf_1_1_const_iterator_a86b87aa42e3e820d2c21ae552bd0a55d}
+Moves iterator to the first element in the list 
+
+Implementado em \hyperlink{class_template_list_const_iterator_a24528c52410032763cedaccdfbe474e5}{Template\-List\-Const\-Iterator} e \hyperlink{class_generic_const_iterator_a7a848bf7b9f402e97732fe5abb2c71ca}{Generic\-Const\-Iterator$<$ T $>$}.
+
+\hypertarget{class_template_list_intf_1_1_const_iterator_a9c80b2b75a3575aeea8a5b211119c6d3}{\index{Template\-List\-Intf\-::\-Const\-Iterator@{Template\-List\-Intf\-::\-Const\-Iterator}!to\-Last@{to\-Last}}
+\index{to\-Last@{to\-Last}!TemplateListIntf::ConstIterator@{Template\-List\-Intf\-::\-Const\-Iterator}}
+\subsubsection[{to\-Last}]{\setlength{\rightskip}{0pt plus 5cm}virtual void to\-Last (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_template_list_intf_1_1_const_iterator_a9c80b2b75a3575aeea8a5b211119c6d3}
+Moves iterator to the last element in the list 
+
+Implementado em \hyperlink{class_template_list_const_iterator_ac4e23694db19ee84c4e110f9965d64e4}{Template\-List\-Const\-Iterator} e \hyperlink{class_generic_const_iterator_acda76aed44e713788e17c3373ca1a0e3}{Generic\-Const\-Iterator$<$ T $>$}.
+
+\hypertarget{class_template_list_intf_1_1_const_iterator_a03ab44b53fe4f1b143b50a3ff118c831}{\index{Template\-List\-Intf\-::\-Const\-Iterator@{Template\-List\-Intf\-::\-Const\-Iterator}!to\-Next@{to\-Next}}
+\index{to\-Next@{to\-Next}!TemplateListIntf::ConstIterator@{Template\-List\-Intf\-::\-Const\-Iterator}}
+\subsubsection[{to\-Next}]{\setlength{\rightskip}{0pt plus 5cm}virtual void to\-Next (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_template_list_intf_1_1_const_iterator_a03ab44b53fe4f1b143b50a3ff118c831}
+Moves iterator to the next element in the list 
+
+Implementado em \hyperlink{class_template_list_const_iterator_ad8ecebd1a267185e69e1b6fe4e9f331e}{Template\-List\-Const\-Iterator} e \hyperlink{class_generic_const_iterator_a8389e031d03169de4d6b9c55e7946d4b}{Generic\-Const\-Iterator$<$ T $>$}.
+
+\hypertarget{class_template_list_intf_1_1_const_iterator_a35c099174eca466a4277050c864efc8e}{\index{Template\-List\-Intf\-::\-Const\-Iterator@{Template\-List\-Intf\-::\-Const\-Iterator}!to\-Prev@{to\-Prev}}
+\index{to\-Prev@{to\-Prev}!TemplateListIntf::ConstIterator@{Template\-List\-Intf\-::\-Const\-Iterator}}
+\subsubsection[{to\-Prev}]{\setlength{\rightskip}{0pt plus 5cm}virtual void to\-Prev (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_template_list_intf_1_1_const_iterator_a35c099174eca466a4277050c864efc8e}
+Moves iterator to the previous element in the list 
+
+Implementado em \hyperlink{class_template_list_const_iterator_a3491dc4d8ab54f0a0583ac1941f4e94f}{Template\-List\-Const\-Iterator} e \hyperlink{class_generic_const_iterator_af7a123b30adb797bf7aa2b5a94b060b0}{Generic\-Const\-Iterator$<$ T $>$}.
+
+
+
+A documentação para esta classe foi gerada a partir do seguinte ficheiro\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/src/template.\-h\end{DoxyCompactItemize}

@@ -1,0 +1,601 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>CEM RODAS: Referência à classe Template SIntDict&lt; T &gt;</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">CEM RODAS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Localizar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="modules.html"><span>Módulos</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Estruturas&#160;de&#160;dados</span></a></li>
+      <li><a href="files.html"><span>Ficheiros</span></a></li>
+      <li><a href="examples.html"><span>Exemplos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Localizar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Estruturas&#160;de&#160;dados</span></a></li>
+      <li><a href="classes.html"><span>Índice&#160;das&#160;estruturas&#160;de&#160;dados</span></a></li>
+      <li><a href="hierarchy.html"><span>Hierarquia&#160;de&#160;classes</span></a></li>
+      <li><a href="functions.html"><span>Campos&#160;de&#160;dados</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tudo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Estruturas de dados</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Ficheiros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variáveis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Definições de tipos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerações</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Valores da enumeração</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Amigos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Grupos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Estruturas de Dados</a> &#124;
+<a href="#pub-methods">Membros públicos</a> &#124;
+<a href="#friends">Amigos</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência à classe Template SIntDict&lt; T &gt;</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="sortdict_8h_source.html">sortdict.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagrama de heranças da classe SIntDict&lt; T &gt;</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_s_int_dict.png" usemap="#SIntDict&lt; T &gt;_map" alt=""/>
+  <map id="SIntDict&lt; T &gt;_map" name="SIntDict&lt; T &gt;_map">
+<area href="class_letter_to_index_map.html" title="maps a unicode character code to a list of T::ElementType&#39;s " alt="LetterToIndexMap&lt; T &gt;" shape="rect" coords="0,56,144,80"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Estruturas de Dados</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_int_dict_1_1_iterator.html">Iterator</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_int_dict_1_1_iterator_dict.html">IteratorDict</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Membros públicos</h2></td></tr>
+<tr class="memitem:a4eae8cac750feb8ca4393bee3dfba71f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_int_dict.html#a4eae8cac750feb8ca4393bee3dfba71f">SIntDict</a> (int size=17)</td></tr>
+<tr class="separator:a4eae8cac750feb8ca4393bee3dfba71f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11c3557fa959cea63a5e682beab5055d"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_int_dict.html#a11c3557fa959cea63a5e682beab5055d">~SIntDict</a> ()</td></tr>
+<tr class="separator:a11c3557fa959cea63a5e682beab5055d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa400fb682f9f8729d15b8e251e86147b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_int_dict.html#aa400fb682f9f8729d15b8e251e86147b">append</a> (int key, const T *d)</td></tr>
+<tr class="separator:aa400fb682f9f8729d15b8e251e86147b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4980da54f19e709a462767af9cef85e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_int_dict.html#a4980da54f19e709a462767af9cef85e0">prepend</a> (int key, const T *d)</td></tr>
+<tr class="separator:a4980da54f19e709a462767af9cef85e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf6e2899927fc38d2bcca0d7ebc611a0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_int_dict.html#acf6e2899927fc38d2bcca0d7ebc611a0">remove</a> (int key)</td></tr>
+<tr class="separator:acf6e2899927fc38d2bcca0d7ebc611a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47fdc9eea42b6975cdc835bb2e08810e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_int_dict.html#a47fdc9eea42b6975cdc835bb2e08810e">sort</a> ()</td></tr>
+<tr class="separator:a47fdc9eea42b6975cdc835bb2e08810e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e5a0e6ac53cfeded70eab9966864388"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_int_dict.html#a6e5a0e6ac53cfeded70eab9966864388">inSort</a> (int key, const T *d)</td></tr>
+<tr class="separator:a6e5a0e6ac53cfeded70eab9966864388"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab34e68145e7f3a4fc5714c2df25d6718"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_int_dict.html#ab34e68145e7f3a4fc5714c2df25d6718">setAutoDelete</a> (bool val)</td></tr>
+<tr class="separator:ab34e68145e7f3a4fc5714c2df25d6718"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac204b7d40aac2d4adb81bae4a21a02b7"><td class="memItemLeft" align="right" valign="top">T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_int_dict.html#ac204b7d40aac2d4adb81bae4a21a02b7">find</a> (int key)</td></tr>
+<tr class="separator:ac204b7d40aac2d4adb81bae4a21a02b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62724e125e886dffbc1f486aedaa6383"><td class="memItemLeft" align="right" valign="top">T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_int_dict.html#a62724e125e886dffbc1f486aedaa6383">operator[]</a> (int key) const </td></tr>
+<tr class="separator:a62724e125e886dffbc1f486aedaa6383"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ee1dd34abf45188298cd760033ba59c"><td class="memItemLeft" align="right" valign="top">T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_int_dict.html#a6ee1dd34abf45188298cd760033ba59c">at</a> (uint i)</td></tr>
+<tr class="separator:a6ee1dd34abf45188298cd760033ba59c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aade9045d8c0047e0427d8c6a9c048985"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_int_dict.html#aade9045d8c0047e0427d8c6a9c048985">compareItems</a> (QCollection::Item item1, QCollection::Item item2)</td></tr>
+<tr class="separator:aade9045d8c0047e0427d8c6a9c048985"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8bb3912a3ce86b15842e79d0b421204"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_int_dict.html#ac8bb3912a3ce86b15842e79d0b421204">clear</a> ()</td></tr>
+<tr class="separator:ac8bb3912a3ce86b15842e79d0b421204"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ba94da7db769b98d02381d872dd9bbb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_int_dict.html#a9ba94da7db769b98d02381d872dd9bbb">count</a> ()</td></tr>
+<tr class="separator:a9ba94da7db769b98d02381d872dd9bbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Amigos</h2></td></tr>
+<tr class="memitem:a9830fc407400559db7e7783cc10a9394"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9830fc407400559db7e7783cc10a9394"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>Iterator</b></td></tr>
+<tr class="separator:a9830fc407400559db7e7783cc10a9394"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab362b5ead75b40c212098db068d50ac7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab362b5ead75b40c212098db068d50ac7"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>IteratorDict</b></td></tr>
+<tr class="separator:ab362b5ead75b40c212098db068d50ac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><h3>template&lt;class T&gt;<br/>
+class SIntDict&lt; T &gt;</h3>
+
+<p>Ordered dictionary of elements of type T. Internally uses a <a class="el" href="class_q_list.html">QList&lt;T&gt;</a> and a <a class="el" href="class_q_int_dict.html">QIntDict&lt;T&gt;</a>. </p>
+</div><h2 class="groupheader">Documentação dos Construtores &amp; Destrutor</h2>
+<a class="anchor" id="a4eae8cac750feb8ca4393bee3dfba71f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_s_int_dict.html">SIntDict</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em> = <code>17</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Create an ordered dictionary. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">size</td><td>The size of the dictionary. Should be a prime number for best distribution of elements. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a11c3557fa959cea63a5e682beab5055d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual ~<a class="el" href="class_s_int_dict.html">SIntDict</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Destroys the dictionary </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentação dos métodos</h2>
+<a class="anchor" id="aa400fb682f9f8729d15b8e251e86147b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void append </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T *&#160;</td>
+          <td class="paramname"><em>d</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Appends a compound to the dictionary. The element is owned by the dictionary. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>The unique key to use to quicky find the item later on. </td></tr>
+    <tr><td class="paramname">d</td><td>The compound to add. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_s_int_dict.html#ac204b7d40aac2d4adb81bae4a21a02b7">find()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6ee1dd34abf45188298cd760033ba59c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T* at </td>
+          <td>(</td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the item at position <em>i</em> in the sorted dictionary </p>
+
+</div>
+</div>
+<a class="anchor" id="ac8bb3912a3ce86b15842e79d0b421204"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Clears the dictionary. Will delete items if <a class="el" href="class_s_int_dict.html#ab34e68145e7f3a4fc5714c2df25d6718">setAutoDelete()</a> was set to <code>TRUE</code>. </p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_s_int_dict.html#ab34e68145e7f3a4fc5714c2df25d6718">setAutoDelete</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aade9045d8c0047e0427d8c6a9c048985"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int compareItems </td>
+          <td>(</td>
+          <td class="paramtype">QCollection::Item&#160;</td>
+          <td class="paramname"><em>item1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QCollection::Item&#160;</td>
+          <td class="paramname"><em>item2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Function that is used to compare two items when sorting. Overload this to properly sort items. </p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_s_int_dict.html#a6e5a0e6ac53cfeded70eab9966864388">inSort()</a> </dd></dl>
+
+<p>Reimplementado em <a class="el" href="class_used_index_letters.html#a219450accf048597ffc7113ecde4c402">UsedIndexLetters</a>, <a class="el" href="class_member_group_s_dict.html#a219450accf048597ffc7113ecde4c402">MemberGroupSDict</a> e <a class="el" href="class_letter_to_index_map.html#a219450accf048597ffc7113ecde4c402">LetterToIndexMap&lt; T &gt;</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9ba94da7db769b98d02381d872dd9bbb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int count </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the number of items stored in the dictionary </p>
+
+</div>
+</div>
+<a class="anchor" id="ac204b7d40aac2d4adb81bae4a21a02b7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T* find </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Looks up a compound given its key. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>The key to identify this element. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>The requested compound or zero if it cannot be found. </dd></dl>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_s_int_dict.html#aa400fb682f9f8729d15b8e251e86147b">append()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6e5a0e6ac53cfeded70eab9966864388"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void inSort </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T *&#160;</td>
+          <td class="paramname"><em>d</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Inserts a compound into the dictionary in a sorted way. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>The unique key to use to quicky find the item later on. </td></tr>
+    <tr><td class="paramname">d</td><td>The compound to add. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_s_int_dict.html#ac204b7d40aac2d4adb81bae4a21a02b7">find()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a62724e125e886dffbc1f486aedaa6383"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T* operator[] </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Equavalent to <a class="el" href="class_s_int_dict.html#ac204b7d40aac2d4adb81bae4a21a02b7">find()</a>. </p>
+
+</div>
+</div>
+<a class="anchor" id="a4980da54f19e709a462767af9cef85e0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void prepend </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T *&#160;</td>
+          <td class="paramname"><em>d</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Prepend a compound to the dictionary. The element is owned by the dictionary. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>The unique key to use to quicky find the item later on. </td></tr>
+    <tr><td class="paramname">d</td><td>The compound to add. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_s_int_dict.html#ac204b7d40aac2d4adb81bae4a21a02b7">find()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="acf6e2899927fc38d2bcca0d7ebc611a0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool remove </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Remove an item from the dictionary </p>
+
+</div>
+</div>
+<a class="anchor" id="ab34e68145e7f3a4fc5714c2df25d6718"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setAutoDelete </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Indicates whether or not the dictionary owns its elements </p>
+
+</div>
+</div>
+<a class="anchor" id="a47fdc9eea42b6975cdc835bb2e08810e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sort </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sorts the members of the dictionary. First appending a number of members and then sorting them is faster (O(NlogN) than using <a class="el" href="class_s_int_dict.html#a6e5a0e6ac53cfeded70eab9966864388">inSort()</a> for each member (O(N^2)). </p>
+
+</div>
+</div>
+<hr/>A documentação para esta classe foi gerada a partir do seguinte ficheiro:<ul>
+<li>C:/Users/teste/git/doxygen/src/<a class="el" href="sortdict_8h_source.html">sortdict.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado em Quinta, 28 de Novembro de 2013 22:44:38 para CEM RODAS por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

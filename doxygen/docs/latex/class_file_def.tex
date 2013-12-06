@@ -1,0 +1,414 @@
+\hypertarget{class_file_def}{\section{Referência à classe File\-Def}
+\label{class_file_def}\index{File\-Def@{File\-Def}}
+}
+
+
+{\ttfamily \#include $<$filedef.\-h$>$}
+
+Diagrama de heranças da classe File\-Def\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_file_def}
+\end{center}
+\end{figure}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_file_def_acaabbab8536678caa09ba6c9414946ba}{File\-Def} (const char $\ast$p, const char $\ast$n, const char $\ast$ref=0, const char $\ast$dn=0)
+\item 
+\hyperlink{class_file_def_a5b5fa61b49fc6b2d797fd94363e0baf2}{$\sim$\-File\-Def} ()
+\item 
+\hyperlink{class_definition_intf_a2dc566dfec40397b2990e6520536ecb5}{Def\-Type} \hyperlink{class_file_def_aac410235a8bf90e471e649bd9dbf9c5e}{definition\-Type} () const 
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_file_def_af92302878527ec555ba9e3fe066925ff}{name} () const 
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_file_def_a67d09f414df966d11bbeba6298307bdf}{display\-Name} (bool=T\-R\-U\-E) const 
+\item 
+\hypertarget{class_file_def_a11c453b194f4619b5dedc0c80187a91f}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries file\-Name} () const }\label{class_file_def_a11c453b194f4619b5dedc0c80187a91f}
+
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_file_def_af72a982ba8198cd5c98e9fc850b71df6}{get\-Output\-File\-Base} () const 
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_file_def_acd17ae1d9600f864b1beb85dfb99a4f4}{anchor} () const 
+\item 
+\hypertarget{class_file_def_ad47efa4da31f60e593a236751d7e4733}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries get\-File\-Base} () const }\label{class_file_def_ad47efa4da31f60e593a236751d7e4733}
+
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_file_def_a0b24a407e5cd41328e5c64aac0884b6f}{get\-Source\-File\-Base} () const 
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_file_def_aaa4c35b205fb8f45538c090fa61fcf84}{include\-Name} () const 
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_file_def_a4c8aa83f34d2f4c3f126837545048793}{abs\-File\-Path} () const 
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_file_def_af8ec7b9a168991b847b3f00cae767c02}{doc\-Name} () const 
+\item 
+bool \hyperlink{class_file_def_a7e78a100e87f823c18b96902f0dadc3b}{is\-Source} () const 
+\item 
+\hypertarget{class_file_def_a4c659f1da0b253b765bd6039ac114198}{bool {\bfseries is\-Documentation\-File} () const }\label{class_file_def_a4c659f1da0b253b765bd6039ac114198}
+
+\item 
+\hypertarget{class_file_def_aee482dd3e4a5968849e75f6ac02954e6}{\hyperlink{class_definition}{Definition} $\ast$ {\bfseries get\-Source\-Definition} (int line\-Nr) const }\label{class_file_def_aee482dd3e4a5968849e75f6ac02954e6}
+
+\item 
+\hypertarget{class_file_def_a15022659dd6ce876a1402a6503b33e2d}{\hyperlink{class_member_def}{Member\-Def} $\ast$ {\bfseries get\-Source\-Member} (int line\-Nr) const }\label{class_file_def_a15022659dd6ce876a1402a6503b33e2d}
+
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_file_def_a69eb2ae36c9531c5900b4ebe1e128af1}{get\-Path} () const 
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_file_def_a8e74a61bce5ac00e2350935c122bed89}{get\-Version} () const 
+\item 
+bool \hyperlink{class_file_def_a7ff00a84da6e47f3c64c6bf9f6316385}{is\-Linkable\-In\-Project} () const 
+\item 
+bool \hyperlink{class_file_def_afb5645c0dc69c2f1da67da6e33316e3b}{is\-Linkable} () const 
+\item 
+\hypertarget{class_file_def_a72295b17b1c80f5ab100af953409c373}{bool {\bfseries is\-Included} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&\hyperlink{class_file_def_af92302878527ec555ba9e3fe066925ff}{name}) const }\label{class_file_def_a72295b17b1c80f5ab100af953409c373}
+
+\item 
+\hypertarget{class_file_def_a7a0fb0d63d3bbd17f6e51f25d657fdfe}{Package\-Def $\ast$ {\bfseries package\-Def} () const }\label{class_file_def_a7a0fb0d63d3bbd17f6e51f25d657fdfe}
+
+\item 
+\hypertarget{class_file_def_ac192aa4dfe8a77916af6236dfd50f4f2}{\hyperlink{class_dir_def}{Dir\-Def} $\ast$ {\bfseries get\-Dir\-Def} () const }\label{class_file_def_ac192aa4dfe8a77916af6236dfd50f4f2}
+
+\item 
+\hypertarget{class_file_def_a0ba0265415127e99dc450025df698d6c}{\hyperlink{class_namespace_s_dict}{Namespace\-S\-Dict} $\ast$ {\bfseries get\-Used\-Namespaces} () const }\label{class_file_def_a0ba0265415127e99dc450025df698d6c}
+
+\item 
+\hypertarget{class_file_def_aa1d1137c64e631b590cbe235e2962144}{\hyperlink{class_s_dict}{S\-Dict}$<$ \hyperlink{class_definition}{Definition} $>$ $\ast$ {\bfseries get\-Used\-Classes} () const }\label{class_file_def_aa1d1137c64e631b590cbe235e2962144}
+
+\item 
+\hypertarget{class_file_def_aa607da3efeb98e50303f3941de1204d2}{\hyperlink{class_q_list}{Q\-List}$<$ \hyperlink{struct_include_info}{Include\-Info} $>$ $\ast$ {\bfseries include\-File\-List} () const }\label{class_file_def_aa607da3efeb98e50303f3941de1204d2}
+
+\item 
+\hypertarget{class_file_def_a07e6403ece8a3f4495831f098c669651}{\hyperlink{class_q_list}{Q\-List}$<$ \hyperlink{struct_include_info}{Include\-Info} $>$ $\ast$ {\bfseries included\-By\-File\-List} () const }\label{class_file_def_a07e6403ece8a3f4495831f098c669651}
+
+\item 
+\hypertarget{class_file_def_a79bede0bc994c3969f2e8006d19e4c1e}{void {\bfseries get\-All\-Include\-Files\-Recursively} (\hyperlink{class_q_str_list}{Q\-Str\-List} \&inc\-Files) const }\label{class_file_def_a79bede0bc994c3969f2e8006d19e4c1e}
+
+\item 
+\hypertarget{class_file_def_ad83336a442ba60d58c394f209406d8c2}{\hyperlink{class_member_list}{Member\-List} $\ast$ {\bfseries get\-Member\-List} (Member\-List\-Type lt) const }\label{class_file_def_ad83336a442ba60d58c394f209406d8c2}
+
+\item 
+\hypertarget{class_file_def_a07df9da2a270da9811acecc6f1b3f302}{const \hyperlink{class_q_list}{Q\-List}$<$ \hyperlink{class_member_list}{Member\-List} $>$ \& {\bfseries get\-Member\-Lists} () const }\label{class_file_def_a07df9da2a270da9811acecc6f1b3f302}
+
+\item 
+\hypertarget{class_file_def_a614eab46ad0165205bfc3367124bce0a}{\hyperlink{class_member_group_s_dict}{Member\-Group\-S\-Dict} $\ast$ {\bfseries get\-Member\-Group\-S\-Dict} () const }\label{class_file_def_a614eab46ad0165205bfc3367124bce0a}
+
+\item 
+\hypertarget{class_file_def_ad03a0f967ecf828380d717ce5d4f4d30}{\hyperlink{class_namespace_s_dict}{Namespace\-S\-Dict} $\ast$ {\bfseries get\-Namespace\-S\-Dict} () const }\label{class_file_def_ad03a0f967ecf828380d717ce5d4f4d30}
+
+\item 
+\hypertarget{class_file_def_a9f94a6deac6af811489656badd13fa82}{\hyperlink{class_class_s_dict}{Class\-S\-Dict} $\ast$ {\bfseries get\-Class\-S\-Dict} () const }\label{class_file_def_a9f94a6deac6af811489656badd13fa82}
+
+\item 
+\hypertarget{class_file_def_adf5241b59706e696c508de8baa4c2f97}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries title} () const }\label{class_file_def_adf5241b59706e696c508de8baa4c2f97}
+
+\item 
+\hypertarget{class_file_def_aed62fab5156232f7baf284f7cc5bedd5}{void {\bfseries add\-Source\-Ref} (int line, \hyperlink{class_definition}{Definition} $\ast$d, \hyperlink{class_member_def}{Member\-Def} $\ast$md)}\label{class_file_def_aed62fab5156232f7baf284f7cc5bedd5}
+
+\item 
+void \hyperlink{class_file_def_a0c85f3695c99f7b1aeb762bbdabc8d62}{write\-Documentation} (\hyperlink{class_output_list}{Output\-List} \&ol)
+\item 
+\hypertarget{class_file_def_a3ab9294ac3e907a42b200665010f9381}{void {\bfseries write\-Member\-Pages} (\hyperlink{class_output_list}{Output\-List} \&ol)}\label{class_file_def_a3ab9294ac3e907a42b200665010f9381}
+
+\item 
+\hypertarget{class_file_def_a17f78962f99b43ea249eb44b0ae0a8d2}{void {\bfseries write\-Quick\-Member\-Links} (\hyperlink{class_output_list}{Output\-List} \&ol, \hyperlink{class_member_def}{Member\-Def} $\ast$current\-Md) const }\label{class_file_def_a17f78962f99b43ea249eb44b0ae0a8d2}
+
+\item 
+\hypertarget{class_file_def_a237e7cf83c23d0d5ac812e3c37800a3f}{void {\bfseries write\-Summary\-Links} (\hyperlink{class_output_list}{Output\-List} \&ol)}\label{class_file_def_a237e7cf83c23d0d5ac812e3c37800a3f}
+
+\item 
+\hypertarget{class_file_def_ae699eb51d713ac53014a6c57b771757d}{void {\bfseries start\-Parsing} ()}\label{class_file_def_ae699eb51d713ac53014a6c57b771757d}
+
+\item 
+void \hyperlink{class_file_def_a2e1a2d2a95a8a49fd2537f9b05fbc296}{write\-Source} (\hyperlink{class_output_list}{Output\-List} \&ol, bool same\-Tu, \hyperlink{class_q_str_list}{Q\-Str\-List} \&files\-In\-Same\-Tu)
+\item 
+\hypertarget{class_file_def_a487963228800e21986055bc85cfc7fc0}{void {\bfseries parse\-Source} (bool same\-Tu, \hyperlink{class_q_str_list}{Q\-Str\-List} \&files\-In\-Same\-Tu)}\label{class_file_def_a487963228800e21986055bc85cfc7fc0}
+
+\item 
+\hypertarget{class_file_def_a2b9b94a5e993877c10be053a1f50741b}{void {\bfseries finish\-Parsing} ()}\label{class_file_def_a2b9b94a5e993877c10be053a1f50741b}
+
+\item 
+void \hyperlink{class_file_def_a107a8239a6007765234a4f336ae11bbd}{insert\-Member} (\hyperlink{class_member_def}{Member\-Def} $\ast$md)
+\item 
+void \hyperlink{class_file_def_abdd378f66d1535111afbe9ab9dd17bec}{insert\-Class} (\hyperlink{class_class_def}{Class\-Def} $\ast$cd)
+\item 
+void \hyperlink{class_file_def_a778cb0bbf18f1e3b863cf9509d9b4987}{insert\-Namespace} (\hyperlink{class_namespace_def}{Namespace\-Def} $\ast$nd)
+\item 
+void \hyperlink{class_file_def_a6bd971b93180dba29a797a5472362d17}{compute\-Anchors} ()
+\item 
+\hypertarget{class_file_def_a1a12d2cc3797cece82b59f1ecfcb9e66}{void {\bfseries set\-Package\-Def} (Package\-Def $\ast$pd)}\label{class_file_def_a1a12d2cc3797cece82b59f1ecfcb9e66}
+
+\item 
+\hypertarget{class_file_def_a085b7588aeb04c36f37b9c7309b05155}{void {\bfseries set\-Dir\-Def} (\hyperlink{class_dir_def}{Dir\-Def} $\ast$dd)}\label{class_file_def_a085b7588aeb04c36f37b9c7309b05155}
+
+\item 
+\hypertarget{class_file_def_af8ebd51a7679e1ac3649bbb72f629f34}{void {\bfseries add\-Using\-Directive} (\hyperlink{class_namespace_def}{Namespace\-Def} $\ast$nd)}\label{class_file_def_af8ebd51a7679e1ac3649bbb72f629f34}
+
+\item 
+\hypertarget{class_file_def_a050db52ff34cd330ec6d84f62eae5b04}{void {\bfseries add\-Using\-Declaration} (\hyperlink{class_definition}{Definition} $\ast$def)}\label{class_file_def_a050db52ff34cd330ec6d84f62eae5b04}
+
+\item 
+\hypertarget{class_file_def_ae982cd945c697ac5324aa95785b23f55}{void {\bfseries combine\-Using\-Relations} ()}\label{class_file_def_ae982cd945c697ac5324aa95785b23f55}
+
+\item 
+\hypertarget{class_file_def_ad7d131c27ff33e46fdb25ad03142bdf0}{bool {\bfseries generate\-Source\-File} () const }\label{class_file_def_ad7d131c27ff33e46fdb25ad03142bdf0}
+
+\item 
+\hypertarget{class_file_def_a8769ab4803a557422b86e565cb6b30d0}{void {\bfseries sort\-Member\-Lists} ()}\label{class_file_def_a8769ab4803a557422b86e565cb6b30d0}
+
+\item 
+\hypertarget{class_file_def_a2287f9baf90c5a5ec9579617b88f9728}{void {\bfseries add\-Include\-Dependency} (\hyperlink{class_file_def}{File\-Def} $\ast$fd, const char $\ast$inc\-Name, bool local, bool imported, bool indirect)}\label{class_file_def_a2287f9baf90c5a5ec9579617b88f9728}
+
+\item 
+\hypertarget{class_file_def_ab5e0d86bbeb8516c1da7dda95e94945e}{void {\bfseries add\-Included\-By\-Dependency} (\hyperlink{class_file_def}{File\-Def} $\ast$fd, const char $\ast$inc\-Name, bool local, bool imported)}\label{class_file_def_ab5e0d86bbeb8516c1da7dda95e94945e}
+
+\item 
+\hypertarget{class_file_def_ab9b8dfbf4b834e7f3e6557537a877ed9}{void {\bfseries add\-Members\-To\-Member\-Group} ()}\label{class_file_def_ab9b8dfbf4b834e7f3e6557537a877ed9}
+
+\item 
+\hypertarget{class_file_def_a2422e453d341daa281687fb6a4e7b76f}{void {\bfseries distribute\-Member\-Group\-Documentation} ()}\label{class_file_def_a2422e453d341daa281687fb6a4e7b76f}
+
+\item 
+\hypertarget{class_file_def_ad714b0e193e95efc23bb5de8dfb76cb6}{void {\bfseries find\-Sections\-In\-Documentation} ()}\label{class_file_def_ad714b0e193e95efc23bb5de8dfb76cb6}
+
+\item 
+\hypertarget{class_file_def_a7d532f2d18c4a7dc8f3d91f38be7ecd9}{void {\bfseries add\-Included\-Using\-Directives} ()}\label{class_file_def_a7d532f2d18c4a7dc8f3d91f38be7ecd9}
+
+\item 
+\hypertarget{class_file_def_a6b28c57cb8b05f6fe38f771e62b9aa17}{void {\bfseries add\-List\-References} ()}\label{class_file_def_a6b28c57cb8b05f6fe38f771e62b9aa17}
+
+\end{DoxyCompactItemize}
+\subsection*{Campos de Dados}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_file_def_a1df99df902f5f6e81ec3e21e9c07360e}{bool {\bfseries visited}}\label{class_file_def_a1df99df902f5f6e81ec3e21e9c07360e}
+
+\end{DoxyCompactItemize}
+\subsection*{Membros protegidos}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_file_def_a58bd03e1a48023002f814d6a336630b3}{acquire\-File\-Version} ()
+\end{DoxyCompactItemize}
+\subsection*{Amigos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_file_def_a5038284eb3ca46435712b365a038056a}{class {\bfseries File\-Name}}\label{class_file_def_a5038284eb3ca46435712b365a038056a}
+
+\item 
+\hypertarget{class_file_def_a35cc830de6fcd806519b598217001e5a}{void {\bfseries generated\-File\-Names} ()}\label{class_file_def_a35cc830de6fcd806519b598217001e5a}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Descrição detalhada}
+\hyperlink{class_a}{A} model of a file symbol.
+
+An object of this class contains all file information that is gathered. This includes the members and compounds defined in the file.
+
+The member \hyperlink{class_file_def_a0c85f3695c99f7b1aeb762bbdabc8d62}{write\-Documentation()} can be used to generate the page of documentation to H\-T\-M\-L and La\-Te\-X. 
+
+\subsection{Documentação dos Construtores \& Destrutor}
+\hypertarget{class_file_def_acaabbab8536678caa09ba6c9414946ba}{\index{File\-Def@{File\-Def}!File\-Def@{File\-Def}}
+\index{File\-Def@{File\-Def}!FileDef@{File\-Def}}
+\subsubsection[{File\-Def}]{\setlength{\rightskip}{0pt plus 5cm}{\bf File\-Def} (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{p, }
+\item[{const char $\ast$}]{nm, }
+\item[{const char $\ast$}]{lref = {\ttfamily 0}, }
+\item[{const char $\ast$}]{dn = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{class_file_def_acaabbab8536678caa09ba6c9414946ba}
+create a new file definition, where {\itshape p} is the file path, {\itshape nm} the file name, and {\itshape lref} is an H\-T\-M\-L anchor name if the file was read from a tag file or 0 otherwise \hypertarget{class_file_def_a5b5fa61b49fc6b2d797fd94363e0baf2}{\index{File\-Def@{File\-Def}!$\sim$\-File\-Def@{$\sim$\-File\-Def}}
+\index{$\sim$\-File\-Def@{$\sim$\-File\-Def}!FileDef@{File\-Def}}
+\subsubsection[{$\sim$\-File\-Def}]{\setlength{\rightskip}{0pt plus 5cm}$\sim${\bf File\-Def} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_file_def_a5b5fa61b49fc6b2d797fd94363e0baf2}
+destroy the file definition 
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_file_def_a4c8aa83f34d2f4c3f126837545048793}{\index{File\-Def@{File\-Def}!abs\-File\-Path@{abs\-File\-Path}}
+\index{abs\-File\-Path@{abs\-File\-Path}!FileDef@{File\-Def}}
+\subsubsection[{abs\-File\-Path}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} abs\-File\-Path (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_file_def_a4c8aa83f34d2f4c3f126837545048793}
+Returns the absolute path including the file name. \hypertarget{class_file_def_a58bd03e1a48023002f814d6a336630b3}{\index{File\-Def@{File\-Def}!acquire\-File\-Version@{acquire\-File\-Version}}
+\index{acquire\-File\-Version@{acquire\-File\-Version}!FileDef@{File\-Def}}
+\subsubsection[{acquire\-File\-Version}]{\setlength{\rightskip}{0pt plus 5cm}void acquire\-File\-Version (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_file_def_a58bd03e1a48023002f814d6a336630b3}
+Retrieves the file version from version control system. \hypertarget{class_file_def_acd17ae1d9600f864b1beb85dfb99a4f4}{\index{File\-Def@{File\-Def}!anchor@{anchor}}
+\index{anchor@{anchor}!FileDef@{File\-Def}}
+\subsubsection[{anchor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} anchor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_file_def_acd17ae1d9600f864b1beb85dfb99a4f4}
+Returns the anchor within a page where this item can be found 
+
+Implementa \hyperlink{class_definition_aeefc9f68d99e616f91c43a3cebf96357}{Definition}.
+
+\hypertarget{class_file_def_a6bd971b93180dba29a797a5472362d17}{\index{File\-Def@{File\-Def}!compute\-Anchors@{compute\-Anchors}}
+\index{compute\-Anchors@{compute\-Anchors}!FileDef@{File\-Def}}
+\subsubsection[{compute\-Anchors}]{\setlength{\rightskip}{0pt plus 5cm}void compute\-Anchors (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_file_def_a6bd971b93180dba29a797a5472362d17}
+Compute the H\-T\-M\-L anchor names for all members in the class \hypertarget{class_file_def_aac410235a8bf90e471e649bd9dbf9c5e}{\index{File\-Def@{File\-Def}!definition\-Type@{definition\-Type}}
+\index{definition\-Type@{definition\-Type}!FileDef@{File\-Def}}
+\subsubsection[{definition\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Def\-Type} definition\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_file_def_aac410235a8bf90e471e649bd9dbf9c5e}
+Use this for dynamic inspection of the type of the derived class 
+
+Implementa \hyperlink{class_definition_intf_afba7add835518dbf4202846446d667b0}{Definition\-Intf}.
+
+\hypertarget{class_file_def_a67d09f414df966d11bbeba6298307bdf}{\index{File\-Def@{File\-Def}!display\-Name@{display\-Name}}
+\index{display\-Name@{display\-Name}!FileDef@{File\-Def}}
+\subsubsection[{display\-Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} display\-Name (
+\begin{DoxyParamCaption}
+\item[{bool}]{include\-Scope = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_file_def_a67d09f414df966d11bbeba6298307bdf}
+Returns the name of the definition as it appears in the output 
+
+Implementa \hyperlink{class_definition_a98f292cf0fb9a6a1314c7a159b7166ec}{Definition}.
+
+\hypertarget{class_file_def_af8ec7b9a168991b847b3f00cae767c02}{\index{File\-Def@{File\-Def}!doc\-Name@{doc\-Name}}
+\index{doc\-Name@{doc\-Name}!FileDef@{File\-Def}}
+\subsubsection[{doc\-Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} doc\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_file_def_af8ec7b9a168991b847b3f00cae767c02}
+Returns the name as it is used in the documentation \hypertarget{class_file_def_af72a982ba8198cd5c98e9fc850b71df6}{\index{File\-Def@{File\-Def}!get\-Output\-File\-Base@{get\-Output\-File\-Base}}
+\index{get\-Output\-File\-Base@{get\-Output\-File\-Base}!FileDef@{File\-Def}}
+\subsubsection[{get\-Output\-File\-Base}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} get\-Output\-File\-Base (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_file_def_af72a982ba8198cd5c98e9fc850b71df6}
+Returns the base file name (without extension) of this definition. as it is referenced to/written to disk. 
+
+Implementa \hyperlink{class_definition_a9d86cf13f2c63846c41ef739e4cdadf6}{Definition}.
+
+\hypertarget{class_file_def_a69eb2ae36c9531c5900b4ebe1e128af1}{\index{File\-Def@{File\-Def}!get\-Path@{get\-Path}}
+\index{get\-Path@{get\-Path}!FileDef@{File\-Def}}
+\subsubsection[{get\-Path}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} get\-Path (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_file_def_a69eb2ae36c9531c5900b4ebe1e128af1}
+Returns the absolute path of this file. \hypertarget{class_file_def_a0b24a407e5cd41328e5c64aac0884b6f}{\index{File\-Def@{File\-Def}!get\-Source\-File\-Base@{get\-Source\-File\-Base}}
+\index{get\-Source\-File\-Base@{get\-Source\-File\-Base}!FileDef@{File\-Def}}
+\subsubsection[{get\-Source\-File\-Base}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} get\-Source\-File\-Base (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_file_def_a0b24a407e5cd41328e5c64aac0884b6f}
+Returns the name of the source listing of this definition. 
+
+Reimplementado de \hyperlink{class_definition_a0b24a407e5cd41328e5c64aac0884b6f}{Definition}.
+
+\hypertarget{class_file_def_a8e74a61bce5ac00e2350935c122bed89}{\index{File\-Def@{File\-Def}!get\-Version@{get\-Version}}
+\index{get\-Version@{get\-Version}!FileDef@{File\-Def}}
+\subsubsection[{get\-Version}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} get\-Version (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_file_def_a8e74a61bce5ac00e2350935c122bed89}
+Returns version of this file. \hypertarget{class_file_def_aaa4c35b205fb8f45538c090fa61fcf84}{\index{File\-Def@{File\-Def}!include\-Name@{include\-Name}}
+\index{include\-Name@{include\-Name}!FileDef@{File\-Def}}
+\subsubsection[{include\-Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} include\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_file_def_aaa4c35b205fb8f45538c090fa61fcf84}
+Returns the name of the verbatim copy of this file (if any). \hypertarget{class_file_def_abdd378f66d1535111afbe9ab9dd17bec}{\index{File\-Def@{File\-Def}!insert\-Class@{insert\-Class}}
+\index{insert\-Class@{insert\-Class}!FileDef@{File\-Def}}
+\subsubsection[{insert\-Class}]{\setlength{\rightskip}{0pt plus 5cm}void insert\-Class (
+\begin{DoxyParamCaption}
+\item[{{\bf Class\-Def} $\ast$}]{cd}
+\end{DoxyParamCaption}
+)}}\label{class_file_def_abdd378f66d1535111afbe9ab9dd17bec}
+Adds compound definition {\itshape cd} to the list of all compounds of this file \hypertarget{class_file_def_a107a8239a6007765234a4f336ae11bbd}{\index{File\-Def@{File\-Def}!insert\-Member@{insert\-Member}}
+\index{insert\-Member@{insert\-Member}!FileDef@{File\-Def}}
+\subsubsection[{insert\-Member}]{\setlength{\rightskip}{0pt plus 5cm}void insert\-Member (
+\begin{DoxyParamCaption}
+\item[{{\bf Member\-Def} $\ast$}]{md}
+\end{DoxyParamCaption}
+)}}\label{class_file_def_a107a8239a6007765234a4f336ae11bbd}
+Adds member definition {\itshape md} to the list of all members of this file \hypertarget{class_file_def_a778cb0bbf18f1e3b863cf9509d9b4987}{\index{File\-Def@{File\-Def}!insert\-Namespace@{insert\-Namespace}}
+\index{insert\-Namespace@{insert\-Namespace}!FileDef@{File\-Def}}
+\subsubsection[{insert\-Namespace}]{\setlength{\rightskip}{0pt plus 5cm}void insert\-Namespace (
+\begin{DoxyParamCaption}
+\item[{{\bf Namespace\-Def} $\ast$}]{nd}
+\end{DoxyParamCaption}
+)}}\label{class_file_def_a778cb0bbf18f1e3b863cf9509d9b4987}
+Adds namespace definition {\itshape nd} to the list of all compounds of this file \hypertarget{class_file_def_afb5645c0dc69c2f1da67da6e33316e3b}{\index{File\-Def@{File\-Def}!is\-Linkable@{is\-Linkable}}
+\index{is\-Linkable@{is\-Linkable}!FileDef@{File\-Def}}
+\subsubsection[{is\-Linkable}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-Linkable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_file_def_afb5645c0dc69c2f1da67da6e33316e3b}
+Returns T\-R\-U\-E iff it is possible to link to this item. This can be a link to another project imported via a tag file. 
+
+Implementa \hyperlink{class_definition_a53420387530937059d408a7e4316c375}{Definition}.
+
+\hypertarget{class_file_def_a7ff00a84da6e47f3c64c6bf9f6316385}{\index{File\-Def@{File\-Def}!is\-Linkable\-In\-Project@{is\-Linkable\-In\-Project}}
+\index{is\-Linkable\-In\-Project@{is\-Linkable\-In\-Project}!FileDef@{File\-Def}}
+\subsubsection[{is\-Linkable\-In\-Project}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-Linkable\-In\-Project (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_file_def_a7ff00a84da6e47f3c64c6bf9f6316385}
+Returns T\-R\-U\-E iff it is possible to link to this item within this project. 
+
+Implementa \hyperlink{class_definition_a2a4aa56e5209c7fbed15d5c3a3791643}{Definition}.
+
+\hypertarget{class_file_def_a7e78a100e87f823c18b96902f0dadc3b}{\index{File\-Def@{File\-Def}!is\-Source@{is\-Source}}
+\index{is\-Source@{is\-Source}!FileDef@{File\-Def}}
+\subsubsection[{is\-Source}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-Source (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_file_def_a7e78a100e87f823c18b96902f0dadc3b}
+Returns T\-R\-U\-E if this file is a source file. \hypertarget{class_file_def_af92302878527ec555ba9e3fe066925ff}{\index{File\-Def@{File\-Def}!name@{name}}
+\index{name@{name}!FileDef@{File\-Def}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_file_def_af92302878527ec555ba9e3fe066925ff}
+Returns the unique file name (this may include part of the path). \hypertarget{class_file_def_a0c85f3695c99f7b1aeb762bbdabc8d62}{\index{File\-Def@{File\-Def}!write\-Documentation@{write\-Documentation}}
+\index{write\-Documentation@{write\-Documentation}!FileDef@{File\-Def}}
+\subsubsection[{write\-Documentation}]{\setlength{\rightskip}{0pt plus 5cm}void write\-Documentation (
+\begin{DoxyParamCaption}
+\item[{{\bf Output\-List} \&}]{ol}
+\end{DoxyParamCaption}
+)}}\label{class_file_def_a0c85f3695c99f7b1aeb762bbdabc8d62}
+Write the documentation page for this file to the file of output generators {\itshape ol}. \hypertarget{class_file_def_a2e1a2d2a95a8a49fd2537f9b05fbc296}{\index{File\-Def@{File\-Def}!write\-Source@{write\-Source}}
+\index{write\-Source@{write\-Source}!FileDef@{File\-Def}}
+\subsubsection[{write\-Source}]{\setlength{\rightskip}{0pt plus 5cm}void write\-Source (
+\begin{DoxyParamCaption}
+\item[{{\bf Output\-List} \&}]{ol, }
+\item[{bool}]{same\-Tu, }
+\item[{{\bf Q\-Str\-List} \&}]{files\-In\-Same\-Tu}
+\end{DoxyParamCaption}
+)}}\label{class_file_def_a2e1a2d2a95a8a49fd2537f9b05fbc296}
+Write a source listing of this file to the output 
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/src/filedef.\-h\item 
+C\-:/\-Users/teste/git/doxygen/src/filedef.\-cpp\end{DoxyCompactItemize}

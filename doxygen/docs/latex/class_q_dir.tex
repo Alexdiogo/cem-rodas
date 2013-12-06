@@ -1,0 +1,919 @@
+\hypertarget{class_q_dir}{\section{Referência à classe Q\-Dir}
+\label{class_q_dir}\index{Q\-Dir@{Q\-Dir}}
+}
+
+
+Traverses directory structures and contents in a platform-\/independent way.  
+
+
+
+
+{\ttfamily \#include $<$qdir.\-h$>$}
+
+\subsection*{Tipos Públicos}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_q_dir_ae5939bcf9175d1742ed9c51e042efd50}{Filter\-Spec} \{ \\*
+{\bfseries Dirs} = 0x001, 
+{\bfseries Files} = 0x002, 
+{\bfseries Drives} = 0x004, 
+{\bfseries No\-Sym\-Links} = 0x008, 
+\\*
+{\bfseries All} = 0x007, 
+{\bfseries Type\-Mask} = 0x00\-F, 
+{\bfseries Readable} = 0x010, 
+{\bfseries Writable} = 0x020, 
+\\*
+{\bfseries Executable} = 0x040, 
+{\bfseries R\-W\-E\-Mask} = 0x070, 
+{\bfseries Modified} = 0x080, 
+{\bfseries Hidden} = 0x100, 
+\\*
+{\bfseries System} = 0x200, 
+{\bfseries Access\-Mask} = 0x3\-F0, 
+{\bfseries Default\-Filter} = -\/1
+ \}
+\item 
+enum \hyperlink{class_q_dir_ab098a8b38ab309d7073f6920c4811af4}{Sort\-Spec} \{ \\*
+{\bfseries Name} = 0x00, 
+{\bfseries Time} = 0x01, 
+{\bfseries Size} = 0x02, 
+{\bfseries Unsorted} = 0x03, 
+\\*
+{\bfseries Sort\-By\-Mask} = 0x03, 
+{\bfseries Dirs\-First} = 0x04, 
+{\bfseries Reversed} = 0x08, 
+{\bfseries Ignore\-Case} = 0x10, 
+\\*
+{\bfseries Default\-Sort} = -\/1
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_q_dir_ac92af10ffd2a612dcddbb6b76daacd79}{Q\-Dir} ()
+\item 
+\hyperlink{class_q_dir_ada2fef9adbc6d956ffeb771ff82b089f}{Q\-Dir} (const \hyperlink{class_q_string}{Q\-String} \&\hyperlink{class_q_dir_abef507bc8e9b061531a77dc84e991255}{path}, const \hyperlink{class_q_string}{Q\-String} \&\hyperlink{class_q_dir_a52e506d0a7174c22b22f5f7c663b7e24}{name\-Filter}=Q\-String\-::null, int sort\-Spec=Name$|$Ignore\-Case, int filter\-Spec=All)
+\item 
+\hyperlink{class_q_dir_a6166c6567dc4f3e9f1ebdc7afb59ee83}{Q\-Dir} (const \hyperlink{class_q_dir}{Q\-Dir} \&)
+\item 
+virtual \hyperlink{class_q_dir_a3dc50efd2789dc7f184143a40e122304}{$\sim$\-Q\-Dir} ()
+\item 
+\hyperlink{class_q_dir}{Q\-Dir} \& \hyperlink{class_q_dir_adbd8dd48a4d66c4149c4af35184988e4}{operator=} (const \hyperlink{class_q_dir}{Q\-Dir} \&)
+\item 
+\hyperlink{class_q_dir}{Q\-Dir} \& \hyperlink{class_q_dir_a0b1b140d489398d746bdc48e69f3b5a4}{operator=} (const \hyperlink{class_q_string}{Q\-String} \&\hyperlink{class_q_dir_abef507bc8e9b061531a77dc84e991255}{path})
+\item 
+virtual void \hyperlink{class_q_dir_af4c459056e34ddd0050ab9473def6db1}{set\-Path} (const \hyperlink{class_q_string}{Q\-String} \&\hyperlink{class_q_dir_abef507bc8e9b061531a77dc84e991255}{path})
+\item 
+virtual \hyperlink{class_q_string}{Q\-String} \hyperlink{class_q_dir_abef507bc8e9b061531a77dc84e991255}{path} () const 
+\item 
+virtual \hyperlink{class_q_string}{Q\-String} \hyperlink{class_q_dir_a57ff66cd13af0071d9869dd5e10db5c5}{abs\-Path} () const 
+\item 
+\hypertarget{class_q_dir_a82d81d953399417ba00a3d9a7ea3ef60}{virtual \hyperlink{class_q_string}{Q\-String} {\bfseries canonical\-Path} () const }\label{class_q_dir_a82d81d953399417ba00a3d9a7ea3ef60}
+
+\item 
+virtual \hyperlink{class_q_string}{Q\-String} \hyperlink{class_q_dir_a66689b909d65b23eb7c218abf3803d84}{dir\-Name} () const 
+\item 
+virtual \hyperlink{class_q_string}{Q\-String} \hyperlink{class_q_dir_acbf5afb212923b3b8372ca0a6cedb7b5}{file\-Path} (const \hyperlink{class_q_string}{Q\-String} \&file\-Name, bool accept\-Abs\-Path=T\-R\-U\-E) const 
+\item 
+virtual \hyperlink{class_q_string}{Q\-String} \hyperlink{class_q_dir_ad95e4b854527ddde65755cdea20e6743}{abs\-File\-Path} (const \hyperlink{class_q_string}{Q\-String} \&file\-Name, bool accept\-Abs\-Path=T\-R\-U\-E) const 
+\item 
+virtual bool \hyperlink{class_q_dir_abfc428d349712e9d797fc713837e3c43}{cd} (const \hyperlink{class_q_string}{Q\-String} \&\hyperlink{class_q_dir_a66689b909d65b23eb7c218abf3803d84}{dir\-Name}, bool accept\-Abs\-Path=T\-R\-U\-E)
+\item 
+virtual bool \hyperlink{class_q_dir_abb27c61db0ff785666cbd38b73e72af3}{cd\-Up} ()
+\item 
+\hyperlink{class_q_string}{Q\-String} \hyperlink{class_q_dir_a52e506d0a7174c22b22f5f7c663b7e24}{name\-Filter} () const 
+\item 
+virtual void \hyperlink{class_q_dir_a7a8c724a5be5ad5af7956b00d220f9b9}{set\-Name\-Filter} (const \hyperlink{class_q_string}{Q\-String} \&\hyperlink{class_q_dir_a52e506d0a7174c22b22f5f7c663b7e24}{name\-Filter})
+\item 
+\hyperlink{class_q_dir_ae5939bcf9175d1742ed9c51e042efd50}{Filter\-Spec} \hyperlink{class_q_dir_a1087ca52300e3a6e4aa3af11f3e531d4}{filter} () const 
+\item 
+virtual void \hyperlink{class_q_dir_a45b37db847b9f966f764cd875a3f970c}{set\-Filter} (int filter\-Spec)
+\item 
+\hyperlink{class_q_dir_ab098a8b38ab309d7073f6920c4811af4}{Sort\-Spec} \hyperlink{class_q_dir_abafa20cd6c524655d4d509d7fbc617df}{sorting} () const 
+\item 
+virtual void \hyperlink{class_q_dir_a89d3108e4cc3baff1f70b740caf94bfa}{set\-Sorting} (int sort\-Spec)
+\item 
+bool \hyperlink{class_q_dir_a8adb47f23eab4cb8d65e7f9a66d3895a}{match\-All\-Dirs} () const 
+\item 
+virtual void \hyperlink{class_q_dir_a4b4ed48f68e5fd116f09dcfb820f56f5}{set\-Match\-All\-Dirs} (bool)
+\item 
+uint \hyperlink{class_q_dir_a774149fc271ebaba2aabcd183a836e8f}{count} () const 
+\item 
+\hyperlink{class_q_string}{Q\-String} \hyperlink{class_q_dir_ac47d67a1955be4e674d90f0621ba0937}{operator\mbox{[}$\,$\mbox{]}} (int) const 
+\item 
+virtual \hyperlink{class_q_str_list}{Q\-Str\-List} \hyperlink{class_q_dir_aaaeaab159aa6fee8d2cb8b6dfdf3836f}{encoded\-Entry\-List} (int filter\-Spec=Default\-Filter, int sort\-Spec=Default\-Sort) const 
+\item 
+virtual \hyperlink{class_q_str_list}{Q\-Str\-List} \hyperlink{class_q_dir_aec1c87e9f191b1bef76b75d2001f7287}{encoded\-Entry\-List} (const \hyperlink{class_q_string}{Q\-String} \&\hyperlink{class_q_dir_a52e506d0a7174c22b22f5f7c663b7e24}{name\-Filter}, int filter\-Spec=Default\-Filter, int sort\-Spec=Default\-Sort) const 
+\item 
+virtual \hyperlink{class_q_string_list}{Q\-String\-List} \hyperlink{class_q_dir_a31d8fe19dd240c844af9cf44e988384f}{entry\-List} (int filter\-Spec=Default\-Filter, int sort\-Spec=Default\-Sort) const 
+\item 
+virtual \hyperlink{class_q_string_list}{Q\-String\-List} \hyperlink{class_q_dir_a4c12091d0c7b067971e244fb1291d354}{entry\-List} (const \hyperlink{class_q_string}{Q\-String} \&\hyperlink{class_q_dir_a52e506d0a7174c22b22f5f7c663b7e24}{name\-Filter}, int filter\-Spec=Default\-Filter, int sort\-Spec=Default\-Sort) const 
+\item 
+virtual const \hyperlink{class_q_list}{Q\-File\-Info\-List} $\ast$ \hyperlink{class_q_dir_a455adcdcb8360dda877b634a8aca27fe}{entry\-Info\-List} (int filter\-Spec=Default\-Filter, int sort\-Spec=Default\-Sort) const 
+\item 
+virtual const \hyperlink{class_q_list}{Q\-File\-Info\-List} $\ast$ \hyperlink{class_q_dir_a49cccb861848a5eb8f068be21af6d7bb}{entry\-Info\-List} (const \hyperlink{class_q_string}{Q\-String} \&\hyperlink{class_q_dir_a52e506d0a7174c22b22f5f7c663b7e24}{name\-Filter}, int filter\-Spec=Default\-Filter, int sort\-Spec=Default\-Sort) const 
+\item 
+\hypertarget{class_q_dir_a14984b052293bc6219a8bb200b676bf0}{virtual bool {\bfseries mkdir} (const \hyperlink{class_q_string}{Q\-String} \&\hyperlink{class_q_dir_a66689b909d65b23eb7c218abf3803d84}{dir\-Name}, bool accept\-Abs\-Path=T\-R\-U\-E) const }\label{class_q_dir_a14984b052293bc6219a8bb200b676bf0}
+
+\item 
+\hypertarget{class_q_dir_ac7c9723df3ef1bcf6441d18c27e781d0}{virtual bool {\bfseries rmdir} (const \hyperlink{class_q_string}{Q\-String} \&\hyperlink{class_q_dir_a66689b909d65b23eb7c218abf3803d84}{dir\-Name}, bool accept\-Abs\-Path=T\-R\-U\-E) const }\label{class_q_dir_ac7c9723df3ef1bcf6441d18c27e781d0}
+
+\item 
+\hypertarget{class_q_dir_a3d7f091ba732d3899bcb34dde9fbfd63}{virtual bool {\bfseries is\-Readable} () const }\label{class_q_dir_a3d7f091ba732d3899bcb34dde9fbfd63}
+
+\item 
+virtual bool \hyperlink{class_q_dir_a74bdced855aaba94868b77f21398775c}{exists} () const 
+\item 
+\hypertarget{class_q_dir_adb67b2a249620b49f23a8bc03cbdb3b0}{virtual bool {\bfseries is\-Root} () const }\label{class_q_dir_adb67b2a249620b49f23a8bc03cbdb3b0}
+
+\item 
+virtual bool \hyperlink{class_q_dir_ad6802e0e235015f0503e36db60d819e8}{is\-Relative} () const 
+\item 
+virtual void \hyperlink{class_q_dir_a92c71858159be3400795711ad6d8f584}{convert\-To\-Abs} ()
+\item 
+virtual bool \hyperlink{class_q_dir_a3928ea4a4e6a7b29212b20aa97d81c93}{operator==} (const \hyperlink{class_q_dir}{Q\-Dir} \&) const 
+\item 
+virtual bool \hyperlink{class_q_dir_a311829a9fc8fd8ad8d9aefbdc876d8f7}{operator!=} (const \hyperlink{class_q_dir}{Q\-Dir} \&) const 
+\item 
+virtual bool \hyperlink{class_q_dir_acbe0d2cbf0b30d6231f8bb9892551282}{remove} (const \hyperlink{class_q_string}{Q\-String} \&file\-Name, bool accept\-Abs\-Path=T\-R\-U\-E)
+\item 
+\hypertarget{class_q_dir_a20c80ba9cd68d8518cf6f6fdb04ebf87}{virtual bool {\bfseries rename} (const \hyperlink{class_q_string}{Q\-String} \&name, const \hyperlink{class_q_string}{Q\-String} \&new\-Name, bool accept\-Abs\-Paths=T\-R\-U\-E)}\label{class_q_dir_a20c80ba9cd68d8518cf6f6fdb04ebf87}
+
+\item 
+virtual bool \hyperlink{class_q_dir_ae3b618b65c524ca053bc9acdda935a21}{exists} (const \hyperlink{class_q_string}{Q\-String} \&name, bool accept\-Abs\-Path=T\-R\-U\-E)
+\end{DoxyCompactItemize}
+\subsection*{Membros públicos estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_q_string}{Q\-String} \hyperlink{class_q_dir_afbdfe81a3dbef9637c37fb9455d1ffcc}{convert\-Separators} (const \hyperlink{class_q_string}{Q\-String} \&path\-Name)
+\item 
+\hypertarget{class_q_dir_aa2e73a1b51c4db7b9a18fdd407f485b1}{static const \hyperlink{class_q_list}{Q\-File\-Info\-List} $\ast$ {\bfseries drives} ()}\label{class_q_dir_aa2e73a1b51c4db7b9a18fdd407f485b1}
+
+\item 
+static char \hyperlink{class_q_dir_a5be6dd0988dcb207e512241b82d5dcfd}{separator} ()
+\item 
+\hypertarget{class_q_dir_aa119df838eef033593c6293fe704ff4e}{static bool {\bfseries set\-Current} (const \hyperlink{class_q_string}{Q\-String} \&\hyperlink{class_q_dir_abef507bc8e9b061531a77dc84e991255}{path})}\label{class_q_dir_aa119df838eef033593c6293fe704ff4e}
+
+\item 
+static \hyperlink{class_q_dir}{Q\-Dir} \hyperlink{class_q_dir_a1050f05c18394b424efe759f5306a389}{current} ()
+\item 
+static \hyperlink{class_q_dir}{Q\-Dir} \hyperlink{class_q_dir_aaab36122db9259296c1a1e4c0c47ad4c}{home} ()
+\item 
+static \hyperlink{class_q_dir}{Q\-Dir} \hyperlink{class_q_dir_a6affbb3c1c91145c6daa130d5c45ebe6}{root} ()
+\item 
+\hypertarget{class_q_dir_af51df33280d66ef9b2764d56c4a9fce4}{static \hyperlink{class_q_string}{Q\-String} {\bfseries current\-Dir\-Path} ()}\label{class_q_dir_af51df33280d66ef9b2764d56c4a9fce4}
+
+\item 
+static \hyperlink{class_q_string}{Q\-String} \hyperlink{class_q_dir_a15b58f0bf61cb8ffd19faa599fefde1b}{home\-Dir\-Path} ()
+\item 
+\hypertarget{class_q_dir_abaeb0aa1b8d3411c119ecedd5be584c5}{static \hyperlink{class_q_string}{Q\-String} {\bfseries root\-Dir\-Path} ()}\label{class_q_dir_abaeb0aa1b8d3411c119ecedd5be584c5}
+
+\item 
+static bool \hyperlink{class_q_dir_addb572de5a0147501ad71f705c2f0e2b}{match} (const \hyperlink{class_q_string_list}{Q\-String\-List} \&filters, const \hyperlink{class_q_string}{Q\-String} \&file\-Name)
+\item 
+static bool \hyperlink{class_q_dir_a9b5e9a0892e4534776c6091c72a2e4a3}{match} (const \hyperlink{class_q_string}{Q\-String} \&\hyperlink{class_q_dir_a1087ca52300e3a6e4aa3af11f3e531d4}{filter}, const \hyperlink{class_q_string}{Q\-String} \&file\-Name)
+\item 
+static \hyperlink{class_q_string}{Q\-String} \hyperlink{class_q_dir_a72a4ae1acab673f29c2bcc3ac7fd0c00}{clean\-Dir\-Path} (const \hyperlink{class_q_string}{Q\-String} \&dir\-Path)
+\item 
+\hypertarget{class_q_dir_a0cbbd110fc47ce6e6d02efd2a35f928f}{static bool {\bfseries is\-Relative\-Path} (const \hyperlink{class_q_string}{Q\-String} \&\hyperlink{class_q_dir_abef507bc8e9b061531a77dc84e991255}{path})}\label{class_q_dir_a0cbbd110fc47ce6e6d02efd2a35f928f}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+Traverses directory structures and contents in a platform-\/independent way. 
+
+\hyperlink{class_a}{A} \hyperlink{class_q_dir}{Q\-Dir} can point to a file using either a relative or an absolute file path. Absolute file paths begin with the directory separator ('/') or a drive specification (not applicable to U\-N\-I\-X). Relative file names begin with a directory name or a file name and specify a path relative to the current directory.
+
+An example of an absolute path is the string \char`\"{}/tmp/quartz\char`\"{}, a relative path might look like \char`\"{}src/fatlib\char`\"{}. You can use the function \hyperlink{class_q_dir_ad6802e0e235015f0503e36db60d819e8}{is\-Relative()} to check if a \hyperlink{class_q_dir}{Q\-Dir} is using a relative or an absolute file path. You can call the function \hyperlink{class_q_dir_a92c71858159be3400795711ad6d8f584}{convert\-To\-Abs()} to convert a relative \hyperlink{class_q_dir}{Q\-Dir} to an absolute one.
+
+The directory \char`\"{}example\char`\"{} under the current directory is checked for existence in the example below\-:
+
+
+\begin{DoxyCode}
+\hyperlink{class_q_dir}{QDir} d( \textcolor{stringliteral}{"example"} );          \textcolor{comment}{// "./example"}
+\textcolor{keywordflow}{if} ( !d.\hyperlink{class_q_dir_a74bdced855aaba94868b77f21398775c}{exists}() )
+qWarning( \textcolor{stringliteral}{"Cannot find the example directory"} );
+\end{DoxyCode}
+
+
+If you always use '/' as a directory separator, Qt will translate your paths to conform to the underlying operating system.
+
+\hyperlink{class_q_dir_abfc428d349712e9d797fc713837e3c43}{cd()} and \hyperlink{class_q_dir_abb27c61db0ff785666cbd38b73e72af3}{cd\-Up()} can be used to navigate the directory tree. Note that the logical cd and cd\-Up operations are not performed if the new directory does not exist.
+
+\hyperlink{struct_example}{Example}\-: 
+\begin{DoxyCode}
+\hyperlink{class_q_dir}{QDir} d = \hyperlink{class_q_dir_a6affbb3c1c91145c6daa130d5c45ebe6}{QDir::root}();            \textcolor{comment}{// "/"}
+\textcolor{keywordflow}{if} ( !d.\hyperlink{class_q_dir_abfc428d349712e9d797fc713837e3c43}{cd}(\textcolor{stringliteral}{"tmp"}) ) \{         \textcolor{comment}{// "/tmp"}
+qWarning( \textcolor{stringliteral}{"Cannot find the \(\backslash\)"/tmp\(\backslash\)" directory"} );
+\} \textcolor{keywordflow}{else} \{
+\hyperlink{class_q_file}{QFile} f( d.\hyperlink{class_q_dir_acbf5afb212923b3b8372ca0a6cedb7b5}{filePath}(\textcolor{stringliteral}{"ex1.txt"}) ); \textcolor{comment}{// "/tmp/ex1.txt"}
+\textcolor{keywordflow}{if} ( !f.open(IO\_ReadWrite) )
+    qWarning( \textcolor{stringliteral}{"Cannot create the file %s"}, f.name() );
+\}
+\end{DoxyCode}
+
+
+To read the contents of a directory you can use the \hyperlink{class_q_dir_a31d8fe19dd240c844af9cf44e988384f}{entry\-List()} and \hyperlink{class_q_dir_a455adcdcb8360dda877b634a8aca27fe}{entry\-Info\-List()} functions.
+
+\hyperlink{struct_example}{Example}\-: 
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include <stdio.h>}
+\textcolor{preprocessor}{#include <qdir.h>}
+
+\textcolor{comment}{//}
+\textcolor{comment}{// This program scans the current directory and lists all files}
+\textcolor{comment}{// that are not symbolic links, sorted by size with the smallest files}
+\textcolor{comment}{// first.}
+\textcolor{comment}{//}
+
+\textcolor{keywordtype}{int} main( \textcolor{keywordtype}{int} argc, \textcolor{keywordtype}{char} **argv )
+\{
+\hyperlink{class_q_dir}{QDir} d;
+d.\hyperlink{class_q_dir_a45b37db847b9f966f764cd875a3f970c}{setFilter}( QDir::Files | QDir::Hidden | QDir::NoSymLinks );
+d.\hyperlink{class_q_dir_a89d3108e4cc3baff1f70b740caf94bfa}{setSorting}( QDir::Size | QDir::Reversed );
+
+\textcolor{keyword}{const} \hyperlink{class_q_list}{QFileInfoList} *list = d.\hyperlink{class_q_dir_a455adcdcb8360dda877b634a8aca27fe}{entryInfoList}();
+\hyperlink{class_q_list_iterator}{QFileInfoListIterator} it( *list );    \textcolor{comment}{// create list iterator}
+\hyperlink{class_q_file_info}{QFileInfo} *fi;                \textcolor{comment}{// pointer for traversing}
+
+printf( \textcolor{stringliteral}{"     BYTES FILENAME\(\backslash\)n"} );    \textcolor{comment}{// print header}
+\textcolor{keywordflow}{while} ( (fi=it.current()) ) \{     \textcolor{comment}{// for each file...}
+    printf( \textcolor{stringliteral}{"%10li %s\(\backslash\)n"}, fi->\hyperlink{class_q_file_info_a7e63723212bed1ca52f0fe57e58b812e}{size}(), fi->\hyperlink{class_q_file_info_a5a82962b4e77435323352ef77597016a}{fileName}().\hyperlink{class_q_string_a3030b6aaaab96d31eb5b62c44a54aeaf}{data}() );
+    ++it;             \textcolor{comment}{// goto next list element}
+\}
+\}
+\end{DoxyCode}
+ 
+
+\subsection{Documentação das enumerações}
+\hypertarget{class_q_dir_ae5939bcf9175d1742ed9c51e042efd50}{\index{Q\-Dir@{Q\-Dir}!Filter\-Spec@{Filter\-Spec}}
+\index{Filter\-Spec@{Filter\-Spec}!QDir@{Q\-Dir}}
+\subsubsection[{Filter\-Spec}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Filter\-Spec}}}\label{class_q_dir_ae5939bcf9175d1742ed9c51e042efd50}
+This enum describes how \hyperlink{class_q_dir}{Q\-Dir} is to select what entries in a directory to return. The filter value is specified by or-\/ing together values from the following list\-: 
+\begin{DoxyItemize}
+\item {\ttfamily Dirs} -\/ List directories only 
+\item {\ttfamily Files} -\/ List files only
+
+
+\item {\ttfamily Drives} -\/ List disk drives (does nothing under unix) 
+\item {\ttfamily No\-Sym\-Links} -\/ Do not list symbolic links (where they exist) 
+\item {\ttfamily Readable} -\/ List files for which the application has read access. 
+\item {\ttfamily Writable} -\/ List files for which the application has write access. 
+\item {\ttfamily Executable} -\/ List files for which the application has execute access 
+\item {\ttfamily Modified} -\/ Only list files that have been modified (does nothing under unix) 
+\item {\ttfamily Hidden} -\/ List hidden files (on unix, files starting with a .) 
+\item {\ttfamily System} -\/ List system files (does nothing under unix) 
+\end{DoxyItemize}
+
+If you do not set any of {\ttfamily Readable}, {\ttfamily Writable} or {\ttfamily Executable}, \hyperlink{class_q_dir}{Q\-Dir} will set all three of them. This makes the default easy to write and at the same time useful.
+
+Examples\-: {\ttfamily Readable$|$\-Writable} means list all files for which the application has read access, write access or both. {\ttfamily Dirs$|$\-Drives} means list drives, directories, all files that the application can read, write or execute, and also symlinks to such files/directories. \hypertarget{class_q_dir_ab098a8b38ab309d7073f6920c4811af4}{\index{Q\-Dir@{Q\-Dir}!Sort\-Spec@{Sort\-Spec}}
+\index{Sort\-Spec@{Sort\-Spec}!QDir@{Q\-Dir}}
+\subsubsection[{Sort\-Spec}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Sort\-Spec}}}\label{class_q_dir_ab098a8b38ab309d7073f6920c4811af4}
+This enum describes how \hyperlink{class_q_dir}{Q\-Dir} is to sort entries in a directory when it returns a list of them. The sort value is specified by or-\/ing together values from the following list\-: 
+\begin{DoxyItemize}
+\item {\ttfamily Name} -\/ sort by name 
+\item {\ttfamily Time} -\/ sort by time (modification time) 
+\item {\ttfamily Size} -\/ sort by file size 
+\item {\ttfamily Unsorted} -\/ do not sort
+
+
+\item {\ttfamily Dirs\-First} -\/ put all directories first in the list 
+\item {\ttfamily Reversed} -\/ reverse the sort order 
+\item {\ttfamily Ignore\-Case} -\/ sort case-\/insensitively
+
+
+\end{DoxyItemize}
+
+You can only specify one of the first four. If you specify both {\ttfamily Dirs\-First} and {\ttfamily Reversed}, directories are still put first but the list is otherwise reversed. 
+
+\subsection{Documentação dos Construtores \& Destrutor}
+\hypertarget{class_q_dir_ac92af10ffd2a612dcddbb6b76daacd79}{\index{Q\-Dir@{Q\-Dir}!Q\-Dir@{Q\-Dir}}
+\index{Q\-Dir@{Q\-Dir}!QDir@{Q\-Dir}}
+\subsubsection[{Q\-Dir}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Dir} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_q_dir_ac92af10ffd2a612dcddbb6b76daacd79}
+Constructs a \hyperlink{class_q_dir}{Q\-Dir} pointing to the current directory. \begin{DoxySeeAlso}{Veja também}
+current\-Dir\-Path() 
+\end{DoxySeeAlso}
+\hypertarget{class_q_dir_ada2fef9adbc6d956ffeb771ff82b089f}{\index{Q\-Dir@{Q\-Dir}!Q\-Dir@{Q\-Dir}}
+\index{Q\-Dir@{Q\-Dir}!QDir@{Q\-Dir}}
+\subsubsection[{Q\-Dir}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Dir} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{path, }
+\item[{const {\bf Q\-String} \&}]{name\-Filter = {\ttfamily QString\-:\-:null}, }
+\item[{int}]{sort\-Spec = {\ttfamily Name~$|$~IgnoreCase}, }
+\item[{int}]{filter\-Spec = {\ttfamily All}}
+\end{DoxyParamCaption}
+)}}\label{class_q_dir_ada2fef9adbc6d956ffeb771ff82b089f}
+Constructs a \hyperlink{class_q_dir}{Q\-Dir}.
+
+\begin{DoxyItemize}
+\item {\itshape path} is the directory. \item {\itshape name\-Filter} is the file name filter. \item {\itshape sort\-Spec} is the sort specification, which describes how to sort the files in the directory. \item {\itshape filter\-Spec} is the filter specification, which describes how to filter the files in the directory.\end{DoxyItemize}
+Most of these arguments (except {\itshape path}) have optional values.
+
+\hyperlink{struct_example}{Example}\-: 
+\begin{DoxyCode}
+\textcolor{comment}{// lists all files in /tmp}
+
+\hyperlink{class_q_dir}{QDir} d( \textcolor{stringliteral}{"/tmp"} );
+\textcolor{keywordflow}{for} ( \textcolor{keywordtype}{int} i=0; i<d.\hyperlink{class_q_dir_a774149fc271ebaba2aabcd183a836e8f}{count}(); i++ )
+printf( \textcolor{stringliteral}{"%s\(\backslash\)n"}, d[i] );
+\end{DoxyCode}
+
+
+If {\itshape path} is \char`\"{}\char`\"{} or null, the directory is set to \char`\"{}.\char`\"{} (the current directory). If {\itshape name\-Filter} is \char`\"{}\char`\"{} or null, it is set to \char`\"{}$\ast$\char`\"{} (all files).
+
+No check is made to ensure that the directory exists.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_dir_a74bdced855aaba94868b77f21398775c}{exists()}, \hyperlink{class_q_dir_af4c459056e34ddd0050ab9473def6db1}{set\-Path()}, \hyperlink{class_q_dir_a7a8c724a5be5ad5af7956b00d220f9b9}{set\-Name\-Filter()}, \hyperlink{class_q_dir_a45b37db847b9f966f764cd875a3f970c}{set\-Filter()}, \hyperlink{class_q_dir_a89d3108e4cc3baff1f70b740caf94bfa}{set\-Sorting()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_dir_a6166c6567dc4f3e9f1ebdc7afb59ee83}{\index{Q\-Dir@{Q\-Dir}!Q\-Dir@{Q\-Dir}}
+\index{Q\-Dir@{Q\-Dir}!QDir@{Q\-Dir}}
+\subsubsection[{Q\-Dir}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Dir} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-Dir} \&}]{d}
+\end{DoxyParamCaption}
+)}}\label{class_q_dir_a6166c6567dc4f3e9f1ebdc7afb59ee83}
+Constructs a \hyperlink{class_q_dir}{Q\-Dir} that is a copy of the given directory. \begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_dir_adbd8dd48a4d66c4149c4af35184988e4}{operator=()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_dir_a3dc50efd2789dc7f184143a40e122304}{\index{Q\-Dir@{Q\-Dir}!$\sim$\-Q\-Dir@{$\sim$\-Q\-Dir}}
+\index{$\sim$\-Q\-Dir@{$\sim$\-Q\-Dir}!QDir@{Q\-Dir}}
+\subsubsection[{$\sim$\-Q\-Dir}]{\setlength{\rightskip}{0pt plus 5cm}$\sim${\bf Q\-Dir} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_dir_a3dc50efd2789dc7f184143a40e122304}
+Destructs the \hyperlink{class_q_dir}{Q\-Dir} and cleans up. 
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_q_dir_ad95e4b854527ddde65755cdea20e6743}{\index{Q\-Dir@{Q\-Dir}!abs\-File\-Path@{abs\-File\-Path}}
+\index{abs\-File\-Path@{abs\-File\-Path}!QDir@{Q\-Dir}}
+\subsubsection[{abs\-File\-Path}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} abs\-File\-Path (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{file\-Name, }
+\item[{bool}]{accept\-Abs\-Path = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_dir_ad95e4b854527ddde65755cdea20e6743}
+Returns the absolute path name of a file in the directory. Does N\-O\-T check if the file actually exists in the directory. Redundant multiple separators or \char`\"{}.\char`\"{} and \char`\"{}..\char`\"{} directories in {\itshape file\-Name} will N\-O\-T be removed (see \hyperlink{class_q_dir_a72a4ae1acab673f29c2bcc3ac7fd0c00}{clean\-Dir\-Path()}).
+
+If {\itshape accept\-Abs\-Path} is T\-R\-U\-E a {\itshape file\-Name} starting with a separator ('/') will be returned without change. if {\itshape accept\-Abs\-Path} is F\-A\-L\-S\-E an absolute path will be appended to the directory path.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_dir_acbf5afb212923b3b8372ca0a6cedb7b5}{file\-Path()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_dir_a57ff66cd13af0071d9869dd5e10db5c5}{\index{Q\-Dir@{Q\-Dir}!abs\-Path@{abs\-Path}}
+\index{abs\-Path@{abs\-Path}!QDir@{Q\-Dir}}
+\subsubsection[{abs\-Path}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} abs\-Path (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_dir_a57ff66cd13af0071d9869dd5e10db5c5}
+Returns the absolute (a path that starts with '/') path, which may contain symbolic links, but never contains redundant \char`\"{}.\char`\"{}, \char`\"{}..\char`\"{} or multiple separators.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_dir_af4c459056e34ddd0050ab9473def6db1}{set\-Path()}, canonical\-Path(), \hyperlink{class_q_dir_a74bdced855aaba94868b77f21398775c}{exists()}, \hyperlink{class_q_dir_a72a4ae1acab673f29c2bcc3ac7fd0c00}{clean\-Dir\-Path()}, \hyperlink{class_q_dir_a66689b909d65b23eb7c218abf3803d84}{dir\-Name()}, \hyperlink{class_q_dir_ad95e4b854527ddde65755cdea20e6743}{abs\-File\-Path()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_dir_abfc428d349712e9d797fc713837e3c43}{\index{Q\-Dir@{Q\-Dir}!cd@{cd}}
+\index{cd@{cd}!QDir@{Q\-Dir}}
+\subsubsection[{cd}]{\setlength{\rightskip}{0pt plus 5cm}bool cd (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{dir\-Name, }
+\item[{bool}]{accept\-Abs\-Path = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_dir_abfc428d349712e9d797fc713837e3c43}
+Changes directory by descending into the given directory. Returns T\-R\-U\-E if the new directory exists and is readable. Note that the logical cd operation is N\-O\-T performed if the new directory does not exist.
+
+If {\itshape accept\-Abs\-Path} is T\-R\-U\-E a path starting with a separator ('/') will cd to the absolute directory, if {\itshape accept\-Abs\-Path} is F\-A\-L\-S\-E any number of separators at the beginning of {\itshape dir\-Name} will be removed.
+
+\hyperlink{struct_example}{Example}\-: 
+\begin{DoxyCode}
+\hyperlink{class_q_dir}{QDir} d = \hyperlink{class_q_dir_aaab36122db9259296c1a1e4c0c47ad4c}{QDir::home}();  \textcolor{comment}{// now points to home directory}
+\textcolor{keywordflow}{if} ( !d.\hyperlink{class_q_dir_abfc428d349712e9d797fc713837e3c43}{cd}(\textcolor{stringliteral}{"c++"}) ) \{     \textcolor{comment}{// now points to "c++" under home directory if OK}
+    \hyperlink{class_q_file_info}{QFileInfo} fi( d, \textcolor{stringliteral}{"c++"} );
+    \textcolor{keywordflow}{if} ( fi.\hyperlink{class_q_file_info_a74bdced855aaba94868b77f21398775c}{exists}() ) \{
+    \textcolor{keywordflow}{if} ( fi.\hyperlink{class_q_file_info_a50918fb073b73ccef883870dfb705d74}{isDir}() )
+        qWarning( \textcolor{stringliteral}{"Cannot cd into \(\backslash\)"%s\(\backslash\)"."}, (\textcolor{keywordtype}{char}*)d.\hyperlink{class_q_dir_ad95e4b854527ddde65755cdea20e6743}{absFilePath}(\textcolor{stringliteral}{"c++"}) );
+    \textcolor{keywordflow}{else}
+        qWarning( \textcolor{stringliteral}{"Cannot create directory \(\backslash\)"%s\(\backslash\)"\(\backslash\)n"}
+           \textcolor{stringliteral}{"A file named \(\backslash\)"c++\(\backslash\)" already exists in \(\backslash\)"%s\(\backslash\)""},
+           (\textcolor{keyword}{const} \textcolor{keywordtype}{char} *)d.\hyperlink{class_q_dir_ad95e4b854527ddde65755cdea20e6743}{absFilePath}(\textcolor{stringliteral}{"c++"}),
+           (\textcolor{keyword}{const} \textcolor{keywordtype}{char} *)d.\hyperlink{class_q_dir_abef507bc8e9b061531a77dc84e991255}{path}() );
+    \textcolor{keywordflow}{return};
+    \} \textcolor{keywordflow}{else} \{
+    qWarning( \textcolor{stringliteral}{"Creating directory \(\backslash\)"%s\(\backslash\)""},
+       (\textcolor{keyword}{const} \textcolor{keywordtype}{char} *) d.\hyperlink{class_q_dir_ad95e4b854527ddde65755cdea20e6743}{absFilePath}(\textcolor{stringliteral}{"c++"}) );
+    \textcolor{keywordflow}{if} ( !d.mkdir( \textcolor{stringliteral}{"c++"} ) ) \{
+        qWarning(\textcolor{stringliteral}{"Could not create directory \(\backslash\)"%s\(\backslash\)""},
+          (\textcolor{keyword}{const} \textcolor{keywordtype}{char} *)d.\hyperlink{class_q_dir_ad95e4b854527ddde65755cdea20e6743}{absFilePath}(\textcolor{stringliteral}{"c++"}) );
+        \textcolor{keywordflow}{return};
+    \}
+    \}
+\}
+\end{DoxyCode}
+
+
+Calling cd( \char`\"{}..\char`\"{} ) is equivalent to calling \hyperlink{class_q_dir_abb27c61db0ff785666cbd38b73e72af3}{cd\-Up()}.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_dir_abb27c61db0ff785666cbd38b73e72af3}{cd\-Up()}, is\-Readable(), \hyperlink{class_q_dir_a74bdced855aaba94868b77f21398775c}{exists()}, \hyperlink{class_q_dir_abef507bc8e9b061531a77dc84e991255}{path()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_dir_abb27c61db0ff785666cbd38b73e72af3}{\index{Q\-Dir@{Q\-Dir}!cd\-Up@{cd\-Up}}
+\index{cd\-Up@{cd\-Up}!QDir@{Q\-Dir}}
+\subsubsection[{cd\-Up}]{\setlength{\rightskip}{0pt plus 5cm}bool cd\-Up (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_dir_abb27c61db0ff785666cbd38b73e72af3}
+Changes directory by moving one directory up the path followed to arrive at the current directory.
+
+Returns T\-R\-U\-E if the new directory exists and is readable. Note that the logical \hyperlink{class_q_dir_abb27c61db0ff785666cbd38b73e72af3}{cd\-Up()} operation is not performed if the new directory does not exist.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_dir_abfc428d349712e9d797fc713837e3c43}{cd()}, is\-Readable(), \hyperlink{class_q_dir_a74bdced855aaba94868b77f21398775c}{exists()}, \hyperlink{class_q_dir_abef507bc8e9b061531a77dc84e991255}{path()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_dir_a72a4ae1acab673f29c2bcc3ac7fd0c00}{\index{Q\-Dir@{Q\-Dir}!clean\-Dir\-Path@{clean\-Dir\-Path}}
+\index{clean\-Dir\-Path@{clean\-Dir\-Path}!QDir@{Q\-Dir}}
+\subsubsection[{clean\-Dir\-Path}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} clean\-Dir\-Path (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{file\-Path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_q_dir_a72a4ae1acab673f29c2bcc3ac7fd0c00}
+Removes all multiple directory separators ('/') and resolves any \char`\"{}.\char`\"{} or \char`\"{}..\char`\"{} found in the path.
+
+Symbolic links are kept. This function does not return the canonical path, but rather the most simplified version of the input. \char`\"{}../stuff\char`\"{} becomes \char`\"{}stuff\char`\"{}, \char`\"{}stuff/../nonsense\char`\"{} becomes \char`\"{}nonsense\char`\"{} and \char`\"{}\textbackslash{}\textbackslash{}stuff\textbackslash{}\textbackslash{}more\textbackslash{}\textbackslash{}..\textbackslash{}\textbackslash{}nonsense\char`\"{} becomes \char`\"{}\textbackslash{}\textbackslash{}stuff\textbackslash{}\textbackslash{}nonsense\char`\"{}.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_dir_a57ff66cd13af0071d9869dd5e10db5c5}{abs\-Path()} canonical\-Path() 
+\end{DoxySeeAlso}
+\hypertarget{class_q_dir_afbdfe81a3dbef9637c37fb9455d1ffcc}{\index{Q\-Dir@{Q\-Dir}!convert\-Separators@{convert\-Separators}}
+\index{convert\-Separators@{convert\-Separators}!QDir@{Q\-Dir}}
+\subsubsection[{convert\-Separators}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} convert\-Separators (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{path\-Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_q_dir_afbdfe81a3dbef9637c37fb9455d1ffcc}
+Converts the '/' separators in {\itshape path\-Name} to system native separators. Returns the translated string.
+
+On Windows, convert\-Separators(\char`\"{}c\-:/winnt/system32\char`\"{}) returns \char`\"{}c\-:\textbackslash{}winnt\textbackslash{}system32\char`\"{}.
+
+No conversion is done on U\-N\-I\-X. \hypertarget{class_q_dir_a92c71858159be3400795711ad6d8f584}{\index{Q\-Dir@{Q\-Dir}!convert\-To\-Abs@{convert\-To\-Abs}}
+\index{convert\-To\-Abs@{convert\-To\-Abs}!QDir@{Q\-Dir}}
+\subsubsection[{convert\-To\-Abs}]{\setlength{\rightskip}{0pt plus 5cm}void convert\-To\-Abs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_dir_a92c71858159be3400795711ad6d8f584}
+Converts the directory path to an absolute path. If it is already absolute nothing is done.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_dir_ad6802e0e235015f0503e36db60d819e8}{is\-Relative()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_dir_a774149fc271ebaba2aabcd183a836e8f}{\index{Q\-Dir@{Q\-Dir}!count@{count}}
+\index{count@{count}!QDir@{Q\-Dir}}
+\subsubsection[{count}]{\setlength{\rightskip}{0pt plus 5cm}uint count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_q_dir_a774149fc271ebaba2aabcd183a836e8f}
+Returns the number of files that was found. Equivalent to \hyperlink{class_q_dir_a31d8fe19dd240c844af9cf44e988384f}{entry\-List()}.\hyperlink{class_q_dir_a774149fc271ebaba2aabcd183a836e8f}{count()}. \begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_dir_ac47d67a1955be4e674d90f0621ba0937}{operator\mbox{[}$\,$\mbox{]}()}, \hyperlink{class_q_dir_a31d8fe19dd240c844af9cf44e988384f}{entry\-List()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_dir_a1050f05c18394b424efe759f5306a389}{\index{Q\-Dir@{Q\-Dir}!current@{current}}
+\index{current@{current}!QDir@{Q\-Dir}}
+\subsubsection[{current}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Dir} current (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_q_dir_a1050f05c18394b424efe759f5306a389}
+Returns the current directory. \begin{DoxySeeAlso}{Veja também}
+current\-Dir\-Path(), \hyperlink{class_q_dir_ac92af10ffd2a612dcddbb6b76daacd79}{Q\-Dir\-::\-Q\-Dir()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_dir_a66689b909d65b23eb7c218abf3803d84}{\index{Q\-Dir@{Q\-Dir}!dir\-Name@{dir\-Name}}
+\index{dir\-Name@{dir\-Name}!QDir@{Q\-Dir}}
+\subsubsection[{dir\-Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} dir\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_dir_a66689b909d65b23eb7c218abf3803d84}
+Returns the name of the directory, this is N\-O\-T the same as the path, e.\-g. a directory with the name \char`\"{}mail\char`\"{}, might have the path \char`\"{}/var/spool/mail\char`\"{}. If the directory has no name (e.\-g. the root directory) a null string is returned.
+
+No check is made to ensure that a directory with this name actually exists.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_dir_abef507bc8e9b061531a77dc84e991255}{path()}, \hyperlink{class_q_dir_a57ff66cd13af0071d9869dd5e10db5c5}{abs\-Path()}, \hyperlink{class_q_dir_ad95e4b854527ddde65755cdea20e6743}{abs\-File\-Path()}, \hyperlink{class_q_dir_a74bdced855aaba94868b77f21398775c}{exists()}, \hyperlink{class_q_string_ac02f2a4d7312eb91f40980adfd4e31b2}{Q\-String\-::is\-Null()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_dir_aaaeaab159aa6fee8d2cb8b6dfdf3836f}{\index{Q\-Dir@{Q\-Dir}!encoded\-Entry\-List@{encoded\-Entry\-List}}
+\index{encoded\-Entry\-List@{encoded\-Entry\-List}!QDir@{Q\-Dir}}
+\subsubsection[{encoded\-Entry\-List}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Str\-List} encoded\-Entry\-List (
+\begin{DoxyParamCaption}
+\item[{int}]{filter\-Spec = {\ttfamily DefaultFilter}, }
+\item[{int}]{sort\-Spec = {\ttfamily DefaultSort}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_dir_aaaeaab159aa6fee8d2cb8b6dfdf3836f}
+This function is included to easy porting from Qt 1.\-x to Qt 2.\-0, it is the same as \hyperlink{class_q_dir_a31d8fe19dd240c844af9cf44e988384f}{entry\-List()}, but encodes the filenames as 8-\/bit strings using Q\-File\-::encoded\-Name().
+
+It is more efficient to use \hyperlink{class_q_dir_a31d8fe19dd240c844af9cf44e988384f}{entry\-List()}. \hypertarget{class_q_dir_aec1c87e9f191b1bef76b75d2001f7287}{\index{Q\-Dir@{Q\-Dir}!encoded\-Entry\-List@{encoded\-Entry\-List}}
+\index{encoded\-Entry\-List@{encoded\-Entry\-List}!QDir@{Q\-Dir}}
+\subsubsection[{encoded\-Entry\-List}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Str\-List} encoded\-Entry\-List (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{name\-Filter, }
+\item[{int}]{filter\-Spec = {\ttfamily DefaultFilter}, }
+\item[{int}]{sort\-Spec = {\ttfamily DefaultSort}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_dir_aec1c87e9f191b1bef76b75d2001f7287}
+This function is included to easy porting from Qt 1.\-x to Qt 2.\-0, it is the same as \hyperlink{class_q_dir_a31d8fe19dd240c844af9cf44e988384f}{entry\-List()}, but encodes the filenames as 8-\/bit strings using Q\-File\-::encoded\-Name().
+
+It is more efficient to use \hyperlink{class_q_dir_a31d8fe19dd240c844af9cf44e988384f}{entry\-List()}. \hypertarget{class_q_dir_a455adcdcb8360dda877b634a8aca27fe}{\index{Q\-Dir@{Q\-Dir}!entry\-Info\-List@{entry\-Info\-List}}
+\index{entry\-Info\-List@{entry\-Info\-List}!QDir@{Q\-Dir}}
+\subsubsection[{entry\-Info\-List}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Q\-File\-Info\-List} $\ast$ entry\-Info\-List (
+\begin{DoxyParamCaption}
+\item[{int}]{filter\-Spec = {\ttfamily DefaultFilter}, }
+\item[{int}]{sort\-Spec = {\ttfamily DefaultSort}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_dir_a455adcdcb8360dda877b634a8aca27fe}
+Returns a list of \hyperlink{class_q_file_info}{Q\-File\-Info} objects for all files and directories in the directory pointed to using the \hyperlink{class_q_dir_a89d3108e4cc3baff1f70b740caf94bfa}{set\-Sorting()}, \hyperlink{class_q_dir_a45b37db847b9f966f764cd875a3f970c}{set\-Filter()} and \hyperlink{class_q_dir_a7a8c724a5be5ad5af7956b00d220f9b9}{set\-Name\-Filter()} specifications.
+
+The the filter and sorting specifications can be overridden using the {\itshape filter\-Spec} and {\itshape sort\-Spec} arguments.
+
+Returns 0 if the directory is unreadable or does not exist.
+
+The returned pointer is a const pointer to a Q\-File\-Info\-List. The list is owned by the \hyperlink{class_q_dir}{Q\-Dir} object and will be reused on the next call to \hyperlink{class_q_dir_a455adcdcb8360dda877b634a8aca27fe}{entry\-Info\-List()} for the same \hyperlink{class_q_dir}{Q\-Dir} instance. If you want to keep the entries of the list after a subsequent call to this function you will need to copy them.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_dir_a31d8fe19dd240c844af9cf44e988384f}{entry\-List()}, \hyperlink{class_q_dir_a7a8c724a5be5ad5af7956b00d220f9b9}{set\-Name\-Filter()}, \hyperlink{class_q_dir_a89d3108e4cc3baff1f70b740caf94bfa}{set\-Sorting()}, \hyperlink{class_q_dir_a45b37db847b9f966f764cd875a3f970c}{set\-Filter()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_dir_a49cccb861848a5eb8f068be21af6d7bb}{\index{Q\-Dir@{Q\-Dir}!entry\-Info\-List@{entry\-Info\-List}}
+\index{entry\-Info\-List@{entry\-Info\-List}!QDir@{Q\-Dir}}
+\subsubsection[{entry\-Info\-List}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Q\-File\-Info\-List} $\ast$ entry\-Info\-List (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{name\-Filter, }
+\item[{int}]{filter\-Spec = {\ttfamily DefaultFilter}, }
+\item[{int}]{sort\-Spec = {\ttfamily DefaultSort}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_dir_a49cccb861848a5eb8f068be21af6d7bb}
+Returns a list of \hyperlink{class_q_file_info}{Q\-File\-Info} objects for all files and directories in the directory pointed to using the \hyperlink{class_q_dir_a89d3108e4cc3baff1f70b740caf94bfa}{set\-Sorting()}, \hyperlink{class_q_dir_a45b37db847b9f966f764cd875a3f970c}{set\-Filter()} and \hyperlink{class_q_dir_a7a8c724a5be5ad5af7956b00d220f9b9}{set\-Name\-Filter()} specifications.
+
+The the filter and sorting specifications can be overridden using the {\itshape name\-Filter}, {\itshape filter\-Spec} and {\itshape sort\-Spec} arguments.
+
+Returns 0 if the directory is unreadable or does not exist.
+
+The returned pointer is a const pointer to a Q\-File\-Info\-List. The list is owned by the \hyperlink{class_q_dir}{Q\-Dir} object and will be reused on the next call to \hyperlink{class_q_dir_a455adcdcb8360dda877b634a8aca27fe}{entry\-Info\-List()} for the same \hyperlink{class_q_dir}{Q\-Dir} instance. If you want to keep the entries of the list after a subsequent call to this function you will need to copy them.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_dir_a31d8fe19dd240c844af9cf44e988384f}{entry\-List()}, \hyperlink{class_q_dir_a7a8c724a5be5ad5af7956b00d220f9b9}{set\-Name\-Filter()}, \hyperlink{class_q_dir_a89d3108e4cc3baff1f70b740caf94bfa}{set\-Sorting()}, \hyperlink{class_q_dir_a45b37db847b9f966f764cd875a3f970c}{set\-Filter()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_dir_a31d8fe19dd240c844af9cf44e988384f}{\index{Q\-Dir@{Q\-Dir}!entry\-List@{entry\-List}}
+\index{entry\-List@{entry\-List}!QDir@{Q\-Dir}}
+\subsubsection[{entry\-List}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String\-List} entry\-List (
+\begin{DoxyParamCaption}
+\item[{int}]{filter\-Spec = {\ttfamily DefaultFilter}, }
+\item[{int}]{sort\-Spec = {\ttfamily DefaultSort}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_dir_a31d8fe19dd240c844af9cf44e988384f}
+Returns a list of the names of all files and directories in the directory indicated by the \hyperlink{class_q_dir_a89d3108e4cc3baff1f70b740caf94bfa}{set\-Sorting()}, \hyperlink{class_q_dir_a45b37db847b9f966f764cd875a3f970c}{set\-Filter()} and \hyperlink{class_q_dir_a7a8c724a5be5ad5af7956b00d220f9b9}{set\-Name\-Filter()} specifications.
+
+The the filter and sorting specifications can be overridden using the {\itshape filter\-Spec} and {\itshape sort\-Spec} arguments.
+
+Returns an empty list if the directory is unreadable or does not exist.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_dir_a455adcdcb8360dda877b634a8aca27fe}{entry\-Info\-List()}, \hyperlink{class_q_dir_a7a8c724a5be5ad5af7956b00d220f9b9}{set\-Name\-Filter()}, \hyperlink{class_q_dir_a89d3108e4cc3baff1f70b740caf94bfa}{set\-Sorting()}, \hyperlink{class_q_dir_a45b37db847b9f966f764cd875a3f970c}{set\-Filter()}, \hyperlink{class_q_dir_aaaeaab159aa6fee8d2cb8b6dfdf3836f}{encoded\-Entry\-List()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_dir_a4c12091d0c7b067971e244fb1291d354}{\index{Q\-Dir@{Q\-Dir}!entry\-List@{entry\-List}}
+\index{entry\-List@{entry\-List}!QDir@{Q\-Dir}}
+\subsubsection[{entry\-List}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String\-List} entry\-List (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{name\-Filter, }
+\item[{int}]{filter\-Spec = {\ttfamily DefaultFilter}, }
+\item[{int}]{sort\-Spec = {\ttfamily DefaultSort}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_dir_a4c12091d0c7b067971e244fb1291d354}
+Returns a list of the names of all files and directories in the directory indicated by the \hyperlink{class_q_dir_a89d3108e4cc3baff1f70b740caf94bfa}{set\-Sorting()}, \hyperlink{class_q_dir_a45b37db847b9f966f764cd875a3f970c}{set\-Filter()} and \hyperlink{class_q_dir_a7a8c724a5be5ad5af7956b00d220f9b9}{set\-Name\-Filter()} specifications.
+
+The the filter and sorting specifications can be overridden using the {\itshape name\-Filter}, {\itshape filter\-Spec} and {\itshape sort\-Spec} arguments.
+
+Returns and empty list if the directory is unreadable or does not exist.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_dir_a455adcdcb8360dda877b634a8aca27fe}{entry\-Info\-List()}, \hyperlink{class_q_dir_a7a8c724a5be5ad5af7956b00d220f9b9}{set\-Name\-Filter()}, \hyperlink{class_q_dir_a89d3108e4cc3baff1f70b740caf94bfa}{set\-Sorting()}, \hyperlink{class_q_dir_a45b37db847b9f966f764cd875a3f970c}{set\-Filter()}, \hyperlink{class_q_dir_aaaeaab159aa6fee8d2cb8b6dfdf3836f}{encoded\-Entry\-List()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_dir_a74bdced855aaba94868b77f21398775c}{\index{Q\-Dir@{Q\-Dir}!exists@{exists}}
+\index{exists@{exists}!QDir@{Q\-Dir}}
+\subsubsection[{exists}]{\setlength{\rightskip}{0pt plus 5cm}bool exists (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_dir_a74bdced855aaba94868b77f21398775c}
+Returns T\-R\-U\-E if the directory exists. (If a file with the same name is found this function will of course return F\-A\-L\-S\-E).
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_file_info_a74bdced855aaba94868b77f21398775c}{Q\-File\-Info\-::exists()}, \hyperlink{class_q_file_a74bdced855aaba94868b77f21398775c}{Q\-File\-::exists()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_dir_ae3b618b65c524ca053bc9acdda935a21}{\index{Q\-Dir@{Q\-Dir}!exists@{exists}}
+\index{exists@{exists}!QDir@{Q\-Dir}}
+\subsubsection[{exists}]{\setlength{\rightskip}{0pt plus 5cm}bool exists (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{name, }
+\item[{bool}]{accept\-Abs\-Path = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_dir_ae3b618b65c524ca053bc9acdda935a21}
+Checks for existence of a file.
+
+If {\itshape accept\-Abs\-Paths} is T\-R\-U\-E a path starting with a separator ('/') will check the file with the absolute path, if {\itshape accept\-Abs\-Path} is F\-A\-L\-S\-E any number of separators at the beginning of {\itshape name} will be removed.
+
+Returns T\-R\-U\-E if the file exists, otherwise F\-A\-L\-S\-E.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_file_info_a74bdced855aaba94868b77f21398775c}{Q\-File\-Info\-::exists()}, \hyperlink{class_q_file_a74bdced855aaba94868b77f21398775c}{Q\-File\-::exists()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_dir_acbf5afb212923b3b8372ca0a6cedb7b5}{\index{Q\-Dir@{Q\-Dir}!file\-Path@{file\-Path}}
+\index{file\-Path@{file\-Path}!QDir@{Q\-Dir}}
+\subsubsection[{file\-Path}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} file\-Path (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{file\-Name, }
+\item[{bool}]{accept\-Abs\-Path = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_dir_acbf5afb212923b3b8372ca0a6cedb7b5}
+Returns the path name of a file in the directory. Does N\-O\-T check if the file actually exists in the directory. If the \hyperlink{class_q_dir}{Q\-Dir} is relative the returned path name will also be relative. Redundant multiple separators or \char`\"{}.\char`\"{} and \char`\"{}..\char`\"{} directories in {\itshape file\-Name} will not be removed (see \hyperlink{class_q_dir_a72a4ae1acab673f29c2bcc3ac7fd0c00}{clean\-Dir\-Path()}).
+
+If {\itshape accept\-Abs\-Path} is T\-R\-U\-E a {\itshape file\-Name} starting with a separator ('/') will be returned without change. If {\itshape accept\-Abs\-Path} is F\-A\-L\-S\-E an absolute path will be appended to the directory path.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_dir_ad95e4b854527ddde65755cdea20e6743}{abs\-File\-Path()}, \hyperlink{class_q_dir_ad6802e0e235015f0503e36db60d819e8}{is\-Relative()}, canonical\-Path() 
+\end{DoxySeeAlso}
+\hypertarget{class_q_dir_a1087ca52300e3a6e4aa3af11f3e531d4}{\index{Q\-Dir@{Q\-Dir}!filter@{filter}}
+\index{filter@{filter}!QDir@{Q\-Dir}}
+\subsubsection[{filter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Dir\-::\-Filter\-Spec} filter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_dir_a1087ca52300e3a6e4aa3af11f3e531d4}
+Returns the value set by \hyperlink{class_q_dir_a45b37db847b9f966f764cd875a3f970c}{set\-Filter()} \hypertarget{class_q_dir_aaab36122db9259296c1a1e4c0c47ad4c}{\index{Q\-Dir@{Q\-Dir}!home@{home}}
+\index{home@{home}!QDir@{Q\-Dir}}
+\subsubsection[{home}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Dir} home (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_q_dir_aaab36122db9259296c1a1e4c0c47ad4c}
+Returns the home directory. \begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_dir_a15b58f0bf61cb8ffd19faa599fefde1b}{home\-Dir\-Path()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_dir_a15b58f0bf61cb8ffd19faa599fefde1b}{\index{Q\-Dir@{Q\-Dir}!home\-Dir\-Path@{home\-Dir\-Path}}
+\index{home\-Dir\-Path@{home\-Dir\-Path}!QDir@{Q\-Dir}}
+\subsubsection[{home\-Dir\-Path}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} home\-Dir\-Path (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_q_dir_a15b58f0bf61cb8ffd19faa599fefde1b}
+Returns the absolute path for the user's home directory, \begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_dir_aaab36122db9259296c1a1e4c0c47ad4c}{home()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_dir_ad6802e0e235015f0503e36db60d819e8}{\index{Q\-Dir@{Q\-Dir}!is\-Relative@{is\-Relative}}
+\index{is\-Relative@{is\-Relative}!QDir@{Q\-Dir}}
+\subsubsection[{is\-Relative}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-Relative (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_dir_ad6802e0e235015f0503e36db60d819e8}
+Returns T\-R\-U\-E if the directory path is relative to the current directory, F\-A\-L\-S\-E if the path is absolute (e.\-g. under U\-N\-I\-X a path is relative if it does not start with a '/').
+
+According to Einstein this function should always return T\-R\-U\-E.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_dir_a92c71858159be3400795711ad6d8f584}{convert\-To\-Abs()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_dir_addb572de5a0147501ad71f705c2f0e2b}{\index{Q\-Dir@{Q\-Dir}!match@{match}}
+\index{match@{match}!QDir@{Q\-Dir}}
+\subsubsection[{match}]{\setlength{\rightskip}{0pt plus 5cm}bool match (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String\-List} \&}]{filters, }
+\item[{const {\bf Q\-String} \&}]{file\-Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_q_dir_addb572de5a0147501ad71f705c2f0e2b}
+Returns T\-R\-U\-E if the {\itshape file\-Name} matches one of the wildcards in the list {\itshape filters}. \begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_reg_exp}{Q\-Reg\-Exp} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_dir_a9b5e9a0892e4534776c6091c72a2e4a3}{\index{Q\-Dir@{Q\-Dir}!match@{match}}
+\index{match@{match}!QDir@{Q\-Dir}}
+\subsubsection[{match}]{\setlength{\rightskip}{0pt plus 5cm}bool match (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{filter, }
+\item[{const {\bf Q\-String} \&}]{file\-Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_q_dir_a9b5e9a0892e4534776c6091c72a2e4a3}
+Returns T\-R\-U\-E if the {\itshape file\-Name} matches the wildcard {\itshape filter}. {\itshape Filter} may also contain multiple wildcards separated by spaces or semicolons. \begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_reg_exp}{Q\-Reg\-Exp} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_dir_a8adb47f23eab4cb8d65e7f9a66d3895a}{\index{Q\-Dir@{Q\-Dir}!match\-All\-Dirs@{match\-All\-Dirs}}
+\index{match\-All\-Dirs@{match\-All\-Dirs}!QDir@{Q\-Dir}}
+\subsubsection[{match\-All\-Dirs}]{\setlength{\rightskip}{0pt plus 5cm}bool match\-All\-Dirs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_dir_a8adb47f23eab4cb8d65e7f9a66d3895a}
+Returns the value set by \hyperlink{class_q_dir_a4b4ed48f68e5fd116f09dcfb820f56f5}{set\-Match\-All\-Dirs()}
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_dir_a4b4ed48f68e5fd116f09dcfb820f56f5}{set\-Match\-All\-Dirs()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_dir_a52e506d0a7174c22b22f5f7c663b7e24}{\index{Q\-Dir@{Q\-Dir}!name\-Filter@{name\-Filter}}
+\index{name\-Filter@{name\-Filter}!QDir@{Q\-Dir}}
+\subsubsection[{name\-Filter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} name\-Filter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_dir_a52e506d0a7174c22b22f5f7c663b7e24}
+Returns the string set by \hyperlink{class_q_dir_a7a8c724a5be5ad5af7956b00d220f9b9}{set\-Name\-Filter()} \hypertarget{class_q_dir_a311829a9fc8fd8ad8d9aefbdc876d8f7}{\index{Q\-Dir@{Q\-Dir}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!QDir@{Q\-Dir}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}bool operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-Dir} \&}]{d}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_q_dir_a311829a9fc8fd8ad8d9aefbdc876d8f7}
+Returns T\-R\-U\-E if the {\itshape d} and this dir have different path or different sort/filter settings, otherwise F\-A\-L\-S\-E. \hypertarget{class_q_dir_adbd8dd48a4d66c4149c4af35184988e4}{\index{Q\-Dir@{Q\-Dir}!operator=@{operator=}}
+\index{operator=@{operator=}!QDir@{Q\-Dir}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Dir} \& operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-Dir} \&}]{d}
+\end{DoxyParamCaption}
+)}}\label{class_q_dir_adbd8dd48a4d66c4149c4af35184988e4}
+Makes a copy of d and assigns it to this \hyperlink{class_q_dir}{Q\-Dir}. \hypertarget{class_q_dir_a0b1b140d489398d746bdc48e69f3b5a4}{\index{Q\-Dir@{Q\-Dir}!operator=@{operator=}}
+\index{operator=@{operator=}!QDir@{Q\-Dir}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Dir} \& operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{path}
+\end{DoxyParamCaption}
+)}}\label{class_q_dir_a0b1b140d489398d746bdc48e69f3b5a4}
+Sets the directory path to be the given path. \hypertarget{class_q_dir_a3928ea4a4e6a7b29212b20aa97d81c93}{\index{Q\-Dir@{Q\-Dir}!operator==@{operator==}}
+\index{operator==@{operator==}!QDir@{Q\-Dir}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-Dir} \&}]{d}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_dir_a3928ea4a4e6a7b29212b20aa97d81c93}
+Returns T\-R\-U\-E if the {\itshape d} and this dir have the same path and all sort and filter settings are equal, otherwise F\-A\-L\-S\-E. \hypertarget{class_q_dir_ac47d67a1955be4e674d90f0621ba0937}{\index{Q\-Dir@{Q\-Dir}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!QDir@{Q\-Dir}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+) const}}\label{class_q_dir_ac47d67a1955be4e674d90f0621ba0937}
+Returns the file name at position {\itshape index} in the list of found file names. Equivalent to \hyperlink{class_q_dir_a31d8fe19dd240c844af9cf44e988384f}{entry\-List()}.at(index).
+
+Returns null if the {\itshape index} is out of range or if the \hyperlink{class_q_dir_a31d8fe19dd240c844af9cf44e988384f}{entry\-List()} function failed.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_dir_a774149fc271ebaba2aabcd183a836e8f}{count()}, \hyperlink{class_q_dir_a31d8fe19dd240c844af9cf44e988384f}{entry\-List()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_dir_abef507bc8e9b061531a77dc84e991255}{\index{Q\-Dir@{Q\-Dir}!path@{path}}
+\index{path@{path}!QDir@{Q\-Dir}}
+\subsubsection[{path}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} path (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_q_dir_abef507bc8e9b061531a77dc84e991255}
+Returns the path, this may contain symbolic links, but never contains redundant \char`\"{}.\char`\"{}, \char`\"{}..\char`\"{} or multiple separators.
+
+The returned path can be either absolute or relative (see \hyperlink{class_q_dir_af4c459056e34ddd0050ab9473def6db1}{set\-Path()}).
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_dir_af4c459056e34ddd0050ab9473def6db1}{set\-Path()}, \hyperlink{class_q_dir_a57ff66cd13af0071d9869dd5e10db5c5}{abs\-Path()}, \hyperlink{class_q_dir_a74bdced855aaba94868b77f21398775c}{exists()}, \hyperlink{class_q_dir_a72a4ae1acab673f29c2bcc3ac7fd0c00}{clean\-Dir\-Path()}, \hyperlink{class_q_dir_a66689b909d65b23eb7c218abf3803d84}{dir\-Name()}, \hyperlink{class_q_dir_ad95e4b854527ddde65755cdea20e6743}{abs\-File\-Path()}, \hyperlink{class_q_dir_afbdfe81a3dbef9637c37fb9455d1ffcc}{convert\-Separators()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_dir_acbe0d2cbf0b30d6231f8bb9892551282}{\index{Q\-Dir@{Q\-Dir}!remove@{remove}}
+\index{remove@{remove}!QDir@{Q\-Dir}}
+\subsubsection[{remove}]{\setlength{\rightskip}{0pt plus 5cm}bool remove (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{file\-Name, }
+\item[{bool}]{accept\-Abs\-Path = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_dir_acbe0d2cbf0b30d6231f8bb9892551282}
+Removes a file.
+
+If {\itshape accept\-Abs\-Path} is T\-R\-U\-E a path starting with a separator ('/') will remove the file with the absolute path, if {\itshape accept\-Abs\-Path} is F\-A\-L\-S\-E any number of separators at the beginning of {\itshape file\-Name} will be removed.
+
+Returns T\-R\-U\-E if successful, otherwise F\-A\-L\-S\-E. \hypertarget{class_q_dir_a6affbb3c1c91145c6daa130d5c45ebe6}{\index{Q\-Dir@{Q\-Dir}!root@{root}}
+\index{root@{root}!QDir@{Q\-Dir}}
+\subsubsection[{root}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Dir} root (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_q_dir_a6affbb3c1c91145c6daa130d5c45ebe6}
+Returns the root directory. \begin{DoxySeeAlso}{Veja também}
+root\-Dir\-Path() drives() 
+\end{DoxySeeAlso}
+\hypertarget{class_q_dir_a5be6dd0988dcb207e512241b82d5dcfd}{\index{Q\-Dir@{Q\-Dir}!separator@{separator}}
+\index{separator@{separator}!QDir@{Q\-Dir}}
+\subsubsection[{separator}]{\setlength{\rightskip}{0pt plus 5cm}char separator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_q_dir_a5be6dd0988dcb207e512241b82d5dcfd}
+Returns the native directory separator; '/' under U\-N\-I\-X and '\textbackslash{}' under M\-S-\/\-D\-O\-S, Windows N\-T and O\-S/2.
+
+You do not need to use this function to build file paths. If you always use '/', Qt will translate your paths to conform to the underlying operating system. \hypertarget{class_q_dir_a45b37db847b9f966f764cd875a3f970c}{\index{Q\-Dir@{Q\-Dir}!set\-Filter@{set\-Filter}}
+\index{set\-Filter@{set\-Filter}!QDir@{Q\-Dir}}
+\subsubsection[{set\-Filter}]{\setlength{\rightskip}{0pt plus 5cm}void set\-Filter (
+\begin{DoxyParamCaption}
+\item[{int}]{filter\-Spec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_dir_a45b37db847b9f966f764cd875a3f970c}
+Sets the filter used by \hyperlink{class_q_dir_a31d8fe19dd240c844af9cf44e988384f}{entry\-List()} and \hyperlink{class_q_dir_a455adcdcb8360dda877b634a8aca27fe}{entry\-Info\-List()}. The filter is used to specify the kind of files that should be returned by \hyperlink{class_q_dir_a31d8fe19dd240c844af9cf44e988384f}{entry\-List()} and \hyperlink{class_q_dir_a455adcdcb8360dda877b634a8aca27fe}{entry\-Info\-List()}.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_dir_a1087ca52300e3a6e4aa3af11f3e531d4}{filter()}, \hyperlink{class_q_dir_a7a8c724a5be5ad5af7956b00d220f9b9}{set\-Name\-Filter()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_dir_a4b4ed48f68e5fd116f09dcfb820f56f5}{\index{Q\-Dir@{Q\-Dir}!set\-Match\-All\-Dirs@{set\-Match\-All\-Dirs}}
+\index{set\-Match\-All\-Dirs@{set\-Match\-All\-Dirs}!QDir@{Q\-Dir}}
+\subsubsection[{set\-Match\-All\-Dirs}]{\setlength{\rightskip}{0pt plus 5cm}void set\-Match\-All\-Dirs (
+\begin{DoxyParamCaption}
+\item[{bool}]{enable}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_dir_a4b4ed48f68e5fd116f09dcfb820f56f5}
+If {\itshape enable} is T\-R\-U\-E, all directories will be listed (even if they do not match the filter or the name filter), otherwise only matched directories will be listed.
+
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000002}{Bug}]Currently, directories that do not match the filter will not be included (the name filter will be ignored as expected).\end{DoxyRefDesc}
+
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_dir_a8adb47f23eab4cb8d65e7f9a66d3895a}{match\-All\-Dirs()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_dir_a7a8c724a5be5ad5af7956b00d220f9b9}{\index{Q\-Dir@{Q\-Dir}!set\-Name\-Filter@{set\-Name\-Filter}}
+\index{set\-Name\-Filter@{set\-Name\-Filter}!QDir@{Q\-Dir}}
+\subsubsection[{set\-Name\-Filter}]{\setlength{\rightskip}{0pt plus 5cm}void set\-Name\-Filter (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{name\-Filter}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_dir_a7a8c724a5be5ad5af7956b00d220f9b9}
+Sets the name filter used by \hyperlink{class_q_dir_a31d8fe19dd240c844af9cf44e988384f}{entry\-List()} and \hyperlink{class_q_dir_a455adcdcb8360dda877b634a8aca27fe}{entry\-Info\-List()}.
+
+The name filter is a wildcarding filter that understands \char`\"{}$\ast$\char`\"{} and \char`\"{}?\char`\"{} wildcards, You may specify several filter entries separated by a \char`\"{} \char`\"{} or a \char`\"{};\char`\"{}. If you want \hyperlink{class_q_dir_a31d8fe19dd240c844af9cf44e988384f}{entry\-List()} and \hyperlink{class_q_dir_a455adcdcb8360dda877b634a8aca27fe}{entry\-Info\-List()} to list all files ending with \char`\"{}.\-cpp\char`\"{} and all files ending with \char`\"{}.\-h\char`\"{}, you simply call dir.\-set\-Name\-Filter(\char`\"{}$\ast$.\-cpp $\ast$.\-h\char`\"{}) or dir.\-set\-Name\-Filter(\char`\"{}$\ast$.\-cpp;$\ast$.\-h\char`\"{})
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_dir_a52e506d0a7174c22b22f5f7c663b7e24}{name\-Filter()}, \hyperlink{class_q_dir_a45b37db847b9f966f764cd875a3f970c}{set\-Filter()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_dir_af4c459056e34ddd0050ab9473def6db1}{\index{Q\-Dir@{Q\-Dir}!set\-Path@{set\-Path}}
+\index{set\-Path@{set\-Path}!QDir@{Q\-Dir}}
+\subsubsection[{set\-Path}]{\setlength{\rightskip}{0pt plus 5cm}void set\-Path (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_dir_af4c459056e34ddd0050ab9473def6db1}
+Sets the path of the directory. The path is cleaned of redundant \char`\"{}.\char`\"{}, \char`\"{}..\char`\"{} and multiple separators. No check is made to ensure that a directory with this path exists.
+
+The path can be either absolute or relative. Absolute paths begin with the directory separator ('/') or a drive specification (not applicable to U\-N\-I\-X). Relative file names begin with a directory name or a file name and specify a path relative to the current directory. An example of an absolute path is the string \char`\"{}/tmp/quartz\char`\"{}, a relative path might look like \char`\"{}src/fatlib\char`\"{}. You can use the function \hyperlink{class_q_dir_ad6802e0e235015f0503e36db60d819e8}{is\-Relative()} to check if a \hyperlink{class_q_dir}{Q\-Dir} is using a relative or an absolute file path. You can call the function \hyperlink{class_q_dir_a92c71858159be3400795711ad6d8f584}{convert\-To\-Abs()} to convert a relative \hyperlink{class_q_dir}{Q\-Dir} to an absolute one.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_dir_abef507bc8e9b061531a77dc84e991255}{path()}, \hyperlink{class_q_dir_a57ff66cd13af0071d9869dd5e10db5c5}{abs\-Path()}, \hyperlink{class_q_dir_a74bdced855aaba94868b77f21398775c}{exists()}, \hyperlink{class_q_dir_a72a4ae1acab673f29c2bcc3ac7fd0c00}{clean\-Dir\-Path()}, \hyperlink{class_q_dir_a66689b909d65b23eb7c218abf3803d84}{dir\-Name()}, \hyperlink{class_q_dir_ad95e4b854527ddde65755cdea20e6743}{abs\-File\-Path()}, \hyperlink{class_q_dir_ad6802e0e235015f0503e36db60d819e8}{is\-Relative()}, \hyperlink{class_q_dir_a92c71858159be3400795711ad6d8f584}{convert\-To\-Abs()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_dir_a89d3108e4cc3baff1f70b740caf94bfa}{\index{Q\-Dir@{Q\-Dir}!set\-Sorting@{set\-Sorting}}
+\index{set\-Sorting@{set\-Sorting}!QDir@{Q\-Dir}}
+\subsubsection[{set\-Sorting}]{\setlength{\rightskip}{0pt plus 5cm}void set\-Sorting (
+\begin{DoxyParamCaption}
+\item[{int}]{sort\-Spec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_dir_a89d3108e4cc3baff1f70b740caf94bfa}
+Sets the sorting order used by \hyperlink{class_q_dir_a31d8fe19dd240c844af9cf44e988384f}{entry\-List()} and \hyperlink{class_q_dir_a455adcdcb8360dda877b634a8aca27fe}{entry\-Info\-List()}.
+
+The {\itshape sort\-Spec} is specified by or-\/ing values from the enum Sort\-Spec. The different values are\-:
+
+One of these\-: 
+\begin{DoxyDescription}
+\item[Name]Sort by name (alphabetical order). 
+\item[Time]Sort by time (most recent first). 
+\item[Size]Sort by size (largest first). 
+\item[Unsorted]Use the operating system order (U\-N\-I\-X does N\-O\-T sort alphabetically).
+
+O\-Red with zero or more of these\-:
+
+
+\item[Dirs\-First]Always put directory names first. 
+\item[Reversed]Reverse sort order. 
+\item[Ignore\-Case]Ignore case when sorting by name. 
+\end{DoxyDescription}\hypertarget{class_q_dir_abafa20cd6c524655d4d509d7fbc617df}{\index{Q\-Dir@{Q\-Dir}!sorting@{sorting}}
+\index{sorting@{sorting}!QDir@{Q\-Dir}}
+\subsubsection[{sorting}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Dir\-::\-Sort\-Spec} sorting (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_dir_abafa20cd6c524655d4d509d7fbc617df}
+Returns the value set by \hyperlink{class_q_dir_a89d3108e4cc3baff1f70b740caf94bfa}{set\-Sorting()}
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_dir_a89d3108e4cc3baff1f70b740caf94bfa}{set\-Sorting()} 
+\end{DoxySeeAlso}
+
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/qtools/qdir.\-h\item 
+C\-:/\-Users/teste/git/doxygen/qtools/qdir.\-cpp\item 
+C\-:/\-Users/teste/git/doxygen/qtools/qdir\-\_\-unix.\-cpp\item 
+C\-:/\-Users/teste/git/doxygen/qtools/qdir\-\_\-win32.\-cpp\end{DoxyCompactItemize}

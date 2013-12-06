@@ -1,0 +1,98 @@
+\hypertarget{class_q_xml_d_t_d_handler}{\section{Referência à classe Q\-Xml\-D\-T\-D\-Handler}
+\label{class_q_xml_d_t_d_handler}\index{Q\-Xml\-D\-T\-D\-Handler@{Q\-Xml\-D\-T\-D\-Handler}}
+}
+
+
+The \hyperlink{class_q_xml_d_t_d_handler}{Q\-Xml\-D\-T\-D\-Handler} class provides an interface to report D\-T\-D content of X\-M\-L data.  
+
+
+
+
+{\ttfamily \#include $<$qxml.\-h$>$}
+
+Diagrama de heranças da classe Q\-Xml\-D\-T\-D\-Handler\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{class_q_xml_d_t_d_handler}
+\end{center}
+\end{figure}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{class_q_xml_d_t_d_handler_adb6d2793e23cda467f599fea11bc0ddb}{notation\-Decl} (const \hyperlink{class_q_string}{Q\-String} \&name, const \hyperlink{class_q_string}{Q\-String} \&public\-Id, const \hyperlink{class_q_string}{Q\-String} \&system\-Id)=0
+\item 
+virtual bool \hyperlink{class_q_xml_d_t_d_handler_aa4afec8990cd2b491c904f109c2b3df1}{unparsed\-Entity\-Decl} (const \hyperlink{class_q_string}{Q\-String} \&name, const \hyperlink{class_q_string}{Q\-String} \&public\-Id, const \hyperlink{class_q_string}{Q\-String} \&system\-Id, const \hyperlink{class_q_string}{Q\-String} \&notation\-Name)=0
+\item 
+virtual \hyperlink{class_q_string}{Q\-String} \hyperlink{class_q_xml_d_t_d_handler_ac86bbbabef3a52aec7615cbbc0adb3f4}{error\-String} ()=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+The \hyperlink{class_q_xml_d_t_d_handler}{Q\-Xml\-D\-T\-D\-Handler} class provides an interface to report D\-T\-D content of X\-M\-L data. 
+
+X\-M\-L
+
+If an application needs information about notations and unparsed entities, then the application implements this interface and registers an instance with \hyperlink{class_q_xml_reader_a4bec7f4998841732d1d8d14a6fb123ec}{Q\-Xml\-Reader\-::set\-D\-T\-D\-Handler()}.
+
+Note that this interface includes only those D\-T\-D events that the X\-M\-L recommendation requires processors to report\-: notation and unparsed entity declarations.
+
+See also the \href{xml.html#introSAX2}{\tt Introduction to S\-A\-X2}.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_xml_decl_handler}{Q\-Xml\-Decl\-Handler} \hyperlink{class_q_xml_content_handler}{Q\-Xml\-Content\-Handler} \hyperlink{class_q_xml_entity_resolver}{Q\-Xml\-Entity\-Resolver} \hyperlink{class_q_xml_error_handler}{Q\-Xml\-Error\-Handler} \hyperlink{class_q_xml_lexical_handler}{Q\-Xml\-Lexical\-Handler} 
+\end{DoxySeeAlso}
+
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_q_xml_d_t_d_handler_ac86bbbabef3a52aec7615cbbc0adb3f4}{\index{Q\-Xml\-D\-T\-D\-Handler@{Q\-Xml\-D\-T\-D\-Handler}!error\-String@{error\-String}}
+\index{error\-String@{error\-String}!QXmlDTDHandler@{Q\-Xml\-D\-T\-D\-Handler}}
+\subsubsection[{error\-String}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} error\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_q_xml_d_t_d_handler_ac86bbbabef3a52aec7615cbbc0adb3f4}
+The reader calls this function to get an error string if any of the handler functions returns F\-A\-L\-S\-E to him. 
+
+Implementado em \hyperlink{class_q_xml_default_handler_af799a7684337babb971e2e0d8cda7cf1}{Q\-Xml\-Default\-Handler} e \hyperlink{class_d_bus_x_m_l_handler_af799a7684337babb971e2e0d8cda7cf1}{D\-Bus\-X\-M\-L\-Handler}.
+
+\hypertarget{class_q_xml_d_t_d_handler_adb6d2793e23cda467f599fea11bc0ddb}{\index{Q\-Xml\-D\-T\-D\-Handler@{Q\-Xml\-D\-T\-D\-Handler}!notation\-Decl@{notation\-Decl}}
+\index{notation\-Decl@{notation\-Decl}!QXmlDTDHandler@{Q\-Xml\-D\-T\-D\-Handler}}
+\subsubsection[{notation\-Decl}]{\setlength{\rightskip}{0pt plus 5cm}bool notation\-Decl (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{name, }
+\item[{const {\bf Q\-String} \&}]{public\-Id, }
+\item[{const {\bf Q\-String} \&}]{system\-Id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_q_xml_d_t_d_handler_adb6d2793e23cda467f599fea11bc0ddb}
+The reader calls this function when he has parsed a notation declaration.
+
+The argument {\itshape name} is the notation name, {\itshape public\-Id} is the notations's public identifier and {\itshape system\-Id} is the notations's system identifier.
+
+If this function returns F\-A\-L\-S\-E the reader will stop parsing and will report an error. The reader will use the function \hyperlink{class_q_xml_d_t_d_handler_ac86bbbabef3a52aec7615cbbc0adb3f4}{error\-String()} to get the error message that will be used for reporting the error. 
+
+Implementado em \hyperlink{class_q_xml_default_handler_a40a0f45b7aa7ea980734fa14620ce0d6}{Q\-Xml\-Default\-Handler}.
+
+\hypertarget{class_q_xml_d_t_d_handler_aa4afec8990cd2b491c904f109c2b3df1}{\index{Q\-Xml\-D\-T\-D\-Handler@{Q\-Xml\-D\-T\-D\-Handler}!unparsed\-Entity\-Decl@{unparsed\-Entity\-Decl}}
+\index{unparsed\-Entity\-Decl@{unparsed\-Entity\-Decl}!QXmlDTDHandler@{Q\-Xml\-D\-T\-D\-Handler}}
+\subsubsection[{unparsed\-Entity\-Decl}]{\setlength{\rightskip}{0pt plus 5cm}bool unparsed\-Entity\-Decl (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{name, }
+\item[{const {\bf Q\-String} \&}]{public\-Id, }
+\item[{const {\bf Q\-String} \&}]{system\-Id, }
+\item[{const {\bf Q\-String} \&}]{notation\-Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_q_xml_d_t_d_handler_aa4afec8990cd2b491c904f109c2b3df1}
+The reader calls this function when he finds an unparsed entity declaration.
+
+The argument {\itshape name} is the unparsed entity's name, {\itshape public\-Id} is the entity's public identifier, {\itshape system\-Id} is the entity's system identifier and {\itshape notation} is the name of the associated notation.
+
+If this function returns F\-A\-L\-S\-E the reader will stop parsing and will report an error. The reader will use the function \hyperlink{class_q_xml_d_t_d_handler_ac86bbbabef3a52aec7615cbbc0adb3f4}{error\-String()} to get the error message that will be used for reporting the error. 
+
+Implementado em \hyperlink{class_q_xml_default_handler_a12e1b778be582d7959bf09a9242390e2}{Q\-Xml\-Default\-Handler}.
+
+
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/qtools/qxml.\-h\item 
+C\-:/\-Users/teste/git/doxygen/qtools/qxml.\-cpp\end{DoxyCompactItemize}

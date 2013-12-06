@@ -1,0 +1,98 @@
+\hypertarget{class_q_cache}{\section{Referência à classe Template Q\-Cache$<$ type $>$}
+\label{class_q_cache}\index{Q\-Cache$<$ type $>$@{Q\-Cache$<$ type $>$}}
+}
+Diagrama de heranças da classe Q\-Cache$<$ type $>$\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_q_cache}
+\end{center}
+\end{figure}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_q_cache_ab93fd941074cab82c3aef41df27ddf86}{{\bfseries Q\-Cache} (const \hyperlink{class_q_cache}{Q\-Cache}$<$ type $>$ \&c)}\label{class_q_cache_ab93fd941074cab82c3aef41df27ddf86}
+
+\item 
+\hypertarget{class_q_cache_ae64a0e22ca6031b65cfc9ecf229103c8}{{\bfseries Q\-Cache} (int max\-Cost=100, int size=17, bool case\-Sensitive=T\-R\-U\-E)}\label{class_q_cache_ae64a0e22ca6031b65cfc9ecf229103c8}
+
+\item 
+\hypertarget{class_q_cache_a2ef0f31f8acbe6448dbbe9537dab7755}{\hyperlink{class_q_cache}{Q\-Cache}$<$ type $>$ \& {\bfseries operator=} (const \hyperlink{class_q_cache}{Q\-Cache}$<$ type $>$ \&c)}\label{class_q_cache_a2ef0f31f8acbe6448dbbe9537dab7755}
+
+\item 
+\hypertarget{class_q_cache_a4f12dace19b47168c151cf6fee713003}{int {\bfseries max\-Cost} () const }\label{class_q_cache_a4f12dace19b47168c151cf6fee713003}
+
+\item 
+\hypertarget{class_q_cache_aed467348a4bbd41b4b4d9d5f63a63a6e}{int {\bfseries total\-Cost} () const }\label{class_q_cache_aed467348a4bbd41b4b4d9d5f63a63a6e}
+
+\item 
+\hypertarget{class_q_cache_a7de9a59b3e481b331b86e50055ac5a1e}{void {\bfseries set\-Max\-Cost} (int m)}\label{class_q_cache_a7de9a59b3e481b331b86e50055ac5a1e}
+
+\item 
+uint \hyperlink{class_q_cache_a774149fc271ebaba2aabcd183a836e8f}{count} () const 
+\item 
+\hypertarget{class_q_cache_a7e63723212bed1ca52f0fe57e58b812e}{uint {\bfseries size} () const }\label{class_q_cache_a7e63723212bed1ca52f0fe57e58b812e}
+
+\item 
+\hypertarget{class_q_cache_a479432127ee77145cc19d6a2d1590821}{bool {\bfseries is\-Empty} () const }\label{class_q_cache_a479432127ee77145cc19d6a2d1590821}
+
+\item 
+void \hyperlink{class_q_cache_ac8bb3912a3ce86b15842e79d0b421204}{clear} ()
+\item 
+\hypertarget{class_q_cache_ab44c6a688d602246ee182cc9193d71a0}{bool {\bfseries insert} (const char $\ast$k, const type $\ast$d, int c=1, int p=0)}\label{class_q_cache_ab44c6a688d602246ee182cc9193d71a0}
+
+\item 
+\hypertarget{class_q_cache_abc36869a870103b2cef3f5842bf90835}{bool {\bfseries remove} (const char $\ast$k)}\label{class_q_cache_abc36869a870103b2cef3f5842bf90835}
+
+\item 
+\hypertarget{class_q_cache_ae5e4da345aaf912600c5ecca3cd788f5}{type $\ast$ {\bfseries take} (const char $\ast$k)}\label{class_q_cache_ae5e4da345aaf912600c5ecca3cd788f5}
+
+\item 
+\hypertarget{class_q_cache_acfcb11df092c8e8802401eb506ace5dd}{type $\ast$ {\bfseries find} (const char $\ast$k, bool ref=T\-R\-U\-E) const }\label{class_q_cache_acfcb11df092c8e8802401eb506ace5dd}
+
+\item 
+\hypertarget{class_q_cache_a00c6e6438760325778fceab19b558905}{type $\ast$ {\bfseries operator\mbox{[}$\,$\mbox{]}} (const char $\ast$k) const }\label{class_q_cache_a00c6e6438760325778fceab19b558905}
+
+\item 
+\hypertarget{class_q_cache_a2b624ae0c69f64a3f0cb59d8ac80e365}{void {\bfseries statistics} () const }\label{class_q_cache_a2b624ae0c69f64a3f0cb59d8ac80e365}
+
+\item 
+\hypertarget{class_q_cache_ab5211b6adcb89c296fcc3b6f60b8b6c7}{int {\bfseries hits} () const }\label{class_q_cache_ab5211b6adcb89c296fcc3b6f60b8b6c7}
+
+\item 
+\hypertarget{class_q_cache_ad9a016e5d65ed3c1d57ade79ac7d4e35}{int {\bfseries misses} () const }\label{class_q_cache_ad9a016e5d65ed3c1d57ade79ac7d4e35}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_q_cache_ac8bb3912a3ce86b15842e79d0b421204}{\index{Q\-Cache@{Q\-Cache}!clear@{clear}}
+\index{clear@{clear}!QCache@{Q\-Cache}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}void clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_q_cache_ac8bb3912a3ce86b15842e79d0b421204}
+Removes all objects from the collection. The objects will be deleted if auto-\/delete has been enabled. \begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_collection_a52460a3734e18d6137e869acc2590c88}{set\-Auto\-Delete()} 
+\end{DoxySeeAlso}
+
+
+Implementa \hyperlink{class_q_collection_a893fbba23236417d1abe182ed3aee1a8}{Q\-Collection}.
+
+\hypertarget{class_q_cache_a774149fc271ebaba2aabcd183a836e8f}{\index{Q\-Cache@{Q\-Cache}!count@{count}}
+\index{count@{count}!QCache@{Q\-Cache}}
+\subsubsection[{count}]{\setlength{\rightskip}{0pt plus 5cm}uint count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_q_cache_a774149fc271ebaba2aabcd183a836e8f}
+Returns the number of objects in the collection. 
+
+Implementa \hyperlink{class_q_collection_aaf61167af3fa10ef1ba47c37568f8f96}{Q\-Collection}.
+
+
+
+A documentação para esta classe foi gerada a partir do seguinte ficheiro\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/qtools/qcache.\-h\end{DoxyCompactItemize}

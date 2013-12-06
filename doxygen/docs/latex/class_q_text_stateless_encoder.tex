@@ -1,0 +1,39 @@
+\hypertarget{class_q_text_stateless_encoder}{\section{Referência à classe Q\-Text\-Stateless\-Encoder}
+\label{class_q_text_stateless_encoder}\index{Q\-Text\-Stateless\-Encoder@{Q\-Text\-Stateless\-Encoder}}
+}
+Diagrama de heranças da classe Q\-Text\-Stateless\-Encoder\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_q_text_stateless_encoder}
+\end{center}
+\end{figure}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_q_text_stateless_encoder_ab71e5c0365c790c556567d2872c1a5dd}{{\bfseries Q\-Text\-Stateless\-Encoder} (const \hyperlink{class_q_text_codec}{Q\-Text\-Codec} $\ast$)}\label{class_q_text_stateless_encoder_ab71e5c0365c790c556567d2872c1a5dd}
+
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_q_text_stateless_encoder_a51f5637ed532d48c4397214510501e2b}{from\-Unicode} (const \hyperlink{class_q_string}{Q\-String} \&uc, int \&len\-In\-Out)
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_q_text_stateless_encoder_a51f5637ed532d48c4397214510501e2b}{\index{Q\-Text\-Stateless\-Encoder@{Q\-Text\-Stateless\-Encoder}!from\-Unicode@{from\-Unicode}}
+\index{from\-Unicode@{from\-Unicode}!QTextStatelessEncoder@{Q\-Text\-Stateless\-Encoder}}
+\subsubsection[{from\-Unicode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} from\-Unicode (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{uc, }
+\item[{int \&}]{len\-In\-Out}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_text_stateless_encoder_a51f5637ed532d48c4397214510501e2b}
+Converts {\itshape len\-In\-Out} characters (not bytes) from {\itshape uc}, producing a \hyperlink{class_q_c_string}{Q\-C\-String}. {\itshape len\-In\-Out} will also be set to the \hyperlink{}{length} of the result (in bytes).
+
+The encoder is free to record state to use when subsequent calls are made to this function (for example, it might change modes with escape sequences if needed during the encoding of one string, then assume that mode applies when a subsequent call begins). 
+
+Implementa \hyperlink{class_q_text_encoder_aacab43367cc5203dd9ec329729914442}{Q\-Text\-Encoder}.
+
+
+
+A documentação para esta classe foi gerada a partir do seguinte ficheiro\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/qtools/qtextcodec.\-cpp\end{DoxyCompactItemize}

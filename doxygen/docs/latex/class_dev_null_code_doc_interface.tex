@@ -1,0 +1,200 @@
+\hypertarget{class_dev_null_code_doc_interface}{\section{Referência à classe Dev\-Null\-Code\-Doc\-Interface}
+\label{class_dev_null_code_doc_interface}\index{Dev\-Null\-Code\-Doc\-Interface@{Dev\-Null\-Code\-Doc\-Interface}}
+}
+Diagrama de heranças da classe Dev\-Null\-Code\-Doc\-Interface\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_dev_null_code_doc_interface}
+\end{center}
+\end{figure}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_dev_null_code_doc_interface_ae795c13518eb3523e41920859b64bae3}{codify} (const char $\ast$)
+\item 
+virtual void \hyperlink{class_dev_null_code_doc_interface_a2ced6ffd253f23812cd3db949a305e9e}{write\-Code\-Link} (const char $\ast$, const char $\ast$, const char $\ast$, const char $\ast$, const char $\ast$)
+\item 
+virtual void \hyperlink{class_dev_null_code_doc_interface_a1009688e232ec64f703d534ece6bd8c6}{write\-Tooltip} (const char $\ast$, const \hyperlink{struct_doc_link_info}{Doc\-Link\-Info} \&, const char $\ast$, const char $\ast$, const \hyperlink{struct_source_link_info}{Source\-Link\-Info} \&, const \hyperlink{struct_source_link_info}{Source\-Link\-Info} \&)
+\item 
+virtual void \hyperlink{class_dev_null_code_doc_interface_ab884475bfa9aae3d714d0583402dc7a6}{write\-Line\-Number} (const char $\ast$, const char $\ast$, const char $\ast$, int)
+\item 
+\hypertarget{class_dev_null_code_doc_interface_af3e5b954e395f5273acb62f73cda0a8d}{virtual void {\bfseries start\-Code\-Line} (bool)}\label{class_dev_null_code_doc_interface_af3e5b954e395f5273acb62f73cda0a8d}
+
+\item 
+virtual void \hyperlink{class_dev_null_code_doc_interface_a9eac5f8973e5f7c2a4500d3daa5c125f}{end\-Code\-Line} ()
+\item 
+virtual void \hyperlink{class_dev_null_code_doc_interface_a3595d576933897558124c28746b819f9}{start\-Font\-Class} (const char $\ast$)
+\item 
+virtual void \hyperlink{class_dev_null_code_doc_interface_adc05c3c53aeaba27ae7d22334168c413}{end\-Font\-Class} ()
+\item 
+virtual void \hyperlink{class_dev_null_code_doc_interface_a0bdf0a5b7ff33f368aa90d95063530ee}{write\-Code\-Anchor} (const char $\ast$)
+\item 
+\hypertarget{class_dev_null_code_doc_interface_a78007617a719be9aba2ccc98916ffdf6}{virtual void {\bfseries linkable\-Symbol} (int, const char $\ast$, \hyperlink{class_definition}{Definition} $\ast$, \hyperlink{class_definition}{Definition} $\ast$)}\label{class_dev_null_code_doc_interface_a78007617a719be9aba2ccc98916ffdf6}
+
+\item 
+\hypertarget{class_dev_null_code_doc_interface_aedb1597afe8199dd35e7a711b0eed0a2}{virtual void {\bfseries set\-Current\-Doc} (\hyperlink{class_definition}{Definition} $\ast$, const char $\ast$, bool)}\label{class_dev_null_code_doc_interface_aedb1597afe8199dd35e7a711b0eed0a2}
+
+\item 
+\hypertarget{class_dev_null_code_doc_interface_a67d2d799c60ab1f24173643ad2136e23}{virtual void {\bfseries add\-Word} (const char $\ast$, bool)}\label{class_dev_null_code_doc_interface_a67d2d799c60ab1f24173643ad2136e23}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+Class implementing \hyperlink{class_code_output_interface}{Code\-Output\-Interface} by throwing away everything. 
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_dev_null_code_doc_interface_ae795c13518eb3523e41920859b64bae3}{\index{Dev\-Null\-Code\-Doc\-Interface@{Dev\-Null\-Code\-Doc\-Interface}!codify@{codify}}
+\index{codify@{codify}!DevNullCodeDocInterface@{Dev\-Null\-Code\-Doc\-Interface}}
+\subsubsection[{codify}]{\setlength{\rightskip}{0pt plus 5cm}virtual void codify (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_dev_null_code_doc_interface_ae795c13518eb3523e41920859b64bae3}
+Writes an code fragment to the output. This function should keep spaces visible, should break lines at a newline and should convert tabs to the right number of spaces. 
+
+Implementa \hyperlink{class_code_output_interface_abc701d9798e414eae3e9694be75dfa8a}{Code\-Output\-Interface}.
+
+\hypertarget{class_dev_null_code_doc_interface_a9eac5f8973e5f7c2a4500d3daa5c125f}{\index{Dev\-Null\-Code\-Doc\-Interface@{Dev\-Null\-Code\-Doc\-Interface}!end\-Code\-Line@{end\-Code\-Line}}
+\index{end\-Code\-Line@{end\-Code\-Line}!DevNullCodeDocInterface@{Dev\-Null\-Code\-Doc\-Interface}}
+\subsubsection[{end\-Code\-Line}]{\setlength{\rightskip}{0pt plus 5cm}virtual void end\-Code\-Line (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_dev_null_code_doc_interface_a9eac5f8973e5f7c2a4500d3daa5c125f}
+Ends a line of code started with start\-Code\-Line() 
+
+Implementa \hyperlink{class_code_output_interface_a542863fa8a9697696ffc4d4b24678e1f}{Code\-Output\-Interface}.
+
+\hypertarget{class_dev_null_code_doc_interface_adc05c3c53aeaba27ae7d22334168c413}{\index{Dev\-Null\-Code\-Doc\-Interface@{Dev\-Null\-Code\-Doc\-Interface}!end\-Font\-Class@{end\-Font\-Class}}
+\index{end\-Font\-Class@{end\-Font\-Class}!DevNullCodeDocInterface@{Dev\-Null\-Code\-Doc\-Interface}}
+\subsubsection[{end\-Font\-Class}]{\setlength{\rightskip}{0pt plus 5cm}virtual void end\-Font\-Class (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_dev_null_code_doc_interface_adc05c3c53aeaba27ae7d22334168c413}
+Ends a block started with \hyperlink{class_dev_null_code_doc_interface_a3595d576933897558124c28746b819f9}{start\-Font\-Class()} 
+
+Implementa \hyperlink{class_code_output_interface_adcd22acfbc1c4c011802334b78cf5f01}{Code\-Output\-Interface}.
+
+\hypertarget{class_dev_null_code_doc_interface_a3595d576933897558124c28746b819f9}{\index{Dev\-Null\-Code\-Doc\-Interface@{Dev\-Null\-Code\-Doc\-Interface}!start\-Font\-Class@{start\-Font\-Class}}
+\index{start\-Font\-Class@{start\-Font\-Class}!DevNullCodeDocInterface@{Dev\-Null\-Code\-Doc\-Interface}}
+\subsubsection[{start\-Font\-Class}]{\setlength{\rightskip}{0pt plus 5cm}virtual void start\-Font\-Class (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{cls\-Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_dev_null_code_doc_interface_a3595d576933897558124c28746b819f9}
+Starts a block with a certain meaning. Used for syntax highlighting, which elements of the same type are rendered using the same 'font class'. 
+\begin{DoxyParams}{Parâmetros}
+{\em cls\-Name} & The category name. \\
+\hline
+\end{DoxyParams}
+
+
+Implementa \hyperlink{class_code_output_interface_aaa0bdadd117e161c87149d902d70c863}{Code\-Output\-Interface}.
+
+\hypertarget{class_dev_null_code_doc_interface_a0bdf0a5b7ff33f368aa90d95063530ee}{\index{Dev\-Null\-Code\-Doc\-Interface@{Dev\-Null\-Code\-Doc\-Interface}!write\-Code\-Anchor@{write\-Code\-Anchor}}
+\index{write\-Code\-Anchor@{write\-Code\-Anchor}!DevNullCodeDocInterface@{Dev\-Null\-Code\-Doc\-Interface}}
+\subsubsection[{write\-Code\-Anchor}]{\setlength{\rightskip}{0pt plus 5cm}virtual void write\-Code\-Anchor (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_dev_null_code_doc_interface_a0bdf0a5b7ff33f368aa90d95063530ee}
+Write an anchor to a source listing. 
+\begin{DoxyParams}{Parâmetros}
+{\em name} & The name of the anchor. \\
+\hline
+\end{DoxyParams}
+
+
+Implementa \hyperlink{class_code_output_interface_aa29ff881359360e41a251d1d69fae142}{Code\-Output\-Interface}.
+
+\hypertarget{class_dev_null_code_doc_interface_a2ced6ffd253f23812cd3db949a305e9e}{\index{Dev\-Null\-Code\-Doc\-Interface@{Dev\-Null\-Code\-Doc\-Interface}!write\-Code\-Link@{write\-Code\-Link}}
+\index{write\-Code\-Link@{write\-Code\-Link}!DevNullCodeDocInterface@{Dev\-Null\-Code\-Doc\-Interface}}
+\subsubsection[{write\-Code\-Link}]{\setlength{\rightskip}{0pt plus 5cm}virtual void write\-Code\-Link (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ref, }
+\item[{const char $\ast$}]{file, }
+\item[{const char $\ast$}]{anchor, }
+\item[{const char $\ast$}]{name, }
+\item[{const char $\ast$}]{tooltip}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_dev_null_code_doc_interface_a2ced6ffd253f23812cd3db949a305e9e}
+Writes a link to an object in a code fragment. 
+\begin{DoxyParams}{Parâmetros}
+{\em ref} & If this is non-\/zero, the object is to be found in an external documentation file. \\
+\hline
+{\em file} & The file in which the object is located. \\
+\hline
+{\em anchor} & The anchor uniquely identifying the object within the file. \\
+\hline
+{\em name} & The text to display as a placeholder for the link. \\
+\hline
+{\em tooltip} & The tooltip to display when the mouse is on the link. \\
+\hline
+\end{DoxyParams}
+
+
+Implementa \hyperlink{class_code_output_interface_a21e25662f2bc8efbb5bbb8503aeae97f}{Code\-Output\-Interface}.
+
+\hypertarget{class_dev_null_code_doc_interface_ab884475bfa9aae3d714d0583402dc7a6}{\index{Dev\-Null\-Code\-Doc\-Interface@{Dev\-Null\-Code\-Doc\-Interface}!write\-Line\-Number@{write\-Line\-Number}}
+\index{write\-Line\-Number@{write\-Line\-Number}!DevNullCodeDocInterface@{Dev\-Null\-Code\-Doc\-Interface}}
+\subsubsection[{write\-Line\-Number}]{\setlength{\rightskip}{0pt plus 5cm}virtual void write\-Line\-Number (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ref, }
+\item[{const char $\ast$}]{file, }
+\item[{const char $\ast$}]{anchor, }
+\item[{int}]{line\-Number}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_dev_null_code_doc_interface_ab884475bfa9aae3d714d0583402dc7a6}
+Writes the line number of a source listing 
+\begin{DoxyParams}{Parâmetros}
+{\em ref} & External reference (when imported from a tag file) \\
+\hline
+{\em file} & The file part of the \hyperlink{struct_u_r_l}{U\-R\-L} pointing to the docs. \\
+\hline
+{\em anchor} & The anchor part of the \hyperlink{struct_u_r_l}{U\-R\-L} pointing to the docs. \\
+\hline
+{\em line\-Number} & The line number to write \\
+\hline
+\end{DoxyParams}
+
+
+Implementa \hyperlink{class_code_output_interface_a30af4b3b6e39508a95ba3219d1ba8323}{Code\-Output\-Interface}.
+
+\hypertarget{class_dev_null_code_doc_interface_a1009688e232ec64f703d534ece6bd8c6}{\index{Dev\-Null\-Code\-Doc\-Interface@{Dev\-Null\-Code\-Doc\-Interface}!write\-Tooltip@{write\-Tooltip}}
+\index{write\-Tooltip@{write\-Tooltip}!DevNullCodeDocInterface@{Dev\-Null\-Code\-Doc\-Interface}}
+\subsubsection[{write\-Tooltip}]{\setlength{\rightskip}{0pt plus 5cm}virtual void write\-Tooltip (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{id, }
+\item[{const {\bf Doc\-Link\-Info} \&}]{doc\-Info, }
+\item[{const char $\ast$}]{decl, }
+\item[{const char $\ast$}]{desc, }
+\item[{const {\bf Source\-Link\-Info} \&}]{def\-Info, }
+\item[{const {\bf Source\-Link\-Info} \&}]{decl\-Info}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_dev_null_code_doc_interface_a1009688e232ec64f703d534ece6bd8c6}
+Writes a tool tip definition 
+\begin{DoxyParams}{Parâmetros}
+{\em id} & unique identifier for the tooltip \\
+\hline
+{\em doc\-Info} & Info about the symbol's documentation. \\
+\hline
+{\em decl} & full declaration of the symbol (for functions) \\
+\hline
+{\em desc} & brief description for the symbol \\
+\hline
+{\em def\-Info} & Info about the symbol's definition in the source code \\
+\hline
+{\em decl\-Info} & Info about the symbol's declaration in the source code \\
+\hline
+\end{DoxyParams}
+
+
+Implementa \hyperlink{class_code_output_interface_a4ab86013abbf61a86e9c300eb805939a}{Code\-Output\-Interface}.
+
+
+
+A documentação para esta classe foi gerada a partir do seguinte ficheiro\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/src/filedef.\-cpp\end{DoxyCompactItemize}

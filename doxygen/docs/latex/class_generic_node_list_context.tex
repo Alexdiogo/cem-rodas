@@ -1,0 +1,68 @@
+\hypertarget{class_generic_node_list_context}{\section{Referência à classe Template Generic\-Node\-List\-Context$<$ T $>$}
+\label{class_generic_node_list_context}\index{Generic\-Node\-List\-Context$<$ T $>$@{Generic\-Node\-List\-Context$<$ T $>$}}
+}
+Diagrama de heranças da classe Generic\-Node\-List\-Context$<$ T $>$\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_generic_node_list_context}
+\end{center}
+\end{figure}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_generic_node_list_context_a0745638c9967e2ed90bc96c012288c55}{count} () const 
+\item 
+\hyperlink{class_template_variant}{Template\-Variant} \hyperlink{class_generic_node_list_context_a55f90d50fcb1378b2a97b9c3ad5bb162}{at} (int index) const 
+\item 
+\hyperlink{class_template_list_intf_1_1_const_iterator}{Template\-List\-Intf\-::\-Const\-Iterator} $\ast$ \hyperlink{class_generic_node_list_context_ac47c74a58be692c052b883b5d5f9fcb4}{create\-Iterator} () const 
+\item 
+\hypertarget{class_generic_node_list_context_a642d5f0782f108e0a8e76028245532d7}{void {\bfseries append} (T $\ast$ctn)}\label{class_generic_node_list_context_a642d5f0782f108e0a8e76028245532d7}
+
+\item 
+\hypertarget{class_generic_node_list_context_a479432127ee77145cc19d6a2d1590821}{bool {\bfseries is\-Empty} () const }\label{class_generic_node_list_context_a479432127ee77145cc19d6a2d1590821}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_generic_node_list_context_a55f90d50fcb1378b2a97b9c3ad5bb162}{\index{Generic\-Node\-List\-Context@{Generic\-Node\-List\-Context}!at@{at}}
+\index{at@{at}!GenericNodeListContext@{Generic\-Node\-List\-Context}}
+\subsubsection[{at}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Template\-Variant} at (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_generic_node_list_context_a55f90d50fcb1378b2a97b9c3ad5bb162}
+Returns the element at index position {\itshape index}. 
+
+Implementa \hyperlink{class_template_list_intf_a6b813ba1b062c9c5b241158a4a62aea7}{Template\-List\-Intf}.
+
+\hypertarget{class_generic_node_list_context_a0745638c9967e2ed90bc96c012288c55}{\index{Generic\-Node\-List\-Context@{Generic\-Node\-List\-Context}!count@{count}}
+\index{count@{count}!GenericNodeListContext@{Generic\-Node\-List\-Context}}
+\subsubsection[{count}]{\setlength{\rightskip}{0pt plus 5cm}int count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_generic_node_list_context_a0745638c9967e2ed90bc96c012288c55}
+Returns the number of elements in the list 
+
+Implementa \hyperlink{class_template_list_intf_ac5a730d48b86f871bc036571234d1332}{Template\-List\-Intf}.
+
+\hypertarget{class_generic_node_list_context_ac47c74a58be692c052b883b5d5f9fcb4}{\index{Generic\-Node\-List\-Context@{Generic\-Node\-List\-Context}!create\-Iterator@{create\-Iterator}}
+\index{create\-Iterator@{create\-Iterator}!GenericNodeListContext@{Generic\-Node\-List\-Context}}
+\subsubsection[{create\-Iterator}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Template\-List\-Intf\-::\-Const\-Iterator}$\ast$ create\-Iterator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_generic_node_list_context_ac47c74a58be692c052b883b5d5f9fcb4}
+Creates a new iterator for this list. \begin{DoxyNote}{Nota}
+the user should call delete on the returned pointer. 
+\end{DoxyNote}
+
+
+Implementa \hyperlink{class_template_list_intf_a972208b612df97b9d7216b3a28f0d0c3}{Template\-List\-Intf}.
+
+
+
+A documentação para esta classe foi gerada a partir do seguinte ficheiro\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/src/context.\-cpp\end{DoxyCompactItemize}

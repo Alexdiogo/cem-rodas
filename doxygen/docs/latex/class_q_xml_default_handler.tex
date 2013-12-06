@@ -1,0 +1,458 @@
+\hypertarget{class_q_xml_default_handler}{\section{Referência à classe Q\-Xml\-Default\-Handler}
+\label{class_q_xml_default_handler}\index{Q\-Xml\-Default\-Handler@{Q\-Xml\-Default\-Handler}}
+}
+
+
+The \hyperlink{class_q_xml_default_handler}{Q\-Xml\-Default\-Handler} class provides a default implementation of all X\-M\-L handler classes.  
+
+
+
+
+{\ttfamily \#include $<$qxml.\-h$>$}
+
+Diagrama de heranças da classe Q\-Xml\-Default\-Handler\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{class_q_xml_default_handler}
+\end{center}
+\end{figure}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_q_xml_default_handler_a793125c12ce88b08d70d78e0e6be4c1b}{Q\-Xml\-Default\-Handler} ()
+\item 
+virtual \hyperlink{class_q_xml_default_handler_a478b1db9349a96d1c2dd83385fbb56e4}{$\sim$\-Q\-Xml\-Default\-Handler} ()
+\item 
+void \hyperlink{class_q_xml_default_handler_a6ea335308d212e2244af77edaff21d6a}{set\-Document\-Locator} (\hyperlink{class_q_xml_locator}{Q\-Xml\-Locator} $\ast$locator)
+\item 
+bool \hyperlink{class_q_xml_default_handler_af5342502614ae37eaa64a8d3e404027d}{start\-Document} ()
+\item 
+bool \hyperlink{class_q_xml_default_handler_aaef0fd8871f28d804dc845c47c8fbc85}{end\-Document} ()
+\item 
+bool \hyperlink{class_q_xml_default_handler_a95ec522e87375953024f71f04077eafa}{start\-Prefix\-Mapping} (const \hyperlink{class_q_string}{Q\-String} \&prefix, const \hyperlink{class_q_string}{Q\-String} \&uri)
+\item 
+bool \hyperlink{class_q_xml_default_handler_a12f447f90feb782e1717170190f14ad2}{end\-Prefix\-Mapping} (const \hyperlink{class_q_string}{Q\-String} \&prefix)
+\item 
+bool \hyperlink{class_q_xml_default_handler_a0712995308713e9df1c0d389568a344b}{start\-Element} (const \hyperlink{class_q_string}{Q\-String} \&namespace\-U\-R\-I, const \hyperlink{class_q_string}{Q\-String} \&local\-Name, const \hyperlink{class_q_string}{Q\-String} \&q\-Name, const \hyperlink{class_q_xml_attributes}{Q\-Xml\-Attributes} \&atts)
+\item 
+bool \hyperlink{class_q_xml_default_handler_abd6ff9644b2d6f0a4aab938bd9cdc593}{end\-Element} (const \hyperlink{class_q_string}{Q\-String} \&namespace\-U\-R\-I, const \hyperlink{class_q_string}{Q\-String} \&local\-Name, const \hyperlink{class_q_string}{Q\-String} \&q\-Name)
+\item 
+bool \hyperlink{class_q_xml_default_handler_a6eb7b9d9a6138bf566cc61ae9b5e436a}{characters} (const \hyperlink{class_q_string}{Q\-String} \&ch)
+\item 
+bool \hyperlink{class_q_xml_default_handler_a12ab56e68ba11fa12a88b869611fa3e3}{ignorable\-Whitespace} (const \hyperlink{class_q_string}{Q\-String} \&ch)
+\item 
+bool \hyperlink{class_q_xml_default_handler_a31bcaeada22dde72e4b2b59f859f90c5}{processing\-Instruction} (const \hyperlink{class_q_string}{Q\-String} \&target, const \hyperlink{class_q_string}{Q\-String} \&data)
+\item 
+bool \hyperlink{class_q_xml_default_handler_a26a7987789d542b12799ef6f3696f86c}{skipped\-Entity} (const \hyperlink{class_q_string}{Q\-String} \&name)
+\item 
+bool \hyperlink{class_q_xml_default_handler_aed90bd0b5272f7a5042451fa8f20c5ba}{warning} (const \hyperlink{class_q_xml_parse_exception}{Q\-Xml\-Parse\-Exception} \&exception)
+\item 
+bool \hyperlink{class_q_xml_default_handler_a17e6cc63b7ee45c29ef1883227aa3ef8}{error} (const \hyperlink{class_q_xml_parse_exception}{Q\-Xml\-Parse\-Exception} \&exception)
+\item 
+bool \hyperlink{class_q_xml_default_handler_afe3fbf09765011104e0d12ee0d395619}{fatal\-Error} (const \hyperlink{class_q_xml_parse_exception}{Q\-Xml\-Parse\-Exception} \&exception)
+\item 
+bool \hyperlink{class_q_xml_default_handler_a40a0f45b7aa7ea980734fa14620ce0d6}{notation\-Decl} (const \hyperlink{class_q_string}{Q\-String} \&name, const \hyperlink{class_q_string}{Q\-String} \&public\-Id, const \hyperlink{class_q_string}{Q\-String} \&system\-Id)
+\item 
+bool \hyperlink{class_q_xml_default_handler_a12e1b778be582d7959bf09a9242390e2}{unparsed\-Entity\-Decl} (const \hyperlink{class_q_string}{Q\-String} \&name, const \hyperlink{class_q_string}{Q\-String} \&public\-Id, const \hyperlink{class_q_string}{Q\-String} \&system\-Id, const \hyperlink{class_q_string}{Q\-String} \&notation\-Name)
+\item 
+bool \hyperlink{class_q_xml_default_handler_a838be71a40beadc4eac9429fd727c9e8}{resolve\-Entity} (const \hyperlink{class_q_string}{Q\-String} \&public\-Id, const \hyperlink{class_q_string}{Q\-String} \&system\-Id, \hyperlink{class_q_xml_input_source}{Q\-Xml\-Input\-Source} $\ast$\&ret)
+\item 
+bool \hyperlink{class_q_xml_default_handler_a4e6d659ffbcf1382f9ac908f987512ae}{start\-D\-T\-D} (const \hyperlink{class_q_string}{Q\-String} \&name, const \hyperlink{class_q_string}{Q\-String} \&public\-Id, const \hyperlink{class_q_string}{Q\-String} \&system\-Id)
+\item 
+bool \hyperlink{class_q_xml_default_handler_afdbb98bf201ef5e358e6b175958e3433}{end\-D\-T\-D} ()
+\item 
+bool \hyperlink{class_q_xml_default_handler_a492b3e39f8c41a9f98eb477a975cb383}{start\-C\-D\-A\-T\-A} ()
+\item 
+bool \hyperlink{class_q_xml_default_handler_ad7a1723ff154aeffcbaac42e4a591186}{end\-C\-D\-A\-T\-A} ()
+\item 
+bool \hyperlink{class_q_xml_default_handler_a244025ba6bd8815828678aab134064d0}{comment} (const \hyperlink{class_q_string}{Q\-String} \&ch)
+\item 
+bool \hyperlink{class_q_xml_default_handler_a512b30d75f1836bfe11dfd87cb25a092}{attribute\-Decl} (const \hyperlink{class_q_string}{Q\-String} \&e\-Name, const \hyperlink{class_q_string}{Q\-String} \&a\-Name, const \hyperlink{class_q_string}{Q\-String} \&type, const \hyperlink{class_q_string}{Q\-String} \&value\-Default, const \hyperlink{class_q_string}{Q\-String} \&value)
+\item 
+bool \hyperlink{class_q_xml_default_handler_a89792dd1b272b7f45bebb8f1eda7ee99}{internal\-Entity\-Decl} (const \hyperlink{class_q_string}{Q\-String} \&name, const \hyperlink{class_q_string}{Q\-String} \&value)
+\item 
+bool \hyperlink{class_q_xml_default_handler_ae811ac152a3a244b2f5dd12401fa055c}{external\-Entity\-Decl} (const \hyperlink{class_q_string}{Q\-String} \&name, const \hyperlink{class_q_string}{Q\-String} \&public\-Id, const \hyperlink{class_q_string}{Q\-String} \&system\-Id)
+\item 
+\hyperlink{class_q_string}{Q\-String} \hyperlink{class_q_xml_default_handler_af799a7684337babb971e2e0d8cda7cf1}{error\-String} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+The \hyperlink{class_q_xml_default_handler}{Q\-Xml\-Default\-Handler} class provides a default implementation of all X\-M\-L handler classes. 
+
+X\-M\-L
+
+Very often you are only interested in parts of the things that that the reader reports to you. This class simply implements a default behaviour of the handler classes (most of the time\-: do nothing). Normally this is the class you subclass for implementing your customized handler.
+
+See also the \href{xml.html#introSAX2}{\tt Introduction to S\-A\-X2}.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_xml_d_t_d_handler}{Q\-Xml\-D\-T\-D\-Handler} \hyperlink{class_q_xml_decl_handler}{Q\-Xml\-Decl\-Handler} \hyperlink{class_q_xml_content_handler}{Q\-Xml\-Content\-Handler} \hyperlink{class_q_xml_entity_resolver}{Q\-Xml\-Entity\-Resolver} \hyperlink{class_q_xml_error_handler}{Q\-Xml\-Error\-Handler} \hyperlink{class_q_xml_lexical_handler}{Q\-Xml\-Lexical\-Handler} 
+\end{DoxySeeAlso}
+
+
+\subsection{Documentação dos Construtores \& Destrutor}
+\hypertarget{class_q_xml_default_handler_a793125c12ce88b08d70d78e0e6be4c1b}{\index{Q\-Xml\-Default\-Handler@{Q\-Xml\-Default\-Handler}!Q\-Xml\-Default\-Handler@{Q\-Xml\-Default\-Handler}}
+\index{Q\-Xml\-Default\-Handler@{Q\-Xml\-Default\-Handler}!QXmlDefaultHandler@{Q\-Xml\-Default\-Handler}}
+\subsubsection[{Q\-Xml\-Default\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Xml\-Default\-Handler} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_xml_default_handler_a793125c12ce88b08d70d78e0e6be4c1b}
+Constructor. \hypertarget{class_q_xml_default_handler_a478b1db9349a96d1c2dd83385fbb56e4}{\index{Q\-Xml\-Default\-Handler@{Q\-Xml\-Default\-Handler}!$\sim$\-Q\-Xml\-Default\-Handler@{$\sim$\-Q\-Xml\-Default\-Handler}}
+\index{$\sim$\-Q\-Xml\-Default\-Handler@{$\sim$\-Q\-Xml\-Default\-Handler}!QXmlDefaultHandler@{Q\-Xml\-Default\-Handler}}
+\subsubsection[{$\sim$\-Q\-Xml\-Default\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}$\sim${\bf Q\-Xml\-Default\-Handler} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_q_xml_default_handler_a478b1db9349a96d1c2dd83385fbb56e4}
+Destructor. 
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_q_xml_default_handler_a512b30d75f1836bfe11dfd87cb25a092}{\index{Q\-Xml\-Default\-Handler@{Q\-Xml\-Default\-Handler}!attribute\-Decl@{attribute\-Decl}}
+\index{attribute\-Decl@{attribute\-Decl}!QXmlDefaultHandler@{Q\-Xml\-Default\-Handler}}
+\subsubsection[{attribute\-Decl}]{\setlength{\rightskip}{0pt plus 5cm}bool attribute\-Decl (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{e\-Name, }
+\item[{const {\bf Q\-String} \&}]{a\-Name, }
+\item[{const {\bf Q\-String} \&}]{type, }
+\item[{const {\bf Q\-String} \&}]{value\-Default, }
+\item[{const {\bf Q\-String} \&}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_xml_default_handler_a512b30d75f1836bfe11dfd87cb25a092}
+Does nothing. 
+
+Implementa \hyperlink{class_q_xml_decl_handler_a59637787766b7b5629c20abd1b3bc7fb}{Q\-Xml\-Decl\-Handler}.
+
+\hypertarget{class_q_xml_default_handler_a6eb7b9d9a6138bf566cc61ae9b5e436a}{\index{Q\-Xml\-Default\-Handler@{Q\-Xml\-Default\-Handler}!characters@{characters}}
+\index{characters@{characters}!QXmlDefaultHandler@{Q\-Xml\-Default\-Handler}}
+\subsubsection[{characters}]{\setlength{\rightskip}{0pt plus 5cm}bool characters (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{ch}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_xml_default_handler_a6eb7b9d9a6138bf566cc61ae9b5e436a}
+Does nothing. 
+
+Implementa \hyperlink{class_q_xml_content_handler_a63490f0ac6e8b7794a5ebb331c3a4143}{Q\-Xml\-Content\-Handler}.
+
+
+
+Reimplementado em \hyperlink{class_tag_file_parser_a6eb7b9d9a6138bf566cc61ae9b5e436a}{Tag\-File\-Parser}, \hyperlink{class_d_bus_x_m_l_handler_a4c0dc64e43b1a283cc948c82ff4ad392}{D\-Bus\-X\-M\-L\-Handler}, \hyperlink{class_base_handler_ae9e90bf53548ca210db99147e85d050d}{Base\-Handler$<$ Program\-Listing\-Handler $>$}, \hyperlink{class_base_handler_ae9e90bf53548ca210db99147e85d050d}{Base\-Handler$<$ Doc\-Internal\-Handler $>$}, \hyperlink{class_base_handler_ae9e90bf53548ca210db99147e85d050d}{Base\-Handler$<$ List\-Item\-Handler $>$}, \hyperlink{class_base_handler_ae9e90bf53548ca210db99147e85d050d}{Base\-Handler$<$ Toc\-List\-Handler $>$}, \hyperlink{class_base_handler_ae9e90bf53548ca210db99147e85d050d}{Base\-Handler$<$ Highlight\-Handler $>$}, \hyperlink{class_base_handler_ae9e90bf53548ca210db99147e85d050d}{Base\-Handler$<$ Toc\-Item\-Handler $>$}, \hyperlink{class_base_handler_ae9e90bf53548ca210db99147e85d050d}{Base\-Handler$<$ Section\-Handler $>$}, \hyperlink{class_base_handler_ae9e90bf53548ca210db99147e85d050d}{Base\-Handler$<$ Link\-Handler $>$}, \hyperlink{class_base_handler_ae9e90bf53548ca210db99147e85d050d}{Base\-Handler$<$ Verbatim\-Handler $>$}, \hyperlink{class_base_handler_ae9e90bf53548ca210db99147e85d050d}{Base\-Handler$<$ Graph\-Handler $>$}, \hyperlink{class_base_handler_ae9e90bf53548ca210db99147e85d050d}{Base\-Handler$<$ Formula\-Handler $>$}, \hyperlink{class_base_handler_ae9e90bf53548ca210db99147e85d050d}{Base\-Handler$<$ E\-Mail\-Handler $>$}, \hyperlink{class_base_handler_ae9e90bf53548ca210db99147e85d050d}{Base\-Handler$<$ U\-Link\-Handler $>$}, \hyperlink{class_base_handler_ae9e90bf53548ca210db99147e85d050d}{Base\-Handler$<$ Variable\-List\-Entry\-Handler $>$}, \hyperlink{class_base_handler_ae9e90bf53548ca210db99147e85d050d}{Base\-Handler$<$ Node\-Handler $>$}, \hyperlink{class_base_handler_ae9e90bf53548ca210db99147e85d050d}{Base\-Handler$<$ Parameter\-Item\-Handler $>$}, \hyperlink{class_base_handler_ae9e90bf53548ca210db99147e85d050d}{Base\-Handler$<$ Compound\-Handler $>$}, \hyperlink{class_base_handler_ae9e90bf53548ca210db99147e85d050d}{Base\-Handler$<$ Linked\-Text\-Handler $>$}, \hyperlink{class_base_handler_ae9e90bf53548ca210db99147e85d050d}{Base\-Handler$<$ Entry\-Handler $>$}, \hyperlink{class_base_handler_ae9e90bf53548ca210db99147e85d050d}{Base\-Handler$<$ Child\-Node\-Handler $>$}, \hyperlink{class_base_handler_ae9e90bf53548ca210db99147e85d050d}{Base\-Handler$<$ Table\-Handler $>$}, \hyperlink{class_base_handler_ae9e90bf53548ca210db99147e85d050d}{Base\-Handler$<$ Param\-Handler $>$}, \hyperlink{class_base_handler_ae9e90bf53548ca210db99147e85d050d}{Base\-Handler$<$ H\-Ruler\-Handler $>$}, \hyperlink{class_base_handler_ae9e90bf53548ca210db99147e85d050d}{Base\-Handler$<$ Doc\-Handler $>$}, \hyperlink{class_base_handler_ae9e90bf53548ca210db99147e85d050d}{Base\-Handler$<$ Simple\-Sect\-Handler $>$}, \hyperlink{class_base_handler_ae9e90bf53548ca210db99147e85d050d}{Base\-Handler$<$ Template\-Param\-List\-Handler $>$}, \hyperlink{class_base_handler_ae9e90bf53548ca210db99147e85d050d}{Base\-Handler$<$ Paragraph\-Handler $>$}, \hyperlink{class_base_handler_ae9e90bf53548ca210db99147e85d050d}{Base\-Handler$<$ Row\-Handler $>$}, \hyperlink{class_base_handler_ae9e90bf53548ca210db99147e85d050d}{Base\-Handler$<$ Symbol\-Handler $>$}, \hyperlink{class_base_handler_ae9e90bf53548ca210db99147e85d050d}{Base\-Handler$<$ List\-Of\-All\-Members\-Handler $>$}, \hyperlink{class_base_handler_ae9e90bf53548ca210db99147e85d050d}{Base\-Handler$<$ Title\-Handler $>$}, \hyperlink{class_base_handler_ae9e90bf53548ca210db99147e85d050d}{Base\-Handler$<$ Ordered\-List\-Handler $>$}, \hyperlink{class_base_handler_ae9e90bf53548ca210db99147e85d050d}{Base\-Handler$<$ Include\-Handler $>$}, \hyperlink{class_base_handler_ae9e90bf53548ca210db99147e85d050d}{Base\-Handler$<$ Index\-Entry\-Handler $>$}, \hyperlink{class_base_handler_ae9e90bf53548ca210db99147e85d050d}{Base\-Handler$<$ Main\-Handler $>$}, \hyperlink{class_base_handler_ae9e90bf53548ca210db99147e85d050d}{Base\-Handler$<$ Variable\-List\-Handler $>$}, \hyperlink{class_base_handler_ae9e90bf53548ca210db99147e85d050d}{Base\-Handler$<$ Image\-Handler $>$}, \hyperlink{class_base_handler_ae9e90bf53548ca210db99147e85d050d}{Base\-Handler$<$ Edge\-Label\-Handler $>$}, \hyperlink{class_base_handler_ae9e90bf53548ca210db99147e85d050d}{Base\-Handler$<$ Code\-Line\-Handler $>$}, \hyperlink{class_base_handler_ae9e90bf53548ca210db99147e85d050d}{Base\-Handler$<$ Anchor\-Handler $>$}, \hyperlink{class_base_handler_ae9e90bf53548ca210db99147e85d050d}{Base\-Handler$<$ Parameter\-Handler $>$}, \hyperlink{class_base_handler_ae9e90bf53548ca210db99147e85d050d}{Base\-Handler$<$ Itemized\-List\-Handler $>$}, \hyperlink{class_base_handler_ae9e90bf53548ca210db99147e85d050d}{Base\-Handler$<$ Doc\-Section\-Handler $>$}, \hyperlink{class_base_handler_ae9e90bf53548ca210db99147e85d050d}{Base\-Handler$<$ Parameter\-List\-Handler $>$}, \hyperlink{class_base_handler_ae9e90bf53548ca210db99147e85d050d}{Base\-Handler$<$ Member\-Handler $>$}, \hyperlink{class_base_handler_ae9e90bf53548ca210db99147e85d050d}{Base\-Handler$<$ Ref\-Handler $>$}, \hyperlink{class_base_handler_ae9e90bf53548ca210db99147e85d050d}{Base\-Handler$<$ Copy\-Handler $>$}, \hyperlink{class_base_handler_ae9e90bf53548ca210db99147e85d050d}{Base\-Handler$<$ Dot\-File\-Handler $>$} e \hyperlink{class_base_handler_ae9e90bf53548ca210db99147e85d050d}{Base\-Handler$<$ Line\-Break\-Handler $>$}.
+
+\hypertarget{class_q_xml_default_handler_a244025ba6bd8815828678aab134064d0}{\index{Q\-Xml\-Default\-Handler@{Q\-Xml\-Default\-Handler}!comment@{comment}}
+\index{comment@{comment}!QXmlDefaultHandler@{Q\-Xml\-Default\-Handler}}
+\subsubsection[{comment}]{\setlength{\rightskip}{0pt plus 5cm}bool comment (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{ch}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_xml_default_handler_a244025ba6bd8815828678aab134064d0}
+Does nothing. 
+
+Implementa \hyperlink{class_q_xml_lexical_handler_a89f4a1fa0b8b370c7c8a9666011bd60e}{Q\-Xml\-Lexical\-Handler}.
+
+
+
+Reimplementado em \hyperlink{class_d_bus_x_m_l_handler_abe6e6b6cbb1913a33b7d1350b16e9bba}{D\-Bus\-X\-M\-L\-Handler}.
+
+\hypertarget{class_q_xml_default_handler_ad7a1723ff154aeffcbaac42e4a591186}{\index{Q\-Xml\-Default\-Handler@{Q\-Xml\-Default\-Handler}!end\-C\-D\-A\-T\-A@{end\-C\-D\-A\-T\-A}}
+\index{end\-C\-D\-A\-T\-A@{end\-C\-D\-A\-T\-A}!QXmlDefaultHandler@{Q\-Xml\-Default\-Handler}}
+\subsubsection[{end\-C\-D\-A\-T\-A}]{\setlength{\rightskip}{0pt plus 5cm}bool end\-C\-D\-A\-T\-A (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_xml_default_handler_ad7a1723ff154aeffcbaac42e4a591186}
+Does nothing. 
+
+Implementa \hyperlink{class_q_xml_lexical_handler_af4e24c106522bb67c6fac75aed4924e3}{Q\-Xml\-Lexical\-Handler}.
+
+\hypertarget{class_q_xml_default_handler_aaef0fd8871f28d804dc845c47c8fbc85}{\index{Q\-Xml\-Default\-Handler@{Q\-Xml\-Default\-Handler}!end\-Document@{end\-Document}}
+\index{end\-Document@{end\-Document}!QXmlDefaultHandler@{Q\-Xml\-Default\-Handler}}
+\subsubsection[{end\-Document}]{\setlength{\rightskip}{0pt plus 5cm}bool end\-Document (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_xml_default_handler_aaef0fd8871f28d804dc845c47c8fbc85}
+Does nothing. 
+
+Implementa \hyperlink{class_q_xml_content_handler_acbf4661637fdf60722444665906d160b}{Q\-Xml\-Content\-Handler}.
+
+\hypertarget{class_q_xml_default_handler_afdbb98bf201ef5e358e6b175958e3433}{\index{Q\-Xml\-Default\-Handler@{Q\-Xml\-Default\-Handler}!end\-D\-T\-D@{end\-D\-T\-D}}
+\index{end\-D\-T\-D@{end\-D\-T\-D}!QXmlDefaultHandler@{Q\-Xml\-Default\-Handler}}
+\subsubsection[{end\-D\-T\-D}]{\setlength{\rightskip}{0pt plus 5cm}bool end\-D\-T\-D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_xml_default_handler_afdbb98bf201ef5e358e6b175958e3433}
+Does nothing. 
+
+Implementa \hyperlink{class_q_xml_lexical_handler_a418bba370ca7d74563c7e66c55c54631}{Q\-Xml\-Lexical\-Handler}.
+
+\hypertarget{class_q_xml_default_handler_abd6ff9644b2d6f0a4aab938bd9cdc593}{\index{Q\-Xml\-Default\-Handler@{Q\-Xml\-Default\-Handler}!end\-Element@{end\-Element}}
+\index{end\-Element@{end\-Element}!QXmlDefaultHandler@{Q\-Xml\-Default\-Handler}}
+\subsubsection[{end\-Element}]{\setlength{\rightskip}{0pt plus 5cm}bool end\-Element (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{namespace\-U\-R\-I, }
+\item[{const {\bf Q\-String} \&}]{local\-Name, }
+\item[{const {\bf Q\-String} \&}]{q\-Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_xml_default_handler_abd6ff9644b2d6f0a4aab938bd9cdc593}
+Does nothing. 
+
+Implementa \hyperlink{class_q_xml_content_handler_ac85feb837d3634e775cc7c76df84cce0}{Q\-Xml\-Content\-Handler}.
+
+
+
+Reimplementado em \hyperlink{class_layout_parser_abd7a2eb8d83ec76ec743ddd66a11d2af}{Layout\-Parser}, \hyperlink{class_tag_file_parser_abd7a2eb8d83ec76ec743ddd66a11d2af}{Tag\-File\-Parser}, \hyperlink{class_d_bus_x_m_l_handler_abd6ff9644b2d6f0a4aab938bd9cdc593}{D\-Bus\-X\-M\-L\-Handler}, \hyperlink{class_base_handler_a05536b83184a79912d80d986a3d60bb5}{Base\-Handler$<$ Program\-Listing\-Handler $>$}, \hyperlink{class_base_handler_a05536b83184a79912d80d986a3d60bb5}{Base\-Handler$<$ Doc\-Internal\-Handler $>$}, \hyperlink{class_base_handler_a05536b83184a79912d80d986a3d60bb5}{Base\-Handler$<$ List\-Item\-Handler $>$}, \hyperlink{class_base_handler_a05536b83184a79912d80d986a3d60bb5}{Base\-Handler$<$ Toc\-List\-Handler $>$}, \hyperlink{class_base_handler_a05536b83184a79912d80d986a3d60bb5}{Base\-Handler$<$ Highlight\-Handler $>$}, \hyperlink{class_base_handler_a05536b83184a79912d80d986a3d60bb5}{Base\-Handler$<$ Toc\-Item\-Handler $>$}, \hyperlink{class_base_handler_a05536b83184a79912d80d986a3d60bb5}{Base\-Handler$<$ Section\-Handler $>$}, \hyperlink{class_base_handler_a05536b83184a79912d80d986a3d60bb5}{Base\-Handler$<$ Link\-Handler $>$}, \hyperlink{class_base_handler_a05536b83184a79912d80d986a3d60bb5}{Base\-Handler$<$ Verbatim\-Handler $>$}, \hyperlink{class_base_handler_a05536b83184a79912d80d986a3d60bb5}{Base\-Handler$<$ Graph\-Handler $>$}, \hyperlink{class_base_handler_a05536b83184a79912d80d986a3d60bb5}{Base\-Handler$<$ Formula\-Handler $>$}, \hyperlink{class_base_handler_a05536b83184a79912d80d986a3d60bb5}{Base\-Handler$<$ E\-Mail\-Handler $>$}, \hyperlink{class_base_handler_a05536b83184a79912d80d986a3d60bb5}{Base\-Handler$<$ U\-Link\-Handler $>$}, \hyperlink{class_base_handler_a05536b83184a79912d80d986a3d60bb5}{Base\-Handler$<$ Variable\-List\-Entry\-Handler $>$}, \hyperlink{class_base_handler_a05536b83184a79912d80d986a3d60bb5}{Base\-Handler$<$ Node\-Handler $>$}, \hyperlink{class_base_handler_a05536b83184a79912d80d986a3d60bb5}{Base\-Handler$<$ Parameter\-Item\-Handler $>$}, \hyperlink{class_base_handler_a05536b83184a79912d80d986a3d60bb5}{Base\-Handler$<$ Compound\-Handler $>$}, \hyperlink{class_base_handler_a05536b83184a79912d80d986a3d60bb5}{Base\-Handler$<$ Linked\-Text\-Handler $>$}, \hyperlink{class_base_handler_a05536b83184a79912d80d986a3d60bb5}{Base\-Handler$<$ Entry\-Handler $>$}, \hyperlink{class_base_handler_a05536b83184a79912d80d986a3d60bb5}{Base\-Handler$<$ Child\-Node\-Handler $>$}, \hyperlink{class_base_handler_a05536b83184a79912d80d986a3d60bb5}{Base\-Handler$<$ Table\-Handler $>$}, \hyperlink{class_base_handler_a05536b83184a79912d80d986a3d60bb5}{Base\-Handler$<$ Param\-Handler $>$}, \hyperlink{class_base_handler_a05536b83184a79912d80d986a3d60bb5}{Base\-Handler$<$ H\-Ruler\-Handler $>$}, \hyperlink{class_base_handler_a05536b83184a79912d80d986a3d60bb5}{Base\-Handler$<$ Doc\-Handler $>$}, \hyperlink{class_base_handler_a05536b83184a79912d80d986a3d60bb5}{Base\-Handler$<$ Simple\-Sect\-Handler $>$}, \hyperlink{class_base_handler_a05536b83184a79912d80d986a3d60bb5}{Base\-Handler$<$ Template\-Param\-List\-Handler $>$}, \hyperlink{class_base_handler_a05536b83184a79912d80d986a3d60bb5}{Base\-Handler$<$ Paragraph\-Handler $>$}, \hyperlink{class_base_handler_a05536b83184a79912d80d986a3d60bb5}{Base\-Handler$<$ Row\-Handler $>$}, \hyperlink{class_base_handler_a05536b83184a79912d80d986a3d60bb5}{Base\-Handler$<$ Symbol\-Handler $>$}, \hyperlink{class_base_handler_a05536b83184a79912d80d986a3d60bb5}{Base\-Handler$<$ List\-Of\-All\-Members\-Handler $>$}, \hyperlink{class_base_handler_a05536b83184a79912d80d986a3d60bb5}{Base\-Handler$<$ Title\-Handler $>$}, \hyperlink{class_base_handler_a05536b83184a79912d80d986a3d60bb5}{Base\-Handler$<$ Ordered\-List\-Handler $>$}, \hyperlink{class_base_handler_a05536b83184a79912d80d986a3d60bb5}{Base\-Handler$<$ Include\-Handler $>$}, \hyperlink{class_base_handler_a05536b83184a79912d80d986a3d60bb5}{Base\-Handler$<$ Index\-Entry\-Handler $>$}, \hyperlink{class_base_handler_a05536b83184a79912d80d986a3d60bb5}{Base\-Handler$<$ Main\-Handler $>$}, \hyperlink{class_base_handler_a05536b83184a79912d80d986a3d60bb5}{Base\-Handler$<$ Variable\-List\-Handler $>$}, \hyperlink{class_base_handler_a05536b83184a79912d80d986a3d60bb5}{Base\-Handler$<$ Image\-Handler $>$}, \hyperlink{class_base_handler_a05536b83184a79912d80d986a3d60bb5}{Base\-Handler$<$ Edge\-Label\-Handler $>$}, \hyperlink{class_base_handler_a05536b83184a79912d80d986a3d60bb5}{Base\-Handler$<$ Code\-Line\-Handler $>$}, \hyperlink{class_base_handler_a05536b83184a79912d80d986a3d60bb5}{Base\-Handler$<$ Anchor\-Handler $>$}, \hyperlink{class_base_handler_a05536b83184a79912d80d986a3d60bb5}{Base\-Handler$<$ Parameter\-Handler $>$}, \hyperlink{class_base_handler_a05536b83184a79912d80d986a3d60bb5}{Base\-Handler$<$ Itemized\-List\-Handler $>$}, \hyperlink{class_base_handler_a05536b83184a79912d80d986a3d60bb5}{Base\-Handler$<$ Doc\-Section\-Handler $>$}, \hyperlink{class_base_handler_a05536b83184a79912d80d986a3d60bb5}{Base\-Handler$<$ Parameter\-List\-Handler $>$}, \hyperlink{class_base_handler_a05536b83184a79912d80d986a3d60bb5}{Base\-Handler$<$ Member\-Handler $>$}, \hyperlink{class_base_handler_a05536b83184a79912d80d986a3d60bb5}{Base\-Handler$<$ Ref\-Handler $>$}, \hyperlink{class_base_handler_a05536b83184a79912d80d986a3d60bb5}{Base\-Handler$<$ Copy\-Handler $>$}, \hyperlink{class_base_handler_a05536b83184a79912d80d986a3d60bb5}{Base\-Handler$<$ Dot\-File\-Handler $>$} e \hyperlink{class_base_handler_a05536b83184a79912d80d986a3d60bb5}{Base\-Handler$<$ Line\-Break\-Handler $>$}.
+
+\hypertarget{class_q_xml_default_handler_a12f447f90feb782e1717170190f14ad2}{\index{Q\-Xml\-Default\-Handler@{Q\-Xml\-Default\-Handler}!end\-Prefix\-Mapping@{end\-Prefix\-Mapping}}
+\index{end\-Prefix\-Mapping@{end\-Prefix\-Mapping}!QXmlDefaultHandler@{Q\-Xml\-Default\-Handler}}
+\subsubsection[{end\-Prefix\-Mapping}]{\setlength{\rightskip}{0pt plus 5cm}bool end\-Prefix\-Mapping (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{prefix}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_xml_default_handler_a12f447f90feb782e1717170190f14ad2}
+Does nothing. 
+
+Implementa \hyperlink{class_q_xml_content_handler_a56e0e8140c661ed6805a09e4d05e9129}{Q\-Xml\-Content\-Handler}.
+
+\hypertarget{class_q_xml_default_handler_a17e6cc63b7ee45c29ef1883227aa3ef8}{\index{Q\-Xml\-Default\-Handler@{Q\-Xml\-Default\-Handler}!error@{error}}
+\index{error@{error}!QXmlDefaultHandler@{Q\-Xml\-Default\-Handler}}
+\subsubsection[{error}]{\setlength{\rightskip}{0pt plus 5cm}bool error (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-Xml\-Parse\-Exception} \&}]{exception}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_xml_default_handler_a17e6cc63b7ee45c29ef1883227aa3ef8}
+Does nothing. 
+
+Implementa \hyperlink{class_q_xml_error_handler_a4c3f6f44d2411175c39b0a1f45075a91}{Q\-Xml\-Error\-Handler}.
+
+\hypertarget{class_q_xml_default_handler_af799a7684337babb971e2e0d8cda7cf1}{\index{Q\-Xml\-Default\-Handler@{Q\-Xml\-Default\-Handler}!error\-String@{error\-String}}
+\index{error\-String@{error\-String}!QXmlDefaultHandler@{Q\-Xml\-Default\-Handler}}
+\subsubsection[{error\-String}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} error\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_xml_default_handler_af799a7684337babb971e2e0d8cda7cf1}
+Returns the default error string. 
+
+Implementa \hyperlink{class_q_xml_content_handler_ac86bbbabef3a52aec7615cbbc0adb3f4}{Q\-Xml\-Content\-Handler}.
+
+
+
+Reimplementado em \hyperlink{class_d_bus_x_m_l_handler_af799a7684337babb971e2e0d8cda7cf1}{D\-Bus\-X\-M\-L\-Handler}.
+
+\hypertarget{class_q_xml_default_handler_ae811ac152a3a244b2f5dd12401fa055c}{\index{Q\-Xml\-Default\-Handler@{Q\-Xml\-Default\-Handler}!external\-Entity\-Decl@{external\-Entity\-Decl}}
+\index{external\-Entity\-Decl@{external\-Entity\-Decl}!QXmlDefaultHandler@{Q\-Xml\-Default\-Handler}}
+\subsubsection[{external\-Entity\-Decl}]{\setlength{\rightskip}{0pt plus 5cm}bool external\-Entity\-Decl (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{name, }
+\item[{const {\bf Q\-String} \&}]{public\-Id, }
+\item[{const {\bf Q\-String} \&}]{system\-Id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_xml_default_handler_ae811ac152a3a244b2f5dd12401fa055c}
+Does nothing. 
+
+Implementa \hyperlink{class_q_xml_decl_handler_acdd5b35534471dc8ad76f8f5e1041361}{Q\-Xml\-Decl\-Handler}.
+
+\hypertarget{class_q_xml_default_handler_afe3fbf09765011104e0d12ee0d395619}{\index{Q\-Xml\-Default\-Handler@{Q\-Xml\-Default\-Handler}!fatal\-Error@{fatal\-Error}}
+\index{fatal\-Error@{fatal\-Error}!QXmlDefaultHandler@{Q\-Xml\-Default\-Handler}}
+\subsubsection[{fatal\-Error}]{\setlength{\rightskip}{0pt plus 5cm}bool fatal\-Error (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-Xml\-Parse\-Exception} \&}]{exception}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_xml_default_handler_afe3fbf09765011104e0d12ee0d395619}
+Does nothing. 
+
+Implementa \hyperlink{class_q_xml_error_handler_ac797351a210314f1ca2289a40acf2694}{Q\-Xml\-Error\-Handler}.
+
+\hypertarget{class_q_xml_default_handler_a12ab56e68ba11fa12a88b869611fa3e3}{\index{Q\-Xml\-Default\-Handler@{Q\-Xml\-Default\-Handler}!ignorable\-Whitespace@{ignorable\-Whitespace}}
+\index{ignorable\-Whitespace@{ignorable\-Whitespace}!QXmlDefaultHandler@{Q\-Xml\-Default\-Handler}}
+\subsubsection[{ignorable\-Whitespace}]{\setlength{\rightskip}{0pt plus 5cm}bool ignorable\-Whitespace (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{ch}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_xml_default_handler_a12ab56e68ba11fa12a88b869611fa3e3}
+Does nothing. 
+
+Implementa \hyperlink{class_q_xml_content_handler_aa40e6951e2228aaf528037a98b349ff2}{Q\-Xml\-Content\-Handler}.
+
+\hypertarget{class_q_xml_default_handler_a89792dd1b272b7f45bebb8f1eda7ee99}{\index{Q\-Xml\-Default\-Handler@{Q\-Xml\-Default\-Handler}!internal\-Entity\-Decl@{internal\-Entity\-Decl}}
+\index{internal\-Entity\-Decl@{internal\-Entity\-Decl}!QXmlDefaultHandler@{Q\-Xml\-Default\-Handler}}
+\subsubsection[{internal\-Entity\-Decl}]{\setlength{\rightskip}{0pt plus 5cm}bool internal\-Entity\-Decl (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{name, }
+\item[{const {\bf Q\-String} \&}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_xml_default_handler_a89792dd1b272b7f45bebb8f1eda7ee99}
+Does nothing. 
+
+Implementa \hyperlink{class_q_xml_decl_handler_a27b7fd1eeda25cdb63b720648bd87ee4}{Q\-Xml\-Decl\-Handler}.
+
+\hypertarget{class_q_xml_default_handler_a40a0f45b7aa7ea980734fa14620ce0d6}{\index{Q\-Xml\-Default\-Handler@{Q\-Xml\-Default\-Handler}!notation\-Decl@{notation\-Decl}}
+\index{notation\-Decl@{notation\-Decl}!QXmlDefaultHandler@{Q\-Xml\-Default\-Handler}}
+\subsubsection[{notation\-Decl}]{\setlength{\rightskip}{0pt plus 5cm}bool notation\-Decl (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{name, }
+\item[{const {\bf Q\-String} \&}]{public\-Id, }
+\item[{const {\bf Q\-String} \&}]{system\-Id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_xml_default_handler_a40a0f45b7aa7ea980734fa14620ce0d6}
+Does nothing. 
+
+Implementa \hyperlink{class_q_xml_d_t_d_handler_adb6d2793e23cda467f599fea11bc0ddb}{Q\-Xml\-D\-T\-D\-Handler}.
+
+\hypertarget{class_q_xml_default_handler_a31bcaeada22dde72e4b2b59f859f90c5}{\index{Q\-Xml\-Default\-Handler@{Q\-Xml\-Default\-Handler}!processing\-Instruction@{processing\-Instruction}}
+\index{processing\-Instruction@{processing\-Instruction}!QXmlDefaultHandler@{Q\-Xml\-Default\-Handler}}
+\subsubsection[{processing\-Instruction}]{\setlength{\rightskip}{0pt plus 5cm}bool processing\-Instruction (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{target, }
+\item[{const {\bf Q\-String} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_xml_default_handler_a31bcaeada22dde72e4b2b59f859f90c5}
+Does nothing. 
+
+Implementa \hyperlink{class_q_xml_content_handler_a43a2bb5d7a3c1a2fe8eee336bec33dbd}{Q\-Xml\-Content\-Handler}.
+
+\hypertarget{class_q_xml_default_handler_a838be71a40beadc4eac9429fd727c9e8}{\index{Q\-Xml\-Default\-Handler@{Q\-Xml\-Default\-Handler}!resolve\-Entity@{resolve\-Entity}}
+\index{resolve\-Entity@{resolve\-Entity}!QXmlDefaultHandler@{Q\-Xml\-Default\-Handler}}
+\subsubsection[{resolve\-Entity}]{\setlength{\rightskip}{0pt plus 5cm}bool resolve\-Entity (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{public\-Id, }
+\item[{const {\bf Q\-String} \&}]{system\-Id, }
+\item[{{\bf Q\-Xml\-Input\-Source} $\ast$\&}]{ret}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_xml_default_handler_a838be71a40beadc4eac9429fd727c9e8}
+Always sets {\itshape ret} to 0, so that the reader will use the system identifier provided in the X\-M\-L document. 
+
+Implementa \hyperlink{class_q_xml_entity_resolver_acfb103872f68c3167db3aa42f51bee81}{Q\-Xml\-Entity\-Resolver}.
+
+\hypertarget{class_q_xml_default_handler_a6ea335308d212e2244af77edaff21d6a}{\index{Q\-Xml\-Default\-Handler@{Q\-Xml\-Default\-Handler}!set\-Document\-Locator@{set\-Document\-Locator}}
+\index{set\-Document\-Locator@{set\-Document\-Locator}!QXmlDefaultHandler@{Q\-Xml\-Default\-Handler}}
+\subsubsection[{set\-Document\-Locator}]{\setlength{\rightskip}{0pt plus 5cm}void set\-Document\-Locator (
+\begin{DoxyParamCaption}
+\item[{{\bf Q\-Xml\-Locator} $\ast$}]{locator}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_xml_default_handler_a6ea335308d212e2244af77edaff21d6a}
+Does nothing. 
+
+Implementa \hyperlink{class_q_xml_content_handler_a02c1b0a6086c5d232ae919bbc5abb740}{Q\-Xml\-Content\-Handler}.
+
+
+
+Reimplementado em \hyperlink{class_base_handler_a6ea335308d212e2244af77edaff21d6a}{Base\-Handler$<$ Program\-Listing\-Handler $>$}, \hyperlink{class_base_handler_a6ea335308d212e2244af77edaff21d6a}{Base\-Handler$<$ Doc\-Internal\-Handler $>$}, \hyperlink{class_base_handler_a6ea335308d212e2244af77edaff21d6a}{Base\-Handler$<$ List\-Item\-Handler $>$}, \hyperlink{class_base_handler_a6ea335308d212e2244af77edaff21d6a}{Base\-Handler$<$ Toc\-List\-Handler $>$}, \hyperlink{class_base_handler_a6ea335308d212e2244af77edaff21d6a}{Base\-Handler$<$ Highlight\-Handler $>$}, \hyperlink{class_base_handler_a6ea335308d212e2244af77edaff21d6a}{Base\-Handler$<$ Toc\-Item\-Handler $>$}, \hyperlink{class_base_handler_a6ea335308d212e2244af77edaff21d6a}{Base\-Handler$<$ Section\-Handler $>$}, \hyperlink{class_base_handler_a6ea335308d212e2244af77edaff21d6a}{Base\-Handler$<$ Link\-Handler $>$}, \hyperlink{class_base_handler_a6ea335308d212e2244af77edaff21d6a}{Base\-Handler$<$ Verbatim\-Handler $>$}, \hyperlink{class_base_handler_a6ea335308d212e2244af77edaff21d6a}{Base\-Handler$<$ Graph\-Handler $>$}, \hyperlink{class_base_handler_a6ea335308d212e2244af77edaff21d6a}{Base\-Handler$<$ Formula\-Handler $>$}, \hyperlink{class_base_handler_a6ea335308d212e2244af77edaff21d6a}{Base\-Handler$<$ E\-Mail\-Handler $>$}, \hyperlink{class_base_handler_a6ea335308d212e2244af77edaff21d6a}{Base\-Handler$<$ U\-Link\-Handler $>$}, \hyperlink{class_base_handler_a6ea335308d212e2244af77edaff21d6a}{Base\-Handler$<$ Variable\-List\-Entry\-Handler $>$}, \hyperlink{class_base_handler_a6ea335308d212e2244af77edaff21d6a}{Base\-Handler$<$ Node\-Handler $>$}, \hyperlink{class_base_handler_a6ea335308d212e2244af77edaff21d6a}{Base\-Handler$<$ Parameter\-Item\-Handler $>$}, \hyperlink{class_base_handler_a6ea335308d212e2244af77edaff21d6a}{Base\-Handler$<$ Compound\-Handler $>$}, \hyperlink{class_base_handler_a6ea335308d212e2244af77edaff21d6a}{Base\-Handler$<$ Linked\-Text\-Handler $>$}, \hyperlink{class_base_handler_a6ea335308d212e2244af77edaff21d6a}{Base\-Handler$<$ Entry\-Handler $>$}, \hyperlink{class_base_handler_a6ea335308d212e2244af77edaff21d6a}{Base\-Handler$<$ Child\-Node\-Handler $>$}, \hyperlink{class_base_handler_a6ea335308d212e2244af77edaff21d6a}{Base\-Handler$<$ Table\-Handler $>$}, \hyperlink{class_base_handler_a6ea335308d212e2244af77edaff21d6a}{Base\-Handler$<$ Param\-Handler $>$}, \hyperlink{class_base_handler_a6ea335308d212e2244af77edaff21d6a}{Base\-Handler$<$ H\-Ruler\-Handler $>$}, \hyperlink{class_base_handler_a6ea335308d212e2244af77edaff21d6a}{Base\-Handler$<$ Doc\-Handler $>$}, \hyperlink{class_base_handler_a6ea335308d212e2244af77edaff21d6a}{Base\-Handler$<$ Simple\-Sect\-Handler $>$}, \hyperlink{class_base_handler_a6ea335308d212e2244af77edaff21d6a}{Base\-Handler$<$ Template\-Param\-List\-Handler $>$}, \hyperlink{class_base_handler_a6ea335308d212e2244af77edaff21d6a}{Base\-Handler$<$ Paragraph\-Handler $>$}, \hyperlink{class_base_handler_a6ea335308d212e2244af77edaff21d6a}{Base\-Handler$<$ Row\-Handler $>$}, \hyperlink{class_base_handler_a6ea335308d212e2244af77edaff21d6a}{Base\-Handler$<$ Symbol\-Handler $>$}, \hyperlink{class_base_handler_a6ea335308d212e2244af77edaff21d6a}{Base\-Handler$<$ List\-Of\-All\-Members\-Handler $>$}, \hyperlink{class_base_handler_a6ea335308d212e2244af77edaff21d6a}{Base\-Handler$<$ Title\-Handler $>$}, \hyperlink{class_base_handler_a6ea335308d212e2244af77edaff21d6a}{Base\-Handler$<$ Ordered\-List\-Handler $>$}, \hyperlink{class_base_handler_a6ea335308d212e2244af77edaff21d6a}{Base\-Handler$<$ Include\-Handler $>$}, \hyperlink{class_base_handler_a6ea335308d212e2244af77edaff21d6a}{Base\-Handler$<$ Index\-Entry\-Handler $>$}, \hyperlink{class_base_handler_a6ea335308d212e2244af77edaff21d6a}{Base\-Handler$<$ Main\-Handler $>$}, \hyperlink{class_base_handler_a6ea335308d212e2244af77edaff21d6a}{Base\-Handler$<$ Variable\-List\-Handler $>$}, \hyperlink{class_base_handler_a6ea335308d212e2244af77edaff21d6a}{Base\-Handler$<$ Image\-Handler $>$}, \hyperlink{class_base_handler_a6ea335308d212e2244af77edaff21d6a}{Base\-Handler$<$ Edge\-Label\-Handler $>$}, \hyperlink{class_base_handler_a6ea335308d212e2244af77edaff21d6a}{Base\-Handler$<$ Code\-Line\-Handler $>$}, \hyperlink{class_base_handler_a6ea335308d212e2244af77edaff21d6a}{Base\-Handler$<$ Anchor\-Handler $>$}, \hyperlink{class_base_handler_a6ea335308d212e2244af77edaff21d6a}{Base\-Handler$<$ Parameter\-Handler $>$}, \hyperlink{class_base_handler_a6ea335308d212e2244af77edaff21d6a}{Base\-Handler$<$ Itemized\-List\-Handler $>$}, \hyperlink{class_base_handler_a6ea335308d212e2244af77edaff21d6a}{Base\-Handler$<$ Doc\-Section\-Handler $>$}, \hyperlink{class_base_handler_a6ea335308d212e2244af77edaff21d6a}{Base\-Handler$<$ Parameter\-List\-Handler $>$}, \hyperlink{class_base_handler_a6ea335308d212e2244af77edaff21d6a}{Base\-Handler$<$ Member\-Handler $>$}, \hyperlink{class_base_handler_a6ea335308d212e2244af77edaff21d6a}{Base\-Handler$<$ Ref\-Handler $>$}, \hyperlink{class_base_handler_a6ea335308d212e2244af77edaff21d6a}{Base\-Handler$<$ Copy\-Handler $>$}, \hyperlink{class_base_handler_a6ea335308d212e2244af77edaff21d6a}{Base\-Handler$<$ Dot\-File\-Handler $>$}, \hyperlink{class_base_handler_a6ea335308d212e2244af77edaff21d6a}{Base\-Handler$<$ Line\-Break\-Handler $>$} e \hyperlink{class_tag_file_parser_a6ea335308d212e2244af77edaff21d6a}{Tag\-File\-Parser}.
+
+\hypertarget{class_q_xml_default_handler_a26a7987789d542b12799ef6f3696f86c}{\index{Q\-Xml\-Default\-Handler@{Q\-Xml\-Default\-Handler}!skipped\-Entity@{skipped\-Entity}}
+\index{skipped\-Entity@{skipped\-Entity}!QXmlDefaultHandler@{Q\-Xml\-Default\-Handler}}
+\subsubsection[{skipped\-Entity}]{\setlength{\rightskip}{0pt plus 5cm}bool skipped\-Entity (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_xml_default_handler_a26a7987789d542b12799ef6f3696f86c}
+Does nothing. 
+
+Implementa \hyperlink{class_q_xml_content_handler_a96c291d0d5554a03b2cc445472dd1086}{Q\-Xml\-Content\-Handler}.
+
+
+
+Reimplementado em \hyperlink{class_base_handler_a4f1b47ade1d77cb973e68738af8c422f}{Base\-Handler$<$ Program\-Listing\-Handler $>$}, \hyperlink{class_base_handler_a4f1b47ade1d77cb973e68738af8c422f}{Base\-Handler$<$ Doc\-Internal\-Handler $>$}, \hyperlink{class_base_handler_a4f1b47ade1d77cb973e68738af8c422f}{Base\-Handler$<$ List\-Item\-Handler $>$}, \hyperlink{class_base_handler_a4f1b47ade1d77cb973e68738af8c422f}{Base\-Handler$<$ Toc\-List\-Handler $>$}, \hyperlink{class_base_handler_a4f1b47ade1d77cb973e68738af8c422f}{Base\-Handler$<$ Highlight\-Handler $>$}, \hyperlink{class_base_handler_a4f1b47ade1d77cb973e68738af8c422f}{Base\-Handler$<$ Toc\-Item\-Handler $>$}, \hyperlink{class_base_handler_a4f1b47ade1d77cb973e68738af8c422f}{Base\-Handler$<$ Section\-Handler $>$}, \hyperlink{class_base_handler_a4f1b47ade1d77cb973e68738af8c422f}{Base\-Handler$<$ Link\-Handler $>$}, \hyperlink{class_base_handler_a4f1b47ade1d77cb973e68738af8c422f}{Base\-Handler$<$ Verbatim\-Handler $>$}, \hyperlink{class_base_handler_a4f1b47ade1d77cb973e68738af8c422f}{Base\-Handler$<$ Graph\-Handler $>$}, \hyperlink{class_base_handler_a4f1b47ade1d77cb973e68738af8c422f}{Base\-Handler$<$ Formula\-Handler $>$}, \hyperlink{class_base_handler_a4f1b47ade1d77cb973e68738af8c422f}{Base\-Handler$<$ E\-Mail\-Handler $>$}, \hyperlink{class_base_handler_a4f1b47ade1d77cb973e68738af8c422f}{Base\-Handler$<$ U\-Link\-Handler $>$}, \hyperlink{class_base_handler_a4f1b47ade1d77cb973e68738af8c422f}{Base\-Handler$<$ Variable\-List\-Entry\-Handler $>$}, \hyperlink{class_base_handler_a4f1b47ade1d77cb973e68738af8c422f}{Base\-Handler$<$ Node\-Handler $>$}, \hyperlink{class_base_handler_a4f1b47ade1d77cb973e68738af8c422f}{Base\-Handler$<$ Parameter\-Item\-Handler $>$}, \hyperlink{class_base_handler_a4f1b47ade1d77cb973e68738af8c422f}{Base\-Handler$<$ Compound\-Handler $>$}, \hyperlink{class_base_handler_a4f1b47ade1d77cb973e68738af8c422f}{Base\-Handler$<$ Linked\-Text\-Handler $>$}, \hyperlink{class_base_handler_a4f1b47ade1d77cb973e68738af8c422f}{Base\-Handler$<$ Entry\-Handler $>$}, \hyperlink{class_base_handler_a4f1b47ade1d77cb973e68738af8c422f}{Base\-Handler$<$ Child\-Node\-Handler $>$}, \hyperlink{class_base_handler_a4f1b47ade1d77cb973e68738af8c422f}{Base\-Handler$<$ Table\-Handler $>$}, \hyperlink{class_base_handler_a4f1b47ade1d77cb973e68738af8c422f}{Base\-Handler$<$ Param\-Handler $>$}, \hyperlink{class_base_handler_a4f1b47ade1d77cb973e68738af8c422f}{Base\-Handler$<$ H\-Ruler\-Handler $>$}, \hyperlink{class_base_handler_a4f1b47ade1d77cb973e68738af8c422f}{Base\-Handler$<$ Doc\-Handler $>$}, \hyperlink{class_base_handler_a4f1b47ade1d77cb973e68738af8c422f}{Base\-Handler$<$ Simple\-Sect\-Handler $>$}, \hyperlink{class_base_handler_a4f1b47ade1d77cb973e68738af8c422f}{Base\-Handler$<$ Template\-Param\-List\-Handler $>$}, \hyperlink{class_base_handler_a4f1b47ade1d77cb973e68738af8c422f}{Base\-Handler$<$ Paragraph\-Handler $>$}, \hyperlink{class_base_handler_a4f1b47ade1d77cb973e68738af8c422f}{Base\-Handler$<$ Row\-Handler $>$}, \hyperlink{class_base_handler_a4f1b47ade1d77cb973e68738af8c422f}{Base\-Handler$<$ Symbol\-Handler $>$}, \hyperlink{class_base_handler_a4f1b47ade1d77cb973e68738af8c422f}{Base\-Handler$<$ List\-Of\-All\-Members\-Handler $>$}, \hyperlink{class_base_handler_a4f1b47ade1d77cb973e68738af8c422f}{Base\-Handler$<$ Title\-Handler $>$}, \hyperlink{class_base_handler_a4f1b47ade1d77cb973e68738af8c422f}{Base\-Handler$<$ Ordered\-List\-Handler $>$}, \hyperlink{class_base_handler_a4f1b47ade1d77cb973e68738af8c422f}{Base\-Handler$<$ Include\-Handler $>$}, \hyperlink{class_base_handler_a4f1b47ade1d77cb973e68738af8c422f}{Base\-Handler$<$ Index\-Entry\-Handler $>$}, \hyperlink{class_base_handler_a4f1b47ade1d77cb973e68738af8c422f}{Base\-Handler$<$ Main\-Handler $>$}, \hyperlink{class_base_handler_a4f1b47ade1d77cb973e68738af8c422f}{Base\-Handler$<$ Variable\-List\-Handler $>$}, \hyperlink{class_base_handler_a4f1b47ade1d77cb973e68738af8c422f}{Base\-Handler$<$ Image\-Handler $>$}, \hyperlink{class_base_handler_a4f1b47ade1d77cb973e68738af8c422f}{Base\-Handler$<$ Edge\-Label\-Handler $>$}, \hyperlink{class_base_handler_a4f1b47ade1d77cb973e68738af8c422f}{Base\-Handler$<$ Code\-Line\-Handler $>$}, \hyperlink{class_base_handler_a4f1b47ade1d77cb973e68738af8c422f}{Base\-Handler$<$ Anchor\-Handler $>$}, \hyperlink{class_base_handler_a4f1b47ade1d77cb973e68738af8c422f}{Base\-Handler$<$ Parameter\-Handler $>$}, \hyperlink{class_base_handler_a4f1b47ade1d77cb973e68738af8c422f}{Base\-Handler$<$ Itemized\-List\-Handler $>$}, \hyperlink{class_base_handler_a4f1b47ade1d77cb973e68738af8c422f}{Base\-Handler$<$ Doc\-Section\-Handler $>$}, \hyperlink{class_base_handler_a4f1b47ade1d77cb973e68738af8c422f}{Base\-Handler$<$ Parameter\-List\-Handler $>$}, \hyperlink{class_base_handler_a4f1b47ade1d77cb973e68738af8c422f}{Base\-Handler$<$ Member\-Handler $>$}, \hyperlink{class_base_handler_a4f1b47ade1d77cb973e68738af8c422f}{Base\-Handler$<$ Ref\-Handler $>$}, \hyperlink{class_base_handler_a4f1b47ade1d77cb973e68738af8c422f}{Base\-Handler$<$ Copy\-Handler $>$}, \hyperlink{class_base_handler_a4f1b47ade1d77cb973e68738af8c422f}{Base\-Handler$<$ Dot\-File\-Handler $>$} e \hyperlink{class_base_handler_a4f1b47ade1d77cb973e68738af8c422f}{Base\-Handler$<$ Line\-Break\-Handler $>$}.
+
+\hypertarget{class_q_xml_default_handler_a492b3e39f8c41a9f98eb477a975cb383}{\index{Q\-Xml\-Default\-Handler@{Q\-Xml\-Default\-Handler}!start\-C\-D\-A\-T\-A@{start\-C\-D\-A\-T\-A}}
+\index{start\-C\-D\-A\-T\-A@{start\-C\-D\-A\-T\-A}!QXmlDefaultHandler@{Q\-Xml\-Default\-Handler}}
+\subsubsection[{start\-C\-D\-A\-T\-A}]{\setlength{\rightskip}{0pt plus 5cm}bool start\-C\-D\-A\-T\-A (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_xml_default_handler_a492b3e39f8c41a9f98eb477a975cb383}
+Does nothing. 
+
+Implementa \hyperlink{class_q_xml_lexical_handler_af94092d3d1e27e2616d4d8ec3ac94b40}{Q\-Xml\-Lexical\-Handler}.
+
+\hypertarget{class_q_xml_default_handler_af5342502614ae37eaa64a8d3e404027d}{\index{Q\-Xml\-Default\-Handler@{Q\-Xml\-Default\-Handler}!start\-Document@{start\-Document}}
+\index{start\-Document@{start\-Document}!QXmlDefaultHandler@{Q\-Xml\-Default\-Handler}}
+\subsubsection[{start\-Document}]{\setlength{\rightskip}{0pt plus 5cm}bool start\-Document (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_xml_default_handler_af5342502614ae37eaa64a8d3e404027d}
+Does nothing. 
+
+Implementa \hyperlink{class_q_xml_content_handler_a394d49ec389b7b0024d98698e1ae00cb}{Q\-Xml\-Content\-Handler}.
+
+
+
+Reimplementado em \hyperlink{class_layout_parser_af5342502614ae37eaa64a8d3e404027d}{Layout\-Parser}, \hyperlink{class_tag_file_parser_af5342502614ae37eaa64a8d3e404027d}{Tag\-File\-Parser}, \hyperlink{class_base_handler_a2b02c429e179690d0785020713a6bd06}{Base\-Handler$<$ Program\-Listing\-Handler $>$}, \hyperlink{class_base_handler_a2b02c429e179690d0785020713a6bd06}{Base\-Handler$<$ Doc\-Internal\-Handler $>$}, \hyperlink{class_base_handler_a2b02c429e179690d0785020713a6bd06}{Base\-Handler$<$ List\-Item\-Handler $>$}, \hyperlink{class_base_handler_a2b02c429e179690d0785020713a6bd06}{Base\-Handler$<$ Toc\-List\-Handler $>$}, \hyperlink{class_base_handler_a2b02c429e179690d0785020713a6bd06}{Base\-Handler$<$ Highlight\-Handler $>$}, \hyperlink{class_base_handler_a2b02c429e179690d0785020713a6bd06}{Base\-Handler$<$ Toc\-Item\-Handler $>$}, \hyperlink{class_base_handler_a2b02c429e179690d0785020713a6bd06}{Base\-Handler$<$ Section\-Handler $>$}, \hyperlink{class_base_handler_a2b02c429e179690d0785020713a6bd06}{Base\-Handler$<$ Link\-Handler $>$}, \hyperlink{class_base_handler_a2b02c429e179690d0785020713a6bd06}{Base\-Handler$<$ Verbatim\-Handler $>$}, \hyperlink{class_base_handler_a2b02c429e179690d0785020713a6bd06}{Base\-Handler$<$ Graph\-Handler $>$}, \hyperlink{class_base_handler_a2b02c429e179690d0785020713a6bd06}{Base\-Handler$<$ Formula\-Handler $>$}, \hyperlink{class_base_handler_a2b02c429e179690d0785020713a6bd06}{Base\-Handler$<$ E\-Mail\-Handler $>$}, \hyperlink{class_base_handler_a2b02c429e179690d0785020713a6bd06}{Base\-Handler$<$ U\-Link\-Handler $>$}, \hyperlink{class_base_handler_a2b02c429e179690d0785020713a6bd06}{Base\-Handler$<$ Variable\-List\-Entry\-Handler $>$}, \hyperlink{class_base_handler_a2b02c429e179690d0785020713a6bd06}{Base\-Handler$<$ Node\-Handler $>$}, \hyperlink{class_base_handler_a2b02c429e179690d0785020713a6bd06}{Base\-Handler$<$ Parameter\-Item\-Handler $>$}, \hyperlink{class_base_handler_a2b02c429e179690d0785020713a6bd06}{Base\-Handler$<$ Compound\-Handler $>$}, \hyperlink{class_base_handler_a2b02c429e179690d0785020713a6bd06}{Base\-Handler$<$ Linked\-Text\-Handler $>$}, \hyperlink{class_base_handler_a2b02c429e179690d0785020713a6bd06}{Base\-Handler$<$ Entry\-Handler $>$}, \hyperlink{class_base_handler_a2b02c429e179690d0785020713a6bd06}{Base\-Handler$<$ Child\-Node\-Handler $>$}, \hyperlink{class_base_handler_a2b02c429e179690d0785020713a6bd06}{Base\-Handler$<$ Table\-Handler $>$}, \hyperlink{class_base_handler_a2b02c429e179690d0785020713a6bd06}{Base\-Handler$<$ Param\-Handler $>$}, \hyperlink{class_base_handler_a2b02c429e179690d0785020713a6bd06}{Base\-Handler$<$ H\-Ruler\-Handler $>$}, \hyperlink{class_base_handler_a2b02c429e179690d0785020713a6bd06}{Base\-Handler$<$ Doc\-Handler $>$}, \hyperlink{class_base_handler_a2b02c429e179690d0785020713a6bd06}{Base\-Handler$<$ Simple\-Sect\-Handler $>$}, \hyperlink{class_base_handler_a2b02c429e179690d0785020713a6bd06}{Base\-Handler$<$ Template\-Param\-List\-Handler $>$}, \hyperlink{class_base_handler_a2b02c429e179690d0785020713a6bd06}{Base\-Handler$<$ Paragraph\-Handler $>$}, \hyperlink{class_base_handler_a2b02c429e179690d0785020713a6bd06}{Base\-Handler$<$ Row\-Handler $>$}, \hyperlink{class_base_handler_a2b02c429e179690d0785020713a6bd06}{Base\-Handler$<$ Symbol\-Handler $>$}, \hyperlink{class_base_handler_a2b02c429e179690d0785020713a6bd06}{Base\-Handler$<$ List\-Of\-All\-Members\-Handler $>$}, \hyperlink{class_base_handler_a2b02c429e179690d0785020713a6bd06}{Base\-Handler$<$ Title\-Handler $>$}, \hyperlink{class_base_handler_a2b02c429e179690d0785020713a6bd06}{Base\-Handler$<$ Ordered\-List\-Handler $>$}, \hyperlink{class_base_handler_a2b02c429e179690d0785020713a6bd06}{Base\-Handler$<$ Include\-Handler $>$}, \hyperlink{class_base_handler_a2b02c429e179690d0785020713a6bd06}{Base\-Handler$<$ Index\-Entry\-Handler $>$}, \hyperlink{class_base_handler_a2b02c429e179690d0785020713a6bd06}{Base\-Handler$<$ Main\-Handler $>$}, \hyperlink{class_base_handler_a2b02c429e179690d0785020713a6bd06}{Base\-Handler$<$ Variable\-List\-Handler $>$}, \hyperlink{class_base_handler_a2b02c429e179690d0785020713a6bd06}{Base\-Handler$<$ Image\-Handler $>$}, \hyperlink{class_base_handler_a2b02c429e179690d0785020713a6bd06}{Base\-Handler$<$ Edge\-Label\-Handler $>$}, \hyperlink{class_base_handler_a2b02c429e179690d0785020713a6bd06}{Base\-Handler$<$ Code\-Line\-Handler $>$}, \hyperlink{class_base_handler_a2b02c429e179690d0785020713a6bd06}{Base\-Handler$<$ Anchor\-Handler $>$}, \hyperlink{class_base_handler_a2b02c429e179690d0785020713a6bd06}{Base\-Handler$<$ Parameter\-Handler $>$}, \hyperlink{class_base_handler_a2b02c429e179690d0785020713a6bd06}{Base\-Handler$<$ Itemized\-List\-Handler $>$}, \hyperlink{class_base_handler_a2b02c429e179690d0785020713a6bd06}{Base\-Handler$<$ Doc\-Section\-Handler $>$}, \hyperlink{class_base_handler_a2b02c429e179690d0785020713a6bd06}{Base\-Handler$<$ Parameter\-List\-Handler $>$}, \hyperlink{class_base_handler_a2b02c429e179690d0785020713a6bd06}{Base\-Handler$<$ Member\-Handler $>$}, \hyperlink{class_base_handler_a2b02c429e179690d0785020713a6bd06}{Base\-Handler$<$ Ref\-Handler $>$}, \hyperlink{class_base_handler_a2b02c429e179690d0785020713a6bd06}{Base\-Handler$<$ Copy\-Handler $>$}, \hyperlink{class_base_handler_a2b02c429e179690d0785020713a6bd06}{Base\-Handler$<$ Dot\-File\-Handler $>$} e \hyperlink{class_base_handler_a2b02c429e179690d0785020713a6bd06}{Base\-Handler$<$ Line\-Break\-Handler $>$}.
+
+\hypertarget{class_q_xml_default_handler_a4e6d659ffbcf1382f9ac908f987512ae}{\index{Q\-Xml\-Default\-Handler@{Q\-Xml\-Default\-Handler}!start\-D\-T\-D@{start\-D\-T\-D}}
+\index{start\-D\-T\-D@{start\-D\-T\-D}!QXmlDefaultHandler@{Q\-Xml\-Default\-Handler}}
+\subsubsection[{start\-D\-T\-D}]{\setlength{\rightskip}{0pt plus 5cm}bool start\-D\-T\-D (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{name, }
+\item[{const {\bf Q\-String} \&}]{public\-Id, }
+\item[{const {\bf Q\-String} \&}]{system\-Id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_xml_default_handler_a4e6d659ffbcf1382f9ac908f987512ae}
+Does nothing. 
+
+Implementa \hyperlink{class_q_xml_lexical_handler_a2ea9d9ea737aebf275346d81eea3e2b7}{Q\-Xml\-Lexical\-Handler}.
+
+\hypertarget{class_q_xml_default_handler_a0712995308713e9df1c0d389568a344b}{\index{Q\-Xml\-Default\-Handler@{Q\-Xml\-Default\-Handler}!start\-Element@{start\-Element}}
+\index{start\-Element@{start\-Element}!QXmlDefaultHandler@{Q\-Xml\-Default\-Handler}}
+\subsubsection[{start\-Element}]{\setlength{\rightskip}{0pt plus 5cm}bool start\-Element (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{namespace\-U\-R\-I, }
+\item[{const {\bf Q\-String} \&}]{local\-Name, }
+\item[{const {\bf Q\-String} \&}]{q\-Name, }
+\item[{const {\bf Q\-Xml\-Attributes} \&}]{atts}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_xml_default_handler_a0712995308713e9df1c0d389568a344b}
+Does nothing. 
+
+Implementa \hyperlink{class_q_xml_content_handler_ac956b69e7f9be94f64e8e90095eb2ce0}{Q\-Xml\-Content\-Handler}.
+
+
+
+Reimplementado em \hyperlink{class_layout_parser_a3ebad496b56e71d502ae20cafd62d524}{Layout\-Parser}, \hyperlink{class_tag_file_parser_a3ebad496b56e71d502ae20cafd62d524}{Tag\-File\-Parser}, \hyperlink{class_base_handler_af861c355ac62b4b24365ddfd226eccd7}{Base\-Handler$<$ Program\-Listing\-Handler $>$}, \hyperlink{class_base_handler_af861c355ac62b4b24365ddfd226eccd7}{Base\-Handler$<$ Doc\-Internal\-Handler $>$}, \hyperlink{class_base_handler_af861c355ac62b4b24365ddfd226eccd7}{Base\-Handler$<$ List\-Item\-Handler $>$}, \hyperlink{class_base_handler_af861c355ac62b4b24365ddfd226eccd7}{Base\-Handler$<$ Toc\-List\-Handler $>$}, \hyperlink{class_base_handler_af861c355ac62b4b24365ddfd226eccd7}{Base\-Handler$<$ Highlight\-Handler $>$}, \hyperlink{class_base_handler_af861c355ac62b4b24365ddfd226eccd7}{Base\-Handler$<$ Toc\-Item\-Handler $>$}, \hyperlink{class_base_handler_af861c355ac62b4b24365ddfd226eccd7}{Base\-Handler$<$ Section\-Handler $>$}, \hyperlink{class_base_handler_af861c355ac62b4b24365ddfd226eccd7}{Base\-Handler$<$ Link\-Handler $>$}, \hyperlink{class_base_handler_af861c355ac62b4b24365ddfd226eccd7}{Base\-Handler$<$ Verbatim\-Handler $>$}, \hyperlink{class_base_handler_af861c355ac62b4b24365ddfd226eccd7}{Base\-Handler$<$ Graph\-Handler $>$}, \hyperlink{class_base_handler_af861c355ac62b4b24365ddfd226eccd7}{Base\-Handler$<$ Formula\-Handler $>$}, \hyperlink{class_base_handler_af861c355ac62b4b24365ddfd226eccd7}{Base\-Handler$<$ E\-Mail\-Handler $>$}, \hyperlink{class_base_handler_af861c355ac62b4b24365ddfd226eccd7}{Base\-Handler$<$ U\-Link\-Handler $>$}, \hyperlink{class_base_handler_af861c355ac62b4b24365ddfd226eccd7}{Base\-Handler$<$ Variable\-List\-Entry\-Handler $>$}, \hyperlink{class_base_handler_af861c355ac62b4b24365ddfd226eccd7}{Base\-Handler$<$ Node\-Handler $>$}, \hyperlink{class_base_handler_af861c355ac62b4b24365ddfd226eccd7}{Base\-Handler$<$ Parameter\-Item\-Handler $>$}, \hyperlink{class_base_handler_af861c355ac62b4b24365ddfd226eccd7}{Base\-Handler$<$ Compound\-Handler $>$}, \hyperlink{class_base_handler_af861c355ac62b4b24365ddfd226eccd7}{Base\-Handler$<$ Linked\-Text\-Handler $>$}, \hyperlink{class_base_handler_af861c355ac62b4b24365ddfd226eccd7}{Base\-Handler$<$ Entry\-Handler $>$}, \hyperlink{class_base_handler_af861c355ac62b4b24365ddfd226eccd7}{Base\-Handler$<$ Child\-Node\-Handler $>$}, \hyperlink{class_base_handler_af861c355ac62b4b24365ddfd226eccd7}{Base\-Handler$<$ Table\-Handler $>$}, \hyperlink{class_base_handler_af861c355ac62b4b24365ddfd226eccd7}{Base\-Handler$<$ Param\-Handler $>$}, \hyperlink{class_base_handler_af861c355ac62b4b24365ddfd226eccd7}{Base\-Handler$<$ H\-Ruler\-Handler $>$}, \hyperlink{class_base_handler_af861c355ac62b4b24365ddfd226eccd7}{Base\-Handler$<$ Doc\-Handler $>$}, \hyperlink{class_base_handler_af861c355ac62b4b24365ddfd226eccd7}{Base\-Handler$<$ Simple\-Sect\-Handler $>$}, \hyperlink{class_base_handler_af861c355ac62b4b24365ddfd226eccd7}{Base\-Handler$<$ Template\-Param\-List\-Handler $>$}, \hyperlink{class_base_handler_af861c355ac62b4b24365ddfd226eccd7}{Base\-Handler$<$ Paragraph\-Handler $>$}, \hyperlink{class_base_handler_af861c355ac62b4b24365ddfd226eccd7}{Base\-Handler$<$ Row\-Handler $>$}, \hyperlink{class_base_handler_af861c355ac62b4b24365ddfd226eccd7}{Base\-Handler$<$ Symbol\-Handler $>$}, \hyperlink{class_base_handler_af861c355ac62b4b24365ddfd226eccd7}{Base\-Handler$<$ List\-Of\-All\-Members\-Handler $>$}, \hyperlink{class_base_handler_af861c355ac62b4b24365ddfd226eccd7}{Base\-Handler$<$ Title\-Handler $>$}, \hyperlink{class_base_handler_af861c355ac62b4b24365ddfd226eccd7}{Base\-Handler$<$ Ordered\-List\-Handler $>$}, \hyperlink{class_base_handler_af861c355ac62b4b24365ddfd226eccd7}{Base\-Handler$<$ Include\-Handler $>$}, \hyperlink{class_base_handler_af861c355ac62b4b24365ddfd226eccd7}{Base\-Handler$<$ Index\-Entry\-Handler $>$}, \hyperlink{class_base_handler_af861c355ac62b4b24365ddfd226eccd7}{Base\-Handler$<$ Main\-Handler $>$}, \hyperlink{class_base_handler_af861c355ac62b4b24365ddfd226eccd7}{Base\-Handler$<$ Variable\-List\-Handler $>$}, \hyperlink{class_base_handler_af861c355ac62b4b24365ddfd226eccd7}{Base\-Handler$<$ Image\-Handler $>$}, \hyperlink{class_base_handler_af861c355ac62b4b24365ddfd226eccd7}{Base\-Handler$<$ Edge\-Label\-Handler $>$}, \hyperlink{class_base_handler_af861c355ac62b4b24365ddfd226eccd7}{Base\-Handler$<$ Code\-Line\-Handler $>$}, \hyperlink{class_base_handler_af861c355ac62b4b24365ddfd226eccd7}{Base\-Handler$<$ Anchor\-Handler $>$}, \hyperlink{class_base_handler_af861c355ac62b4b24365ddfd226eccd7}{Base\-Handler$<$ Parameter\-Handler $>$}, \hyperlink{class_base_handler_af861c355ac62b4b24365ddfd226eccd7}{Base\-Handler$<$ Itemized\-List\-Handler $>$}, \hyperlink{class_base_handler_af861c355ac62b4b24365ddfd226eccd7}{Base\-Handler$<$ Doc\-Section\-Handler $>$}, \hyperlink{class_base_handler_af861c355ac62b4b24365ddfd226eccd7}{Base\-Handler$<$ Parameter\-List\-Handler $>$}, \hyperlink{class_base_handler_af861c355ac62b4b24365ddfd226eccd7}{Base\-Handler$<$ Member\-Handler $>$}, \hyperlink{class_base_handler_af861c355ac62b4b24365ddfd226eccd7}{Base\-Handler$<$ Ref\-Handler $>$}, \hyperlink{class_base_handler_af861c355ac62b4b24365ddfd226eccd7}{Base\-Handler$<$ Copy\-Handler $>$}, \hyperlink{class_base_handler_af861c355ac62b4b24365ddfd226eccd7}{Base\-Handler$<$ Dot\-File\-Handler $>$}, \hyperlink{class_base_handler_af861c355ac62b4b24365ddfd226eccd7}{Base\-Handler$<$ Line\-Break\-Handler $>$} e \hyperlink{class_d_bus_x_m_l_handler_a2d8a6efa278f0675843ac44ddec3b9b9}{D\-Bus\-X\-M\-L\-Handler}.
+
+\hypertarget{class_q_xml_default_handler_a95ec522e87375953024f71f04077eafa}{\index{Q\-Xml\-Default\-Handler@{Q\-Xml\-Default\-Handler}!start\-Prefix\-Mapping@{start\-Prefix\-Mapping}}
+\index{start\-Prefix\-Mapping@{start\-Prefix\-Mapping}!QXmlDefaultHandler@{Q\-Xml\-Default\-Handler}}
+\subsubsection[{start\-Prefix\-Mapping}]{\setlength{\rightskip}{0pt plus 5cm}bool start\-Prefix\-Mapping (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{prefix, }
+\item[{const {\bf Q\-String} \&}]{uri}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_xml_default_handler_a95ec522e87375953024f71f04077eafa}
+Does nothing. 
+
+Implementa \hyperlink{class_q_xml_content_handler_a3972e8d0c0075489d5fe97402b42980e}{Q\-Xml\-Content\-Handler}.
+
+\hypertarget{class_q_xml_default_handler_a12e1b778be582d7959bf09a9242390e2}{\index{Q\-Xml\-Default\-Handler@{Q\-Xml\-Default\-Handler}!unparsed\-Entity\-Decl@{unparsed\-Entity\-Decl}}
+\index{unparsed\-Entity\-Decl@{unparsed\-Entity\-Decl}!QXmlDefaultHandler@{Q\-Xml\-Default\-Handler}}
+\subsubsection[{unparsed\-Entity\-Decl}]{\setlength{\rightskip}{0pt plus 5cm}bool unparsed\-Entity\-Decl (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{name, }
+\item[{const {\bf Q\-String} \&}]{public\-Id, }
+\item[{const {\bf Q\-String} \&}]{system\-Id, }
+\item[{const {\bf Q\-String} \&}]{notation\-Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_xml_default_handler_a12e1b778be582d7959bf09a9242390e2}
+Does nothing. 
+
+Implementa \hyperlink{class_q_xml_d_t_d_handler_aa4afec8990cd2b491c904f109c2b3df1}{Q\-Xml\-D\-T\-D\-Handler}.
+
+\hypertarget{class_q_xml_default_handler_aed90bd0b5272f7a5042451fa8f20c5ba}{\index{Q\-Xml\-Default\-Handler@{Q\-Xml\-Default\-Handler}!warning@{warning}}
+\index{warning@{warning}!QXmlDefaultHandler@{Q\-Xml\-Default\-Handler}}
+\subsubsection[{warning}]{\setlength{\rightskip}{0pt plus 5cm}bool warning (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-Xml\-Parse\-Exception} \&}]{exception}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_xml_default_handler_aed90bd0b5272f7a5042451fa8f20c5ba}
+Does nothing. 
+
+Implementa \hyperlink{class_q_xml_error_handler_a109de9b8833092a63f6bc48f84cf241b}{Q\-Xml\-Error\-Handler}.
+
+
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/qtools/qxml.\-h\item 
+C\-:/\-Users/teste/git/doxygen/qtools/qxml.\-cpp\end{DoxyCompactItemize}

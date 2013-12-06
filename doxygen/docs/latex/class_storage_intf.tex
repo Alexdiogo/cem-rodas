@@ -1,0 +1,72 @@
+\hypertarget{class_storage_intf}{\section{Referência à classe Storage\-Intf}
+\label{class_storage_intf}\index{Storage\-Intf@{Storage\-Intf}}
+}
+
+
+Abstract interface for file based memory storage operations.  
+
+
+
+
+{\ttfamily \#include $<$store.\-h$>$}
+
+Diagrama de heranças da classe Storage\-Intf\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_storage_intf}
+\end{center}
+\end{figure}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_storage_intf_adcf23b0194dffbf2e445f9dc09902b33}{$\sim$\-Storage\-Intf} ()
+\item 
+virtual int \hyperlink{class_storage_intf_ac258f6e9306c3c5737d1a3b27714bf06}{read} (char $\ast$buf, uint size)=0
+\item 
+virtual int \hyperlink{class_storage_intf_adac272aa714d1615b328630b6e9df7c6}{write} (const char $\ast$buf, uint size)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+Abstract interface for file based memory storage operations. 
+
+\subsection{Documentação dos Construtores \& Destrutor}
+\hypertarget{class_storage_intf_adcf23b0194dffbf2e445f9dc09902b33}{\index{Storage\-Intf@{Storage\-Intf}!$\sim$\-Storage\-Intf@{$\sim$\-Storage\-Intf}}
+\index{$\sim$\-Storage\-Intf@{$\sim$\-Storage\-Intf}!StorageIntf@{Storage\-Intf}}
+\subsubsection[{$\sim$\-Storage\-Intf}]{\setlength{\rightskip}{0pt plus 5cm}virtual $\sim${\bf Storage\-Intf} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_storage_intf_adcf23b0194dffbf2e445f9dc09902b33}
+Required by gcc 
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_storage_intf_ac258f6e9306c3c5737d1a3b27714bf06}{\index{Storage\-Intf@{Storage\-Intf}!read@{read}}
+\index{read@{read}!StorageIntf@{Storage\-Intf}}
+\subsubsection[{read}]{\setlength{\rightskip}{0pt plus 5cm}virtual int read (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{buf, }
+\item[{uint}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_storage_intf_ac258f6e9306c3c5737d1a3b27714bf06}
+Read {\itshape size} bytes from the store into {\itshape buf}. 
+
+Implementado em \hyperlink{class_store_a8e47d0de1e7f98cc7af54d4f44e09186}{Store} e \hyperlink{class_file_storage_a8e47d0de1e7f98cc7af54d4f44e09186}{File\-Storage}.
+
+\hypertarget{class_storage_intf_adac272aa714d1615b328630b6e9df7c6}{\index{Storage\-Intf@{Storage\-Intf}!write@{write}}
+\index{write@{write}!StorageIntf@{Storage\-Intf}}
+\subsubsection[{write}]{\setlength{\rightskip}{0pt plus 5cm}virtual int write (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{buf, }
+\item[{uint}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_storage_intf_adac272aa714d1615b328630b6e9df7c6}
+Write {\itshape size} bytes from {\itshape buf} into the store. 
+
+Implementado em \hyperlink{class_store_a92a061380ba3dac165ee1a5e92617a6a}{Store} e \hyperlink{class_file_storage_a92a061380ba3dac165ee1a5e92617a6a}{File\-Storage}.
+
+
+
+A documentação para esta classe foi gerada a partir do seguinte ficheiro\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/src/store.\-h\end{DoxyCompactItemize}

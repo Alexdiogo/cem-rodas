@@ -1,0 +1,217 @@
+\hypertarget{class_q_g_vector}{\section{Referência à classe Q\-G\-Vector}
+\label{class_q_g_vector}\index{Q\-G\-Vector@{Q\-G\-Vector}}
+}
+
+
+The \hyperlink{class_q_g_vector}{Q\-G\-Vector} class is an internal class for implementing Qt collection classes.  
+
+
+
+
+{\ttfamily \#include $<$qgvector.\-h$>$}
+
+Diagrama de heranças da classe Q\-G\-Vector\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{class_q_g_vector}
+\end{center}
+\end{figure}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_q_g_vector_ab142b2e34eff3c5158dc9e9b629ac619}{\hyperlink{class_q_data_stream}{Q\-Data\-Stream} \& {\bfseries read} (\hyperlink{class_q_data_stream}{Q\-Data\-Stream} \&)}\label{class_q_g_vector_ab142b2e34eff3c5158dc9e9b629ac619}
+
+\item 
+\hypertarget{class_q_g_vector_a25d3618c02fcc4a8e4fde96b131d5348}{\hyperlink{class_q_data_stream}{Q\-Data\-Stream} \& {\bfseries write} (\hyperlink{class_q_data_stream}{Q\-Data\-Stream} \&) const }\label{class_q_g_vector_a25d3618c02fcc4a8e4fde96b131d5348}
+
+\item 
+virtual int \hyperlink{class_q_g_vector_ad0ea8a3a57df730076ce9f6d3de7775a}{compare\-Items} (Item, Item)
+\end{DoxyCompactItemize}
+\subsection*{Membros protegidos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_q_g_vector_a9b73290a0df4b98f5170daec8ee3f082}{{\bfseries Q\-G\-Vector} (uint size)}\label{class_q_g_vector_a9b73290a0df4b98f5170daec8ee3f082}
+
+\item 
+\hypertarget{class_q_g_vector_af436cba80cc77a48a27d10ba6ebdaebb}{{\bfseries Q\-G\-Vector} (const \hyperlink{class_q_g_vector}{Q\-G\-Vector} \&v)}\label{class_q_g_vector_af436cba80cc77a48a27d10ba6ebdaebb}
+
+\item 
+\hypertarget{class_q_g_vector_afec65e370cd15857e4271084e30e86fe}{\hyperlink{class_q_g_vector}{Q\-G\-Vector} \& {\bfseries operator=} (const \hyperlink{class_q_g_vector}{Q\-G\-Vector} \&v)}\label{class_q_g_vector_afec65e370cd15857e4271084e30e86fe}
+
+\item 
+\hypertarget{class_q_g_vector_acf79d861a052e4092b516d7914e6c44e}{Item $\ast$ {\bfseries data} () const }\label{class_q_g_vector_acf79d861a052e4092b516d7914e6c44e}
+
+\item 
+\hypertarget{class_q_g_vector_a7e63723212bed1ca52f0fe57e58b812e}{uint {\bfseries size} () const }\label{class_q_g_vector_a7e63723212bed1ca52f0fe57e58b812e}
+
+\item 
+uint \hyperlink{class_q_g_vector_a774149fc271ebaba2aabcd183a836e8f}{count} () const 
+\item 
+\hypertarget{class_q_g_vector_af0f0bd8503edb1c51ad9ffbe8cb84f70}{bool {\bfseries insert} (uint index, Item)}\label{class_q_g_vector_af0f0bd8503edb1c51ad9ffbe8cb84f70}
+
+\item 
+\hypertarget{class_q_g_vector_a9d32bdeb0fa45bf859e9e7ca13768a60}{bool {\bfseries remove} (uint index)}\label{class_q_g_vector_a9d32bdeb0fa45bf859e9e7ca13768a60}
+
+\item 
+\hypertarget{class_q_g_vector_abab7a116bf37110bbcd7d76995aa6dab}{Item {\bfseries take} (uint index)}\label{class_q_g_vector_abab7a116bf37110bbcd7d76995aa6dab}
+
+\item 
+void \hyperlink{class_q_g_vector_ac8bb3912a3ce86b15842e79d0b421204}{clear} ()
+\item 
+\hypertarget{class_q_g_vector_a8f92239def71f172d0c7e40757cffb2d}{bool {\bfseries resize} (uint newsize)}\label{class_q_g_vector_a8f92239def71f172d0c7e40757cffb2d}
+
+\item 
+\hypertarget{class_q_g_vector_af9dcbef812d6f8dd7a6390cdead99a96}{bool {\bfseries fill} (Item, int flen)}\label{class_q_g_vector_af9dcbef812d6f8dd7a6390cdead99a96}
+
+\item 
+\hypertarget{class_q_g_vector_a47fdc9eea42b6975cdc835bb2e08810e}{void {\bfseries sort} ()}\label{class_q_g_vector_a47fdc9eea42b6975cdc835bb2e08810e}
+
+\item 
+\hypertarget{class_q_g_vector_a4d620afb19f972621dd2c276bfa7aa47}{int {\bfseries bsearch} (Item) const }\label{class_q_g_vector_a4d620afb19f972621dd2c276bfa7aa47}
+
+\item 
+\hypertarget{class_q_g_vector_ac88a052b06ba7050cf146f06ccb80981}{int {\bfseries find\-Ref} (Item, uint index) const }\label{class_q_g_vector_ac88a052b06ba7050cf146f06ccb80981}
+
+\item 
+\hypertarget{class_q_g_vector_a87e5b0a8391a6f8f3ea0f4019970ad6f}{int {\bfseries find} (Item, uint index) const }\label{class_q_g_vector_a87e5b0a8391a6f8f3ea0f4019970ad6f}
+
+\item 
+\hypertarget{class_q_g_vector_af5fa25c58c8c12a0f619e3a0d3a1c2fd}{uint {\bfseries contains\-Ref} (Item) const }\label{class_q_g_vector_af5fa25c58c8c12a0f619e3a0d3a1c2fd}
+
+\item 
+\hypertarget{class_q_g_vector_aeea75e0704a1e19f64d31524d8d071b6}{uint {\bfseries contains} (Item) const }\label{class_q_g_vector_aeea75e0704a1e19f64d31524d8d071b6}
+
+\item 
+\hypertarget{class_q_g_vector_a2e4350ee269e6b3e1163f8900b6dcaa4}{Item {\bfseries at} (uint index) const }\label{class_q_g_vector_a2e4350ee269e6b3e1163f8900b6dcaa4}
+
+\item 
+\hypertarget{class_q_g_vector_a0593f5d2e2a819bc5833e2f712dc8dd2}{bool {\bfseries insert\-Expand} (uint index, Item)}\label{class_q_g_vector_a0593f5d2e2a819bc5833e2f712dc8dd2}
+
+\item 
+\hypertarget{class_q_g_vector_a6f25011ce752ae7a97effcf72993cb93}{void {\bfseries to\-List} (\hyperlink{class_q_g_list}{Q\-G\-List} $\ast$) const }\label{class_q_g_vector_a6f25011ce752ae7a97effcf72993cb93}
+
+\item 
+virtual \hyperlink{class_q_data_stream}{Q\-Data\-Stream} \& \hyperlink{class_q_g_vector_ad2158ff020e4b3a5832f58cb41ea435e}{read} (\hyperlink{class_q_data_stream}{Q\-Data\-Stream} \&, Item \&)
+\item 
+virtual \hyperlink{class_q_data_stream}{Q\-Data\-Stream} \& \hyperlink{class_q_g_vector_a8388bf83f18728933f34d6ee9eebcc7f}{write} (\hyperlink{class_q_data_stream}{Q\-Data\-Stream} \&, Item) const 
+\end{DoxyCompactItemize}
+\subsection*{Amigos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_q_g_vector_a9bfde3c3259271cb86b87bd78b399dd5}{class {\bfseries Q\-G\-List}}\label{class_q_g_vector_a9bfde3c3259271cb86b87bd78b399dd5}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Descrição detalhada}
+The \hyperlink{class_q_g_vector}{Q\-G\-Vector} class is an internal class for implementing Qt collection classes. 
+
+\hyperlink{class_q_g_vector}{Q\-G\-Vector} is a strictly internal class that acts as a base class for the \hyperlink{class_q_vector}{Q\-Vector} collection class.
+
+\hyperlink{class_q_g_vector}{Q\-G\-Vector} has some virtual functions that may be reimplemented in subclasses to to customize behavior.
+
+
+\begin{DoxyItemize}
+\item \hyperlink{class_q_g_vector_ad0ea8a3a57df730076ce9f6d3de7775a}{compare\-Items()} compares two collection/vector items. 
+\item \hyperlink{structcmd_8h_a9c7b76d5266903891c803132d51ccb90}{read()} reads a collection/vector item from a \hyperlink{class_q_data_stream}{Q\-Data\-Stream}. 
+\item \hyperlink{structcmd_8h_af2a3ea719b83f672637febdd87c36c36}{write()} writes a collection/vector item to a \hyperlink{class_q_data_stream}{Q\-Data\-Stream}. 
+\end{DoxyItemize}
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_q_g_vector_ac8bb3912a3ce86b15842e79d0b421204}{\index{Q\-G\-Vector@{Q\-G\-Vector}!clear@{clear}}
+\index{clear@{clear}!QGVector@{Q\-G\-Vector}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}void clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_q_g_vector_ac8bb3912a3ce86b15842e79d0b421204}
+Removes all objects from the collection. The objects will be deleted if auto-\/delete has been enabled. \begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_collection_a52460a3734e18d6137e869acc2590c88}{set\-Auto\-Delete()} 
+\end{DoxySeeAlso}
+
+
+Implementa \hyperlink{class_q_collection_a893fbba23236417d1abe182ed3aee1a8}{Q\-Collection}.
+
+
+
+Reimplementado em \hyperlink{class_q_vector_ac8bb3912a3ce86b15842e79d0b421204}{Q\-Vector$<$ type $>$} e \hyperlink{class_q_vector_ac8bb3912a3ce86b15842e79d0b421204}{Q\-Vector$<$ Q\-List$<$ Index\-Word $>$ $>$}.
+
+\hypertarget{class_q_g_vector_ad0ea8a3a57df730076ce9f6d3de7775a}{\index{Q\-G\-Vector@{Q\-G\-Vector}!compare\-Items@{compare\-Items}}
+\index{compare\-Items@{compare\-Items}!QGVector@{Q\-G\-Vector}}
+\subsubsection[{compare\-Items}]{\setlength{\rightskip}{0pt plus 5cm}int compare\-Items (
+\begin{DoxyParamCaption}
+\item[{Item}]{d1, }
+\item[{Item}]{d2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_g_vector_ad0ea8a3a57df730076ce9f6d3de7775a}
+This virtual function compares two list items.
+
+Returns\-: 
+\begin{DoxyItemize}
+\item 0 if {\itshape item1} == {\itshape item2} 
+\item non-\/zero if {\itshape item1} != {\itshape item2} 
+\end{DoxyItemize}
+
+This function returns {\itshape int} rather than {\itshape bool} so that reimplementations can return one of three values and use it to sort by\-:
+
+
+\begin{DoxyItemize}
+\item 0 if {\itshape item1} == {\itshape item2} 
+\item $>$ 0 (positive integer) if {\itshape item1} $>$ {\itshape item2} 
+\item $<$ 0 (negative integer) if {\itshape item1} $<$ {\itshape item2} 
+\end{DoxyItemize}
+
+The Q\-Vector\-::sort() and Q\-Vector\-::bsearch() functions require that \hyperlink{class_q_g_vector_ad0ea8a3a57df730076ce9f6d3de7775a}{compare\-Items()} is implemented as described here.
+
+This function should not modify the vector because some const functions call \hyperlink{class_q_g_vector_ad0ea8a3a57df730076ce9f6d3de7775a}{compare\-Items()}. \hypertarget{class_q_g_vector_a774149fc271ebaba2aabcd183a836e8f}{\index{Q\-G\-Vector@{Q\-G\-Vector}!count@{count}}
+\index{count@{count}!QGVector@{Q\-G\-Vector}}
+\subsubsection[{count}]{\setlength{\rightskip}{0pt plus 5cm}uint count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_q_g_vector_a774149fc271ebaba2aabcd183a836e8f}
+Returns the number of objects in the collection. 
+
+Implementa \hyperlink{class_q_collection_aaf61167af3fa10ef1ba47c37568f8f96}{Q\-Collection}.
+
+
+
+Reimplementado em \hyperlink{class_q_vector_a774149fc271ebaba2aabcd183a836e8f}{Q\-Vector$<$ type $>$} e \hyperlink{class_q_vector_a774149fc271ebaba2aabcd183a836e8f}{Q\-Vector$<$ Q\-List$<$ Index\-Word $>$ $>$}.
+
+\hypertarget{class_q_g_vector_ad2158ff020e4b3a5832f58cb41ea435e}{\index{Q\-G\-Vector@{Q\-G\-Vector}!read@{read}}
+\index{read@{read}!QGVector@{Q\-G\-Vector}}
+\subsubsection[{read}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Data\-Stream} \& read (
+\begin{DoxyParamCaption}
+\item[{{\bf Q\-Data\-Stream} \&}]{s, }
+\item[{Item \&}]{d}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_q_g_vector_ad2158ff020e4b3a5832f58cb41ea435e}
+Reads a collection/vector item from the stream {\itshape s} and returns a reference to the stream.
+
+The default implementation sets {\itshape item} to 0.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{structcmd_8h_af2a3ea719b83f672637febdd87c36c36}{write()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_g_vector_a8388bf83f18728933f34d6ee9eebcc7f}{\index{Q\-G\-Vector@{Q\-G\-Vector}!write@{write}}
+\index{write@{write}!QGVector@{Q\-G\-Vector}}
+\subsubsection[{write}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Data\-Stream} \& write (
+\begin{DoxyParamCaption}
+\item[{{\bf Q\-Data\-Stream} \&}]{s, }
+\item[{Item}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_q_g_vector_a8388bf83f18728933f34d6ee9eebcc7f}
+Writes a collection/vector item to the stream {\itshape s} and returns a reference to the stream.
+
+The default implementation does nothing.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{structcmd_8h_a9c7b76d5266903891c803132d51ccb90}{read()} 
+\end{DoxySeeAlso}
+
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/qtools/qgvector.\-h\item 
+C\-:/\-Users/teste/git/doxygen/qtools/qgvector.\-cpp\end{DoxyCompactItemize}

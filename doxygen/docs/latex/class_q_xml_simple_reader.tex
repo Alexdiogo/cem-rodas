@@ -1,0 +1,347 @@
+\hypertarget{class_q_xml_simple_reader}{\section{Referência à classe Q\-Xml\-Simple\-Reader}
+\label{class_q_xml_simple_reader}\index{Q\-Xml\-Simple\-Reader@{Q\-Xml\-Simple\-Reader}}
+}
+
+
+The \hyperlink{class_q_xml_simple_reader}{Q\-Xml\-Simple\-Reader} class provides an implementation of a simple X\-M\-L reader (i.\-e. parser).  
+
+
+
+
+{\ttfamily \#include $<$qxml.\-h$>$}
+
+Diagrama de heranças da classe Q\-Xml\-Simple\-Reader\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_q_xml_simple_reader}
+\end{center}
+\end{figure}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_q_xml_simple_reader_a34aab7c21fb390ebbfe7474ffbe37470}{Q\-Xml\-Simple\-Reader} ()
+\item 
+virtual \hyperlink{class_q_xml_simple_reader_ae5fda45ec6e8cb93fa078dd9cfb226bd}{$\sim$\-Q\-Xml\-Simple\-Reader} ()
+\item 
+bool \hyperlink{class_q_xml_simple_reader_a9a1e05fd936ba5c6f2008c8a35a65b79}{feature} (const \hyperlink{class_q_string}{Q\-String} \&name, bool $\ast$ok=0) const 
+\item 
+void \hyperlink{class_q_xml_simple_reader_a021e5cc111d248f309deec45253e2c17}{set\-Feature} (const \hyperlink{class_q_string}{Q\-String} \&name, bool value)
+\item 
+bool \hyperlink{class_q_xml_simple_reader_ac7528ced6524ec818c704adf956ba44e}{has\-Feature} (const \hyperlink{class_q_string}{Q\-String} \&name) const 
+\item 
+void $\ast$ \hyperlink{class_q_xml_simple_reader_aa66e1061ce3ad44d8e0bb8e5e89e0141}{property} (const \hyperlink{class_q_string}{Q\-String} \&name, bool $\ast$ok=0) const 
+\item 
+void \hyperlink{class_q_xml_simple_reader_aeed13d669b6ac55e522ab26a1f1c620a}{set\-Property} (const \hyperlink{class_q_string}{Q\-String} \&name, void $\ast$value)
+\item 
+bool \hyperlink{class_q_xml_simple_reader_a5e8c175fdedcecb196b464d1338226a9}{has\-Property} (const \hyperlink{class_q_string}{Q\-String} \&name) const 
+\item 
+void \hyperlink{class_q_xml_simple_reader_a0483a48d872324ba566d6375bd72e6ca}{set\-Entity\-Resolver} (\hyperlink{class_q_xml_entity_resolver}{Q\-Xml\-Entity\-Resolver} $\ast$handler)
+\item 
+\hyperlink{class_q_xml_entity_resolver}{Q\-Xml\-Entity\-Resolver} $\ast$ \hyperlink{class_q_xml_simple_reader_a0816509b82ad1f43e225c7dda1f95f39}{entity\-Resolver} () const 
+\item 
+void \hyperlink{class_q_xml_simple_reader_a769f683d88886d01067e9a04654ec829}{set\-D\-T\-D\-Handler} (\hyperlink{class_q_xml_d_t_d_handler}{Q\-Xml\-D\-T\-D\-Handler} $\ast$handler)
+\item 
+\hyperlink{class_q_xml_d_t_d_handler}{Q\-Xml\-D\-T\-D\-Handler} $\ast$ \hyperlink{class_q_xml_simple_reader_ae188d2575905cc532c201679826d92a7}{D\-T\-D\-Handler} () const 
+\item 
+void \hyperlink{class_q_xml_simple_reader_aa2333babd850e0de7acb8dc289189a0d}{set\-Content\-Handler} (\hyperlink{class_q_xml_content_handler}{Q\-Xml\-Content\-Handler} $\ast$handler)
+\item 
+\hyperlink{class_q_xml_content_handler}{Q\-Xml\-Content\-Handler} $\ast$ \hyperlink{class_q_xml_simple_reader_a1a4e5ad7bf70e67903b2a945f8072483}{content\-Handler} () const 
+\item 
+void \hyperlink{class_q_xml_simple_reader_ab7eeabc78e1b5441de9a97cd3c913889}{set\-Error\-Handler} (\hyperlink{class_q_xml_error_handler}{Q\-Xml\-Error\-Handler} $\ast$handler)
+\item 
+\hyperlink{class_q_xml_error_handler}{Q\-Xml\-Error\-Handler} $\ast$ \hyperlink{class_q_xml_simple_reader_a0b654ec23970213bf82c3d25c34589e4}{error\-Handler} () const 
+\item 
+void \hyperlink{class_q_xml_simple_reader_a74193ba46d809a87c8fa3fdf62469724}{set\-Lexical\-Handler} (\hyperlink{class_q_xml_lexical_handler}{Q\-Xml\-Lexical\-Handler} $\ast$handler)
+\item 
+\hyperlink{class_q_xml_lexical_handler}{Q\-Xml\-Lexical\-Handler} $\ast$ \hyperlink{class_q_xml_simple_reader_a64060ca6c8efeae151acfcbea11f8363}{lexical\-Handler} () const 
+\item 
+void \hyperlink{class_q_xml_simple_reader_a3e0950620f2689274c02e0e2e2e53a58}{set\-Decl\-Handler} (\hyperlink{class_q_xml_decl_handler}{Q\-Xml\-Decl\-Handler} $\ast$handler)
+\item 
+\hyperlink{class_q_xml_decl_handler}{Q\-Xml\-Decl\-Handler} $\ast$ \hyperlink{class_q_xml_simple_reader_af238cbc46d5cd865a8ac58a865a9b031}{decl\-Handler} () const 
+\item 
+bool \hyperlink{class_q_xml_simple_reader_a53d7ec4f8fd6f4576a7d6178b2c1c564}{parse} (const \hyperlink{class_q_xml_input_source}{Q\-Xml\-Input\-Source} \&input)
+\end{DoxyCompactItemize}
+\subsection*{Amigos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_q_xml_simple_reader_a2ff4a58652c4931df003d69975caa9f2}{class {\bfseries Q\-Xml\-Simple\-Reader\-Private}}\label{class_q_xml_simple_reader_a2ff4a58652c4931df003d69975caa9f2}
+
+\item 
+\hypertarget{class_q_xml_simple_reader_a719c6d0688866ca5c61250f04fc80ca9}{class {\bfseries Q\-Xml\-Locator}}\label{class_q_xml_simple_reader_a719c6d0688866ca5c61250f04fc80ca9}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+The \hyperlink{class_q_xml_simple_reader}{Q\-Xml\-Simple\-Reader} class provides an implementation of a simple X\-M\-L reader (i.\-e. parser). 
+
+X\-M\-L
+
+This X\-M\-L reader is sufficient for simple parsing tasks. Here is a short list of the properties of this reader\-: 
+\begin{DoxyItemize}
+\item well-\/formed parser 
+\item does not parse any external entities 
+\item can do namespace processing 
+\end{DoxyItemize}
+
+For getting started see also the \href{xml-sax.html#quickStart}{\tt Quick start}. 
+
+\subsection{Documentação dos Construtores \& Destrutor}
+\hypertarget{class_q_xml_simple_reader_a34aab7c21fb390ebbfe7474ffbe37470}{\index{Q\-Xml\-Simple\-Reader@{Q\-Xml\-Simple\-Reader}!Q\-Xml\-Simple\-Reader@{Q\-Xml\-Simple\-Reader}}
+\index{Q\-Xml\-Simple\-Reader@{Q\-Xml\-Simple\-Reader}!QXmlSimpleReader@{Q\-Xml\-Simple\-Reader}}
+\subsubsection[{Q\-Xml\-Simple\-Reader}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Xml\-Simple\-Reader} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_q_xml_simple_reader_a34aab7c21fb390ebbfe7474ffbe37470}
+Constructs a simple X\-M\-L reader. \hypertarget{class_q_xml_simple_reader_ae5fda45ec6e8cb93fa078dd9cfb226bd}{\index{Q\-Xml\-Simple\-Reader@{Q\-Xml\-Simple\-Reader}!$\sim$\-Q\-Xml\-Simple\-Reader@{$\sim$\-Q\-Xml\-Simple\-Reader}}
+\index{$\sim$\-Q\-Xml\-Simple\-Reader@{$\sim$\-Q\-Xml\-Simple\-Reader}!QXmlSimpleReader@{Q\-Xml\-Simple\-Reader}}
+\subsubsection[{$\sim$\-Q\-Xml\-Simple\-Reader}]{\setlength{\rightskip}{0pt plus 5cm}$\sim${\bf Q\-Xml\-Simple\-Reader} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_xml_simple_reader_ae5fda45ec6e8cb93fa078dd9cfb226bd}
+Destroys a simple X\-M\-L reader. 
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_q_xml_simple_reader_a1a4e5ad7bf70e67903b2a945f8072483}{\index{Q\-Xml\-Simple\-Reader@{Q\-Xml\-Simple\-Reader}!content\-Handler@{content\-Handler}}
+\index{content\-Handler@{content\-Handler}!QXmlSimpleReader@{Q\-Xml\-Simple\-Reader}}
+\subsubsection[{content\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Xml\-Content\-Handler} $\ast$ content\-Handler (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_xml_simple_reader_a1a4e5ad7bf70e67903b2a945f8072483}
+
+
+Implementa \hyperlink{class_q_xml_reader_ad574f77f4825e3227eda9e6ba40c800d}{Q\-Xml\-Reader}.
+
+\hypertarget{class_q_xml_simple_reader_af238cbc46d5cd865a8ac58a865a9b031}{\index{Q\-Xml\-Simple\-Reader@{Q\-Xml\-Simple\-Reader}!decl\-Handler@{decl\-Handler}}
+\index{decl\-Handler@{decl\-Handler}!QXmlSimpleReader@{Q\-Xml\-Simple\-Reader}}
+\subsubsection[{decl\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Xml\-Decl\-Handler} $\ast$ decl\-Handler (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_xml_simple_reader_af238cbc46d5cd865a8ac58a865a9b031}
+
+
+Implementa \hyperlink{class_q_xml_reader_ac9534503343e6777362094d8fe68a298}{Q\-Xml\-Reader}.
+
+\hypertarget{class_q_xml_simple_reader_ae188d2575905cc532c201679826d92a7}{\index{Q\-Xml\-Simple\-Reader@{Q\-Xml\-Simple\-Reader}!D\-T\-D\-Handler@{D\-T\-D\-Handler}}
+\index{D\-T\-D\-Handler@{D\-T\-D\-Handler}!QXmlSimpleReader@{Q\-Xml\-Simple\-Reader}}
+\subsubsection[{D\-T\-D\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Xml\-D\-T\-D\-Handler} $\ast$ D\-T\-D\-Handler (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_xml_simple_reader_ae188d2575905cc532c201679826d92a7}
+
+
+Implementa \hyperlink{class_q_xml_reader_a8222809c5178a2f9c6828f1c5f792da3}{Q\-Xml\-Reader}.
+
+\hypertarget{class_q_xml_simple_reader_a0816509b82ad1f43e225c7dda1f95f39}{\index{Q\-Xml\-Simple\-Reader@{Q\-Xml\-Simple\-Reader}!entity\-Resolver@{entity\-Resolver}}
+\index{entity\-Resolver@{entity\-Resolver}!QXmlSimpleReader@{Q\-Xml\-Simple\-Reader}}
+\subsubsection[{entity\-Resolver}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Xml\-Entity\-Resolver} $\ast$ entity\-Resolver (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_xml_simple_reader_a0816509b82ad1f43e225c7dda1f95f39}
+
+
+Implementa \hyperlink{class_q_xml_reader_aa5c5d014fa59b7d2f3b0313b0e4cfc78}{Q\-Xml\-Reader}.
+
+\hypertarget{class_q_xml_simple_reader_a0b654ec23970213bf82c3d25c34589e4}{\index{Q\-Xml\-Simple\-Reader@{Q\-Xml\-Simple\-Reader}!error\-Handler@{error\-Handler}}
+\index{error\-Handler@{error\-Handler}!QXmlSimpleReader@{Q\-Xml\-Simple\-Reader}}
+\subsubsection[{error\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Xml\-Error\-Handler} $\ast$ error\-Handler (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_xml_simple_reader_a0b654ec23970213bf82c3d25c34589e4}
+
+
+Implementa \hyperlink{class_q_xml_reader_ab7c18a58b91aedc05837f4d9598dfbb5}{Q\-Xml\-Reader}.
+
+\hypertarget{class_q_xml_simple_reader_a9a1e05fd936ba5c6f2008c8a35a65b79}{\index{Q\-Xml\-Simple\-Reader@{Q\-Xml\-Simple\-Reader}!feature@{feature}}
+\index{feature@{feature}!QXmlSimpleReader@{Q\-Xml\-Simple\-Reader}}
+\subsubsection[{feature}]{\setlength{\rightskip}{0pt plus 5cm}bool feature (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{name, }
+\item[{bool $\ast$}]{ok = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_xml_simple_reader_a9a1e05fd936ba5c6f2008c8a35a65b79}
+Gets the state of a feature.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_xml_simple_reader_a021e5cc111d248f309deec45253e2c17}{set\-Feature()} \hyperlink{class_q_xml_simple_reader_ac7528ced6524ec818c704adf956ba44e}{has\-Feature()} 
+\end{DoxySeeAlso}
+
+
+Implementa \hyperlink{class_q_xml_reader_a76d739f8a94bf314d757519bca040d96}{Q\-Xml\-Reader}.
+
+\hypertarget{class_q_xml_simple_reader_ac7528ced6524ec818c704adf956ba44e}{\index{Q\-Xml\-Simple\-Reader@{Q\-Xml\-Simple\-Reader}!has\-Feature@{has\-Feature}}
+\index{has\-Feature@{has\-Feature}!QXmlSimpleReader@{Q\-Xml\-Simple\-Reader}}
+\subsubsection[{has\-Feature}]{\setlength{\rightskip}{0pt plus 5cm}bool has\-Feature (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{name}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_xml_simple_reader_ac7528ced6524ec818c704adf956ba44e}
+Returns T\-R\-U\-E if the class has a feature named {\itshape feature}, otherwise F\-A\-L\-S\-E.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_xml_simple_reader_a021e5cc111d248f309deec45253e2c17}{set\-Feature()} \hyperlink{class_q_xml_simple_reader_a9a1e05fd936ba5c6f2008c8a35a65b79}{feature()} 
+\end{DoxySeeAlso}
+
+
+Implementa \hyperlink{class_q_xml_reader_a94788a2d9d0391b73d49f2b5d59afb59}{Q\-Xml\-Reader}.
+
+\hypertarget{class_q_xml_simple_reader_a5e8c175fdedcecb196b464d1338226a9}{\index{Q\-Xml\-Simple\-Reader@{Q\-Xml\-Simple\-Reader}!has\-Property@{has\-Property}}
+\index{has\-Property@{has\-Property}!QXmlSimpleReader@{Q\-Xml\-Simple\-Reader}}
+\subsubsection[{has\-Property}]{\setlength{\rightskip}{0pt plus 5cm}bool has\-Property (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{name}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_xml_simple_reader_a5e8c175fdedcecb196b464d1338226a9}
+Returns F\-A\-L\-S\-E since this class does not support any properties. 
+
+Implementa \hyperlink{class_q_xml_reader_a35cf35e0b6114f1575ad0659404f3f00}{Q\-Xml\-Reader}.
+
+\hypertarget{class_q_xml_simple_reader_a64060ca6c8efeae151acfcbea11f8363}{\index{Q\-Xml\-Simple\-Reader@{Q\-Xml\-Simple\-Reader}!lexical\-Handler@{lexical\-Handler}}
+\index{lexical\-Handler@{lexical\-Handler}!QXmlSimpleReader@{Q\-Xml\-Simple\-Reader}}
+\subsubsection[{lexical\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Xml\-Lexical\-Handler} $\ast$ lexical\-Handler (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_xml_simple_reader_a64060ca6c8efeae151acfcbea11f8363}
+
+
+Implementa \hyperlink{class_q_xml_reader_a81ee75f7e3db2f6ce9fd6a5707ff20ee}{Q\-Xml\-Reader}.
+
+\hypertarget{class_q_xml_simple_reader_a53d7ec4f8fd6f4576a7d6178b2c1c564}{\index{Q\-Xml\-Simple\-Reader@{Q\-Xml\-Simple\-Reader}!parse@{parse}}
+\index{parse@{parse}!QXmlSimpleReader@{Q\-Xml\-Simple\-Reader}}
+\subsubsection[{parse}]{\setlength{\rightskip}{0pt plus 5cm}bool parse (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-Xml\-Input\-Source} \&}]{input}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_xml_simple_reader_a53d7ec4f8fd6f4576a7d6178b2c1c564}
+
+
+Implementa \hyperlink{class_q_xml_reader_a957bf018eb96669556913282ac0e4406}{Q\-Xml\-Reader}.
+
+\hypertarget{class_q_xml_simple_reader_aa66e1061ce3ad44d8e0bb8e5e89e0141}{\index{Q\-Xml\-Simple\-Reader@{Q\-Xml\-Simple\-Reader}!property@{property}}
+\index{property@{property}!QXmlSimpleReader@{Q\-Xml\-Simple\-Reader}}
+\subsubsection[{property}]{\setlength{\rightskip}{0pt plus 5cm}void $\ast$ property (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{name, }
+\item[{bool $\ast$}]{ok = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_xml_simple_reader_aa66e1061ce3ad44d8e0bb8e5e89e0141}
+Returns 0 since this class does not support any properties. 
+
+Implementa \hyperlink{class_q_xml_reader_a35b6ac10f0e2681f8b23f518f63d2ce0}{Q\-Xml\-Reader}.
+
+\hypertarget{class_q_xml_simple_reader_aa2333babd850e0de7acb8dc289189a0d}{\index{Q\-Xml\-Simple\-Reader@{Q\-Xml\-Simple\-Reader}!set\-Content\-Handler@{set\-Content\-Handler}}
+\index{set\-Content\-Handler@{set\-Content\-Handler}!QXmlSimpleReader@{Q\-Xml\-Simple\-Reader}}
+\subsubsection[{set\-Content\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void set\-Content\-Handler (
+\begin{DoxyParamCaption}
+\item[{{\bf Q\-Xml\-Content\-Handler} $\ast$}]{handler}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_xml_simple_reader_aa2333babd850e0de7acb8dc289189a0d}
+
+
+Implementa \hyperlink{class_q_xml_reader_a481b7b578c8ad3764dc541d9b5fc44ce}{Q\-Xml\-Reader}.
+
+\hypertarget{class_q_xml_simple_reader_a3e0950620f2689274c02e0e2e2e53a58}{\index{Q\-Xml\-Simple\-Reader@{Q\-Xml\-Simple\-Reader}!set\-Decl\-Handler@{set\-Decl\-Handler}}
+\index{set\-Decl\-Handler@{set\-Decl\-Handler}!QXmlSimpleReader@{Q\-Xml\-Simple\-Reader}}
+\subsubsection[{set\-Decl\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void set\-Decl\-Handler (
+\begin{DoxyParamCaption}
+\item[{{\bf Q\-Xml\-Decl\-Handler} $\ast$}]{handler}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_xml_simple_reader_a3e0950620f2689274c02e0e2e2e53a58}
+
+
+Implementa \hyperlink{class_q_xml_reader_a00252501a616d2e14f5d51acc2cb1165}{Q\-Xml\-Reader}.
+
+\hypertarget{class_q_xml_simple_reader_a769f683d88886d01067e9a04654ec829}{\index{Q\-Xml\-Simple\-Reader@{Q\-Xml\-Simple\-Reader}!set\-D\-T\-D\-Handler@{set\-D\-T\-D\-Handler}}
+\index{set\-D\-T\-D\-Handler@{set\-D\-T\-D\-Handler}!QXmlSimpleReader@{Q\-Xml\-Simple\-Reader}}
+\subsubsection[{set\-D\-T\-D\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void set\-D\-T\-D\-Handler (
+\begin{DoxyParamCaption}
+\item[{{\bf Q\-Xml\-D\-T\-D\-Handler} $\ast$}]{handler}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_xml_simple_reader_a769f683d88886d01067e9a04654ec829}
+
+
+Implementa \hyperlink{class_q_xml_reader_a4bec7f4998841732d1d8d14a6fb123ec}{Q\-Xml\-Reader}.
+
+\hypertarget{class_q_xml_simple_reader_a0483a48d872324ba566d6375bd72e6ca}{\index{Q\-Xml\-Simple\-Reader@{Q\-Xml\-Simple\-Reader}!set\-Entity\-Resolver@{set\-Entity\-Resolver}}
+\index{set\-Entity\-Resolver@{set\-Entity\-Resolver}!QXmlSimpleReader@{Q\-Xml\-Simple\-Reader}}
+\subsubsection[{set\-Entity\-Resolver}]{\setlength{\rightskip}{0pt plus 5cm}void set\-Entity\-Resolver (
+\begin{DoxyParamCaption}
+\item[{{\bf Q\-Xml\-Entity\-Resolver} $\ast$}]{handler}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_xml_simple_reader_a0483a48d872324ba566d6375bd72e6ca}
+
+
+Implementa \hyperlink{class_q_xml_reader_a993026a62a7ba0b4ebc2e84e8df18d82}{Q\-Xml\-Reader}.
+
+\hypertarget{class_q_xml_simple_reader_ab7eeabc78e1b5441de9a97cd3c913889}{\index{Q\-Xml\-Simple\-Reader@{Q\-Xml\-Simple\-Reader}!set\-Error\-Handler@{set\-Error\-Handler}}
+\index{set\-Error\-Handler@{set\-Error\-Handler}!QXmlSimpleReader@{Q\-Xml\-Simple\-Reader}}
+\subsubsection[{set\-Error\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void set\-Error\-Handler (
+\begin{DoxyParamCaption}
+\item[{{\bf Q\-Xml\-Error\-Handler} $\ast$}]{handler}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_xml_simple_reader_ab7eeabc78e1b5441de9a97cd3c913889}
+
+
+Implementa \hyperlink{class_q_xml_reader_a4d2cc3731d45b37ac0a8f8248007b4b7}{Q\-Xml\-Reader}.
+
+\hypertarget{class_q_xml_simple_reader_a021e5cc111d248f309deec45253e2c17}{\index{Q\-Xml\-Simple\-Reader@{Q\-Xml\-Simple\-Reader}!set\-Feature@{set\-Feature}}
+\index{set\-Feature@{set\-Feature}!QXmlSimpleReader@{Q\-Xml\-Simple\-Reader}}
+\subsubsection[{set\-Feature}]{\setlength{\rightskip}{0pt plus 5cm}void set\-Feature (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{name, }
+\item[{bool}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_xml_simple_reader_a021e5cc111d248f309deec45253e2c17}
+Sets the state of a feature.
+
+Supported features are\-: 
+\begin{DoxyItemize}
+\item \href{http://xml.org/sax/features/namespaces:}{\tt http\-://xml.\-org/sax/features/namespaces\-:} if this feature is T\-R\-U\-E, namespace processing is performed 
+\item \href{http://xml.org/sax/features/namespace-prefixes:}{\tt http\-://xml.\-org/sax/features/namespace-\/prefixes\-:} if this feature is T\-R\-U\-E, the the original prefixed names and attributes used for namespace declarations are reported 
+\item \href{http://trolltech.com/xml/features/report-whitespace-only-CharData:}{\tt http\-://trolltech.\-com/xml/features/report-\/whitespace-\/only-\/\-Char\-Data\-:} if this feature is T\-R\-U\-E, Char\-Data that consists only of whitespace (and no other characters) is not reported via \hyperlink{class_q_xml_content_handler_a63490f0ac6e8b7794a5ebb331c3a4143}{Q\-Xml\-Content\-Handler\-::characters()} 
+\end{DoxyItemize}
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_xml_simple_reader_a9a1e05fd936ba5c6f2008c8a35a65b79}{feature()} \hyperlink{class_q_xml_simple_reader_ac7528ced6524ec818c704adf956ba44e}{has\-Feature()} 
+\end{DoxySeeAlso}
+
+
+Implementa \hyperlink{class_q_xml_reader_a54a21e60e28654ec1f5abd3d9307fb1a}{Q\-Xml\-Reader}.
+
+\hypertarget{class_q_xml_simple_reader_a74193ba46d809a87c8fa3fdf62469724}{\index{Q\-Xml\-Simple\-Reader@{Q\-Xml\-Simple\-Reader}!set\-Lexical\-Handler@{set\-Lexical\-Handler}}
+\index{set\-Lexical\-Handler@{set\-Lexical\-Handler}!QXmlSimpleReader@{Q\-Xml\-Simple\-Reader}}
+\subsubsection[{set\-Lexical\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void set\-Lexical\-Handler (
+\begin{DoxyParamCaption}
+\item[{{\bf Q\-Xml\-Lexical\-Handler} $\ast$}]{handler}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_xml_simple_reader_a74193ba46d809a87c8fa3fdf62469724}
+
+
+Implementa \hyperlink{class_q_xml_reader_a5d8760a6bd5b439c78a1c2d925e0ba7f}{Q\-Xml\-Reader}.
+
+\hypertarget{class_q_xml_simple_reader_aeed13d669b6ac55e522ab26a1f1c620a}{\index{Q\-Xml\-Simple\-Reader@{Q\-Xml\-Simple\-Reader}!set\-Property@{set\-Property}}
+\index{set\-Property@{set\-Property}!QXmlSimpleReader@{Q\-Xml\-Simple\-Reader}}
+\subsubsection[{set\-Property}]{\setlength{\rightskip}{0pt plus 5cm}void set\-Property (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{name, }
+\item[{void $\ast$}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_xml_simple_reader_aeed13d669b6ac55e522ab26a1f1c620a}
+Does nothing since this class does not support any properties. 
+
+Implementa \hyperlink{class_q_xml_reader_a056a7c314b9cebe70878d0e0ec5da501}{Q\-Xml\-Reader}.
+
+
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/qtools/qxml.\-h\item 
+C\-:/\-Users/teste/git/doxygen/qtools/qxml.\-cpp\end{DoxyCompactItemize}

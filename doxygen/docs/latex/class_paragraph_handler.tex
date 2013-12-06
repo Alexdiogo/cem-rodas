@@ -1,0 +1,153 @@
+\hypertarget{class_paragraph_handler}{\section{Referência à classe Paragraph\-Handler}
+\label{class_paragraph_handler}\index{Paragraph\-Handler@{Paragraph\-Handler}}
+}
+
+
+Node representing a paragraph of text and commands.  
+
+
+
+
+{\ttfamily \#include $<$dochandler.\-h$>$}
+
+Diagrama de heranças da classe Paragraph\-Handler\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.350211cm]{class_paragraph_handler}
+\end{center}
+\end{figure}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_paragraph_handler_abb7f955561480002949ada58092c1964}{virtual void {\bfseries start\-Paragraph} (const \hyperlink{class_q_xml_attributes}{Q\-Xml\-Attributes} \&attrib)}\label{class_paragraph_handler_abb7f955561480002949ada58092c1964}
+
+\item 
+\hypertarget{class_paragraph_handler_a3076b52ebe72e4b56c232817cf2a16f0}{virtual void {\bfseries end\-Paragraph} ()}\label{class_paragraph_handler_a3076b52ebe72e4b56c232817cf2a16f0}
+
+\item 
+\hypertarget{class_paragraph_handler_a6e3b6970626df600d93059a32587663f}{virtual void {\bfseries start\-Itemized\-List} (const \hyperlink{class_q_xml_attributes}{Q\-Xml\-Attributes} \&attrib)}\label{class_paragraph_handler_a6e3b6970626df600d93059a32587663f}
+
+\item 
+\hypertarget{class_paragraph_handler_a367102893cc80ee76a6efd268fddcf50}{virtual void {\bfseries start\-Ordered\-List} (const \hyperlink{class_q_xml_attributes}{Q\-Xml\-Attributes} \&attrib)}\label{class_paragraph_handler_a367102893cc80ee76a6efd268fddcf50}
+
+\item 
+\hypertarget{class_paragraph_handler_a881264a421d5674b3464a382845354db}{virtual void {\bfseries start\-Parameter\-List} (const \hyperlink{class_q_xml_attributes}{Q\-Xml\-Attributes} \&attrib)}\label{class_paragraph_handler_a881264a421d5674b3464a382845354db}
+
+\item 
+\hypertarget{class_paragraph_handler_a5a59ce1b33a110821e15f0a4141ef9d8}{virtual void {\bfseries start\-Simple\-Sect} (const \hyperlink{class_q_xml_attributes}{Q\-Xml\-Attributes} \&attrib)}\label{class_paragraph_handler_a5a59ce1b33a110821e15f0a4141ef9d8}
+
+\item 
+\hypertarget{class_paragraph_handler_a64b60752227d7af719398c2683cb17bf}{virtual void {\bfseries start\-Ref} (const \hyperlink{class_q_xml_attributes}{Q\-Xml\-Attributes} \&attrib)}\label{class_paragraph_handler_a64b60752227d7af719398c2683cb17bf}
+
+\item 
+\hypertarget{class_paragraph_handler_a41323d0f7798eee31fff5dc7acd7b892}{virtual void {\bfseries start\-Variable\-List} (const \hyperlink{class_q_xml_attributes}{Q\-Xml\-Attributes} \&attrib)}\label{class_paragraph_handler_a41323d0f7798eee31fff5dc7acd7b892}
+
+\item 
+\hypertarget{class_paragraph_handler_a732b339fe1cad4aad37026bf49e56139}{virtual void {\bfseries start\-H\-Ruler} (const \hyperlink{class_q_xml_attributes}{Q\-Xml\-Attributes} \&attrib)}\label{class_paragraph_handler_a732b339fe1cad4aad37026bf49e56139}
+
+\item 
+\hypertarget{class_paragraph_handler_a4ef850515992ba3cdd4e09897a4517c5}{virtual void {\bfseries start\-Line\-Break} (const \hyperlink{class_q_xml_attributes}{Q\-Xml\-Attributes} \&attrib)}\label{class_paragraph_handler_a4ef850515992ba3cdd4e09897a4517c5}
+
+\item 
+\hypertarget{class_paragraph_handler_a55c1d3b6592e7b365030535c2d558e42}{virtual void {\bfseries start\-U\-Link} (const \hyperlink{class_q_xml_attributes}{Q\-Xml\-Attributes} \&attrib)}\label{class_paragraph_handler_a55c1d3b6592e7b365030535c2d558e42}
+
+\item 
+\hypertarget{class_paragraph_handler_a10b3ee7bb8e8ffea0fa0db0a366e7c68}{virtual void {\bfseries start\-E\-Mail} (const \hyperlink{class_q_xml_attributes}{Q\-Xml\-Attributes} \&attrib)}\label{class_paragraph_handler_a10b3ee7bb8e8ffea0fa0db0a366e7c68}
+
+\item 
+\hypertarget{class_paragraph_handler_a537fb712d08bab9c4ad5812a84f7a4b3}{virtual void {\bfseries start\-Link} (const \hyperlink{class_q_xml_attributes}{Q\-Xml\-Attributes} \&attrib)}\label{class_paragraph_handler_a537fb712d08bab9c4ad5812a84f7a4b3}
+
+\item 
+\hypertarget{class_paragraph_handler_ae03e5c8c64478d96c0e32aa7738e16b6}{virtual void {\bfseries start\-Program\-Listing} (const \hyperlink{class_q_xml_attributes}{Q\-Xml\-Attributes} \&attrib)}\label{class_paragraph_handler_ae03e5c8c64478d96c0e32aa7738e16b6}
+
+\item 
+\hypertarget{class_paragraph_handler_a26fc2208b8728045a78a977ae9e1961c}{virtual void {\bfseries start\-Formula} (const \hyperlink{class_q_xml_attributes}{Q\-Xml\-Attributes} \&attrib)}\label{class_paragraph_handler_a26fc2208b8728045a78a977ae9e1961c}
+
+\item 
+\hypertarget{class_paragraph_handler_a56db971619d18aec03a3ac9e5554b271}{virtual void {\bfseries start\-Image} (const \hyperlink{class_q_xml_attributes}{Q\-Xml\-Attributes} \&attrib)}\label{class_paragraph_handler_a56db971619d18aec03a3ac9e5554b271}
+
+\item 
+\hypertarget{class_paragraph_handler_aeed29696a81bd6c507050a848768e748}{virtual void {\bfseries start\-Dot\-File} (const \hyperlink{class_q_xml_attributes}{Q\-Xml\-Attributes} \&attrib)}\label{class_paragraph_handler_aeed29696a81bd6c507050a848768e748}
+
+\item 
+\hypertarget{class_paragraph_handler_aaac87623a02b661089a61bc607a4fae7}{virtual void {\bfseries start\-Index\-Entry} (const \hyperlink{class_q_xml_attributes}{Q\-Xml\-Attributes} \&attrib)}\label{class_paragraph_handler_aaac87623a02b661089a61bc607a4fae7}
+
+\item 
+\hypertarget{class_paragraph_handler_a05b0128d8f0df55bae16f87e5091adcc}{virtual void {\bfseries start\-Table} (const \hyperlink{class_q_xml_attributes}{Q\-Xml\-Attributes} \&attrib)}\label{class_paragraph_handler_a05b0128d8f0df55bae16f87e5091adcc}
+
+\item 
+\hypertarget{class_paragraph_handler_ad874c80e7d7dc2968af3374a40018308}{virtual void {\bfseries start\-Verbatim} (const \hyperlink{class_q_xml_attributes}{Q\-Xml\-Attributes} \&attrib)}\label{class_paragraph_handler_ad874c80e7d7dc2968af3374a40018308}
+
+\item 
+\hypertarget{class_paragraph_handler_aaac348987af69497090c11d0e5bff088}{virtual void {\bfseries start\-Html\-Only} (const \hyperlink{class_q_xml_attributes}{Q\-Xml\-Attributes} \&attrib)}\label{class_paragraph_handler_aaac348987af69497090c11d0e5bff088}
+
+\item 
+\hypertarget{class_paragraph_handler_a7e6162e37c474d57951f4955e3e52415}{virtual void {\bfseries start\-Latex\-Only} (const \hyperlink{class_q_xml_attributes}{Q\-Xml\-Attributes} \&attrib)}\label{class_paragraph_handler_a7e6162e37c474d57951f4955e3e52415}
+
+\item 
+\hypertarget{class_paragraph_handler_a450138651a6aedefc420d45965ba3cfc}{virtual void {\bfseries start\-Umlaut} (const \hyperlink{class_q_xml_attributes}{Q\-Xml\-Attributes} \&attrib)}\label{class_paragraph_handler_a450138651a6aedefc420d45965ba3cfc}
+
+\item 
+\hypertarget{class_paragraph_handler_ac39e00ef169e22ca723468de93bba48a}{virtual void {\bfseries start\-Acute} (const \hyperlink{class_q_xml_attributes}{Q\-Xml\-Attributes} \&attrib)}\label{class_paragraph_handler_ac39e00ef169e22ca723468de93bba48a}
+
+\item 
+\hypertarget{class_paragraph_handler_ad63c536a3a2abe81840bd935618dbe2d}{virtual void {\bfseries start\-Grave} (const \hyperlink{class_q_xml_attributes}{Q\-Xml\-Attributes} \&attrib)}\label{class_paragraph_handler_ad63c536a3a2abe81840bd935618dbe2d}
+
+\item 
+\hypertarget{class_paragraph_handler_a63da17bd227884158383aa440907e13c}{virtual void {\bfseries start\-Circ} (const \hyperlink{class_q_xml_attributes}{Q\-Xml\-Attributes} \&attrib)}\label{class_paragraph_handler_a63da17bd227884158383aa440907e13c}
+
+\item 
+\hypertarget{class_paragraph_handler_a1873570853780b13ea6bd204372cc3be}{virtual void {\bfseries start\-Tilde} (const \hyperlink{class_q_xml_attributes}{Q\-Xml\-Attributes} \&attrib)}\label{class_paragraph_handler_a1873570853780b13ea6bd204372cc3be}
+
+\item 
+\hypertarget{class_paragraph_handler_a0a091aa430881109c94cf9c1a948692f}{virtual void {\bfseries start\-Szlig} (const \hyperlink{class_q_xml_attributes}{Q\-Xml\-Attributes} \&attrib)}\label{class_paragraph_handler_a0a091aa430881109c94cf9c1a948692f}
+
+\item 
+\hypertarget{class_paragraph_handler_a8d3ca12357ddb81c19e65b4d670a6977}{virtual void {\bfseries start\-Cedil} (const \hyperlink{class_q_xml_attributes}{Q\-Xml\-Attributes} \&attrib)}\label{class_paragraph_handler_a8d3ca12357ddb81c19e65b4d670a6977}
+
+\item 
+\hypertarget{class_paragraph_handler_af64235749c57f90212d8ec797186ea4d}{virtual void {\bfseries start\-Ring} (const \hyperlink{class_q_xml_attributes}{Q\-Xml\-Attributes} \&attrib)}\label{class_paragraph_handler_af64235749c57f90212d8ec797186ea4d}
+
+\item 
+\hypertarget{class_paragraph_handler_a312011fb36334b9451424a84d8b53713}{virtual void {\bfseries start\-Nbsp} (const \hyperlink{class_q_xml_attributes}{Q\-Xml\-Attributes} \&attrib)}\label{class_paragraph_handler_a312011fb36334b9451424a84d8b53713}
+
+\item 
+\hypertarget{class_paragraph_handler_a2bb03e75295578cb36a0a27fa88d2960}{virtual void {\bfseries start\-Copy} (const \hyperlink{class_q_xml_attributes}{Q\-Xml\-Attributes} \&attrib)}\label{class_paragraph_handler_a2bb03e75295578cb36a0a27fa88d2960}
+
+\item 
+\hypertarget{class_paragraph_handler_a13989618fc696558cb6fe547d7b58162}{virtual void {\bfseries start\-Anchor} (const \hyperlink{class_q_xml_attributes}{Q\-Xml\-Attributes} \&attrib)}\label{class_paragraph_handler_a13989618fc696558cb6fe547d7b58162}
+
+\item 
+\hypertarget{class_paragraph_handler_a3445d718c233b78b9887cd6af626a569}{virtual void {\bfseries start\-Copy\-Doc} (const \hyperlink{class_q_xml_attributes}{Q\-Xml\-Attributes} \&attrib)}\label{class_paragraph_handler_a3445d718c233b78b9887cd6af626a569}
+
+\item 
+\hypertarget{class_paragraph_handler_a39d504ade0f9685172c4bf0d102aafeb}{virtual void {\bfseries start\-Toc\-List} (const \hyperlink{class_q_xml_attributes}{Q\-Xml\-Attributes} \&attrib)}\label{class_paragraph_handler_a39d504ade0f9685172c4bf0d102aafeb}
+
+\item 
+\hypertarget{class_paragraph_handler_ab9dcdc8d4d66f95cdef59389917cfe07}{{\bfseries Paragraph\-Handler} (\hyperlink{class_i_base_handler}{I\-Base\-Handler} $\ast$parent)}\label{class_paragraph_handler_ab9dcdc8d4d66f95cdef59389917cfe07}
+
+\item 
+\hypertarget{class_paragraph_handler_af8e62c8a81ddf2283205cc8955de50eb}{virtual Kind {\bfseries kind} () const }\label{class_paragraph_handler_af8e62c8a81ddf2283205cc8955de50eb}
+
+\item 
+\hypertarget{class_paragraph_handler_a6f867db5d47aa2210c77df9bc5953008}{virtual \hyperlink{class_i_doc_iterator}{I\-Doc\-Iterator} $\ast$ {\bfseries contents} () const }\label{class_paragraph_handler_a6f867db5d47aa2210c77df9bc5953008}
+
+\end{DoxyCompactItemize}
+\subsection*{Amigos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_paragraph_handler_a7fa8f6c15543966442bacc223e8c0721}{class {\bfseries Paragraph\-Iterator}}\label{class_paragraph_handler_a7fa8f6c15543966442bacc223e8c0721}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Descrição detalhada}
+Node representing a paragraph of text and commands. 
+
+
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/addon/doxmlparser/src/dochandler.\-h\item 
+C\-:/\-Users/teste/git/doxygen/addon/doxmlparser/src/dochandler.\-cpp\end{DoxyCompactItemize}

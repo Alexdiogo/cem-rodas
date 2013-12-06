@@ -1,0 +1,2049 @@
+\hypertarget{class_q_string}{\section{Referência à classe Q\-String}
+\label{class_q_string}\index{Q\-String@{Q\-String}}
+}
+
+
+The \hyperlink{class_q_string}{Q\-String} class provides an abstraction of Unicode text and the classic \hyperlink{class_c}{C} null-\/terminated char array ({\itshape char$\ast$}).  
+
+
+
+
+{\ttfamily \#include $<$qstring.\-h$>$}
+
+Diagrama de heranças da classe Q\-String\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_q_string}
+\end{center}
+\end{figure}
+\subsection*{Estruturas de Dados}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_q_string_1_1_null}{Null}
+\end{DoxyCompactItemize}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_q_string_aeb800ad13815ba67746c8591df9e0ed9}{Q\-String} ()
+\item 
+\hyperlink{class_q_string_a944ed2a8cf72828068c78177e3fb2614}{Q\-String} (\hyperlink{class_q_char}{Q\-Char})
+\item 
+\hyperlink{class_q_string_a46b40a258d3e2e434114b6b7dc59f4ed}{Q\-String} (const \hyperlink{class_q_string}{Q\-String} \&)
+\item 
+\hyperlink{class_q_string_a03ece70f85dbcaa34e536cdb087620bc}{Q\-String} (const \hyperlink{class_q_array}{Q\-Byte\-Array} \&)
+\item 
+\hypertarget{class_q_string_accff8ce991aac3ae959a676f3a6e1de8}{{\bfseries Q\-String} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&)}\label{class_q_string_accff8ce991aac3ae959a676f3a6e1de8}
+
+\item 
+\hyperlink{class_q_string_a5f1b101c1e8f83726d05756b90b487b6}{Q\-String} (const \hyperlink{class_q_char}{Q\-Char} $\ast$\hyperlink{class_q_string_a65a250696de2e5cb83a8e01a9603cea0}{unicode}, uint \hyperlink{class_q_string_ab0edbf251efc0562d70132e931e3cf06}{length})
+\item 
+\hyperlink{class_q_string_add0bac07acb536df7be191ab9959f709}{Q\-String} (const char $\ast$str)
+\item 
+\hyperlink{class_q_string_ae63f8e6e878c39e64cdf75258dc862fc}{$\sim$\-Q\-String} ()
+\item 
+\hyperlink{class_q_string}{Q\-String} \& \hyperlink{class_q_string_a073da1d0e9f2f6b894c5edd865fc12cd}{operator=} (const \hyperlink{class_q_string}{Q\-String} \&)
+\item 
+\hyperlink{class_q_string}{Q\-String} \& \hyperlink{class_q_string_aaa193932aa34a1b13c8fa0341092101f}{operator=} (const char $\ast$)
+\item 
+\hyperlink{class_q_string}{Q\-String} \& \hyperlink{class_q_string_a37774f73735421287b1fb7c3a48e445d}{operator=} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&)
+\item 
+\hyperlink{class_q_string}{Q\-String} \& \hyperlink{class_q_string_a9d2aeb3e5dab20eefdbf7be3920033df}{operator=} (\hyperlink{class_q_char}{Q\-Char} c)
+\item 
+\hyperlink{class_q_string}{Q\-String} \& \hyperlink{class_q_string_a3223f3139f9b0b6c355fce5b349cb301}{operator=} (char c)
+\item 
+\hypertarget{class_q_string_a98a53ff2e23313a044c3fe7d5c85f0c5}{{\bfseries Q\-String} (const \hyperlink{struct_q_string_1_1_null}{Null} \&)}\label{class_q_string_a98a53ff2e23313a044c3fe7d5c85f0c5}
+
+\item 
+\hypertarget{class_q_string_a141b2002462511d59cf43cdc27237bac}{\hyperlink{class_q_string}{Q\-String} \& {\bfseries operator=} (const \hyperlink{struct_q_string_1_1_null}{Null} \&)}\label{class_q_string_a141b2002462511d59cf43cdc27237bac}
+
+\item 
+bool \hyperlink{class_q_string_ac02f2a4d7312eb91f40980adfd4e31b2}{is\-Null} () const 
+\item 
+bool \hyperlink{class_q_string_a479432127ee77145cc19d6a2d1590821}{is\-Empty} () const 
+\item 
+uint \hyperlink{class_q_string_ab0edbf251efc0562d70132e931e3cf06}{length} () const 
+\item 
+void \hyperlink{class_q_string_aebc5eed775112beb78fc3255d3dd70b1}{truncate} (uint pos)
+\item 
+void \hyperlink{class_q_string_add279e13ff7df6ca8650e7d7fa6afc14}{fill} (\hyperlink{class_q_char}{Q\-Char} c, int len=-\/1)
+\item 
+\hyperlink{class_q_string}{Q\-String} \hyperlink{class_q_string_a54e55577945c7f93818f5ceba792dc5a}{copy} () const 
+\item 
+\hyperlink{class_q_string}{Q\-String} \hyperlink{class_q_string_a4adcdaef1eca41a976263df7f5aa216f}{arg} (long a, int fieldwidth=0, int base=10) const 
+\item 
+\hyperlink{class_q_string}{Q\-String} \hyperlink{class_q_string_ae7d16a0a79390b116b8d51795aab1f86}{arg} (ulong a, int fieldwidth=0, int base=10) const 
+\item 
+\hyperlink{class_q_string}{Q\-String} \hyperlink{class_q_string_a97470b756bd340018edb6391f31baed7}{arg} (int a, int fieldwidth=0, int base=10) const 
+\item 
+\hyperlink{class_q_string}{Q\-String} \hyperlink{class_q_string_a11febd14403c92b70ec926a81aece5ff}{arg} (uint a, int fieldwidth=0, int base=10) const 
+\item 
+\hyperlink{class_q_string}{Q\-String} \hyperlink{class_q_string_a5173d8f86476978ae4ecd8cc4fa62154}{arg} (short a, int fieldwidth=0, int base=10) const 
+\item 
+\hyperlink{class_q_string}{Q\-String} \hyperlink{class_q_string_a335c0cd9985bffad337eee970eb77486}{arg} (ushort a, int fieldwidth=0, int base=10) const 
+\item 
+\hyperlink{class_q_string}{Q\-String} \hyperlink{class_q_string_a882331b21bc422cda18472f6f2a455b0}{arg} (char a, int fieldwidth=0) const 
+\item 
+\hyperlink{class_q_string}{Q\-String} \hyperlink{class_q_string_a3de53812b85729641e5db7415ff797f2}{arg} (\hyperlink{class_q_char}{Q\-Char} a, int fieldwidth=0) const 
+\item 
+\hyperlink{class_q_string}{Q\-String} \hyperlink{class_q_string_a3e1f2e49206972c13d69b278b56a76f6}{arg} (const \hyperlink{class_q_string}{Q\-String} \&a, int fieldwidth=0) const 
+\item 
+\hyperlink{class_q_string}{Q\-String} \hyperlink{class_q_string_a3574bcdc4ea9270879a75eb5695043f2}{arg} (double a, int fieldwidth=0, char fmt='g', int prec=-\/1) const 
+\item 
+\hyperlink{class_q_string}{Q\-String} \& \hyperlink{class_q_string_a34d369803a6568a461041b34c9ed33d6}{sprintf} (const char $\ast$format,...)
+\item 
+int \hyperlink{class_q_string_acca4eda6c3d39e174d06ad9a556be100}{find} (\hyperlink{class_q_char}{Q\-Char} c, int index=0, bool cs=T\-R\-U\-E) const 
+\item 
+int \hyperlink{class_q_string_ad64e3aef2a281ce7550aee1970a86a7e}{find} (char c, int index=0, bool cs=T\-R\-U\-E) const 
+\item 
+int \hyperlink{class_q_string_a026b817c9714631b0317ecd313441cab}{find} (const \hyperlink{class_q_string}{Q\-String} \&str, int index=0, bool cs=T\-R\-U\-E) const 
+\item 
+int \hyperlink{class_q_string_a7d7d4fe2b8d9279521d5b89fbde1052d}{find} (const \hyperlink{class_q_reg_exp}{Q\-Reg\-Exp} \&, int index=0) const 
+\item 
+int \hyperlink{class_q_string_a0e69aba9558d2d7ce78ad43510c44c47}{find} (const char $\ast$str, int index=0) const 
+\item 
+int \hyperlink{class_q_string_aab366beeaa42b1d37be6a9775e2de18b}{find\-Rev} (\hyperlink{class_q_char}{Q\-Char} c, int index=-\/1, bool cs=T\-R\-U\-E) const 
+\item 
+int \hyperlink{class_q_string_a1c9c5fa7edcc9f59b7ad419554a31270}{find\-Rev} (char c, int index=-\/1, bool cs=T\-R\-U\-E) const 
+\item 
+int \hyperlink{class_q_string_a39983b1220ebb1493284ca4fa0af4752}{find\-Rev} (const \hyperlink{class_q_string}{Q\-String} \&str, int index=-\/1, bool cs=T\-R\-U\-E) const 
+\item 
+int \hyperlink{class_q_string_ac8a7fd641cbd6e1d9704c2a37547f7dd}{find\-Rev} (const \hyperlink{class_q_reg_exp}{Q\-Reg\-Exp} \&, int index=-\/1) const 
+\item 
+int \hyperlink{class_q_string_a4be04fa13607acd10f329bcf318f2c42}{find\-Rev} (const char $\ast$str, int index=-\/1) const 
+\item 
+int \hyperlink{class_q_string_ab8edfc96baa26c599be9a4c465723ed2}{contains} (\hyperlink{class_q_char}{Q\-Char} c, bool cs=T\-R\-U\-E) const 
+\item 
+int \hyperlink{class_q_string_a2ff9ac285923aa8c6f798a030730b80d}{contains} (char c, bool cs=T\-R\-U\-E) const 
+\item 
+int \hyperlink{class_q_string_abe7452ce01e2396702f7f158ebf38d22}{contains} (const char $\ast$str, bool cs=T\-R\-U\-E) const 
+\item 
+int \hyperlink{class_q_string_a9f55f57f760c31513e1dd2c71d36890b}{contains} (const \hyperlink{class_q_string}{Q\-String} \&str, bool cs=T\-R\-U\-E) const 
+\item 
+int \hyperlink{class_q_string_aedd4a9c1e1ccbd48eec982dd9e6abb44}{contains} (const \hyperlink{class_q_reg_exp}{Q\-Reg\-Exp} \&) const 
+\item 
+\hyperlink{class_q_string}{Q\-String} \hyperlink{class_q_string_a461696192a2b2b2b65e52bbb07237360}{left} (uint len) const 
+\item 
+\hyperlink{class_q_string}{Q\-String} \hyperlink{class_q_string_a889658a4adf3725b3b6c9e727afb968d}{right} (uint len) const 
+\item 
+\hyperlink{class_q_string}{Q\-String} \hyperlink{class_q_string_a368b85377d242c5b76c9b7c474659712}{mid} (uint index, uint len=0xffffffff) const 
+\item 
+\hyperlink{class_q_string}{Q\-String} \hyperlink{class_q_string_a737e4ee6b7428a3c80ca638f278bbe02}{left\-Justify} (uint width, \hyperlink{class_q_char}{Q\-Char} \hyperlink{class_q_string_add279e13ff7df6ca8650e7d7fa6afc14}{fill}=' ', bool trunc=F\-A\-L\-S\-E) const 
+\item 
+\hyperlink{class_q_string}{Q\-String} \hyperlink{class_q_string_ae683f43f31042fbe8f08c7b2ec78bcb3}{right\-Justify} (uint width, \hyperlink{class_q_char}{Q\-Char} \hyperlink{class_q_string_add279e13ff7df6ca8650e7d7fa6afc14}{fill}=' ', bool trunc=F\-A\-L\-S\-E) const 
+\item 
+\hyperlink{class_q_string}{Q\-String} \hyperlink{class_q_string_a05cb49857d2c462dded19e0c005d6e0e}{lower} () const 
+\item 
+\hyperlink{class_q_string}{Q\-String} \hyperlink{class_q_string_a39b895b169d13cd932efb636a9c8e43f}{upper} () const 
+\item 
+\hyperlink{class_q_string}{Q\-String} \hyperlink{class_q_string_a3a920349770fce0921c6d1c8b390e0de}{strip\-White\-Space} () const 
+\item 
+\hyperlink{class_q_string}{Q\-String} \hyperlink{class_q_string_a1e5f7cddfe90398e6785b40f503d05af}{simplify\-White\-Space} () const 
+\item 
+\hyperlink{class_q_string}{Q\-String} \& \hyperlink{class_q_string_abe3665c200ad705e4cf268a7d91081df}{insert} (uint index, const \hyperlink{class_q_string}{Q\-String} \&)
+\item 
+\hyperlink{class_q_string}{Q\-String} \& \hyperlink{class_q_string_a8c22c6012b77574f78c6f141c79567d1}{insert} (uint index, const \hyperlink{class_q_char}{Q\-Char} $\ast$, uint len)
+\item 
+\hyperlink{class_q_string}{Q\-String} \& \hyperlink{class_q_string_aeb0942a7a4dbaa4aca093afa283ea362}{insert} (uint index, \hyperlink{class_q_char}{Q\-Char})
+\item 
+\hyperlink{class_q_string}{Q\-String} \& \hyperlink{class_q_string_a667802067bb355738ded2067b31182b0}{insert} (uint index, char c)
+\item 
+\hyperlink{class_q_string}{Q\-String} \& \hyperlink{class_q_string_aabf9bf5642d9d0d2dd981efb72d3381f}{append} (char)
+\item 
+\hyperlink{class_q_string}{Q\-String} \& \hyperlink{class_q_string_a212e7dfd5073111079d4039d65521247}{append} (\hyperlink{class_q_char}{Q\-Char})
+\item 
+\hyperlink{class_q_string}{Q\-String} \& \hyperlink{class_q_string_a723ea3a24cd75492d2353f91c8824643}{append} (const \hyperlink{class_q_string}{Q\-String} \&)
+\item 
+\hyperlink{class_q_string}{Q\-String} \& \hyperlink{class_q_string_a87419fc55e3059c82b799fcc4dd8d6ab}{prepend} (char)
+\item 
+\hyperlink{class_q_string}{Q\-String} \& \hyperlink{class_q_string_a6a72632b11e6ff6b08817b01e6c98fec}{prepend} (\hyperlink{class_q_char}{Q\-Char})
+\item 
+\hyperlink{class_q_string}{Q\-String} \& \hyperlink{class_q_string_ad1fabd2b24b24bb771ca6a2e90732592}{prepend} (const \hyperlink{class_q_string}{Q\-String} \&)
+\item 
+\hyperlink{class_q_string}{Q\-String} \& \hyperlink{class_q_string_a4647cd8a50579dbbc029f1d53d51af52}{remove} (uint index, uint len)
+\item 
+\hyperlink{class_q_string}{Q\-String} \& \hyperlink{class_q_string_adad527f16b6d31fee94bd8d8233ede2b}{replace} (uint index, uint len, const \hyperlink{class_q_string}{Q\-String} \&)
+\item 
+\hyperlink{class_q_string}{Q\-String} \& \hyperlink{class_q_string_a17c80b9114f21404471525ccbf19caf4}{replace} (uint index, uint len, const \hyperlink{class_q_char}{Q\-Char} $\ast$, uint clen)
+\item 
+\hyperlink{class_q_string}{Q\-String} \& \hyperlink{class_q_string_a3c5037b5c33cf5a2c3b8b24bb6a42d88}{replace} (const \hyperlink{class_q_reg_exp}{Q\-Reg\-Exp} \&, const \hyperlink{class_q_string}{Q\-String} \&)
+\item 
+short \hyperlink{class_q_string_a25b1c9d62a049c0c8a27f8583e282578}{to\-Short} (bool $\ast$ok=0, int base=10) const 
+\item 
+ushort \hyperlink{class_q_string_aaf4ae4c4d8b05e39f3024baafb11e601}{to\-U\-Short} (bool $\ast$ok=0, int base=10) const 
+\item 
+int \hyperlink{class_q_string_a3196e99dac9c3771a0293f077cef9a65}{to\-Int} (bool $\ast$ok=0, int base=10) const 
+\item 
+uint \hyperlink{class_q_string_a63efec6c9f984c0e2a8937275fffbb2b}{to\-U\-Int} (bool $\ast$ok=0, int base=10) const 
+\item 
+long \hyperlink{class_q_string_af26933f407461f3709af304e5d589518}{to\-Long} (bool $\ast$ok=0, int base=10) const 
+\item 
+ulong \hyperlink{class_q_string_a4ca240b0e2f5b86c5de0a34e240392d1}{to\-U\-Long} (bool $\ast$ok=0, int base=10) const 
+\item 
+float \hyperlink{class_q_string_a8e592b921e86fac8b959c8d4c9f316b6}{to\-Float} (bool $\ast$ok=0) const 
+\item 
+double \hyperlink{class_q_string_a9d4f757398267b7438e3b37268796ff8}{to\-Double} (bool $\ast$ok=0) const 
+\item 
+\hyperlink{class_q_string}{Q\-String} \& \hyperlink{class_q_string_a43b6881602fb1e0760113c83e37eb3a0}{set\-Num} (short, int base=10)
+\item 
+\hyperlink{class_q_string}{Q\-String} \& \hyperlink{class_q_string_a151a1fb07512644e69fc1b530fa5edbd}{set\-Num} (ushort, int base=10)
+\item 
+\hyperlink{class_q_string}{Q\-String} \& \hyperlink{class_q_string_a4ca9cba45d51337e37dd6423abd4e9b7}{set\-Num} (int, int base=10)
+\item 
+\hyperlink{class_q_string}{Q\-String} \& \hyperlink{class_q_string_aa7ef7bdf890844491aefc3f803b020de}{set\-Num} (uint, int base=10)
+\item 
+\hyperlink{class_q_string}{Q\-String} \& \hyperlink{class_q_string_a35bd218b74b3ee76892ff1bf40c43d3d}{set\-Num} (long, int base=10)
+\item 
+\hyperlink{class_q_string}{Q\-String} \& \hyperlink{class_q_string_a89382b0c6dfbd0b84ee0d8e68e37e0ce}{set\-Num} (ulong, int base=10)
+\item 
+\hyperlink{class_q_string}{Q\-String} \& \hyperlink{class_q_string_aadec55751874a59aaeb7cd33eec517db}{set\-Num} (float, char f='g', int prec=6)
+\item 
+\hyperlink{class_q_string}{Q\-String} \& \hyperlink{class_q_string_a15d7f3484c04c35c2f11b111bfe63e20}{set\-Num} (double, char f='g', int prec=6)
+\item 
+void \hyperlink{class_q_string_af2a2e57d170e954267da4cb14fa6736d}{set\-Expand} (uint index, \hyperlink{class_q_char}{Q\-Char} c)
+\item 
+\hyperlink{class_q_string}{Q\-String} \& \hyperlink{class_q_string_ae644e94debcc43991ec46688a3d3551f}{operator+=} (const \hyperlink{class_q_string}{Q\-String} \&str)
+\item 
+\hyperlink{class_q_string}{Q\-String} \& \hyperlink{class_q_string_abd0d9d2cb4725eb0cadaf2e019774bc4}{operator+=} (\hyperlink{class_q_char}{Q\-Char} c)
+\item 
+\hyperlink{class_q_string}{Q\-String} \& \hyperlink{class_q_string_a61f4f43d92f528d4623e300754016322}{operator+=} (char c)
+\item 
+\hyperlink{class_q_char}{Q\-Char} \hyperlink{class_q_string_aeab82c39fe3254c6b27681d55419885f}{at} (uint i) const 
+\item 
+\hyperlink{class_q_char}{Q\-Char} \hyperlink{class_q_string_aaa5543be6fc9dffc6354e4e15a80405c}{operator\mbox{[}$\,$\mbox{]}} (int i) const 
+\item 
+\hyperlink{class_q_char_ref}{Q\-Char\-Ref} \hyperlink{class_q_string_adb3010fb2dd03189d1f3dc4f745feb74}{at} (uint i)
+\item 
+\hyperlink{class_q_char_ref}{Q\-Char\-Ref} \hyperlink{class_q_string_a915ff18570b2ac730154871f7cd440d2}{operator\mbox{[}$\,$\mbox{]}} (int i)
+\item 
+\hyperlink{class_q_char}{Q\-Char} \hyperlink{class_q_string_a409bb66f101af0286f3080feec9f2d13}{constref} (uint i) const 
+\item 
+\hyperlink{class_q_char}{Q\-Char} \& \hyperlink{class_q_string_a24a2c9b9ad269505bef65972756dbeac}{ref} (uint i)
+\item 
+const \hyperlink{class_q_char}{Q\-Char} $\ast$ \hyperlink{class_q_string_a65a250696de2e5cb83a8e01a9603cea0}{unicode} () const 
+\item 
+const char $\ast$ \hyperlink{class_q_string_aadbdae41cf9c6012031dc7996985e1f6}{ascii} () const 
+\item 
+const char $\ast$ \hyperlink{class_q_string_ae1632b670a4297db36e3d0228171a3b6}{latin1} () const 
+\item 
+const unsigned short $\ast$ \hyperlink{class_q_string_aa335352c86d6e44651e98cf3c52356a5}{ucs2} () const 
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_q_string_a6ec04d8d741b6c84495e1dfd385f4be0}{utf8} () const 
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_q_string_a3dec5ae625f368220311bc101e6b7099}{local8\-Bit} () const 
+\item 
+bool \hyperlink{class_q_string_ac8b1d32dbd52d431450c70b151cfa205}{operator!} () const 
+\item 
+\hyperlink{class_q_string}{Q\-String} \& \hyperlink{class_q_string_a8ae405bf0631b85329d4f2d83e5b0937}{set\-Unicode} (const \hyperlink{class_q_char}{Q\-Char} $\ast$\hyperlink{class_q_string_a65a250696de2e5cb83a8e01a9603cea0}{unicode}, uint len)
+\item 
+\hyperlink{class_q_string}{Q\-String} \& \hyperlink{class_q_string_adb45d1286298c0188aa34af6994ce9e1}{set\-Unicode\-Codes} (const ushort $\ast$unicode\-\_\-as\-\_\-ushorts, uint len)
+\item 
+\hyperlink{class_q_string}{Q\-String} \& \hyperlink{class_q_string_a20f95a9c7421a936e941cbacf44a37b1}{set\-Latin1} (const char $\ast$, int len=-\/1)
+\item 
+int \hyperlink{class_q_string_a3e058cacf3fd70cb01fb652dbc7a1118}{compare} (const \hyperlink{class_q_string}{Q\-String} \&s) const 
+\item 
+void \hyperlink{class_q_string_a1718501579e00039de2b0a0d7a489895}{compose} ()
+\item 
+\hyperlink{class_q_char_a224b9163917ac32fc95a60d8c1eec3aa}{Q\-Char\-::\-Direction} \hyperlink{class_q_string_a371ea7ad71eff5a7f21b9a054ef6d017}{basic\-Direction} ()
+\item 
+\hyperlink{class_q_string}{Q\-String} \hyperlink{class_q_string_a3a5f3234c43870084c5115ca1f18c2eb}{visual} (int index=0, int len=-\/1)
+\item 
+const char $\ast$ \hyperlink{class_q_string_a3030b6aaaab96d31eb5b62c44a54aeaf}{data} () const 
+\item 
+bool \hyperlink{class_q_string_a2211b3583a350f8535312fafadfde05b}{starts\-With} (const \hyperlink{class_q_string}{Q\-String} \&) const 
+\end{DoxyCompactItemize}
+\subsection*{Membros públicos estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_q_string}{Q\-String} \hyperlink{class_q_string_a9193f869c7d66907180f53ea5b990404}{number} (long, int base=10)
+\item 
+static \hyperlink{class_q_string}{Q\-String} \hyperlink{class_q_string_ac7dd58912f1c3cb237a958c1cd7a1baa}{number} (ulong, int base=10)
+\item 
+static \hyperlink{class_q_string}{Q\-String} \hyperlink{class_q_string_a1a8973a97d209f6e029f5cf22400da1a}{number} (int, int base=10)
+\item 
+static \hyperlink{class_q_string}{Q\-String} \hyperlink{class_q_string_ab48a21ce65b43a870abe7c797faa29b5}{number} (uint, int base=10)
+\item 
+static \hyperlink{class_q_string}{Q\-String} \hyperlink{class_q_string_a4079d982dfeb3fbcf3b34bf6a418bee8}{number} (double, char f='g', int prec=6)
+\item 
+static \hyperlink{class_q_string}{Q\-String} \hyperlink{class_q_string_a2f74ebff468010de4e68eeb69a925beb}{from\-Latin1} (const char $\ast$, int len=-\/1)
+\item 
+static \hyperlink{class_q_string}{Q\-String} \hyperlink{class_q_string_ac97eeecb223fcec01e36985157a1533f}{from\-Ucs2} (const unsigned short $\ast$\hyperlink{class_q_string_aa335352c86d6e44651e98cf3c52356a5}{ucs2})
+\item 
+static \hyperlink{class_q_string}{Q\-String} \hyperlink{class_q_string_a860d7cc19c5f06337bf3478df15cccd8}{from\-Utf8} (const char $\ast$, int len=-\/1)
+\item 
+static \hyperlink{class_q_string}{Q\-String} \hyperlink{class_q_string_a267119b3ec4e0fbea508ff30baa0412e}{from\-Local8\-Bit} (const char $\ast$, int len=-\/1)
+\item 
+static int \hyperlink{class_q_string_a9b931fe2e75b020a33ae06b4928acadb}{compare} (const \hyperlink{class_q_string}{Q\-String} \&s1, const \hyperlink{class_q_string}{Q\-String} \&s2)
+\end{DoxyCompactItemize}
+\subsection*{Atributos Públicos Estáticos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_q_string_a5df51e70f7b42eaa091b9631462537bb}{static const \hyperlink{struct_q_string_1_1_null}{Null} {\bfseries null} = \{ \}}\label{class_q_string_a5df51e70f7b42eaa091b9631462537bb}
+
+\end{DoxyCompactItemize}
+\subsection*{Amigos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_q_string_aff7e2646af69210685c894cbc1646332}{class {\bfseries Q\-Const\-String}}\label{class_q_string_aff7e2646af69210685c894cbc1646332}
+
+\item 
+Q\-\_\-\-E\-X\-P\-O\-R\-T \hyperlink{class_q_data_stream}{Q\-Data\-Stream} \& \hyperlink{class_q_string_ae8d642385fbe1a96358fe7432baf546b}{operator$>$$>$} (\hyperlink{class_q_data_stream}{Q\-Data\-Stream} \&, \hyperlink{class_q_string}{Q\-String} \&)
+\end{DoxyCompactItemize}
+\subsection*{Funções associadas}
+(Note que não são funções membro) \begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_q_string_acdeb7d77a324fe69b0e5889ff8575400}{operator==} (const \hyperlink{class_q_string}{Q\-String} \&s1, const \hyperlink{class_q_string}{Q\-String} \&s2)
+\item 
+bool \hyperlink{class_q_string_af35a5ca71a731a8ecf66c62a74123be2}{operator==} (const \hyperlink{class_q_string}{Q\-String} \&s1, const char $\ast$s2)
+\item 
+bool \hyperlink{class_q_string_af13dfeb5517343bb511393c74f18a3b6}{operator==} (const char $\ast$s1, const \hyperlink{class_q_string}{Q\-String} \&s2)
+\item 
+bool \hyperlink{class_q_string_aaeae05f02ef07005a07ac285706920dd}{operator!=} (const \hyperlink{class_q_string}{Q\-String} \&s1, const \hyperlink{class_q_string}{Q\-String} \&s2)
+\item 
+bool \hyperlink{class_q_string_a77e694c60b1699442a3f13e8bbc0c4a9}{operator!=} (const \hyperlink{class_q_string}{Q\-String} \&s1, const char $\ast$s2)
+\item 
+bool \hyperlink{class_q_string_aba83e5b91872eeb6af5f55d7b96ab50b}{operator!=} (const char $\ast$s1, const \hyperlink{class_q_string}{Q\-String} \&s2)
+\item 
+bool \hyperlink{class_q_string_abe479c7e9bb723be856c1bcc388fb50f}{operator$<$} (const \hyperlink{class_q_string}{Q\-String} \&s1, const char $\ast$s2)
+\item 
+bool \hyperlink{class_q_string_ad25d50b4f92864191c30a5a76e7894b8}{operator$<$} (const char $\ast$s1, const \hyperlink{class_q_string}{Q\-String} \&s2)
+\item 
+bool \hyperlink{class_q_string_a12eb758cb95c371ba27ef75d82c2ec86}{operator$<$=} (const \hyperlink{class_q_string}{Q\-String} \&s1, const char $\ast$s2)
+\item 
+bool \hyperlink{class_q_string_a98d7107dd1903d01a5fabeab999fe398}{operator$<$=} (const char $\ast$s1, const \hyperlink{class_q_string}{Q\-String} \&s2)
+\item 
+bool \hyperlink{class_q_string_ab0ce893122b9d85769be403013196aed}{operator$>$} (const \hyperlink{class_q_string}{Q\-String} \&s1, const char $\ast$s2)
+\item 
+bool \hyperlink{class_q_string_a382b1ef4a8de8768259b825b534fcda1}{operator$>$} (const char $\ast$s1, const \hyperlink{class_q_string}{Q\-String} \&s2)
+\item 
+bool \hyperlink{class_q_string_a19a6ef539052453895b39db1f25ec5a2}{operator$>$=} (const \hyperlink{class_q_string}{Q\-String} \&s1, const char $\ast$s2)
+\item 
+bool \hyperlink{class_q_string_a9f4787df63780750a94f131e7a35ac6c}{operator$>$=} (const char $\ast$s1, const \hyperlink{class_q_string}{Q\-String} \&s2)
+\item 
+\hyperlink{class_q_string}{Q\-String} \hyperlink{class_q_string_ae485733155e818a24470bab6b39007a3}{operator+} (const \hyperlink{class_q_string}{Q\-String} \&s1, const \hyperlink{class_q_string}{Q\-String} \&s2)
+\item 
+\hyperlink{class_q_string}{Q\-String} \hyperlink{class_q_string_aeebc8da866e999cf9d98f409149a7274}{operator+} (const \hyperlink{class_q_string}{Q\-String} \&s1, const char $\ast$s2)
+\item 
+\hyperlink{class_q_string}{Q\-String} \hyperlink{class_q_string_ad31066c16adb556c4e773939da16a894}{operator+} (const char $\ast$s1, const \hyperlink{class_q_string}{Q\-String} \&s2)
+\item 
+\hyperlink{class_q_string}{Q\-String} \hyperlink{class_q_string_a646dae5a832bf142e3fd6eed4cd29263}{operator+} (const \hyperlink{class_q_string}{Q\-String} \&s, char c)
+\item 
+\hyperlink{class_q_string}{Q\-String} \hyperlink{class_q_string_ab79668b32f01247149267b5b77669165}{operator+} (char c, const \hyperlink{class_q_string}{Q\-String} \&s)
+\item 
+\hyperlink{class_q_data_stream}{Q\-Data\-Stream} \& \hyperlink{class_q_string_a5d8281fc5ce5c2b6e6e9fd2b9f66c32c}{operator$<$$<$} (\hyperlink{class_q_data_stream}{Q\-Data\-Stream} \&s, const \hyperlink{class_q_string}{Q\-String} \&str)
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+The \hyperlink{class_q_string}{Q\-String} class provides an abstraction of Unicode text and the classic \hyperlink{class_c}{C} null-\/terminated char array ({\itshape char$\ast$}). 
+
+\hyperlink{class_q_string}{Q\-String} uses \hyperlink{}{implicit sharing}, and so it is very efficient and easy to use.
+
+In all \hyperlink{class_q_string}{Q\-String} methods that take {\itshape const char$\ast$} parameters, the {\itshape const char$\ast$} is interpreted as a classic C-\/style 0-\/terminated A\-S\-C\-I\-I string. It is legal for the {\itshape const char$\ast$} parameter to be 0. The results are undefined if the {\itshape const char$\ast$} string is not 0-\/terminated. Functions that copy classic \hyperlink{class_c}{C} strings into a \hyperlink{class_q_string}{Q\-String} will not copy the terminating 0-\/character. The \hyperlink{class_q_char}{Q\-Char} array of the \hyperlink{class_q_string}{Q\-String} (as returned by \hyperlink{class_q_string_a65a250696de2e5cb83a8e01a9603cea0}{unicode()}) is not terminated by a null.
+
+\hyperlink{class_a}{A} \hyperlink{class_q_string}{Q\-String} that has not been assigned to anything is {\itshape null}, i.\-e. both the length and data pointer is 0. \hyperlink{class_a}{A} \hyperlink{class_q_string}{Q\-String} that references the empty string (\char`\"{}\char`\"{}, a single '\textbackslash{}0' char) is {\itshape empty}. Both null and empty Q\-Strings are legal parameters to the methods. Assigning {\itshape const char 0} to \hyperlink{class_q_string}{Q\-String} gives a null \hyperlink{class_q_string}{Q\-String}.
+
+Note that if you find that you are mixing usage of \hyperlink{class_q_c_string}{Q\-C\-String}, \hyperlink{class_q_string}{Q\-String}, and Q\-Byte\-Array, this causes lots of unnecessary copying and might indicate that the true nature of the data you are dealing with is uncertain. If the data is N\-U\-L-\/terminated 8-\/bit data, use \hyperlink{class_q_c_string}{Q\-C\-String}; if it is unterminated (ie. contains N\-U\-Ls) 8-\/bit data, use Q\-Byte\-Array; if it is text, use \hyperlink{class_q_string}{Q\-String}.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_char}{Q\-Char} \hyperlink{}{Shared classes} 
+\end{DoxySeeAlso}
+
+
+\subsection{Documentação dos Construtores \& Destrutor}
+\hypertarget{class_q_string_aeb800ad13815ba67746c8591df9e0ed9}{\index{Q\-String@{Q\-String}!Q\-String@{Q\-String}}
+\index{Q\-String@{Q\-String}!QString@{Q\-String}}
+\subsubsection[{Q\-String}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_string_aeb800ad13815ba67746c8591df9e0ed9}
+Constructs a null string. \begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_string_ac02f2a4d7312eb91f40980adfd4e31b2}{is\-Null()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_string_a944ed2a8cf72828068c78177e3fb2614}{\index{Q\-String@{Q\-String}!Q\-String@{Q\-String}}
+\index{Q\-String@{Q\-String}!QString@{Q\-String}}
+\subsubsection[{Q\-String}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} (
+\begin{DoxyParamCaption}
+\item[{{\bf Q\-Char}}]{ch}
+\end{DoxyParamCaption}
+)}}\label{class_q_string_a944ed2a8cf72828068c78177e3fb2614}
+Constructs a string containing the one character {\itshape ch}. \hypertarget{class_q_string_a46b40a258d3e2e434114b6b7dc59f4ed}{\index{Q\-String@{Q\-String}!Q\-String@{Q\-String}}
+\index{Q\-String@{Q\-String}!QString@{Q\-String}}
+\subsubsection[{Q\-String}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{s}
+\end{DoxyParamCaption}
+)}}\label{class_q_string_a46b40a258d3e2e434114b6b7dc59f4ed}
+Constructs an implicitly-\/shared copy of {\itshape s}. \hypertarget{class_q_string_a03ece70f85dbcaa34e536cdb087620bc}{\index{Q\-String@{Q\-String}!Q\-String@{Q\-String}}
+\index{Q\-String@{Q\-String}!QString@{Q\-String}}
+\subsubsection[{Q\-String}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-Byte\-Array} \&}]{ba}
+\end{DoxyParamCaption}
+)}}\label{class_q_string_a03ece70f85dbcaa34e536cdb087620bc}
+Constructs a string that is a deep copy of {\itshape ba} interpreted as a classic \hyperlink{class_c}{C} string. \hypertarget{class_q_string_a5f1b101c1e8f83726d05756b90b487b6}{\index{Q\-String@{Q\-String}!Q\-String@{Q\-String}}
+\index{Q\-String@{Q\-String}!QString@{Q\-String}}
+\subsubsection[{Q\-String}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-Char} $\ast$}]{unicode, }
+\item[{uint}]{length}
+\end{DoxyParamCaption}
+)}}\label{class_q_string_a5f1b101c1e8f83726d05756b90b487b6}
+Constructs a string that is a deep copy of the first {\itshape length} \hyperlink{class_q_char}{Q\-Char} in the array {\itshape unicode}.
+
+If {\itshape unicode} and {\itshape length} are 0, a null string is created.
+
+If only {\itshape unicode} is 0, the string is empty, but has {\itshape length} characters of space preallocated -\/ \hyperlink{class_q_string}{Q\-String} expands automatically anyway, but this may speed some cases up a little.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_string_ac02f2a4d7312eb91f40980adfd4e31b2}{is\-Null()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_string_add0bac07acb536df7be191ab9959f709}{\index{Q\-String@{Q\-String}!Q\-String@{Q\-String}}
+\index{Q\-String@{Q\-String}!QString@{Q\-String}}
+\subsubsection[{Q\-String}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{str}
+\end{DoxyParamCaption}
+)}}\label{class_q_string_add0bac07acb536df7be191ab9959f709}
+Constructs a string that is a deep copy of {\itshape str}, interpreted as a classic \hyperlink{class_c}{C} string.
+
+If {\itshape str} is 0 a null string is created.
+
+This is a cast constructor, but it is perfectly safe\-: converting a Latin1 const char$\ast$ to \hyperlink{class_q_string}{Q\-String} preserves all the information. You can disable this constructor by defining Q\-T\-\_\-\-N\-O\-\_\-\-C\-A\-S\-T\-\_\-\-A\-S\-C\-I\-I when you compile your applications. You can also make \hyperlink{class_q_string}{Q\-String} objects by using \hyperlink{class_q_string_a20f95a9c7421a936e941cbacf44a37b1}{set\-Latin1()}/from\-Latin1(), or \hyperlink{class_q_string_a267119b3ec4e0fbea508ff30baa0412e}{from\-Local8\-Bit()}, \hyperlink{class_q_string_a860d7cc19c5f06337bf3478df15cccd8}{from\-Utf8()}, or whatever encoding is appropriate for the 8-\/bit data you have.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_string_ac02f2a4d7312eb91f40980adfd4e31b2}{is\-Null()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_string_ae63f8e6e878c39e64cdf75258dc862fc}{\index{Q\-String@{Q\-String}!$\sim$\-Q\-String@{$\sim$\-Q\-String}}
+\index{$\sim$\-Q\-String@{$\sim$\-Q\-String}!QString@{Q\-String}}
+\subsubsection[{$\sim$\-Q\-String}]{\setlength{\rightskip}{0pt plus 5cm}$\sim${\bf Q\-String} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_string_ae63f8e6e878c39e64cdf75258dc862fc}
+Destroys the string and frees the \char`\"{}real\char`\"{} string, if this was the last copy of that string. 
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_q_string_aabf9bf5642d9d0d2dd981efb72d3381f}{\index{Q\-String@{Q\-String}!append@{append}}
+\index{append@{append}!QString@{Q\-String}}
+\subsubsection[{append}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} \& append (
+\begin{DoxyParamCaption}
+\item[{char}]{ch}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_string_aabf9bf5642d9d0d2dd981efb72d3381f}
+Appends {\itshape ch} to the string and returns a reference to the result. Equivalent to \hyperlink{class_q_string_ae644e94debcc43991ec46688a3d3551f}{operator+=()}. \hypertarget{class_q_string_a212e7dfd5073111079d4039d65521247}{\index{Q\-String@{Q\-String}!append@{append}}
+\index{append@{append}!QString@{Q\-String}}
+\subsubsection[{append}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} \& append (
+\begin{DoxyParamCaption}
+\item[{{\bf Q\-Char}}]{ch}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_string_a212e7dfd5073111079d4039d65521247}
+Appends {\itshape ch} to the string and returns a reference to the result. Equivalent to \hyperlink{class_q_string_ae644e94debcc43991ec46688a3d3551f}{operator+=()}. \hypertarget{class_q_string_a723ea3a24cd75492d2353f91c8824643}{\index{Q\-String@{Q\-String}!append@{append}}
+\index{append@{append}!QString@{Q\-String}}
+\subsubsection[{append}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} \& append (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{str}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_string_a723ea3a24cd75492d2353f91c8824643}
+Appends {\itshape str} to the string and returns a reference to the result. Equivalent to \hyperlink{class_q_string_ae644e94debcc43991ec46688a3d3551f}{operator+=()}. \hypertarget{class_q_string_a4adcdaef1eca41a976263df7f5aa216f}{\index{Q\-String@{Q\-String}!arg@{arg}}
+\index{arg@{arg}!QString@{Q\-String}}
+\subsubsection[{arg}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} arg (
+\begin{DoxyParamCaption}
+\item[{long}]{a, }
+\item[{int}]{fieldwidth = {\ttfamily 0}, }
+\item[{int}]{base = {\ttfamily 10}}
+\end{DoxyParamCaption}
+) const}}\label{class_q_string_a4adcdaef1eca41a976263df7f5aa216f}
+Este é um método provido por conveniência. Ele difere do método acima apenas na lista de argumentos que devem ser utilizados.
+
+{\itshape a} is expressed in to {\itshape base} notation, which is decimal by default and must be in the range 2-\/36 inclusive. \hypertarget{class_q_string_ae7d16a0a79390b116b8d51795aab1f86}{\index{Q\-String@{Q\-String}!arg@{arg}}
+\index{arg@{arg}!QString@{Q\-String}}
+\subsubsection[{arg}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} arg (
+\begin{DoxyParamCaption}
+\item[{ulong}]{a, }
+\item[{int}]{fieldwidth = {\ttfamily 0}, }
+\item[{int}]{base = {\ttfamily 10}}
+\end{DoxyParamCaption}
+) const}}\label{class_q_string_ae7d16a0a79390b116b8d51795aab1f86}
+Este é um método provido por conveniência. Ele difere do método acima apenas na lista de argumentos que devem ser utilizados.
+
+{\itshape a} is expressed in to {\itshape base} notation, which is decimal by default and must be in the range 2-\/36 inclusive. \hypertarget{class_q_string_a97470b756bd340018edb6391f31baed7}{\index{Q\-String@{Q\-String}!arg@{arg}}
+\index{arg@{arg}!QString@{Q\-String}}
+\subsubsection[{arg}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} arg (
+\begin{DoxyParamCaption}
+\item[{int}]{a, }
+\item[{int}]{fieldwidth = {\ttfamily 0}, }
+\item[{int}]{base = {\ttfamily 10}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_string_a97470b756bd340018edb6391f31baed7}
+Este é um método provido por conveniência. Ele difere do método acima apenas na lista de argumentos que devem ser utilizados.
+
+{\itshape a} is expressed in to {\itshape base} notation, which is decimal by default and must be in the range 2-\/36 inclusive. \hypertarget{class_q_string_a11febd14403c92b70ec926a81aece5ff}{\index{Q\-String@{Q\-String}!arg@{arg}}
+\index{arg@{arg}!QString@{Q\-String}}
+\subsubsection[{arg}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} arg (
+\begin{DoxyParamCaption}
+\item[{uint}]{a, }
+\item[{int}]{fieldwidth = {\ttfamily 0}, }
+\item[{int}]{base = {\ttfamily 10}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_string_a11febd14403c92b70ec926a81aece5ff}
+Este é um método provido por conveniência. Ele difere do método acima apenas na lista de argumentos que devem ser utilizados.
+
+{\itshape a} is expressed in to {\itshape base} notation, which is decimal by default and must be in the range 2-\/36 inclusive. \hypertarget{class_q_string_a5173d8f86476978ae4ecd8cc4fa62154}{\index{Q\-String@{Q\-String}!arg@{arg}}
+\index{arg@{arg}!QString@{Q\-String}}
+\subsubsection[{arg}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} arg (
+\begin{DoxyParamCaption}
+\item[{short}]{a, }
+\item[{int}]{fieldwidth = {\ttfamily 0}, }
+\item[{int}]{base = {\ttfamily 10}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_string_a5173d8f86476978ae4ecd8cc4fa62154}
+Este é um método provido por conveniência. Ele difere do método acima apenas na lista de argumentos que devem ser utilizados.
+
+{\itshape a} is expressed in to {\itshape base} notation, which is decimal by default and must be in the range 2-\/36 inclusive. \hypertarget{class_q_string_a335c0cd9985bffad337eee970eb77486}{\index{Q\-String@{Q\-String}!arg@{arg}}
+\index{arg@{arg}!QString@{Q\-String}}
+\subsubsection[{arg}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} arg (
+\begin{DoxyParamCaption}
+\item[{ushort}]{a, }
+\item[{int}]{fieldwidth = {\ttfamily 0}, }
+\item[{int}]{base = {\ttfamily 10}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_string_a335c0cd9985bffad337eee970eb77486}
+Este é um método provido por conveniência. Ele difere do método acima apenas na lista de argumentos que devem ser utilizados.
+
+{\itshape a} is expressed in to {\itshape base} notation, which is decimal by default and must be in the range 2-\/36 inclusive. \hypertarget{class_q_string_a882331b21bc422cda18472f6f2a455b0}{\index{Q\-String@{Q\-String}!arg@{arg}}
+\index{arg@{arg}!QString@{Q\-String}}
+\subsubsection[{arg}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} arg (
+\begin{DoxyParamCaption}
+\item[{char}]{a, }
+\item[{int}]{fieldwidth = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const}}\label{class_q_string_a882331b21bc422cda18472f6f2a455b0}
+Este é um método provido por conveniência. Ele difere do método acima apenas na lista de argumentos que devem ser utilizados.
+
+{\itshape a} is assumed to be in the Latin1 character set. \hypertarget{class_q_string_a3de53812b85729641e5db7415ff797f2}{\index{Q\-String@{Q\-String}!arg@{arg}}
+\index{arg@{arg}!QString@{Q\-String}}
+\subsubsection[{arg}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} arg (
+\begin{DoxyParamCaption}
+\item[{{\bf Q\-Char}}]{a, }
+\item[{int}]{fieldwidth = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const}}\label{class_q_string_a3de53812b85729641e5db7415ff797f2}
+Este é um método provido por conveniência. Ele difere do método acima apenas na lista de argumentos que devem ser utilizados. \hypertarget{class_q_string_a3e1f2e49206972c13d69b278b56a76f6}{\index{Q\-String@{Q\-String}!arg@{arg}}
+\index{arg@{arg}!QString@{Q\-String}}
+\subsubsection[{arg}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} arg (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{a, }
+\item[{int}]{fieldwidth = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const}}\label{class_q_string_a3e1f2e49206972c13d69b278b56a76f6}
+Returns a string equal to this one, but with the lowest-\/numbered occurrence of {\ttfamily i} (for a positive integer i) replaced by {\itshape a}.
+
+
+\begin{DoxyCode}
+label.setText( tr(\textcolor{stringliteral}{"Rename %1 to %2?"}).\hyperlink{class_q_string_a4adcdaef1eca41a976263df7f5aa216f}{arg}(oldName).\hyperlink{class_q_string_a4adcdaef1eca41a976263df7f5aa216f}{arg}(newName) );
+\end{DoxyCode}
+
+
+{\itshape fieldwidth} is the minimum amount of space {\itshape a} is padded to. \hyperlink{class_a}{A} positive value produces right-\/aligned text, while a negative value produces left aligned text.
+
+\begin{DoxyWarning}{Aviso}
+Using \hyperlink{class_q_string_a4adcdaef1eca41a976263df7f5aa216f}{arg()} for constructing \char`\"{}real\char`\"{} sentences programmatically is likely to lead to translation problems. Inserting objects like numbers or file names is fairly safe.
+
+Relying on spaces to create alignment is prone to lead to translation problems.
+\end{DoxyWarning}
+If there is no {\ttfamily i} pattern, a warning message (q\-Warning()) is printed and the text as appended at the end of the string. This is error recovery and should not occur in correct code.
+
+\begin{DoxySeeAlso}{Veja também}
+Q\-Object\-::tr() 
+\end{DoxySeeAlso}
+\hypertarget{class_q_string_a3574bcdc4ea9270879a75eb5695043f2}{\index{Q\-String@{Q\-String}!arg@{arg}}
+\index{arg@{arg}!QString@{Q\-String}}
+\subsubsection[{arg}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} arg (
+\begin{DoxyParamCaption}
+\item[{double}]{a, }
+\item[{int}]{fieldwidth = {\ttfamily 0}, }
+\item[{char}]{fmt = {\ttfamily 'g'}, }
+\item[{int}]{prec = {\ttfamily -\/1}}
+\end{DoxyParamCaption}
+) const}}\label{class_q_string_a3574bcdc4ea9270879a75eb5695043f2}
+Este é um método provido por conveniência. Ele difere do método acima apenas na lista de argumentos que devem ser utilizados.
+
+{\itshape is} formatted according to the {\itshape fmt} format specified, which is 'g' by default and can be any of 'f', 'F', 'e', '\hyperlink{class_e}{E}', 'g' or 'G', all of which have the same meaning as for \hyperlink{class_q_string_a34d369803a6568a461041b34c9ed33d6}{sprintf()}. {\itshape prec} determines the precision, just as for \hyperlink{class_q_string_a9193f869c7d66907180f53ea5b990404}{number()} and \hyperlink{class_q_string_a34d369803a6568a461041b34c9ed33d6}{sprintf()}. \hypertarget{class_q_string_aadbdae41cf9c6012031dc7996985e1f6}{\index{Q\-String@{Q\-String}!ascii@{ascii}}
+\index{ascii@{ascii}!QString@{Q\-String}}
+\subsubsection[{ascii}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ ascii (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_q_string_aadbdae41cf9c6012031dc7996985e1f6}
+This functions simply calls \hyperlink{class_q_string_ae1632b670a4297db36e3d0228171a3b6}{latin1()} and returns the result. \hypertarget{class_q_string_aeab82c39fe3254c6b27681d55419885f}{\index{Q\-String@{Q\-String}!at@{at}}
+\index{at@{at}!QString@{Q\-String}}
+\subsubsection[{at}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Char} at (
+\begin{DoxyParamCaption}
+\item[{uint}]{i}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_string_aeab82c39fe3254c6b27681d55419885f}
+Returns the character at {\itshape i}, or 0 if {\itshape i} is beyond the length of the string.
+
+Note\-: If this \hyperlink{class_q_string}{Q\-String} is not const or const\&, the non-\/const \hyperlink{class_q_string_aeab82c39fe3254c6b27681d55419885f}{at()} will be used instead, which will expand the string if {\itshape i} is beyond the length of the string. \hypertarget{class_q_string_adb3010fb2dd03189d1f3dc4f745feb74}{\index{Q\-String@{Q\-String}!at@{at}}
+\index{at@{at}!QString@{Q\-String}}
+\subsubsection[{at}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Char\-Ref} at (
+\begin{DoxyParamCaption}
+\item[{uint}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_string_adb3010fb2dd03189d1f3dc4f745feb74}
+Returns a reference to the character at {\itshape i}, expanding the string with Q\-Char\-::null if necessary. The resulting reference can then be assigned to, or otherwise used immediately, but becomes invalid once further modifications are made to the string. \hypertarget{class_q_string_a371ea7ad71eff5a7f21b9a054ef6d017}{\index{Q\-String@{Q\-String}!basic\-Direction@{basic\-Direction}}
+\index{basic\-Direction@{basic\-Direction}!QString@{Q\-String}}
+\subsubsection[{basic\-Direction}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Char\-::\-Direction} basic\-Direction (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_q_string_a371ea7ad71eff5a7f21b9a054ef6d017}
+This function returns the basic directionality of the string (Q\-Char\-::\-Dir\-R for right to left and Q\-Char\-::\-Dir\-L for left to right). Useful to find the right alignment. \hypertarget{class_q_string_a3e058cacf3fd70cb01fb652dbc7a1118}{\index{Q\-String@{Q\-String}!compare@{compare}}
+\index{compare@{compare}!QString@{Q\-String}}
+\subsubsection[{compare}]{\setlength{\rightskip}{0pt plus 5cm}int compare (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{s}
+\end{DoxyParamCaption}
+) const}}\label{class_q_string_a3e058cacf3fd70cb01fb652dbc7a1118}
+Compares this string to {\itshape s}, returning an integer less than, equal to, or greater than zero if it is, respectively, lexically less than, equal to, or greater than {\itshape s}. \hypertarget{class_q_string_a9b931fe2e75b020a33ae06b4928acadb}{\index{Q\-String@{Q\-String}!compare@{compare}}
+\index{compare@{compare}!QString@{Q\-String}}
+\subsubsection[{compare}]{\setlength{\rightskip}{0pt plus 5cm}int compare (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{s1, }
+\item[{const {\bf Q\-String} \&}]{s2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_q_string_a9b931fe2e75b020a33ae06b4928acadb}
+Compare {\itshape s1} to {\itshape s2} returning an integer less than, equal to, or greater than zero if s1 is, respectively, lexically less than, equal to, or greater than s2. \hypertarget{class_q_string_a1718501579e00039de2b0a0d7a489895}{\index{Q\-String@{Q\-String}!compose@{compose}}
+\index{compose@{compose}!QString@{Q\-String}}
+\subsubsection[{compose}]{\setlength{\rightskip}{0pt plus 5cm}void compose (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_q_string_a1718501579e00039de2b0a0d7a489895}
+Note that this function is not supported in Qt 2.\-0, and is merely for experimental and illustrative purposes. It is mainly of interest to those experimenting with Arabic and other composition-\/rich texts.
+
+Applies possible ligatures to a \hyperlink{class_q_string}{Q\-String}, useful when composition-\/rich text requires rendering with glyph-\/poor fonts, but also makes compositions such as \hyperlink{class_q_char}{Q\-Char(0x0041)} ('\hyperlink{class_a}{A}') and \hyperlink{class_q_char}{Q\-Char(0x0308)} (Unicode accent diaresis) giving \hyperlink{class_q_char}{Q\-Char(0x00c4)} (German \hyperlink{class_a}{A} Umlaut). \hypertarget{class_q_string_a409bb66f101af0286f3080feec9f2d13}{\index{Q\-String@{Q\-String}!constref@{constref}}
+\index{constref@{constref}!QString@{Q\-String}}
+\subsubsection[{constref}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Char} constref (
+\begin{DoxyParamCaption}
+\item[{uint}]{i}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_string_a409bb66f101af0286f3080feec9f2d13}
+Equivalent to at(i), this returns the \hyperlink{class_q_char}{Q\-Char} at {\itshape i} by value.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_string_a24a2c9b9ad269505bef65972756dbeac}{ref()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_string_ab8edfc96baa26c599be9a4c465723ed2}{\index{Q\-String@{Q\-String}!contains@{contains}}
+\index{contains@{contains}!QString@{Q\-String}}
+\subsubsection[{contains}]{\setlength{\rightskip}{0pt plus 5cm}int contains (
+\begin{DoxyParamCaption}
+\item[{{\bf Q\-Char}}]{c, }
+\item[{bool}]{cs = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+) const}}\label{class_q_string_ab8edfc96baa26c599be9a4c465723ed2}
+Returns the number of times the character {\itshape c} occurs in the string.
+
+The match is case sensitive if {\itshape cs} is T\-R\-U\-E, or case insensitive if {\itshape cs} is F\-A\-L\-S\-E. \hypertarget{class_q_string_a2ff9ac285923aa8c6f798a030730b80d}{\index{Q\-String@{Q\-String}!contains@{contains}}
+\index{contains@{contains}!QString@{Q\-String}}
+\subsubsection[{contains}]{\setlength{\rightskip}{0pt plus 5cm}int contains (
+\begin{DoxyParamCaption}
+\item[{char}]{c, }
+\item[{bool}]{cs = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_string_a2ff9ac285923aa8c6f798a030730b80d}
+Este é um método provido por conveniência. Ele difere do método acima apenas na lista de argumentos que devem ser utilizados. \hypertarget{class_q_string_abe7452ce01e2396702f7f158ebf38d22}{\index{Q\-String@{Q\-String}!contains@{contains}}
+\index{contains@{contains}!QString@{Q\-String}}
+\subsubsection[{contains}]{\setlength{\rightskip}{0pt plus 5cm}int contains (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{str, }
+\item[{bool}]{cs = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+) const}}\label{class_q_string_abe7452ce01e2396702f7f158ebf38d22}
+Este é um método provido por conveniência. Ele difere do método acima apenas na lista de argumentos que devem ser utilizados. \hypertarget{class_q_string_a9f55f57f760c31513e1dd2c71d36890b}{\index{Q\-String@{Q\-String}!contains@{contains}}
+\index{contains@{contains}!QString@{Q\-String}}
+\subsubsection[{contains}]{\setlength{\rightskip}{0pt plus 5cm}int contains (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{str, }
+\item[{bool}]{cs = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+) const}}\label{class_q_string_a9f55f57f760c31513e1dd2c71d36890b}
+Returns the number of times {\itshape str} occurs in the string.
+
+The match is case sensitive if {\itshape cs} is T\-R\-U\-E, or case insensitive if {\itshape cs} is F\-A\-L\-S\-E.
+
+This function counts overlapping substrings, for example, \char`\"{}banana\char`\"{} contains two occurrences of \char`\"{}ana\char`\"{}.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_string_aab366beeaa42b1d37be6a9775e2de18b}{find\-Rev()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_string_aedd4a9c1e1ccbd48eec982dd9e6abb44}{\index{Q\-String@{Q\-String}!contains@{contains}}
+\index{contains@{contains}!QString@{Q\-String}}
+\subsubsection[{contains}]{\setlength{\rightskip}{0pt plus 5cm}int contains (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-Reg\-Exp} \&}]{rx}
+\end{DoxyParamCaption}
+) const}}\label{class_q_string_aedd4a9c1e1ccbd48eec982dd9e6abb44}
+Counts the number of overlapping occurrences of {\itshape rx} in the string.
+
+\hyperlink{struct_example}{Example}\-: 
+\begin{DoxyCode}
+\hyperlink{class_q_string}{QString} s = \textcolor{stringliteral}{"banana and panama"};
+\hyperlink{class_q_reg_exp}{QRegExp} r = \hyperlink{class_q_reg_exp}{QRegExp}(\textcolor{stringliteral}{"a[nm]a"}, TRUE, FALSE);
+s.\hyperlink{class_q_string_ab8edfc96baa26c599be9a4c465723ed2}{contains}( r );              \textcolor{comment}{// 4 matches}
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_string_acca4eda6c3d39e174d06ad9a556be100}{find()} \hyperlink{class_q_string_aab366beeaa42b1d37be6a9775e2de18b}{find\-Rev()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_string_a54e55577945c7f93818f5ceba792dc5a}{\index{Q\-String@{Q\-String}!copy@{copy}}
+\index{copy@{copy}!QString@{Q\-String}}
+\subsubsection[{copy}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} copy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_string_a54e55577945c7f93818f5ceba792dc5a}
+Returns a deep copy of this string.
+
+Doing this is redundant in Qt 2.\-x, since \hyperlink{class_q_string}{Q\-String} is implicitly shared, and so will automatically be deeply copied as necessary. \hypertarget{class_q_string_a3030b6aaaab96d31eb5b62c44a54aeaf}{\index{Q\-String@{Q\-String}!data@{data}}
+\index{data@{data}!QString@{Q\-String}}
+\subsubsection[{data}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_string_a3030b6aaaab96d31eb5b62c44a54aeaf}
+Returns a pointer to a 0-\/terminated classic \hyperlink{class_c}{C} string.
+
+In Qt 1.\-x, this returned a char$\ast$ allowing direct manipulation of the string as a sequence of bytes. In Qt 2.\-x where \hyperlink{class_q_string}{Q\-String} is a Unicode string, char$\ast$ conversion constructs a temporary string, and hence direct character operations are meaningless. \hypertarget{class_q_string_add279e13ff7df6ca8650e7d7fa6afc14}{\index{Q\-String@{Q\-String}!fill@{fill}}
+\index{fill@{fill}!QString@{Q\-String}}
+\subsubsection[{fill}]{\setlength{\rightskip}{0pt plus 5cm}void fill (
+\begin{DoxyParamCaption}
+\item[{{\bf Q\-Char}}]{c, }
+\item[{int}]{len = {\ttfamily -\/1}}
+\end{DoxyParamCaption}
+)}}\label{class_q_string_add279e13ff7df6ca8650e7d7fa6afc14}
+Fills the string with {\itshape len} characters of value {\itshape c}.
+
+If {\itshape len} is negative, the current string length is used. \hypertarget{class_q_string_acca4eda6c3d39e174d06ad9a556be100}{\index{Q\-String@{Q\-String}!find@{find}}
+\index{find@{find}!QString@{Q\-String}}
+\subsubsection[{find}]{\setlength{\rightskip}{0pt plus 5cm}int find (
+\begin{DoxyParamCaption}
+\item[{{\bf Q\-Char}}]{c, }
+\item[{int}]{index = {\ttfamily 0}, }
+\item[{bool}]{cs = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+) const}}\label{class_q_string_acca4eda6c3d39e174d06ad9a556be100}
+Finds the first occurrence of the character {\itshape c}, starting at position {\itshape index}. If {\itshape index} is -\/1, the search starts at the last character; if -\/2, at the next to last character; etc.
+
+The search is case sensitive if {\itshape cs} is T\-R\-U\-E, or case insensitive if {\itshape cs} is F\-A\-L\-S\-E.
+
+Returns the position of {\itshape c}, or -\/1 if {\itshape c} could not be found. \hypertarget{class_q_string_ad64e3aef2a281ce7550aee1970a86a7e}{\index{Q\-String@{Q\-String}!find@{find}}
+\index{find@{find}!QString@{Q\-String}}
+\subsubsection[{find}]{\setlength{\rightskip}{0pt plus 5cm}int find (
+\begin{DoxyParamCaption}
+\item[{char}]{c, }
+\item[{int}]{index = {\ttfamily 0}, }
+\item[{bool}]{cs = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_string_ad64e3aef2a281ce7550aee1970a86a7e}
+Este é um método provido por conveniência. Ele difere do método acima apenas na lista de argumentos que devem ser utilizados. \hypertarget{class_q_string_a026b817c9714631b0317ecd313441cab}{\index{Q\-String@{Q\-String}!find@{find}}
+\index{find@{find}!QString@{Q\-String}}
+\subsubsection[{find}]{\setlength{\rightskip}{0pt plus 5cm}int find (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{str, }
+\item[{int}]{index = {\ttfamily 0}, }
+\item[{bool}]{cs = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+) const}}\label{class_q_string_a026b817c9714631b0317ecd313441cab}
+Finds the first occurrence of the string {\itshape str}, starting at position {\itshape index}. If {\itshape index} is -\/1, the search starts at the last character; if -\/2, at the next to last character; etc.
+
+The search is case sensitive if {\itshape cs} is T\-R\-U\-E, or case insensitive if {\itshape cs} is F\-A\-L\-S\-E.
+
+Returns the position of {\itshape str}, or -\/1 if {\itshape str} could not be found. \hypertarget{class_q_string_a7d7d4fe2b8d9279521d5b89fbde1052d}{\index{Q\-String@{Q\-String}!find@{find}}
+\index{find@{find}!QString@{Q\-String}}
+\subsubsection[{find}]{\setlength{\rightskip}{0pt plus 5cm}int find (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-Reg\-Exp} \&}]{rx, }
+\item[{int}]{index = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const}}\label{class_q_string_a7d7d4fe2b8d9279521d5b89fbde1052d}
+Finds the first occurrence of the regular expression {\itshape rx}, starting at position {\itshape index}. If {\itshape index} is -\/1, the search starts at the last character; if -\/2, at the next to last character; etc.
+
+Returns the position of the next match, or -\/1 if {\itshape rx} was not found.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_string_aab366beeaa42b1d37be6a9775e2de18b}{find\-Rev()} \hyperlink{class_q_string_adad527f16b6d31fee94bd8d8233ede2b}{replace()} \hyperlink{class_q_string_ab8edfc96baa26c599be9a4c465723ed2}{contains()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_string_a0e69aba9558d2d7ce78ad43510c44c47}{\index{Q\-String@{Q\-String}!find@{find}}
+\index{find@{find}!QString@{Q\-String}}
+\subsubsection[{find}]{\setlength{\rightskip}{0pt plus 5cm}int find (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{str, }
+\item[{int}]{index = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_string_a0e69aba9558d2d7ce78ad43510c44c47}
+Equivalent to find(\hyperlink{class_q_string}{Q\-String(str)}, index). \hypertarget{class_q_string_aab366beeaa42b1d37be6a9775e2de18b}{\index{Q\-String@{Q\-String}!find\-Rev@{find\-Rev}}
+\index{find\-Rev@{find\-Rev}!QString@{Q\-String}}
+\subsubsection[{find\-Rev}]{\setlength{\rightskip}{0pt plus 5cm}int find\-Rev (
+\begin{DoxyParamCaption}
+\item[{{\bf Q\-Char}}]{c, }
+\item[{int}]{index = {\ttfamily -\/1}, }
+\item[{bool}]{cs = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+) const}}\label{class_q_string_aab366beeaa42b1d37be6a9775e2de18b}
+Finds the first occurrence of the character {\itshape c}, starting at position {\itshape index} and searching backwards. If {\itshape index} is -\/1, the search starts at the last character; if -\/2, at the next to last character; etc.
+
+The search is case sensitive if {\itshape cs} is T\-R\-U\-E, or case insensitive if {\itshape cs} is F\-A\-L\-S\-E.
+
+Returns the position of {\itshape c}, or -\/1 if {\itshape c} could not be found. \hypertarget{class_q_string_a1c9c5fa7edcc9f59b7ad419554a31270}{\index{Q\-String@{Q\-String}!find\-Rev@{find\-Rev}}
+\index{find\-Rev@{find\-Rev}!QString@{Q\-String}}
+\subsubsection[{find\-Rev}]{\setlength{\rightskip}{0pt plus 5cm}int find\-Rev (
+\begin{DoxyParamCaption}
+\item[{char}]{c, }
+\item[{int}]{index = {\ttfamily -\/1}, }
+\item[{bool}]{cs = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_string_a1c9c5fa7edcc9f59b7ad419554a31270}
+Este é um método provido por conveniência. Ele difere do método acima apenas na lista de argumentos que devem ser utilizados. \hypertarget{class_q_string_a39983b1220ebb1493284ca4fa0af4752}{\index{Q\-String@{Q\-String}!find\-Rev@{find\-Rev}}
+\index{find\-Rev@{find\-Rev}!QString@{Q\-String}}
+\subsubsection[{find\-Rev}]{\setlength{\rightskip}{0pt plus 5cm}int find\-Rev (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{str, }
+\item[{int}]{index = {\ttfamily -\/1}, }
+\item[{bool}]{cs = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+) const}}\label{class_q_string_a39983b1220ebb1493284ca4fa0af4752}
+Finds the first occurrence of the string {\itshape str}, starting at position {\itshape index} and searching backwards. If {\itshape index} is -\/1, the search starts at the last character; -\/2, at the next to last character; etc.
+
+The search is case sensitive if {\itshape cs} is T\-R\-U\-E, or case insensitive if {\itshape cs} is F\-A\-L\-S\-E.
+
+Returns the position of {\itshape str}, or -\/1 if {\itshape str} could not be found. \hypertarget{class_q_string_ac8a7fd641cbd6e1d9704c2a37547f7dd}{\index{Q\-String@{Q\-String}!find\-Rev@{find\-Rev}}
+\index{find\-Rev@{find\-Rev}!QString@{Q\-String}}
+\subsubsection[{find\-Rev}]{\setlength{\rightskip}{0pt plus 5cm}int find\-Rev (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-Reg\-Exp} \&}]{rx, }
+\item[{int}]{index = {\ttfamily -\/1}}
+\end{DoxyParamCaption}
+) const}}\label{class_q_string_ac8a7fd641cbd6e1d9704c2a37547f7dd}
+Finds the first occurrence of the regular expression {\itshape rx}, starting at position {\itshape index} and searching backwards. If {\itshape index} is -\/1, the search starts at the last character; if -\/2, at the next to last character; etc.
+
+Returns the position of the next match (backwards), or -\/1 if {\itshape rx} was not found.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_string_acca4eda6c3d39e174d06ad9a556be100}{find()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_string_a4be04fa13607acd10f329bcf318f2c42}{\index{Q\-String@{Q\-String}!find\-Rev@{find\-Rev}}
+\index{find\-Rev@{find\-Rev}!QString@{Q\-String}}
+\subsubsection[{find\-Rev}]{\setlength{\rightskip}{0pt plus 5cm}int find\-Rev (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{str, }
+\item[{int}]{index = {\ttfamily -\/1}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_string_a4be04fa13607acd10f329bcf318f2c42}
+Equivalent to find\-Rev(\hyperlink{class_q_string}{Q\-String(str)}, index). \hypertarget{class_q_string_a2f74ebff468010de4e68eeb69a925beb}{\index{Q\-String@{Q\-String}!from\-Latin1@{from\-Latin1}}
+\index{from\-Latin1@{from\-Latin1}!QString@{Q\-String}}
+\subsubsection[{from\-Latin1}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} from\-Latin1 (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{chars, }
+\item[{int}]{len = {\ttfamily -\/1}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_q_string_a2f74ebff468010de4e68eeb69a925beb}
+Creates a \hyperlink{class_q_string}{Q\-String} from Latin1 text. This is the same as the \hyperlink{class_q_string_add0bac07acb536df7be191ab9959f709}{Q\-String(const char$\ast$)} constructor, but you can make that constructor invisible if you compile with the define Q\-T\-\_\-\-N\-O\-\_\-\-C\-A\-S\-T\-\_\-\-A\-S\-C\-I\-I, in which case you can explicitly create a \hyperlink{class_q_string}{Q\-String} from Latin-\/1 text using this function. \hypertarget{class_q_string_a267119b3ec4e0fbea508ff30baa0412e}{\index{Q\-String@{Q\-String}!from\-Local8\-Bit@{from\-Local8\-Bit}}
+\index{from\-Local8\-Bit@{from\-Local8\-Bit}!QString@{Q\-String}}
+\subsubsection[{from\-Local8\-Bit}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} from\-Local8\-Bit (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{local8\-Bit, }
+\item[{int}]{len = {\ttfamily -\/1}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_q_string_a267119b3ec4e0fbea508ff30baa0412e}
+Returns the unicode string decoded from the first {\itshape len} bytes of {\itshape local8\-Bit}. If {\itshape len} is -\/1 (the default), the length of {\itshape local8\-Bit} is used. If trailing partial characters are in {\itshape local8\-Bit}, they are ignored.
+
+{\itshape local8\-Bit} is assumed to be encoded in a locale-\/specific format.
+
+See \hyperlink{class_q_text_codec}{Q\-Text\-Codec} for more diverse coding/decoding of Unicode strings. \hypertarget{class_q_string_ac97eeecb223fcec01e36985157a1533f}{\index{Q\-String@{Q\-String}!from\-Ucs2@{from\-Ucs2}}
+\index{from\-Ucs2@{from\-Ucs2}!QString@{Q\-String}}
+\subsubsection[{from\-Ucs2}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} from\-Ucs2 (
+\begin{DoxyParamCaption}
+\item[{const unsigned short $\ast$}]{str}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_q_string_ac97eeecb223fcec01e36985157a1533f}
+Constructs a string that is a deep copy of {\itshape str}, interpreted as a U\-C\-S2 encoded, zero terminated, Unicode string.
+
+If {\itshape str} is 0, then a null string is created. \begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_string_ac02f2a4d7312eb91f40980adfd4e31b2}{is\-Null()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_string_a860d7cc19c5f06337bf3478df15cccd8}{\index{Q\-String@{Q\-String}!from\-Utf8@{from\-Utf8}}
+\index{from\-Utf8@{from\-Utf8}!QString@{Q\-String}}
+\subsubsection[{from\-Utf8}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} from\-Utf8 (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{utf8, }
+\item[{int}]{len = {\ttfamily -\/1}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_q_string_a860d7cc19c5f06337bf3478df15cccd8}
+Returns the unicode string decoded from the first {\itshape len} bytes of {\itshape utf8}. If {\itshape len} is -\/1 (the default), the length of {\itshape utf8} is used. If trailing partial characters are in {\itshape utf8}, they are ignored.
+
+See \hyperlink{class_q_text_codec}{Q\-Text\-Codec} for more diverse coding/decoding of Unicode strings. \hypertarget{class_q_string_abe3665c200ad705e4cf268a7d91081df}{\index{Q\-String@{Q\-String}!insert@{insert}}
+\index{insert@{insert}!QString@{Q\-String}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} \& insert (
+\begin{DoxyParamCaption}
+\item[{uint}]{index, }
+\item[{const {\bf Q\-String} \&}]{s}
+\end{DoxyParamCaption}
+)}}\label{class_q_string_abe3665c200ad705e4cf268a7d91081df}
+Insert {\itshape s} into the string before position {\itshape index}.
+
+If {\itshape index} is beyond the end of the string, the string is extended with spaces (A\-S\-C\-I\-I 32) to length {\itshape index} and {\itshape s} is then appended.
+
+
+\begin{DoxyCode}
+\hyperlink{class_q_string}{QString} s = \textcolor{stringliteral}{"I like fish"};
+s.\hyperlink{class_q_string_abe3665c200ad705e4cf268a7d91081df}{insert}( 2, \textcolor{stringliteral}{"don't "});   \textcolor{comment}{// s == "I don't like fish"}
+s = \textcolor{stringliteral}{"x"};
+s.\hyperlink{class_q_string_abe3665c200ad705e4cf268a7d91081df}{insert}( 3, \textcolor{stringliteral}{"yz"} );  \textcolor{comment}{// s == "x  yz"}
+\end{DoxyCode}
+ \hypertarget{class_q_string_a8c22c6012b77574f78c6f141c79567d1}{\index{Q\-String@{Q\-String}!insert@{insert}}
+\index{insert@{insert}!QString@{Q\-String}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} \& insert (
+\begin{DoxyParamCaption}
+\item[{uint}]{index, }
+\item[{const {\bf Q\-Char} $\ast$}]{s, }
+\item[{uint}]{len}
+\end{DoxyParamCaption}
+)}}\label{class_q_string_a8c22c6012b77574f78c6f141c79567d1}
+Insert {\itshape len} units of \hyperlink{class_q_char}{Q\-Char} data from {\itshape s} into the string before position {\itshape index}. \hypertarget{class_q_string_aeb0942a7a4dbaa4aca093afa283ea362}{\index{Q\-String@{Q\-String}!insert@{insert}}
+\index{insert@{insert}!QString@{Q\-String}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} \& insert (
+\begin{DoxyParamCaption}
+\item[{uint}]{index, }
+\item[{{\bf Q\-Char}}]{c}
+\end{DoxyParamCaption}
+)}}\label{class_q_string_aeb0942a7a4dbaa4aca093afa283ea362}
+Insert {\itshape c} into the string at (before) position {\itshape index} and returns a reference to the string.
+
+If {\itshape index} is beyond the end of the string, the string is extended with spaces (A\-S\-C\-I\-I 32) to length {\itshape index} and {\itshape c} is then appended.
+
+\hyperlink{struct_example}{Example}\-: 
+\begin{DoxyCode}
+\hyperlink{class_q_string}{QString} s = \textcolor{stringliteral}{"Ys"};
+s.\hyperlink{class_q_string_abe3665c200ad705e4cf268a7d91081df}{insert}( 1, \textcolor{charliteral}{'e'} );       \textcolor{comment}{// s == "Yes"}
+s.\hyperlink{class_q_string_abe3665c200ad705e4cf268a7d91081df}{insert}( 3, \textcolor{charliteral}{'!'});        \textcolor{comment}{// s == "Yes!"}
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_string_a4647cd8a50579dbbc029f1d53d51af52}{remove()}, \hyperlink{class_q_string_adad527f16b6d31fee94bd8d8233ede2b}{replace()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_string_a667802067bb355738ded2067b31182b0}{\index{Q\-String@{Q\-String}!insert@{insert}}
+\index{insert@{insert}!QString@{Q\-String}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} \& insert (
+\begin{DoxyParamCaption}
+\item[{uint}]{index, }
+\item[{char}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_string_a667802067bb355738ded2067b31182b0}
+Este é um método provido por conveniência. Ele difere do método acima apenas na lista de argumentos que devem ser utilizados. \hypertarget{class_q_string_a479432127ee77145cc19d6a2d1590821}{\index{Q\-String@{Q\-String}!is\-Empty@{is\-Empty}}
+\index{is\-Empty@{is\-Empty}!QString@{Q\-String}}
+\subsubsection[{is\-Empty}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_string_a479432127ee77145cc19d6a2d1590821}
+Returns T\-R\-U\-E if the string is empty, i.\-e. if \hyperlink{class_q_string_ab0edbf251efc0562d70132e931e3cf06}{length()} == 0. An empty string is not always a null string.
+
+See example in \hyperlink{class_q_string_ac02f2a4d7312eb91f40980adfd4e31b2}{is\-Null()}.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_string_ac02f2a4d7312eb91f40980adfd4e31b2}{is\-Null()}, \hyperlink{class_q_string_ab0edbf251efc0562d70132e931e3cf06}{length()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_string_ac02f2a4d7312eb91f40980adfd4e31b2}{\index{Q\-String@{Q\-String}!is\-Null@{is\-Null}}
+\index{is\-Null@{is\-Null}!QString@{Q\-String}}
+\subsubsection[{is\-Null}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-Null (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_string_ac02f2a4d7312eb91f40980adfd4e31b2}
+Returns T\-R\-U\-E if the string is null. \hyperlink{class_a}{A} null string is also an empty string.
+
+\hyperlink{struct_example}{Example}\-: 
+\begin{DoxyCode}
+\hyperlink{class_q_string}{QString} a;        \textcolor{comment}{// a.unicode() == 0,  a.length() == 0}
+\hyperlink{class_q_string}{QString} b = \textcolor{stringliteral}{""};   \textcolor{comment}{// b.unicode() == "", b.length() == 0}
+a.\hyperlink{class_q_string_ac02f2a4d7312eb91f40980adfd4e31b2}{isNull}();       \textcolor{comment}{// TRUE, because a.unicode() == 0}
+a.\hyperlink{class_q_string_a479432127ee77145cc19d6a2d1590821}{isEmpty}();  \textcolor{comment}{// TRUE, because a.length() == 0}
+b.\hyperlink{class_q_string_ac02f2a4d7312eb91f40980adfd4e31b2}{isNull}();       \textcolor{comment}{// FALSE, because b.unicode() != 0}
+b.\hyperlink{class_q_string_a479432127ee77145cc19d6a2d1590821}{isEmpty}();  \textcolor{comment}{// TRUE, because b.length() == 0}
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_string_a479432127ee77145cc19d6a2d1590821}{is\-Empty()}, \hyperlink{class_q_string_ab0edbf251efc0562d70132e931e3cf06}{length()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_string_ae1632b670a4297db36e3d0228171a3b6}{\index{Q\-String@{Q\-String}!latin1@{latin1}}
+\index{latin1@{latin1}!QString@{Q\-String}}
+\subsubsection[{latin1}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ latin1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_q_string_ae1632b670a4297db36e3d0228171a3b6}
+Returns a Latin-\/1 representation of the string. Note that the returned value is undefined if the string contains non-\/\-Latin-\/1 characters. If you want to convert strings into formats other than Unicode, see the \hyperlink{class_q_text_codec}{Q\-Text\-Codec} classes.
+
+This function is mainly useful for boot-\/strapping legacy code to use Unicode.
+
+The result remains valid so long as one unmodified copy of the source string exists.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_string_a6ec04d8d741b6c84495e1dfd385f4be0}{utf8()}, \hyperlink{class_q_string_a3dec5ae625f368220311bc101e6b7099}{local8\-Bit()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_string_a461696192a2b2b2b65e52bbb07237360}{\index{Q\-String@{Q\-String}!left@{left}}
+\index{left@{left}!QString@{Q\-String}}
+\subsubsection[{left}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} left (
+\begin{DoxyParamCaption}
+\item[{uint}]{len}
+\end{DoxyParamCaption}
+) const}}\label{class_q_string_a461696192a2b2b2b65e52bbb07237360}
+Returns a substring that contains the {\itshape len} leftmost characters of the string.
+
+The whole string is returned if {\itshape len} exceeds the length of the string.
+
+\hyperlink{struct_example}{Example}\-: 
+\begin{DoxyCode}
+\hyperlink{class_q_string}{QString} s = \textcolor{stringliteral}{"Pineapple"};
+\hyperlink{class_q_string}{QString} t = s.\hyperlink{class_q_string_a461696192a2b2b2b65e52bbb07237360}{left}( 4 );  \textcolor{comment}{// t == "Pine"}
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_string_a889658a4adf3725b3b6c9e727afb968d}{right()}, \hyperlink{class_q_string_a368b85377d242c5b76c9b7c474659712}{mid()}, \hyperlink{class_q_string_a479432127ee77145cc19d6a2d1590821}{is\-Empty()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_string_a737e4ee6b7428a3c80ca638f278bbe02}{\index{Q\-String@{Q\-String}!left\-Justify@{left\-Justify}}
+\index{left\-Justify@{left\-Justify}!QString@{Q\-String}}
+\subsubsection[{left\-Justify}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} left\-Justify (
+\begin{DoxyParamCaption}
+\item[{uint}]{width, }
+\item[{{\bf Q\-Char}}]{fill = {\ttfamily '~'}, }
+\item[{bool}]{truncate = {\ttfamily FALSE}}
+\end{DoxyParamCaption}
+) const}}\label{class_q_string_a737e4ee6b7428a3c80ca638f278bbe02}
+Returns a string of length {\itshape width} that contains this string and padded by the {\itshape fill} character.
+
+If the length of the string exceeds {\itshape width} and {\itshape truncate} is F\-A\-L\-S\-E, then the returned string is a copy of the string. If the length of the string exceeds {\itshape width} and {\itshape truncate} is T\-R\-U\-E, then the returned string is a left({\itshape width}).
+
+\hyperlink{struct_example}{Example}\-: 
+\begin{DoxyCode}
+\hyperlink{class_q_string}{QString} s(\textcolor{stringliteral}{"apple"});
+\hyperlink{class_q_string}{QString} t = s.\hyperlink{class_q_string_a737e4ee6b7428a3c80ca638f278bbe02}{leftJustify}(8, \textcolor{charliteral}{'.'});        \textcolor{comment}{// t == "apple..."}
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_string_ae683f43f31042fbe8f08c7b2ec78bcb3}{right\-Justify()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_string_ab0edbf251efc0562d70132e931e3cf06}{\index{Q\-String@{Q\-String}!length@{length}}
+\index{length@{length}!QString@{Q\-String}}
+\subsubsection[{length}]{\setlength{\rightskip}{0pt plus 5cm}uint length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_string_ab0edbf251efc0562d70132e931e3cf06}
+Returns the length of the string.
+
+\hyperlink{struct_q_string_1_1_null}{Null} strings and empty strings have zero length.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_string_ac02f2a4d7312eb91f40980adfd4e31b2}{is\-Null()}, \hyperlink{class_q_string_a479432127ee77145cc19d6a2d1590821}{is\-Empty()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_string_a3dec5ae625f368220311bc101e6b7099}{\index{Q\-String@{Q\-String}!local8\-Bit@{local8\-Bit}}
+\index{local8\-Bit@{local8\-Bit}!QString@{Q\-String}}
+\subsubsection[{local8\-Bit}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} local8\-Bit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_q_string_a3dec5ae625f368220311bc101e6b7099}
+Returns the string encoded in a locale-\/specific format. On X11, this is the \hyperlink{class_q_text_codec_aa258f0ce93cb8ab1c0305dda367f945f}{Q\-Text\-Codec\-::codec\-For\-Locale()}. On Windows, it is a system-\/defined encoding.
+
+See \hyperlink{class_q_text_codec}{Q\-Text\-Codec} for more diverse coding/decoding of Unicode strings.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_string_a267119b3ec4e0fbea508ff30baa0412e}{Q\-String\-::from\-Local8\-Bit()}, \hyperlink{class_q_string_ae1632b670a4297db36e3d0228171a3b6}{latin1()}, \hyperlink{class_q_string_a6ec04d8d741b6c84495e1dfd385f4be0}{utf8()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_string_a05cb49857d2c462dded19e0c005d6e0e}{\index{Q\-String@{Q\-String}!lower@{lower}}
+\index{lower@{lower}!QString@{Q\-String}}
+\subsubsection[{lower}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} lower (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_q_string_a05cb49857d2c462dded19e0c005d6e0e}
+Returns a new string that is the string converted to lower case.
+
+\hyperlink{struct_example}{Example}\-: 
+\begin{DoxyCode}
+\hyperlink{class_q_string}{QString} s(\textcolor{stringliteral}{"TeX"});
+\hyperlink{class_q_string}{QString} t = s.\hyperlink{class_q_string_a05cb49857d2c462dded19e0c005d6e0e}{lower}();    \textcolor{comment}{// t == "tex"}
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_string_a39b895b169d13cd932efb636a9c8e43f}{upper()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_string_a368b85377d242c5b76c9b7c474659712}{\index{Q\-String@{Q\-String}!mid@{mid}}
+\index{mid@{mid}!QString@{Q\-String}}
+\subsubsection[{mid}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} mid (
+\begin{DoxyParamCaption}
+\item[{uint}]{index, }
+\item[{uint}]{len = {\ttfamily 0xffffffff}}
+\end{DoxyParamCaption}
+) const}}\label{class_q_string_a368b85377d242c5b76c9b7c474659712}
+Returns a substring that contains the {\itshape len} characters of this string, starting at position {\itshape index}.
+
+Returns a null string if the string is empty or {\itshape index} is out of range. Returns the whole string from {\itshape index} if {\itshape index+len} exceeds the length of the string.
+
+\hyperlink{struct_example}{Example}\-: 
+\begin{DoxyCode}
+\hyperlink{class_q_string}{QString} s = \textcolor{stringliteral}{"Five pineapples"};
+\hyperlink{class_q_string}{QString} t = s.\hyperlink{class_q_string_a368b85377d242c5b76c9b7c474659712}{mid}( 5, 4 );            \textcolor{comment}{// t == "pine"}
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_string_a461696192a2b2b2b65e52bbb07237360}{left()}, \hyperlink{class_q_string_a889658a4adf3725b3b6c9e727afb968d}{right()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_string_a9193f869c7d66907180f53ea5b990404}{\index{Q\-String@{Q\-String}!number@{number}}
+\index{number@{number}!QString@{Q\-String}}
+\subsubsection[{number}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} number (
+\begin{DoxyParamCaption}
+\item[{long}]{n, }
+\item[{int}]{base = {\ttfamily 10}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_q_string_a9193f869c7d66907180f53ea5b990404}
+\hyperlink{class_a}{A} convenience factory function that returns a string representation of the number {\itshape n}.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_string_a43b6881602fb1e0760113c83e37eb3a0}{set\-Num()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_string_ac7dd58912f1c3cb237a958c1cd7a1baa}{\index{Q\-String@{Q\-String}!number@{number}}
+\index{number@{number}!QString@{Q\-String}}
+\subsubsection[{number}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} number (
+\begin{DoxyParamCaption}
+\item[{ulong}]{n, }
+\item[{int}]{base = {\ttfamily 10}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_q_string_ac7dd58912f1c3cb237a958c1cd7a1baa}
+\hyperlink{class_a}{A} convenience factory function that returns a string representation of the number {\itshape n}.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_string_a43b6881602fb1e0760113c83e37eb3a0}{set\-Num()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_string_a1a8973a97d209f6e029f5cf22400da1a}{\index{Q\-String@{Q\-String}!number@{number}}
+\index{number@{number}!QString@{Q\-String}}
+\subsubsection[{number}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} number (
+\begin{DoxyParamCaption}
+\item[{int}]{n, }
+\item[{int}]{base = {\ttfamily 10}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_q_string_a1a8973a97d209f6e029f5cf22400da1a}
+\hyperlink{class_a}{A} convenience factory function that returns a string representation of the number {\itshape n}.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_string_a43b6881602fb1e0760113c83e37eb3a0}{set\-Num()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_string_ab48a21ce65b43a870abe7c797faa29b5}{\index{Q\-String@{Q\-String}!number@{number}}
+\index{number@{number}!QString@{Q\-String}}
+\subsubsection[{number}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} number (
+\begin{DoxyParamCaption}
+\item[{uint}]{n, }
+\item[{int}]{base = {\ttfamily 10}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_q_string_ab48a21ce65b43a870abe7c797faa29b5}
+\hyperlink{class_a}{A} convenience factory function that returns a string representation of the number {\itshape n}.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_string_a43b6881602fb1e0760113c83e37eb3a0}{set\-Num()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_string_a4079d982dfeb3fbcf3b34bf6a418bee8}{\index{Q\-String@{Q\-String}!number@{number}}
+\index{number@{number}!QString@{Q\-String}}
+\subsubsection[{number}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} number (
+\begin{DoxyParamCaption}
+\item[{double}]{n, }
+\item[{char}]{f = {\ttfamily 'g'}, }
+\item[{int}]{prec = {\ttfamily 6}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_q_string_a4079d982dfeb3fbcf3b34bf6a418bee8}
+This static function returns the printed value of {\itshape n}, formatted in the {\itshape f} format with {\itshape prec} precision.
+
+{\itshape f} can be 'f', 'F', 'e', '\hyperlink{class_e}{E}', 'g' or 'G', all of which have the same meaning as for \hyperlink{class_q_string_a34d369803a6568a461041b34c9ed33d6}{sprintf()}.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_string_a43b6881602fb1e0760113c83e37eb3a0}{set\-Num()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_string_ac8b1d32dbd52d431450c70b151cfa205}{\index{Q\-String@{Q\-String}!operator!@{operator!}}
+\index{operator!@{operator!}!QString@{Q\-String}}
+\subsubsection[{operator!}]{\setlength{\rightskip}{0pt plus 5cm}bool operator! (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_string_ac8b1d32dbd52d431450c70b151cfa205}
+Returns T\-R\-U\-E if it is a null string, otherwise F\-A\-L\-S\-E. Thus you can write\-:
+
+
+\begin{DoxyCode}
+\hyperlink{class_q_string}{QString} name = getName();
+\textcolor{keywordflow}{if} ( !name )
+  name = \textcolor{stringliteral}{"Rodney"};
+\end{DoxyCode}
+
+
+Note that if you say\-:
+
+
+\begin{DoxyCode}
+\hyperlink{class_q_string}{QString} name = getName();
+\textcolor{keywordflow}{if} ( name )
+  doSomethingWith(name);
+\end{DoxyCode}
+
+
+Then this will call {\ttfamily operator const char$\ast$()}, which will do what you want, but rather inefficiently -\/ you may wish to define the macro Q\-T\-\_\-\-N\-O\-\_\-\-A\-S\-C\-I\-I\-\_\-\-C\-A\-S\-T when writing code which you wish to strictly remain Unicode-\/clean.
+
+When you want the above semantics, use {\ttfamily !is\-Null()} or even {\ttfamily !!}\-:
+
+
+\begin{DoxyCode}
+\hyperlink{class_q_string}{QString} name = getName();
+\textcolor{keywordflow}{if} ( !!name )
+  doSomethingWith(name);
+\end{DoxyCode}
+ \hypertarget{class_q_string_ae644e94debcc43991ec46688a3d3551f}{\index{Q\-String@{Q\-String}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!QString@{Q\-String}}
+\subsubsection[{operator+=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} \& operator+= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{str}
+\end{DoxyParamCaption}
+)}}\label{class_q_string_ae644e94debcc43991ec46688a3d3551f}
+Appends {\itshape str} to the string and returns a reference to the string. \hypertarget{class_q_string_abd0d9d2cb4725eb0cadaf2e019774bc4}{\index{Q\-String@{Q\-String}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!QString@{Q\-String}}
+\subsubsection[{operator+=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} \& operator+= (
+\begin{DoxyParamCaption}
+\item[{{\bf Q\-Char}}]{c}
+\end{DoxyParamCaption}
+)}}\label{class_q_string_abd0d9d2cb4725eb0cadaf2e019774bc4}
+Appends {\itshape c} to the string and returns a reference to the string. \hypertarget{class_q_string_a61f4f43d92f528d4623e300754016322}{\index{Q\-String@{Q\-String}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!QString@{Q\-String}}
+\subsubsection[{operator+=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} \& operator+= (
+\begin{DoxyParamCaption}
+\item[{char}]{c}
+\end{DoxyParamCaption}
+)}}\label{class_q_string_a61f4f43d92f528d4623e300754016322}
+Appends {\itshape c} to the string and returns a reference to the string. \hypertarget{class_q_string_a073da1d0e9f2f6b894c5edd865fc12cd}{\index{Q\-String@{Q\-String}!operator=@{operator=}}
+\index{operator=@{operator=}!QString@{Q\-String}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} \& operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{s}
+\end{DoxyParamCaption}
+)}}\label{class_q_string_a073da1d0e9f2f6b894c5edd865fc12cd}
+Assigns a shallow copy of {\itshape s} to this string and returns a reference to this string. \hypertarget{class_q_string_aaa193932aa34a1b13c8fa0341092101f}{\index{Q\-String@{Q\-String}!operator=@{operator=}}
+\index{operator=@{operator=}!QString@{Q\-String}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} \& operator= (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{str}
+\end{DoxyParamCaption}
+)}}\label{class_q_string_aaa193932aa34a1b13c8fa0341092101f}
+Assigns a deep copy of {\itshape str}, interpreted as a classic \hyperlink{class_c}{C} string, to this string and returns a reference to this string.
+
+If {\itshape str} is 0 a null string is created.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_string_ac02f2a4d7312eb91f40980adfd4e31b2}{is\-Null()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_string_a37774f73735421287b1fb7c3a48e445d}{\index{Q\-String@{Q\-String}!operator=@{operator=}}
+\index{operator=@{operator=}!QString@{Q\-String}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} \& operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-C\-String} \&}]{cs}
+\end{DoxyParamCaption}
+)}}\label{class_q_string_a37774f73735421287b1fb7c3a48e445d}
+Assigns a deep copy of {\itshape cs}, interpreted as a classic \hyperlink{class_c}{C} string, to this string and returns a reference to this string. \hypertarget{class_q_string_a9d2aeb3e5dab20eefdbf7be3920033df}{\index{Q\-String@{Q\-String}!operator=@{operator=}}
+\index{operator=@{operator=}!QString@{Q\-String}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} \& operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf Q\-Char}}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_string_a9d2aeb3e5dab20eefdbf7be3920033df}
+Sets the string to contain just the single character {\itshape c}. \hypertarget{class_q_string_a3223f3139f9b0b6c355fce5b349cb301}{\index{Q\-String@{Q\-String}!operator=@{operator=}}
+\index{operator=@{operator=}!QString@{Q\-String}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} \& operator= (
+\begin{DoxyParamCaption}
+\item[{char}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_string_a3223f3139f9b0b6c355fce5b349cb301}
+Sets the string to contain just the single character {\itshape c}. \hypertarget{class_q_string_aaa5543be6fc9dffc6354e4e15a80405c}{\index{Q\-String@{Q\-String}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!QString@{Q\-String}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Char} operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_string_aaa5543be6fc9dffc6354e4e15a80405c}
+Returns the character at {\itshape i}, or Q\-Char\-::null if {\itshape i} is beyond the length of the string.
+
+Note\-: If this \hyperlink{class_q_string}{Q\-String} is not const or const\&, the non-\/const operator\mbox{[}\mbox{]} will be used instead, which will expand the string if {\itshape i} is beyond the length of the string. \hypertarget{class_q_string_a915ff18570b2ac730154871f7cd440d2}{\index{Q\-String@{Q\-String}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!QString@{Q\-String}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Char\-Ref} operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_string_a915ff18570b2ac730154871f7cd440d2}
+Returns an object that references the character at {\itshape i}. This reference can then be assigned to, or otherwise used immediately, but becomes invalid once further modifications are made to the string. The \hyperlink{class_q_char_ref}{Q\-Char\-Ref} internal class can be used much like a constant \hyperlink{class_q_char}{Q\-Char}, but if you assign to it, you change the original string (which enlarges and detaches itself). You will get compilation errors if you try to use the result as anything but a \hyperlink{class_q_char}{Q\-Char}. \hypertarget{class_q_string_a87419fc55e3059c82b799fcc4dd8d6ab}{\index{Q\-String@{Q\-String}!prepend@{prepend}}
+\index{prepend@{prepend}!QString@{Q\-String}}
+\subsubsection[{prepend}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} \& prepend (
+\begin{DoxyParamCaption}
+\item[{char}]{ch}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_string_a87419fc55e3059c82b799fcc4dd8d6ab}
+Prepends {\itshape ch} to the string and returns a reference to the result.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_string_abe3665c200ad705e4cf268a7d91081df}{insert()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_string_a6a72632b11e6ff6b08817b01e6c98fec}{\index{Q\-String@{Q\-String}!prepend@{prepend}}
+\index{prepend@{prepend}!QString@{Q\-String}}
+\subsubsection[{prepend}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} \& prepend (
+\begin{DoxyParamCaption}
+\item[{{\bf Q\-Char}}]{ch}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_string_a6a72632b11e6ff6b08817b01e6c98fec}
+Prepends {\itshape ch} to the string and returns a reference to the result.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_string_abe3665c200ad705e4cf268a7d91081df}{insert()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_string_ad1fabd2b24b24bb771ca6a2e90732592}{\index{Q\-String@{Q\-String}!prepend@{prepend}}
+\index{prepend@{prepend}!QString@{Q\-String}}
+\subsubsection[{prepend}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} \& prepend (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_string_ad1fabd2b24b24bb771ca6a2e90732592}
+Prepend {\itshape s} to the string. Equivalent to insert(0,s).
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_string_abe3665c200ad705e4cf268a7d91081df}{insert()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_string_a24a2c9b9ad269505bef65972756dbeac}{\index{Q\-String@{Q\-String}!ref@{ref}}
+\index{ref@{ref}!QString@{Q\-String}}
+\subsubsection[{ref}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Char} \& ref (
+\begin{DoxyParamCaption}
+\item[{uint}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_string_a24a2c9b9ad269505bef65972756dbeac}
+Returns the \hyperlink{class_q_char}{Q\-Char} at {\itshape i} by reference.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_string_a409bb66f101af0286f3080feec9f2d13}{constref()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_string_a4647cd8a50579dbbc029f1d53d51af52}{\index{Q\-String@{Q\-String}!remove@{remove}}
+\index{remove@{remove}!QString@{Q\-String}}
+\subsubsection[{remove}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} \& remove (
+\begin{DoxyParamCaption}
+\item[{uint}]{index, }
+\item[{uint}]{len}
+\end{DoxyParamCaption}
+)}}\label{class_q_string_a4647cd8a50579dbbc029f1d53d51af52}
+Removes {\itshape len} characters starting at position {\itshape index} from the string and returns a reference to the string.
+
+If {\itshape index} is too big, nothing happens. If {\itshape index} is valid, but {\itshape len} is too large, the rest of the string is removed.
+
+
+\begin{DoxyCode}
+\hyperlink{class_q_string}{QString} s = \textcolor{stringliteral}{"Montreal"};
+s.\hyperlink{class_q_string_a4647cd8a50579dbbc029f1d53d51af52}{remove}( 1, 4 );
+\textcolor{comment}{// s == "Meal"}
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_string_abe3665c200ad705e4cf268a7d91081df}{insert()}, \hyperlink{class_q_string_adad527f16b6d31fee94bd8d8233ede2b}{replace()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_string_adad527f16b6d31fee94bd8d8233ede2b}{\index{Q\-String@{Q\-String}!replace@{replace}}
+\index{replace@{replace}!QString@{Q\-String}}
+\subsubsection[{replace}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} \& replace (
+\begin{DoxyParamCaption}
+\item[{uint}]{index, }
+\item[{uint}]{len, }
+\item[{const {\bf Q\-String} \&}]{s}
+\end{DoxyParamCaption}
+)}}\label{class_q_string_adad527f16b6d31fee94bd8d8233ede2b}
+Replaces {\itshape len} characters starting at position {\itshape index} from the string with {\itshape s}, and returns a reference to the string.
+
+If {\itshape index} is too big, nothing is deleted and {\itshape s} is inserted at the end of the string. If {\itshape index} is valid, but {\itshape len} is too large, {\itshape str} replaces the rest of the string.
+
+
+\begin{DoxyCode}
+\hyperlink{class_q_string}{QString} s = \textcolor{stringliteral}{"Say yes!"};
+s.\hyperlink{class_q_string_adad527f16b6d31fee94bd8d8233ede2b}{replace}( 4, 3, \textcolor{stringliteral}{"NO"} );          \textcolor{comment}{// s == "Say NO!"}
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_string_abe3665c200ad705e4cf268a7d91081df}{insert()}, \hyperlink{class_q_string_a4647cd8a50579dbbc029f1d53d51af52}{remove()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_string_a17c80b9114f21404471525ccbf19caf4}{\index{Q\-String@{Q\-String}!replace@{replace}}
+\index{replace@{replace}!QString@{Q\-String}}
+\subsubsection[{replace}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} \& replace (
+\begin{DoxyParamCaption}
+\item[{uint}]{index, }
+\item[{uint}]{len, }
+\item[{const {\bf Q\-Char} $\ast$}]{s, }
+\item[{uint}]{slen}
+\end{DoxyParamCaption}
+)}}\label{class_q_string_a17c80b9114f21404471525ccbf19caf4}
+Replaces {\itshape len} characters starting at position {\itshape index} by {\itshape slen} units ot \hyperlink{class_q_char}{Q\-Char} data from {\itshape s}, and returns a reference to the string.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_string_abe3665c200ad705e4cf268a7d91081df}{insert()}, \hyperlink{class_q_string_a4647cd8a50579dbbc029f1d53d51af52}{remove()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_string_a3c5037b5c33cf5a2c3b8b24bb6a42d88}{\index{Q\-String@{Q\-String}!replace@{replace}}
+\index{replace@{replace}!QString@{Q\-String}}
+\subsubsection[{replace}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} \& replace (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-Reg\-Exp} \&}]{rx, }
+\item[{const {\bf Q\-String} \&}]{str}
+\end{DoxyParamCaption}
+)}}\label{class_q_string_a3c5037b5c33cf5a2c3b8b24bb6a42d88}
+Replaces every occurrence of {\itshape rx} in the string with {\itshape str}. Returns a reference to the string.
+
+Examples\-: 
+\begin{DoxyCode}
+\hyperlink{class_q_string}{QString} s = \textcolor{stringliteral}{"banana"};
+s.\hyperlink{class_q_string_adad527f16b6d31fee94bd8d8233ede2b}{replace}( \hyperlink{class_q_reg_exp}{QRegExp}(\textcolor{stringliteral}{"a.*a"}), \textcolor{stringliteral}{""} );     \textcolor{comment}{// becomes "b"}
+
+\hyperlink{class_q_string}{QString} s = \textcolor{stringliteral}{"banana"};
+s.\hyperlink{class_q_string_adad527f16b6d31fee94bd8d8233ede2b}{replace}( \hyperlink{class_q_reg_exp}{QRegExp}(\textcolor{stringliteral}{"^[bn]a"}), \textcolor{stringliteral}{" "} );  \textcolor{comment}{// becomes " nana"}
+
+\hyperlink{class_q_string}{QString} s = \textcolor{stringliteral}{"banana"};
+s.\hyperlink{class_q_string_adad527f16b6d31fee94bd8d8233ede2b}{replace}( \hyperlink{class_q_reg_exp}{QRegExp}(\textcolor{stringliteral}{"^[bn]a"}), \textcolor{stringliteral}{""} );       \textcolor{comment}{// NOTE! becomes ""}
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_string_acca4eda6c3d39e174d06ad9a556be100}{find()} \hyperlink{class_q_string_aab366beeaa42b1d37be6a9775e2de18b}{find\-Rev()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_string_a889658a4adf3725b3b6c9e727afb968d}{\index{Q\-String@{Q\-String}!right@{right}}
+\index{right@{right}!QString@{Q\-String}}
+\subsubsection[{right}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} right (
+\begin{DoxyParamCaption}
+\item[{uint}]{len}
+\end{DoxyParamCaption}
+) const}}\label{class_q_string_a889658a4adf3725b3b6c9e727afb968d}
+Returns a substring that contains the {\itshape len} rightmost characters of the string.
+
+The whole string is returned if {\itshape len} exceeds the length of the string.
+
+\hyperlink{struct_example}{Example}\-: 
+\begin{DoxyCode}
+\hyperlink{class_q_string}{QString} s = \textcolor{stringliteral}{"Pineapple"};
+\hyperlink{class_q_string}{QString} t = s.\hyperlink{class_q_string_a889658a4adf3725b3b6c9e727afb968d}{right}( 5 ); \textcolor{comment}{// t == "apple"}
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_string_a461696192a2b2b2b65e52bbb07237360}{left()}, \hyperlink{class_q_string_a368b85377d242c5b76c9b7c474659712}{mid()}, \hyperlink{class_q_string_a479432127ee77145cc19d6a2d1590821}{is\-Empty()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_string_ae683f43f31042fbe8f08c7b2ec78bcb3}{\index{Q\-String@{Q\-String}!right\-Justify@{right\-Justify}}
+\index{right\-Justify@{right\-Justify}!QString@{Q\-String}}
+\subsubsection[{right\-Justify}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} right\-Justify (
+\begin{DoxyParamCaption}
+\item[{uint}]{width, }
+\item[{{\bf Q\-Char}}]{fill = {\ttfamily '~'}, }
+\item[{bool}]{truncate = {\ttfamily FALSE}}
+\end{DoxyParamCaption}
+) const}}\label{class_q_string_ae683f43f31042fbe8f08c7b2ec78bcb3}
+Returns a string of length {\itshape width} that contains pad characters followed by the string.
+
+If the length of the string exceeds {\itshape width} and {\itshape truncate} is F\-A\-L\-S\-E, then the returned string is a copy of the string. If the length of the string exceeds {\itshape width} and {\itshape truncate} is T\-R\-U\-E, then the returned string is a left({\itshape width}).
+
+\hyperlink{struct_example}{Example}\-: 
+\begin{DoxyCode}
+\hyperlink{class_q_string}{QString} s(\textcolor{stringliteral}{"pie"});
+\hyperlink{class_q_string}{QString} t = s.\hyperlink{class_q_string_ae683f43f31042fbe8f08c7b2ec78bcb3}{rightJustify}(8, \textcolor{charliteral}{'.'});       \textcolor{comment}{// t == ".....pie"}
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_string_a737e4ee6b7428a3c80ca638f278bbe02}{left\-Justify()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_string_af2a2e57d170e954267da4cb14fa6736d}{\index{Q\-String@{Q\-String}!set\-Expand@{set\-Expand}}
+\index{set\-Expand@{set\-Expand}!QString@{Q\-String}}
+\subsubsection[{set\-Expand}]{\setlength{\rightskip}{0pt plus 5cm}void set\-Expand (
+\begin{DoxyParamCaption}
+\item[{uint}]{index, }
+\item[{{\bf Q\-Char}}]{c}
+\end{DoxyParamCaption}
+)}}\label{class_q_string_af2a2e57d170e954267da4cb14fa6736d}
+Sets the character at position {\itshape index} to {\itshape c} and expands the string if necessary, filling with spaces.
+
+This method is redundant in Qt 2.\-x, because operator\mbox{[}\mbox{]} will expand the string as necessary. \hypertarget{class_q_string_a20f95a9c7421a936e941cbacf44a37b1}{\index{Q\-String@{Q\-String}!set\-Latin1@{set\-Latin1}}
+\index{set\-Latin1@{set\-Latin1}!QString@{Q\-String}}
+\subsubsection[{set\-Latin1}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} \& set\-Latin1 (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{str, }
+\item[{int}]{len = {\ttfamily -\/1}}
+\end{DoxyParamCaption}
+)}}\label{class_q_string_a20f95a9c7421a936e941cbacf44a37b1}
+Sets this string to {\itshape str}, interpreted as a classic Latin 1 \hyperlink{class_c}{C} string. If the {\itshape len} argument is negative (default), it is set to strlen(str).
+
+If {\itshape str} is 0 a null string is created. If {\itshape str} is \char`\"{}\char`\"{} an empty string is created.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_string_ac02f2a4d7312eb91f40980adfd4e31b2}{is\-Null()}, \hyperlink{class_q_string_a479432127ee77145cc19d6a2d1590821}{is\-Empty()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_string_a43b6881602fb1e0760113c83e37eb3a0}{\index{Q\-String@{Q\-String}!set\-Num@{set\-Num}}
+\index{set\-Num@{set\-Num}!QString@{Q\-String}}
+\subsubsection[{set\-Num}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} \& set\-Num (
+\begin{DoxyParamCaption}
+\item[{short}]{n, }
+\item[{int}]{base = {\ttfamily 10}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_string_a43b6881602fb1e0760113c83e37eb3a0}
+Sets the string to the printed value of {\itshape n} and returns a reference to the string. \hypertarget{class_q_string_a151a1fb07512644e69fc1b530fa5edbd}{\index{Q\-String@{Q\-String}!set\-Num@{set\-Num}}
+\index{set\-Num@{set\-Num}!QString@{Q\-String}}
+\subsubsection[{set\-Num}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} \& set\-Num (
+\begin{DoxyParamCaption}
+\item[{ushort}]{n, }
+\item[{int}]{base = {\ttfamily 10}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_string_a151a1fb07512644e69fc1b530fa5edbd}
+Sets the string to the printed unsigned value of {\itshape n} and returns a reference to the string. \hypertarget{class_q_string_a4ca9cba45d51337e37dd6423abd4e9b7}{\index{Q\-String@{Q\-String}!set\-Num@{set\-Num}}
+\index{set\-Num@{set\-Num}!QString@{Q\-String}}
+\subsubsection[{set\-Num}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} \& set\-Num (
+\begin{DoxyParamCaption}
+\item[{int}]{n, }
+\item[{int}]{base = {\ttfamily 10}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_string_a4ca9cba45d51337e37dd6423abd4e9b7}
+Sets the string to the printed value of {\itshape n} and returns a reference to the string. \hypertarget{class_q_string_aa7ef7bdf890844491aefc3f803b020de}{\index{Q\-String@{Q\-String}!set\-Num@{set\-Num}}
+\index{set\-Num@{set\-Num}!QString@{Q\-String}}
+\subsubsection[{set\-Num}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} \& set\-Num (
+\begin{DoxyParamCaption}
+\item[{uint}]{n, }
+\item[{int}]{base = {\ttfamily 10}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_string_aa7ef7bdf890844491aefc3f803b020de}
+Sets the string to the printed unsigned value of {\itshape n} and returns a reference to the string. \hypertarget{class_q_string_a35bd218b74b3ee76892ff1bf40c43d3d}{\index{Q\-String@{Q\-String}!set\-Num@{set\-Num}}
+\index{set\-Num@{set\-Num}!QString@{Q\-String}}
+\subsubsection[{set\-Num}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} \& set\-Num (
+\begin{DoxyParamCaption}
+\item[{long}]{n, }
+\item[{int}]{base = {\ttfamily 10}}
+\end{DoxyParamCaption}
+)}}\label{class_q_string_a35bd218b74b3ee76892ff1bf40c43d3d}
+Sets the string to the printed value of {\itshape n} and returns a reference to the string.
+
+The value is converted to {\itshape base} notation (default is decimal). The base must be a value from 2 to 36. \hypertarget{class_q_string_a89382b0c6dfbd0b84ee0d8e68e37e0ce}{\index{Q\-String@{Q\-String}!set\-Num@{set\-Num}}
+\index{set\-Num@{set\-Num}!QString@{Q\-String}}
+\subsubsection[{set\-Num}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} \& set\-Num (
+\begin{DoxyParamCaption}
+\item[{ulong}]{n, }
+\item[{int}]{base = {\ttfamily 10}}
+\end{DoxyParamCaption}
+)}}\label{class_q_string_a89382b0c6dfbd0b84ee0d8e68e37e0ce}
+Sets the string to the printed unsigned value of {\itshape n} and returns a reference to the string.
+
+The value is converted to {\itshape base} notation (default is decimal). The base must be a value from 2 to 36. \hypertarget{class_q_string_aadec55751874a59aaeb7cd33eec517db}{\index{Q\-String@{Q\-String}!set\-Num@{set\-Num}}
+\index{set\-Num@{set\-Num}!QString@{Q\-String}}
+\subsubsection[{set\-Num}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} \& set\-Num (
+\begin{DoxyParamCaption}
+\item[{float}]{n, }
+\item[{char}]{f = {\ttfamily 'g'}, }
+\item[{int}]{prec = {\ttfamily 6}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_string_aadec55751874a59aaeb7cd33eec517db}
+Este é um método provido por conveniência. Ele difere do método acima apenas na lista de argumentos que devem ser utilizados. \hypertarget{class_q_string_a15d7f3484c04c35c2f11b111bfe63e20}{\index{Q\-String@{Q\-String}!set\-Num@{set\-Num}}
+\index{set\-Num@{set\-Num}!QString@{Q\-String}}
+\subsubsection[{set\-Num}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} \& set\-Num (
+\begin{DoxyParamCaption}
+\item[{double}]{n, }
+\item[{char}]{f = {\ttfamily 'g'}, }
+\item[{int}]{prec = {\ttfamily 6}}
+\end{DoxyParamCaption}
+)}}\label{class_q_string_a15d7f3484c04c35c2f11b111bfe63e20}
+Sets the string to the printed value of {\itshape n}, formatted in the {\itshape f} format with {\itshape prec} precision, and returns a reference to the string.
+
+{\itshape f} can be 'f', 'F', 'e', '\hyperlink{class_e}{E}', 'g' or 'G', all of which have the same meaning as for \hyperlink{class_q_string_a34d369803a6568a461041b34c9ed33d6}{sprintf()}. \hypertarget{class_q_string_a8ae405bf0631b85329d4f2d83e5b0937}{\index{Q\-String@{Q\-String}!set\-Unicode@{set\-Unicode}}
+\index{set\-Unicode@{set\-Unicode}!QString@{Q\-String}}
+\subsubsection[{set\-Unicode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} \& set\-Unicode (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-Char} $\ast$}]{unicode, }
+\item[{uint}]{len}
+\end{DoxyParamCaption}
+)}}\label{class_q_string_a8ae405bf0631b85329d4f2d83e5b0937}
+Resizes the string to {\itshape len} unicode characters and copies {\itshape unicode} into the string. If {\itshape unicode} is null, nothing is copied, but the string is resized to {\itshape len} anyway. If {\itshape len} is zero, the string becomes a \hyperlink{class_q_string_ac02f2a4d7312eb91f40980adfd4e31b2}{null} string.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_string_a20f95a9c7421a936e941cbacf44a37b1}{set\-Latin1()}, \hyperlink{class_q_string_ac02f2a4d7312eb91f40980adfd4e31b2}{is\-Null()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_string_adb45d1286298c0188aa34af6994ce9e1}{\index{Q\-String@{Q\-String}!set\-Unicode\-Codes@{set\-Unicode\-Codes}}
+\index{set\-Unicode\-Codes@{set\-Unicode\-Codes}!QString@{Q\-String}}
+\subsubsection[{set\-Unicode\-Codes}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} \& set\-Unicode\-Codes (
+\begin{DoxyParamCaption}
+\item[{const ushort $\ast$}]{unicode\-\_\-as\-\_\-ushorts, }
+\item[{uint}]{len}
+\end{DoxyParamCaption}
+)}}\label{class_q_string_adb45d1286298c0188aa34af6994ce9e1}
+Resizes the string to {\itshape len} unicode characters and copies {\itshape unicode\-\_\-as\-\_\-ushorts} into the string (on some X11 client platforms this will involve a byte-\/swapping pass).
+
+If {\itshape unicode} is null, nothing is copied, but the string is resized to {\itshape len} anyway. If {\itshape len} is zero, the string becomes a \hyperlink{class_q_string_ac02f2a4d7312eb91f40980adfd4e31b2}{null} string.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_string_a20f95a9c7421a936e941cbacf44a37b1}{set\-Latin1()}, \hyperlink{class_q_string_ac02f2a4d7312eb91f40980adfd4e31b2}{is\-Null()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_string_a1e5f7cddfe90398e6785b40f503d05af}{\index{Q\-String@{Q\-String}!simplify\-White\-Space@{simplify\-White\-Space}}
+\index{simplify\-White\-Space@{simplify\-White\-Space}!QString@{Q\-String}}
+\subsubsection[{simplify\-White\-Space}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} simplify\-White\-Space (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_q_string_a1e5f7cddfe90398e6785b40f503d05af}
+Returns a new string that has white space removed from the start and the end, plus any sequence of internal white space replaced with a single space (A\-S\-C\-I\-I 32).
+
+White space means any character for which \hyperlink{class_q_char_a9aedb2cee15aa1efb95a4b548a22d1f5}{Q\-Char\-::is\-Space()} returns T\-R\-U\-E. This includes A\-S\-C\-I\-I characters 9 (T\-A\-B), 10 (L\-F), 11 (V\-T), 12 (F\-F), 13 (C\-R), and 32 (Space).
+
+
+\begin{DoxyCode}
+\hyperlink{class_q_string}{QString} s = \textcolor{stringliteral}{"  lots\(\backslash\)t of\(\backslash\)nwhite    space "};
+\hyperlink{class_q_string}{QString} t = s.\hyperlink{class_q_string_a1e5f7cddfe90398e6785b40f503d05af}{simplifyWhiteSpace}();       \textcolor{comment}{// t == "lots of white space"}
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_string_a3a920349770fce0921c6d1c8b390e0de}{strip\-White\-Space()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_string_a34d369803a6568a461041b34c9ed33d6}{\index{Q\-String@{Q\-String}!sprintf@{sprintf}}
+\index{sprintf@{sprintf}!QString@{Q\-String}}
+\subsubsection[{sprintf}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} \& sprintf (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{cformat, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)}}\label{class_q_string_a34d369803a6568a461041b34c9ed33d6}
+Safely builds a formatted string from a format string and an arbitrary list of arguments. The format string supports all the escape sequences of printf() in the standard \hyperlink{class_c}{C} library.
+
+The s escape sequence expects a \hyperlink{class_q_string_a6ec04d8d741b6c84495e1dfd385f4be0}{utf8()} encoded string. The format string {\itshape cformat} is expected to be in latin1. If you need a unicode format string, use \hyperlink{class_q_string_a4adcdaef1eca41a976263df7f5aa216f}{Q\-String\-::arg()} instead. For typesafe string building, with full Unicode support, you can use \hyperlink{class_q_text_o_stream}{Q\-Text\-O\-Stream} like this\-:
+
+
+\begin{DoxyCode}
+\hyperlink{class_q_string}{QString} str;
+\hyperlink{class_q_string}{QString} s = ...;
+\textcolor{keywordtype}{int} x = ...;
+\hyperlink{class_q_text_o_stream}{QTextOStream}(&str) << s << \textcolor{stringliteral}{" : "} << x;
+\end{DoxyCode}
+
+
+For \hyperlink{}{translations,} especially if the strings contains more than one escape sequence, you should consider using the \hyperlink{class_q_string_a4adcdaef1eca41a976263df7f5aa216f}{arg()} function instead. This allows the order of the replacements to be controlled by the translator, and has Unicode support.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_string_a4adcdaef1eca41a976263df7f5aa216f}{arg()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_string_a2211b3583a350f8535312fafadfde05b}{\index{Q\-String@{Q\-String}!starts\-With@{starts\-With}}
+\index{starts\-With@{starts\-With}!QString@{Q\-String}}
+\subsubsection[{starts\-With}]{\setlength{\rightskip}{0pt plus 5cm}bool starts\-With (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{s}
+\end{DoxyParamCaption}
+) const}}\label{class_q_string_a2211b3583a350f8535312fafadfde05b}
+Returns whether the strings starts with {\itshape s}, or not. \hypertarget{class_q_string_a3a920349770fce0921c6d1c8b390e0de}{\index{Q\-String@{Q\-String}!strip\-White\-Space@{strip\-White\-Space}}
+\index{strip\-White\-Space@{strip\-White\-Space}!QString@{Q\-String}}
+\subsubsection[{strip\-White\-Space}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} strip\-White\-Space (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_q_string_a3a920349770fce0921c6d1c8b390e0de}
+Returns a new string that has white space removed from the start and the end.
+
+White space means any character for which \hyperlink{class_q_char_a9aedb2cee15aa1efb95a4b548a22d1f5}{Q\-Char\-::is\-Space()} returns T\-R\-U\-E. This includes A\-S\-C\-I\-I characters 9 (T\-A\-B), 10 (L\-F), 11 (V\-T), 12 (F\-F), 13 (C\-R), and 32 (Space).
+
+\hyperlink{struct_example}{Example}\-: 
+\begin{DoxyCode}
+\hyperlink{class_q_string}{QString} s = \textcolor{stringliteral}{" space "};
+\hyperlink{class_q_string}{QString} t = s.\hyperlink{class_q_string_a3a920349770fce0921c6d1c8b390e0de}{stripWhiteSpace}();      \textcolor{comment}{// t == "space"}
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_string_a1e5f7cddfe90398e6785b40f503d05af}{simplify\-White\-Space()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_string_a9d4f757398267b7438e3b37268796ff8}{\index{Q\-String@{Q\-String}!to\-Double@{to\-Double}}
+\index{to\-Double@{to\-Double}!QString@{Q\-String}}
+\subsubsection[{to\-Double}]{\setlength{\rightskip}{0pt plus 5cm}double to\-Double (
+\begin{DoxyParamCaption}
+\item[{bool $\ast$}]{ok = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const}}\label{class_q_string_a9d4f757398267b7438e3b37268796ff8}
+Returns the string converted to a {\ttfamily double} value.
+
+If {\itshape ok} is non-\/null, {\itshape $\ast$ok} is set to T\-R\-U\-E if there are no conceivable errors, and F\-A\-L\-S\-E if the string is not a number at all, or if it has trailing garbage. \hypertarget{class_q_string_a8e592b921e86fac8b959c8d4c9f316b6}{\index{Q\-String@{Q\-String}!to\-Float@{to\-Float}}
+\index{to\-Float@{to\-Float}!QString@{Q\-String}}
+\subsubsection[{to\-Float}]{\setlength{\rightskip}{0pt plus 5cm}float to\-Float (
+\begin{DoxyParamCaption}
+\item[{bool $\ast$}]{ok = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const}}\label{class_q_string_a8e592b921e86fac8b959c8d4c9f316b6}
+Returns the string converted to a {\ttfamily float} value.
+
+If {\itshape ok} is non-\/null, {\itshape $\ast$ok} is set to T\-R\-U\-E if there are no conceivable errors, and F\-A\-L\-S\-E if the string is not a number at all, or if it has trailing garbage. \hypertarget{class_q_string_a3196e99dac9c3771a0293f077cef9a65}{\index{Q\-String@{Q\-String}!to\-Int@{to\-Int}}
+\index{to\-Int@{to\-Int}!QString@{Q\-String}}
+\subsubsection[{to\-Int}]{\setlength{\rightskip}{0pt plus 5cm}int to\-Int (
+\begin{DoxyParamCaption}
+\item[{bool $\ast$}]{ok = {\ttfamily 0}, }
+\item[{int}]{base = {\ttfamily 10}}
+\end{DoxyParamCaption}
+) const}}\label{class_q_string_a3196e99dac9c3771a0293f077cef9a65}
+Returns the string converted to a {\ttfamily int} value.
+
+
+\begin{DoxyCode}
+\hyperlink{class_q_string}{QString} str(\textcolor{stringliteral}{"FF"});
+\textcolor{keywordtype}{bool} ok;
+\textcolor{keywordtype}{int} hex = str.\hyperlink{class_q_string_a3196e99dac9c3771a0293f077cef9a65}{toInt}( &ok, 16 ); \textcolor{comment}{// will return 255, and ok set to TRUE}
+\textcolor{keywordtype}{int} dec = str.\hyperlink{class_q_string_a3196e99dac9c3771a0293f077cef9a65}{toInt}( &ok, 10 ); \textcolor{comment}{// will return 0, and ok set to FALSE}
+\end{DoxyCode}
+
+
+If {\itshape ok} is non-\/null, {\itshape $\ast$ok} is set to T\-R\-U\-E if there are no conceivable errors, and F\-A\-L\-S\-E if the string is not a number at all, or if it has trailing garbage. \hypertarget{class_q_string_af26933f407461f3709af304e5d589518}{\index{Q\-String@{Q\-String}!to\-Long@{to\-Long}}
+\index{to\-Long@{to\-Long}!QString@{Q\-String}}
+\subsubsection[{to\-Long}]{\setlength{\rightskip}{0pt plus 5cm}long to\-Long (
+\begin{DoxyParamCaption}
+\item[{bool $\ast$}]{ok = {\ttfamily 0}, }
+\item[{int}]{base = {\ttfamily 10}}
+\end{DoxyParamCaption}
+) const}}\label{class_q_string_af26933f407461f3709af304e5d589518}
+Returns the string converted to a {\ttfamily long} value.
+
+If {\itshape ok} is non-\/null, {\itshape $\ast$ok} is set to T\-R\-U\-E if there are no conceivable errors, and F\-A\-L\-S\-E if the string is not a number at all, or if it has trailing garbage. \hypertarget{class_q_string_a25b1c9d62a049c0c8a27f8583e282578}{\index{Q\-String@{Q\-String}!to\-Short@{to\-Short}}
+\index{to\-Short@{to\-Short}!QString@{Q\-String}}
+\subsubsection[{to\-Short}]{\setlength{\rightskip}{0pt plus 5cm}short to\-Short (
+\begin{DoxyParamCaption}
+\item[{bool $\ast$}]{ok = {\ttfamily 0}, }
+\item[{int}]{base = {\ttfamily 10}}
+\end{DoxyParamCaption}
+) const}}\label{class_q_string_a25b1c9d62a049c0c8a27f8583e282578}
+Returns the string converted to a {\ttfamily short} value.
+
+If {\itshape ok} is non-\/null, {\itshape $\ast$ok} is set to T\-R\-U\-E if there are no conceivable errors, and F\-A\-L\-S\-E if the string is not a number at all, or if it has trailing garbage. \hypertarget{class_q_string_a63efec6c9f984c0e2a8937275fffbb2b}{\index{Q\-String@{Q\-String}!to\-U\-Int@{to\-U\-Int}}
+\index{to\-U\-Int@{to\-U\-Int}!QString@{Q\-String}}
+\subsubsection[{to\-U\-Int}]{\setlength{\rightskip}{0pt plus 5cm}uint to\-U\-Int (
+\begin{DoxyParamCaption}
+\item[{bool $\ast$}]{ok = {\ttfamily 0}, }
+\item[{int}]{base = {\ttfamily 10}}
+\end{DoxyParamCaption}
+) const}}\label{class_q_string_a63efec6c9f984c0e2a8937275fffbb2b}
+Returns the string converted to an {\ttfamily unsigned int} value.
+
+If {\itshape ok} is non-\/null, {\itshape $\ast$ok} is set to T\-R\-U\-E if there are no conceivable errors, and F\-A\-L\-S\-E if the string is not a number at all, or if it has trailing garbage. \hypertarget{class_q_string_a4ca240b0e2f5b86c5de0a34e240392d1}{\index{Q\-String@{Q\-String}!to\-U\-Long@{to\-U\-Long}}
+\index{to\-U\-Long@{to\-U\-Long}!QString@{Q\-String}}
+\subsubsection[{to\-U\-Long}]{\setlength{\rightskip}{0pt plus 5cm}ulong to\-U\-Long (
+\begin{DoxyParamCaption}
+\item[{bool $\ast$}]{ok = {\ttfamily 0}, }
+\item[{int}]{base = {\ttfamily 10}}
+\end{DoxyParamCaption}
+) const}}\label{class_q_string_a4ca240b0e2f5b86c5de0a34e240392d1}
+Returns the string converted to an {\ttfamily unsigned long} value.
+
+If {\itshape ok} is non-\/null, {\itshape $\ast$ok} is set to T\-R\-U\-E if there are no conceivable errors, and F\-A\-L\-S\-E if the string is not a number at all, or if it has trailing garbage. \hypertarget{class_q_string_aaf4ae4c4d8b05e39f3024baafb11e601}{\index{Q\-String@{Q\-String}!to\-U\-Short@{to\-U\-Short}}
+\index{to\-U\-Short@{to\-U\-Short}!QString@{Q\-String}}
+\subsubsection[{to\-U\-Short}]{\setlength{\rightskip}{0pt plus 5cm}ushort to\-U\-Short (
+\begin{DoxyParamCaption}
+\item[{bool $\ast$}]{ok = {\ttfamily 0}, }
+\item[{int}]{base = {\ttfamily 10}}
+\end{DoxyParamCaption}
+) const}}\label{class_q_string_aaf4ae4c4d8b05e39f3024baafb11e601}
+Returns the string converted to an {\ttfamily unsigned short} value.
+
+If {\itshape ok} is non-\/null, {\itshape $\ast$ok} is set to T\-R\-U\-E if there are no conceivable errors, and F\-A\-L\-S\-E if the string is not a number at all, or if it has trailing garbage. \hypertarget{class_q_string_aebc5eed775112beb78fc3255d3dd70b1}{\index{Q\-String@{Q\-String}!truncate@{truncate}}
+\index{truncate@{truncate}!QString@{Q\-String}}
+\subsubsection[{truncate}]{\setlength{\rightskip}{0pt plus 5cm}void truncate (
+\begin{DoxyParamCaption}
+\item[{uint}]{new\-Len}
+\end{DoxyParamCaption}
+)}}\label{class_q_string_aebc5eed775112beb78fc3255d3dd70b1}
+Truncates the string at position {\itshape new\-Len} if new\-Len is less than the current length . Otherwise, nothing happens.
+
+\hyperlink{struct_example}{Example}\-: 
+\begin{DoxyCode}
+\hyperlink{class_q_string}{QString} s = \textcolor{stringliteral}{"truncate this string"};
+s.\hyperlink{class_q_string_aebc5eed775112beb78fc3255d3dd70b1}{truncate}( 5 );              \textcolor{comment}{// s == "trunc"}
+\end{DoxyCode}
+
+
+In Qt 1.\-x, it was possible to \char`\"{}truncate\char`\"{} a string to a longer length. This is no longer possible. \hypertarget{class_q_string_aa335352c86d6e44651e98cf3c52356a5}{\index{Q\-String@{Q\-String}!ucs2@{ucs2}}
+\index{ucs2@{ucs2}!QString@{Q\-String}}
+\subsubsection[{ucs2}]{\setlength{\rightskip}{0pt plus 5cm}const unsigned short $\ast$ ucs2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_q_string_aa335352c86d6e44651e98cf3c52356a5}
+Returns the \hyperlink{class_q_string}{Q\-String} as a zero terminated array of unsigned shorts if the string is not null; otherwise returns zero.
+
+The result remains valid so long as one unmodified copy of the source string exists. \hypertarget{class_q_string_a65a250696de2e5cb83a8e01a9603cea0}{\index{Q\-String@{Q\-String}!unicode@{unicode}}
+\index{unicode@{unicode}!QString@{Q\-String}}
+\subsubsection[{unicode}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Q\-Char} $\ast$ unicode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_string_a65a250696de2e5cb83a8e01a9603cea0}
+Returns the Unicode representation of the string. The result remains valid until the string is modified. \hypertarget{class_q_string_a39b895b169d13cd932efb636a9c8e43f}{\index{Q\-String@{Q\-String}!upper@{upper}}
+\index{upper@{upper}!QString@{Q\-String}}
+\subsubsection[{upper}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} upper (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_q_string_a39b895b169d13cd932efb636a9c8e43f}
+Returns a new string that is the string converted to upper case.
+
+\hyperlink{struct_example}{Example}\-: 
+\begin{DoxyCode}
+\hyperlink{class_q_string}{QString} s(\textcolor{stringliteral}{"TeX"});
+\hyperlink{class_q_string}{QString} t = s.\hyperlink{class_q_string_a39b895b169d13cd932efb636a9c8e43f}{upper}();            \textcolor{comment}{// t == "TEX"}
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_string_a05cb49857d2c462dded19e0c005d6e0e}{lower()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_string_a6ec04d8d741b6c84495e1dfd385f4be0}{\index{Q\-String@{Q\-String}!utf8@{utf8}}
+\index{utf8@{utf8}!QString@{Q\-String}}
+\subsubsection[{utf8}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} utf8 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_q_string_a6ec04d8d741b6c84495e1dfd385f4be0}
+Returns the string encoded in U\-T\-F8 format.
+
+See \hyperlink{class_q_text_codec}{Q\-Text\-Codec} for more diverse coding/decoding of Unicode strings.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_string_a860d7cc19c5f06337bf3478df15cccd8}{Q\-String\-::from\-Utf8()}, \hyperlink{class_q_string_a3dec5ae625f368220311bc101e6b7099}{local8\-Bit()}, \hyperlink{class_q_string_ae1632b670a4297db36e3d0228171a3b6}{latin1()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_string_a3a5f3234c43870084c5115ca1f18c2eb}{\index{Q\-String@{Q\-String}!visual@{visual}}
+\index{visual@{visual}!QString@{Q\-String}}
+\subsubsection[{visual}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} visual (
+\begin{DoxyParamCaption}
+\item[{int}]{index = {\ttfamily 0}, }
+\item[{int}]{len = {\ttfamily -\/1}}
+\end{DoxyParamCaption}
+)}}\label{class_q_string_a3a5f3234c43870084c5115ca1f18c2eb}
+This function returns the \hyperlink{class_q_string}{Q\-String} ordered visually. Useful for painting the string or when transforming to a visually ordered encoding. 
+
+\subsection{Documentação das classes amigas e funções relacionadas}
+\hypertarget{class_q_string_aaeae05f02ef07005a07ac285706920dd}{\index{Q\-String@{Q\-String}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!QString@{Q\-String}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf operator!}= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{s1, }
+\item[{const {\bf Q\-String} \&}]{s2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}}\label{class_q_string_aaeae05f02ef07005a07ac285706920dd}
+Returns T\-R\-U\-E if the two strings are different, or F\-A\-L\-S\-E if they are equal.
+
+Equivalent to {\ttfamily qstrcmp(s1,s2) != 0}. \hypertarget{class_q_string_a77e694c60b1699442a3f13e8bbc0c4a9}{\index{Q\-String@{Q\-String}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!QString@{Q\-String}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf operator!}= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{s1, }
+\item[{const char $\ast$}]{s2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}}\label{class_q_string_a77e694c60b1699442a3f13e8bbc0c4a9}
+Returns T\-R\-U\-E if the two strings are different, or F\-A\-L\-S\-E if they are equal.
+
+Equivalent to {\ttfamily qstrcmp(s1,s2) != 0}. \hypertarget{class_q_string_aba83e5b91872eeb6af5f55d7b96ab50b}{\index{Q\-String@{Q\-String}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!QString@{Q\-String}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf operator!}= (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{s1, }
+\item[{const {\bf Q\-String} \&}]{s2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}}\label{class_q_string_aba83e5b91872eeb6af5f55d7b96ab50b}
+Returns T\-R\-U\-E if the two strings are different, or F\-A\-L\-S\-E if they are equal.
+
+Equivalent to {\ttfamily qstrcmp(s1,s2) != 0}. \hypertarget{class_q_string_ae485733155e818a24470bab6b39007a3}{\index{Q\-String@{Q\-String}!operator+@{operator+}}
+\index{operator+@{operator+}!QString@{Q\-String}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} operator+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{s1, }
+\item[{const {\bf Q\-String} \&}]{s2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}}\label{class_q_string_ae485733155e818a24470bab6b39007a3}
+Returns the concatenated string of s1 and s2. \hypertarget{class_q_string_aeebc8da866e999cf9d98f409149a7274}{\index{Q\-String@{Q\-String}!operator+@{operator+}}
+\index{operator+@{operator+}!QString@{Q\-String}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} operator+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{s1, }
+\item[{const char $\ast$}]{s2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}}\label{class_q_string_aeebc8da866e999cf9d98f409149a7274}
+Returns the concatenated string of s1 and s2. \hypertarget{class_q_string_ad31066c16adb556c4e773939da16a894}{\index{Q\-String@{Q\-String}!operator+@{operator+}}
+\index{operator+@{operator+}!QString@{Q\-String}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} operator+ (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{s1, }
+\item[{const {\bf Q\-String} \&}]{s2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}}\label{class_q_string_ad31066c16adb556c4e773939da16a894}
+Returns the concatenated string of s1 and s2. \hypertarget{class_q_string_a646dae5a832bf142e3fd6eed4cd29263}{\index{Q\-String@{Q\-String}!operator+@{operator+}}
+\index{operator+@{operator+}!QString@{Q\-String}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} operator+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{s, }
+\item[{char}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}}\label{class_q_string_a646dae5a832bf142e3fd6eed4cd29263}
+Returns the concatenated string of s and c. \hypertarget{class_q_string_ab79668b32f01247149267b5b77669165}{\index{Q\-String@{Q\-String}!operator+@{operator+}}
+\index{operator+@{operator+}!QString@{Q\-String}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} operator+ (
+\begin{DoxyParamCaption}
+\item[{char}]{c, }
+\item[{const {\bf Q\-String} \&}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}}\label{class_q_string_ab79668b32f01247149267b5b77669165}
+Returns the concatenated string of c and s. \hypertarget{class_q_string_abe479c7e9bb723be856c1bcc388fb50f}{\index{Q\-String@{Q\-String}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!QString@{Q\-String}}
+\subsubsection[{operator$<$}]{\setlength{\rightskip}{0pt plus 5cm}bool operator$<$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{s1, }
+\item[{const char $\ast$}]{s2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}}\label{class_q_string_abe479c7e9bb723be856c1bcc388fb50f}
+Returns T\-R\-U\-E if {\itshape s1} is alphabetically less than {\itshape s2}, otherwise F\-A\-L\-S\-E.
+
+Equivalent to {\ttfamily qstrcmp(s1,s2) $<$ 0}. \hypertarget{class_q_string_ad25d50b4f92864191c30a5a76e7894b8}{\index{Q\-String@{Q\-String}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!QString@{Q\-String}}
+\subsubsection[{operator$<$}]{\setlength{\rightskip}{0pt plus 5cm}bool operator$<$ (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{s1, }
+\item[{const {\bf Q\-String} \&}]{s2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}}\label{class_q_string_ad25d50b4f92864191c30a5a76e7894b8}
+Returns T\-R\-U\-E if {\itshape s1} is alphabetically less than {\itshape s2}, otherwise F\-A\-L\-S\-E.
+
+Equivalent to {\ttfamily qstrcmp(s1,s2) $<$ 0}. \hypertarget{class_q_string_a5d8281fc5ce5c2b6e6e9fd2b9f66c32c}{\index{Q\-String@{Q\-String}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!QString@{Q\-String}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Data\-Stream} \& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{{\bf Q\-Data\-Stream} \&}]{s, }
+\item[{const {\bf Q\-String} \&}]{str}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}}\label{class_q_string_a5d8281fc5ce5c2b6e6e9fd2b9f66c32c}
+Writes a string to the stream.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{}{Format of the Q\-Data\-Stream operators } 
+\end{DoxySeeAlso}
+\hypertarget{class_q_string_a12eb758cb95c371ba27ef75d82c2ec86}{\index{Q\-String@{Q\-String}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!QString@{Q\-String}}
+\subsubsection[{operator$<$=}]{\setlength{\rightskip}{0pt plus 5cm}bool operator$<$= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{s1, }
+\item[{const char $\ast$}]{s2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}}\label{class_q_string_a12eb758cb95c371ba27ef75d82c2ec86}
+Returns T\-R\-U\-E if {\itshape s1} is alphabetically less than or equal to {\itshape s2}, otherwise F\-A\-L\-S\-E.
+
+Equivalent to {\ttfamily qstrcmp(s1,s2) $<$= 0}. \hypertarget{class_q_string_a98d7107dd1903d01a5fabeab999fe398}{\index{Q\-String@{Q\-String}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!QString@{Q\-String}}
+\subsubsection[{operator$<$=}]{\setlength{\rightskip}{0pt plus 5cm}bool operator$<$= (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{s1, }
+\item[{const {\bf Q\-String} \&}]{s2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}}\label{class_q_string_a98d7107dd1903d01a5fabeab999fe398}
+Returns T\-R\-U\-E if {\itshape s1} is alphabetically less than or equal to {\itshape s2}, otherwise F\-A\-L\-S\-E.
+
+Equivalent to {\ttfamily qstrcmp(s1,s2) $<$= 0}. \hypertarget{class_q_string_acdeb7d77a324fe69b0e5889ff8575400}{\index{Q\-String@{Q\-String}!operator==@{operator==}}
+\index{operator==@{operator==}!QString@{Q\-String}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{s1, }
+\item[{const {\bf Q\-String} \&}]{s2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}}\label{class_q_string_acdeb7d77a324fe69b0e5889ff8575400}
+Returns T\-R\-U\-E if the two strings are equal, or F\-A\-L\-S\-E if they are different. \hyperlink{class_a}{A} null string is different from an empty, non-\/null string.
+
+Equivalent to {\ttfamily qstrcmp(s1,s2) == 0}. \hypertarget{class_q_string_af35a5ca71a731a8ecf66c62a74123be2}{\index{Q\-String@{Q\-String}!operator==@{operator==}}
+\index{operator==@{operator==}!QString@{Q\-String}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{s1, }
+\item[{const char $\ast$}]{s2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}}\label{class_q_string_af35a5ca71a731a8ecf66c62a74123be2}
+Returns T\-R\-U\-E if the two strings are equal, or F\-A\-L\-S\-E if they are different.
+
+Equivalent to {\ttfamily qstrcmp(s1,s2) == 0}. \hypertarget{class_q_string_af13dfeb5517343bb511393c74f18a3b6}{\index{Q\-String@{Q\-String}!operator==@{operator==}}
+\index{operator==@{operator==}!QString@{Q\-String}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool operator== (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{s1, }
+\item[{const {\bf Q\-String} \&}]{s2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}}\label{class_q_string_af13dfeb5517343bb511393c74f18a3b6}
+Returns T\-R\-U\-E if the two strings are equal, or F\-A\-L\-S\-E if they are different.
+
+Equivalent to {\ttfamily qstrcmp(s1,s2) == 0}. \hypertarget{class_q_string_ab0ce893122b9d85769be403013196aed}{\index{Q\-String@{Q\-String}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!QString@{Q\-String}}
+\subsubsection[{operator$>$}]{\setlength{\rightskip}{0pt plus 5cm}bool operator$>$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{s1, }
+\item[{const char $\ast$}]{s2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}}\label{class_q_string_ab0ce893122b9d85769be403013196aed}
+Returns T\-R\-U\-E if {\itshape s1} is alphabetically greater than {\itshape s2}, otherwise F\-A\-L\-S\-E.
+
+Equivalent to {\ttfamily qstrcmp(s1,s2) $>$ 0}. \hypertarget{class_q_string_a382b1ef4a8de8768259b825b534fcda1}{\index{Q\-String@{Q\-String}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!QString@{Q\-String}}
+\subsubsection[{operator$>$}]{\setlength{\rightskip}{0pt plus 5cm}bool operator$>$ (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{s1, }
+\item[{const {\bf Q\-String} \&}]{s2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}}\label{class_q_string_a382b1ef4a8de8768259b825b534fcda1}
+Returns T\-R\-U\-E if {\itshape s1} is alphabetically greater than {\itshape s2}, otherwise F\-A\-L\-S\-E.
+
+Equivalent to {\ttfamily qstrcmp(s1,s2) $>$ 0}. \hypertarget{class_q_string_a19a6ef539052453895b39db1f25ec5a2}{\index{Q\-String@{Q\-String}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!QString@{Q\-String}}
+\subsubsection[{operator$>$=}]{\setlength{\rightskip}{0pt plus 5cm}bool operator$>$= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{s1, }
+\item[{const char $\ast$}]{s2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}}\label{class_q_string_a19a6ef539052453895b39db1f25ec5a2}
+Returns T\-R\-U\-E if {\itshape s1} is alphabetically greater than or equal to {\itshape s2}, otherwise F\-A\-L\-S\-E.
+
+Equivalent to {\ttfamily qstrcmp(s1,s2) $>$= 0}. \hypertarget{class_q_string_a9f4787df63780750a94f131e7a35ac6c}{\index{Q\-String@{Q\-String}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!QString@{Q\-String}}
+\subsubsection[{operator$>$=}]{\setlength{\rightskip}{0pt plus 5cm}bool operator$>$= (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{s1, }
+\item[{const {\bf Q\-String} \&}]{s2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}}\label{class_q_string_a9f4787df63780750a94f131e7a35ac6c}
+Returns T\-R\-U\-E if {\itshape s1} is alphabetically greater than or equal to {\itshape s2}, otherwise F\-A\-L\-S\-E.
+
+Equivalent to {\ttfamily qstrcmp(s1,s2) $>$= 0}. \hypertarget{class_q_string_ae8d642385fbe1a96358fe7432baf546b}{\index{Q\-String@{Q\-String}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!QString@{Q\-String}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Data\-Stream} \& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{{\bf Q\-Data\-Stream} \&}]{s, }
+\item[{{\bf Q\-String} \&}]{str}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_q_string_ae8d642385fbe1a96358fe7432baf546b}
+Reads a string from the stream.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{}{Format of the Q\-Data\-Stream operators } 
+\end{DoxySeeAlso}
+
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/qtools/qstring.\-h\item 
+C\-:/\-Users/teste/git/doxygen/qtools/qstring.\-cpp\end{DoxyCompactItemize}

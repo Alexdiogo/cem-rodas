@@ -1,0 +1,333 @@
+\hypertarget{class_config}{\section{Referência à classe Config}
+\label{class_config}\index{Config@{Config}}
+}
+
+
+{\ttfamily \#include $<$config.\-h$>$}
+
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_q_list_iterator}{Q\-List\-Iterator}$<$ \hyperlink{class_config_option}{Config\-Option} $>$ \hyperlink{class_config_a2a73a36bdb15195ceea5babf0895841e}{iterator} ()
+\item 
+void \hyperlink{class_config_a50b1ad2951f80e9cf5021f47bad210a5}{write\-Template} (\hyperlink{class_f_text_stream}{F\-Text\-Stream} \&t, bool short\-Index, bool update\-Only)
+\item 
+\hypertarget{class_config_a83d1589d35495f9e66971b911650cc7e}{void {\bfseries set\-Header} (const char $\ast$header)}\label{class_config_a83d1589d35495f9e66971b911650cc7e}
+
+\item 
+void \hyperlink{class_config_adf2580bb1cb265aed049fd1553c658c2}{convert\-Str\-To\-Val} ()
+\item 
+void \hyperlink{class_config_a3556bfbc11af507151d5e7b2fcfdf181}{substitute\-Environment\-Vars} ()
+\item 
+void \hyperlink{class_config_a83f8adca24e250bfb5c9a90a35503ae9}{check} ()
+\item 
+void \hyperlink{class_config_a02fd73d861ef2e4aabb38c0c9ff82947}{init} ()
+\item 
+bool \hyperlink{class_config_a106dcaa73bd7f5e08ecc8889d607cf12}{parse\-String} (const char $\ast$fn, const char $\ast$str)
+\item 
+bool \hyperlink{class_config_a2b817186f44e966ea05461d71babaa57}{parse} (const char $\ast$fn)
+\item 
+void \hyperlink{class_config_ae2ee59f7cc16ee42559c87e81c433039}{create} ()
+\item 
+void \hyperlink{class_config_ae02f59400e5a733fbe447cb67c6bd3aa}{append\-User\-Comment} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&u)
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_config_a0e741f180f15929a29642359da844226}{take\-User\-Comment} ()
+\end{DoxyCompactItemize}
+\begin{Indent}{\bf Getting configuration values.}\par
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \& \hyperlink{class_config_a68612104bbf38f8e3f73d777f3bd641a}{get\-String} (const char $\ast$file\-Name, int num, const char $\ast$name) const 
+\item 
+\hyperlink{class_q_str_list}{Q\-Str\-List} \& \hyperlink{class_config_a8fb1a4b9d3bc2c3d7712d24526fea32d}{get\-List} (const char $\ast$file\-Name, int num, const char $\ast$name) const 
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \& \hyperlink{class_config_a84395f0a27ff06a395259b1aa1376433}{get\-Enum} (const char $\ast$file\-Name, int num, const char $\ast$name) const 
+\item 
+int \& \hyperlink{class_config_a0adeb5980707ff5556cbd43458e69b93}{get\-Int} (const char $\ast$file\-Name, int num, const char $\ast$name) const 
+\item 
+bool \& \hyperlink{class_config_a4636caa43638b30b87018ae139570f86}{get\-Bool} (const char $\ast$file\-Name, int num, const char $\ast$name) const 
+\item 
+\hyperlink{class_config_option}{Config\-Option} $\ast$ \hyperlink{class_config_a3e7953f08471ba22fa4da26a7f0042ed}{get} (const char $\ast$name) const 
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Adding configuration options.}\par
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_config_info}{Config\-Info} $\ast$ \hyperlink{class_config_adad7d76c6e3e07109796a5ffb9f2c6e4}{add\-Info} (const char $\ast$name, const char $\ast$doc)
+\item 
+\hyperlink{class_config_string}{Config\-String} $\ast$ \hyperlink{class_config_a74b8275821f367fd0c588ccc223d8696}{add\-String} (const char $\ast$name, const char $\ast$doc)
+\item 
+\hyperlink{class_config_enum}{Config\-Enum} $\ast$ \hyperlink{class_config_ab3913dcc45810d5073e967a99fe0c2a4}{add\-Enum} (const char $\ast$name, const char $\ast$doc, const char $\ast$def\-Val)
+\item 
+\hyperlink{class_config_list}{Config\-List} $\ast$ \hyperlink{class_config_a9566fc8a9d1560eb4181b7e245f6ce96}{add\-List} (const char $\ast$name, const char $\ast$doc)
+\item 
+\hyperlink{class_config_int}{Config\-Int} $\ast$ \hyperlink{class_config_abb7be086fa3130874a722a5a9c30b308}{add\-Int} (const char $\ast$name, const char $\ast$doc, int min\-Val, int max\-Val, int def\-Val)
+\item 
+\hyperlink{class_config_bool}{Config\-Bool} $\ast$ \hyperlink{class_config_aa80cc6d1590c228000e21e7c0682f5b9}{add\-Bool} (const char $\ast$name, const char $\ast$doc, bool def\-Val)
+\item 
+\hyperlink{class_config_option}{Config\-Option} $\ast$ \hyperlink{class_config_aeef352ac0af92d9f5df0074aa74d0884}{add\-Obsolete} (const char $\ast$name)
+\item 
+\hyperlink{class_config_option}{Config\-Option} $\ast$ \hyperlink{class_config_a42614c703f049d415636dd0346ec0314}{add\-Disabled} (const char $\ast$name)
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Membros públicos estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_config}{Config} $\ast$ \hyperlink{class_config_aa6def1c3b3abfdaa0df22df0b558c94d}{instance} ()
+\item 
+static void \hyperlink{class_config_a5946f8823f24f5bd2b1749d912ea8ba7}{delete\-Instance} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+Singleton for configuration variables.
+
+This object holds the global static variables read from a user-\/supplied configuration file. The static member \hyperlink{class_config_aa6def1c3b3abfdaa0df22df0b558c94d}{instance()} can be used to get a pointer to the one and only instance.
+
+Set all variables to their default values by calling \hyperlink{class_config_aa6def1c3b3abfdaa0df22df0b558c94d}{Config\-::instance()}-\/$>$\hyperlink{class_config_a02fd73d861ef2e4aabb38c0c9ff82947}{init()} 
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_config_aa80cc6d1590c228000e21e7c0682f5b9}{\index{Config@{Config}!add\-Bool@{add\-Bool}}
+\index{add\-Bool@{add\-Bool}!Config@{Config}}
+\subsubsection[{add\-Bool}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Config\-Bool}$\ast$ add\-Bool (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name, }
+\item[{const char $\ast$}]{doc, }
+\item[{bool}]{def\-Val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_config_aa80cc6d1590c228000e21e7c0682f5b9}
+Adds a new boolean option with {\itshape name} and documentation {\itshape doc}. The boolean has a default value of {\itshape def\-Val}. \begin{DoxyReturn}{Retorna}
+An object representing the option. 
+\end{DoxyReturn}
+\hypertarget{class_config_a42614c703f049d415636dd0346ec0314}{\index{Config@{Config}!add\-Disabled@{add\-Disabled}}
+\index{add\-Disabled@{add\-Disabled}!Config@{Config}}
+\subsubsection[{add\-Disabled}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Config\-Option}$\ast$ add\-Disabled (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_config_a42614c703f049d415636dd0346ec0314}
+Adds an option that has been disabled at compile time. \hypertarget{class_config_ab3913dcc45810d5073e967a99fe0c2a4}{\index{Config@{Config}!add\-Enum@{add\-Enum}}
+\index{add\-Enum@{add\-Enum}!Config@{Config}}
+\subsubsection[{add\-Enum}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Config\-Enum}$\ast$ add\-Enum (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name, }
+\item[{const char $\ast$}]{doc, }
+\item[{const char $\ast$}]{def\-Val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_config_ab3913dcc45810d5073e967a99fe0c2a4}
+Adds a new enumeration option with {\itshape name} and documentation {\itshape doc} and initial value {\itshape def\-Val}. \begin{DoxyReturn}{Retorna}
+An object representing the option. 
+\end{DoxyReturn}
+\hypertarget{class_config_adad7d76c6e3e07109796a5ffb9f2c6e4}{\index{Config@{Config}!add\-Info@{add\-Info}}
+\index{add\-Info@{add\-Info}!Config@{Config}}
+\subsubsection[{add\-Info}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Config\-Info}$\ast$ add\-Info (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name, }
+\item[{const char $\ast$}]{doc}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_config_adad7d76c6e3e07109796a5ffb9f2c6e4}
+Starts a new configuration section with {\itshape name} and description {\itshape doc}. \begin{DoxyReturn}{Retorna}
+An object representing the option. 
+\end{DoxyReturn}
+\hypertarget{class_config_abb7be086fa3130874a722a5a9c30b308}{\index{Config@{Config}!add\-Int@{add\-Int}}
+\index{add\-Int@{add\-Int}!Config@{Config}}
+\subsubsection[{add\-Int}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Config\-Int}$\ast$ add\-Int (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name, }
+\item[{const char $\ast$}]{doc, }
+\item[{int}]{min\-Val, }
+\item[{int}]{max\-Val, }
+\item[{int}]{def\-Val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_config_abb7be086fa3130874a722a5a9c30b308}
+Adds a new integer option with {\itshape name} and documentation {\itshape doc}. The integer has a range between {\itshape min\-Val} and {\itshape max\-Val} and a default value of {\itshape def\-Val}. \begin{DoxyReturn}{Retorna}
+An object representing the option. 
+\end{DoxyReturn}
+\hypertarget{class_config_a9566fc8a9d1560eb4181b7e245f6ce96}{\index{Config@{Config}!add\-List@{add\-List}}
+\index{add\-List@{add\-List}!Config@{Config}}
+\subsubsection[{add\-List}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Config\-List}$\ast$ add\-List (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name, }
+\item[{const char $\ast$}]{doc}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_config_a9566fc8a9d1560eb4181b7e245f6ce96}
+Adds a new string option with {\itshape name} and documentation {\itshape doc}. \begin{DoxyReturn}{Retorna}
+An object representing the option. 
+\end{DoxyReturn}
+\hypertarget{class_config_aeef352ac0af92d9f5df0074aa74d0884}{\index{Config@{Config}!add\-Obsolete@{add\-Obsolete}}
+\index{add\-Obsolete@{add\-Obsolete}!Config@{Config}}
+\subsubsection[{add\-Obsolete}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Config\-Option}$\ast$ add\-Obsolete (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_config_aeef352ac0af92d9f5df0074aa74d0884}
+Adds an option that has become obsolete. \hypertarget{class_config_a74b8275821f367fd0c588ccc223d8696}{\index{Config@{Config}!add\-String@{add\-String}}
+\index{add\-String@{add\-String}!Config@{Config}}
+\subsubsection[{add\-String}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Config\-String}$\ast$ add\-String (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name, }
+\item[{const char $\ast$}]{doc}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_config_a74b8275821f367fd0c588ccc223d8696}
+Adds a new string option with {\itshape name} and documentation {\itshape doc}. \begin{DoxyReturn}{Retorna}
+An object representing the option. 
+\end{DoxyReturn}
+\hypertarget{class_config_ae02f59400e5a733fbe447cb67c6bd3aa}{\index{Config@{Config}!append\-User\-Comment@{append\-User\-Comment}}
+\index{append\-User\-Comment@{append\-User\-Comment}!Config@{Config}}
+\subsubsection[{append\-User\-Comment}]{\setlength{\rightskip}{0pt plus 5cm}void append\-User\-Comment (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-C\-String} \&}]{u}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_config_ae02f59400e5a733fbe447cb67c6bd3aa}
+Append user comment \hypertarget{class_config_a83f8adca24e250bfb5c9a90a35503ae9}{\index{Config@{Config}!check@{check}}
+\index{check@{check}!Config@{Config}}
+\subsubsection[{check}]{\setlength{\rightskip}{0pt plus 5cm}void check (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_config_a83f8adca24e250bfb5c9a90a35503ae9}
+Checks if the values of the variable are correct, adjusts them if needed, and report any errors. \hypertarget{class_config_adf2580bb1cb265aed049fd1553c658c2}{\index{Config@{Config}!convert\-Str\-To\-Val@{convert\-Str\-To\-Val}}
+\index{convert\-Str\-To\-Val@{convert\-Str\-To\-Val}!Config@{Config}}
+\subsubsection[{convert\-Str\-To\-Val}]{\setlength{\rightskip}{0pt plus 5cm}void convert\-Str\-To\-Val (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_config_adf2580bb1cb265aed049fd1553c658c2}
+Converts the string values read from the configuration file to real values for non-\/string type options (like int, and bools) \hypertarget{class_config_ae2ee59f7cc16ee42559c87e81c433039}{\index{Config@{Config}!create@{create}}
+\index{create@{create}!Config@{Config}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}void create (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_config_ae2ee59f7cc16ee42559c87e81c433039}
+Called from the constructor, will add doxygen's default options to the configuration object \hypertarget{class_config_a5946f8823f24f5bd2b1749d912ea8ba7}{\index{Config@{Config}!delete\-Instance@{delete\-Instance}}
+\index{delete\-Instance@{delete\-Instance}!Config@{Config}}
+\subsubsection[{delete\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}static void delete\-Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_config_a5946f8823f24f5bd2b1749d912ea8ba7}
+Delete the instance \hypertarget{class_config_a3e7953f08471ba22fa4da26a7f0042ed}{\index{Config@{Config}!get@{get}}
+\index{get@{get}!Config@{Config}}
+\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Config\-Option}$\ast$ get (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_config_a3e7953f08471ba22fa4da26a7f0042ed}
+Returns the \hyperlink{class_config_option}{Config\-Option} corresponding with {\itshape name} or 0 if the option is not supported. \hypertarget{class_config_a4636caa43638b30b87018ae139570f86}{\index{Config@{Config}!get\-Bool@{get\-Bool}}
+\index{get\-Bool@{get\-Bool}!Config@{Config}}
+\subsubsection[{get\-Bool}]{\setlength{\rightskip}{0pt plus 5cm}bool\& get\-Bool (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{file\-Name, }
+\item[{int}]{num, }
+\item[{const char $\ast$}]{name}
+\end{DoxyParamCaption}
+) const}}\label{class_config_a4636caa43638b30b87018ae139570f86}
+Returns the value of the boolean option with name {\itshape file\-Name}. The arguments {\itshape num} and {\itshape name} are for debugging purposes only. There is a convenience function Config\-\_\-get\-Bool() for this. \hypertarget{class_config_a84395f0a27ff06a395259b1aa1376433}{\index{Config@{Config}!get\-Enum@{get\-Enum}}
+\index{get\-Enum@{get\-Enum}!Config@{Config}}
+\subsubsection[{get\-Enum}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String}\& get\-Enum (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{file\-Name, }
+\item[{int}]{num, }
+\item[{const char $\ast$}]{name}
+\end{DoxyParamCaption}
+) const}}\label{class_config_a84395f0a27ff06a395259b1aa1376433}
+Returns the value of the enum option with name {\itshape file\-Name}. The arguments {\itshape num} and {\itshape name} are for debugging purposes only. There is a convenience function Config\-\_\-get\-Enum() for this. \hypertarget{class_config_a0adeb5980707ff5556cbd43458e69b93}{\index{Config@{Config}!get\-Int@{get\-Int}}
+\index{get\-Int@{get\-Int}!Config@{Config}}
+\subsubsection[{get\-Int}]{\setlength{\rightskip}{0pt plus 5cm}int\& get\-Int (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{file\-Name, }
+\item[{int}]{num, }
+\item[{const char $\ast$}]{name}
+\end{DoxyParamCaption}
+) const}}\label{class_config_a0adeb5980707ff5556cbd43458e69b93}
+Returns the value of the integer option with name {\itshape file\-Name}. The arguments {\itshape num} and {\itshape name} are for debugging purposes only. There is a convenience function Config\-\_\-get\-Int() for this. \hypertarget{class_config_a8fb1a4b9d3bc2c3d7712d24526fea32d}{\index{Config@{Config}!get\-List@{get\-List}}
+\index{get\-List@{get\-List}!Config@{Config}}
+\subsubsection[{get\-List}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Str\-List}\& get\-List (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{file\-Name, }
+\item[{int}]{num, }
+\item[{const char $\ast$}]{name}
+\end{DoxyParamCaption}
+) const}}\label{class_config_a8fb1a4b9d3bc2c3d7712d24526fea32d}
+Returns the value of the list option with name {\itshape file\-Name}. The arguments {\itshape num} and {\itshape name} are for debugging purposes only. There is a convenience function Config\-\_\-get\-List() for this. \hypertarget{class_config_a68612104bbf38f8e3f73d777f3bd641a}{\index{Config@{Config}!get\-String@{get\-String}}
+\index{get\-String@{get\-String}!Config@{Config}}
+\subsubsection[{get\-String}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String}\& get\-String (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{file\-Name, }
+\item[{int}]{num, }
+\item[{const char $\ast$}]{name}
+\end{DoxyParamCaption}
+) const}}\label{class_config_a68612104bbf38f8e3f73d777f3bd641a}
+Returns the value of the string option with name {\itshape file\-Name}. The arguments {\itshape num} and {\itshape name} are for debugging purposes only. There is a convenience function Config\-\_\-get\-String() for this. \hypertarget{class_config_a02fd73d861ef2e4aabb38c0c9ff82947}{\index{Config@{Config}!init@{init}}
+\index{init@{init}!Config@{Config}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_config_a02fd73d861ef2e4aabb38c0c9ff82947}
+Initialize config variables to their default value \hypertarget{class_config_aa6def1c3b3abfdaa0df22df0b558c94d}{\index{Config@{Config}!instance@{instance}}
+\index{instance@{instance}!Config@{Config}}
+\subsubsection[{instance}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Config}$\ast$ instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_config_aa6def1c3b3abfdaa0df22df0b558c94d}
+Returns the one and only instance of this class \hypertarget{class_config_a2a73a36bdb15195ceea5babf0895841e}{\index{Config@{Config}!iterator@{iterator}}
+\index{iterator@{iterator}!Config@{Config}}
+\subsubsection[{iterator}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-List\-Iterator}$<${\bf Config\-Option}$>$ iterator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_config_a2a73a36bdb15195ceea5babf0895841e}
+Returns an iterator that can by used to iterate over the configuration options. \hypertarget{class_config_a2b817186f44e966ea05461d71babaa57}{\index{Config@{Config}!parse@{parse}}
+\index{parse@{parse}!Config@{Config}}
+\subsubsection[{parse}]{\setlength{\rightskip}{0pt plus 5cm}bool parse (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{fn}
+\end{DoxyParamCaption}
+)}}\label{class_config_a2b817186f44e966ea05461d71babaa57}
+Parse a configuration file with name {\itshape fn}. \begin{DoxyReturn}{Retorna}
+T\-R\-U\-E if successful, F\-A\-L\-S\-E if the file could not be opened or read. 
+\end{DoxyReturn}
+\hypertarget{class_config_a106dcaa73bd7f5e08ecc8889d607cf12}{\index{Config@{Config}!parse\-String@{parse\-String}}
+\index{parse\-String@{parse\-String}!Config@{Config}}
+\subsubsection[{parse\-String}]{\setlength{\rightskip}{0pt plus 5cm}bool parse\-String (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{fn, }
+\item[{const char $\ast$}]{str}
+\end{DoxyParamCaption}
+)}}\label{class_config_a106dcaa73bd7f5e08ecc8889d607cf12}
+Parse a configuration data in string {\itshape str}. \begin{DoxyReturn}{Retorna}
+T\-R\-U\-E if successful, or F\-A\-L\-S\-E if the string could not be parsed. 
+\end{DoxyReturn}
+\hypertarget{class_config_a3556bfbc11af507151d5e7b2fcfdf181}{\index{Config@{Config}!substitute\-Environment\-Vars@{substitute\-Environment\-Vars}}
+\index{substitute\-Environment\-Vars@{substitute\-Environment\-Vars}!Config@{Config}}
+\subsubsection[{substitute\-Environment\-Vars}]{\setlength{\rightskip}{0pt plus 5cm}void substitute\-Environment\-Vars (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_config_a3556bfbc11af507151d5e7b2fcfdf181}
+Replaces references to environment variable by the actual value of the environment variable. \hypertarget{class_config_a0e741f180f15929a29642359da844226}{\index{Config@{Config}!take\-User\-Comment@{take\-User\-Comment}}
+\index{take\-User\-Comment@{take\-User\-Comment}!Config@{Config}}
+\subsubsection[{take\-User\-Comment}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} take\-User\-Comment (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_config_a0e741f180f15929a29642359da844226}
+Take the user comment and reset it internally \begin{DoxyReturn}{Retorna}
+user comment 
+\end{DoxyReturn}
+\hypertarget{class_config_a50b1ad2951f80e9cf5021f47bad210a5}{\index{Config@{Config}!write\-Template@{write\-Template}}
+\index{write\-Template@{write\-Template}!Config@{Config}}
+\subsubsection[{write\-Template}]{\setlength{\rightskip}{0pt plus 5cm}void write\-Template (
+\begin{DoxyParamCaption}
+\item[{{\bf F\-Text\-Stream} \&}]{t, }
+\item[{bool}]{short\-Index, }
+\item[{bool}]{update\-Only}
+\end{DoxyParamCaption}
+)}}\label{class_config_a50b1ad2951f80e9cf5021f47bad210a5}
+Writes a template configuration to stream {\itshape t}. If {\itshape short\-Index} is {\ttfamily T\-R\-U\-E} the description of each configuration option will be omitted. 
+
+A documentação para esta classe foi gerada a partir do seguinte ficheiro\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/src/config.\-h\end{DoxyCompactItemize}

@@ -1,0 +1,106 @@
+\hypertarget{class_q_xml_error_handler}{\section{Referência à classe Q\-Xml\-Error\-Handler}
+\label{class_q_xml_error_handler}\index{Q\-Xml\-Error\-Handler@{Q\-Xml\-Error\-Handler}}
+}
+
+
+The \hyperlink{class_q_xml_error_handler}{Q\-Xml\-Error\-Handler} class provides an interface to report errors in X\-M\-L data.  
+
+
+
+
+{\ttfamily \#include $<$qxml.\-h$>$}
+
+Diagrama de heranças da classe Q\-Xml\-Error\-Handler\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{class_q_xml_error_handler}
+\end{center}
+\end{figure}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{class_q_xml_error_handler_a109de9b8833092a63f6bc48f84cf241b}{warning} (const \hyperlink{class_q_xml_parse_exception}{Q\-Xml\-Parse\-Exception} \&exception)=0
+\item 
+virtual bool \hyperlink{class_q_xml_error_handler_a4c3f6f44d2411175c39b0a1f45075a91}{error} (const \hyperlink{class_q_xml_parse_exception}{Q\-Xml\-Parse\-Exception} \&exception)=0
+\item 
+virtual bool \hyperlink{class_q_xml_error_handler_ac797351a210314f1ca2289a40acf2694}{fatal\-Error} (const \hyperlink{class_q_xml_parse_exception}{Q\-Xml\-Parse\-Exception} \&exception)=0
+\item 
+virtual \hyperlink{class_q_string}{Q\-String} \hyperlink{class_q_xml_error_handler_ac86bbbabef3a52aec7615cbbc0adb3f4}{error\-String} ()=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+The \hyperlink{class_q_xml_error_handler}{Q\-Xml\-Error\-Handler} class provides an interface to report errors in X\-M\-L data. 
+
+X\-M\-L
+
+If the application is interested in reporting errors to the user or any other customized error handling, you should subclass this class.
+
+You can set the error handler with \hyperlink{class_q_xml_reader_a4d2cc3731d45b37ac0a8f8248007b4b7}{Q\-Xml\-Reader\-::set\-Error\-Handler()}.
+
+See also the \href{xml.html#introSAX2}{\tt Introduction to S\-A\-X2}.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_xml_d_t_d_handler}{Q\-Xml\-D\-T\-D\-Handler} \hyperlink{class_q_xml_decl_handler}{Q\-Xml\-Decl\-Handler} \hyperlink{class_q_xml_content_handler}{Q\-Xml\-Content\-Handler} \hyperlink{class_q_xml_entity_resolver}{Q\-Xml\-Entity\-Resolver} \hyperlink{class_q_xml_lexical_handler}{Q\-Xml\-Lexical\-Handler} 
+\end{DoxySeeAlso}
+
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_q_xml_error_handler_a4c3f6f44d2411175c39b0a1f45075a91}{\index{Q\-Xml\-Error\-Handler@{Q\-Xml\-Error\-Handler}!error@{error}}
+\index{error@{error}!QXmlErrorHandler@{Q\-Xml\-Error\-Handler}}
+\subsubsection[{error}]{\setlength{\rightskip}{0pt plus 5cm}bool error (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-Xml\-Parse\-Exception} \&}]{exception}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_q_xml_error_handler_a4c3f6f44d2411175c39b0a1f45075a91}
+\hyperlink{class_a}{A} reader might use this function to report a recoverable error. \hyperlink{class_a}{A} recoverable error corresponds to the definiton of \char`\"{}error\char`\"{} in section 1.\-2 of the X\-M\-L 1.\-0 specification.
+
+The reader must continue to provide normal parsing events after invoking this function.
+
+If this function returns F\-A\-L\-S\-E the reader will stop parsing and will report an error. The reader will use the function \hyperlink{class_q_xml_error_handler_ac86bbbabef3a52aec7615cbbc0adb3f4}{error\-String()} to get the error message that will be used for reporting the error. 
+
+Implementado em \hyperlink{class_layout_error_handler_a17e6cc63b7ee45c29ef1883227aa3ef8}{Layout\-Error\-Handler}, \hyperlink{class_tag_file_error_handler_abb2a084eeba80972cfe5bd3804b2f0bd}{Tag\-File\-Error\-Handler}, \hyperlink{class_q_xml_default_handler_a17e6cc63b7ee45c29ef1883227aa3ef8}{Q\-Xml\-Default\-Handler}, \hyperlink{class_x_m_l_error_handler_abb2a084eeba80972cfe5bd3804b2f0bd}{X\-M\-L\-Error\-Handler}, \hyperlink{class_compound_error_handler_abb2a084eeba80972cfe5bd3804b2f0bd}{Compound\-Error\-Handler} e \hyperlink{class_error_handler_abb2a084eeba80972cfe5bd3804b2f0bd}{Error\-Handler}.
+
+\hypertarget{class_q_xml_error_handler_ac86bbbabef3a52aec7615cbbc0adb3f4}{\index{Q\-Xml\-Error\-Handler@{Q\-Xml\-Error\-Handler}!error\-String@{error\-String}}
+\index{error\-String@{error\-String}!QXmlErrorHandler@{Q\-Xml\-Error\-Handler}}
+\subsubsection[{error\-String}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} error\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_q_xml_error_handler_ac86bbbabef3a52aec7615cbbc0adb3f4}
+The reader calls this function to get an error string if any of the handler functions returns F\-A\-L\-S\-E to him. 
+
+Implementado em \hyperlink{class_layout_error_handler_af799a7684337babb971e2e0d8cda7cf1}{Layout\-Error\-Handler}, \hyperlink{class_tag_file_error_handler_af799a7684337babb971e2e0d8cda7cf1}{Tag\-File\-Error\-Handler}, \hyperlink{class_q_xml_default_handler_af799a7684337babb971e2e0d8cda7cf1}{Q\-Xml\-Default\-Handler}, \hyperlink{class_x_m_l_error_handler_af799a7684337babb971e2e0d8cda7cf1}{X\-M\-L\-Error\-Handler}, \hyperlink{class_compound_error_handler_af799a7684337babb971e2e0d8cda7cf1}{Compound\-Error\-Handler}, \hyperlink{class_d_bus_x_m_l_handler_af799a7684337babb971e2e0d8cda7cf1}{D\-Bus\-X\-M\-L\-Handler} e \hyperlink{class_error_handler_af799a7684337babb971e2e0d8cda7cf1}{Error\-Handler}.
+
+\hypertarget{class_q_xml_error_handler_ac797351a210314f1ca2289a40acf2694}{\index{Q\-Xml\-Error\-Handler@{Q\-Xml\-Error\-Handler}!fatal\-Error@{fatal\-Error}}
+\index{fatal\-Error@{fatal\-Error}!QXmlErrorHandler@{Q\-Xml\-Error\-Handler}}
+\subsubsection[{fatal\-Error}]{\setlength{\rightskip}{0pt plus 5cm}bool fatal\-Error (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-Xml\-Parse\-Exception} \&}]{exception}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_q_xml_error_handler_ac797351a210314f1ca2289a40acf2694}
+\hyperlink{class_a}{A} reader must use this function to report a non-\/recoverable error.
+
+If this function returns T\-R\-U\-E the reader might try to go on parsing and reporting further errors; but no regular parsing events are reported. 
+
+Implementado em \hyperlink{class_layout_error_handler_afe3fbf09765011104e0d12ee0d395619}{Layout\-Error\-Handler}, \hyperlink{class_tag_file_error_handler_afe3fbf09765011104e0d12ee0d395619}{Tag\-File\-Error\-Handler}, \hyperlink{class_q_xml_default_handler_afe3fbf09765011104e0d12ee0d395619}{Q\-Xml\-Default\-Handler}, \hyperlink{class_x_m_l_error_handler_afe3fbf09765011104e0d12ee0d395619}{X\-M\-L\-Error\-Handler}, \hyperlink{class_compound_error_handler_afe3fbf09765011104e0d12ee0d395619}{Compound\-Error\-Handler} e \hyperlink{class_error_handler_afe3fbf09765011104e0d12ee0d395619}{Error\-Handler}.
+
+\hypertarget{class_q_xml_error_handler_a109de9b8833092a63f6bc48f84cf241b}{\index{Q\-Xml\-Error\-Handler@{Q\-Xml\-Error\-Handler}!warning@{warning}}
+\index{warning@{warning}!QXmlErrorHandler@{Q\-Xml\-Error\-Handler}}
+\subsubsection[{warning}]{\setlength{\rightskip}{0pt plus 5cm}bool warning (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-Xml\-Parse\-Exception} \&}]{exception}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_q_xml_error_handler_a109de9b8833092a63f6bc48f84cf241b}
+\hyperlink{class_a}{A} reader might use this function to report a warning. Warnings are conditions that are not errors or fatal errors as defined by the X\-M\-L 1.\-0 specification.
+
+If this function returns F\-A\-L\-S\-E the reader will stop parsing and will report an error. The reader will use the function \hyperlink{class_q_xml_error_handler_ac86bbbabef3a52aec7615cbbc0adb3f4}{error\-String()} to get the error message that will be used for reporting the error. 
+
+Implementado em \hyperlink{class_layout_error_handler_aed90bd0b5272f7a5042451fa8f20c5ba}{Layout\-Error\-Handler}, \hyperlink{class_tag_file_error_handler_aac28fc998851e69a512e4f544eeff5a7}{Tag\-File\-Error\-Handler}, \hyperlink{class_q_xml_default_handler_aed90bd0b5272f7a5042451fa8f20c5ba}{Q\-Xml\-Default\-Handler}, \hyperlink{class_x_m_l_error_handler_aac28fc998851e69a512e4f544eeff5a7}{X\-M\-L\-Error\-Handler}, \hyperlink{class_compound_error_handler_aac28fc998851e69a512e4f544eeff5a7}{Compound\-Error\-Handler} e \hyperlink{class_error_handler_aac28fc998851e69a512e4f544eeff5a7}{Error\-Handler}.
+
+
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/qtools/qxml.\-h\item 
+C\-:/\-Users/teste/git/doxygen/qtools/qxml.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,93 @@
+\hypertarget{class_doc_html_row}{\section{Referência à classe Doc\-Html\-Row}
+\label{class_doc_html_row}\index{Doc\-Html\-Row@{Doc\-Html\-Row}}
+}
+
+
+{\ttfamily \#include $<$docparser.\-h$>$}
+
+Diagrama de heranças da classe Doc\-Html\-Row\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_doc_html_row}
+\end{center}
+\end{figure}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_doc_html_row_a193766a39245f6ed12b98a53313164aa}{{\bfseries Doc\-Html\-Row} (\hyperlink{class_doc_node}{Doc\-Node} $\ast$\hyperlink{class_doc_node_abd7f070d6b0a38b4da71c2806578d19d}{parent}, const \hyperlink{class_html_attrib_list}{Html\-Attrib\-List} \&attribs)}\label{class_doc_html_row_a193766a39245f6ed12b98a53313164aa}
+
+\item 
+\hyperlink{class_doc_node_aa10c9e8951b8ccf714a59ec321bdac5b}{Kind} \hyperlink{class_doc_html_row_aa9d037bed9f9a083d0cd01485637d843}{kind} () const 
+\item 
+\hypertarget{class_doc_html_row_a96cdea1e3d8455770c8e2270d0cb0dde}{uint {\bfseries num\-Cells} () const }\label{class_doc_html_row_a96cdea1e3d8455770c8e2270d0cb0dde}
+
+\item 
+void \hyperlink{class_doc_html_row_a7ba716e854ae2f8f87a4eb2140e302b6}{accept} (\hyperlink{class_doc_visitor}{Doc\-Visitor} $\ast$v)
+\item 
+\hypertarget{class_doc_html_row_aae3c838ea3d3273b35d07e9965a8985e}{const \hyperlink{class_html_attrib_list}{Html\-Attrib\-List} \& {\bfseries attribs} () const }\label{class_doc_html_row_aae3c838ea3d3273b35d07e9965a8985e}
+
+\item 
+\hypertarget{class_doc_html_row_a67007fc2be130666fbf3b065022756f4}{int {\bfseries parse} ()}\label{class_doc_html_row_a67007fc2be130666fbf3b065022756f4}
+
+\item 
+\hypertarget{class_doc_html_row_a33071bf8f5ad1a907f383db6b1568f58}{int {\bfseries parse\-Xml} (bool header)}\label{class_doc_html_row_a33071bf8f5ad1a907f383db6b1568f58}
+
+\item 
+\hypertarget{class_doc_html_row_ade05d6ce722372f5c6779febf0ffab8b}{bool {\bfseries is\-Heading} () const }\label{class_doc_html_row_ade05d6ce722372f5c6779febf0ffab8b}
+
+\item 
+\hypertarget{class_doc_html_row_a2ac16a4c3a2e91f19599e99e340a16a9}{void {\bfseries set\-Visible\-Cells} (int n)}\label{class_doc_html_row_a2ac16a4c3a2e91f19599e99e340a16a9}
+
+\item 
+\hypertarget{class_doc_html_row_a750473e5d7b3ec89c8b3dbd68ac4975f}{int {\bfseries visible\-Cells} () const }\label{class_doc_html_row_a750473e5d7b3ec89c8b3dbd68ac4975f}
+
+\item 
+\hypertarget{class_doc_html_row_a21ddbe149bd2ad1a2114e9adcd847923}{int {\bfseries row\-Index} () const }\label{class_doc_html_row_a21ddbe149bd2ad1a2114e9adcd847923}
+
+\end{DoxyCompactItemize}
+\subsection*{Amigos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_doc_html_row_a1f7413118a8c0d90c891a2695a7cb90d}{class {\bfseries Doc\-Html\-Table}}\label{class_doc_html_row_a1f7413118a8c0d90c891a2695a7cb90d}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Descrição detalhada}
+Node representing a H\-T\-M\-L table row 
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_doc_html_row_a7ba716e854ae2f8f87a4eb2140e302b6}{\index{Doc\-Html\-Row@{Doc\-Html\-Row}!accept@{accept}}
+\index{accept@{accept}!DocHtmlRow@{Doc\-Html\-Row}}
+\subsubsection[{accept}]{\setlength{\rightskip}{0pt plus 5cm}void accept (
+\begin{DoxyParamCaption}
+\item[{{\bf Doc\-Visitor} $\ast$}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_doc_html_row_a7ba716e854ae2f8f87a4eb2140e302b6}
+Acceptor function for node visitors. Part of the visitor pattern. 
+\begin{DoxyParams}{Parâmetros}
+{\em v} & Abstract visitor. \\
+\hline
+\end{DoxyParams}
+
+
+Implementa \hyperlink{class_doc_node_ac0816c4a3ba0fb0ca95538f82e13df27}{Doc\-Node}.
+
+\hypertarget{class_doc_html_row_aa9d037bed9f9a083d0cd01485637d843}{\index{Doc\-Html\-Row@{Doc\-Html\-Row}!kind@{kind}}
+\index{kind@{kind}!DocHtmlRow@{Doc\-Html\-Row}}
+\subsubsection[{kind}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Kind} kind (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_doc_html_row_aa9d037bed9f9a083d0cd01485637d843}
+Returns the kind of node. Provides runtime type information 
+
+Implementa \hyperlink{class_doc_node_a27e5d1dde6c9e861b52afa5a95f71d2d}{Doc\-Node}.
+
+
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/src/docparser.\-h\item 
+C\-:/\-Users/teste/git/doxygen/src/docparser.\-cpp\end{DoxyCompactItemize}

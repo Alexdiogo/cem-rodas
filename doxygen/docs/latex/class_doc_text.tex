@@ -1,0 +1,66 @@
+\hypertarget{class_doc_text}{\section{Referência à classe Doc\-Text}
+\label{class_doc_text}\index{Doc\-Text@{Doc\-Text}}
+}
+
+
+{\ttfamily \#include $<$docparser.\-h$>$}
+
+Diagrama de heranças da classe Doc\-Text\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_doc_text}
+\end{center}
+\end{figure}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_doc_node_aa10c9e8951b8ccf714a59ec321bdac5b}{Kind} \hyperlink{class_doc_text_aa9d037bed9f9a083d0cd01485637d843}{kind} () const 
+\item 
+void \hyperlink{class_doc_text_a7ba716e854ae2f8f87a4eb2140e302b6}{accept} (\hyperlink{class_doc_visitor}{Doc\-Visitor} $\ast$v)
+\item 
+\hypertarget{class_doc_text_ad7c704b34912678d95c13243cacf9d7f}{void {\bfseries parse} ()}\label{class_doc_text_ad7c704b34912678d95c13243cacf9d7f}
+
+\item 
+\hypertarget{class_doc_text_a479432127ee77145cc19d6a2d1590821}{bool {\bfseries is\-Empty} () const }\label{class_doc_text_a479432127ee77145cc19d6a2d1590821}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Descrição detalhada}
+Root node of a text fragment 
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_doc_text_a7ba716e854ae2f8f87a4eb2140e302b6}{\index{Doc\-Text@{Doc\-Text}!accept@{accept}}
+\index{accept@{accept}!DocText@{Doc\-Text}}
+\subsubsection[{accept}]{\setlength{\rightskip}{0pt plus 5cm}void accept (
+\begin{DoxyParamCaption}
+\item[{{\bf Doc\-Visitor} $\ast$}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_doc_text_a7ba716e854ae2f8f87a4eb2140e302b6}
+Acceptor function for node visitors. Part of the visitor pattern. 
+\begin{DoxyParams}{Parâmetros}
+{\em v} & Abstract visitor. \\
+\hline
+\end{DoxyParams}
+
+
+Implementa \hyperlink{class_doc_node_ac0816c4a3ba0fb0ca95538f82e13df27}{Doc\-Node}.
+
+\hypertarget{class_doc_text_aa9d037bed9f9a083d0cd01485637d843}{\index{Doc\-Text@{Doc\-Text}!kind@{kind}}
+\index{kind@{kind}!DocText@{Doc\-Text}}
+\subsubsection[{kind}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Kind} kind (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_doc_text_aa9d037bed9f9a083d0cd01485637d843}
+Returns the kind of node. Provides runtime type information 
+
+Implementa \hyperlink{class_doc_node_a27e5d1dde6c9e861b52afa5a95f71d2d}{Doc\-Node}.
+
+
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/src/docparser.\-h\item 
+C\-:/\-Users/teste/git/doxygen/src/docparser.\-cpp\end{DoxyCompactItemize}

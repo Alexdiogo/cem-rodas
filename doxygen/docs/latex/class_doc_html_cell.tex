@@ -1,0 +1,116 @@
+\hypertarget{class_doc_html_cell}{\section{Referência à classe Doc\-Html\-Cell}
+\label{class_doc_html_cell}\index{Doc\-Html\-Cell@{Doc\-Html\-Cell}}
+}
+
+
+{\ttfamily \#include $<$docparser.\-h$>$}
+
+Diagrama de heranças da classe Doc\-Html\-Cell\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_doc_html_cell}
+\end{center}
+\end{figure}
+\subsection*{Tipos Públicos}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Alignment} \{ {\bfseries Left}, 
+{\bfseries Right}, 
+{\bfseries Center}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_doc_html_cell_a39afff40d81ee75c88309cc6ef405328}{{\bfseries Doc\-Html\-Cell} (\hyperlink{class_doc_node}{Doc\-Node} $\ast$\hyperlink{class_doc_node_abd7f070d6b0a38b4da71c2806578d19d}{parent}, const \hyperlink{class_html_attrib_list}{Html\-Attrib\-List} \&attribs, bool is\-Heading)}\label{class_doc_html_cell_a39afff40d81ee75c88309cc6ef405328}
+
+\item 
+\hypertarget{class_doc_html_cell_ade05d6ce722372f5c6779febf0ffab8b}{bool {\bfseries is\-Heading} () const }\label{class_doc_html_cell_ade05d6ce722372f5c6779febf0ffab8b}
+
+\item 
+\hypertarget{class_doc_html_cell_af018468130393cdae58e14a36980f94c}{bool {\bfseries is\-First} () const }\label{class_doc_html_cell_af018468130393cdae58e14a36980f94c}
+
+\item 
+\hypertarget{class_doc_html_cell_a8dad52a23ff99a58cb64461598a11d5c}{bool {\bfseries is\-Last} () const }\label{class_doc_html_cell_a8dad52a23ff99a58cb64461598a11d5c}
+
+\item 
+\hyperlink{class_doc_node_aa10c9e8951b8ccf714a59ec321bdac5b}{Kind} \hyperlink{class_doc_html_cell_aa9d037bed9f9a083d0cd01485637d843}{kind} () const 
+\item 
+void \hyperlink{class_doc_html_cell_a7ba716e854ae2f8f87a4eb2140e302b6}{accept} (\hyperlink{class_doc_visitor}{Doc\-Visitor} $\ast$v)
+\item 
+\hypertarget{class_doc_html_cell_a7d3af17d92bf948006d448691283290c}{void {\bfseries mark\-First} (bool v=T\-R\-U\-E)}\label{class_doc_html_cell_a7d3af17d92bf948006d448691283290c}
+
+\item 
+\hypertarget{class_doc_html_cell_a9d9fd09f1f4baa960c94af1d41c60f95}{void {\bfseries mark\-Last} (bool v=T\-R\-U\-E)}\label{class_doc_html_cell_a9d9fd09f1f4baa960c94af1d41c60f95}
+
+\item 
+\hypertarget{class_doc_html_cell_aae3c838ea3d3273b35d07e9965a8985e}{const \hyperlink{class_html_attrib_list}{Html\-Attrib\-List} \& {\bfseries attribs} () const }\label{class_doc_html_cell_aae3c838ea3d3273b35d07e9965a8985e}
+
+\item 
+\hypertarget{class_doc_html_cell_a67007fc2be130666fbf3b065022756f4}{int {\bfseries parse} ()}\label{class_doc_html_cell_a67007fc2be130666fbf3b065022756f4}
+
+\item 
+\hypertarget{class_doc_html_cell_a80866a0f93fec97bbcf5b54a48fd8ead}{int {\bfseries parse\-Xml} ()}\label{class_doc_html_cell_a80866a0f93fec97bbcf5b54a48fd8ead}
+
+\item 
+\hypertarget{class_doc_html_cell_a21ddbe149bd2ad1a2114e9adcd847923}{int {\bfseries row\-Index} () const }\label{class_doc_html_cell_a21ddbe149bd2ad1a2114e9adcd847923}
+
+\item 
+\hypertarget{class_doc_html_cell_a586db6ec9546460ae663e065e7107c97}{int {\bfseries column\-Index} () const }\label{class_doc_html_cell_a586db6ec9546460ae663e065e7107c97}
+
+\item 
+\hypertarget{class_doc_html_cell_a826ce56ff11d3637d36287bfd47fcdfc}{int {\bfseries row\-Span} () const }\label{class_doc_html_cell_a826ce56ff11d3637d36287bfd47fcdfc}
+
+\item 
+\hypertarget{class_doc_html_cell_aab9e80af34d11279544bea2b178cb7e8}{int {\bfseries col\-Span} () const }\label{class_doc_html_cell_aab9e80af34d11279544bea2b178cb7e8}
+
+\item 
+\hypertarget{class_doc_html_cell_aa539b506521f7f3d14c1befb6add5586}{Alignment {\bfseries alignment} () const }\label{class_doc_html_cell_aa539b506521f7f3d14c1befb6add5586}
+
+\end{DoxyCompactItemize}
+\subsection*{Amigos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_doc_html_cell_a1f7413118a8c0d90c891a2695a7cb90d}{class {\bfseries Doc\-Html\-Table}}\label{class_doc_html_cell_a1f7413118a8c0d90c891a2695a7cb90d}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Descrição detalhada}
+Node representing a H\-T\-M\-L table cell 
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_doc_html_cell_a7ba716e854ae2f8f87a4eb2140e302b6}{\index{Doc\-Html\-Cell@{Doc\-Html\-Cell}!accept@{accept}}
+\index{accept@{accept}!DocHtmlCell@{Doc\-Html\-Cell}}
+\subsubsection[{accept}]{\setlength{\rightskip}{0pt plus 5cm}void accept (
+\begin{DoxyParamCaption}
+\item[{{\bf Doc\-Visitor} $\ast$}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_doc_html_cell_a7ba716e854ae2f8f87a4eb2140e302b6}
+Acceptor function for node visitors. Part of the visitor pattern. 
+\begin{DoxyParams}{Parâmetros}
+{\em v} & Abstract visitor. \\
+\hline
+\end{DoxyParams}
+
+
+Implementa \hyperlink{class_doc_node_ac0816c4a3ba0fb0ca95538f82e13df27}{Doc\-Node}.
+
+\hypertarget{class_doc_html_cell_aa9d037bed9f9a083d0cd01485637d843}{\index{Doc\-Html\-Cell@{Doc\-Html\-Cell}!kind@{kind}}
+\index{kind@{kind}!DocHtmlCell@{Doc\-Html\-Cell}}
+\subsubsection[{kind}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Kind} kind (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_doc_html_cell_aa9d037bed9f9a083d0cd01485637d843}
+Returns the kind of node. Provides runtime type information 
+
+Implementa \hyperlink{class_doc_node_a27e5d1dde6c9e861b52afa5a95f71d2d}{Doc\-Node}.
+
+
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/src/docparser.\-h\item 
+C\-:/\-Users/teste/git/doxygen/src/docparser.\-cpp\end{DoxyCompactItemize}

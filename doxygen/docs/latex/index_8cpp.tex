@@ -1,0 +1,195 @@
+\hypertarget{index_8cpp}{\section{Referência ao ficheiro C\-:/\-Users/teste/git/doxygen/src/index.cpp}
+\label{index_8cpp}\index{C\-:/\-Users/teste/git/doxygen/src/index.\-cpp@{C\-:/\-Users/teste/git/doxygen/src/index.\-cpp}}
+}
+
+
+This file contains functions for the various index pages.  
+
+
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$qtextstream.\-h$>$}\\*
+{\ttfamily \#include $<$qdatetime.\-h$>$}\\*
+{\ttfamily \#include $<$qdir.\-h$>$}\\*
+{\ttfamily \#include $<$qregexp.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}message.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}index.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}doxygen.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}config.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}filedef.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}outputlist.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}util.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}groupdef.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}language.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}htmlgen.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}htmlhelp.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}ftvhelp.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}dot.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}pagedef.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}dirdef.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}vhdldocgen.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}layout.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}memberlist.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}classlist.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}namespacedef.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}filename.\-h\char`\"{}}\\*
+\subsection*{Estruturas de Dados}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_member_index_list}{Member\-Index\-List}
+\item 
+class \hyperlink{class_prefix_ignore_class_list}{Prefix\-Ignore\-Class\-List}
+\item 
+class \hyperlink{class_alpha_index_table_cell}{Alpha\-Index\-Table\-Cell}
+\item 
+class \hyperlink{class_alpha_index_table_rows}{Alpha\-Index\-Table\-Rows}
+\item 
+class \hyperlink{class_alpha_index_table_rows_iterator}{Alpha\-Index\-Table\-Rows\-Iterator}
+\item 
+class \hyperlink{class_alpha_index_table_columns}{Alpha\-Index\-Table\-Columns}
+\item 
+class \hyperlink{class_used_index_letters}{Used\-Index\-Letters}
+\item 
+struct \hyperlink{struct_cmhl_info}{Cmhl\-Info}
+\item 
+struct \hyperlink{struct_fmhl_info}{Fmhl\-Info}
+\item 
+struct \hyperlink{struct_nmhl_info}{Nmhl\-Info}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{index_8cpp_a17545e2e443b0c6ea3518548c7a733f4}{\#define {\bfseries M\-A\-X\-\_\-\-I\-T\-E\-M\-S\-\_\-\-B\-E\-F\-O\-R\-E\-\_\-\-M\-U\-L\-T\-I\-P\-A\-G\-E\-\_\-\-I\-N\-D\-E\-X}~200}\label{index_8cpp_a17545e2e443b0c6ea3518548c7a733f4}
+
+\item 
+\hypertarget{index_8cpp_a11cae55bd05fc02cdf480a11a307d252}{\#define {\bfseries M\-A\-X\-\_\-\-I\-T\-E\-M\-S\-\_\-\-B\-E\-F\-O\-R\-E\-\_\-\-Q\-U\-I\-C\-K\-\_\-\-I\-N\-D\-E\-X}~30}\label{index_8cpp_a11cae55bd05fc02cdf480a11a307d252}
+
+\item 
+\#define {\bfseries N\-E\-X\-T\-\_\-\-R\-O\-W}()
+\end{DoxyCompactItemize}
+\subsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{index_8cpp_ad7aec8becfb2846d045b0eed77928186}{void {\bfseries count\-Data\-Structures} ()}\label{index_8cpp_ad7aec8becfb2846d045b0eed77928186}
+
+\item 
+\hypertarget{index_8cpp_a3eea3729e8c341a13f1976a0ffea49be}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries fix\-Spaces} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&s)}\label{index_8cpp_a3eea3729e8c341a13f1976a0ffea49be}
+
+\item 
+\hypertarget{index_8cpp_a835e3dd3645e8a178cfa27746acb4fd2}{void {\bfseries start\-Title} (\hyperlink{class_output_list}{Output\-List} \&ol, const char $\ast$file\-Name, \hyperlink{class_definition}{Definition} $\ast$def)}\label{index_8cpp_a835e3dd3645e8a178cfa27746acb4fd2}
+
+\item 
+\hypertarget{index_8cpp_a99263ca2a7c472b182359b9a1b8bba5a}{void {\bfseries end\-Title} (\hyperlink{class_output_list}{Output\-List} \&ol, const char $\ast$file\-Name, const char $\ast$name)}\label{index_8cpp_a99263ca2a7c472b182359b9a1b8bba5a}
+
+\item 
+\hypertarget{index_8cpp_a0107558323af02122a12043bd019f6d7}{void {\bfseries start\-File} (\hyperlink{class_output_list}{Output\-List} \&ol, const char $\ast$name, const char $\ast$man\-Name, const char $\ast$title, Highlighted\-Item hli, bool additional\-Indices, const char $\ast$alt\-Sidebar\-Name)}\label{index_8cpp_a0107558323af02122a12043bd019f6d7}
+
+\item 
+\hypertarget{index_8cpp_a0f65138605aced4e557cefaebba93625}{void {\bfseries end\-File} (\hyperlink{class_output_list}{Output\-List} \&ol, bool skip\-Nav\-Index, bool skip\-End\-Contents, const \hyperlink{class_q_c_string}{Q\-C\-String} \&nav\-Path)}\label{index_8cpp_a0f65138605aced4e557cefaebba93625}
+
+\item 
+\hypertarget{index_8cpp_a70b291860c3a4ac5985007e28f3bb4b7}{void {\bfseries end\-File\-With\-Nav\-Path} (\hyperlink{class_definition}{Definition} $\ast$d, \hyperlink{class_output_list}{Output\-List} \&ol)}\label{index_8cpp_a70b291860c3a4ac5985007e28f3bb4b7}
+
+\item 
+\hypertarget{index_8cpp_a566cc0e3d95c7a12d7bf6a9adf11ddae}{{\footnotesize template$<$class T $>$ }\\void {\bfseries add\-Members\-To\-Index} (T $\ast$def, Layout\-Doc\-Manager\-::\-Layout\-Part part, const \hyperlink{class_q_c_string}{Q\-C\-String} \&name, const \hyperlink{class_q_c_string}{Q\-C\-String} \&anchor, bool add\-To\-Index=T\-R\-U\-E, bool prevent\-Separate\-Index=F\-A\-L\-S\-E)}\label{index_8cpp_a566cc0e3d95c7a12d7bf6a9adf11ddae}
+
+\item 
+\hypertarget{index_8cpp_a9de81c2b6e58a604ef433881d7bdaae1}{void {\bfseries write\-Class\-Tree} (\hyperlink{class_class_s_dict}{Class\-S\-Dict} $\ast$cl\-Dict, \hyperlink{class_f_t_v_help}{F\-T\-V\-Help} $\ast$ftv, bool add\-To\-Index, bool global\-Only)}\label{index_8cpp_a9de81c2b6e58a604ef433881d7bdaae1}
+
+\item 
+\hypertarget{index_8cpp_aa81ddea105efdb7387c7dbbeccb7853f}{void {\bfseries init\-Class\-Member\-Indices} ()}\label{index_8cpp_aa81ddea105efdb7387c7dbbeccb7853f}
+
+\item 
+\hypertarget{index_8cpp_a47d8a30fa163d64e474aaafff63ab741}{void {\bfseries add\-Class\-Member\-Name\-To\-Index} (\hyperlink{class_member_def}{Member\-Def} $\ast$md)}\label{index_8cpp_a47d8a30fa163d64e474aaafff63ab741}
+
+\item 
+\hypertarget{index_8cpp_ac56c2afc476b9e3d86920efa77f225c8}{void {\bfseries init\-Namespace\-Member\-Indices} ()}\label{index_8cpp_ac56c2afc476b9e3d86920efa77f225c8}
+
+\item 
+\hypertarget{index_8cpp_ad3cafea1ea06e1fa44cf978b7841b65f}{void {\bfseries add\-Namespace\-Member\-Name\-To\-Index} (\hyperlink{class_member_def}{Member\-Def} $\ast$md)}\label{index_8cpp_ad3cafea1ea06e1fa44cf978b7841b65f}
+
+\item 
+\hypertarget{index_8cpp_af69a5ffa69982799bc4ea5f3cd95a6be}{void {\bfseries init\-File\-Member\-Indices} ()}\label{index_8cpp_af69a5ffa69982799bc4ea5f3cd95a6be}
+
+\item 
+\hypertarget{index_8cpp_a49a0312046769ae4e8f0630164f10ad6}{void {\bfseries add\-File\-Member\-Name\-To\-Index} (\hyperlink{class_member_def}{Member\-Def} $\ast$md)}\label{index_8cpp_a49a0312046769ae4e8f0630164f10ad6}
+
+\item 
+\hypertarget{index_8cpp_a256c275d3b654245e85d7c04e8f417b9}{void {\bfseries write\-Graph\-Info} (\hyperlink{class_output_list}{Output\-List} \&ol)}\label{index_8cpp_a256c275d3b654245e85d7c04e8f417b9}
+
+\item 
+\hypertarget{index_8cpp_ab2818fb513d9fdb38f3ff8e75848f388}{void {\bfseries write\-Index\-Hierarchy} (\hyperlink{class_output_list}{Output\-List} \&ol)}\label{index_8cpp_ab2818fb513d9fdb38f3ff8e75848f388}
+
+\end{DoxyCompactItemize}
+\subsection*{Variáveis}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{index_8cpp_ab8696e272209d21662fb6ef914cc60cd}{int {\bfseries annotated\-Classes}}\label{index_8cpp_ab8696e272209d21662fb6ef914cc60cd}
+
+\item 
+\hypertarget{index_8cpp_aaaa98f9a2bdb353a6032c5d59d60b27c}{int {\bfseries annotated\-Classes\-Printed}}\label{index_8cpp_aaaa98f9a2bdb353a6032c5d59d60b27c}
+
+\item 
+\hypertarget{index_8cpp_a9d8bc5511ea0ca28e61d7143e34197d2}{int {\bfseries hierarchy\-Classes}}\label{index_8cpp_a9d8bc5511ea0ca28e61d7143e34197d2}
+
+\item 
+\hypertarget{index_8cpp_a34d56ba7384fa1bc1630b422e6280206}{int {\bfseries documented\-Files}}\label{index_8cpp_a34d56ba7384fa1bc1630b422e6280206}
+
+\item 
+\hypertarget{index_8cpp_a1ac0809d579e3db7230c346e26edb8ea}{int {\bfseries documented\-Groups}}\label{index_8cpp_a1ac0809d579e3db7230c346e26edb8ea}
+
+\item 
+\hypertarget{index_8cpp_a8c993f9f4c35e6f89cc5a577e1a018b1}{int {\bfseries documented\-Namespaces}}\label{index_8cpp_a8c993f9f4c35e6f89cc5a577e1a018b1}
+
+\item 
+\hypertarget{index_8cpp_a3ad4aed09bc05d76241c5e954365459d}{int {\bfseries indexed\-Pages}}\label{index_8cpp_a3ad4aed09bc05d76241c5e954365459d}
+
+\item 
+\hypertarget{index_8cpp_a25a89faa5b83e8bd8c0c54e187c2d716}{int {\bfseries documented\-Class\-Members} \mbox{[}C\-M\-H\-L\-\_\-\-Total\mbox{]}}\label{index_8cpp_a25a89faa5b83e8bd8c0c54e187c2d716}
+
+\item 
+\hypertarget{index_8cpp_a32064f76903f7abb7581a72db683da08}{int {\bfseries documented\-File\-Members} \mbox{[}F\-M\-H\-L\-\_\-\-Total\mbox{]}}\label{index_8cpp_a32064f76903f7abb7581a72db683da08}
+
+\item 
+\hypertarget{index_8cpp_afb72e29551d5d6b381575be7fb00f0e6}{int {\bfseries documented\-Namespace\-Members} \mbox{[}N\-M\-H\-L\-\_\-\-Total\mbox{]}}\label{index_8cpp_afb72e29551d5d6b381575be7fb00f0e6}
+
+\item 
+\hypertarget{index_8cpp_ac200e3351842283506e4d331d2dd499a}{int {\bfseries documented\-Html\-Files}}\label{index_8cpp_ac200e3351842283506e4d331d2dd499a}
+
+\item 
+\hypertarget{index_8cpp_a8d208b1c23672a57b1fa325d186fc99d}{int {\bfseries documented\-Pages}}\label{index_8cpp_a8d208b1c23672a57b1fa325d186fc99d}
+
+\item 
+\hypertarget{index_8cpp_a09cdd90d6507327cf5c87a3030e9cb0e}{int {\bfseries documented\-Dirs}}\label{index_8cpp_a09cdd90d6507327cf5c87a3030e9cb0e}
+
+\item 
+\hypertarget{index_8cpp_abc1a8a86fe8d8ec886069eac188534d7}{const int {\bfseries max\-Items\-Before\-Quick\-Index} = M\-A\-X\-\_\-\-I\-T\-E\-M\-S\-\_\-\-B\-E\-F\-O\-R\-E\-\_\-\-Q\-U\-I\-C\-K\-\_\-\-I\-N\-D\-E\-X}\label{index_8cpp_abc1a8a86fe8d8ec886069eac188534d7}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+This file contains functions for the various index pages. 
+
+\subsection{Documentação das macros}
+\hypertarget{index_8cpp_a0da2a1a74a366a8179069b77be1b0f0d}{\index{index.\-cpp@{index.\-cpp}!N\-E\-X\-T\-\_\-\-R\-O\-W@{N\-E\-X\-T\-\_\-\-R\-O\-W}}
+\index{N\-E\-X\-T\-\_\-\-R\-O\-W@{N\-E\-X\-T\-\_\-\-R\-O\-W}!index.cpp@{index.\-cpp}}
+\subsubsection[{N\-E\-X\-T\-\_\-\-R\-O\-W}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\-E\-X\-T\-\_\-\-R\-O\-W(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{index_8cpp_a0da2a1a74a366a8179069b77be1b0f0d}
+{\bfseries Valor\-:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do}                                         \(\backslash\)
+    \{                                          \(\backslash\)
+      if (row>maxRows) maxRows=row;            \(\backslash\)
+      if (row>=rows && col<columns)            \(\backslash\)
+      \{                                        \(\backslash\)
+        col++;                                 \(\backslash\)
+        row=0;                                 \(\backslash\)
+        tableRows = \textcolor{keyword}{new} \hyperlink{class_alpha_index_table_rows}{AlphaIndexTableRows};   \(\backslash\)
+        tableColumns.append(tableRows);        \(\backslash\)
+      \}                                        \(\backslash\)
+    \}                                          \(\backslash\)
+    while(0)                                   \(\backslash\)
+\end{DoxyCode}

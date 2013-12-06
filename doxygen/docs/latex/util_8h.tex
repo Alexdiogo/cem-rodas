@@ -1,0 +1,795 @@
+\hypertarget{util_8h}{\section{Referência ao ficheiro C\-:/\-Users/teste/git/doxygen/src/util.h}
+\label{util_8h}\index{C\-:/\-Users/teste/git/doxygen/src/util.\-h@{C\-:/\-Users/teste/git/doxygen/src/util.\-h}}
+}
+
+
+\hyperlink{class_a}{A} bunch of utility functions.  
+
+
+{\ttfamily \#include $<$qlist.\-h$>$}\\*
+{\ttfamily \#include $<$ctype.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}types.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}sortdict.\-h\char`\"{}}\\*
+\subsection*{Estruturas de Dados}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_text_generator_intf}{Text\-Generator\-Intf}
+\item 
+class \hyperlink{class_text_generator_o_l_impl}{Text\-Generator\-O\-L\-Impl}
+\item 
+class \hyperlink{class_letter_to_index_map}{Letter\-To\-Index\-Map$<$ T $>$}
+\begin{DoxyCompactList}\small\item\em maps a unicode character code to a list of T\-::\-Element\-Type's \end{DoxyCompactList}\item 
+struct \hyperlink{struct_colored_img_data_item}{Colored\-Img\-Data\-Item}
+\end{DoxyCompactItemize}
+\subsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{util_8h_a969690ca9b1155540d43631f499b3880}{lang\-To\-String} (\hyperlink{types_8h_a9974623ce72fc23df5d64426b9178bf2}{Src\-Lang\-Ext} lang)
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{util_8h_ac4c34c02b8869dca71de6f4037736dc7}{get\-Language\-Specific\-Separator} (\hyperlink{types_8h_a9974623ce72fc23df5d64426b9178bf2}{Src\-Lang\-Ext} lang, bool class\-Scope=F\-A\-L\-S\-E)
+\item 
+\hypertarget{util_8h_aaa41bd0427c9ef7d1aa4fa3a7014f0e8}{void {\bfseries linkify\-Text} (const \hyperlink{class_text_generator_intf}{Text\-Generator\-Intf} \&ol, \hyperlink{class_definition}{Definition} $\ast$scope, \hyperlink{class_file_def}{File\-Def} $\ast$file\-Scope, \hyperlink{class_definition}{Definition} $\ast$self, const char $\ast$text, bool auto\-Break=F\-A\-L\-S\-E, bool external=T\-R\-U\-E, bool keep\-Spaces=F\-A\-L\-S\-E, int indent\-Level=0)}\label{util_8h_aaa41bd0427c9ef7d1aa4fa3a7014f0e8}
+
+\item 
+\hypertarget{util_8h_adac72b4ea3bea5b95361196b902c93cb}{void {\bfseries set\-Anchors} (\hyperlink{class_member_list}{Member\-List} $\ast$ml)}\label{util_8h_adac72b4ea3bea5b95361196b902c93cb}
+
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{util_8h_a320768069dfe8bb92a0ad137769a3275}{file\-To\-String} (const char $\ast$name, bool filter=F\-A\-L\-S\-E, bool is\-Source\-Code=F\-A\-L\-S\-E)
+\item 
+\hypertarget{util_8h_ad100564131ab122948dd034424322cda}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries date\-To\-String} (bool)}\label{util_8h_ad100564131ab122948dd034424322cda}
+
+\item 
+bool \hyperlink{util_8h_a299731fdff2d25b4c64d046d24a0ac1f}{get\-Defs} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&scope\-Name, const \hyperlink{class_q_c_string}{Q\-C\-String} \&member\-Name, const char $\ast$, \hyperlink{class_member_def}{Member\-Def} $\ast$\&md, \hyperlink{class_class_def}{Class\-Def} $\ast$\&cd, \hyperlink{class_file_def}{File\-Def} $\ast$\&fd, \hyperlink{class_namespace_def}{Namespace\-Def} $\ast$\&nd, \hyperlink{class_group_def}{Group\-Def} $\ast$\&gd, bool force\-Empty\-Scope=F\-A\-L\-S\-E, \hyperlink{class_file_def}{File\-Def} $\ast$current\-File=0, bool check\-C\-V=F\-A\-L\-S\-E, const char $\ast$force\-Tag\-File=0)
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{util_8h_a188c1467dbdf01fbdb87e08ce49fb759}{get\-File\-Filter} (const char $\ast$name, bool is\-Source\-Code)
+\item 
+bool \hyperlink{util_8h_a4cc99128827cc7c407e276d3f65bb7b2}{resolve\-Ref} (const char $\ast$sc\-Name, const char $\ast$name, bool in\-See\-Block, \hyperlink{class_definition}{Definition} $\ast$$\ast$res\-Context, \hyperlink{class_member_def}{Member\-Def} $\ast$$\ast$res\-Member, bool look\-For\-Specializations=T\-R\-U\-E, \hyperlink{class_file_def}{File\-Def} $\ast$current\-File=0, bool check\-Scope=F\-A\-L\-S\-E)
+\item 
+\hypertarget{util_8h_a925e11e8dc39782b799195b95fe47a14}{bool {\bfseries resolve\-Link} (const char $\ast$sc\-Name, const char $\ast$lr, bool in\-See\-Block, \hyperlink{class_definition}{Definition} $\ast$$\ast$res\-Context, \hyperlink{class_q_c_string}{Q\-C\-String} \&res\-Anchor)}\label{util_8h_a925e11e8dc39782b799195b95fe47a14}
+
+\item 
+\hypertarget{util_8h_a7ec124b6c5496a1f90ec013dd13a06cc}{bool {\bfseries generate\-Link} (\hyperlink{class_output_doc_interface}{Output\-Doc\-Interface} \&od, const char $\ast$, const char $\ast$, bool in\-See\-Block, const char $\ast$)}\label{util_8h_a7ec124b6c5496a1f90ec013dd13a06cc}
+
+\item 
+\hypertarget{util_8h_a41ed50d02f23b6b7f9ed9fde7103bb02}{void {\bfseries generate\-File\-Ref} (\hyperlink{class_output_doc_interface}{Output\-Doc\-Interface} \&od, const char $\ast$, const char $\ast$link\-Txt=0)}\label{util_8h_a41ed50d02f23b6b7f9ed9fde7103bb02}
+
+\item 
+\hypertarget{util_8h_a1cf0aaa212c55e4d7e2fd3356da26647}{void {\bfseries write\-Page\-Ref} (\hyperlink{class_output_doc_interface}{Output\-Doc\-Interface} \&od, const char $\ast$cn, const char $\ast$mn)}\label{util_8h_a1cf0aaa212c55e4d7e2fd3356da26647}
+
+\item 
+\hypertarget{util_8h_aa73eddf8538614ab7f28f4213082f62f}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries get\-Canonical\-Template\-Spec} (\hyperlink{class_definition}{Definition} $\ast$d, \hyperlink{class_file_def}{File\-Def} $\ast$fs, const \hyperlink{class_q_c_string}{Q\-C\-String} \&spec)}\label{util_8h_aa73eddf8538614ab7f28f4213082f62f}
+
+\item 
+\hypertarget{util_8h_a9895714a00c6f6def7009f5eed2b41d1}{bool {\bfseries match\-Arguments2} (\hyperlink{class_definition}{Definition} $\ast$src\-Scope, \hyperlink{class_file_def}{File\-Def} $\ast$src\-File\-Scope, \hyperlink{class_argument_list}{Argument\-List} $\ast$src\-Al, \hyperlink{class_definition}{Definition} $\ast$dst\-Scope, \hyperlink{class_file_def}{File\-Def} $\ast$dst\-File\-Scope, \hyperlink{class_argument_list}{Argument\-List} $\ast$dst\-Al, bool check\-C\-V)}\label{util_8h_a9895714a00c6f6def7009f5eed2b41d1}
+
+\item 
+\hypertarget{util_8h_a8457e37bcb5e489eb0df4043dd355508}{void {\bfseries merge\-Arguments} (\hyperlink{class_argument_list}{Argument\-List} $\ast$, \hyperlink{class_argument_list}{Argument\-List} $\ast$, bool force\-Name\-Overwrite=F\-A\-L\-S\-E)}\label{util_8h_a8457e37bcb5e489eb0df4043dd355508}
+
+\item 
+\hypertarget{util_8h_a1528138e65b90b6587cf91bab2e485e9}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries substitute\-Class\-Names} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&s)}\label{util_8h_a1528138e65b90b6587cf91bab2e485e9}
+
+\item 
+\hypertarget{util_8h_aeabaedb8576cf90168747836f5f3f15b}{\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{util_8h_aeabaedb8576cf90168747836f5f3f15b}{substitute} (const char $\ast$s, const char $\ast$src, const char $\ast$dst)}\label{util_8h_aeabaedb8576cf90168747836f5f3f15b}
+
+\begin{DoxyCompactList}\small\item\em substitute all occurrences of {\itshape src} in {\itshape s} by {\itshape dst} \end{DoxyCompactList}\item 
+\hypertarget{util_8h_ae86942fc4f611369b1b9ac609984af46}{\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{util_8h_ae86942fc4f611369b1b9ac609984af46}{clear\-Block} (const char $\ast$s, const char $\ast$begin, const char $\ast$end)}\label{util_8h_ae86942fc4f611369b1b9ac609984af46}
+
+\begin{DoxyCompactList}\small\item\em Clear a text block {\itshape s} from {\itshape begin} to {\itshape end} markers. \end{DoxyCompactList}\item 
+\hypertarget{util_8h_aacd947d7524f43275f1b598a5f789131}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries select\-Block} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&s, const \hyperlink{class_q_c_string}{Q\-C\-String} \&name, bool which)}\label{util_8h_aacd947d7524f43275f1b598a5f789131}
+
+\item 
+\hypertarget{util_8h_af98582eb1994259a8d863aedd6daf852}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries resolve\-Defines} (const char $\ast$n)}\label{util_8h_af98582eb1994259a8d863aedd6daf852}
+
+\item 
+\hyperlink{class_class_def}{Class\-Def} $\ast$ \hyperlink{util_8h_af038b3c55db4fa840af0ee26464bb72a}{get\-Class} (const char $\ast$key)
+\item 
+\hypertarget{util_8h_a519a0b5ebad8c18e8cb270374eaa2874}{\hyperlink{class_class_def}{Class\-Def} $\ast$ {\bfseries get\-Resolved\-Class} (\hyperlink{class_definition}{Definition} $\ast$scope, \hyperlink{class_file_def}{File\-Def} $\ast$file\-Scope, const char $\ast$key, \hyperlink{class_member_def}{Member\-Def} $\ast$$\ast$p\-Type\-Def=0, \hyperlink{class_q_c_string}{Q\-C\-String} $\ast$p\-Templ\-Spec=0, bool may\-Be\-Unlinkable=F\-A\-L\-S\-E, bool may\-Be\-Hidden=F\-A\-L\-S\-E, \hyperlink{class_q_c_string}{Q\-C\-String} $\ast$p\-Resolved\-Type=0)}\label{util_8h_a519a0b5ebad8c18e8cb270374eaa2874}
+
+\item 
+\hypertarget{util_8h_af16ae563cd6c3263fd7ea32399f097ca}{\hyperlink{class_namespace_def}{Namespace\-Def} $\ast$ {\bfseries get\-Resolved\-Namespace} (const char $\ast$key)}\label{util_8h_af16ae563cd6c3263fd7ea32399f097ca}
+
+\item 
+\hypertarget{util_8h_a0cf19d261e77047fb63376980cbf866a}{\hyperlink{class_file_def}{File\-Def} $\ast$ {\bfseries find\-File\-Def} (const \hyperlink{class_file_name_dict}{File\-Name\-Dict} $\ast$fn\-Dict, const char $\ast$n, bool \&ambig)}\label{util_8h_a0cf19d261e77047fb63376980cbf866a}
+
+\item 
+\hypertarget{util_8h_a1641b930420737442bb27e082999da69}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries show\-File\-Def\-Matches} (const \hyperlink{class_file_name_dict}{File\-Name\-Dict} $\ast$fn\-Dict, const char $\ast$n)}\label{util_8h_a1641b930420737442bb27e082999da69}
+
+\item 
+int \hyperlink{util_8h_a826cc396ba482fb9ef1990104f9c1026}{guess\-Section} (const char $\ast$name)
+\item 
+\hypertarget{util_8h_ae320c88a8522836f00095d566529046f}{bool {\bfseries is\-Id} (int c)}\label{util_8h_ae320c88a8522836f00095d566529046f}
+
+\item 
+\hypertarget{util_8h_a0940360aa6d41fd2496603fc565e3996}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries remove\-Redundant\-White\-Space} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&s)}\label{util_8h_a0940360aa6d41fd2496603fc565e3996}
+
+\item 
+\hypertarget{util_8h_a89d636f3583f0ad3d67976b7f7d534c9}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries arg\-List\-To\-String} (\hyperlink{class_argument_list}{Argument\-List} $\ast$al, bool use\-Canonical\-Type=F\-A\-L\-S\-E, bool show\-Def\-Vals=T\-R\-U\-E)}\label{util_8h_a89d636f3583f0ad3d67976b7f7d534c9}
+
+\item 
+\hypertarget{util_8h_a1f0fa95139f78a31647fa8cec8848bb4}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries temp\-Arg\-List\-To\-String} (\hyperlink{class_argument_list}{Argument\-List} $\ast$al)}\label{util_8h_a1f0fa95139f78a31647fa8cec8848bb4}
+
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{util_8h_a5530a73bd518581ac62e4eee5bc2f6db}{generate\-Marker} (int id)
+\item 
+\hypertarget{util_8h_ae16e3cac41493f42d1cd283904b7062b}{void {\bfseries write\-Example} (\hyperlink{class_output_list}{Output\-List} \&ol, \hyperlink{class_example_s_dict}{Example\-S\-Dict} $\ast$el)}\label{util_8h_ae16e3cac41493f42d1cd283904b7062b}
+
+\item 
+\hypertarget{util_8h_a3b3bee35d0b539f857173e0a14ecbf63}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries strip\-Anonymous\-Namespace\-Scope} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&s)}\label{util_8h_a3b3bee35d0b539f857173e0a14ecbf63}
+
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{util_8h_ac7a97256c349c1f4f1d18d7a7098c081}{strip\-From\-Path} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&path)
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{util_8h_a3d790f4b8fa74cbafd6c4b34d4573093}{strip\-From\-Include\-Path} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&path)
+\item 
+\hypertarget{util_8h_ae0c5a702c29f403e331441abfe289d5b}{bool {\bfseries right\-Scope\-Match} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&scope, const \hyperlink{class_q_c_string}{Q\-C\-String} \&name)}\label{util_8h_ae0c5a702c29f403e331441abfe289d5b}
+
+\item 
+\hypertarget{util_8h_a373928f3b61089f84cb4ee946474792f}{bool {\bfseries left\-Scope\-Match} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&scope, const \hyperlink{class_q_c_string}{Q\-C\-String} \&name)}\label{util_8h_a373928f3b61089f84cb4ee946474792f}
+
+\item 
+\hypertarget{util_8h_a967d9e508c8a67d803c071d6c4795f2c}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries substitute\-Keywords} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&s, const char $\ast$title, const char $\ast$proj\-Name, const char $\ast$proj\-Num, const char $\ast$proj\-Brief)}\label{util_8h_a967d9e508c8a67d803c071d6c4795f2c}
+
+\item 
+int \hyperlink{util_8h_ae052d7dcea3289dd204d8d425cf9d4c9}{get\-Prefix\-Index} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&name)
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{util_8h_aa16e34240606f622b272b2b3e26d33e4}{remove\-Anonymous\-Scopes} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&s)
+\item 
+\hypertarget{util_8h_ac42e0825ac5ca90c522d5f94eab62d0b}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries replace\-Anonymous\-Scopes} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&s, const char $\ast$replacement=0)}\label{util_8h_ac42e0825ac5ca90c522d5f94eab62d0b}
+
+\item 
+\hypertarget{util_8h_a85a1facc6e1b98c37768fb0f60f0c25e}{void {\bfseries init\-Class\-Hierarchy} (\hyperlink{class_class_s_dict}{Class\-S\-Dict} $\ast$cl)}\label{util_8h_a85a1facc6e1b98c37768fb0f60f0c25e}
+
+\item 
+\hypertarget{util_8h_a20b745f614829c8c25c02d39a80d8f24}{bool {\bfseries has\-Visible\-Root} (\hyperlink{class_base_class_list}{Base\-Class\-List} $\ast$bcl)}\label{util_8h_a20b745f614829c8c25c02d39a80d8f24}
+
+\item 
+\hypertarget{util_8h_a89088e5bd78087cc05aafaaca9be883d}{bool {\bfseries class\-Has\-Visible\-Children} (\hyperlink{class_class_def}{Class\-Def} $\ast$cd)}\label{util_8h_a89088e5bd78087cc05aafaaca9be883d}
+
+\item 
+\hypertarget{util_8h_a90ab8b68dde5456bbb93d4f8793acaf4}{bool {\bfseries namespace\-Has\-Visible\-Child} (\hyperlink{class_namespace_def}{Namespace\-Def} $\ast$nd, bool include\-Classes)}\label{util_8h_a90ab8b68dde5456bbb93d4f8793acaf4}
+
+\item 
+\hypertarget{util_8h_ad775c2202171bbd05b6c39f9b14ed92b}{bool {\bfseries class\-Visible\-In\-Index} (\hyperlink{class_class_def}{Class\-Def} $\ast$cd)}\label{util_8h_ad775c2202171bbd05b6c39f9b14ed92b}
+
+\item 
+\hypertarget{util_8h_a19ebee64db945b01ff5b36cd2b7ed0ca}{int {\bfseries min\-Class\-Distance} (const \hyperlink{class_class_def}{Class\-Def} $\ast$cd, const \hyperlink{class_class_def}{Class\-Def} $\ast$bcd, int level=0)}\label{util_8h_a19ebee64db945b01ff5b36cd2b7ed0ca}
+
+\item 
+\hypertarget{util_8h_a8417869fbab7dfb6f46870acb58867a0}{\hyperlink{types_8h_a90e352184df58cd09455fe9996cd4ded}{Protection} {\bfseries class\-Inherited\-Protection\-Level} (\hyperlink{class_class_def}{Class\-Def} $\ast$cd, \hyperlink{class_class_def}{Class\-Def} $\ast$bcd, \hyperlink{types_8h_a90e352184df58cd09455fe9996cd4ded}{Protection} prot=Public, int level=0)}\label{util_8h_a8417869fbab7dfb6f46870acb58867a0}
+
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{util_8h_ae29291c2d23e9f2144d5eb28b582af02}{convert\-Name\-To\-File} (const char $\ast$name, bool allow\-Dots=F\-A\-L\-S\-E, bool allow\-Underscore=F\-A\-L\-S\-E)
+\item 
+void \hyperlink{util_8h_a183a6b55ac831219c83e2a175d7a2e7a}{extract\-Namespace\-Name} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&scope\-Name, \hyperlink{class_q_c_string}{Q\-C\-String} \&class\-Name, \hyperlink{class_q_c_string}{Q\-C\-String} \&namespace\-Name, bool allow\-Empty\-Class=F\-A\-L\-S\-E)
+\item 
+\hypertarget{util_8h_a1dc6b9f0a9cc58498da6f8d4ffe120c1}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries insert\-Template\-Specifier\-In\-Scope} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&scope, const \hyperlink{class_q_c_string}{Q\-C\-String} \&templ)}\label{util_8h_a1dc6b9f0a9cc58498da6f8d4ffe120c1}
+
+\item 
+\hypertarget{util_8h_a34ffc62b74a8539f1e95cfd4719dbfdb}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries strip\-Scope} (const char $\ast$name)}\label{util_8h_a34ffc62b74a8539f1e95cfd4719dbfdb}
+
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{util_8h_ad55197b4dc49df25c446975478ec6b3f}{convert\-To\-Html} (const char $\ast$s, bool keep\-Entities=T\-R\-U\-E)
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{util_8h_acee8d851ab3a9590ac348bdb857aba26}{convert\-To\-X\-M\-L} (const char $\ast$s)
+\item 
+\hypertarget{util_8h_a1d3351bfe41b27098aaba31876a54d00}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries convert\-To\-J\-S\-String} (const char $\ast$s)}\label{util_8h_a1d3351bfe41b27098aaba31876a54d00}
+
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{util_8h_ad8c71fbab856bc37ae54d2d369535b3b}{get\-Overload\-Docs} ()
+\item 
+\hypertarget{util_8h_ab9fb5edf9486a3ae8501418f2549a02a}{void {\bfseries add\-Members\-To\-Member\-Group} (\hyperlink{class_member_list}{Member\-List} $\ast$ml, \hyperlink{class_member_group_s_dict}{Member\-Group\-S\-Dict} $\ast$$\ast$pp\-Member\-Group\-S\-Dict, \hyperlink{class_definition}{Definition} $\ast$context)}\label{util_8h_ab9fb5edf9486a3ae8501418f2549a02a}
+
+\item 
+int \hyperlink{util_8h_a53d4b12851bc6508815f5770d89c3792}{extract\-Class\-Name\-From\-Type} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&type, int \&pos, \hyperlink{class_q_c_string}{Q\-C\-String} \&name, \hyperlink{class_q_c_string}{Q\-C\-String} \&templ\-Spec, \hyperlink{types_8h_a9974623ce72fc23df5d64426b9178bf2}{Src\-Lang\-Ext}=Src\-Lang\-Ext\-\_\-\-Unknown)
+\item 
+\hypertarget{util_8h_af51d62b1c1dd99d83c3acae8ef302f6f}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries normalize\-Non\-Template\-Arguments\-In\-String} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&name, \hyperlink{class_definition}{Definition} $\ast$context, const \hyperlink{class_argument_list}{Argument\-List} $\ast$formal\-Args)}\label{util_8h_af51d62b1c1dd99d83c3acae8ef302f6f}
+
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{util_8h_a928208745b8d52e1ef9599e3bc5007cf}{substitute\-Template\-Arguments\-In\-String} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&name, \hyperlink{class_argument_list}{Argument\-List} $\ast$formal\-Args, \hyperlink{class_argument_list}{Argument\-List} $\ast$actual\-Args)
+\item 
+\hyperlink{class_q_list}{Q\-List}$<$ \hyperlink{class_argument_list}{Argument\-List} $>$ $\ast$ \hyperlink{util_8h_a76a3a3e6464790c52fbdab33a7ee675f}{copy\-Argument\-Lists} (const \hyperlink{class_q_list}{Q\-List}$<$ \hyperlink{class_argument_list}{Argument\-List} $>$ $\ast$src\-Lists)
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{util_8h_aa78497e488f5e271031b67fbe5452221}{strip\-Template\-Specifiers\-From\-Scope} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&full\-Name, bool parent\-Only=T\-R\-U\-E, \hyperlink{class_q_c_string}{Q\-C\-String} $\ast$last\-Scope\-Stripped=0)
+\item 
+\hypertarget{util_8h_af87aff656b2b744623b7e34e3a5b8e1d}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries resolve\-Type\-Def} (\hyperlink{class_definition}{Definition} $\ast$d, const \hyperlink{class_q_c_string}{Q\-C\-String} \&name, \hyperlink{class_definition}{Definition} $\ast$$\ast$typedef\-Context=0)}\label{util_8h_af87aff656b2b744623b7e34e3a5b8e1d}
+
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{util_8h_a0baa021dae80e22593292b12ef2f721f}{merge\-Scopes} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&left\-Scope, const \hyperlink{class_q_c_string}{Q\-C\-String} \&right\-Scope)
+\item 
+int \hyperlink{util_8h_afd249e264b966d05a54b740e3d43ad6e}{get\-Scope\-Fragment} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&s, int p, int $\ast$l)
+\item 
+int \hyperlink{util_8h_ae019f2737460a8c3eaad5264f8fe57a2}{filter\-C\-R\-L\-F} (char $\ast$buf, int len)
+\item 
+\hypertarget{util_8h_a7b5bb8645c09199a038c5f09a361ed75}{void {\bfseries add\-Ref\-Item} (const \hyperlink{class_q_list}{Q\-List}$<$ \hyperlink{struct_list_item_info}{List\-Item\-Info} $>$ $\ast$sli, const char $\ast$prefix, const char $\ast$key, const char $\ast$name, const char $\ast$title, const char $\ast$args)}\label{util_8h_a7b5bb8645c09199a038c5f09a361ed75}
+
+\item 
+\hypertarget{util_8h_a5c04f4a7e89b042e2d7bace7c0e6a2bf}{\hyperlink{class_page_def}{Page\-Def} $\ast$ {\bfseries add\-Related\-Page} (const char $\ast$name, const \hyperlink{class_q_c_string}{Q\-C\-String} \&ptitle, const \hyperlink{class_q_c_string}{Q\-C\-String} \&doc, \hyperlink{class_q_list}{Q\-List}$<$ \hyperlink{struct_section_info}{Section\-Info} $>$ $\ast$anchors, const char $\ast$file\-Name, int start\-Line, const \hyperlink{class_q_list}{Q\-List}$<$ \hyperlink{struct_list_item_info}{List\-Item\-Info} $>$ $\ast$sli, \hyperlink{class_group_def}{Group\-Def} $\ast$gd=0, \hyperlink{struct_tag_info}{Tag\-Info} $\ast$tag\-Info=0, \hyperlink{types_8h_a9974623ce72fc23df5d64426b9178bf2}{Src\-Lang\-Ext} lang=Src\-Lang\-Ext\-\_\-\-Unknown)}\label{util_8h_a5c04f4a7e89b042e2d7bace7c0e6a2bf}
+
+\item 
+\hypertarget{util_8h_aea60db255909cc6f9b12bc8a58134c8d}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries escape\-Chars\-In\-String} (const char $\ast$name, bool allow\-Dots, bool allow\-Underscore=F\-A\-L\-S\-E)}\label{util_8h_aea60db255909cc6f9b12bc8a58134c8d}
+
+\item 
+\hypertarget{util_8h_ac348157ae6cff94177fad19f74285a0c}{void {\bfseries add\-Group\-List\-To\-Title} (\hyperlink{class_output_list}{Output\-List} \&ol, \hyperlink{class_definition}{Definition} $\ast$d)}\label{util_8h_ac348157ae6cff94177fad19f74285a0c}
+
+\item 
+\hypertarget{util_8h_a25349d89b32eeceaa8d25d825597bc0f}{void {\bfseries filter\-Latex\-String} (\hyperlink{class_f_text_stream}{F\-Text\-Stream} \&t, const char $\ast$str, bool inside\-Tabbing=F\-A\-L\-S\-E, bool inside\-Pre=F\-A\-L\-S\-E, bool inside\-Item=F\-A\-L\-S\-E)}\label{util_8h_a25349d89b32eeceaa8d25d825597bc0f}
+
+\item 
+\hypertarget{util_8h_a60c8b32cb8bd7c872962695ec685188b}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries rtf\-Format\-Bmk\-Str} (const char $\ast$name)}\label{util_8h_a60c8b32cb8bd7c872962695ec685188b}
+
+\item 
+\hypertarget{util_8h_af20aa0206cec2bb8a7aa60f239f1874c}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries link\-To\-Text} (\hyperlink{types_8h_a9974623ce72fc23df5d64426b9178bf2}{Src\-Lang\-Ext} lang, const char $\ast$link, bool is\-File\-Name)}\label{util_8h_af20aa0206cec2bb8a7aa60f239f1874c}
+
+\item 
+\hypertarget{util_8h_a6caaf6973fe475a05ad718e56f5ac571}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries strip\-Extension} (const char $\ast$f\-Name)}\label{util_8h_a6caaf6973fe475a05ad718e56f5ac571}
+
+\item 
+\hypertarget{util_8h_ada009b0ab6b42ff39d4fd82e36702281}{void {\bfseries replace\-Namespace\-Aliases} (\hyperlink{class_q_c_string}{Q\-C\-String} \&scope, int i)}\label{util_8h_ada009b0ab6b42ff39d4fd82e36702281}
+
+\item 
+\hypertarget{util_8h_a2a7c36bd6228f82d0c3869e12df93e05}{int {\bfseries is\-Accessible\-From} (\hyperlink{class_definition}{Definition} $\ast$scope, \hyperlink{class_file_def}{File\-Def} $\ast$file\-Scope, \hyperlink{class_definition}{Definition} $\ast$item)}\label{util_8h_a2a7c36bd6228f82d0c3869e12df93e05}
+
+\item 
+\hypertarget{util_8h_a683de911662abcb10445d328c9ff6602}{int {\bfseries is\-Accessible\-From\-With\-Exp\-Scope} (\hyperlink{class_definition}{Definition} $\ast$scope, \hyperlink{class_file_def}{File\-Def} $\ast$file\-Scope, \hyperlink{class_definition}{Definition} $\ast$item, const \hyperlink{class_q_c_string}{Q\-C\-String} \&explicit\-Scope\-Part)}\label{util_8h_a683de911662abcb10445d328c9ff6602}
+
+\item 
+\hypertarget{util_8h_a84e80a5dfaa2db05ad8b5d2e8d0f58f7}{int {\bfseries compute\-Qualified\-Index} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&name)}\label{util_8h_a84e80a5dfaa2db05ad8b5d2e8d0f58f7}
+
+\item 
+\hypertarget{util_8h_a83849c25ca67f4a8fd4f2870736a9550}{void {\bfseries add\-Dir\-Prefix} (\hyperlink{class_q_c_string}{Q\-C\-String} \&file\-Name)}\label{util_8h_a83849c25ca67f4a8fd4f2870736a9550}
+
+\item 
+\hypertarget{util_8h_a7f9d59487b4095a00a753a99657df2b3}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries relative\-Path\-To\-Root} (const char $\ast$name)}\label{util_8h_a7f9d59487b4095a00a753a99657df2b3}
+
+\item 
+\hypertarget{util_8h_a6740f34b1a63d71b615ed15f3ccec73f}{void {\bfseries create\-Sub\-Dirs} (\hyperlink{class_q_dir}{Q\-Dir} \&d)}\label{util_8h_a6740f34b1a63d71b615ed15f3ccec73f}
+
+\item 
+\hypertarget{util_8h_a6a5c62a160a8872a9a241fde1e002ea5}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries strip\-Path} (const char $\ast$s)}\label{util_8h_a6a5c62a160a8872a9a241fde1e002ea5}
+
+\item 
+bool \hyperlink{util_8h_aea05ebaaec2477660122c5f1faeeb11e}{contains\-Word} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&s, const \hyperlink{class_q_c_string}{Q\-C\-String} \&word)
+\item 
+\hypertarget{util_8h_ae3f2bfd6dffce3eafb116177f8373323}{bool {\bfseries find\-And\-Remove\-Word} (\hyperlink{class_q_c_string}{Q\-C\-String} \&s, const \hyperlink{class_q_c_string}{Q\-C\-String} \&word)}\label{util_8h_ae3f2bfd6dffce3eafb116177f8373323}
+
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{util_8h_ad0b372f3669056d6a88f41daeb3a3865}{strip\-Leading\-And\-Trailing\-Empty\-Lines} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&s, int \&doc\-Line)
+\item 
+\hypertarget{util_8h_a80cfa2bf1a3df1528abab04a52b53c38}{bool {\bfseries update\-Language\-Mapping} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&extension, const \hyperlink{class_q_c_string}{Q\-C\-String} \&parser)}\label{util_8h_a80cfa2bf1a3df1528abab04a52b53c38}
+
+\item 
+\hypertarget{util_8h_a8f34b8445ef5e51a5517bdac43e109fe}{\hyperlink{types_8h_a9974623ce72fc23df5d64426b9178bf2}{Src\-Lang\-Ext} {\bfseries get\-Language\-From\-File\-Name} (const \hyperlink{class_q_c_string}{Q\-C\-String} file\-Name)}\label{util_8h_a8f34b8445ef5e51a5517bdac43e109fe}
+
+\item 
+\hypertarget{util_8h_a87fb21e07b359f00a4e3774a6eb736e3}{void {\bfseries init\-Default\-Extension\-Mapping} ()}\label{util_8h_a87fb21e07b359f00a4e3774a6eb736e3}
+
+\item 
+\hypertarget{util_8h_a9e614b356c99f09fedff100978b0d250}{\hyperlink{class_member_def}{Member\-Def} $\ast$ {\bfseries get\-Member\-From\-Symbol} (\hyperlink{class_definition}{Definition} $\ast$scope, \hyperlink{class_file_def}{File\-Def} $\ast$file\-Scope, const char $\ast$n)}\label{util_8h_a9e614b356c99f09fedff100978b0d250}
+
+\item 
+bool \hyperlink{util_8h_a070878d94aead2c1ac26282044d96002}{check\-If\-Typedef} (\hyperlink{class_definition}{Definition} $\ast$scope, \hyperlink{class_file_def}{File\-Def} $\ast$file\-Scope, const char $\ast$n)
+\item 
+\hyperlink{class_class_def}{Class\-Def} $\ast$ \hyperlink{util_8h_a68f1506abbd9c7495e2bf9dce51c6b20}{new\-Resolve\-Typedef} (\hyperlink{class_file_def}{File\-Def} $\ast$file\-Scope, \hyperlink{class_member_def}{Member\-Def} $\ast$md, \hyperlink{class_member_def}{Member\-Def} $\ast$$\ast$p\-Mem\-Type=0, \hyperlink{class_q_c_string}{Q\-C\-String} $\ast$p\-Templ\-Spec=0, \hyperlink{class_q_c_string}{Q\-C\-String} $\ast$p\-Resolved\-Type=0, \hyperlink{class_argument_list}{Argument\-List} $\ast$act\-Templ\-Params=0)
+\item 
+\hypertarget{util_8h_a89d1fb33b634f5c6dd86bbe5adba342d}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries parse\-Comment\-As\-Text} (const \hyperlink{class_definition}{Definition} $\ast$scope, const \hyperlink{class_member_def}{Member\-Def} $\ast$member, const \hyperlink{class_q_c_string}{Q\-C\-String} \&doc, const \hyperlink{class_q_c_string}{Q\-C\-String} \&file\-Name, int line\-Nr)}\label{util_8h_a89d1fb33b634f5c6dd86bbe5adba342d}
+
+\item 
+\hypertarget{util_8h_a45ec91133f956ee7c2212c8842965995}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries transcode\-Character\-String\-To\-U\-T\-F8} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&input)}\label{util_8h_a45ec91133f956ee7c2212c8842965995}
+
+\item 
+\hypertarget{util_8h_a11f1e398e07986ff1b2977f361e9eea0}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries recode\-String} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&str, const char $\ast$from\-Encoding, const char $\ast$to\-Encoding)}\label{util_8h_a11f1e398e07986ff1b2977f361e9eea0}
+
+\item 
+\hypertarget{util_8h_ae73894d660bec634889b6b384ea0d103}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries extract\-Alias\-Args} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&args, int pos)}\label{util_8h_ae73894d660bec634889b6b384ea0d103}
+
+\item 
+\hypertarget{util_8h_a5a09b86816d14f2eba51c1881515c1b7}{int {\bfseries count\-Alias\-Arguments} (const \hyperlink{class_q_c_string}{Q\-C\-String} arg\-List)}\label{util_8h_a5a09b86816d14f2eba51c1881515c1b7}
+
+\item 
+\hypertarget{util_8h_adfe765ed96224eb7635f41015d904a65}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries resolve\-Alias\-Cmd} (const \hyperlink{class_q_c_string}{Q\-C\-String} alias\-Cmd)}\label{util_8h_adfe765ed96224eb7635f41015d904a65}
+
+\item 
+\hypertarget{util_8h_a71979ea7f1ea055bcf2c250946fb448b}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries expand\-Alias} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&alias\-Name, const \hyperlink{class_q_c_string}{Q\-C\-String} \&alias\-Value)}\label{util_8h_a71979ea7f1ea055bcf2c250946fb448b}
+
+\item 
+\hypertarget{util_8h_ab039c4fe39394abf6f1816972aef7805}{void {\bfseries write\-Type\-Constraints} (\hyperlink{class_output_list}{Output\-List} \&ol, \hyperlink{class_definition}{Definition} $\ast$d, \hyperlink{class_argument_list}{Argument\-List} $\ast$al)}\label{util_8h_ab039c4fe39394abf6f1816972aef7805}
+
+\item 
+\hypertarget{util_8h_a1f47842c9ec880090ee422c4e4684126}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries convert\-Char\-Entities\-To\-U\-T\-F8} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&s)}\label{util_8h_a1f47842c9ec880090ee422c4e4684126}
+
+\item 
+\hypertarget{util_8h_aac9ad7a212ab079ff3ac8860577a3132}{void {\bfseries stack\-Trace} ()}\label{util_8h_aac9ad7a212ab079ff3ac8860577a3132}
+
+\item 
+\hypertarget{util_8h_a9b7f56d06d80e66e33804e0ae179203e}{bool \hyperlink{util_8h_a9b7f56d06d80e66e33804e0ae179203e}{read\-Input\-File} (const char $\ast$file\-Name, \hyperlink{class_buf_str}{Buf\-Str} \&in\-Buf, bool filter=T\-R\-U\-E, bool is\-Source\-Code=F\-A\-L\-S\-E)}\label{util_8h_a9b7f56d06d80e66e33804e0ae179203e}
+
+\begin{DoxyCompactList}\small\item\em read a file name {\itshape file\-Name} and optionally filter and transcode it \end{DoxyCompactList}\item 
+\hypertarget{util_8h_a747a6ad366ae4d5d42f0c551079d0bf5}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries filter\-Title} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&title)}\label{util_8h_a747a6ad366ae4d5d42f0c551079d0bf5}
+
+\item 
+\hypertarget{util_8h_ab0a2456090eff61e17727c1f4d4aee2d}{bool {\bfseries pattern\-Match} (const \hyperlink{class_q_file_info}{Q\-File\-Info} \&fi, const \hyperlink{class_q_str_list}{Q\-Str\-List} $\ast$pat\-List)}\label{util_8h_ab0a2456090eff61e17727c1f4d4aee2d}
+
+\item 
+\hypertarget{util_8h_a6a89c2d2257aa4b8cbc36b855ea29fc7}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries external\-Link\-Target} ()}\label{util_8h_a6a89c2d2257aa4b8cbc36b855ea29fc7}
+
+\item 
+\hypertarget{util_8h_a06ba0c2593b3fd5f103151bd342e206f}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries external\-Ref} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&rel\-Path, const \hyperlink{class_q_c_string}{Q\-C\-String} \&ref, bool href)}\label{util_8h_a06ba0c2593b3fd5f103151bd342e206f}
+
+\item 
+\hypertarget{util_8h_a4de2a8efcd2cc728b57016fd0d9bde01}{int {\bfseries next\-Utf8\-Char\-Position} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&utf8\-Str, int len, int start\-Pos)}\label{util_8h_a4de2a8efcd2cc728b57016fd0d9bde01}
+
+\item 
+\hypertarget{util_8h_ad7c938544f5ad1c9714118c9f54d130a}{const char $\ast$ {\bfseries write\-Utf8\-Char} (\hyperlink{class_f_text_stream}{F\-Text\-Stream} \&t, const char $\ast$s)}\label{util_8h_ad7c938544f5ad1c9714118c9f54d130a}
+
+\item 
+void \hyperlink{util_8h_ab85eeb013280173f4ec086e10dd164ed}{write\-Colored\-Img\-Data} (const char $\ast$dir, \hyperlink{struct_colored_img_data_item}{Colored\-Img\-Data\-Item} data\mbox{[}$\,$\mbox{]})
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{util_8h_a6b67fcaeae3bead793c4c1ea68149424}{replace\-Color\-Markers} (const char $\ast$str)
+\item 
+bool \hyperlink{util_8h_ad35d4038b3882fdd09976d28f4a043bf}{copy\-File} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&src, const \hyperlink{class_q_c_string}{Q\-C\-String} \&dest)
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{util_8h_ae46139270fc05ae4a1e0ff2c5bc69e3b}{extract\-Block} (const \hyperlink{class_q_c_string}{Q\-C\-String} text, const \hyperlink{class_q_c_string}{Q\-C\-String} marker)
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{util_8h_a3a775021310e25718452bfe250b2f999}{correct\-U\-R\-L} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&url, const \hyperlink{class_q_c_string}{Q\-C\-String} \&rel\-Path)
+\item 
+\hypertarget{util_8h_af5f3edcf561b2d3066e46238e4f9e72b}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries process\-Markup} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&s)}\label{util_8h_af5f3edcf561b2d3066e46238e4f9e72b}
+
+\item 
+\hypertarget{util_8h_a1e07db76938eb8a2bb8c79b2d0ec4980}{bool {\bfseries protection\-Level\-Visible} (\hyperlink{types_8h_a90e352184df58cd09455fe9996cd4ded}{Protection} prot)}\label{util_8h_a1e07db76938eb8a2bb8c79b2d0ec4980}
+
+\item 
+\hypertarget{util_8h_adac892ac420e7c1aab28a1d50d7b05fd}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries strip\-Indentation} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&s)}\label{util_8h_adac892ac420e7c1aab28a1d50d7b05fd}
+
+\item 
+\hypertarget{util_8h_a1ddb475583a333a435d7198cddc76935}{bool {\bfseries file\-Visible\-In\-Index} (\hyperlink{class_file_def}{File\-Def} $\ast$fd, bool \&gen\-Source\-File)}\label{util_8h_a1ddb475583a333a435d7198cddc76935}
+
+\item 
+\hypertarget{util_8h_afcbcbddb21f68c44fa7e6a9c5b54795d}{void {\bfseries add\-Doc\-Cross\-Reference} (\hyperlink{class_member_def}{Member\-Def} $\ast$src, \hyperlink{class_member_def}{Member\-Def} $\ast$dst)}\label{util_8h_afcbcbddb21f68c44fa7e6a9c5b54795d}
+
+\item 
+uint \hyperlink{util_8h_a930405bb00bc19afb709e39dec56155b}{get\-Utf8\-Code} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&s, int idx)
+\begin{DoxyCompactList}\small\item\em Get one unicode character as an unsigned integer from utf-\/8 string. \end{DoxyCompactList}\item 
+uint \hyperlink{util_8h_ac06845c1e7123bc249d48a1467a10c89}{get\-Utf8\-Code\-To\-Lower} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&s, int idx)
+\begin{DoxyCompactList}\small\item\em Returns one unicode character as an unsigned integer from utf-\/8 string, making the character lower case if it was upper case. \end{DoxyCompactList}\item 
+uint \hyperlink{util_8h_ae14f928851544046ae78d17847f6b613}{get\-Utf8\-Code\-To\-Upper} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&s, int idx)
+\begin{DoxyCompactList}\small\item\em Returns one unicode character as ian unsigned interger from utf-\/8 string, making the character upper case if it was lower case. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+\hyperlink{class_a}{A} bunch of utility functions. 
+
+\subsection{Documentação das funções}
+\hypertarget{util_8h_a070878d94aead2c1ac26282044d96002}{\index{util.\-h@{util.\-h}!check\-If\-Typedef@{check\-If\-Typedef}}
+\index{check\-If\-Typedef@{check\-If\-Typedef}!util.h@{util.\-h}}
+\subsubsection[{check\-If\-Typedef}]{\setlength{\rightskip}{0pt plus 5cm}bool check\-If\-Typedef (
+\begin{DoxyParamCaption}
+\item[{{\bf Definition} $\ast$}]{scope, }
+\item[{{\bf File\-Def} $\ast$}]{file\-Scope, }
+\item[{const char $\ast$}]{n}
+\end{DoxyParamCaption}
+)}}\label{util_8h_a070878d94aead2c1ac26282044d96002}
+Returns true iff the given name string appears to be a typedef in scope. \hypertarget{util_8h_aea05ebaaec2477660122c5f1faeeb11e}{\index{util.\-h@{util.\-h}!contains\-Word@{contains\-Word}}
+\index{contains\-Word@{contains\-Word}!util.h@{util.\-h}}
+\subsubsection[{contains\-Word}]{\setlength{\rightskip}{0pt plus 5cm}bool contains\-Word (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-C\-String} \&}]{s, }
+\item[{const {\bf Q\-C\-String} \&}]{word}
+\end{DoxyParamCaption}
+)}}\label{util_8h_aea05ebaaec2477660122c5f1faeeb11e}
+returns {\ttfamily T\-R\-U\-E} iff string {\itshape s} contains word {\itshape w} \hypertarget{util_8h_ae29291c2d23e9f2144d5eb28b582af02}{\index{util.\-h@{util.\-h}!convert\-Name\-To\-File@{convert\-Name\-To\-File}}
+\index{convert\-Name\-To\-File@{convert\-Name\-To\-File}!util.h@{util.\-h}}
+\subsubsection[{convert\-Name\-To\-File}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} convert\-Name\-To\-File (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name, }
+\item[{bool}]{allow\-Dots, }
+\item[{bool}]{allow\-Underscore}
+\end{DoxyParamCaption}
+)}}\label{util_8h_ae29291c2d23e9f2144d5eb28b582af02}
+This function determines the file name on disk of an item given its name, which could be a class name with template arguments, so special characters need to be escaped. \hypertarget{util_8h_ad55197b4dc49df25c446975478ec6b3f}{\index{util.\-h@{util.\-h}!convert\-To\-Html@{convert\-To\-Html}}
+\index{convert\-To\-Html@{convert\-To\-Html}!util.h@{util.\-h}}
+\subsubsection[{convert\-To\-Html}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} convert\-To\-Html (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{s, }
+\item[{bool}]{keep\-Entities}
+\end{DoxyParamCaption}
+)}}\label{util_8h_ad55197b4dc49df25c446975478ec6b3f}
+Converts a string to a H\-T\-M\-L-\/encoded string \hypertarget{util_8h_acee8d851ab3a9590ac348bdb857aba26}{\index{util.\-h@{util.\-h}!convert\-To\-X\-M\-L@{convert\-To\-X\-M\-L}}
+\index{convert\-To\-X\-M\-L@{convert\-To\-X\-M\-L}!util.h@{util.\-h}}
+\subsubsection[{convert\-To\-X\-M\-L}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} convert\-To\-X\-M\-L (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{s}
+\end{DoxyParamCaption}
+)}}\label{util_8h_acee8d851ab3a9590ac348bdb857aba26}
+Converts a string to an X\-M\-L-\/encoded string \hypertarget{util_8h_a76a3a3e6464790c52fbdab33a7ee675f}{\index{util.\-h@{util.\-h}!copy\-Argument\-Lists@{copy\-Argument\-Lists}}
+\index{copy\-Argument\-Lists@{copy\-Argument\-Lists}!util.h@{util.\-h}}
+\subsubsection[{copy\-Argument\-Lists}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-List}$<${\bf Argument\-List}$>$$\ast$ copy\-Argument\-Lists (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-List}$<$ {\bf Argument\-List} $>$ $\ast$}]{src\-Lists}
+\end{DoxyParamCaption}
+)}}\label{util_8h_a76a3a3e6464790c52fbdab33a7ee675f}
+Makes a deep copy of the list of argument lists {\itshape src\-Lists}. Will allocate memory, that is owned by the caller. \hypertarget{util_8h_ad35d4038b3882fdd09976d28f4a043bf}{\index{util.\-h@{util.\-h}!copy\-File@{copy\-File}}
+\index{copy\-File@{copy\-File}!util.h@{util.\-h}}
+\subsubsection[{copy\-File}]{\setlength{\rightskip}{0pt plus 5cm}bool copy\-File (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-C\-String} \&}]{src, }
+\item[{const {\bf Q\-C\-String} \&}]{dest}
+\end{DoxyParamCaption}
+)}}\label{util_8h_ad35d4038b3882fdd09976d28f4a043bf}
+Copies the contents of file with name {\itshape src} to the newly created file with name {\itshape dest}. Returns T\-R\-U\-E if successful. \hypertarget{util_8h_a3a775021310e25718452bfe250b2f999}{\index{util.\-h@{util.\-h}!correct\-U\-R\-L@{correct\-U\-R\-L}}
+\index{correct\-U\-R\-L@{correct\-U\-R\-L}!util.h@{util.\-h}}
+\subsubsection[{correct\-U\-R\-L}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} correct\-U\-R\-L (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-C\-String} \&}]{url, }
+\item[{const {\bf Q\-C\-String} \&}]{rel\-Path}
+\end{DoxyParamCaption}
+)}}\label{util_8h_a3a775021310e25718452bfe250b2f999}
+Corrects \hyperlink{struct_u_r_l}{U\-R\-L} {\itshape url} according to the relative path {\itshape rel\-Path}. Returns the corrected \hyperlink{struct_u_r_l}{U\-R\-L}. For absolute U\-R\-Ls no correction will be done. \hypertarget{util_8h_ae46139270fc05ae4a1e0ff2c5bc69e3b}{\index{util.\-h@{util.\-h}!extract\-Block@{extract\-Block}}
+\index{extract\-Block@{extract\-Block}!util.h@{util.\-h}}
+\subsubsection[{extract\-Block}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} extract\-Block (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-C\-String}}]{text, }
+\item[{const {\bf Q\-C\-String}}]{marker}
+\end{DoxyParamCaption}
+)}}\label{util_8h_ae46139270fc05ae4a1e0ff2c5bc69e3b}
+Returns the section of text, in between a pair of markers. Full lines are returned, excluding the lines on which the markers appear. \hypertarget{util_8h_a53d4b12851bc6508815f5770d89c3792}{\index{util.\-h@{util.\-h}!extract\-Class\-Name\-From\-Type@{extract\-Class\-Name\-From\-Type}}
+\index{extract\-Class\-Name\-From\-Type@{extract\-Class\-Name\-From\-Type}!util.h@{util.\-h}}
+\subsubsection[{extract\-Class\-Name\-From\-Type}]{\setlength{\rightskip}{0pt plus 5cm}int extract\-Class\-Name\-From\-Type (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-C\-String} \&}]{type, }
+\item[{int \&}]{pos, }
+\item[{{\bf Q\-C\-String} \&}]{name, }
+\item[{{\bf Q\-C\-String} \&}]{templ\-Spec, }
+\item[{{\bf Src\-Lang\-Ext}}]{lang}
+\end{DoxyParamCaption}
+)}}\label{util_8h_a53d4b12851bc6508815f5770d89c3792}
+Extracts a (sub-\/)string from {\itshape type} starting at {\itshape pos} that could form a class. The index of the match is returned and the found class {\itshape name} and a template argument list {\itshape templ\-Spec}. If -\/1 is returned there are no more matches. \hypertarget{util_8h_a183a6b55ac831219c83e2a175d7a2e7a}{\index{util.\-h@{util.\-h}!extract\-Namespace\-Name@{extract\-Namespace\-Name}}
+\index{extract\-Namespace\-Name@{extract\-Namespace\-Name}!util.h@{util.\-h}}
+\subsubsection[{extract\-Namespace\-Name}]{\setlength{\rightskip}{0pt plus 5cm}void extract\-Namespace\-Name (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-C\-String} \&}]{scope\-Name, }
+\item[{{\bf Q\-C\-String} \&}]{class\-Name, }
+\item[{{\bf Q\-C\-String} \&}]{namespace\-Name, }
+\item[{bool}]{allow\-Empty\-Class}
+\end{DoxyParamCaption}
+)}}\label{util_8h_a183a6b55ac831219c83e2a175d7a2e7a}
+\hyperlink{class_input}{Input} is a scope\-Name, output is the scopename split into a namespace part (as large as possible) and a classname part. \hypertarget{util_8h_a320768069dfe8bb92a0ad137769a3275}{\index{util.\-h@{util.\-h}!file\-To\-String@{file\-To\-String}}
+\index{file\-To\-String@{file\-To\-String}!util.h@{util.\-h}}
+\subsubsection[{file\-To\-String}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} file\-To\-String (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name, }
+\item[{bool}]{filter, }
+\item[{bool}]{is\-Source\-Code}
+\end{DoxyParamCaption}
+)}}\label{util_8h_a320768069dfe8bb92a0ad137769a3275}
+reads a file with name {\itshape name} and returns it as a string. If {\itshape filter} is T\-R\-U\-E the file will be filtered by any user specified input filter. If {\itshape name} is \char`\"{}-\/\char`\"{} the string will be read from standard input. \hypertarget{util_8h_ae019f2737460a8c3eaad5264f8fe57a2}{\index{util.\-h@{util.\-h}!filter\-C\-R\-L\-F@{filter\-C\-R\-L\-F}}
+\index{filter\-C\-R\-L\-F@{filter\-C\-R\-L\-F}!util.h@{util.\-h}}
+\subsubsection[{filter\-C\-R\-L\-F}]{\setlength{\rightskip}{0pt plus 5cm}int filter\-C\-R\-L\-F (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{buf, }
+\item[{int}]{len}
+\end{DoxyParamCaption}
+)}}\label{util_8h_ae019f2737460a8c3eaad5264f8fe57a2}
+takes the {\itshape buf} of the given length {\itshape len} and converts C\-R L\-F (D\-O\-S) or C\-R (M\-A\-C) line ending to L\-F (Unix). Returns the length of the converted content (i.\-e. the same as {\itshape len} (Unix, M\-A\-C) or smaller (D\-O\-S). \hypertarget{util_8h_a5530a73bd518581ac62e4eee5bc2f6db}{\index{util.\-h@{util.\-h}!generate\-Marker@{generate\-Marker}}
+\index{generate\-Marker@{generate\-Marker}!util.h@{util.\-h}}
+\subsubsection[{generate\-Marker}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} generate\-Marker (
+\begin{DoxyParamCaption}
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)}}\label{util_8h_a5530a73bd518581ac62e4eee5bc2f6db}
+Generate a place holder for a position in a list. Used for translators to be able to specify different elements orders depending on whether text flows from left to right or visa versa. \hypertarget{util_8h_af038b3c55db4fa840af0ee26464bb72a}{\index{util.\-h@{util.\-h}!get\-Class@{get\-Class}}
+\index{get\-Class@{get\-Class}!util.h@{util.\-h}}
+\subsubsection[{get\-Class}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Class\-Def}$\ast$ get\-Class (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{n}
+\end{DoxyParamCaption}
+)}}\label{util_8h_af038b3c55db4fa840af0ee26464bb72a}
+Get a class definition given its name. Returns 0 if the class is not found. \hypertarget{util_8h_a299731fdff2d25b4c64d046d24a0ac1f}{\index{util.\-h@{util.\-h}!get\-Defs@{get\-Defs}}
+\index{get\-Defs@{get\-Defs}!util.h@{util.\-h}}
+\subsubsection[{get\-Defs}]{\setlength{\rightskip}{0pt plus 5cm}bool get\-Defs (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-C\-String} \&}]{sc\-Name, }
+\item[{const {\bf Q\-C\-String} \&}]{mb\-Name, }
+\item[{const char $\ast$}]{args, }
+\item[{{\bf Member\-Def} $\ast$\&}]{md, }
+\item[{{\bf Class\-Def} $\ast$\&}]{cd, }
+\item[{{\bf File\-Def} $\ast$\&}]{fd, }
+\item[{{\bf Namespace\-Def} $\ast$\&}]{nd, }
+\item[{{\bf Group\-Def} $\ast$\&}]{gd, }
+\item[{bool}]{force\-Empty\-Scope, }
+\item[{{\bf File\-Def} $\ast$}]{current\-File, }
+\item[{bool}]{check\-C\-V, }
+\item[{const char $\ast$}]{force\-Tag\-File}
+\end{DoxyParamCaption}
+)}}\label{util_8h_a299731fdff2d25b4c64d046d24a0ac1f}
+Searches for a member definition given its name `member\-Name' as a string. member\-Name may also include a (partial) scope to indicate the scope in which the member is located.
+
+The parameter `sc\-Name' is a string representing the name of the scope in which the link was found.
+
+In case of a function args contains a string representation of the argument list. Passing 0 means the member has no arguments. Passing \char`\"{}()\char`\"{} means any argument list will do, but \char`\"{}()\char`\"{} is preferred.
+
+The function returns T\-R\-U\-E if the member is known and documented or F\-A\-L\-S\-E if it is not. If T\-R\-U\-E is returned parameter `md' contains a pointer to the member definition. Furthermore exactly one of the parameter `cd', `nd', or `fd' will be non-\/zero\-:
+\begin{DoxyItemize}
+\item if `cd' is non zero, the member was found in a class pointed to by cd.
+\item if `nd' is non zero, the member was found in a namespace pointed to by nd.
+\item if `fd' is non zero, the member was found in the global namespace of file fd. 
+\end{DoxyItemize}\hypertarget{util_8h_a188c1467dbdf01fbdb87e08ce49fb759}{\index{util.\-h@{util.\-h}!get\-File\-Filter@{get\-File\-Filter}}
+\index{get\-File\-Filter@{get\-File\-Filter}!util.h@{util.\-h}}
+\subsubsection[{get\-File\-Filter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} get\-File\-Filter (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name, }
+\item[{bool}]{is\-Source\-Code}
+\end{DoxyParamCaption}
+)}}\label{util_8h_a188c1467dbdf01fbdb87e08ce49fb759}
+looks for a filter for the file {\itshape name}. Returns the name of the filter if there is a match for the file name, otherwise an empty string. In case {\itshape in\-Source\-Code} is T\-R\-U\-E then first the source filter list is considered. \hypertarget{util_8h_ac4c34c02b8869dca71de6f4037736dc7}{\index{util.\-h@{util.\-h}!get\-Language\-Specific\-Separator@{get\-Language\-Specific\-Separator}}
+\index{get\-Language\-Specific\-Separator@{get\-Language\-Specific\-Separator}!util.h@{util.\-h}}
+\subsubsection[{get\-Language\-Specific\-Separator}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} get\-Language\-Specific\-Separator (
+\begin{DoxyParamCaption}
+\item[{{\bf Src\-Lang\-Ext}}]{lang, }
+\item[{bool}]{class\-Scope}
+\end{DoxyParamCaption}
+)}}\label{util_8h_ac4c34c02b8869dca71de6f4037736dc7}
+Returns the scope separator to use given the programming language {\itshape lang} \hypertarget{util_8h_ad8c71fbab856bc37ae54d2d369535b3b}{\index{util.\-h@{util.\-h}!get\-Overload\-Docs@{get\-Overload\-Docs}}
+\index{get\-Overload\-Docs@{get\-Overload\-Docs}!util.h@{util.\-h}}
+\subsubsection[{get\-Overload\-Docs}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} get\-Overload\-Docs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{util_8h_ad8c71fbab856bc37ae54d2d369535b3b}
+Returns the standard string that is generated when the \textbackslash{}overload command is used. \hypertarget{util_8h_ae052d7dcea3289dd204d8d425cf9d4c9}{\index{util.\-h@{util.\-h}!get\-Prefix\-Index@{get\-Prefix\-Index}}
+\index{get\-Prefix\-Index@{get\-Prefix\-Index}!util.h@{util.\-h}}
+\subsubsection[{get\-Prefix\-Index}]{\setlength{\rightskip}{0pt plus 5cm}int get\-Prefix\-Index (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-C\-String} \&}]{name}
+\end{DoxyParamCaption}
+)}}\label{util_8h_ae052d7dcea3289dd204d8d425cf9d4c9}
+Returns the character index within {\itshape name} of the first prefix in Config\-\_\-get\-List(\char`\"{}\-I\-G\-N\-O\-R\-E\-\_\-\-P\-R\-E\-F\-I\-X\char`\"{}) that matches {\itshape name} at the left hand side, or zero if no match was found \hypertarget{util_8h_afd249e264b966d05a54b740e3d43ad6e}{\index{util.\-h@{util.\-h}!get\-Scope\-Fragment@{get\-Scope\-Fragment}}
+\index{get\-Scope\-Fragment@{get\-Scope\-Fragment}!util.h@{util.\-h}}
+\subsubsection[{get\-Scope\-Fragment}]{\setlength{\rightskip}{0pt plus 5cm}int get\-Scope\-Fragment (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-C\-String} \&}]{s, }
+\item[{int}]{p, }
+\item[{int $\ast$}]{l}
+\end{DoxyParamCaption}
+)}}\label{util_8h_afd249e264b966d05a54b740e3d43ad6e}
+Returns a fragment from scope {\itshape s}, starting at position {\itshape p}.
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em s} & the scope name as a string. \\
+\hline
+{\em p} & the start position (0 is the first). \\
+\hline
+{\em l} & the resulting length of the fragment. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+the location of the fragment, or -\/1 if non is found. 
+\end{DoxyReturn}
+\hypertarget{util_8h_a930405bb00bc19afb709e39dec56155b}{\index{util.\-h@{util.\-h}!get\-Utf8\-Code@{get\-Utf8\-Code}}
+\index{get\-Utf8\-Code@{get\-Utf8\-Code}!util.h@{util.\-h}}
+\subsubsection[{get\-Utf8\-Code}]{\setlength{\rightskip}{0pt plus 5cm}uint get\-Utf8\-Code (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-C\-String} \&}]{s, }
+\item[{int}]{idx}
+\end{DoxyParamCaption}
+)}}\label{util_8h_a930405bb00bc19afb709e39dec56155b}
+
+
+Get one unicode character as an unsigned integer from utf-\/8 string. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em s} & utf-\/8 encoded string \\
+\hline
+{\em idx} & byte position of given string {\itshape s}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+the unicode codepoint, 0 -\/ M\-A\-X\-\_\-\-U\-N\-I\-C\-O\-D\-E\-\_\-\-C\-O\-D\-E\-P\-O\-I\-N\-T 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{Veja também}
+get\-Next\-Utf8\-Or\-To\-Lower() 
+
+get\-Next\-Utf8\-Or\-To\-Upper() 
+\end{DoxySeeAlso}
+\hypertarget{util_8h_ac06845c1e7123bc249d48a1467a10c89}{\index{util.\-h@{util.\-h}!get\-Utf8\-Code\-To\-Lower@{get\-Utf8\-Code\-To\-Lower}}
+\index{get\-Utf8\-Code\-To\-Lower@{get\-Utf8\-Code\-To\-Lower}!util.h@{util.\-h}}
+\subsubsection[{get\-Utf8\-Code\-To\-Lower}]{\setlength{\rightskip}{0pt plus 5cm}uint get\-Utf8\-Code\-To\-Lower (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-C\-String} \&}]{s, }
+\item[{int}]{idx}
+\end{DoxyParamCaption}
+)}}\label{util_8h_ac06845c1e7123bc249d48a1467a10c89}
+
+
+Returns one unicode character as an unsigned integer from utf-\/8 string, making the character lower case if it was upper case. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em s} & utf-\/8 encoded string \\
+\hline
+{\em idx} & byte position of given string {\itshape s}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+the unicode codepoint, 0 -\/ M\-A\-X\-\_\-\-U\-N\-I\-C\-O\-D\-E\-\_\-\-C\-O\-D\-E\-P\-O\-I\-N\-T, excludes '\hyperlink{class_a}{A}'-\/'Z' 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{Veja também}
+get\-Next\-Utf8\-Code() 
+\end{DoxySeeAlso}
+\hypertarget{util_8h_ae14f928851544046ae78d17847f6b613}{\index{util.\-h@{util.\-h}!get\-Utf8\-Code\-To\-Upper@{get\-Utf8\-Code\-To\-Upper}}
+\index{get\-Utf8\-Code\-To\-Upper@{get\-Utf8\-Code\-To\-Upper}!util.h@{util.\-h}}
+\subsubsection[{get\-Utf8\-Code\-To\-Upper}]{\setlength{\rightskip}{0pt plus 5cm}uint get\-Utf8\-Code\-To\-Upper (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-C\-String} \&}]{s, }
+\item[{int}]{idx}
+\end{DoxyParamCaption}
+)}}\label{util_8h_ae14f928851544046ae78d17847f6b613}
+
+
+Returns one unicode character as ian unsigned interger from utf-\/8 string, making the character upper case if it was lower case. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em s} & utf-\/8 encoded string \\
+\hline
+{\em idx} & byte position of given string {\itshape s}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+the unicode codepoint, 0 -\/ M\-A\-X\-\_\-\-U\-N\-I\-C\-O\-D\-E\-\_\-\-C\-O\-D\-E\-P\-O\-I\-N\-T, excludes '\hyperlink{class_a}{A}'-\/'Z' 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{Veja também}
+get\-Next\-Utf8\-Code() 
+\end{DoxySeeAlso}
+\hypertarget{util_8h_a826cc396ba482fb9ef1990104f9c1026}{\index{util.\-h@{util.\-h}!guess\-Section@{guess\-Section}}
+\index{guess\-Section@{guess\-Section}!util.h@{util.\-h}}
+\subsubsection[{guess\-Section}]{\setlength{\rightskip}{0pt plus 5cm}int guess\-Section (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name}
+\end{DoxyParamCaption}
+)}}\label{util_8h_a826cc396ba482fb9ef1990104f9c1026}
+try to determine if {\itshape name} is a source or a header file name by looking at the extension. \hyperlink{class_a}{A} number of variations is allowed in both upper and lower case) If anyone knows or uses another extension please let me know \-:-\/) \hypertarget{util_8h_a969690ca9b1155540d43631f499b3880}{\index{util.\-h@{util.\-h}!lang\-To\-String@{lang\-To\-String}}
+\index{lang\-To\-String@{lang\-To\-String}!util.h@{util.\-h}}
+\subsubsection[{lang\-To\-String}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} lang\-To\-String (
+\begin{DoxyParamCaption}
+\item[{{\bf Src\-Lang\-Ext}}]{lang}
+\end{DoxyParamCaption}
+)}}\label{util_8h_a969690ca9b1155540d43631f499b3880}
+Returns a string representation of {\itshape lang}. \hypertarget{util_8h_a0baa021dae80e22593292b12ef2f721f}{\index{util.\-h@{util.\-h}!merge\-Scopes@{merge\-Scopes}}
+\index{merge\-Scopes@{merge\-Scopes}!util.h@{util.\-h}}
+\subsubsection[{merge\-Scopes}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} merge\-Scopes (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-C\-String} \&}]{left\-Scope, }
+\item[{const {\bf Q\-C\-String} \&}]{right\-Scope}
+\end{DoxyParamCaption}
+)}}\label{util_8h_a0baa021dae80e22593292b12ef2f721f}
+Merges two scope parts together. The parts may (partially) overlap. Example1\-: {\ttfamily A\-::\-B} and {\ttfamily B\-::\-C} will result in {\ttfamily A\-::\-B\-::\-C} \par
+ Example2\-: {\ttfamily \hyperlink{class_a}{A}} and {\ttfamily \hyperlink{class_b}{B}} will be {\ttfamily A\-::\-B} \par
+ Example3\-: {\ttfamily A\-::\-B} and \hyperlink{class_b}{B} will be {\ttfamily A\-::\-B} 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em left\-Scope} & the left hand part of the scope. \\
+\hline
+{\em right\-Scope} & the right hand part of the scope. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+the merged scope. 
+\end{DoxyReturn}
+\hypertarget{util_8h_a68f1506abbd9c7495e2bf9dce51c6b20}{\index{util.\-h@{util.\-h}!new\-Resolve\-Typedef@{new\-Resolve\-Typedef}}
+\index{new\-Resolve\-Typedef@{new\-Resolve\-Typedef}!util.h@{util.\-h}}
+\subsubsection[{new\-Resolve\-Typedef}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Class\-Def}$\ast$ new\-Resolve\-Typedef (
+\begin{DoxyParamCaption}
+\item[{{\bf File\-Def} $\ast$}]{file\-Scope, }
+\item[{{\bf Member\-Def} $\ast$}]{md, }
+\item[{{\bf Member\-Def} $\ast$$\ast$}]{p\-Mem\-Type, }
+\item[{{\bf Q\-C\-String} $\ast$}]{p\-Templ\-Spec, }
+\item[{{\bf Q\-C\-String} $\ast$}]{p\-Resolved\-Type, }
+\item[{{\bf Argument\-List} $\ast$}]{act\-Templ\-Params}
+\end{DoxyParamCaption}
+)}}\label{util_8h_a68f1506abbd9c7495e2bf9dce51c6b20}
+Returns the class representing the value of the typedef represented by {\itshape md} within file {\itshape file\-Scope}.
+
+\hyperlink{struct_example}{Example}\-: typedef \hyperlink{class_a}{A} T; will return the class representing \hyperlink{class_a}{A} if it is a class.
+
+\hyperlink{struct_example}{Example}\-: typedef int T; will return 0, since \char`\"{}int\char`\"{} is not a class. \hypertarget{util_8h_aa16e34240606f622b272b2b3e26d33e4}{\index{util.\-h@{util.\-h}!remove\-Anonymous\-Scopes@{remove\-Anonymous\-Scopes}}
+\index{remove\-Anonymous\-Scopes@{remove\-Anonymous\-Scopes}!util.h@{util.\-h}}
+\subsubsection[{remove\-Anonymous\-Scopes}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} remove\-Anonymous\-Scopes (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-C\-String} \&}]{s}
+\end{DoxyParamCaption}
+)}}\label{util_8h_aa16e34240606f622b272b2b3e26d33e4}
+Removes all anonymous scopes from string s Possible examples\-: \begin{DoxyVerb}   "bla::@10::blep"      => "bla::blep"
+   "bla::@10::@11::blep" => "bla::blep"
+   "@10::blep"           => "blep"
+   " @10::blep"          => "blep"
+   "@9::@10::blep"       => "blep"
+   "bla::@1"             => "bla"
+   "bla::@1::@2"         => "bla"
+   "bla @1"              => "bla"
+\end{DoxyVerb}
+ \hypertarget{util_8h_a6b67fcaeae3bead793c4c1ea68149424}{\index{util.\-h@{util.\-h}!replace\-Color\-Markers@{replace\-Color\-Markers}}
+\index{replace\-Color\-Markers@{replace\-Color\-Markers}!util.h@{util.\-h}}
+\subsubsection[{replace\-Color\-Markers}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} replace\-Color\-Markers (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{str}
+\end{DoxyParamCaption}
+)}}\label{util_8h_a6b67fcaeae3bead793c4c1ea68149424}
+Replaces any markers of the form \#\#A\-A in input string {\itshape str} by new markers of the form \#A\-A\-B\-B\-C\-C, where \#A\-A\-B\-B\-C\-C represents a valid color, based on the intensity represented by hex number A\-A and the current H\-T\-M\-L\-\_\-\-C\-O\-L\-O\-R\-S\-T\-Y\-L\-E\-\_\-$\ast$ settings. \hypertarget{util_8h_a4cc99128827cc7c407e276d3f65bb7b2}{\index{util.\-h@{util.\-h}!resolve\-Ref@{resolve\-Ref}}
+\index{resolve\-Ref@{resolve\-Ref}!util.h@{util.\-h}}
+\subsubsection[{resolve\-Ref}]{\setlength{\rightskip}{0pt plus 5cm}bool resolve\-Ref (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{sc\-Name, }
+\item[{const char $\ast$}]{name, }
+\item[{bool}]{in\-See\-Block, }
+\item[{{\bf Definition} $\ast$$\ast$}]{res\-Context, }
+\item[{{\bf Member\-Def} $\ast$$\ast$}]{res\-Member, }
+\item[{bool}]{look\-For\-Specialization, }
+\item[{{\bf File\-Def} $\ast$}]{current\-File, }
+\item[{bool}]{check\-Scope}
+\end{DoxyParamCaption}
+)}}\label{util_8h_a4cc99128827cc7c407e276d3f65bb7b2}
+Returns an object to reference to given its name and context \begin{DoxyPostcond}{Poscondição}
+return value T\-R\-U\-E implies $\ast$res\-Context!=0 or $\ast$res\-Member!=0 
+\end{DoxyPostcond}
+\hypertarget{util_8h_a3d790f4b8fa74cbafd6c4b34d4573093}{\index{util.\-h@{util.\-h}!strip\-From\-Include\-Path@{strip\-From\-Include\-Path}}
+\index{strip\-From\-Include\-Path@{strip\-From\-Include\-Path}!util.h@{util.\-h}}
+\subsubsection[{strip\-From\-Include\-Path}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} strip\-From\-Include\-Path (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-C\-String} \&}]{path}
+\end{DoxyParamCaption}
+)}}\label{util_8h_a3d790f4b8fa74cbafd6c4b34d4573093}
+strip part of {\itshape path} if it matches one of the paths in the Config\-\_\-get\-List(\char`\"{}\-I\-N\-C\-L\-U\-D\-E\-\_\-\-P\-A\-T\-H\char`\"{}) list \hypertarget{util_8h_ac7a97256c349c1f4f1d18d7a7098c081}{\index{util.\-h@{util.\-h}!strip\-From\-Path@{strip\-From\-Path}}
+\index{strip\-From\-Path@{strip\-From\-Path}!util.h@{util.\-h}}
+\subsubsection[{strip\-From\-Path}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} strip\-From\-Path (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-C\-String} \&}]{path}
+\end{DoxyParamCaption}
+)}}\label{util_8h_ac7a97256c349c1f4f1d18d7a7098c081}
+strip part of {\itshape path} if it matches one of the paths in the Config\-\_\-get\-List(\char`\"{}\-S\-T\-R\-I\-P\-\_\-\-F\-R\-O\-M\-\_\-\-P\-A\-T\-H\char`\"{}) list \hypertarget{util_8h_ad0b372f3669056d6a88f41daeb3a3865}{\index{util.\-h@{util.\-h}!strip\-Leading\-And\-Trailing\-Empty\-Lines@{strip\-Leading\-And\-Trailing\-Empty\-Lines}}
+\index{strip\-Leading\-And\-Trailing\-Empty\-Lines@{strip\-Leading\-And\-Trailing\-Empty\-Lines}!util.h@{util.\-h}}
+\subsubsection[{strip\-Leading\-And\-Trailing\-Empty\-Lines}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} strip\-Leading\-And\-Trailing\-Empty\-Lines (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-C\-String} \&}]{s, }
+\item[{int \&}]{doc\-Line}
+\end{DoxyParamCaption}
+)}}\label{util_8h_ad0b372f3669056d6a88f41daeb3a3865}
+Special version of Q\-C\-String\-::strip\-White\-Space() that only strips completely blank lines. 
+\begin{DoxyParams}{Parâmetros}
+{\em s} & the string to be stripped \\
+\hline
+{\em doc\-Line} & the line number corresponding to the start of the string. This will be adjusted based on the number of lines stripped from the start. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+The stripped string. 
+\end{DoxyReturn}
+\hypertarget{util_8h_aa78497e488f5e271031b67fbe5452221}{\index{util.\-h@{util.\-h}!strip\-Template\-Specifiers\-From\-Scope@{strip\-Template\-Specifiers\-From\-Scope}}
+\index{strip\-Template\-Specifiers\-From\-Scope@{strip\-Template\-Specifiers\-From\-Scope}!util.h@{util.\-h}}
+\subsubsection[{strip\-Template\-Specifiers\-From\-Scope}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} strip\-Template\-Specifiers\-From\-Scope (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-C\-String} \&}]{full\-Name, }
+\item[{bool}]{parent\-Only, }
+\item[{{\bf Q\-C\-String} $\ast$}]{p\-Last\-Scope\-Stripped}
+\end{DoxyParamCaption}
+)}}\label{util_8h_aa78497e488f5e271031b67fbe5452221}
+Strips template specifiers from scope {\itshape full\-Name}, except those that make up specialized classes. The switch {\itshape parent\-Only} determines whether or not a template \char`\"{}at the end\char`\"{} of a scope should be considered, e.\-g. with {\itshape parent\-Only} is {\ttfamily T\-R\-U\-E}, \hyperlink{memgrp_8cpp_a955f504eccf76b4eb2489c0adab03121}{A$<$\-T$>$\-::\-B$<$\-S$>$} will try to strip $<$T$>$ and not $<$\hyperlink{struct_s}{S}$>$, while {\itshape parent\-Only} is {\ttfamily F\-A\-L\-S\-E} will strip both unless A$<$\-T$>$ or B$<$\-S$>$ are specialized template classes. \hypertarget{util_8h_a928208745b8d52e1ef9599e3bc5007cf}{\index{util.\-h@{util.\-h}!substitute\-Template\-Arguments\-In\-String@{substitute\-Template\-Arguments\-In\-String}}
+\index{substitute\-Template\-Arguments\-In\-String@{substitute\-Template\-Arguments\-In\-String}!util.h@{util.\-h}}
+\subsubsection[{substitute\-Template\-Arguments\-In\-String}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} substitute\-Template\-Arguments\-In\-String (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-C\-String} \&}]{name, }
+\item[{{\bf Argument\-List} $\ast$}]{formal\-Args, }
+\item[{{\bf Argument\-List} $\ast$}]{actual\-Args}
+\end{DoxyParamCaption}
+)}}\label{util_8h_a928208745b8d52e1ef9599e3bc5007cf}
+Substitutes any occurrence of a formal argument from argument list {\itshape formal\-Args} in {\itshape name} by the corresponding actual argument in argument list {\itshape actual\-Args}. The result after substitution is returned as a string. The argument {\itshape name} is used to prevent recursive substitution. \hypertarget{util_8h_ab85eeb013280173f4ec086e10dd164ed}{\index{util.\-h@{util.\-h}!write\-Colored\-Img\-Data@{write\-Colored\-Img\-Data}}
+\index{write\-Colored\-Img\-Data@{write\-Colored\-Img\-Data}!util.h@{util.\-h}}
+\subsubsection[{write\-Colored\-Img\-Data}]{\setlength{\rightskip}{0pt plus 5cm}void write\-Colored\-Img\-Data (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{dir, }
+\item[{{\bf Colored\-Img\-Data\-Item}}]{data\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{util_8h_ab85eeb013280173f4ec086e10dd164ed}
+Writes the intensity only bitmap representated by {\itshape data} as an image to directory {\itshape dir} using the colors defined by H\-T\-M\-L\-\_\-\-C\-O\-L\-O\-R\-S\-T\-Y\-L\-E\-\_\-$\ast$. 

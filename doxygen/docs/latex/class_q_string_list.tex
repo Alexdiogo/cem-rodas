@@ -1,0 +1,222 @@
+\hypertarget{class_q_string_list}{\section{Referência à classe Q\-String\-List}
+\label{class_q_string_list}\index{Q\-String\-List@{Q\-String\-List}}
+}
+
+
+\hyperlink{class_a}{A} list of strings.  
+
+
+
+
+{\ttfamily \#include $<$qstringlist.\-h$>$}
+
+Diagrama de heranças da classe Q\-String\-List\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_q_string_list}
+\end{center}
+\end{figure}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_q_string_list_a45a45c56a84a901a9da2be09acc0d19e}{Q\-String\-List} ()
+\item 
+\hyperlink{class_q_string_list_abaacdf8faef34e26690401ba7d7aa3a2}{Q\-String\-List} (const \hyperlink{class_q_string_list}{Q\-String\-List} \&l)
+\item 
+\hyperlink{class_q_string_list_a192dff205815ff3f0606148ec10cb703}{Q\-String\-List} (const \hyperlink{class_q_value_list}{Q\-Value\-List}$<$ \hyperlink{class_q_string}{Q\-String} $>$ \&l)
+\item 
+\hyperlink{class_q_string_list_aa2c0716ef78d9e42913a108eff9e97e9}{Q\-String\-List} (const \hyperlink{class_q_string}{Q\-String} \&i)
+\item 
+\hyperlink{class_q_string_list_aa0b0fd034fd321098f5dce30b1dfc3d8}{Q\-String\-List} (const char $\ast$i)
+\item 
+void \hyperlink{class_q_string_list_a47fdc9eea42b6975cdc835bb2e08810e}{sort} ()
+\item 
+\hyperlink{class_q_string}{Q\-String} \hyperlink{class_q_string_list_a7565f676a5eca84fc36fe0127a842898}{join} (const \hyperlink{class_q_string}{Q\-String} \&sep) const 
+\item 
+\hyperlink{class_q_string_list}{Q\-String\-List} \hyperlink{class_q_string_list_a892a12fa53831d2960809836f177eb5f}{grep} (const \hyperlink{class_q_string}{Q\-String} \&str, bool cs=T\-R\-U\-E) const 
+\item 
+\hyperlink{class_q_string_list}{Q\-String\-List} \hyperlink{class_q_string_list_a5ba0ab54a050178c12f29ad5ffdcbf67}{grep} (const \hyperlink{class_q_reg_exp}{Q\-Reg\-Exp} \&expr) const 
+\end{DoxyCompactItemize}
+\subsection*{Membros públicos estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_q_string_list}{Q\-String\-List} \hyperlink{class_q_string_list_a14de7077da58a69fccc730eebb7b1916}{from\-Str\-List} (const \hyperlink{class_q_str_list}{Q\-Str\-List} \&)
+\item 
+static \hyperlink{class_q_string_list}{Q\-String\-List} \hyperlink{class_q_string_list_a3bc6fc9aa1be1dbc5989b39b37199765}{split} (const \hyperlink{class_q_string}{Q\-String} \&sep, const \hyperlink{class_q_string}{Q\-String} \&str, bool allow\-Empty\-Entries=F\-A\-L\-S\-E)
+\item 
+\hypertarget{class_q_string_list_a3752269bb7360ba242768a55e1494821}{static \hyperlink{class_q_string_list}{Q\-String\-List} {\bfseries split} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&sep, const \hyperlink{class_q_c_string}{Q\-C\-String} \&str, bool allow\-Empty\-Entries=F\-A\-L\-S\-E)}\label{class_q_string_list_a3752269bb7360ba242768a55e1494821}
+
+\item 
+static \hyperlink{class_q_string_list}{Q\-String\-List} \hyperlink{class_q_string_list_ad399343d2b072bb6c24c7822faa597a0}{split} (const \hyperlink{class_q_char}{Q\-Char} \&sep, const \hyperlink{class_q_string}{Q\-String} \&str, bool allow\-Empty\-Entries=F\-A\-L\-S\-E)
+\item 
+static \hyperlink{class_q_string_list}{Q\-String\-List} \hyperlink{class_q_string_list_a95c3f64b0440a87838320b903144c380}{split} (const \hyperlink{class_q_reg_exp}{Q\-Reg\-Exp} \&sep, const \hyperlink{class_q_string}{Q\-String} \&str, bool allow\-Empty\-Entries=F\-A\-L\-S\-E)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Descrição detalhada}
+\hyperlink{class_a}{A} list of strings. 
+
+\hyperlink{class_q_string_list}{Q\-String\-List} is basically a \hyperlink{class_q_value_list}{Q\-Value\-List} of \hyperlink{class_q_string}{Q\-String} objects. As opposed to \hyperlink{class_q_str_list}{Q\-Str\-List}, that stores pointers to characters, \hyperlink{class_q_string_list}{Q\-String\-List} deals with real \hyperlink{class_q_string}{Q\-String} objects. It is the class of choice whenever you work with unicode strings.
+
+Like \hyperlink{class_q_string}{Q\-String} itself, \hyperlink{class_q_string_list}{Q\-String\-List} objects are implicit shared. Passing them around as value-\/parameters is both fast and safe.
+
+\hyperlink{struct_example}{Example}\-: 
+\begin{DoxyCode}
+\hyperlink{class_q_string_list}{QStringList} list;
+
+\textcolor{comment}{// three different ways of appending values:}
+list.append( \textcolor{stringliteral}{"Torben"});
+list += \textcolor{stringliteral}{"Warwick"};
+list << \textcolor{stringliteral}{"Matthias"} << \textcolor{stringliteral}{"Arnt"} << \textcolor{stringliteral}{"Paul"};
+
+\textcolor{comment}{// sort the list, Arnt's now first}
+list.\hyperlink{class_q_string_list_a47fdc9eea42b6975cdc835bb2e08810e}{sort}();
+
+\textcolor{comment}{// print it out}
+\textcolor{keywordflow}{for} ( \hyperlink{class_q_value_list_iterator}{QStringList::Iterator} it = list.begin(); it != list.end(); ++it ) \{
+    printf( \textcolor{stringliteral}{"%s \(\backslash\)n"}, (*it).latin1() );
+\}
+\end{DoxyCode}
+
+
+Convenience methods such as \hyperlink{class_q_string_list_a47fdc9eea42b6975cdc835bb2e08810e}{sort()}, \hyperlink{class_q_string_list_a3bc6fc9aa1be1dbc5989b39b37199765}{split()}, \hyperlink{class_q_string_list_a7565f676a5eca84fc36fe0127a842898}{join()} and \hyperlink{class_q_string_list_a892a12fa53831d2960809836f177eb5f}{grep()} make working with \hyperlink{class_q_string_list}{Q\-String\-List} easy. 
+
+\subsection{Documentação dos Construtores \& Destrutor}
+\hypertarget{class_q_string_list_a45a45c56a84a901a9da2be09acc0d19e}{\index{Q\-String\-List@{Q\-String\-List}!Q\-String\-List@{Q\-String\-List}}
+\index{Q\-String\-List@{Q\-String\-List}!QStringList@{Q\-String\-List}}
+\subsubsection[{Q\-String\-List}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String\-List} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_string_list_a45a45c56a84a901a9da2be09acc0d19e}
+Creates an empty list. \hypertarget{class_q_string_list_abaacdf8faef34e26690401ba7d7aa3a2}{\index{Q\-String\-List@{Q\-String\-List}!Q\-String\-List@{Q\-String\-List}}
+\index{Q\-String\-List@{Q\-String\-List}!QStringList@{Q\-String\-List}}
+\subsubsection[{Q\-String\-List}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String\-List} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String\-List} \&}]{l}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_string_list_abaacdf8faef34e26690401ba7d7aa3a2}
+Creates a copy of the list. This function is very fast since \hyperlink{class_q_string_list}{Q\-String\-List} is implicit shared. However, for the programmer this is the same as a deep copy. If this list or the original one or some other list referencing the same shared data is modified, then the modifying list makes a copy first. \hypertarget{class_q_string_list_a192dff205815ff3f0606148ec10cb703}{\index{Q\-String\-List@{Q\-String\-List}!Q\-String\-List@{Q\-String\-List}}
+\index{Q\-String\-List@{Q\-String\-List}!QStringList@{Q\-String\-List}}
+\subsubsection[{Q\-String\-List}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String\-List} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-Value\-List}$<$ {\bf Q\-String} $>$ \&}]{l}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_string_list_a192dff205815ff3f0606148ec10cb703}
+Constructs a new string list that is a copy of {\itshape l}. \hypertarget{class_q_string_list_aa2c0716ef78d9e42913a108eff9e97e9}{\index{Q\-String\-List@{Q\-String\-List}!Q\-String\-List@{Q\-String\-List}}
+\index{Q\-String\-List@{Q\-String\-List}!QStringList@{Q\-String\-List}}
+\subsubsection[{Q\-String\-List}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String\-List} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_string_list_aa2c0716ef78d9e42913a108eff9e97e9}
+Constructs a string list consisting of the single string {\itshape i}. To make longer lists easily, use\-: 
+\begin{DoxyCode}
+\hyperlink{class_q_string}{QString} s1,s2,s3;
+...
+QStringList mylist = \hyperlink{class_q_string_list_a45a45c56a84a901a9da2be09acc0d19e}{QStringList}() << s1 << s2 << s3;
+\end{DoxyCode}
+ \hypertarget{class_q_string_list_aa0b0fd034fd321098f5dce30b1dfc3d8}{\index{Q\-String\-List@{Q\-String\-List}!Q\-String\-List@{Q\-String\-List}}
+\index{Q\-String\-List@{Q\-String\-List}!QStringList@{Q\-String\-List}}
+\subsubsection[{Q\-String\-List}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String\-List} (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_string_list_aa0b0fd034fd321098f5dce30b1dfc3d8}
+Constructs a string list consisting of the single latin-\/1 string {\itshape i}. 
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_q_string_list_a14de7077da58a69fccc730eebb7b1916}{\index{Q\-String\-List@{Q\-String\-List}!from\-Str\-List@{from\-Str\-List}}
+\index{from\-Str\-List@{from\-Str\-List}!QStringList@{Q\-String\-List}}
+\subsubsection[{from\-Str\-List}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String\-List} from\-Str\-List (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-Str\-List} \&}]{ascii}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_q_string_list_a14de7077da58a69fccc730eebb7b1916}
+Converts from a \hyperlink{class_q_str_list}{Q\-Str\-List} (A\-S\-C\-I\-I) to a \hyperlink{class_q_string_list}{Q\-String\-List} (Unicode). \hypertarget{class_q_string_list_a892a12fa53831d2960809836f177eb5f}{\index{Q\-String\-List@{Q\-String\-List}!grep@{grep}}
+\index{grep@{grep}!QStringList@{Q\-String\-List}}
+\subsubsection[{grep}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String\-List} grep (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{str, }
+\item[{bool}]{cs = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+) const}}\label{class_q_string_list_a892a12fa53831d2960809836f177eb5f}
+Returns a list of all strings containing the substring {\itshape str}.
+
+If {\itshape cs} is T\-R\-U\-E, the grep is done case sensitively, else not. \hypertarget{class_q_string_list_a5ba0ab54a050178c12f29ad5ffdcbf67}{\index{Q\-String\-List@{Q\-String\-List}!grep@{grep}}
+\index{grep@{grep}!QStringList@{Q\-String\-List}}
+\subsubsection[{grep}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String\-List} grep (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-Reg\-Exp} \&}]{expr}
+\end{DoxyParamCaption}
+) const}}\label{class_q_string_list_a5ba0ab54a050178c12f29ad5ffdcbf67}
+Returns a list of all strings containing a substring that matches the regular expression {\itshape expr}. \hypertarget{class_q_string_list_a7565f676a5eca84fc36fe0127a842898}{\index{Q\-String\-List@{Q\-String\-List}!join@{join}}
+\index{join@{join}!QStringList@{Q\-String\-List}}
+\subsubsection[{join}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} join (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{sep}
+\end{DoxyParamCaption}
+) const}}\label{class_q_string_list_a7565f676a5eca84fc36fe0127a842898}
+Joins the stringlist into a single string with each element separated by {\itshape sep}.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_string_list_a3bc6fc9aa1be1dbc5989b39b37199765}{split()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_string_list_a47fdc9eea42b6975cdc835bb2e08810e}{\index{Q\-String\-List@{Q\-String\-List}!sort@{sort}}
+\index{sort@{sort}!QStringList@{Q\-String\-List}}
+\subsubsection[{sort}]{\setlength{\rightskip}{0pt plus 5cm}void sort (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_q_string_list_a47fdc9eea42b6975cdc835bb2e08810e}
+Sorts the list of strings in ascending order.
+
+Sorting is very fast. It uses the Qt \hyperlink{class_template}{Template} Library's efficient Heap\-Sort implementation that operates in O(n$\ast$log n). \hypertarget{class_q_string_list_a3bc6fc9aa1be1dbc5989b39b37199765}{\index{Q\-String\-List@{Q\-String\-List}!split@{split}}
+\index{split@{split}!QStringList@{Q\-String\-List}}
+\subsubsection[{split}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String\-List} split (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{sep, }
+\item[{const {\bf Q\-String} \&}]{str, }
+\item[{bool}]{allow\-Empty\-Entries = {\ttfamily FALSE}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_q_string_list_a3bc6fc9aa1be1dbc5989b39b37199765}
+Splits the string {\itshape str} using {\itshape sep} as separator. Returns the list of strings. If {\itshape allow\-Empty\-Entries} is T\-R\-U\-E, also empty entries are inserted into the list, else not. So if you have a string 'abc..d.\-e.', a list which contains 'abc', 'd', and 'e' would be returned if {\itshape allow\-Empty\-Entries} is F\-A\-L\-S\-E, but a list containing 'abc', '', 'd', 'e' and '' would be returned if {\itshape allow\-Empty\-Entries} is T\-R\-U\-E. If {\itshape str} doesn't contain {\itshape sep}, a stringlist with one item, which is the same as {\itshape str}, is returned.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_string_list_a7565f676a5eca84fc36fe0127a842898}{join()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_string_list_ad399343d2b072bb6c24c7822faa597a0}{\index{Q\-String\-List@{Q\-String\-List}!split@{split}}
+\index{split@{split}!QStringList@{Q\-String\-List}}
+\subsubsection[{split}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String\-List} split (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-Char} \&}]{sep, }
+\item[{const {\bf Q\-String} \&}]{str, }
+\item[{bool}]{allow\-Empty\-Entries = {\ttfamily FALSE}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_q_string_list_ad399343d2b072bb6c24c7822faa597a0}
+Splits the string {\itshape str} using {\itshape sep} as separator. Returns the list of strings. If {\itshape allow\-Empty\-Entries} is T\-R\-U\-E, also empty entries are inserted into the list, else not. So if you have a string 'abc..d.\-e.', a list which contains 'abc', 'd', and 'e' would be returned if {\itshape allow\-Empty\-Entries} is F\-A\-L\-S\-E, but a list containing 'abc', '', 'd', 'e' and '' would be returned if {\itshape allow\-Empty\-Entries} is T\-R\-U\-E. If {\itshape str} doesn't contain {\itshape sep}, a stringlist with one item, which is the same as {\itshape str}, is returned.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_string_list_a7565f676a5eca84fc36fe0127a842898}{join()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_string_list_a95c3f64b0440a87838320b903144c380}{\index{Q\-String\-List@{Q\-String\-List}!split@{split}}
+\index{split@{split}!QStringList@{Q\-String\-List}}
+\subsubsection[{split}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String\-List} split (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-Reg\-Exp} \&}]{sep, }
+\item[{const {\bf Q\-String} \&}]{str, }
+\item[{bool}]{allow\-Empty\-Entries = {\ttfamily FALSE}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_q_string_list_a95c3f64b0440a87838320b903144c380}
+Splits the string {\itshape str} using the regular expression {\itshape sep} as separator. Returns the list of strings. If {\itshape allow\-Empty\-Entries} is T\-R\-U\-E, also empty entries are inserted into the list, else not. So if you have a string 'abc..d.\-e.', a list which contains 'abc', 'd', and 'e' would be returned if {\itshape allow\-Empty\-Entries} is F\-A\-L\-S\-E, but a list containing 'abc', '', 'd', 'e' and '' would be returned if {\itshape allow\-Empty\-Entries} is T\-R\-U\-E. If {\itshape str} doesn't contain {\itshape sep}, a stringlist with one item, which is the same as {\itshape str}, is returned.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_string_list_a7565f676a5eca84fc36fe0127a842898}{join()} 
+\end{DoxySeeAlso}
+
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/qtools/qstringlist.\-h\item 
+C\-:/\-Users/teste/git/doxygen/qtools/qstringlist.\-cpp\end{DoxyCompactItemize}

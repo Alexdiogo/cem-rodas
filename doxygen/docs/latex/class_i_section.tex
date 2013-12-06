@@ -1,0 +1,273 @@
+\hypertarget{class_i_section}{\section{Referência à classe I\-Section}
+\label{class_i_section}\index{I\-Section@{I\-Section}}
+}
+
+
+The interface to a section in the object model.  
+
+
+
+
+{\ttfamily \#include $<$doxmlintf.\-h$>$}
+
+Diagrama de heranças da classe I\-Section\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_i_section}
+\end{center}
+\end{figure}
+\subsection*{Tipos Públicos}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_i_section_a7082fb45267dee090a2ecc569f5b1c9c}{Section\-Kind} \{ \\*
+{\bfseries Invalid} =0, 
+\hyperlink{class_i_section_a7082fb45267dee090a2ecc569f5b1c9caf5d101fd635fe6be29203478416558be}{User\-Defined}, 
+\hyperlink{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca60317a995b8372f8a6071a8009774630}{Pub\-Types}, 
+\hyperlink{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca556a03ab3a52c61ea653bfe3ed499643}{Pub\-Funcs}, 
+\\*
+\hyperlink{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca21312350a49f011d4126e09a2b819371}{Pub\-Attribs}, 
+\hyperlink{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca01bf32ed728cd771a633e7fad6fcdb27}{Pub\-Slots}, 
+\hyperlink{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca55cb4e6ccadc6e2e1fd4a94ef1bd1b9c}{Signals}, 
+\hyperlink{class_i_section_a7082fb45267dee090a2ecc569f5b1c9caa45b47219be67149b0b9f729a33d404b}{D\-C\-O\-P\-Funcs}, 
+\\*
+\hyperlink{class_i_section_a7082fb45267dee090a2ecc569f5b1c9cab0404ffef733441150fb5ee322fec245}{Properties}, 
+\hyperlink{class_i_section_a7082fb45267dee090a2ecc569f5b1c9caf2a85594ef4e6d915c7bd7c606333053}{Events}, 
+\hyperlink{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca79ec8ad196a97cee565f59de87554c49}{Pub\-Stat\-Funcs}, 
+\hyperlink{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca65ff0e26aeef0f7f6f9182425bba436b}{Pub\-Stat\-Attribs}, 
+\\*
+\hyperlink{class_i_section_a7082fb45267dee090a2ecc569f5b1c9cad70523ef53b48266397b1c319d0ebacf}{Pro\-Types}, 
+\hyperlink{class_i_section_a7082fb45267dee090a2ecc569f5b1c9caaf65b08f99761e52f045391971cff31c}{Pro\-Funcs}, 
+\hyperlink{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca6b3b392acdc0fa820fdd7b547c533c45}{Pro\-Attribs}, 
+\hyperlink{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca08e2af8f1fa12c43d557ca7b5dbfc4ba}{Pro\-Slots}, 
+\\*
+\hyperlink{class_i_section_a7082fb45267dee090a2ecc569f5b1c9cabb6cdde38337267bb490ecce43eb9232}{Pro\-Stat\-Funcs}, 
+\hyperlink{class_i_section_a7082fb45267dee090a2ecc569f5b1c9cadc618036101508f3aa215d4f0de23b63}{Pro\-Stat\-Attribs}, 
+\hyperlink{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca723000a525c03db6948af4dbb999d7fd}{Pac\-Types}, 
+\hyperlink{class_i_section_a7082fb45267dee090a2ecc569f5b1c9cad3ef9535dd9803c21fe384a526c54895}{Pac\-Funcs}, 
+\\*
+\hyperlink{class_i_section_a7082fb45267dee090a2ecc569f5b1c9cae18151040e8924b513098eb4793ff373}{Pac\-Attribs}, 
+\hyperlink{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca246cc983eb5a963b861f3b2a57209e6e}{Pac\-Stat\-Funcs}, 
+\hyperlink{class_i_section_a7082fb45267dee090a2ecc569f5b1c9caa0c9b48bae3c35c5912bc3db5b848e96}{Pac\-Stat\-Attribs}, 
+\hyperlink{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca58026e87e35d590d4c806afd1bb6560f}{Pri\-Types}, 
+\\*
+\hyperlink{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca9b2bd4cdbdd0d5b78e6014256a0f68da}{Pri\-Funcs}, 
+\hyperlink{class_i_section_a7082fb45267dee090a2ecc569f5b1c9caac58438646a45a33ba3dddb3c76dc107}{Pri\-Attribs}, 
+\hyperlink{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca1fac43ecfad8f0edf92f42070b9a8640}{Pri\-Slots}, 
+\hyperlink{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca02de5772e123ec76e144723158eee0d8}{Pri\-Stat\-Funcs}, 
+\\*
+\hyperlink{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca6d19298e9abcf707d415c5b4b180e32f}{Pri\-Stat\-Attribs}, 
+\hyperlink{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca4cc9c1652ed05f6853b07937ac13fc35}{Friend}, 
+\hyperlink{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca5bf154a6832af5d6e94c52690d7494f6}{Related}, 
+\hyperlink{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca7dff91f5fa1d8e85710898c97712ee15}{Defines}, 
+\\*
+\hyperlink{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca4802daa5f835fce24157e71514387fa4}{Prototypes}, 
+\hyperlink{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca6b09a7389d2476faf62b2e4a1afb6d57}{Typedefs}, 
+\hyperlink{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca3b31115a04961d5ebe0683cbbbd1909c}{Enums}, 
+\hyperlink{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca60fe6c4c525893f09d49fb65b21e81a8}{Functions}, 
+\\*
+\hyperlink{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca3bc10f934b76f8b634d575efd8643d3c}{Variables}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+virtual const \hyperlink{class_i_string}{I\-String} $\ast$ \hyperlink{class_i_section_a872363e5be82229a73bd00d212a703ce}{kind\-String} () const =0
+\item 
+virtual \hyperlink{class_i_section_a7082fb45267dee090a2ecc569f5b1c9c}{Section\-Kind} \hyperlink{class_i_section_a617d30f543abdf8614e2871ec0b536d6}{kind} () const =0
+\item 
+virtual \hyperlink{class_i_doc_root}{I\-Doc\-Root} $\ast$ \hyperlink{class_i_section_a0145bb35d9da4aa7f6c0fa8ab0b9e53e}{description} () const =0
+\item 
+virtual \hyperlink{class_i_member_iterator}{I\-Member\-Iterator} $\ast$ \hyperlink{class_i_section_a6e3f5469efd047863c45ad0233aa24b4}{members} () const =0
+\item 
+virtual bool \hyperlink{class_i_section_a0ed1f9eef230e6f2ccae812d1037aa0f}{is\-Static} () const =0
+\item 
+virtual bool \hyperlink{class_i_section_a5954b680bdf4e18ae1a76373cac918fb}{is\-Public} () const =0
+\item 
+virtual bool \hyperlink{class_i_section_ade1810b0e67ddcbc8c99894e1c2356ab}{is\-Private} () const =0
+\item 
+virtual bool \hyperlink{class_i_section_acc747e2ee4b6c31b9bb40390e3cbbf0e}{is\-Protected} () const =0
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+The interface to a section in the object model. 
+
+\hyperlink{class_a}{A} compound can have a number of sections, where each section contains a set of members with the properties implied by the section kind. The \hyperlink{class_i_section_a617d30f543abdf8614e2871ec0b536d6}{kind()} method returns the kind of the section. The members of the section can be accessed via \hyperlink{class_i_section_a6e3f5469efd047863c45ad0233aa24b4}{members()}. Apart from using \hyperlink{class_i_section_a617d30f543abdf8614e2871ec0b536d6}{kind()}, some of the individual properties of the section can also be inspected via \hyperlink{class_i_section_a0ed1f9eef230e6f2ccae812d1037aa0f}{is\-Static()}, \hyperlink{class_i_section_a5954b680bdf4e18ae1a76373cac918fb}{is\-Public()}, \hyperlink{class_i_section_acc747e2ee4b6c31b9bb40390e3cbbf0e}{is\-Protected()} and \hyperlink{class_i_section_ade1810b0e67ddcbc8c99894e1c2356ab}{is\-Private()}. 
+
+\subsection{Documentação das enumerações}
+\hypertarget{class_i_section_a7082fb45267dee090a2ecc569f5b1c9c}{\index{I\-Section@{I\-Section}!Section\-Kind@{Section\-Kind}}
+\index{Section\-Kind@{Section\-Kind}!ISection@{I\-Section}}
+\subsubsection[{Section\-Kind}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Section\-Kind}}}\label{class_i_section_a7082fb45267dee090a2ecc569f5b1c9c}
+Possible section types \begin{Desc}
+\item[Valores da enumeração]\par
+\begin{description}
+\index{User\-Defined@{User\-Defined}!I\-Section@{I\-Section}}\index{I\-Section@{I\-Section}!User\-Defined@{User\-Defined}}\item[{\em 
+\hypertarget{class_i_section_a7082fb45267dee090a2ecc569f5b1c9caf5d101fd635fe6be29203478416558be}{User\-Defined}\label{class_i_section_a7082fb45267dee090a2ecc569f5b1c9caf5d101fd635fe6be29203478416558be}
+}]\hyperlink{class_a}{A} user defined member group. \index{Pub\-Types@{Pub\-Types}!I\-Section@{I\-Section}}\index{I\-Section@{I\-Section}!Pub\-Types@{Pub\-Types}}\item[{\em 
+\hypertarget{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca60317a995b8372f8a6071a8009774630}{Pub\-Types}\label{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca60317a995b8372f8a6071a8009774630}
+}]Public member typedefs. \index{Pub\-Funcs@{Pub\-Funcs}!I\-Section@{I\-Section}}\index{I\-Section@{I\-Section}!Pub\-Funcs@{Pub\-Funcs}}\item[{\em 
+\hypertarget{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca556a03ab3a52c61ea653bfe3ed499643}{Pub\-Funcs}\label{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca556a03ab3a52c61ea653bfe3ed499643}
+}]Public member functions. \index{Pub\-Attribs@{Pub\-Attribs}!I\-Section@{I\-Section}}\index{I\-Section@{I\-Section}!Pub\-Attribs@{Pub\-Attribs}}\item[{\em 
+\hypertarget{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca21312350a49f011d4126e09a2b819371}{Pub\-Attribs}\label{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca21312350a49f011d4126e09a2b819371}
+}]Public member attributes. \index{Pub\-Slots@{Pub\-Slots}!I\-Section@{I\-Section}}\index{I\-Section@{I\-Section}!Pub\-Slots@{Pub\-Slots}}\item[{\em 
+\hypertarget{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca01bf32ed728cd771a633e7fad6fcdb27}{Pub\-Slots}\label{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca01bf32ed728cd771a633e7fad6fcdb27}
+}]Public Qt Slots. \index{Signals@{Signals}!I\-Section@{I\-Section}}\index{I\-Section@{I\-Section}!Signals@{Signals}}\item[{\em 
+\hypertarget{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca55cb4e6ccadc6e2e1fd4a94ef1bd1b9c}{Signals}\label{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca55cb4e6ccadc6e2e1fd4a94ef1bd1b9c}
+}]Qt Signals. \index{D\-C\-O\-P\-Funcs@{D\-C\-O\-P\-Funcs}!I\-Section@{I\-Section}}\index{I\-Section@{I\-Section}!D\-C\-O\-P\-Funcs@{D\-C\-O\-P\-Funcs}}\item[{\em 
+\hypertarget{class_i_section_a7082fb45267dee090a2ecc569f5b1c9caa45b47219be67149b0b9f729a33d404b}{D\-C\-O\-P\-Funcs}\label{class_i_section_a7082fb45267dee090a2ecc569f5b1c9caa45b47219be67149b0b9f729a33d404b}
+}]K\-D\-E-\/\-D\-C\-O\-P interface functions. \index{Properties@{Properties}!I\-Section@{I\-Section}}\index{I\-Section@{I\-Section}!Properties@{Properties}}\item[{\em 
+\hypertarget{class_i_section_a7082fb45267dee090a2ecc569f5b1c9cab0404ffef733441150fb5ee322fec245}{Properties}\label{class_i_section_a7082fb45267dee090a2ecc569f5b1c9cab0404ffef733441150fb5ee322fec245}
+}]I\-D\-L properties. \index{Events@{Events}!I\-Section@{I\-Section}}\index{I\-Section@{I\-Section}!Events@{Events}}\item[{\em 
+\hypertarget{class_i_section_a7082fb45267dee090a2ecc569f5b1c9caf2a85594ef4e6d915c7bd7c606333053}{Events}\label{class_i_section_a7082fb45267dee090a2ecc569f5b1c9caf2a85594ef4e6d915c7bd7c606333053}
+}]\hyperlink{class_c}{C}\# events. \index{Pub\-Stat\-Funcs@{Pub\-Stat\-Funcs}!I\-Section@{I\-Section}}\index{I\-Section@{I\-Section}!Pub\-Stat\-Funcs@{Pub\-Stat\-Funcs}}\item[{\em 
+\hypertarget{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca79ec8ad196a97cee565f59de87554c49}{Pub\-Stat\-Funcs}\label{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca79ec8ad196a97cee565f59de87554c49}
+}]Public static member functions. \index{Pub\-Stat\-Attribs@{Pub\-Stat\-Attribs}!I\-Section@{I\-Section}}\index{I\-Section@{I\-Section}!Pub\-Stat\-Attribs@{Pub\-Stat\-Attribs}}\item[{\em 
+\hypertarget{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca65ff0e26aeef0f7f6f9182425bba436b}{Pub\-Stat\-Attribs}\label{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca65ff0e26aeef0f7f6f9182425bba436b}
+}]Public static attributes. \index{Pro\-Types@{Pro\-Types}!I\-Section@{I\-Section}}\index{I\-Section@{I\-Section}!Pro\-Types@{Pro\-Types}}\item[{\em 
+\hypertarget{class_i_section_a7082fb45267dee090a2ecc569f5b1c9cad70523ef53b48266397b1c319d0ebacf}{Pro\-Types}\label{class_i_section_a7082fb45267dee090a2ecc569f5b1c9cad70523ef53b48266397b1c319d0ebacf}
+}]Protected member typedefs. \index{Pro\-Funcs@{Pro\-Funcs}!I\-Section@{I\-Section}}\index{I\-Section@{I\-Section}!Pro\-Funcs@{Pro\-Funcs}}\item[{\em 
+\hypertarget{class_i_section_a7082fb45267dee090a2ecc569f5b1c9caaf65b08f99761e52f045391971cff31c}{Pro\-Funcs}\label{class_i_section_a7082fb45267dee090a2ecc569f5b1c9caaf65b08f99761e52f045391971cff31c}
+}]Protected member functions. \index{Pro\-Attribs@{Pro\-Attribs}!I\-Section@{I\-Section}}\index{I\-Section@{I\-Section}!Pro\-Attribs@{Pro\-Attribs}}\item[{\em 
+\hypertarget{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca6b3b392acdc0fa820fdd7b547c533c45}{Pro\-Attribs}\label{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca6b3b392acdc0fa820fdd7b547c533c45}
+}]Protected member attributes. \index{Pro\-Slots@{Pro\-Slots}!I\-Section@{I\-Section}}\index{I\-Section@{I\-Section}!Pro\-Slots@{Pro\-Slots}}\item[{\em 
+\hypertarget{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca08e2af8f1fa12c43d557ca7b5dbfc4ba}{Pro\-Slots}\label{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca08e2af8f1fa12c43d557ca7b5dbfc4ba}
+}]Protected slots. \index{Pro\-Stat\-Funcs@{Pro\-Stat\-Funcs}!I\-Section@{I\-Section}}\index{I\-Section@{I\-Section}!Pro\-Stat\-Funcs@{Pro\-Stat\-Funcs}}\item[{\em 
+\hypertarget{class_i_section_a7082fb45267dee090a2ecc569f5b1c9cabb6cdde38337267bb490ecce43eb9232}{Pro\-Stat\-Funcs}\label{class_i_section_a7082fb45267dee090a2ecc569f5b1c9cabb6cdde38337267bb490ecce43eb9232}
+}]Protected static member functions. \index{Pro\-Stat\-Attribs@{Pro\-Stat\-Attribs}!I\-Section@{I\-Section}}\index{I\-Section@{I\-Section}!Pro\-Stat\-Attribs@{Pro\-Stat\-Attribs}}\item[{\em 
+\hypertarget{class_i_section_a7082fb45267dee090a2ecc569f5b1c9cadc618036101508f3aa215d4f0de23b63}{Pro\-Stat\-Attribs}\label{class_i_section_a7082fb45267dee090a2ecc569f5b1c9cadc618036101508f3aa215d4f0de23b63}
+}]Protected static member attributes. \index{Pac\-Types@{Pac\-Types}!I\-Section@{I\-Section}}\index{I\-Section@{I\-Section}!Pac\-Types@{Pac\-Types}}\item[{\em 
+\hypertarget{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca723000a525c03db6948af4dbb999d7fd}{Pac\-Types}\label{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca723000a525c03db6948af4dbb999d7fd}
+}]Package member typedefs. \index{Pac\-Funcs@{Pac\-Funcs}!I\-Section@{I\-Section}}\index{I\-Section@{I\-Section}!Pac\-Funcs@{Pac\-Funcs}}\item[{\em 
+\hypertarget{class_i_section_a7082fb45267dee090a2ecc569f5b1c9cad3ef9535dd9803c21fe384a526c54895}{Pac\-Funcs}\label{class_i_section_a7082fb45267dee090a2ecc569f5b1c9cad3ef9535dd9803c21fe384a526c54895}
+}]Package member functions. \index{Pac\-Attribs@{Pac\-Attribs}!I\-Section@{I\-Section}}\index{I\-Section@{I\-Section}!Pac\-Attribs@{Pac\-Attribs}}\item[{\em 
+\hypertarget{class_i_section_a7082fb45267dee090a2ecc569f5b1c9cae18151040e8924b513098eb4793ff373}{Pac\-Attribs}\label{class_i_section_a7082fb45267dee090a2ecc569f5b1c9cae18151040e8924b513098eb4793ff373}
+}]Package member attributes. \index{Pac\-Stat\-Funcs@{Pac\-Stat\-Funcs}!I\-Section@{I\-Section}}\index{I\-Section@{I\-Section}!Pac\-Stat\-Funcs@{Pac\-Stat\-Funcs}}\item[{\em 
+\hypertarget{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca246cc983eb5a963b861f3b2a57209e6e}{Pac\-Stat\-Funcs}\label{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca246cc983eb5a963b861f3b2a57209e6e}
+}]Package static member functions. \index{Pac\-Stat\-Attribs@{Pac\-Stat\-Attribs}!I\-Section@{I\-Section}}\index{I\-Section@{I\-Section}!Pac\-Stat\-Attribs@{Pac\-Stat\-Attribs}}\item[{\em 
+\hypertarget{class_i_section_a7082fb45267dee090a2ecc569f5b1c9caa0c9b48bae3c35c5912bc3db5b848e96}{Pac\-Stat\-Attribs}\label{class_i_section_a7082fb45267dee090a2ecc569f5b1c9caa0c9b48bae3c35c5912bc3db5b848e96}
+}]Package static member attributes. \index{Pri\-Types@{Pri\-Types}!I\-Section@{I\-Section}}\index{I\-Section@{I\-Section}!Pri\-Types@{Pri\-Types}}\item[{\em 
+\hypertarget{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca58026e87e35d590d4c806afd1bb6560f}{Pri\-Types}\label{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca58026e87e35d590d4c806afd1bb6560f}
+}]Private member typedefs. \index{Pri\-Funcs@{Pri\-Funcs}!I\-Section@{I\-Section}}\index{I\-Section@{I\-Section}!Pri\-Funcs@{Pri\-Funcs}}\item[{\em 
+\hypertarget{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca9b2bd4cdbdd0d5b78e6014256a0f68da}{Pri\-Funcs}\label{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca9b2bd4cdbdd0d5b78e6014256a0f68da}
+}]Private member functions. \index{Pri\-Attribs@{Pri\-Attribs}!I\-Section@{I\-Section}}\index{I\-Section@{I\-Section}!Pri\-Attribs@{Pri\-Attribs}}\item[{\em 
+\hypertarget{class_i_section_a7082fb45267dee090a2ecc569f5b1c9caac58438646a45a33ba3dddb3c76dc107}{Pri\-Attribs}\label{class_i_section_a7082fb45267dee090a2ecc569f5b1c9caac58438646a45a33ba3dddb3c76dc107}
+}]Private member attributes. \index{Pri\-Slots@{Pri\-Slots}!I\-Section@{I\-Section}}\index{I\-Section@{I\-Section}!Pri\-Slots@{Pri\-Slots}}\item[{\em 
+\hypertarget{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca1fac43ecfad8f0edf92f42070b9a8640}{Pri\-Slots}\label{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca1fac43ecfad8f0edf92f42070b9a8640}
+}]Private Qt slots. \index{Pri\-Stat\-Funcs@{Pri\-Stat\-Funcs}!I\-Section@{I\-Section}}\index{I\-Section@{I\-Section}!Pri\-Stat\-Funcs@{Pri\-Stat\-Funcs}}\item[{\em 
+\hypertarget{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca02de5772e123ec76e144723158eee0d8}{Pri\-Stat\-Funcs}\label{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca02de5772e123ec76e144723158eee0d8}
+}]Private static member functions. \index{Pri\-Stat\-Attribs@{Pri\-Stat\-Attribs}!I\-Section@{I\-Section}}\index{I\-Section@{I\-Section}!Pri\-Stat\-Attribs@{Pri\-Stat\-Attribs}}\item[{\em 
+\hypertarget{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca6d19298e9abcf707d415c5b4b180e32f}{Pri\-Stat\-Attribs}\label{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca6d19298e9abcf707d415c5b4b180e32f}
+}]Private static member attributes. \index{Friend@{Friend}!I\-Section@{I\-Section}}\index{I\-Section@{I\-Section}!Friend@{Friend}}\item[{\em 
+\hypertarget{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca4cc9c1652ed05f6853b07937ac13fc35}{Friend}\label{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca4cc9c1652ed05f6853b07937ac13fc35}
+}]Friends. \index{Related@{Related}!I\-Section@{I\-Section}}\index{I\-Section@{I\-Section}!Related@{Related}}\item[{\em 
+\hypertarget{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca5bf154a6832af5d6e94c52690d7494f6}{Related}\label{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca5bf154a6832af5d6e94c52690d7494f6}
+}]Function marked as related. \index{Defines@{Defines}!I\-Section@{I\-Section}}\index{I\-Section@{I\-Section}!Defines@{Defines}}\item[{\em 
+\hypertarget{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca7dff91f5fa1d8e85710898c97712ee15}{Defines}\label{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca7dff91f5fa1d8e85710898c97712ee15}
+}]Preprocessor defines. \index{Prototypes@{Prototypes}!I\-Section@{I\-Section}}\index{I\-Section@{I\-Section}!Prototypes@{Prototypes}}\item[{\em 
+\hypertarget{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca4802daa5f835fce24157e71514387fa4}{Prototypes}\label{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca4802daa5f835fce24157e71514387fa4}
+}]Global function prototypes. \index{Typedefs@{Typedefs}!I\-Section@{I\-Section}}\index{I\-Section@{I\-Section}!Typedefs@{Typedefs}}\item[{\em 
+\hypertarget{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca6b09a7389d2476faf62b2e4a1afb6d57}{Typedefs}\label{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca6b09a7389d2476faf62b2e4a1afb6d57}
+}]Global typedefs. \index{Enums@{Enums}!I\-Section@{I\-Section}}\index{I\-Section@{I\-Section}!Enums@{Enums}}\item[{\em 
+\hypertarget{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca3b31115a04961d5ebe0683cbbbd1909c}{Enums}\label{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca3b31115a04961d5ebe0683cbbbd1909c}
+}]Enumerations. \index{Functions@{Functions}!I\-Section@{I\-Section}}\index{I\-Section@{I\-Section}!Functions@{Functions}}\item[{\em 
+\hypertarget{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca60fe6c4c525893f09d49fb65b21e81a8}{Functions}\label{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca60fe6c4c525893f09d49fb65b21e81a8}
+}]Global functions. \index{Variables@{Variables}!I\-Section@{I\-Section}}\index{I\-Section@{I\-Section}!Variables@{Variables}}\item[{\em 
+\hypertarget{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca3bc10f934b76f8b634d575efd8643d3c}{Variables}\label{class_i_section_a7082fb45267dee090a2ecc569f5b1c9ca3bc10f934b76f8b634d575efd8643d3c}
+}]Global variables. \end{description}
+\end{Desc}
+
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_i_section_a0145bb35d9da4aa7f6c0fa8ab0b9e53e}{\index{I\-Section@{I\-Section}!description@{description}}
+\index{description@{description}!ISection@{I\-Section}}
+\subsubsection[{description}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf I\-Doc\-Root}$\ast$ description (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_i_section_a0145bb35d9da4aa7f6c0fa8ab0b9e53e}
+Returns the description attached to this section (for user defined sections, also known as member groups). 
+
+Implementado em \hyperlink{class_section_handler_a82b3b70f767b9723b25005aeb6b4c335}{Section\-Handler}.
+
+\hypertarget{class_i_section_ade1810b0e67ddcbc8c99894e1c2356ab}{\index{I\-Section@{I\-Section}!is\-Private@{is\-Private}}
+\index{is\-Private@{is\-Private}!ISection@{I\-Section}}
+\subsubsection[{is\-Private}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool is\-Private (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_i_section_ade1810b0e67ddcbc8c99894e1c2356ab}
+Returns {\ttfamily true} if this section belongs to a private section of a class 
+
+Implementado em \hyperlink{class_section_handler_a950c4be289e9abc8ac9047bf79da29ab}{Section\-Handler}.
+
+\hypertarget{class_i_section_acc747e2ee4b6c31b9bb40390e3cbbf0e}{\index{I\-Section@{I\-Section}!is\-Protected@{is\-Protected}}
+\index{is\-Protected@{is\-Protected}!ISection@{I\-Section}}
+\subsubsection[{is\-Protected}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool is\-Protected (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_i_section_acc747e2ee4b6c31b9bb40390e3cbbf0e}
+Returns {\ttfamily true} if this section belongs to a protected section of a class 
+
+Implementado em \hyperlink{class_section_handler_a7f22afb2637680b08324f3c9da9433da}{Section\-Handler}.
+
+\hypertarget{class_i_section_a5954b680bdf4e18ae1a76373cac918fb}{\index{I\-Section@{I\-Section}!is\-Public@{is\-Public}}
+\index{is\-Public@{is\-Public}!ISection@{I\-Section}}
+\subsubsection[{is\-Public}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool is\-Public (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_i_section_a5954b680bdf4e18ae1a76373cac918fb}
+Returns {\ttfamily true} if this section belongs to a public section of a class 
+
+Implementado em \hyperlink{class_section_handler_a0a0ba391ac373fa2e8ea6af7c9ee4e77}{Section\-Handler}.
+
+\hypertarget{class_i_section_a0ed1f9eef230e6f2ccae812d1037aa0f}{\index{I\-Section@{I\-Section}!is\-Static@{is\-Static}}
+\index{is\-Static@{is\-Static}!ISection@{I\-Section}}
+\subsubsection[{is\-Static}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool is\-Static (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_i_section_a0ed1f9eef230e6f2ccae812d1037aa0f}
+Returns {\ttfamily true} if this section contains statics 
+
+Implementado em \hyperlink{class_section_handler_ae185e7061f648b432db7a949d84571a0}{Section\-Handler}.
+
+\hypertarget{class_i_section_a617d30f543abdf8614e2871ec0b536d6}{\index{I\-Section@{I\-Section}!kind@{kind}}
+\index{kind@{kind}!ISection@{I\-Section}}
+\subsubsection[{kind}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Section\-Kind} kind (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_i_section_a617d30f543abdf8614e2871ec0b536d6}
+Returns what kind of section this is 
+
+Implementado em \hyperlink{class_section_handler_a7e3aadffc7b3089136879aa53c04cb5a}{Section\-Handler}.
+
+\hypertarget{class_i_section_a872363e5be82229a73bd00d212a703ce}{\index{I\-Section@{I\-Section}!kind\-String@{kind\-String}}
+\index{kind\-String@{kind\-String}!ISection@{I\-Section}}
+\subsubsection[{kind\-String}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf I\-String}$\ast$ kind\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_i_section_a872363e5be82229a73bd00d212a703ce}
+Returns a string representation of the value returned by \hyperlink{class_i_section_a617d30f543abdf8614e2871ec0b536d6}{kind()} 
+
+Implementado em \hyperlink{class_section_handler_a9d1b8d88b3f77b9e3326cd04cac62504}{Section\-Handler}.
+
+\hypertarget{class_i_section_a6e3f5469efd047863c45ad0233aa24b4}{\index{I\-Section@{I\-Section}!members@{members}}
+\index{members@{members}!ISection@{I\-Section}}
+\subsubsection[{members}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf I\-Member\-Iterator}$\ast$ members (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_i_section_a6e3f5469efd047863c45ad0233aa24b4}
+Returns an iterator for the members of this section 
+
+Implementado em \hyperlink{class_section_handler_a94b970d37313c8530611b18b37b992bc}{Section\-Handler}.
+
+
+
+A documentação para esta classe foi gerada a partir do seguinte ficheiro\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/addon/doxmlparser/include/\hyperlink{include_2doxmlintf_8h}{doxmlintf.\-h}\end{DoxyCompactItemize}

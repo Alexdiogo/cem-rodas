@@ -1,0 +1,71 @@
+\hypertarget{class_s_list}{\section{Referência à classe Template S\-List$<$ T $>$}
+\label{class_s_list}\index{S\-List$<$ T $>$@{S\-List$<$ T $>$}}
+}
+
+
+{\ttfamily \#include $<$sortdict.\-h$>$}
+
+Diagrama de heranças da classe S\-List$<$ T $>$\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_s_list}
+\end{center}
+\end{figure}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_s_list_a874e1b986f972cdcc5c828e562e0b861}{{\bfseries S\-List} (\hyperlink{class_s_dict}{S\-Dict}$<$ T $>$ $\ast$owner)}\label{class_s_list_a874e1b986f972cdcc5c828e562e0b861}
+
+\item 
+int \hyperlink{class_s_list_a219450accf048597ffc7113ecde4c402}{compare\-Items} (Q\-Collection\-::\-Item item1, Q\-Collection\-::\-Item item2)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Descrição detalhada}
+\subsubsection*{template$<$class T$>$class S\-List$<$ T $>$}
+
+internal wrapper class that redirects \hyperlink{class_s_list_a219450accf048597ffc7113ecde4c402}{compare\-Items()} to the dictionary 
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_s_list_a219450accf048597ffc7113ecde4c402}{\index{S\-List@{S\-List}!compare\-Items@{compare\-Items}}
+\index{compare\-Items@{compare\-Items}!SList@{S\-List}}
+\subsubsection[{compare\-Items}]{\setlength{\rightskip}{0pt plus 5cm}int compare\-Items (
+\begin{DoxyParamCaption}
+\item[{Q\-Collection\-::\-Item}]{item1, }
+\item[{Q\-Collection\-::\-Item}]{item2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_s_list_a219450accf048597ffc7113ecde4c402}
+This virtual function compares two list items.
+
+Returns\-: 
+\begin{DoxyItemize}
+\item 0 if {\itshape item1} == {\itshape item2} 
+\item non-\/zero if {\itshape item1} != {\itshape item2} 
+\end{DoxyItemize}
+
+This function returns {\itshape int} rather than {\itshape bool} so that reimplementations can return three values and use it to sort by\-:
+
+
+\begin{DoxyItemize}
+\item 0 if {\itshape item1} == {\itshape item2} 
+\item $>$ 0 (positive integer) if {\itshape item1} $>$ {\itshape item2} 
+\item $<$ 0 (negative integer) if {\itshape item1} $<$ {\itshape item2} 
+\end{DoxyItemize}
+
+The Q\-List\-::in\-Sort() function requires that \hyperlink{class_s_list_a219450accf048597ffc7113ecde4c402}{compare\-Items()} is implemented as described here.
+
+This function should not modify the list because some const functions call \hyperlink{class_s_list_a219450accf048597ffc7113ecde4c402}{compare\-Items()}.
+
+The default implementation compares the pointers\-: 
+\begin{DoxyCode}
+\end{DoxyCode}
+ 
+
+Reimplementado de \hyperlink{class_q_g_list_aac689c6d7a54b6558afbd53845183af8}{Q\-G\-List}.
+
+
+
+A documentação para esta classe foi gerada a partir do seguinte ficheiro\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/src/sortdict.\-h\end{DoxyCompactItemize}

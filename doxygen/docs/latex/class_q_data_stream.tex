@@ -1,0 +1,622 @@
+\hypertarget{class_q_data_stream}{\section{Referência à classe Q\-Data\-Stream}
+\label{class_q_data_stream}\index{Q\-Data\-Stream@{Q\-Data\-Stream}}
+}
+
+
+The \hyperlink{class_q_data_stream}{Q\-Data\-Stream} class provides serialization of binary data to a \hyperlink{class_q_i_o_device}{Q\-I\-O\-Device}.  
+
+
+
+
+{\ttfamily \#include $<$qdatastream.\-h$>$}
+
+\subsection*{Tipos Públicos}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Byte\-Order} \{ {\bfseries Big\-Endian}, 
+{\bfseries Little\-Endian}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_q_data_stream_a1d21554b83a077e62f0cbfdae8cfb5fa}{Q\-Data\-Stream} ()
+\item 
+\hyperlink{class_q_data_stream_aed832d35cad653e3665b62592fa8c635}{Q\-Data\-Stream} (\hyperlink{class_q_i_o_device}{Q\-I\-O\-Device} $\ast$)
+\item 
+\hyperlink{class_q_data_stream_a846be3264e4bc919979a64d2edd6ed9d}{Q\-Data\-Stream} (\hyperlink{class_q_array}{Q\-Byte\-Array}, int mode)
+\item 
+virtual \hyperlink{class_q_data_stream_a25e9f82f003df6630979901515738a0b}{$\sim$\-Q\-Data\-Stream} ()
+\item 
+\hyperlink{class_q_i_o_device}{Q\-I\-O\-Device} $\ast$ \hyperlink{class_q_data_stream_a18846d79bf14c21d749e27eef80bb6a0}{device} () const 
+\item 
+void \hyperlink{class_q_data_stream_a98230cf62c8603a7d0706e3044030f1b}{set\-Device} (\hyperlink{class_q_i_o_device}{Q\-I\-O\-Device} $\ast$)
+\item 
+void \hyperlink{class_q_data_stream_aa6b00e03249023ce66f02861f5a6ffae}{unset\-Device} ()
+\item 
+bool \hyperlink{class_q_data_stream_a11cbf4ba82ee565cb9eef28b972bf145}{at\-End} () const 
+\item 
+bool \hyperlink{class_q_data_stream_ac4bcdb9a2c4adf5c3d247a711a7142cc}{eof} () const 
+\item 
+int \hyperlink{class_q_data_stream_a8fe92c42a87f761c0682da5c613d75d6}{byte\-Order} () const 
+\item 
+void \hyperlink{class_q_data_stream_a6f3acaf002c79fda1af888abbf4dcf8e}{set\-Byte\-Order} (int)
+\item 
+bool \hyperlink{class_q_data_stream_ad86c3cb0ae4080139e0ee9376d53215f}{is\-Printable\-Data} () const 
+\item 
+void \hyperlink{class_q_data_stream_a52c59e5985c0651783e12f7e3edcffe7}{set\-Printable\-Data} (bool)
+\item 
+int \hyperlink{class_q_data_stream_aa5f30d51d4a86222cd00a2e05826a7db}{version} () const 
+\item 
+void \hyperlink{class_q_data_stream_a652e7f35c2c3a49cf179fadd55ed16c4}{set\-Version} (int)
+\item 
+\hyperlink{class_q_data_stream}{Q\-Data\-Stream} \& \hyperlink{class_q_data_stream_a918b02e460dd465f3ec86aea51ca59a1}{operator$>$$>$} (Q\-\_\-\-I\-N\-T8 \&i)
+\item 
+\hyperlink{class_q_data_stream}{Q\-Data\-Stream} \& \hyperlink{class_q_data_stream_a66919f08c4a4ec99f8dd8ee49e4bd69c}{operator$>$$>$} (Q\-\_\-\-U\-I\-N\-T8 \&i)
+\item 
+\hyperlink{class_q_data_stream}{Q\-Data\-Stream} \& \hyperlink{class_q_data_stream_aa99d896eebd84b4f50c1a1c4e5147d43}{operator$>$$>$} (Q\-\_\-\-I\-N\-T16 \&i)
+\item 
+\hyperlink{class_q_data_stream}{Q\-Data\-Stream} \& \hyperlink{class_q_data_stream_acf2f3045e740e2e97b7e6be0e26d94da}{operator$>$$>$} (Q\-\_\-\-U\-I\-N\-T16 \&i)
+\item 
+\hyperlink{class_q_data_stream}{Q\-Data\-Stream} \& \hyperlink{class_q_data_stream_adc29145913bb3865cf02f74dd417504f}{operator$>$$>$} (Q\-\_\-\-I\-N\-T32 \&i)
+\item 
+\hyperlink{class_q_data_stream}{Q\-Data\-Stream} \& \hyperlink{class_q_data_stream_a58808e7d7474ec9df2a81b96cb944fba}{operator$>$$>$} (Q\-\_\-\-U\-I\-N\-T32 \&i)
+\item 
+\hyperlink{class_q_data_stream}{Q\-Data\-Stream} \& \hyperlink{class_q_data_stream_af9754871ea12971a697b650ea0fbdc7f}{operator$>$$>$} (Q\-\_\-\-I\-N\-T64 \&i)
+\item 
+\hyperlink{class_q_data_stream}{Q\-Data\-Stream} \& \hyperlink{class_q_data_stream_af8959500642c3751593d6654e2f8506d}{operator$>$$>$} (Q\-\_\-\-U\-I\-N\-T64 \&i)
+\item 
+\hyperlink{class_q_data_stream}{Q\-Data\-Stream} \& \hyperlink{class_q_data_stream_a400c7acc10a87b0283b5d0a4fb438f5e}{operator$>$$>$} (float \&f)
+\item 
+\hyperlink{class_q_data_stream}{Q\-Data\-Stream} \& \hyperlink{class_q_data_stream_a552731f71d8528a34d98ae48ad4915a1}{operator$>$$>$} (double \&f)
+\item 
+\hyperlink{class_q_data_stream}{Q\-Data\-Stream} \& \hyperlink{class_q_data_stream_a7b27f047be47212548986b8b6cd28635}{operator$>$$>$} (char $\ast$\&str)
+\item 
+\hyperlink{class_q_data_stream}{Q\-Data\-Stream} \& \hyperlink{class_q_data_stream_a38426efa1d04bf3cf11d63addec5c9bd}{operator$<$$<$} (Q\-\_\-\-I\-N\-T8 i)
+\item 
+\hyperlink{class_q_data_stream}{Q\-Data\-Stream} \& \hyperlink{class_q_data_stream_a9a164a62a8bee152fd86a4d8269b6dda}{operator$<$$<$} (Q\-\_\-\-U\-I\-N\-T8 i)
+\item 
+\hyperlink{class_q_data_stream}{Q\-Data\-Stream} \& \hyperlink{class_q_data_stream_a6c67acaefeb1d08d1cc2aea62630b8af}{operator$<$$<$} (Q\-\_\-\-I\-N\-T16 i)
+\item 
+\hyperlink{class_q_data_stream}{Q\-Data\-Stream} \& \hyperlink{class_q_data_stream_a9f155659247856fc65e54ba7e4a1293b}{operator$<$$<$} (Q\-\_\-\-U\-I\-N\-T16 i)
+\item 
+\hyperlink{class_q_data_stream}{Q\-Data\-Stream} \& \hyperlink{class_q_data_stream_a3c268f6da624a7e70b47e23c7c45599f}{operator$<$$<$} (Q\-\_\-\-I\-N\-T32 i)
+\item 
+\hyperlink{class_q_data_stream}{Q\-Data\-Stream} \& \hyperlink{class_q_data_stream_a7665db836b2ca2e78c8f2e5bfdbb5416}{operator$<$$<$} (Q\-\_\-\-U\-I\-N\-T32 i)
+\item 
+\hyperlink{class_q_data_stream}{Q\-Data\-Stream} \& \hyperlink{class_q_data_stream_afe970586040db7d5b8fada0aab01ad44}{operator$<$$<$} (Q\-\_\-\-I\-N\-T64 i)
+\item 
+\hyperlink{class_q_data_stream}{Q\-Data\-Stream} \& \hyperlink{class_q_data_stream_a6745eca11ccf5e8bf0ae45c46b8bd53f}{operator$<$$<$} (Q\-\_\-\-U\-I\-N\-T64 i)
+\item 
+\hyperlink{class_q_data_stream}{Q\-Data\-Stream} \& \hyperlink{class_q_data_stream_ace55e15063ffd570c3fefa496004a92b}{operator$<$$<$} (float f)
+\item 
+\hyperlink{class_q_data_stream}{Q\-Data\-Stream} \& \hyperlink{class_q_data_stream_a37f7b2c773dce5f323307810635e2509}{operator$<$$<$} (double f)
+\item 
+\hyperlink{class_q_data_stream}{Q\-Data\-Stream} \& \hyperlink{class_q_data_stream_a3d825aede8e30bcfad1a6b0e292d081b}{operator$<$$<$} (const char $\ast$str)
+\item 
+\hyperlink{class_q_data_stream}{Q\-Data\-Stream} \& \hyperlink{class_q_data_stream_a87443ae226d3d7acbf2a0bcf6cd2756f}{read\-Bytes} (char $\ast$\&, uint \&len)
+\item 
+\hyperlink{class_q_data_stream}{Q\-Data\-Stream} \& \hyperlink{class_q_data_stream_a85549d56b50b92d4d67b879f6b0a33d8}{read\-Raw\-Bytes} (char $\ast$, uint len)
+\item 
+\hyperlink{class_q_data_stream}{Q\-Data\-Stream} \& \hyperlink{class_q_data_stream_a0a858269202c641fccb177800cde17da}{write\-Bytes} (const char $\ast$, uint len)
+\item 
+\hyperlink{class_q_data_stream}{Q\-Data\-Stream} \& \hyperlink{class_q_data_stream_a0fc63368a2c7f81540020dfa5227497d}{write\-Raw\-Bytes} (const char $\ast$, uint len)
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+The \hyperlink{class_q_data_stream}{Q\-Data\-Stream} class provides serialization of binary data to a \hyperlink{class_q_i_o_device}{Q\-I\-O\-Device}. 
+
+\hyperlink{class_a}{A} data stream is a binary stream of encoded information which is 100\% independent of the host computer operation system, C\-P\-U or byte order. \hyperlink{class_a}{A} stream that is written by a P\-C under D\-O\-S/\-Windows can be read by a Sun S\-P\-A\-R\-C running Solaris.
+
+The \hyperlink{class_q_data_stream}{Q\-Data\-Stream} class implements serialization of primitive types, like {\ttfamily char}, {\ttfamily short}, {\ttfamily int}, {\ttfamily char$\ast$} etc. Serialization of more complex data is accomplished by breaking up the data into primitive units.
+
+The programmer can select which byte order to use when serializing data. The default setting is big endian (M\-S\-B first). Changing it to little endian breaks the portability (unless the reader also changes to little endian). We recommend keeping this setting unless you have special requirements.
+
+\hyperlink{class_a}{A} data stream cooperates closely with a \hyperlink{class_q_i_o_device}{Q\-I\-O\-Device}. \hyperlink{class_a}{A} \hyperlink{class_q_i_o_device}{Q\-I\-O\-Device} represents an input/output medium one can read data from and write data to. The \hyperlink{class_q_file}{Q\-File} class is an example of an I\-O device.
+
+\hyperlink{struct_example}{Example} (write data to a stream)\-: 
+\begin{DoxyCode}
+\hyperlink{class_q_file}{QFile} f( \textcolor{stringliteral}{"file.dta"} );
+f.open( IO\_WriteOnly );           \textcolor{comment}{// open file for writing}
+\hyperlink{class_q_data_stream}{QDataStream} s( &f );          \textcolor{comment}{// serialize using f}
+s << \textcolor{stringliteral}{"the answer is"};         \textcolor{comment}{// serialize string}
+s << (Q\_INT32)42;             \textcolor{comment}{// serialize integer}
+\end{DoxyCode}
+
+
+\hyperlink{struct_example}{Example} (read data from a stream)\-: 
+\begin{DoxyCode}
+\hyperlink{class_q_file}{QFile} f( \textcolor{stringliteral}{"file.dta"} );
+f.open( IO\_ReadOnly );            \textcolor{comment}{// open file for reading}
+\hyperlink{class_q_data_stream}{QDataStream} s( &f );          \textcolor{comment}{// serialize using f}
+\textcolor{keywordtype}{char}   *str;
+Q\_INT32 a;
+s >> str >> a;                \textcolor{comment}{// "the answer is" and 42}
+\textcolor{keyword}{delete} str;                   \textcolor{comment}{// delete string}
+\end{DoxyCode}
+
+
+In the last example, if you read into a \hyperlink{class_q_string}{Q\-String} instead of a {\ttfamily char$\ast$} you do not have to delete it.
+
+Normally, each item written to the stream is written in a fixed binary format. For example, a {\ttfamily char$\ast$} is written as a 32-\/bit integer equal to the length of the string including the N\-U\-L byte, followed by all the characters of the string including the N\-U\-L byte. Similarly when reading a string, 4 bytes are read to create the 32-\/bit length value, then that many characters for the string including the N\-U\-L. For a complete description of all Qt types supporting data streaming see \hyperlink{}{Format of the Q\-Data\-Stream operators } .
+
+If you want a \char`\"{}parsing\char`\"{} input stream, see \hyperlink{class_q_text_stream}{Q\-Text\-Stream}. If you just want the data to be human-\/readable to aid in debugging, you can set the data stream into printable data mode with \hyperlink{class_q_data_stream_a52c59e5985c0651783e12f7e3edcffe7}{set\-Printable\-Data()}. The data is then written slower, in a human readable bloated form that is sufficient for debugging.
+
+If you are producing a new binary data format, such as a file format for documents created by your application, you could use a \hyperlink{class_q_data_stream}{Q\-Data\-Stream} to write the data in a portable format. Typically, you would write a brief header containing a magic string and a version number to give yourself room for future expansion. For example\-:
+
+
+\begin{DoxyCode}
+\textcolor{comment}{// Open the file.}
+\hyperlink{class_q_file}{QFile} f( \textcolor{stringliteral}{"file.xxx"} );
+f.open( IO\_WriteOnly );
+\hyperlink{class_q_data_stream}{QDataStream} s( &f );
+
+\textcolor{comment}{// Write a header with a "magic number" and a version}
+s << 0xa0b0c0d0;
+s << 123;
+
+\textcolor{comment}{// Write the data}
+s << [lots of interesting data]
+\end{DoxyCode}
+
+
+Then read it in with\-:
+
+
+\begin{DoxyCode}
+\textcolor{comment}{// Open the file.}
+\hyperlink{class_q_file}{QFile} f( \textcolor{stringliteral}{"file.xxx"} );
+f.open( IO\_ReadOnly );
+\hyperlink{class_q_data_stream}{QDataStream} s( &f );
+
+\textcolor{comment}{// Read and check the header}
+Q\_UINT32 magic;
+s >> magic;
+\textcolor{keywordflow}{if} ( magic != 0xa0b0c0d0 )
+\textcolor{keywordflow}{return} XXX\_BAD\_FILE\_FORMAT;
+
+\textcolor{comment}{// Read the version}
+Q\_INT32 \hyperlink{class_q_data_stream_aa5f30d51d4a86222cd00a2e05826a7db}{version};
+s >> \hyperlink{class_q_data_stream_aa5f30d51d4a86222cd00a2e05826a7db}{version};
+\textcolor{keywordflow}{if} ( version < 100 )
+\textcolor{keywordflow}{return} XXX\_BAD\_FILE\_TOO\_OLD;
+\textcolor{keywordflow}{if} ( version > 123 )
+\textcolor{keywordflow}{return} XXX\_BAD\_FILE\_TOO\_NEW;
+\textcolor{keywordflow}{if} ( version <= 110 )
+s.setVersion(1);
+
+\textcolor{comment}{// Read the data}
+s >> [lots of interesting data];
+\textcolor{keywordflow}{if} ( version > 120 )
+s >> [data \textcolor{keyword}{new} in XXX version 1.2];
+s >> [other interesting data];
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_text_stream}{Q\-Text\-Stream} Q\-Variant 
+\end{DoxySeeAlso}
+
+
+\subsection{Documentação dos Construtores \& Destrutor}
+\hypertarget{class_q_data_stream_a1d21554b83a077e62f0cbfdae8cfb5fa}{\index{Q\-Data\-Stream@{Q\-Data\-Stream}!Q\-Data\-Stream@{Q\-Data\-Stream}}
+\index{Q\-Data\-Stream@{Q\-Data\-Stream}!QDataStream@{Q\-Data\-Stream}}
+\subsubsection[{Q\-Data\-Stream}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Data\-Stream} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_q_data_stream_a1d21554b83a077e62f0cbfdae8cfb5fa}
+Constructs a data stream that has no I\-O device.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_data_stream_a98230cf62c8603a7d0706e3044030f1b}{set\-Device()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_data_stream_aed832d35cad653e3665b62592fa8c635}{\index{Q\-Data\-Stream@{Q\-Data\-Stream}!Q\-Data\-Stream@{Q\-Data\-Stream}}
+\index{Q\-Data\-Stream@{Q\-Data\-Stream}!QDataStream@{Q\-Data\-Stream}}
+\subsubsection[{Q\-Data\-Stream}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Data\-Stream} (
+\begin{DoxyParamCaption}
+\item[{{\bf Q\-I\-O\-Device} $\ast$}]{d}
+\end{DoxyParamCaption}
+)}}\label{class_q_data_stream_aed832d35cad653e3665b62592fa8c635}
+Constructs a data stream that uses the I\-O device {\itshape d}.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_data_stream_a98230cf62c8603a7d0706e3044030f1b}{set\-Device()}, \hyperlink{class_q_data_stream_a18846d79bf14c21d749e27eef80bb6a0}{device()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_data_stream_a846be3264e4bc919979a64d2edd6ed9d}{\index{Q\-Data\-Stream@{Q\-Data\-Stream}!Q\-Data\-Stream@{Q\-Data\-Stream}}
+\index{Q\-Data\-Stream@{Q\-Data\-Stream}!QDataStream@{Q\-Data\-Stream}}
+\subsubsection[{Q\-Data\-Stream}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Data\-Stream} (
+\begin{DoxyParamCaption}
+\item[{{\bf Q\-Byte\-Array}}]{a, }
+\item[{int}]{mode}
+\end{DoxyParamCaption}
+)}}\label{class_q_data_stream_a846be3264e4bc919979a64d2edd6ed9d}
+Constructs a data stream that operates on a byte array through an internal \hyperlink{class_q_buffer}{Q\-Buffer} device.
+
+\hyperlink{struct_example}{Example}\-: 
+\begin{DoxyCode}
+\textcolor{keyword}{static} \textcolor{keywordtype}{char} bindata[] = \{ 231, 1, 44, ... \};
+\hyperlink{class_q_array}{QByteArray}    a;
+a.setRawData( bindata, \textcolor{keyword}{sizeof}(bindata) ); \textcolor{comment}{// a points to bindata}
+\hyperlink{class_q_data_stream}{QDataStream} s( a, IO\_ReadOnly );      \textcolor{comment}{// open on a's data}
+s >> [something];             \textcolor{comment}{// read raw bindata}
+a.resetRawData( bindata, \textcolor{keyword}{sizeof}(bindata) ); \textcolor{comment}{// finished}
+\end{DoxyCode}
+
+
+The Q\-Array\-::set\-Raw\-Data() function is not for the inexperienced. \hypertarget{class_q_data_stream_a25e9f82f003df6630979901515738a0b}{\index{Q\-Data\-Stream@{Q\-Data\-Stream}!$\sim$\-Q\-Data\-Stream@{$\sim$\-Q\-Data\-Stream}}
+\index{$\sim$\-Q\-Data\-Stream@{$\sim$\-Q\-Data\-Stream}!QDataStream@{Q\-Data\-Stream}}
+\subsubsection[{$\sim$\-Q\-Data\-Stream}]{\setlength{\rightskip}{0pt plus 5cm}$\sim${\bf Q\-Data\-Stream} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_data_stream_a25e9f82f003df6630979901515738a0b}
+Destructs the data stream.
+
+The destructor will not affect the current I\-O device, unless it is an internal I\-O device processing a Q\-Byte\-Array passed in the constructor. 
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_q_data_stream_a11cbf4ba82ee565cb9eef28b972bf145}{\index{Q\-Data\-Stream@{Q\-Data\-Stream}!at\-End@{at\-End}}
+\index{at\-End@{at\-End}!QDataStream@{Q\-Data\-Stream}}
+\subsubsection[{at\-End}]{\setlength{\rightskip}{0pt plus 5cm}bool at\-End (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_data_stream_a11cbf4ba82ee565cb9eef28b972bf145}
+Returns T\-R\-U\-E if the I\-O device has reached the end position (end of stream or file) or if there is no I\-O device set.
+
+Returns F\-A\-L\-S\-E if the current position of the read/write head of the I\-O device is somewhere before the end position.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_i_o_device_a11cbf4ba82ee565cb9eef28b972bf145}{Q\-I\-O\-Device\-::at\-End()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_data_stream_a8fe92c42a87f761c0682da5c613d75d6}{\index{Q\-Data\-Stream@{Q\-Data\-Stream}!byte\-Order@{byte\-Order}}
+\index{byte\-Order@{byte\-Order}!QDataStream@{Q\-Data\-Stream}}
+\subsubsection[{byte\-Order}]{\setlength{\rightskip}{0pt plus 5cm}int byte\-Order (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_data_stream_a8fe92c42a87f761c0682da5c613d75d6}
+Returns the current byte order setting -\/ either {\ttfamily Big\-Endian} or {\ttfamily Little\-Endian}.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_data_stream_a6f3acaf002c79fda1af888abbf4dcf8e}{set\-Byte\-Order()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_data_stream_a18846d79bf14c21d749e27eef80bb6a0}{\index{Q\-Data\-Stream@{Q\-Data\-Stream}!device@{device}}
+\index{device@{device}!QDataStream@{Q\-Data\-Stream}}
+\subsubsection[{device}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-I\-O\-Device} $\ast$ device (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_data_stream_a18846d79bf14c21d749e27eef80bb6a0}
+Returns the I\-O device currently set. \begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_data_stream_a98230cf62c8603a7d0706e3044030f1b}{set\-Device()}, \hyperlink{class_q_data_stream_aa6b00e03249023ce66f02861f5a6ffae}{unset\-Device()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_data_stream_ac4bcdb9a2c4adf5c3d247a711a7142cc}{\index{Q\-Data\-Stream@{Q\-Data\-Stream}!eof@{eof}}
+\index{eof@{eof}!QDataStream@{Q\-Data\-Stream}}
+\subsubsection[{eof}]{\setlength{\rightskip}{0pt plus 5cm}bool eof (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_data_stream_ac4bcdb9a2c4adf5c3d247a711a7142cc}
+Returns T\-R\-U\-E if the I\-O device has reached the end position (end of stream or file) or if there is no I\-O device set.
+
+Returns F\-A\-L\-S\-E if the current position of the read/write head of the I\-O device is somewhere before the end position.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_i_o_device_a11cbf4ba82ee565cb9eef28b972bf145}{Q\-I\-O\-Device\-::at\-End()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_data_stream_ad86c3cb0ae4080139e0ee9376d53215f}{\index{Q\-Data\-Stream@{Q\-Data\-Stream}!is\-Printable\-Data@{is\-Printable\-Data}}
+\index{is\-Printable\-Data@{is\-Printable\-Data}!QDataStream@{Q\-Data\-Stream}}
+\subsubsection[{is\-Printable\-Data}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-Printable\-Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_data_stream_ad86c3cb0ae4080139e0ee9376d53215f}
+Returns T\-R\-U\-E if the printable data flag has been set. \begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_data_stream_a52c59e5985c0651783e12f7e3edcffe7}{set\-Printable\-Data()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_data_stream_a38426efa1d04bf3cf11d63addec5c9bd}{\index{Q\-Data\-Stream@{Q\-Data\-Stream}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!QDataStream@{Q\-Data\-Stream}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Data\-Stream} \& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{Q\-\_\-\-I\-N\-T8}]{i}
+\end{DoxyParamCaption}
+)}}\label{class_q_data_stream_a38426efa1d04bf3cf11d63addec5c9bd}
+Writes a signed byte to the stream. \hypertarget{class_q_data_stream_a9a164a62a8bee152fd86a4d8269b6dda}{\index{Q\-Data\-Stream@{Q\-Data\-Stream}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!QDataStream@{Q\-Data\-Stream}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Data\-Stream} \& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{Q\-\_\-\-U\-I\-N\-T8}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_data_stream_a9a164a62a8bee152fd86a4d8269b6dda}
+Writes an unsigned byte to the stream and returns a reference to the stream. \hypertarget{class_q_data_stream_a6c67acaefeb1d08d1cc2aea62630b8af}{\index{Q\-Data\-Stream@{Q\-Data\-Stream}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!QDataStream@{Q\-Data\-Stream}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Data\-Stream} \& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{Q\-\_\-\-I\-N\-T16}]{i}
+\end{DoxyParamCaption}
+)}}\label{class_q_data_stream_a6c67acaefeb1d08d1cc2aea62630b8af}
+Writes a signed 16-\/bit integer to the stream and returns a reference to the stream. \hypertarget{class_q_data_stream_a9f155659247856fc65e54ba7e4a1293b}{\index{Q\-Data\-Stream@{Q\-Data\-Stream}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!QDataStream@{Q\-Data\-Stream}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Data\-Stream} \& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{Q\-\_\-\-U\-I\-N\-T16}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_data_stream_a9f155659247856fc65e54ba7e4a1293b}
+Writes an unsigned 16-\/bit integer to the stream and returns a reference to the stream. \hypertarget{class_q_data_stream_a3c268f6da624a7e70b47e23c7c45599f}{\index{Q\-Data\-Stream@{Q\-Data\-Stream}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!QDataStream@{Q\-Data\-Stream}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Data\-Stream} \& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{Q\-\_\-\-I\-N\-T32}]{i}
+\end{DoxyParamCaption}
+)}}\label{class_q_data_stream_a3c268f6da624a7e70b47e23c7c45599f}
+Writes a signed 32-\/bit integer to the stream and returns a reference to the stream.
+
+Writes a signed integer to the stream as a 32-\/bit signed integer (Q\-\_\-\-I\-N\-T32). Returns a reference to the stream. \hypertarget{class_q_data_stream_a7665db836b2ca2e78c8f2e5bfdbb5416}{\index{Q\-Data\-Stream@{Q\-Data\-Stream}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!QDataStream@{Q\-Data\-Stream}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Data\-Stream} \& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{Q\-\_\-\-U\-I\-N\-T32}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_data_stream_a7665db836b2ca2e78c8f2e5bfdbb5416}
+Writes an unsigned 32-\/bit integer to the stream and returns a reference to the stream. \hypertarget{class_q_data_stream_afe970586040db7d5b8fada0aab01ad44}{\index{Q\-Data\-Stream@{Q\-Data\-Stream}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!QDataStream@{Q\-Data\-Stream}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Data\-Stream} \& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{Q\-\_\-\-I\-N\-T64}]{i}
+\end{DoxyParamCaption}
+)}}\label{class_q_data_stream_afe970586040db7d5b8fada0aab01ad44}
+Writes a signed 64-\/bit integer to the stream and returns a reference to the stream, or calls the Q\-\_\-\-I\-N\-T32-\/operator if 64 bit is not available. \hypertarget{class_q_data_stream_a6745eca11ccf5e8bf0ae45c46b8bd53f}{\index{Q\-Data\-Stream@{Q\-Data\-Stream}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!QDataStream@{Q\-Data\-Stream}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Data\-Stream} \& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{Q\-\_\-\-U\-I\-N\-T64}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_data_stream_a6745eca11ccf5e8bf0ae45c46b8bd53f}
+Writes an unsigned 64-\/bit integer to the stream and returns a reference to the stream, or uses the Q\-\_\-\-U\-I\-N\-T32-\/operator if 64 bit is not available. \hypertarget{class_q_data_stream_ace55e15063ffd570c3fefa496004a92b}{\index{Q\-Data\-Stream@{Q\-Data\-Stream}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!QDataStream@{Q\-Data\-Stream}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Data\-Stream} \& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{float}]{f}
+\end{DoxyParamCaption}
+)}}\label{class_q_data_stream_ace55e15063ffd570c3fefa496004a92b}
+Writes a 32-\/bit floating point number to the stream using the standard I\-E\-E\-E754 format. Returns a reference to the stream. \hypertarget{class_q_data_stream_a37f7b2c773dce5f323307810635e2509}{\index{Q\-Data\-Stream@{Q\-Data\-Stream}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!QDataStream@{Q\-Data\-Stream}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Data\-Stream} \& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{double}]{f}
+\end{DoxyParamCaption}
+)}}\label{class_q_data_stream_a37f7b2c773dce5f323307810635e2509}
+Writes a 64-\/bit floating point number to the stream using the standard I\-E\-E\-E754 format. Returns a reference to the stream. \hypertarget{class_q_data_stream_a3d825aede8e30bcfad1a6b0e292d081b}{\index{Q\-Data\-Stream@{Q\-Data\-Stream}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!QDataStream@{Q\-Data\-Stream}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Data\-Stream} \& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{s}
+\end{DoxyParamCaption}
+)}}\label{class_q_data_stream_a3d825aede8e30bcfad1a6b0e292d081b}
+Writes the '\textbackslash{}0'-\/terminated string {\itshape s} to the stream and returns a reference to the stream.
+
+The string is serialized using \hyperlink{class_q_data_stream_a0a858269202c641fccb177800cde17da}{write\-Bytes()}. \hypertarget{class_q_data_stream_a918b02e460dd465f3ec86aea51ca59a1}{\index{Q\-Data\-Stream@{Q\-Data\-Stream}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!QDataStream@{Q\-Data\-Stream}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Data\-Stream} \& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{Q\-\_\-\-I\-N\-T8 \&}]{i}
+\end{DoxyParamCaption}
+)}}\label{class_q_data_stream_a918b02e460dd465f3ec86aea51ca59a1}
+Reads a signed byte from the stream. \hypertarget{class_q_data_stream_a66919f08c4a4ec99f8dd8ee49e4bd69c}{\index{Q\-Data\-Stream@{Q\-Data\-Stream}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!QDataStream@{Q\-Data\-Stream}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Data\-Stream} \& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{Q\-\_\-\-U\-I\-N\-T8 \&}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_data_stream_a66919f08c4a4ec99f8dd8ee49e4bd69c}
+Reads an unsigned byte from the stream and returns a reference to the stream. \hypertarget{class_q_data_stream_aa99d896eebd84b4f50c1a1c4e5147d43}{\index{Q\-Data\-Stream@{Q\-Data\-Stream}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!QDataStream@{Q\-Data\-Stream}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Data\-Stream} \& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{Q\-\_\-\-I\-N\-T16 \&}]{i}
+\end{DoxyParamCaption}
+)}}\label{class_q_data_stream_aa99d896eebd84b4f50c1a1c4e5147d43}
+Reads a signed 16-\/bit integer from the stream and returns a reference to the stream. \hypertarget{class_q_data_stream_acf2f3045e740e2e97b7e6be0e26d94da}{\index{Q\-Data\-Stream@{Q\-Data\-Stream}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!QDataStream@{Q\-Data\-Stream}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Data\-Stream} \& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{Q\-\_\-\-U\-I\-N\-T16 \&}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_data_stream_acf2f3045e740e2e97b7e6be0e26d94da}
+Reads an unsigned 16-\/bit integer from the stream and returns a reference to the stream. \hypertarget{class_q_data_stream_adc29145913bb3865cf02f74dd417504f}{\index{Q\-Data\-Stream@{Q\-Data\-Stream}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!QDataStream@{Q\-Data\-Stream}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Data\-Stream} \& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{Q\-\_\-\-I\-N\-T32 \&}]{i}
+\end{DoxyParamCaption}
+)}}\label{class_q_data_stream_adc29145913bb3865cf02f74dd417504f}
+Reads a signed 32-\/bit integer from the stream and returns a reference to the stream. \hypertarget{class_q_data_stream_a58808e7d7474ec9df2a81b96cb944fba}{\index{Q\-Data\-Stream@{Q\-Data\-Stream}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!QDataStream@{Q\-Data\-Stream}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Data\-Stream} \& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{Q\-\_\-\-U\-I\-N\-T32 \&}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_data_stream_a58808e7d7474ec9df2a81b96cb944fba}
+Reads an unsigned 32-\/bit integer from the stream and returns a reference to the stream. \hypertarget{class_q_data_stream_af9754871ea12971a697b650ea0fbdc7f}{\index{Q\-Data\-Stream@{Q\-Data\-Stream}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!QDataStream@{Q\-Data\-Stream}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Data\-Stream} \& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{Q\-\_\-\-I\-N\-T64 \&}]{i}
+\end{DoxyParamCaption}
+)}}\label{class_q_data_stream_af9754871ea12971a697b650ea0fbdc7f}
+Reads a signed 64-\/bit integer from the stream and returns a reference to the stream, or uses the Q\-\_\-\-U\-I\-N\-T32 operator if 64 bit is not available. \hypertarget{class_q_data_stream_af8959500642c3751593d6654e2f8506d}{\index{Q\-Data\-Stream@{Q\-Data\-Stream}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!QDataStream@{Q\-Data\-Stream}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Data\-Stream} \& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{Q\-\_\-\-U\-I\-N\-T64 \&}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_data_stream_af8959500642c3751593d6654e2f8506d}
+Reads an unsigned 64-\/bit integer from the stream and returns a reference to the stream, or uses the Q\-\_\-\-U\-I\-N\-T32 operator if 64 bit is not available. \hypertarget{class_q_data_stream_a400c7acc10a87b0283b5d0a4fb438f5e}{\index{Q\-Data\-Stream@{Q\-Data\-Stream}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!QDataStream@{Q\-Data\-Stream}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Data\-Stream} \& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{float \&}]{f}
+\end{DoxyParamCaption}
+)}}\label{class_q_data_stream_a400c7acc10a87b0283b5d0a4fb438f5e}
+Reads a 32-\/bit floating point number from the stream using the standard I\-E\-E\-E754 format. Returns a reference to the stream. \hypertarget{class_q_data_stream_a552731f71d8528a34d98ae48ad4915a1}{\index{Q\-Data\-Stream@{Q\-Data\-Stream}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!QDataStream@{Q\-Data\-Stream}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Data\-Stream} \& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{double \&}]{f}
+\end{DoxyParamCaption}
+)}}\label{class_q_data_stream_a552731f71d8528a34d98ae48ad4915a1}
+Reads a 64-\/bit floating point number from the stream using the standard I\-E\-E\-E754 format. Returns a reference to the stream. \hypertarget{class_q_data_stream_a7b27f047be47212548986b8b6cd28635}{\index{Q\-Data\-Stream@{Q\-Data\-Stream}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!QDataStream@{Q\-Data\-Stream}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Data\-Stream} \& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{char $\ast$\&}]{s}
+\end{DoxyParamCaption}
+)}}\label{class_q_data_stream_a7b27f047be47212548986b8b6cd28635}
+Reads the '\textbackslash{}0'-\/terminated string {\itshape s} from the stream and returns a reference to the stream.
+
+Space for the string is allocated using {\ttfamily new} -\/ the caller must eventually call delete\mbox{[}\mbox{]} on the value. \hypertarget{class_q_data_stream_a87443ae226d3d7acbf2a0bcf6cd2756f}{\index{Q\-Data\-Stream@{Q\-Data\-Stream}!read\-Bytes@{read\-Bytes}}
+\index{read\-Bytes@{read\-Bytes}!QDataStream@{Q\-Data\-Stream}}
+\subsubsection[{read\-Bytes}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Data\-Stream} \& read\-Bytes (
+\begin{DoxyParamCaption}
+\item[{char $\ast$\&}]{s, }
+\item[{uint \&}]{l}
+\end{DoxyParamCaption}
+)}}\label{class_q_data_stream_a87443ae226d3d7acbf2a0bcf6cd2756f}
+Reads the buffer {\itshape s} from the stream and returns a reference to the stream.
+
+The buffer {\itshape s} is allocated using {\ttfamily new}. Destroy it with the {\ttfamily delete}\mbox{[}\mbox{]} operator. If the length is zero or {\itshape s} cannot be allocated, {\itshape s} is set to 0.
+
+The {\itshape l} parameter will be set to the length of the buffer.
+
+The serialization format is an Q\-\_\-\-U\-I\-N\-T32 length specifier first, then the data ({\itshape l} bytes).
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_data_stream_a85549d56b50b92d4d67b879f6b0a33d8}{read\-Raw\-Bytes()}, \hyperlink{class_q_data_stream_a0a858269202c641fccb177800cde17da}{write\-Bytes()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_data_stream_a85549d56b50b92d4d67b879f6b0a33d8}{\index{Q\-Data\-Stream@{Q\-Data\-Stream}!read\-Raw\-Bytes@{read\-Raw\-Bytes}}
+\index{read\-Raw\-Bytes@{read\-Raw\-Bytes}!QDataStream@{Q\-Data\-Stream}}
+\subsubsection[{read\-Raw\-Bytes}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Data\-Stream} \& read\-Raw\-Bytes (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{s, }
+\item[{uint}]{len}
+\end{DoxyParamCaption}
+)}}\label{class_q_data_stream_a85549d56b50b92d4d67b879f6b0a33d8}
+Reads {\itshape len} bytes from the stream into {\itshape s} and returns a reference to the stream.
+
+The buffer {\itshape s} must be preallocated.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_data_stream_a87443ae226d3d7acbf2a0bcf6cd2756f}{read\-Bytes()}, \hyperlink{class_q_i_o_device_ac0c97a10369456c0942192a14f11c188}{Q\-I\-O\-Device\-::read\-Block()}, \hyperlink{class_q_data_stream_a0fc63368a2c7f81540020dfa5227497d}{write\-Raw\-Bytes()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_data_stream_a6f3acaf002c79fda1af888abbf4dcf8e}{\index{Q\-Data\-Stream@{Q\-Data\-Stream}!set\-Byte\-Order@{set\-Byte\-Order}}
+\index{set\-Byte\-Order@{set\-Byte\-Order}!QDataStream@{Q\-Data\-Stream}}
+\subsubsection[{set\-Byte\-Order}]{\setlength{\rightskip}{0pt plus 5cm}void set\-Byte\-Order (
+\begin{DoxyParamCaption}
+\item[{int}]{bo}
+\end{DoxyParamCaption}
+)}}\label{class_q_data_stream_a6f3acaf002c79fda1af888abbf4dcf8e}
+Sets the serialization byte order to {\itshape bo}.
+
+The {\itshape bo} parameter can be {\ttfamily Q\-Data\-Stream\-::\-Big\-Endian} or {\ttfamily Q\-Data\-Stream\-::\-Little\-Endian}.
+
+The default setting is big endian. We recommend leaving this setting unless you have special requirements.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_data_stream_a8fe92c42a87f761c0682da5c613d75d6}{byte\-Order()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_data_stream_a98230cf62c8603a7d0706e3044030f1b}{\index{Q\-Data\-Stream@{Q\-Data\-Stream}!set\-Device@{set\-Device}}
+\index{set\-Device@{set\-Device}!QDataStream@{Q\-Data\-Stream}}
+\subsubsection[{set\-Device}]{\setlength{\rightskip}{0pt plus 5cm}void set\-Device (
+\begin{DoxyParamCaption}
+\item[{{\bf Q\-I\-O\-Device} $\ast$}]{d}
+\end{DoxyParamCaption}
+)}}\label{class_q_data_stream_a98230cf62c8603a7d0706e3044030f1b}
+void \hyperlink{class_q_data_stream_a98230cf62c8603a7d0706e3044030f1b}{Q\-Data\-Stream\-::set\-Device(\-Q\-I\-O\-Device $\ast$d )} Sets the I\-O device to {\itshape d}. \begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_data_stream_a18846d79bf14c21d749e27eef80bb6a0}{device()}, \hyperlink{class_q_data_stream_aa6b00e03249023ce66f02861f5a6ffae}{unset\-Device()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_data_stream_a52c59e5985c0651783e12f7e3edcffe7}{\index{Q\-Data\-Stream@{Q\-Data\-Stream}!set\-Printable\-Data@{set\-Printable\-Data}}
+\index{set\-Printable\-Data@{set\-Printable\-Data}!QDataStream@{Q\-Data\-Stream}}
+\subsubsection[{set\-Printable\-Data}]{\setlength{\rightskip}{0pt plus 5cm}void set\-Printable\-Data (
+\begin{DoxyParamCaption}
+\item[{bool}]{enable}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_data_stream_a52c59e5985c0651783e12f7e3edcffe7}
+Sets or clears the printable data flag.
+
+If this flag is set, the write functions will generate output that consists of printable characters (7 bit A\-S\-C\-I\-I).
+
+We recommend enabling printable data only for debugging purposes (it is slower and creates larger output). \hypertarget{class_q_data_stream_a652e7f35c2c3a49cf179fadd55ed16c4}{\index{Q\-Data\-Stream@{Q\-Data\-Stream}!set\-Version@{set\-Version}}
+\index{set\-Version@{set\-Version}!QDataStream@{Q\-Data\-Stream}}
+\subsubsection[{set\-Version}]{\setlength{\rightskip}{0pt plus 5cm}void set\-Version (
+\begin{DoxyParamCaption}
+\item[{int}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_data_stream_a652e7f35c2c3a49cf179fadd55ed16c4}
+Sets the version number of the data serialization format.
+
+In order to accomodate for new functionality, the datastream serialization format of some Qt classes has changed in some versions of Qt. If you want to read data that was created by an earlier version of Qt, or write data that can be read by a program that was compiled with an earlier version of Qt, use this function to modify the serialization format of \hyperlink{class_q_data_stream}{Q\-Data\-Stream}.
+
+For Qt 1.\-x compatibility, use {\itshape v} == 1.
+
+For Qt 2.\-0.\-x compatibility, use {\itshape v} == 2 (Not required for reading in Qt 2.\-1).
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_data_stream_aa5f30d51d4a86222cd00a2e05826a7db}{version()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_data_stream_aa6b00e03249023ce66f02861f5a6ffae}{\index{Q\-Data\-Stream@{Q\-Data\-Stream}!unset\-Device@{unset\-Device}}
+\index{unset\-Device@{unset\-Device}!QDataStream@{Q\-Data\-Stream}}
+\subsubsection[{unset\-Device}]{\setlength{\rightskip}{0pt plus 5cm}void unset\-Device (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_q_data_stream_aa6b00e03249023ce66f02861f5a6ffae}
+Unsets the I\-O device. This is the same as calling set\-Device( 0 ). \begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_data_stream_a18846d79bf14c21d749e27eef80bb6a0}{device()}, \hyperlink{class_q_data_stream_a98230cf62c8603a7d0706e3044030f1b}{set\-Device()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_data_stream_aa5f30d51d4a86222cd00a2e05826a7db}{\index{Q\-Data\-Stream@{Q\-Data\-Stream}!version@{version}}
+\index{version@{version}!QDataStream@{Q\-Data\-Stream}}
+\subsubsection[{version}]{\setlength{\rightskip}{0pt plus 5cm}int version (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_data_stream_aa5f30d51d4a86222cd00a2e05826a7db}
+Returns the version number of the data serialization format. In Qt 2.\-1, this number is by default 3. \begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_data_stream_a652e7f35c2c3a49cf179fadd55ed16c4}{set\-Version()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_data_stream_a0a858269202c641fccb177800cde17da}{\index{Q\-Data\-Stream@{Q\-Data\-Stream}!write\-Bytes@{write\-Bytes}}
+\index{write\-Bytes@{write\-Bytes}!QDataStream@{Q\-Data\-Stream}}
+\subsubsection[{write\-Bytes}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Data\-Stream} \& write\-Bytes (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{s, }
+\item[{uint}]{len}
+\end{DoxyParamCaption}
+)}}\label{class_q_data_stream_a0a858269202c641fccb177800cde17da}
+Writes the length specifier {\itshape len} and the buffer {\itshape s} to the stream and returns a reference to the stream.
+
+The {\itshape len} is serialized as an Q\-\_\-\-U\-I\-N\-T32, followed by {\itshape len} bytes from {\itshape s}.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_data_stream_a0fc63368a2c7f81540020dfa5227497d}{write\-Raw\-Bytes()}, \hyperlink{class_q_data_stream_a87443ae226d3d7acbf2a0bcf6cd2756f}{read\-Bytes()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_data_stream_a0fc63368a2c7f81540020dfa5227497d}{\index{Q\-Data\-Stream@{Q\-Data\-Stream}!write\-Raw\-Bytes@{write\-Raw\-Bytes}}
+\index{write\-Raw\-Bytes@{write\-Raw\-Bytes}!QDataStream@{Q\-Data\-Stream}}
+\subsubsection[{write\-Raw\-Bytes}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Data\-Stream} \& write\-Raw\-Bytes (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{s, }
+\item[{uint}]{len}
+\end{DoxyParamCaption}
+)}}\label{class_q_data_stream_a0fc63368a2c7f81540020dfa5227497d}
+Writes {\itshape len} bytes from {\itshape s} to the stream and returns a reference to the stream.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_data_stream_a0a858269202c641fccb177800cde17da}{write\-Bytes()}, \hyperlink{class_q_i_o_device_a90a5a6111eca9a444970cf49aea9f9a8}{Q\-I\-O\-Device\-::write\-Block()}, \hyperlink{class_q_data_stream_a85549d56b50b92d4d67b879f6b0a33d8}{read\-Raw\-Bytes()} 
+\end{DoxySeeAlso}
+
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/qtools/qdatastream.\-h\item 
+C\-:/\-Users/teste/git/doxygen/qtools/qdatastream.\-cpp\end{DoxyCompactItemize}

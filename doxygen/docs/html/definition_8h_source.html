@@ -1,0 +1,474 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>CEM RODAS: Código-Fonte de C:/Users/teste/git/doxygen/src/definition.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">CEM RODAS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Localizar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="modules.html"><span>Módulos</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li><a href="annotated.html"><span>Estruturas&#160;de&#160;dados</span></a></li>
+      <li class="current"><a href="files.html"><span>Ficheiros</span></a></li>
+      <li><a href="examples.html"><span>Exemplos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Localizar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;ficheiros</span></a></li>
+      <li><a href="globals.html"><span>Globais</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tudo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Estruturas de dados</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Ficheiros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variáveis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Definições de tipos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerações</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Valores da enumeração</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Amigos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Grupos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d522931ffa1371640980b621734a4381.html">Users</a></li><li class="navelem"><a class="el" href="dir_2e4d37bf6c59b7d6a66d896b4b0a78a6.html">teste</a></li><li class="navelem"><a class="el" href="dir_247f86f4b306b1aec49183475e6f51e7.html">git</a></li><li class="navelem"><a class="el" href="dir_36df5c96a2e6385715fd63984863e968.html">doxygen</a></li><li class="navelem"><a class="el" href="dir_69936e1a1079a68ea60497cb7d5edad3.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">definition.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/******************************************************************************</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * Copyright (C) 1997-2013 by Dimitri van Heesch.</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * Permission to use, copy, modify, and distribute this software and its</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * documentation under the terms of the GNU General Public License is hereby </span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * granted. No representations are made about the suitability of this software </span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> * for any purpose. It is provided &quot;as is&quot; without express or implied warranty.</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * See the GNU General Public License for more details.</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * Documents produced by Doxygen are derivative works derived from the</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * input used in their production; they are not affected by this license.</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#ifndef DEFINITION_H</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DEFINITION_H</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;qlist.h&gt;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;qdict.h&gt;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="types_8h.html">types.h</a>&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">class </span><a class="code" href="class_file_def.html">FileDef</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">class </span><a class="code" href="class_output_list.html">OutputList</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">class </span><a class="code" href="class_section_dict.html">SectionDict</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">class </span><a class="code" href="class_member_s_dict.html">MemberSDict</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">class </span><a class="code" href="class_member_def.html">MemberDef</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">class </span><a class="code" href="class_group_def.html">GroupDef</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">class </span><a class="code" href="class_group_list.html">GroupList</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">struct </span><a class="code" href="struct_list_item_info.html">ListItemInfo</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">struct </span><a class="code" href="struct_section_info.html">SectionInfo</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">class </span><a class="code" href="class_definition.html">Definition</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">class </span><a class="code" href="class_definition_impl.html">DefinitionImpl</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="struct_doc_info.html">   39</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_doc_info.html">DocInfo</a></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="class_q_c_string.html">QCString</a> doc;  </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">int</span>      line;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="class_q_c_string.html">QCString</a> file;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;};</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="struct_brief_info.html">   47</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_brief_info.html">BriefInfo</a></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="class_q_c_string.html">QCString</a> doc;  </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="class_q_c_string.html">QCString</a> tooltip;  </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">int</span>      line;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="class_q_c_string.html">QCString</a> file;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;};</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="struct_body_info.html">   56</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_body_info.html">BodyInfo</a></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="struct_body_info.html#aae69f615454d4cce6fddf760c20e9eb2">   58</a></span>&#160;    <span class="keywordtype">int</span>      <a class="code" href="struct_body_info.html#aae69f615454d4cce6fddf760c20e9eb2">startLine</a>;   </div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="struct_body_info.html#ae558febfd4bb35f2cb24e572579516ba">   59</a></span>&#160;    <span class="keywordtype">int</span>      <a class="code" href="struct_body_info.html#ae558febfd4bb35f2cb24e572579516ba">endLine</a>;     </div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="struct_body_info.html#a2e1ae363ea84baa4340319bb5a163f25">   60</a></span>&#160;    <a class="code" href="class_file_def.html">FileDef</a> *<a class="code" href="struct_body_info.html#a2e1ae363ea84baa4340319bb5a163f25">fileDef</a>;     </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;};</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    </div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="class_definition_intf.html">   64</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_definition_intf.html">DefinitionIntf</a></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;{</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="class_definition_intf.html">DefinitionIntf</a>() {}</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="class_definition_intf.html">DefinitionIntf</a>() {}</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="class_definition_intf.html#a2dc566dfec40397b2990e6520536ecb5">   70</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="class_definition_intf.html#a2dc566dfec40397b2990e6520536ecb5">DefType</a> </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    { </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      TypeClass      = 0, </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      TypeFile       = 1, </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      TypeNamespace  = 2, </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      TypeMember     = 3, </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      TypeGroup      = 4, </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      TypePackage    = 5, </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      TypePage       = 6, </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      TypeDir        = 7, </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      TypeSymbolList = 8</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    };</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_definition_intf.html#a2dc566dfec40397b2990e6520536ecb5">DefType</a> <a class="code" href="class_definition_intf.html#afba7add835518dbf4202846446d667b0">definitionType</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;};</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="class_definition.html">   91</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_definition.html">Definition</a> : <span class="keyword">public</span> <a class="code" href="class_definition_intf.html">DefinitionIntf</a></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;{</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <a class="code" href="class_definition.html#a3c3736c3c9b1ba3dae3799258cddd27c">Definition</a>(</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span> *defFileName,<span class="keywordtype">int</span> defLine,<span class="keywordtype">int</span> defColumn,</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="class_definition.html#a2c310e06c9aadc6fb218f80fcbb5c695">name</a>,<span class="keyword">const</span> <span class="keywordtype">char</span> *b=0,<span class="keyword">const</span> <span class="keywordtype">char</span> *d=0,</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordtype">bool</span> isSymbol=TRUE);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_definition.html#af8b3205a2cff0e941e6b026e81440ec6">~Definition</a>();</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="comment">//-----------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="comment">// ----  getters -----</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="comment">//-----------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="class_definition.html#a2c310e06c9aadc6fb218f80fcbb5c695">  109</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="class_q_c_string.html">QCString</a>&amp; <a class="code" href="class_definition.html#a2c310e06c9aadc6fb218f80fcbb5c695">name</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_name; }</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> <a class="code" href="class_definition.html#a98f292cf0fb9a6a1314c7a159b7166ec">displayName</a>(<span class="keywordtype">bool</span> includeScope=TRUE) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <a class="code" href="class_q_c_string.html">QCString</a> <a class="code" href="class_definition.html#a85adac6c21b9f8e8f374c9b915f875ee">localName</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> <a class="code" href="class_definition.html#ab8b1c377b3cff112fdca997c37007944">qualifiedName</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <a class="code" href="class_q_c_string.html">QCString</a> <a class="code" href="class_definition.html#a2abf0816f6db6ed419d97a01d1242f1a">symbolName</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> <a class="code" href="class_definition.html#a9d86cf13f2c63846c41ef739e4cdadf6">getOutputFileBase</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> <a class="code" href="class_definition.html#aeefc9f68d99e616f91c43a3cebf96357">anchor</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> <a class="code" href="class_definition.html#a0b24a407e5cd41328e5c64aac0884b6f">getSourceFileBase</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> <a class="code" href="class_definition.html#a32dc5ecc852dac51949439819e97cc24">getSourceAnchor</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <a class="code" href="class_q_c_string.html">QCString</a> <a class="code" href="class_definition.html#a093581bd7e1c230cb0c851b46798592d">documentation</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    </div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_definition.html#a3c2a6c87ac432d8a6db51bc52b2379da">docLine</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <a class="code" href="class_q_c_string.html">QCString</a> <a class="code" href="class_definition.html#afadeeb679bb7bda0ad5b4f358f0d33e2">docFile</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <a class="code" href="class_q_c_string.html">QCString</a> <a class="code" href="class_definition.html#a84c7fb6a4f2b359bdcaa779ff5635579">briefDescription</a>(<span class="keywordtype">bool</span> abbreviate=FALSE) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <a class="code" href="class_q_c_string.html">QCString</a> <a class="code" href="class_definition.html#abdc2cc8aea016db82f5432401ac10439">briefDescriptionAsTooltip</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_definition.html#aca87df70fcd505c2458a6ad75a1ede61">briefLine</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <a class="code" href="class_q_c_string.html">QCString</a> <a class="code" href="class_definition.html#aebb6648f7eccccf1306a4e8189a5944e">inbodyDocumentation</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <a class="code" href="class_q_c_string.html">QCString</a> <a class="code" href="class_definition.html#a69f697410a918873614549085444faa4">inbodyFile</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_definition.html#ae4b412e67989226ad3ce76f08f3ffaad">inbodyLine</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <a class="code" href="class_q_c_string.html">QCString</a> <a class="code" href="class_definition.html#a14b9cbdcc30535bcfd2e435667dea5fe">briefFile</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <a class="code" href="class_q_c_string.html">QCString</a> <a class="code" href="class_definition.html#a15571178c7169aca27071a81b64d5a90">getDefFileName</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <a class="code" href="class_q_c_string.html">QCString</a> <a class="code" href="class_definition.html#aaa008a94c11636ae0724d216a9a93eb6">getDefFileExtension</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
+<div class="line"><a name="l00183"></a><span class="lineno"><a class="line" href="class_definition.html#ad0cd42d7ec8233af1c414312feaf9dc2">  183</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_definition.html#ad0cd42d7ec8233af1c414312feaf9dc2">getDefLine</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_defLine; }</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
+<div class="line"><a name="l00186"></a><span class="lineno"><a class="line" href="class_definition.html#a7b5b9b0cf12b422bc40a5e5a3aa47489">  186</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_definition.html#a7b5b9b0cf12b422bc40a5e5a3aa47489">getDefColumn</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_defColumn; }</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_definition.html#a585dcd381ab70014568db8ad457fc8b1">hasDocumentation</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_definition.html#af1f0e7584db0d4b918f9c55c9c8ab80a">hasUserDocumentation</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_definition.html#a2a4aa56e5209c7fbed15d5c3a3791643">isLinkableInProject</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_definition.html#a53420387530937059d408a7e4316c375">isLinkable</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_definition.html#afadf7236b478e199e25cd5cc6f4b5ce4">isVisibleInProject</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_definition.html#a08422ee75ab02691943c1ca87e2bc563">isVisible</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_definition.html#a4968ab065e464b725f9e01fdc4f1c607">isHidden</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_definition.html#a06a975cbab8499f41525eb70f95815b8">isArtificial</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> <a class="code" href="class_definition.html#a87b81ea7f17740033bf8fb12f796c494">getReference</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_definition.html#ab7dc8cc872f3cec2e07dace4293989aa">isReference</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_definition.html#a2710939b1b9101f428f203f6de224dbc">getStartBodyLine</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_definition.html#a8f5b9cecf6b3c7fc528fe1b5fcda0843">getEndBodyLine</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <a class="code" href="class_file_def.html">FileDef</a> *<a class="code" href="class_definition.html#a1f41ecc8895188e421173ae7c095c43d">getBodyDef</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <a class="code" href="types_8h.html#a9974623ce72fc23df5d64426b9178bf2">SrcLangExt</a> <a class="code" href="class_definition.html#a31277e4ef87d16d309b3fc5cece4ae65">getLanguage</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <a class="code" href="class_group_list.html">GroupList</a> *partOfGroups() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <a class="code" href="class_q_list.html">QList&lt;ListItemInfo&gt;</a> *xrefListItems() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_definition.html">Definition</a> *findInnerCompound(<span class="keyword">const</span> <span class="keywordtype">char</span> *name);</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_definition.html">Definition</a> *getOuterScope() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <a class="code" href="class_member_s_dict.html">MemberSDict</a> *getReferencesMembers() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <a class="code" href="class_member_s_dict.html">MemberSDict</a> *getReferencedByMembers() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    <span class="keywordtype">bool</span> hasSections() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_definition.html#ae27579a021a1cc9eb9773665996b2641">hasBriefDescription</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    <a class="code" href="class_q_c_string.html">QCString</a> id() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <span class="comment">//-----------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <span class="comment">// ----  setters -----</span></div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <span class="comment">//-----------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_definition.html#ab3a256e7d9fad73fa57de7c1fedf51c5">setName</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *name);</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_definition.html#aa8915a727f5acd71a7e264d86e888835">setId</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *name);</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_definition.html#a49660f42e3320c1022ef04edfbc7c850">setDocumentation</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *d,<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="class_definition.html#afadeeb679bb7bda0ad5b4f358f0d33e2">docFile</a>,<span class="keywordtype">int</span> <a class="code" href="class_definition.html#a3c2a6c87ac432d8a6db51bc52b2379da">docLine</a>,<span class="keywordtype">bool</span> stripWhiteSpace=TRUE);</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_definition.html#a98a2e802a5477e4ece9cd859cb07ec31">setBriefDescription</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *b,<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="class_definition.html#a14b9cbdcc30535bcfd2e435667dea5fe">briefFile</a>,<span class="keywordtype">int</span> <a class="code" href="class_definition.html#aca87df70fcd505c2458a6ad75a1ede61">briefLine</a>);</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_definition.html#ae1d28023753b529dd5a2c5d77e076843">setInbodyDocumentation</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *d,<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="class_definition.html#afadeeb679bb7bda0ad5b4f358f0d33e2">docFile</a>,<span class="keywordtype">int</span> <a class="code" href="class_definition.html#a3c2a6c87ac432d8a6db51bc52b2379da">docLine</a>);</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_definition.html#a194917eb0e2f76ca5575658b55982c19">setReference</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *r);</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_definition.html#a5dff1a1ee0bf59807d724b07a99aad6d">addSectionsToDefinition</a>(<a class="code" href="class_q_list.html">QList&lt;SectionInfo&gt;</a> *anchorList);</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <span class="comment">// source references</span></div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    <span class="keywordtype">void</span> setBodySegment(<span class="keywordtype">int</span> bls,<span class="keywordtype">int</span> ble);</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <span class="keywordtype">void</span> setBodyDef(<a class="code" href="class_file_def.html">FileDef</a> *fd);</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <span class="keywordtype">void</span> addSourceReferencedBy(<a class="code" href="class_member_def.html">MemberDef</a> *d);</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    <span class="keywordtype">void</span> addSourceReferences(<a class="code" href="class_member_def.html">MemberDef</a> *d);</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <span class="keywordtype">void</span> setRefItems(<span class="keyword">const</span> <a class="code" href="class_q_list.html">QList&lt;ListItemInfo&gt;</a> *sli);</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    <span class="keywordtype">void</span> mergeRefItems(<a class="code" href="class_definition.html">Definition</a> *d);</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> addInnerCompound(<a class="code" href="class_definition.html">Definition</a> *d);</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> setOuterScope(<a class="code" href="class_definition.html">Definition</a> *d);</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> setHidden(<span class="keywordtype">bool</span> b);</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    <span class="keywordtype">void</span> setArtificial(<span class="keywordtype">bool</span> b);</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    <span class="keywordtype">void</span> setLanguage(<a class="code" href="types_8h.html#a9974623ce72fc23df5d64426b9178bf2">SrcLangExt</a> lang);</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    <span class="comment">//-----------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    <span class="comment">// --- actions ----</span></div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    <span class="comment">//-----------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    <a class="code" href="class_q_c_string.html">QCString</a> convertNameToFile(<span class="keyword">const</span> <span class="keywordtype">char</span> *name,<span class="keywordtype">bool</span> allowDots=FALSE) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_definition.html#a3743f2020b717483a31b241d35c373be">writeSourceDef</a>(<a class="code" href="class_output_list.html">OutputList</a> &amp;ol,<span class="keyword">const</span> <span class="keywordtype">char</span> *scopeName);</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_definition.html#ad05e364c8393849dc22ac69568d96fc5">writeInlineCode</a>(<a class="code" href="class_output_list.html">OutputList</a> &amp;ol,<span class="keyword">const</span> <span class="keywordtype">char</span> *scopeName);</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    <span class="keywordtype">void</span> writeSourceRefs(<a class="code" href="class_output_list.html">OutputList</a> &amp;ol,<span class="keyword">const</span> <span class="keywordtype">char</span> *scopeName);</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    <span class="keywordtype">void</span> writeSourceReffedBy(<a class="code" href="class_output_list.html">OutputList</a> &amp;ol,<span class="keyword">const</span> <span class="keywordtype">char</span> *scopeName);</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    <span class="keywordtype">void</span> makePartOfGroup(<a class="code" href="class_group_def.html">GroupDef</a> *gd);</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    <span class="comment">//void writePathFragment(OutputList &amp;ol) const;</span></div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    <span class="keywordtype">void</span> writeNavigationPath(<a class="code" href="class_output_list.html">OutputList</a> &amp;ol) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    <a class="code" href="class_q_c_string.html">QCString</a> <a class="code" href="class_definition.html#a145ca0e33e5be8b0d08c98e220df90b6">navigationPathAsString</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> writeQuickMemberLinks(<a class="code" href="class_output_list.html">OutputList</a> &amp;,<a class="code" href="class_member_def.html">MemberDef</a> *)<span class="keyword"> const </span>{}</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> writeSummaryLinks(<a class="code" href="class_output_list.html">OutputList</a> &amp;) {}</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    <a class="code" href="class_q_c_string.html">QCString</a> pathFragment() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_definition.html#a0ff8658509384f90b086887377cb2276">writeDocAnchorsToTagFile</a>();</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    <span class="keywordtype">void</span> setLocalName(<span class="keyword">const</span> <a class="code" href="class_q_c_string.html">QCString</a> name);</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    <span class="keywordtype">void</span> addSectionsToIndex();</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    <span class="keywordtype">void</span> writeToc(<a class="code" href="class_output_list.html">OutputList</a> &amp;ol);</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;  <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    <a class="code" href="class_definition.html#a3c3736c3c9b1ba3dae3799258cddd27c">Definition</a>(<span class="keyword">const</span> <a class="code" href="class_definition.html">Definition</a> &amp;d);</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;  <span class="keyword">private</span>: </div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> addToMap(<span class="keyword">const</span> <span class="keywordtype">char</span> *name,<a class="code" href="class_definition.html">Definition</a> *d);</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> removeFromMap(<a class="code" href="class_definition.html">Definition</a> *d);</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    <span class="keywordtype">void</span> _setSymbolName(<span class="keyword">const</span> <a class="code" href="class_q_c_string.html">QCString</a> &amp;name);</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    <span class="keywordtype">int</span>  _getXRefListId(<span class="keyword">const</span> <span class="keywordtype">char</span> *listName) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    <span class="keywordtype">void</span> _writeSourceRefList(<a class="code" href="class_output_list.html">OutputList</a> &amp;ol,<span class="keyword">const</span> <span class="keywordtype">char</span> *scopeName,</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;                       <span class="keyword">const</span> <a class="code" href="class_q_c_string.html">QCString</a> &amp;text,<a class="code" href="class_member_s_dict.html">MemberSDict</a> *members,<span class="keywordtype">bool</span>);</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    <span class="keywordtype">void</span> _setBriefDescription(<span class="keyword">const</span> <span class="keywordtype">char</span> *b,<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="class_definition.html#a14b9cbdcc30535bcfd2e435667dea5fe">briefFile</a>,<span class="keywordtype">int</span> <a class="code" href="class_definition.html#aca87df70fcd505c2458a6ad75a1ede61">briefLine</a>);</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    <span class="keywordtype">void</span> _setDocumentation(<span class="keyword">const</span> <span class="keywordtype">char</span> *d,<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="class_definition.html#afadeeb679bb7bda0ad5b4f358f0d33e2">docFile</a>,<span class="keywordtype">int</span> <a class="code" href="class_definition.html#a3c2a6c87ac432d8a6db51bc52b2379da">docLine</a>,<span class="keywordtype">bool</span> stripWhiteSpace,<span class="keywordtype">bool</span> atTop);</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    <span class="keywordtype">void</span> _setInbodyDocumentation(<span class="keyword">const</span> <span class="keywordtype">char</span> *d,<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="class_definition.html#afadeeb679bb7bda0ad5b4f358f0d33e2">docFile</a>,<span class="keywordtype">int</span> <a class="code" href="class_definition.html#a3c2a6c87ac432d8a6db51bc52b2379da">docLine</a>);</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    <span class="keywordtype">bool</span> _docsAlreadyAdded(<span class="keyword">const</span> <a class="code" href="class_q_c_string.html">QCString</a> &amp;doc,<a class="code" href="class_q_c_string.html">QCString</a> &amp;sigList);</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    <a class="code" href="class_definition_impl.html">DefinitionImpl</a> *m_impl; <span class="comment">// internal structure holding all private data</span></div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    <a class="code" href="class_q_c_string.html">QCString</a> m_name;</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    <span class="keywordtype">bool</span> m_isSymbol;</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    <a class="code" href="class_q_c_string.html">QCString</a> m_symbolName;</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    <span class="keywordtype">int</span> m_defLine;</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    <span class="keywordtype">int</span> m_defColumn;</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;};</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;</div>
+<div class="line"><a name="l00368"></a><span class="lineno"><a class="line" href="class_definition_list.html">  368</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_definition_list.html">DefinitionList</a> : <span class="keyword">public</span> <a class="code" href="class_q_list.html">QList</a>&lt;Definition&gt;, <span class="keyword">public</span> <a class="code" href="class_definition_intf.html">DefinitionIntf</a></div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;{</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    ~<a class="code" href="class_definition_list.html">DefinitionList</a>() {}</div>
+<div class="line"><a name="l00372"></a><span class="lineno"><a class="line" href="class_definition_list.html#aac410235a8bf90e471e649bd9dbf9c5e">  372</a></span>&#160;    <a class="code" href="class_definition_intf.html#a2dc566dfec40397b2990e6520536ecb5">DefType</a> <a class="code" href="class_definition_list.html#aac410235a8bf90e471e649bd9dbf9c5e">definitionType</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> TypeSymbolList; }</div>
+<div class="line"><a name="l00373"></a><span class="lineno"><a class="line" href="class_definition_list.html#a219450accf048597ffc7113ecde4c402">  373</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_definition_list.html#a219450accf048597ffc7113ecde4c402">compareItems</a>(QCollection::Item item1,QCollection::Item item2)</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    {</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;      <span class="keywordflow">return</span> qstricmp(((<a class="code" href="class_definition.html">Definition</a> *)item1)-&gt;name(),</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;                     ((<a class="code" href="class_definition.html">Definition</a> *)item2)-&gt;name()</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;                    );</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    }</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;};</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;</div>
+<div class="line"><a name="l00383"></a><span class="lineno"><a class="line" href="class_definition_list_iterator.html">  383</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_definition_list_iterator.html">DefinitionListIterator</a> : <span class="keyword">public</span> <a class="code" href="class_q_list_iterator.html">QListIterator</a>&lt;Definition&gt;</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;{</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    <a class="code" href="class_definition_list_iterator.html">DefinitionListIterator</a>(<span class="keyword">const</span> <a class="code" href="class_definition_list.html">DefinitionList</a> &amp;l) :</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;      <a class="code" href="class_q_list_iterator.html">QListIterator&lt;Definition&gt;</a>(l) {}</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    ~<a class="code" href="class_definition_list_iterator.html">DefinitionListIterator</a>() {}</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;};</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;<span class="keywordtype">bool</span> readCodeFragment(<span class="keyword">const</span> <span class="keywordtype">char</span> *fileName, </div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;                      <span class="keywordtype">int</span> &amp;startLine,<span class="keywordtype">int</span> &amp;endLine,</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;                      <a class="code" href="class_q_c_string.html">QCString</a> &amp;result);</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="class_definition_html_a3c3736c3c9b1ba3dae3799258cddd27c"><div class="ttname"><a href="class_definition.html#a3c3736c3c9b1ba3dae3799258cddd27c">Definition::Definition</a></div><div class="ttdeci">Definition(const char *defFileName, int defLine, int defColumn, const char *name, const char *b=0, const char *d=0, bool isSymbol=TRUE)</div><div class="ttdef"><b>Definition:</b> definition.cpp:283</div></div>
+<div class="ttc" id="class_definition_html_a49660f42e3320c1022ef04edfbc7c850"><div class="ttname"><a href="class_definition.html#a49660f42e3320c1022ef04edfbc7c850">Definition::setDocumentation</a></div><div class="ttdeci">virtual void setDocumentation(const char *d, const char *docFile, int docLine, bool stripWhiteSpace=TRUE)</div><div class="ttdef"><b>Definition:</b> definition.cpp:608</div></div>
+<div class="ttc" id="class_definition_html_a093581bd7e1c230cb0c851b46798592d"><div class="ttname"><a href="class_definition.html#a093581bd7e1c230cb0c851b46798592d">Definition::documentation</a></div><div class="ttdeci">QCString documentation() const </div><div class="ttdef"><b>Definition:</b> definition.cpp:1639</div></div>
+<div class="ttc" id="class_definition_html_a585dcd381ab70014568db8ad457fc8b1"><div class="ttname"><a href="class_definition.html#a585dcd381ab70014568db8ad457fc8b1">Definition::hasDocumentation</a></div><div class="ttdeci">virtual bool hasDocumentation() const </div><div class="ttdef"><b>Definition:</b> definition.cpp:1236</div></div>
+<div class="ttc" id="class_definition_html_a4968ab065e464b725f9e01fdc4f1c607"><div class="ttname"><a href="class_definition.html#a4968ab065e464b725f9e01fdc4f1c607">Definition::isHidden</a></div><div class="ttdeci">bool isHidden() const </div><div class="ttdef"><b>Definition:</b> definition.cpp:1778</div></div>
+<div class="ttc" id="types_8h_html"><div class="ttname"><a href="types_8h.html">types.h</a></div><div class="ttdoc">This file contains a number of basic enums and types. </div></div>
+<div class="ttc" id="class_definition_html_ad05e364c8393849dc22ac69568d96fc5"><div class="ttname"><a href="class_definition.html#ad05e364c8393849dc22ac69568d96fc5">Definition::writeInlineCode</a></div><div class="ttdeci">void writeInlineCode(OutputList &amp;ol, const char *scopeName)</div><div class="ttdef"><b>Definition:</b> definition.cpp:1054</div></div>
+<div class="ttc" id="class_definition_html_af1f0e7584db0d4b918f9c55c9c8ab80a"><div class="ttname"><a href="class_definition.html#af1f0e7584db0d4b918f9c55c9c8ab80a">Definition::hasUserDocumentation</a></div><div class="ttdeci">virtual bool hasUserDocumentation() const </div><div class="ttdef"><b>Definition:</b> definition.cpp:1251</div></div>
+<div class="ttc" id="class_definition_html_ae27579a021a1cc9eb9773665996b2641"><div class="ttname"><a href="class_definition.html#ae27579a021a1cc9eb9773665996b2641">Definition::hasBriefDescription</a></div><div class="ttdeci">bool hasBriefDescription() const </div><div class="ttdef"><b>Definition:</b> definition.cpp:1879</div></div>
+<div class="ttc" id="class_definition_html_a98a2e802a5477e4ece9cd859cb07ec31"><div class="ttname"><a href="class_definition.html#a98a2e802a5477e4ece9cd859cb07ec31">Definition::setBriefDescription</a></div><div class="ttdeci">virtual void setBriefDescription(const char *b, const char *briefFile, int briefLine)</div><div class="ttdef"><b>Definition:</b> definition.cpp:683</div></div>
+<div class="ttc" id="class_definition_html_a3743f2020b717483a31b241d35c373be"><div class="ttname"><a href="class_definition.html#a3743f2020b717483a31b241d35c373be">Definition::writeSourceDef</a></div><div class="ttdeci">void writeSourceDef(OutputList &amp;ol, const char *scopeName)</div><div class="ttdef"><b>Definition:</b> definition.cpp:911</div></div>
+<div class="ttc" id="struct_doc_info_html"><div class="ttname"><a href="struct_doc_info.html">DocInfo</a></div><div class="ttdef"><b>Definition:</b> definition.h:39</div></div>
+<div class="ttc" id="class_definition_html_afadeeb679bb7bda0ad5b4f358f0d33e2"><div class="ttname"><a href="class_definition.html#afadeeb679bb7bda0ad5b4f358f0d33e2">Definition::docFile</a></div><div class="ttdeci">QCString docFile() const </div><div class="ttdef"><b>Definition:</b> definition.cpp:1649</div></div>
+<div class="ttc" id="struct_body_info_html_a2e1ae363ea84baa4340319bb5a163f25"><div class="ttname"><a href="struct_body_info.html#a2e1ae363ea84baa4340319bb5a163f25">BodyInfo::fileDef</a></div><div class="ttdeci">FileDef * fileDef</div><div class="ttdoc">file definition containing the function body </div><div class="ttdef"><b>Definition:</b> definition.h:60</div></div>
+<div class="ttc" id="class_definition_html_a06a975cbab8499f41525eb70f95815b8"><div class="ttname"><a href="class_definition.html#a06a975cbab8499f41525eb70f95815b8">Definition::isArtificial</a></div><div class="ttdeci">bool isArtificial() const </div><div class="ttdef"><b>Definition:</b> definition.cpp:1793</div></div>
+<div class="ttc" id="class_definition_list_iterator_html"><div class="ttname"><a href="class_definition_list_iterator.html">DefinitionListIterator</a></div><div class="ttdef"><b>Definition:</b> definition.h:383</div></div>
+<div class="ttc" id="class_definition_html_a9d86cf13f2c63846c41ef739e4cdadf6"><div class="ttname"><a href="class_definition.html#a9d86cf13f2c63846c41ef739e4cdadf6">Definition::getOutputFileBase</a></div><div class="ttdeci">virtual QCString getOutputFileBase() const =0</div></div>
+<div class="ttc" id="class_definition_html_a145ca0e33e5be8b0d08c98e220df90b6"><div class="ttname"><a href="class_definition.html#a145ca0e33e5be8b0d08c98e220df90b6">Definition::navigationPathAsString</a></div><div class="ttdeci">QCString navigationPathAsString() const </div><div class="ttdef"><b>Definition:</b> definition.cpp:1497</div></div>
+<div class="ttc" id="class_section_dict_html"><div class="ttname"><a href="class_section_dict.html">SectionDict</a></div><div class="ttdef"><b>Definition:</b> section.h:60</div></div>
+<div class="ttc" id="class_definition_html_ab7dc8cc872f3cec2e07dace4293989aa"><div class="ttname"><a href="class_definition.html#ab7dc8cc872f3cec2e07dace4293989aa">Definition::isReference</a></div><div class="ttdeci">virtual bool isReference() const </div><div class="ttdef"><b>Definition:</b> definition.cpp:1803</div></div>
+<div class="ttc" id="class_definition_intf_html_afba7add835518dbf4202846446d667b0"><div class="ttname"><a href="class_definition_intf.html#afba7add835518dbf4202846446d667b0">DefinitionIntf::definitionType</a></div><div class="ttdeci">virtual DefType definitionType() const =0</div></div>
+<div class="ttc" id="class_definition_html_a32dc5ecc852dac51949439819e97cc24"><div class="ttname"><a href="class_definition.html#a32dc5ecc852dac51949439819e97cc24">Definition::getSourceAnchor</a></div><div class="ttdeci">virtual QCString getSourceAnchor() const </div><div class="ttdef"><b>Definition:</b> definition.cpp:893</div></div>
+<div class="ttc" id="class_definition_html_aeefc9f68d99e616f91c43a3cebf96357"><div class="ttname"><a href="class_definition.html#aeefc9f68d99e616f91c43a3cebf96357">Definition::anchor</a></div><div class="ttdeci">virtual QCString anchor() const =0</div></div>
+<div class="ttc" id="class_definition_html_a84c7fb6a4f2b359bdcaa779ff5635579"><div class="ttname"><a href="class_definition.html#a84c7fb6a4f2b359bdcaa779ff5635579">Definition::briefDescription</a></div><div class="ttdeci">QCString briefDescription(bool abbreviate=FALSE) const </div><div class="ttdef"><b>Definition:</b> definition.cpp:1705</div></div>
+<div class="ttc" id="types_8h_html_a9974623ce72fc23df5d64426b9178bf2"><div class="ttname"><a href="types_8h.html#a9974623ce72fc23df5d64426b9178bf2">SrcLangExt</a></div><div class="ttdeci">SrcLangExt</div><div class="ttdef"><b>Definition:</b> types.h:41</div></div>
+<div class="ttc" id="class_output_list_html"><div class="ttname"><a href="class_output_list.html">OutputList</a></div><div class="ttdef"><b>Definition:</b> outputlist.h:54</div></div>
+<div class="ttc" id="class_definition_list_html_aac410235a8bf90e471e649bd9dbf9c5e"><div class="ttname"><a href="class_definition_list.html#aac410235a8bf90e471e649bd9dbf9c5e">DefinitionList::definitionType</a></div><div class="ttdeci">DefType definitionType() const </div><div class="ttdef"><b>Definition:</b> definition.h:372</div></div>
+<div class="ttc" id="class_definition_html_a85adac6c21b9f8e8f374c9b915f875ee"><div class="ttname"><a href="class_definition.html#a85adac6c21b9f8e8f374c9b915f875ee">Definition::localName</a></div><div class="ttdeci">QCString localName() const </div><div class="ttdef"><b>Definition:</b> definition.cpp:1371</div></div>
+<div class="ttc" id="class_definition_html_a1f41ecc8895188e421173ae7c095c43d"><div class="ttname"><a href="class_definition.html#a1f41ecc8895188e421173ae7c095c43d">Definition::getBodyDef</a></div><div class="ttdeci">FileDef * getBodyDef() const </div><div class="ttdef"><b>Definition:</b> definition.cpp:1818</div></div>
+<div class="ttc" id="class_definition_html_afadf7236b478e199e25cd5cc6f4b5ce4"><div class="ttname"><a href="class_definition.html#afadf7236b478e199e25cd5cc6f4b5ce4">Definition::isVisibleInProject</a></div><div class="ttdeci">virtual bool isVisibleInProject() const </div><div class="ttdef"><b>Definition:</b> definition.cpp:1783</div></div>
+<div class="ttc" id="class_definition_html_a2abf0816f6db6ed419d97a01d1242f1a"><div class="ttname"><a href="class_definition.html#a2abf0816f6db6ed419d97a01d1242f1a">Definition::symbolName</a></div><div class="ttdeci">QCString symbolName() const </div><div class="ttdef"><b>Definition:</b> definition.cpp:1632</div></div>
+<div class="ttc" id="struct_body_info_html_aae69f615454d4cce6fddf760c20e9eb2"><div class="ttname"><a href="struct_body_info.html#aae69f615454d4cce6fddf760c20e9eb2">BodyInfo::startLine</a></div><div class="ttdeci">int startLine</div><div class="ttdoc">line number of the start of the definition </div><div class="ttdef"><b>Definition:</b> definition.h:58</div></div>
+<div class="ttc" id="class_definition_html_a2710939b1b9101f428f203f6de224dbc"><div class="ttname"><a href="class_definition.html#a2710939b1b9101f428f203f6de224dbc">Definition::getStartBodyLine</a></div><div class="ttdeci">int getStartBodyLine() const </div><div class="ttdef"><b>Definition:</b> definition.cpp:1808</div></div>
+<div class="ttc" id="class_definition_html_a08422ee75ab02691943c1ca87e2bc563"><div class="ttname"><a href="class_definition.html#a08422ee75ab02691943c1ca87e2bc563">Definition::isVisible</a></div><div class="ttdeci">virtual bool isVisible() const </div><div class="ttdef"><b>Definition:</b> definition.cpp:1788</div></div>
+<div class="ttc" id="class_definition_html_a5dff1a1ee0bf59807d724b07a99aad6d"><div class="ttname"><a href="class_definition.html#a5dff1a1ee0bf59807d724b07a99aad6d">Definition::addSectionsToDefinition</a></div><div class="ttdeci">void addSectionsToDefinition(QList&lt; SectionInfo &gt; *anchorList)</div><div class="ttdef"><b>Definition:</b> definition.cpp:416</div></div>
+<div class="ttc" id="class_definition_html_a31277e4ef87d16d309b3fc5cece4ae65"><div class="ttname"><a href="class_definition.html#a31277e4ef87d16d309b3fc5cece4ae65">Definition::getLanguage</a></div><div class="ttdeci">SrcLangExt getLanguage() const </div><div class="ttdef"><b>Definition:</b> definition.cpp:1848</div></div>
+<div class="ttc" id="class_definition_html_a53420387530937059d408a7e4316c375"><div class="ttname"><a href="class_definition.html#a53420387530937059d408a7e4316c375">Definition::isLinkable</a></div><div class="ttdeci">virtual bool isLinkable() const =0</div></div>
+<div class="ttc" id="class_definition_html_ae4b412e67989226ad3ce76f08f3ffaad"><div class="ttname"><a href="class_definition.html#ae4b412e67989226ad3ce76f08f3ffaad">Definition::inbodyLine</a></div><div class="ttdeci">int inbodyLine() const </div><div class="ttdef"><b>Definition:</b> definition.cpp:1755</div></div>
+<div class="ttc" id="class_definition_intf_html"><div class="ttname"><a href="class_definition_intf.html">DefinitionIntf</a></div><div class="ttdef"><b>Definition:</b> definition.h:64</div></div>
+<div class="ttc" id="class_definition_html_a2c310e06c9aadc6fb218f80fcbb5c695"><div class="ttname"><a href="class_definition.html#a2c310e06c9aadc6fb218f80fcbb5c695">Definition::name</a></div><div class="ttdeci">const QCString &amp; name() const </div><div class="ttdef"><b>Definition:</b> definition.h:109</div></div>
+<div class="ttc" id="class_definition_html_a2a4aa56e5209c7fbed15d5c3a3791643"><div class="ttname"><a href="class_definition.html#a2a4aa56e5209c7fbed15d5c3a3791643">Definition::isLinkableInProject</a></div><div class="ttdeci">virtual bool isLinkableInProject() const =0</div></div>
+<div class="ttc" id="class_definition_html_a8f5b9cecf6b3c7fc528fe1b5fcda0843"><div class="ttname"><a href="class_definition.html#a8f5b9cecf6b3c7fc528fe1b5fcda0843">Definition::getEndBodyLine</a></div><div class="ttdeci">int getEndBodyLine() const </div><div class="ttdef"><b>Definition:</b> definition.cpp:1813</div></div>
+<div class="ttc" id="class_definition_html_ab8b1c377b3cff112fdca997c37007944"><div class="ttname"><a href="class_definition.html#ab8b1c377b3cff112fdca997c37007944">Definition::qualifiedName</a></div><div class="ttdeci">virtual QCString qualifiedName() const </div><div class="ttdef"><b>Definition:</b> definition.cpp:1320</div></div>
+<div class="ttc" id="class_group_def_html"><div class="ttname"><a href="class_group_def.html">GroupDef</a></div><div class="ttdef"><b>Definition:</b> groupdef.h:44</div></div>
+<div class="ttc" id="class_member_def_html"><div class="ttname"><a href="class_member_def.html">MemberDef</a></div><div class="ttdef"><b>Definition:</b> memberdef.h:43</div></div>
+<div class="ttc" id="class_definition_html_a98f292cf0fb9a6a1314c7a159b7166ec"><div class="ttname"><a href="class_definition.html#a98f292cf0fb9a6a1314c7a159b7166ec">Definition::displayName</a></div><div class="ttdeci">virtual QCString displayName(bool includeScope=TRUE) const =0</div></div>
+<div class="ttc" id="class_definition_html_ad0cd42d7ec8233af1c414312feaf9dc2"><div class="ttname"><a href="class_definition.html#ad0cd42d7ec8233af1c414312feaf9dc2">Definition::getDefLine</a></div><div class="ttdeci">int getDefLine() const </div><div class="ttdef"><b>Definition:</b> definition.h:183</div></div>
+<div class="ttc" id="class_definition_html_a87b81ea7f17740033bf8fb12f796c494"><div class="ttname"><a href="class_definition.html#a87b81ea7f17740033bf8fb12f796c494">Definition::getReference</a></div><div class="ttdeci">virtual QCString getReference() const </div><div class="ttdef"><b>Definition:</b> definition.cpp:1798</div></div>
+<div class="ttc" id="class_definition_html_a3c2a6c87ac432d8a6db51bc52b2379da"><div class="ttname"><a href="class_definition.html#a3c2a6c87ac432d8a6db51bc52b2379da">Definition::docLine</a></div><div class="ttdeci">int docLine() const </div><div class="ttdef"><b>Definition:</b> definition.cpp:1644</div></div>
+<div class="ttc" id="class_definition_html_a7b5b9b0cf12b422bc40a5e5a3aa47489"><div class="ttname"><a href="class_definition.html#a7b5b9b0cf12b422bc40a5e5a3aa47489">Definition::getDefColumn</a></div><div class="ttdeci">int getDefColumn() const </div><div class="ttdef"><b>Definition:</b> definition.h:186</div></div>
+<div class="ttc" id="class_definition_list_html"><div class="ttname"><a href="class_definition_list.html">DefinitionList</a></div><div class="ttdef"><b>Definition:</b> definition.h:368</div></div>
+<div class="ttc" id="class_definition_intf_html_a2dc566dfec40397b2990e6520536ecb5"><div class="ttname"><a href="class_definition_intf.html#a2dc566dfec40397b2990e6520536ecb5">DefinitionIntf::DefType</a></div><div class="ttdeci">DefType</div><div class="ttdef"><b>Definition:</b> definition.h:70</div></div>
+<div class="ttc" id="struct_list_item_info_html"><div class="ttname"><a href="struct_list_item_info.html">ListItemInfo</a></div><div class="ttdef"><b>Definition:</b> types.h:98</div></div>
+<div class="ttc" id="class_q_list_iterator_html"><div class="ttname"><a href="class_q_list_iterator.html">QListIterator</a></div><div class="ttdef"><b>Definition:</b> qlist.h:108</div></div>
+<div class="ttc" id="class_definition_html_ae1d28023753b529dd5a2c5d77e076843"><div class="ttname"><a href="class_definition.html#ae1d28023753b529dd5a2c5d77e076843">Definition::setInbodyDocumentation</a></div><div class="ttdeci">virtual void setInbodyDocumentation(const char *d, const char *docFile, int docLine)</div><div class="ttdef"><b>Definition:</b> definition.cpp:707</div></div>
+<div class="ttc" id="class_definition_html_aaa008a94c11636ae0724d216a9a93eb6"><div class="ttname"><a href="class_definition.html#aaa008a94c11636ae0724d216a9a93eb6">Definition::getDefFileExtension</a></div><div class="ttdeci">QCString getDefFileExtension() const </div><div class="ttdef"><b>Definition:</b> definition.cpp:1773</div></div>
+<div class="ttc" id="struct_section_info_html"><div class="ttname"><a href="struct_section_info.html">SectionInfo</a></div><div class="ttdef"><b>Definition:</b> section.h:27</div></div>
+<div class="ttc" id="class_definition_html_abdc2cc8aea016db82f5432401ac10439"><div class="ttname"><a href="class_definition.html#abdc2cc8aea016db82f5432401ac10439">Definition::briefDescriptionAsTooltip</a></div><div class="ttdeci">QCString briefDescriptionAsTooltip() const </div><div class="ttdef"><b>Definition:</b> definition.cpp:1713</div></div>
+<div class="ttc" id="class_definition_html_a194917eb0e2f76ca5575658b55982c19"><div class="ttname"><a href="class_definition.html#a194917eb0e2f76ca5575658b55982c19">Definition::setReference</a></div><div class="ttdeci">void setReference(const char *r)</div><div class="ttdef"><b>Definition:</b> definition.cpp:1843</div></div>
+<div class="ttc" id="class_definition_impl_html"><div class="ttname"><a href="class_definition_impl.html">DefinitionImpl</a></div><div class="ttdef"><b>Definition:</b> definition.cpp:52</div></div>
+<div class="ttc" id="class_group_list_html"><div class="ttname"><a href="class_group_list.html">GroupList</a></div><div class="ttdef"><b>Definition:</b> groupdef.h:169</div></div>
+<div class="ttc" id="class_definition_html"><div class="ttname"><a href="class_definition.html">Definition</a></div><div class="ttdef"><b>Definition:</b> definition.h:91</div></div>
+<div class="ttc" id="class_definition_html_a15571178c7169aca27071a81b64d5a90"><div class="ttname"><a href="class_definition.html#a15571178c7169aca27071a81b64d5a90">Definition::getDefFileName</a></div><div class="ttdeci">QCString getDefFileName() const </div><div class="ttdef"><b>Definition:</b> definition.cpp:1768</div></div>
+<div class="ttc" id="class_q_list_html"><div class="ttname"><a href="class_q_list.html">QList&lt; ListItemInfo &gt;</a></div></div>
+<div class="ttc" id="class_definition_html_a0b24a407e5cd41328e5c64aac0884b6f"><div class="ttname"><a href="class_definition.html#a0b24a407e5cd41328e5c64aac0884b6f">Definition::getSourceFileBase</a></div><div class="ttdeci">virtual QCString getSourceFileBase() const </div><div class="ttdef"><b>Definition:</b> definition.cpp:880</div></div>
+<div class="ttc" id="struct_brief_info_html"><div class="ttname"><a href="struct_brief_info.html">BriefInfo</a></div><div class="ttdef"><b>Definition:</b> definition.h:47</div></div>
+<div class="ttc" id="class_definition_html_a14b9cbdcc30535bcfd2e435667dea5fe"><div class="ttname"><a href="class_definition.html#a14b9cbdcc30535bcfd2e435667dea5fe">Definition::briefFile</a></div><div class="ttdeci">QCString briefFile() const </div><div class="ttdef"><b>Definition:</b> definition.cpp:1743</div></div>
+<div class="ttc" id="struct_body_info_html"><div class="ttname"><a href="struct_body_info.html">BodyInfo</a></div><div class="ttdef"><b>Definition:</b> definition.h:56</div></div>
+<div class="ttc" id="struct_body_info_html_ae558febfd4bb35f2cb24e572579516ba"><div class="ttname"><a href="struct_body_info.html#ae558febfd4bb35f2cb24e572579516ba">BodyInfo::endLine</a></div><div class="ttdeci">int endLine</div><div class="ttdoc">line number of the end of the definition </div><div class="ttdef"><b>Definition:</b> definition.h:59</div></div>
+<div class="ttc" id="class_definition_html_ab3a256e7d9fad73fa57de7c1fedf51c5"><div class="ttname"><a href="class_definition.html#ab3a256e7d9fad73fa57de7c1fedf51c5">Definition::setName</a></div><div class="ttdeci">void setName(const char *name)</div><div class="ttdef"><b>Definition:</b> definition.cpp:394</div></div>
+<div class="ttc" id="class_q_c_string_html"><div class="ttname"><a href="class_q_c_string.html">QCString</a></div><div class="ttdef"><b>Definition:</b> qcstring.h:192</div></div>
+<div class="ttc" id="class_definition_html_a69f697410a918873614549085444faa4"><div class="ttname"><a href="class_definition.html#a69f697410a918873614549085444faa4">Definition::inbodyFile</a></div><div class="ttdeci">QCString inbodyFile() const </div><div class="ttdef"><b>Definition:</b> definition.cpp:1760</div></div>
+<div class="ttc" id="class_definition_html_aca87df70fcd505c2458a6ad75a1ede61"><div class="ttname"><a href="class_definition.html#aca87df70fcd505c2458a6ad75a1ede61">Definition::briefLine</a></div><div class="ttdeci">int briefLine() const </div><div class="ttdef"><b>Definition:</b> definition.cpp:1738</div></div>
+<div class="ttc" id="class_definition_list_html_a219450accf048597ffc7113ecde4c402"><div class="ttname"><a href="class_definition_list.html#a219450accf048597ffc7113ecde4c402">DefinitionList::compareItems</a></div><div class="ttdeci">int compareItems(QCollection::Item item1, QCollection::Item item2)</div><div class="ttdef"><b>Definition:</b> definition.h:373</div></div>
+<div class="ttc" id="class_definition_html_aebb6648f7eccccf1306a4e8189a5944e"><div class="ttname"><a href="class_definition.html#aebb6648f7eccccf1306a4e8189a5944e">Definition::inbodyDocumentation</a></div><div class="ttdeci">QCString inbodyDocumentation() const </div><div class="ttdef"><b>Definition:</b> definition.cpp:1750</div></div>
+<div class="ttc" id="class_definition_html_aa8915a727f5acd71a7e264d86e888835"><div class="ttname"><a href="class_definition.html#aa8915a727f5acd71a7e264d86e888835">Definition::setId</a></div><div class="ttdeci">void setId(const char *name)</div><div class="ttdef"><b>Definition:</b> definition.cpp:400</div></div>
+<div class="ttc" id="class_member_s_dict_html"><div class="ttname"><a href="class_member_s_dict.html">MemberSDict</a></div><div class="ttdef"><b>Definition:</b> memberlist.h:119</div></div>
+<div class="ttc" id="class_definition_html_a0ff8658509384f90b086887377cb2276"><div class="ttname"><a href="class_definition.html#a0ff8658509384f90b086887377cb2276">Definition::writeDocAnchorsToTagFile</a></div><div class="ttdeci">void writeDocAnchorsToTagFile()</div><div class="ttdef"><b>Definition:</b> definition.cpp:514</div></div>
+<div class="ttc" id="class_file_def_html"><div class="ttname"><a href="class_file_def.html">FileDef</a></div><div class="ttdef"><b>Definition:</b> filedef.h:63</div></div>
+<div class="ttc" id="class_definition_html_af8b3205a2cff0e941e6b026e81440ec6"><div class="ttname"><a href="class_definition.html#af8b3205a2cff0e941e6b026e81440ec6">Definition::~Definition</a></div><div class="ttdeci">virtual ~Definition()</div><div class="ttdef"><b>Definition:</b> definition.cpp:381</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado em Quinta, 28 de Novembro de 2013 22:43:37 para CEM RODAS por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

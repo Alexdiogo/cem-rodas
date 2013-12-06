@@ -1,0 +1,163 @@
+\hypertarget{class_html_help}{\section{Referência à classe Html\-Help}
+\label{class_html_help}\index{Html\-Help@{Html\-Help}}
+}
+
+
+{\ttfamily \#include $<$htmlhelp.\-h$>$}
+
+Diagrama de heranças da classe Html\-Help\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_html_help}
+\end{center}
+\end{figure}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_html_help_af779198851136d1f58cc241632b410f7}{Html\-Help} ()
+\item 
+void \hyperlink{class_html_help_a25a40b6614565f755233080a384c35f1}{initialize} ()
+\item 
+void \hyperlink{class_html_help_a32d626626eee0bc4ade146973f6abb1c}{finalize} ()
+\item 
+void \hyperlink{class_html_help_a96772b5eeae8044b3308f63fb040c253}{inc\-Contents\-Depth} ()
+\item 
+void \hyperlink{class_html_help_a3a6a2629dd91105d0048f0d0a9f7f983}{dec\-Contents\-Depth} ()
+\item 
+void \hyperlink{class_html_help_a2037325cd2bf36b4a134b87dbb107a94}{add\-Contents\-Item} (bool is\-Dir, const char $\ast$name, const char $\ast$ref, const char $\ast$file, const char $\ast$anchor, bool separate\-Index, bool add\-To\-Nav\-Index, \hyperlink{class_definition}{Definition} $\ast$def)
+\item 
+\hypertarget{class_html_help_acae96bcfb2681e31a0e64854dd3809fe}{void {\bfseries add\-Index\-Item} (\hyperlink{class_definition}{Definition} $\ast$context, \hyperlink{class_member_def}{Member\-Def} $\ast$md, const char $\ast$section\-Anchor, const char $\ast$title)}\label{class_html_help_acae96bcfb2681e31a0e64854dd3809fe}
+
+\item 
+\hypertarget{class_html_help_a8e569c4ea40f30de2accf0a87b7d8d30}{void {\bfseries add\-Index\-File} (const char $\ast$name)}\label{class_html_help_a8e569c4ea40f30de2accf0a87b7d8d30}
+
+\item 
+\hypertarget{class_html_help_ae96a05963365ea76e95ac32a7cce3fb2}{void {\bfseries add\-Image\-File} (const char $\ast$)}\label{class_html_help_ae96a05963365ea76e95ac32a7cce3fb2}
+
+\item 
+\hypertarget{class_html_help_a373a41a11f6707488992a715912f6f06}{void {\bfseries add\-Style\-Sheet\-File} (const char $\ast$)}\label{class_html_help_a373a41a11f6707488992a715912f6f06}
+
+\end{DoxyCompactItemize}
+\subsection*{Amigos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_html_help_a6ba39d6a831c897c93a68738d9a721f3}{class {\bfseries Html\-Help\-Index}}\label{class_html_help_a6ba39d6a831c897c93a68738d9a721f3}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+\hyperlink{class_a}{A} class that generated the H\-T\-M\-L Help specific files.
+
+These files can be used with the Microsoft H\-T\-M\-L Help workshop to generate compressed H\-T\-M\-L files (.chm). 
+
+\subsection{Documentação dos Construtores \& Destrutor}
+\hypertarget{class_html_help_af779198851136d1f58cc241632b410f7}{\index{Html\-Help@{Html\-Help}!Html\-Help@{Html\-Help}}
+\index{Html\-Help@{Html\-Help}!HtmlHelp@{Html\-Help}}
+\subsubsection[{Html\-Help}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Html\-Help} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_html_help_af779198851136d1f58cc241632b410f7}
+Constructs an html object. The object has to be \hyperlink{class_html_help_a25a40b6614565f755233080a384c35f1}{initialized} before it can be used. 
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_html_help_a2037325cd2bf36b4a134b87dbb107a94}{\index{Html\-Help@{Html\-Help}!add\-Contents\-Item@{add\-Contents\-Item}}
+\index{add\-Contents\-Item@{add\-Contents\-Item}!HtmlHelp@{Html\-Help}}
+\subsubsection[{add\-Contents\-Item}]{\setlength{\rightskip}{0pt plus 5cm}void add\-Contents\-Item (
+\begin{DoxyParamCaption}
+\item[{bool}]{is\-Dir, }
+\item[{const char $\ast$}]{name, }
+\item[{const char $\ast$}]{ref, }
+\item[{const char $\ast$}]{file, }
+\item[{const char $\ast$}]{anchor, }
+\item[{bool}]{separate\-Index, }
+\item[{bool}]{add\-To\-Nav\-Index, }
+\item[{{\bf Definition} $\ast$}]{def}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_html_help_a2037325cd2bf36b4a134b87dbb107a94}
+Add an list item to the contents file. 
+\begin{DoxyParams}{Parâmetros}
+{\em is\-Dir} & boolean indicating if this is a dir or file entry \\
+\hline
+{\em name} & the name of the item. \\
+\hline
+{\em ref} & the \hyperlink{struct_u_r_l}{U\-R\-L} of to the item. \\
+\hline
+{\em file} & the file in which the item is defined. \\
+\hline
+{\em anchor} & the anchor of the item. \\
+\hline
+{\em separate\-Index} & not used. \\
+\hline
+{\em add\-To\-Nav\-Index} & not used. \\
+\hline
+{\em def} & not used. \\
+\hline
+\end{DoxyParams}
+
+
+Implementa \hyperlink{class_index_intf}{Index\-Intf}.
+
+\hypertarget{class_html_help_a3a6a2629dd91105d0048f0d0a9f7f983}{\index{Html\-Help@{Html\-Help}!dec\-Contents\-Depth@{dec\-Contents\-Depth}}
+\index{dec\-Contents\-Depth@{dec\-Contents\-Depth}!HtmlHelp@{Html\-Help}}
+\subsubsection[{dec\-Contents\-Depth}]{\setlength{\rightskip}{0pt plus 5cm}void dec\-Contents\-Depth (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_html_help_a3a6a2629dd91105d0048f0d0a9f7f983}
+Decrease the level of the contents hierarchy. This will end the unnumber H\-T\-M\-L list. \begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_html_help_a96772b5eeae8044b3308f63fb040c253}{inc\-Contents\-Depth()} 
+\end{DoxySeeAlso}
+
+
+Implementa \hyperlink{class_index_intf}{Index\-Intf}.
+
+\hypertarget{class_html_help_a32d626626eee0bc4ade146973f6abb1c}{\index{Html\-Help@{Html\-Help}!finalize@{finalize}}
+\index{finalize@{finalize}!HtmlHelp@{Html\-Help}}
+\subsubsection[{finalize}]{\setlength{\rightskip}{0pt plus 5cm}void finalize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_html_help_a32d626626eee0bc4ade146973f6abb1c}
+Finalizes the H\-T\-M\-L help. This will finish and close the contents file (index.\-hhc) and the index file (index.\-hhk). \begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_html_help_a25a40b6614565f755233080a384c35f1}{initialize()} 
+\end{DoxySeeAlso}
+
+
+Implementa \hyperlink{class_index_intf}{Index\-Intf}.
+
+\hypertarget{class_html_help_a96772b5eeae8044b3308f63fb040c253}{\index{Html\-Help@{Html\-Help}!inc\-Contents\-Depth@{inc\-Contents\-Depth}}
+\index{inc\-Contents\-Depth@{inc\-Contents\-Depth}!HtmlHelp@{Html\-Help}}
+\subsubsection[{inc\-Contents\-Depth}]{\setlength{\rightskip}{0pt plus 5cm}void inc\-Contents\-Depth (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_html_help_a96772b5eeae8044b3308f63fb040c253}
+Increase the level of the contents hierarchy. This will start a new unnumbered H\-T\-M\-L list in contents file. \begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_html_help_a3a6a2629dd91105d0048f0d0a9f7f983}{dec\-Contents\-Depth()} 
+\end{DoxySeeAlso}
+
+
+Implementa \hyperlink{class_index_intf}{Index\-Intf}.
+
+\hypertarget{class_html_help_a25a40b6614565f755233080a384c35f1}{\index{Html\-Help@{Html\-Help}!initialize@{initialize}}
+\index{initialize@{initialize}!HtmlHelp@{Html\-Help}}
+\subsubsection[{initialize}]{\setlength{\rightskip}{0pt plus 5cm}void initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_html_help_a25a40b6614565f755233080a384c35f1}
+This will create a contents file (index.\-hhc) and a index file (index.\-hhk) and write the header of those files. It also creates a project file (index.\-hhp) \begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_html_help_a32d626626eee0bc4ade146973f6abb1c}{finalize()} 
+\end{DoxySeeAlso}
+
+
+Implementa \hyperlink{class_index_intf}{Index\-Intf}.
+
+
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/src/htmlhelp.\-h\item 
+C\-:/\-Users/teste/git/doxygen/src/htmlhelp.\-cpp\end{DoxyCompactItemize}

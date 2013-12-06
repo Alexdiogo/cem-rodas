@@ -1,0 +1,74 @@
+\hypertarget{class_prefix_ignore_class_list}{\section{Referência à classe Prefix\-Ignore\-Class\-List}
+\label{class_prefix_ignore_class_list}\index{Prefix\-Ignore\-Class\-List@{Prefix\-Ignore\-Class\-List}}
+}
+Diagrama de heranças da classe Prefix\-Ignore\-Class\-List\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{class_prefix_ignore_class_list}
+\end{center}
+\end{figure}
+\subsection*{Tipos Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_prefix_ignore_class_list_a054299b212916c5ac584a6e93b0009ef}{typedef \hyperlink{class_class_def}{Class\-Def} {\bfseries Element\-Type}}\label{class_prefix_ignore_class_list_a054299b212916c5ac584a6e93b0009ef}
+
+\end{DoxyCompactItemize}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_prefix_ignore_class_list_a20c5d5fd24d6e581b072b793b7e7e949}{{\bfseries Prefix\-Ignore\-Class\-List} (uint letter)}\label{class_prefix_ignore_class_list_a20c5d5fd24d6e581b072b793b7e7e949}
+
+\item 
+virtual int \hyperlink{class_prefix_ignore_class_list_aade9045d8c0047e0427d8c6a9c048985}{compare\-Items} (Q\-Collection\-::\-Item item1, Q\-Collection\-::\-Item item2)
+\item 
+\hypertarget{class_prefix_ignore_class_list_ada472040436550156c7064317abe8caa}{uint {\bfseries letter} () const }\label{class_prefix_ignore_class_list_ada472040436550156c7064317abe8caa}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Descrição detalhada}
+Special class list where sorting takes I\-G\-N\-O\-R\-E\-\_\-\-P\-R\-E\-F\-I\-X into account. 
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_prefix_ignore_class_list_aade9045d8c0047e0427d8c6a9c048985}{\index{Prefix\-Ignore\-Class\-List@{Prefix\-Ignore\-Class\-List}!compare\-Items@{compare\-Items}}
+\index{compare\-Items@{compare\-Items}!PrefixIgnoreClassList@{Prefix\-Ignore\-Class\-List}}
+\subsubsection[{compare\-Items}]{\setlength{\rightskip}{0pt plus 5cm}virtual int compare\-Items (
+\begin{DoxyParamCaption}
+\item[{Q\-Collection\-::\-Item}]{item1, }
+\item[{Q\-Collection\-::\-Item}]{item2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_prefix_ignore_class_list_aade9045d8c0047e0427d8c6a9c048985}
+This virtual function compares two list items.
+
+Returns\-: 
+\begin{DoxyItemize}
+\item 0 if {\itshape item1} == {\itshape item2} 
+\item non-\/zero if {\itshape item1} != {\itshape item2} 
+\end{DoxyItemize}
+
+This function returns {\itshape int} rather than {\itshape bool} so that reimplementations can return three values and use it to sort by\-:
+
+
+\begin{DoxyItemize}
+\item 0 if {\itshape item1} == {\itshape item2} 
+\item $>$ 0 (positive integer) if {\itshape item1} $>$ {\itshape item2} 
+\item $<$ 0 (negative integer) if {\itshape item1} $<$ {\itshape item2} 
+\end{DoxyItemize}
+
+The Q\-List\-::in\-Sort() function requires that \hyperlink{class_prefix_ignore_class_list_aade9045d8c0047e0427d8c6a9c048985}{compare\-Items()} is implemented as described here.
+
+This function should not modify the list because some const functions call \hyperlink{class_prefix_ignore_class_list_aade9045d8c0047e0427d8c6a9c048985}{compare\-Items()}.
+
+The default implementation compares the pointers\-: 
+\begin{DoxyCode}
+\end{DoxyCode}
+ 
+
+Reimplementado de \hyperlink{class_class_list_a219450accf048597ffc7113ecde4c402}{Class\-List}.
+
+
+
+A documentação para esta classe foi gerada a partir do seguinte ficheiro\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/src/\hyperlink{index_8cpp}{index.\-cpp}\end{DoxyCompactItemize}

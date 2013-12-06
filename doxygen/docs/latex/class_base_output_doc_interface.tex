@@ -1,0 +1,486 @@
+\hypertarget{class_base_output_doc_interface}{\section{Referência à classe Base\-Output\-Doc\-Interface}
+\label{class_base_output_doc_interface}\index{Base\-Output\-Doc\-Interface@{Base\-Output\-Doc\-Interface}}
+}
+
+
+{\ttfamily \#include $<$outputgen.\-h$>$}
+
+Diagrama de heranças da classe Base\-Output\-Doc\-Interface\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.835443cm]{class_base_output_doc_interface}
+\end{center}
+\end{figure}
+\subsection*{Tipos Públicos}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Param\-List\-Types} \{ {\bfseries Param}, 
+{\bfseries Ret\-Val}, 
+{\bfseries Exception}
+ \}
+\item 
+enum {\bfseries Section\-Types} \{ {\bfseries Enum\-Values}, 
+{\bfseries Examples}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_base_output_doc_interface_a4a14fbec28aa838ac6e333e0bcea0216}{virtual bool {\bfseries parse\-Text} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&s)}\label{class_base_output_doc_interface_a4a14fbec28aa838ac6e333e0bcea0216}
+
+\item 
+virtual void \hyperlink{class_base_output_doc_interface_a432e618b3c8820e00496c6b242947e72}{start\-Item\-List} ()=0
+\item 
+virtual void \hyperlink{class_base_output_doc_interface_a6cfe1cc2a5fa5cdb1eea280df003903a}{start\-Item\-List\-Item} ()=0
+\item 
+virtual void \hyperlink{class_base_output_doc_interface_a8161fe76c2c66d47d0eb078be885bec7}{end\-Item\-List\-Item} ()=0
+\item 
+virtual void \hyperlink{class_base_output_doc_interface_a818d290261244e40e8c70562a7198156}{end\-Item\-List} ()=0
+\item 
+virtual void \hyperlink{class_base_output_doc_interface_a6f6bec326f718b326fb67adb943ebc27}{docify} (const char $\ast$s)=0
+\item 
+virtual void \hyperlink{class_base_output_doc_interface_a936e81608db3018f2bce9cd3ee58fdcd}{write\-Char} (char c)=0
+\item 
+virtual void \hyperlink{class_base_output_doc_interface_a78a005d8c0329ee60cd1994eb4afc58b}{write\-String} (const char $\ast$text)=0
+\item 
+virtual void \hyperlink{class_base_output_doc_interface_a4b8b270f90567b9201c44a6ad2ad206f}{start\-Paragraph} ()=0
+\item 
+virtual void \hyperlink{class_base_output_doc_interface_a9a97d4c8fb4e8ac91125f9ff2718d83d}{end\-Paragraph} ()=0
+\item 
+virtual void \hyperlink{class_base_output_doc_interface_aa551443db6cf9e4f51bc12c9d753f9c3}{write\-Object\-Link} (const char $\ast$ref, const char $\ast$file, const char $\ast$anchor, const char $\ast$name)=0
+\item 
+virtual void \hyperlink{class_base_output_doc_interface_ae514e80c628faa0b5ee62a50185f2397}{start\-Html\-Link} (const char $\ast$url)=0
+\item 
+virtual void \hyperlink{class_base_output_doc_interface_a463c695844e8137b388af6e1bbafc19e}{end\-Html\-Link} ()=0
+\item 
+virtual void \hyperlink{class_base_output_doc_interface_a9ad34c5f6672948732a87c4371d2e244}{start\-Bold} ()=0
+\item 
+virtual void \hyperlink{class_base_output_doc_interface_a593e371dace7c16866f8bd028905096d}{end\-Bold} ()=0
+\item 
+virtual void \hyperlink{class_base_output_doc_interface_ae241cdb69ca06cd0a539dd8b8a0a419f}{start\-Typewriter} ()=0
+\item 
+virtual void \hyperlink{class_base_output_doc_interface_a201cdc35ada3fac3f2f72adcc43308b8}{end\-Typewriter} ()=0
+\item 
+virtual void \hyperlink{class_base_output_doc_interface_afa6a6472913a05d8524804a27aebb56c}{start\-Emphasis} ()=0
+\item 
+virtual void \hyperlink{class_base_output_doc_interface_a1530746d5ac62d305ff693f0eb2bf90a}{end\-Emphasis} ()=0
+\item 
+virtual void \hyperlink{class_base_output_doc_interface_a649cecde411897cea447f103795d8c64}{start\-Code\-Fragment} ()=0
+\item 
+virtual void \hyperlink{class_base_output_doc_interface_a6d0e9c89b22affd8574d3804393d8fa5}{end\-Code\-Fragment} ()=0
+\item 
+virtual void \hyperlink{class_base_output_doc_interface_a5f36f83289e2b6137e9086998c5fb883}{write\-Ruler} ()=0
+\item 
+virtual void \hyperlink{class_base_output_doc_interface_a90167ae571c0685acd7934fde582ca7b}{start\-Description} ()=0
+\item 
+virtual void \hyperlink{class_base_output_doc_interface_a58e5aab2220d1da0e75a66c294cc9857}{end\-Description} ()=0
+\item 
+virtual void \hyperlink{class_base_output_doc_interface_a5392dc059a26e9c650ffee7d28636f74}{start\-Desc\-Item} ()=0
+\item 
+\hypertarget{class_base_output_doc_interface_ad0a455f0a2344f6188cde8de697b4433}{virtual void {\bfseries start\-Desc\-For\-Item} ()=0}\label{class_base_output_doc_interface_ad0a455f0a2344f6188cde8de697b4433}
+
+\item 
+\hypertarget{class_base_output_doc_interface_a737810958e3c17f65d06050a4d96515a}{virtual void {\bfseries end\-Desc\-For\-Item} ()=0}\label{class_base_output_doc_interface_a737810958e3c17f65d06050a4d96515a}
+
+\item 
+virtual void \hyperlink{class_base_output_doc_interface_ae9e2fe1d39b02fcc5a682ace36d7eafa}{end\-Desc\-Item} ()=0
+\item 
+\hypertarget{class_base_output_doc_interface_a6c705372da335649a67a744d1283afaf}{virtual void {\bfseries start\-Center} ()=0}\label{class_base_output_doc_interface_a6c705372da335649a67a744d1283afaf}
+
+\item 
+\hypertarget{class_base_output_doc_interface_afb04dbc9e3cf3296af0295249e3105fe}{virtual void {\bfseries end\-Center} ()=0}\label{class_base_output_doc_interface_afb04dbc9e3cf3296af0295249e3105fe}
+
+\item 
+\hypertarget{class_base_output_doc_interface_a99a7175c105390ea2dcaf4236c096af2}{virtual void {\bfseries start\-Small} ()=0}\label{class_base_output_doc_interface_a99a7175c105390ea2dcaf4236c096af2}
+
+\item 
+\hypertarget{class_base_output_doc_interface_a6e1a25540f283ea2ca1a4747ae814079}{virtual void {\bfseries end\-Small} ()=0}\label{class_base_output_doc_interface_a6e1a25540f283ea2ca1a4747ae814079}
+
+\item 
+\hypertarget{class_base_output_doc_interface_a98bc450db49fb6704f072b3da99f10b2}{virtual void {\bfseries start\-Simple\-Sect} (Section\-Types t, const char $\ast$file, const char $\ast$anchor, const char $\ast$title)=0}\label{class_base_output_doc_interface_a98bc450db49fb6704f072b3da99f10b2}
+
+\item 
+\hypertarget{class_base_output_doc_interface_a0238efa13f3d7590b574327c52569cd9}{virtual void {\bfseries end\-Simple\-Sect} ()=0}\label{class_base_output_doc_interface_a0238efa13f3d7590b574327c52569cd9}
+
+\item 
+\hypertarget{class_base_output_doc_interface_a7ec21eff08cdb4e5c08f652f45f1fcfa}{virtual void {\bfseries start\-Param\-List} (Param\-List\-Types t, const char $\ast$title)=0}\label{class_base_output_doc_interface_a7ec21eff08cdb4e5c08f652f45f1fcfa}
+
+\item 
+\hypertarget{class_base_output_doc_interface_a69fd918e53c97523cbeca8313bd70fe7}{virtual void {\bfseries end\-Param\-List} ()=0}\label{class_base_output_doc_interface_a69fd918e53c97523cbeca8313bd70fe7}
+
+\item 
+\hypertarget{class_base_output_doc_interface_a341cbab81b0062f7958b87cf6a71d4d6}{virtual void {\bfseries start\-Title} ()=0}\label{class_base_output_doc_interface_a341cbab81b0062f7958b87cf6a71d4d6}
+
+\item 
+\hypertarget{class_base_output_doc_interface_aa3935ba65cff96b85083668a719528b5}{virtual void {\bfseries end\-Title} ()=0}\label{class_base_output_doc_interface_aa3935ba65cff96b85083668a719528b5}
+
+\item 
+\hypertarget{class_base_output_doc_interface_a0d42feda33a9f9e93cb8029153f75e71}{virtual void {\bfseries write\-Anchor} (const char $\ast$file\-Name, const char $\ast$name)=0}\label{class_base_output_doc_interface_a0d42feda33a9f9e93cb8029153f75e71}
+
+\item 
+\hypertarget{class_base_output_doc_interface_ad4b9e394b4c79f853a1eca24ae4ba484}{virtual void {\bfseries start\-Section} (const char $\ast$, const char $\ast$, Section\-Info\-::\-Section\-Type)=0}\label{class_base_output_doc_interface_ad4b9e394b4c79f853a1eca24ae4ba484}
+
+\item 
+\hypertarget{class_base_output_doc_interface_af91f19bb7a7184047d63922c69a54d03}{virtual void {\bfseries end\-Section} (const char $\ast$, Section\-Info\-::\-Section\-Type)=0}\label{class_base_output_doc_interface_af91f19bb7a7184047d63922c69a54d03}
+
+\item 
+\hypertarget{class_base_output_doc_interface_a82de4067c71b25dd85188ba11ab8afe9}{virtual void {\bfseries line\-Break} (const char $\ast$style)=0}\label{class_base_output_doc_interface_a82de4067c71b25dd85188ba11ab8afe9}
+
+\item 
+\hypertarget{class_base_output_doc_interface_a74c8bc475204c698ea98a421072c41ac}{virtual void {\bfseries add\-Index\-Item} (const char $\ast$s1, const char $\ast$s2)=0}\label{class_base_output_doc_interface_a74c8bc475204c698ea98a421072c41ac}
+
+\item 
+\hypertarget{class_base_output_doc_interface_af3caea4d221cbde42831678ae6ceca91}{virtual void {\bfseries write\-Non\-Breakable\-Space} (int)=0}\label{class_base_output_doc_interface_af3caea4d221cbde42831678ae6ceca91}
+
+\item 
+\hypertarget{class_base_output_doc_interface_a6daf06bdc37871cb56b47d0eadbea62b}{virtual void {\bfseries start\-Desc\-Table} (const char $\ast$title)=0}\label{class_base_output_doc_interface_a6daf06bdc37871cb56b47d0eadbea62b}
+
+\item 
+\hypertarget{class_base_output_doc_interface_a7c632b8cacd65f2b923b2723561a017d}{virtual void {\bfseries end\-Desc\-Table} ()=0}\label{class_base_output_doc_interface_a7c632b8cacd65f2b923b2723561a017d}
+
+\item 
+\hypertarget{class_base_output_doc_interface_a531193736655add8e7d8c72416480fbe}{virtual void {\bfseries start\-Desc\-Table\-Title} ()=0}\label{class_base_output_doc_interface_a531193736655add8e7d8c72416480fbe}
+
+\item 
+\hypertarget{class_base_output_doc_interface_aaed05f66abc76e55eb0f29b7aa53b1a4}{virtual void {\bfseries end\-Desc\-Table\-Title} ()=0}\label{class_base_output_doc_interface_aaed05f66abc76e55eb0f29b7aa53b1a4}
+
+\item 
+\hypertarget{class_base_output_doc_interface_a4483cdc52a9f793056a2453461694140}{virtual void {\bfseries start\-Desc\-Table\-Data} ()=0}\label{class_base_output_doc_interface_a4483cdc52a9f793056a2453461694140}
+
+\item 
+\hypertarget{class_base_output_doc_interface_a8043221f1b448305052cd20ea217d369}{virtual void {\bfseries end\-Desc\-Table\-Data} ()=0}\label{class_base_output_doc_interface_a8043221f1b448305052cd20ea217d369}
+
+\item 
+\hypertarget{class_base_output_doc_interface_ae0957fca439bf053074d836651758546}{virtual void {\bfseries start\-Text\-Link} (const char $\ast$file, const char $\ast$anchor)=0}\label{class_base_output_doc_interface_ae0957fca439bf053074d836651758546}
+
+\item 
+\hypertarget{class_base_output_doc_interface_a640f630abbcef3317d1cee5e2b826787}{virtual void {\bfseries end\-Text\-Link} ()=0}\label{class_base_output_doc_interface_a640f630abbcef3317d1cee5e2b826787}
+
+\item 
+\hypertarget{class_base_output_doc_interface_afd43d0892b17aca482d193e2b2e87621}{virtual void {\bfseries start\-Page\-Ref} ()=0}\label{class_base_output_doc_interface_afd43d0892b17aca482d193e2b2e87621}
+
+\item 
+\hypertarget{class_base_output_doc_interface_a69133cf7a4807f45f0d6ace5b0411cc9}{virtual void {\bfseries end\-Page\-Ref} (const char $\ast$, const char $\ast$)=0}\label{class_base_output_doc_interface_a69133cf7a4807f45f0d6ace5b0411cc9}
+
+\item 
+\hypertarget{class_base_output_doc_interface_a5f305cc66aed16c1413de29887a11932}{virtual void {\bfseries start\-Subsection} ()=0}\label{class_base_output_doc_interface_a5f305cc66aed16c1413de29887a11932}
+
+\item 
+\hypertarget{class_base_output_doc_interface_a09031f1d85363c381f54acf23ea5b1c9}{virtual void {\bfseries end\-Subsection} ()=0}\label{class_base_output_doc_interface_a09031f1d85363c381f54acf23ea5b1c9}
+
+\item 
+\hypertarget{class_base_output_doc_interface_ad876de55d4b1e593752a0675e1808df2}{virtual void {\bfseries start\-Subsubsection} ()=0}\label{class_base_output_doc_interface_ad876de55d4b1e593752a0675e1808df2}
+
+\item 
+\hypertarget{class_base_output_doc_interface_ad7c34336ef42813d211e7197a019ad11}{virtual void {\bfseries end\-Subsubsection} ()=0}\label{class_base_output_doc_interface_ad7c34336ef42813d211e7197a019ad11}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+Base Interface used for generating output outside of the comment blocks.
+
+This abstract class is used by output generation functions to generate the output for a specific format, or a list of formats (see \hyperlink{class_output_list}{Output\-List}). This interface contains functions that generate fragments of the output. 
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_base_output_doc_interface_a6f6bec326f718b326fb67adb943ebc27}{\index{Base\-Output\-Doc\-Interface@{Base\-Output\-Doc\-Interface}!docify@{docify}}
+\index{docify@{docify}!BaseOutputDocInterface@{Base\-Output\-Doc\-Interface}}
+\subsubsection[{docify}]{\setlength{\rightskip}{0pt plus 5cm}virtual void docify (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_base_output_doc_interface_a6f6bec326f718b326fb67adb943ebc27}
+Writes an A\-S\-C\-I\-I string to the output. Converts characters that have \hyperlink{class_a}{A} special meaning, like {\ttfamily \&} in html. 
+
+Implementado em \hyperlink{class_html_generator_ab9d90b3c6f2e1105a2fe6ce2a1486f75}{Html\-Generator}, \hyperlink{class_output_list_af7ffb65da6beaf5adf9c63da246dc694}{Output\-List}, \hyperlink{class_latex_generator_ab9d90b3c6f2e1105a2fe6ce2a1486f75}{Latex\-Generator}, \hyperlink{class_man_generator_ab9d90b3c6f2e1105a2fe6ce2a1486f75}{Man\-Generator} e \hyperlink{class_r_t_f_generator_ab9d90b3c6f2e1105a2fe6ce2a1486f75}{R\-T\-F\-Generator}.
+
+\hypertarget{class_base_output_doc_interface_a593e371dace7c16866f8bd028905096d}{\index{Base\-Output\-Doc\-Interface@{Base\-Output\-Doc\-Interface}!end\-Bold@{end\-Bold}}
+\index{end\-Bold@{end\-Bold}!BaseOutputDocInterface@{Base\-Output\-Doc\-Interface}}
+\subsubsection[{end\-Bold}]{\setlength{\rightskip}{0pt plus 5cm}virtual void end\-Bold (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_base_output_doc_interface_a593e371dace7c16866f8bd028905096d}
+End a section of text displayed in bold face. 
+
+Implementado em \hyperlink{class_output_list_a1e1a209879148bfcb4b57ab294b37b90}{Output\-List}, \hyperlink{class_html_generator_a1e1a209879148bfcb4b57ab294b37b90}{Html\-Generator}, \hyperlink{class_latex_generator_a1e1a209879148bfcb4b57ab294b37b90}{Latex\-Generator}, \hyperlink{class_man_generator_a1e1a209879148bfcb4b57ab294b37b90}{Man\-Generator} e \hyperlink{class_r_t_f_generator_a1e1a209879148bfcb4b57ab294b37b90}{R\-T\-F\-Generator}.
+
+\hypertarget{class_base_output_doc_interface_a6d0e9c89b22affd8574d3804393d8fa5}{\index{Base\-Output\-Doc\-Interface@{Base\-Output\-Doc\-Interface}!end\-Code\-Fragment@{end\-Code\-Fragment}}
+\index{end\-Code\-Fragment@{end\-Code\-Fragment}!BaseOutputDocInterface@{Base\-Output\-Doc\-Interface}}
+\subsubsection[{end\-Code\-Fragment}]{\setlength{\rightskip}{0pt plus 5cm}virtual void end\-Code\-Fragment (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_base_output_doc_interface_a6d0e9c89b22affd8574d3804393d8fa5}
+Ends a source code fragment 
+
+Implementado em \hyperlink{class_output_list_a0d97d57c34ed239bcf916104a71e10bf}{Output\-List}, \hyperlink{class_html_generator_a0d97d57c34ed239bcf916104a71e10bf}{Html\-Generator}, \hyperlink{class_latex_generator_a0d97d57c34ed239bcf916104a71e10bf}{Latex\-Generator}, \hyperlink{class_man_generator_a0d97d57c34ed239bcf916104a71e10bf}{Man\-Generator} e \hyperlink{class_r_t_f_generator_a0d97d57c34ed239bcf916104a71e10bf}{R\-T\-F\-Generator}.
+
+\hypertarget{class_base_output_doc_interface_ae9e2fe1d39b02fcc5a682ace36d7eafa}{\index{Base\-Output\-Doc\-Interface@{Base\-Output\-Doc\-Interface}!end\-Desc\-Item@{end\-Desc\-Item}}
+\index{end\-Desc\-Item@{end\-Desc\-Item}!BaseOutputDocInterface@{Base\-Output\-Doc\-Interface}}
+\subsubsection[{end\-Desc\-Item}]{\setlength{\rightskip}{0pt plus 5cm}virtual void end\-Desc\-Item (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_base_output_doc_interface_ae9e2fe1d39b02fcc5a682ace36d7eafa}
+Ends an item of a description list and starts the description itself\-: e.\-g. {\ttfamily $<$/dt$>$} in H\-T\-M\-L. 
+
+Implementado em \hyperlink{class_output_list_a080b8f2fa36e665da60bcfa982386ac8}{Output\-List}, \hyperlink{class_html_generator_a080b8f2fa36e665da60bcfa982386ac8}{Html\-Generator}, \hyperlink{class_latex_generator_a080b8f2fa36e665da60bcfa982386ac8}{Latex\-Generator}, \hyperlink{class_man_generator_a080b8f2fa36e665da60bcfa982386ac8}{Man\-Generator} e \hyperlink{class_r_t_f_generator_a080b8f2fa36e665da60bcfa982386ac8}{R\-T\-F\-Generator}.
+
+\hypertarget{class_base_output_doc_interface_a58e5aab2220d1da0e75a66c294cc9857}{\index{Base\-Output\-Doc\-Interface@{Base\-Output\-Doc\-Interface}!end\-Description@{end\-Description}}
+\index{end\-Description@{end\-Description}!BaseOutputDocInterface@{Base\-Output\-Doc\-Interface}}
+\subsubsection[{end\-Description}]{\setlength{\rightskip}{0pt plus 5cm}virtual void end\-Description (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_base_output_doc_interface_a58e5aab2220d1da0e75a66c294cc9857}
+Ends a description list\-: e.\-g. {\ttfamily $<$/dl$>$} in H\-T\-M\-L 
+
+Implementado em \hyperlink{class_output_list_a5a0a6eb710a6b87c5dd8ea82b7a19dc4}{Output\-List}, \hyperlink{class_html_generator_a5a0a6eb710a6b87c5dd8ea82b7a19dc4}{Html\-Generator}, \hyperlink{class_latex_generator_a5a0a6eb710a6b87c5dd8ea82b7a19dc4}{Latex\-Generator}, \hyperlink{class_man_generator_a5a0a6eb710a6b87c5dd8ea82b7a19dc4}{Man\-Generator} e \hyperlink{class_r_t_f_generator_a5a0a6eb710a6b87c5dd8ea82b7a19dc4}{R\-T\-F\-Generator}.
+
+\hypertarget{class_base_output_doc_interface_a1530746d5ac62d305ff693f0eb2bf90a}{\index{Base\-Output\-Doc\-Interface@{Base\-Output\-Doc\-Interface}!end\-Emphasis@{end\-Emphasis}}
+\index{end\-Emphasis@{end\-Emphasis}!BaseOutputDocInterface@{Base\-Output\-Doc\-Interface}}
+\subsubsection[{end\-Emphasis}]{\setlength{\rightskip}{0pt plus 5cm}virtual void end\-Emphasis (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_base_output_doc_interface_a1530746d5ac62d305ff693f0eb2bf90a}
+Ends a section of text displayed in italic. 
+
+Implementado em \hyperlink{class_output_list_a5c4adfb425dee0e192e5b606eab0114a}{Output\-List}, \hyperlink{class_html_generator_a5c4adfb425dee0e192e5b606eab0114a}{Html\-Generator}, \hyperlink{class_latex_generator_a5c4adfb425dee0e192e5b606eab0114a}{Latex\-Generator}, \hyperlink{class_man_generator_a5c4adfb425dee0e192e5b606eab0114a}{Man\-Generator} e \hyperlink{class_r_t_f_generator_a5c4adfb425dee0e192e5b606eab0114a}{R\-T\-F\-Generator}.
+
+\hypertarget{class_base_output_doc_interface_a463c695844e8137b388af6e1bbafc19e}{\index{Base\-Output\-Doc\-Interface@{Base\-Output\-Doc\-Interface}!end\-Html\-Link@{end\-Html\-Link}}
+\index{end\-Html\-Link@{end\-Html\-Link}!BaseOutputDocInterface@{Base\-Output\-Doc\-Interface}}
+\subsubsection[{end\-Html\-Link}]{\setlength{\rightskip}{0pt plus 5cm}virtual void end\-Html\-Link (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_base_output_doc_interface_a463c695844e8137b388af6e1bbafc19e}
+Ends a link started by \hyperlink{class_base_output_doc_interface_ae514e80c628faa0b5ee62a50185f2397}{start\-Html\-Link()}. 
+
+Implementado em \hyperlink{class_html_generator_ac2ba450d319270e186e436167c8609ce}{Html\-Generator}, \hyperlink{class_output_list_ac2ba450d319270e186e436167c8609ce}{Output\-List}, \hyperlink{class_latex_generator_ac2ba450d319270e186e436167c8609ce}{Latex\-Generator}, \hyperlink{class_man_generator_ac2ba450d319270e186e436167c8609ce}{Man\-Generator} e \hyperlink{class_r_t_f_generator_ac2ba450d319270e186e436167c8609ce}{R\-T\-F\-Generator}.
+
+\hypertarget{class_base_output_doc_interface_a818d290261244e40e8c70562a7198156}{\index{Base\-Output\-Doc\-Interface@{Base\-Output\-Doc\-Interface}!end\-Item\-List@{end\-Item\-List}}
+\index{end\-Item\-List@{end\-Item\-List}!BaseOutputDocInterface@{Base\-Output\-Doc\-Interface}}
+\subsubsection[{end\-Item\-List}]{\setlength{\rightskip}{0pt plus 5cm}virtual void end\-Item\-List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_base_output_doc_interface_a818d290261244e40e8c70562a7198156}
+Ends a bullet list\-: e.\-g. {\ttfamily $<$/ul$>$} in html 
+
+Implementado em \hyperlink{class_html_generator_ab11dc69249cdab99802fe788b9da43d5}{Html\-Generator}, \hyperlink{class_output_list_ab11dc69249cdab99802fe788b9da43d5}{Output\-List}, \hyperlink{class_latex_generator_ab11dc69249cdab99802fe788b9da43d5}{Latex\-Generator}, \hyperlink{class_man_generator_ab11dc69249cdab99802fe788b9da43d5}{Man\-Generator} e \hyperlink{class_r_t_f_generator_ab11dc69249cdab99802fe788b9da43d5}{R\-T\-F\-Generator}.
+
+\hypertarget{class_base_output_doc_interface_a8161fe76c2c66d47d0eb078be885bec7}{\index{Base\-Output\-Doc\-Interface@{Base\-Output\-Doc\-Interface}!end\-Item\-List\-Item@{end\-Item\-List\-Item}}
+\index{end\-Item\-List\-Item@{end\-Item\-List\-Item}!BaseOutputDocInterface@{Base\-Output\-Doc\-Interface}}
+\subsubsection[{end\-Item\-List\-Item}]{\setlength{\rightskip}{0pt plus 5cm}virtual void end\-Item\-List\-Item (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_base_output_doc_interface_a8161fe76c2c66d47d0eb078be885bec7}
+Writes a list item for a bullet or enumerated list\-: e.\-g. {\ttfamily $<$/li$>$} in html 
+
+Implementado em \hyperlink{class_output_list_a61efca8a19608566df04a45d16e88449}{Output\-List}, \hyperlink{class_html_generator_a61efca8a19608566df04a45d16e88449}{Html\-Generator}, \hyperlink{class_man_generator_a61efca8a19608566df04a45d16e88449}{Man\-Generator}, \hyperlink{class_latex_generator_a61efca8a19608566df04a45d16e88449}{Latex\-Generator} e \hyperlink{class_r_t_f_generator_a61efca8a19608566df04a45d16e88449}{R\-T\-F\-Generator}.
+
+\hypertarget{class_base_output_doc_interface_a9a97d4c8fb4e8ac91125f9ff2718d83d}{\index{Base\-Output\-Doc\-Interface@{Base\-Output\-Doc\-Interface}!end\-Paragraph@{end\-Paragraph}}
+\index{end\-Paragraph@{end\-Paragraph}!BaseOutputDocInterface@{Base\-Output\-Doc\-Interface}}
+\subsubsection[{end\-Paragraph}]{\setlength{\rightskip}{0pt plus 5cm}virtual void end\-Paragraph (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_base_output_doc_interface_a9a97d4c8fb4e8ac91125f9ff2718d83d}
+Ends a paragraph 
+
+Implementado em \hyperlink{class_html_generator_a3076b52ebe72e4b56c232817cf2a16f0}{Html\-Generator}, \hyperlink{class_output_list_a3076b52ebe72e4b56c232817cf2a16f0}{Output\-List}, \hyperlink{class_latex_generator_a3076b52ebe72e4b56c232817cf2a16f0}{Latex\-Generator}, \hyperlink{class_man_generator_a3076b52ebe72e4b56c232817cf2a16f0}{Man\-Generator} e \hyperlink{class_r_t_f_generator_a3076b52ebe72e4b56c232817cf2a16f0}{R\-T\-F\-Generator}.
+
+\hypertarget{class_base_output_doc_interface_a201cdc35ada3fac3f2f72adcc43308b8}{\index{Base\-Output\-Doc\-Interface@{Base\-Output\-Doc\-Interface}!end\-Typewriter@{end\-Typewriter}}
+\index{end\-Typewriter@{end\-Typewriter}!BaseOutputDocInterface@{Base\-Output\-Doc\-Interface}}
+\subsubsection[{end\-Typewriter}]{\setlength{\rightskip}{0pt plus 5cm}virtual void end\-Typewriter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_base_output_doc_interface_a201cdc35ada3fac3f2f72adcc43308b8}
+End a section of text displayed in typewriter style. 
+
+Implementado em \hyperlink{class_output_list_acb220673316232acd7d1050553dafaf6}{Output\-List}, \hyperlink{class_html_generator_acb220673316232acd7d1050553dafaf6}{Html\-Generator}, \hyperlink{class_latex_generator_acb220673316232acd7d1050553dafaf6}{Latex\-Generator}, \hyperlink{class_man_generator_acb220673316232acd7d1050553dafaf6}{Man\-Generator} e \hyperlink{class_r_t_f_generator_acb220673316232acd7d1050553dafaf6}{R\-T\-F\-Generator}.
+
+\hypertarget{class_base_output_doc_interface_a9ad34c5f6672948732a87c4371d2e244}{\index{Base\-Output\-Doc\-Interface@{Base\-Output\-Doc\-Interface}!start\-Bold@{start\-Bold}}
+\index{start\-Bold@{start\-Bold}!BaseOutputDocInterface@{Base\-Output\-Doc\-Interface}}
+\subsubsection[{start\-Bold}]{\setlength{\rightskip}{0pt plus 5cm}virtual void start\-Bold (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_base_output_doc_interface_a9ad34c5f6672948732a87c4371d2e244}
+Changes the text font to bold face. The bold section ends with \hyperlink{class_base_output_doc_interface_a593e371dace7c16866f8bd028905096d}{end\-Bold()} 
+
+Implementado em \hyperlink{class_output_list_a6f230bea6c80b0a1847a9608c88fd45a}{Output\-List}, \hyperlink{class_html_generator_a6f230bea6c80b0a1847a9608c88fd45a}{Html\-Generator}, \hyperlink{class_latex_generator_a6f230bea6c80b0a1847a9608c88fd45a}{Latex\-Generator}, \hyperlink{class_man_generator_a6f230bea6c80b0a1847a9608c88fd45a}{Man\-Generator} e \hyperlink{class_r_t_f_generator_a6f230bea6c80b0a1847a9608c88fd45a}{R\-T\-F\-Generator}.
+
+\hypertarget{class_base_output_doc_interface_a649cecde411897cea447f103795d8c64}{\index{Base\-Output\-Doc\-Interface@{Base\-Output\-Doc\-Interface}!start\-Code\-Fragment@{start\-Code\-Fragment}}
+\index{start\-Code\-Fragment@{start\-Code\-Fragment}!BaseOutputDocInterface@{Base\-Output\-Doc\-Interface}}
+\subsubsection[{start\-Code\-Fragment}]{\setlength{\rightskip}{0pt plus 5cm}virtual void start\-Code\-Fragment (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_base_output_doc_interface_a649cecde411897cea447f103795d8c64}
+Starts a source code fragment. The fragment will be fed to the code parser (see \hyperlink{code_8h_source}{code.\-h}) for syntax highlighting and cross-\/referencing. The fragment ends by a call to \hyperlink{class_base_output_doc_interface_a6d0e9c89b22affd8574d3804393d8fa5}{end\-Code\-Fragment()} 
+
+Implementado em \hyperlink{class_output_list_a631953fed580c2b82e39426604c928ac}{Output\-List}, \hyperlink{class_html_generator_a631953fed580c2b82e39426604c928ac}{Html\-Generator}, \hyperlink{class_latex_generator_a631953fed580c2b82e39426604c928ac}{Latex\-Generator}, \hyperlink{class_man_generator_a631953fed580c2b82e39426604c928ac}{Man\-Generator} e \hyperlink{class_r_t_f_generator_a631953fed580c2b82e39426604c928ac}{R\-T\-F\-Generator}.
+
+\hypertarget{class_base_output_doc_interface_a5392dc059a26e9c650ffee7d28636f74}{\index{Base\-Output\-Doc\-Interface@{Base\-Output\-Doc\-Interface}!start\-Desc\-Item@{start\-Desc\-Item}}
+\index{start\-Desc\-Item@{start\-Desc\-Item}!BaseOutputDocInterface@{Base\-Output\-Doc\-Interface}}
+\subsubsection[{start\-Desc\-Item}]{\setlength{\rightskip}{0pt plus 5cm}virtual void start\-Desc\-Item (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_base_output_doc_interface_a5392dc059a26e9c650ffee7d28636f74}
+Starts an item of a description list\-: e.\-g. {\ttfamily $<$dt$>$} in H\-T\-M\-L. 
+
+Implementado em \hyperlink{class_output_list_ab8a6797fe2e4cb968a4c13eea7c4c968}{Output\-List}, \hyperlink{class_html_generator_ab8a6797fe2e4cb968a4c13eea7c4c968}{Html\-Generator}, \hyperlink{class_latex_generator_ab8a6797fe2e4cb968a4c13eea7c4c968}{Latex\-Generator}, \hyperlink{class_man_generator_ab8a6797fe2e4cb968a4c13eea7c4c968}{Man\-Generator} e \hyperlink{class_r_t_f_generator_ab8a6797fe2e4cb968a4c13eea7c4c968}{R\-T\-F\-Generator}.
+
+\hypertarget{class_base_output_doc_interface_a90167ae571c0685acd7934fde582ca7b}{\index{Base\-Output\-Doc\-Interface@{Base\-Output\-Doc\-Interface}!start\-Description@{start\-Description}}
+\index{start\-Description@{start\-Description}!BaseOutputDocInterface@{Base\-Output\-Doc\-Interface}}
+\subsubsection[{start\-Description}]{\setlength{\rightskip}{0pt plus 5cm}virtual void start\-Description (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_base_output_doc_interface_a90167ae571c0685acd7934fde582ca7b}
+Starts a description list\-: e.\-g. {\ttfamily $<$dl$>$} in H\-T\-M\-L Items are surrounded by \hyperlink{class_base_output_doc_interface_a5392dc059a26e9c650ffee7d28636f74}{start\-Desc\-Item()} and \hyperlink{class_base_output_doc_interface_ae9e2fe1d39b02fcc5a682ace36d7eafa}{end\-Desc\-Item()} 
+
+Implementado em \hyperlink{class_output_list_ae87205938a124b2eac0d798631d4e5e6}{Output\-List}, \hyperlink{class_html_generator_ae87205938a124b2eac0d798631d4e5e6}{Html\-Generator}, \hyperlink{class_latex_generator_ae87205938a124b2eac0d798631d4e5e6}{Latex\-Generator}, \hyperlink{class_man_generator_ae87205938a124b2eac0d798631d4e5e6}{Man\-Generator} e \hyperlink{class_r_t_f_generator_ae87205938a124b2eac0d798631d4e5e6}{R\-T\-F\-Generator}.
+
+\hypertarget{class_base_output_doc_interface_afa6a6472913a05d8524804a27aebb56c}{\index{Base\-Output\-Doc\-Interface@{Base\-Output\-Doc\-Interface}!start\-Emphasis@{start\-Emphasis}}
+\index{start\-Emphasis@{start\-Emphasis}!BaseOutputDocInterface@{Base\-Output\-Doc\-Interface}}
+\subsubsection[{start\-Emphasis}]{\setlength{\rightskip}{0pt plus 5cm}virtual void start\-Emphasis (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_base_output_doc_interface_afa6a6472913a05d8524804a27aebb56c}
+Changes the text font to italic. The italic section ends with \hyperlink{class_base_output_doc_interface_a1530746d5ac62d305ff693f0eb2bf90a}{end\-Emphasis()} 
+
+Implementado em \hyperlink{class_output_list_ab2f79d1f1a30e329f7ada3e51c04917e}{Output\-List}, \hyperlink{class_html_generator_ab2f79d1f1a30e329f7ada3e51c04917e}{Html\-Generator}, \hyperlink{class_latex_generator_ab2f79d1f1a30e329f7ada3e51c04917e}{Latex\-Generator}, \hyperlink{class_man_generator_ab2f79d1f1a30e329f7ada3e51c04917e}{Man\-Generator} e \hyperlink{class_r_t_f_generator_ab2f79d1f1a30e329f7ada3e51c04917e}{R\-T\-F\-Generator}.
+
+\hypertarget{class_base_output_doc_interface_ae514e80c628faa0b5ee62a50185f2397}{\index{Base\-Output\-Doc\-Interface@{Base\-Output\-Doc\-Interface}!start\-Html\-Link@{start\-Html\-Link}}
+\index{start\-Html\-Link@{start\-Html\-Link}!BaseOutputDocInterface@{Base\-Output\-Doc\-Interface}}
+\subsubsection[{start\-Html\-Link}]{\setlength{\rightskip}{0pt plus 5cm}virtual void start\-Html\-Link (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{url}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_base_output_doc_interface_ae514e80c628faa0b5ee62a50185f2397}
+Starts a (link to an) \hyperlink{struct_u_r_l}{U\-R\-L} found in the documentation. 
+\begin{DoxyParams}{Parâmetros}
+{\em url} & The \hyperlink{struct_u_r_l}{U\-R\-L} to link to. \\
+\hline
+\end{DoxyParams}
+
+
+Implementado em \hyperlink{class_html_generator_a0746b9c06743e1d4fe527b8317457da1}{Html\-Generator}, \hyperlink{class_output_list_a0746b9c06743e1d4fe527b8317457da1}{Output\-List}, \hyperlink{class_latex_generator_a0746b9c06743e1d4fe527b8317457da1}{Latex\-Generator}, \hyperlink{class_man_generator_a0746b9c06743e1d4fe527b8317457da1}{Man\-Generator} e \hyperlink{class_r_t_f_generator_a0746b9c06743e1d4fe527b8317457da1}{R\-T\-F\-Generator}.
+
+\hypertarget{class_base_output_doc_interface_a432e618b3c8820e00496c6b242947e72}{\index{Base\-Output\-Doc\-Interface@{Base\-Output\-Doc\-Interface}!start\-Item\-List@{start\-Item\-List}}
+\index{start\-Item\-List@{start\-Item\-List}!BaseOutputDocInterface@{Base\-Output\-Doc\-Interface}}
+\subsubsection[{start\-Item\-List}]{\setlength{\rightskip}{0pt plus 5cm}virtual void start\-Item\-List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_base_output_doc_interface_a432e618b3c8820e00496c6b242947e72}
+Start of a bullet list\-: e.\-g. {\ttfamily $<$ul$>$} in html. \hyperlink{class_base_output_doc_interface_a6cfe1cc2a5fa5cdb1eea280df003903a}{start\-Item\-List\-Item()} is Used for the bullet items. 
+
+Implementado em \hyperlink{class_html_generator_af2a17ac8deb6919dda56ae5107ea1529}{Html\-Generator}, \hyperlink{class_output_list_af2a17ac8deb6919dda56ae5107ea1529}{Output\-List}, \hyperlink{class_latex_generator_af2a17ac8deb6919dda56ae5107ea1529}{Latex\-Generator}, \hyperlink{class_man_generator_af2a17ac8deb6919dda56ae5107ea1529}{Man\-Generator} e \hyperlink{class_r_t_f_generator_af2a17ac8deb6919dda56ae5107ea1529}{R\-T\-F\-Generator}.
+
+\hypertarget{class_base_output_doc_interface_a6cfe1cc2a5fa5cdb1eea280df003903a}{\index{Base\-Output\-Doc\-Interface@{Base\-Output\-Doc\-Interface}!start\-Item\-List\-Item@{start\-Item\-List\-Item}}
+\index{start\-Item\-List\-Item@{start\-Item\-List\-Item}!BaseOutputDocInterface@{Base\-Output\-Doc\-Interface}}
+\subsubsection[{start\-Item\-List\-Item}]{\setlength{\rightskip}{0pt plus 5cm}virtual void start\-Item\-List\-Item (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_base_output_doc_interface_a6cfe1cc2a5fa5cdb1eea280df003903a}
+Writes a list item for a bullet or enumerated list\-: e.\-g. {\ttfamily $<$li$>$} in html 
+
+Implementado em \hyperlink{class_output_list_ab4ab0e8996b14723e45e955fe68f03bc}{Output\-List}, \hyperlink{class_html_generator_ab4ab0e8996b14723e45e955fe68f03bc}{Html\-Generator}, \hyperlink{class_man_generator_ab4ab0e8996b14723e45e955fe68f03bc}{Man\-Generator}, \hyperlink{class_latex_generator_ab4ab0e8996b14723e45e955fe68f03bc}{Latex\-Generator} e \hyperlink{class_r_t_f_generator_ab4ab0e8996b14723e45e955fe68f03bc}{R\-T\-F\-Generator}.
+
+\hypertarget{class_base_output_doc_interface_a4b8b270f90567b9201c44a6ad2ad206f}{\index{Base\-Output\-Doc\-Interface@{Base\-Output\-Doc\-Interface}!start\-Paragraph@{start\-Paragraph}}
+\index{start\-Paragraph@{start\-Paragraph}!BaseOutputDocInterface@{Base\-Output\-Doc\-Interface}}
+\subsubsection[{start\-Paragraph}]{\setlength{\rightskip}{0pt plus 5cm}virtual void start\-Paragraph (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_base_output_doc_interface_a4b8b270f90567b9201c44a6ad2ad206f}
+Starts a new paragraph
+
+Starts a new paragraph 
+
+Implementado em \hyperlink{class_html_generator_af7f590b00ecbe6117ddc09f0016df0ec}{Html\-Generator}, \hyperlink{class_output_list_af7f590b00ecbe6117ddc09f0016df0ec}{Output\-List}, \hyperlink{class_latex_generator_af7f590b00ecbe6117ddc09f0016df0ec}{Latex\-Generator}, \hyperlink{class_man_generator_af7f590b00ecbe6117ddc09f0016df0ec}{Man\-Generator} e \hyperlink{class_r_t_f_generator_af7f590b00ecbe6117ddc09f0016df0ec}{R\-T\-F\-Generator}.
+
+\hypertarget{class_base_output_doc_interface_ae241cdb69ca06cd0a539dd8b8a0a419f}{\index{Base\-Output\-Doc\-Interface@{Base\-Output\-Doc\-Interface}!start\-Typewriter@{start\-Typewriter}}
+\index{start\-Typewriter@{start\-Typewriter}!BaseOutputDocInterface@{Base\-Output\-Doc\-Interface}}
+\subsubsection[{start\-Typewriter}]{\setlength{\rightskip}{0pt plus 5cm}virtual void start\-Typewriter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_base_output_doc_interface_ae241cdb69ca06cd0a539dd8b8a0a419f}
+Changes the text font to fixed size. The section ends with \hyperlink{class_base_output_doc_interface_a201cdc35ada3fac3f2f72adcc43308b8}{end\-Typewriter()} 
+
+Implementado em \hyperlink{class_output_list_a2e60bda5e249554e2fc264aa32d9d93e}{Output\-List}, \hyperlink{class_html_generator_a2e60bda5e249554e2fc264aa32d9d93e}{Html\-Generator}, \hyperlink{class_latex_generator_a2e60bda5e249554e2fc264aa32d9d93e}{Latex\-Generator}, \hyperlink{class_man_generator_a2e60bda5e249554e2fc264aa32d9d93e}{Man\-Generator} e \hyperlink{class_r_t_f_generator_a2e60bda5e249554e2fc264aa32d9d93e}{R\-T\-F\-Generator}.
+
+\hypertarget{class_base_output_doc_interface_a936e81608db3018f2bce9cd3ee58fdcd}{\index{Base\-Output\-Doc\-Interface@{Base\-Output\-Doc\-Interface}!write\-Char@{write\-Char}}
+\index{write\-Char@{write\-Char}!BaseOutputDocInterface@{Base\-Output\-Doc\-Interface}}
+\subsubsection[{write\-Char}]{\setlength{\rightskip}{0pt plus 5cm}virtual void write\-Char (
+\begin{DoxyParamCaption}
+\item[{char}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_base_output_doc_interface_a936e81608db3018f2bce9cd3ee58fdcd}
+Writes a single A\-S\-C\-I\-I character to the output. Converts characters that have a special meaning. 
+
+Implementado em \hyperlink{class_output_list_a0031a638b9159c2d16d2988da4b901ab}{Output\-List}, \hyperlink{class_html_generator_a0031a638b9159c2d16d2988da4b901ab}{Html\-Generator}, \hyperlink{class_latex_generator_a0031a638b9159c2d16d2988da4b901ab}{Latex\-Generator}, \hyperlink{class_man_generator_a0031a638b9159c2d16d2988da4b901ab}{Man\-Generator} e \hyperlink{class_r_t_f_generator_a0031a638b9159c2d16d2988da4b901ab}{R\-T\-F\-Generator}.
+
+\hypertarget{class_base_output_doc_interface_aa551443db6cf9e4f51bc12c9d753f9c3}{\index{Base\-Output\-Doc\-Interface@{Base\-Output\-Doc\-Interface}!write\-Object\-Link@{write\-Object\-Link}}
+\index{write\-Object\-Link@{write\-Object\-Link}!BaseOutputDocInterface@{Base\-Output\-Doc\-Interface}}
+\subsubsection[{write\-Object\-Link}]{\setlength{\rightskip}{0pt plus 5cm}virtual void write\-Object\-Link (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ref, }
+\item[{const char $\ast$}]{file, }
+\item[{const char $\ast$}]{anchor, }
+\item[{const char $\ast$}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_base_output_doc_interface_aa551443db6cf9e4f51bc12c9d753f9c3}
+Writes a link to an object in the documentation. 
+\begin{DoxyParams}{Parâmetros}
+{\em ref} & If this is non-\/zero, the object is to be found in an external documentation file. \\
+\hline
+{\em file} & The file in which the object is located. \\
+\hline
+{\em anchor} & The anchor uniquely identifying the object within the file. \\
+\hline
+{\em name} & The text to display as a placeholder for the link. \\
+\hline
+\end{DoxyParams}
+
+
+Implementado em \hyperlink{class_html_generator_a78d7e4718290246f77043de949c83081}{Html\-Generator}, \hyperlink{class_output_list_a78d7e4718290246f77043de949c83081}{Output\-List}, \hyperlink{class_latex_generator_a78d7e4718290246f77043de949c83081}{Latex\-Generator}, \hyperlink{class_man_generator_a78d7e4718290246f77043de949c83081}{Man\-Generator} e \hyperlink{class_r_t_f_generator_a78d7e4718290246f77043de949c83081}{R\-T\-F\-Generator}.
+
+\hypertarget{class_base_output_doc_interface_a5f36f83289e2b6137e9086998c5fb883}{\index{Base\-Output\-Doc\-Interface@{Base\-Output\-Doc\-Interface}!write\-Ruler@{write\-Ruler}}
+\index{write\-Ruler@{write\-Ruler}!BaseOutputDocInterface@{Base\-Output\-Doc\-Interface}}
+\subsubsection[{write\-Ruler}]{\setlength{\rightskip}{0pt plus 5cm}virtual void write\-Ruler (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_base_output_doc_interface_a5f36f83289e2b6137e9086998c5fb883}
+Writes a horizontal ruler to the output 
+
+Implementado em \hyperlink{class_output_list_a9fd641c75c5b5ee59a974c3b476584c2}{Output\-List}, \hyperlink{class_html_generator_a9fd641c75c5b5ee59a974c3b476584c2}{Html\-Generator}, \hyperlink{class_latex_generator_a9fd641c75c5b5ee59a974c3b476584c2}{Latex\-Generator}, \hyperlink{class_man_generator_a9fd641c75c5b5ee59a974c3b476584c2}{Man\-Generator} e \hyperlink{class_r_t_f_generator_a9fd641c75c5b5ee59a974c3b476584c2}{R\-T\-F\-Generator}.
+
+\hypertarget{class_base_output_doc_interface_a78a005d8c0329ee60cd1994eb4afc58b}{\index{Base\-Output\-Doc\-Interface@{Base\-Output\-Doc\-Interface}!write\-String@{write\-String}}
+\index{write\-String@{write\-String}!BaseOutputDocInterface@{Base\-Output\-Doc\-Interface}}
+\subsubsection[{write\-String}]{\setlength{\rightskip}{0pt plus 5cm}virtual void write\-String (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{text}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_base_output_doc_interface_a78a005d8c0329ee60cd1994eb4afc58b}
+Writes an A\-S\-C\-I\-I string to the output, {\itshape without} converting special characters. 
+
+Implementado em \hyperlink{class_html_generator_a02588a2412fdda1d3d31066be2802913}{Html\-Generator}, \hyperlink{class_output_list_a02588a2412fdda1d3d31066be2802913}{Output\-List}, \hyperlink{class_latex_generator_a02588a2412fdda1d3d31066be2802913}{Latex\-Generator}, \hyperlink{class_man_generator_a02588a2412fdda1d3d31066be2802913}{Man\-Generator} e \hyperlink{class_r_t_f_generator_a02588a2412fdda1d3d31066be2802913}{R\-T\-F\-Generator}.
+
+
+
+A documentação para esta classe foi gerada a partir do seguinte ficheiro\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/src/outputgen.\-h\end{DoxyCompactItemize}

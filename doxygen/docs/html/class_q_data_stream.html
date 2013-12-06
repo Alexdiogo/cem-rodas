@@ -1,0 +1,1186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>CEM RODAS: Referência à classe QDataStream</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">CEM RODAS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Localizar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="modules.html"><span>Módulos</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Estruturas&#160;de&#160;dados</span></a></li>
+      <li><a href="files.html"><span>Ficheiros</span></a></li>
+      <li><a href="examples.html"><span>Exemplos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Localizar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Estruturas&#160;de&#160;dados</span></a></li>
+      <li><a href="classes.html"><span>Índice&#160;das&#160;estruturas&#160;de&#160;dados</span></a></li>
+      <li><a href="hierarchy.html"><span>Hierarquia&#160;de&#160;classes</span></a></li>
+      <li><a href="functions.html"><span>Campos&#160;de&#160;dados</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tudo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Estruturas de dados</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Ficheiros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variáveis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Definições de tipos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerações</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Valores da enumeração</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Amigos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Grupos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Tipos Públicos</a> &#124;
+<a href="#pub-methods">Membros públicos</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência à classe QDataStream</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>The <a class="el" href="class_q_data_stream.html" title="The QDataStream class provides serialization of binary data to a QIODevice. ">QDataStream</a> class provides serialization of binary data to a <a class="el" href="class_q_i_o_device.html" title="The QIODevice class is the base class of I/O devices. ">QIODevice</a>.  
+ <a href="class_q_data_stream.html#details">Mais...</a></p>
+
+<p><code>#include &lt;<a class="el" href="qdatastream_8h_source.html">qdatastream.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Tipos Públicos</h2></td></tr>
+<tr class="memitem:aaeb92d42f5a6e27b8ba19f18d69d142b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>ByteOrder</b> { <b>BigEndian</b>, 
+<b>LittleEndian</b>
+ }</td></tr>
+<tr class="separator:aaeb92d42f5a6e27b8ba19f18d69d142b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Membros públicos</h2></td></tr>
+<tr class="memitem:a1d21554b83a077e62f0cbfdae8cfb5fa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_data_stream.html#a1d21554b83a077e62f0cbfdae8cfb5fa">QDataStream</a> ()</td></tr>
+<tr class="separator:a1d21554b83a077e62f0cbfdae8cfb5fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed832d35cad653e3665b62592fa8c635"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_data_stream.html#aed832d35cad653e3665b62592fa8c635">QDataStream</a> (<a class="el" href="class_q_i_o_device.html">QIODevice</a> *)</td></tr>
+<tr class="separator:aed832d35cad653e3665b62592fa8c635"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a846be3264e4bc919979a64d2edd6ed9d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_data_stream.html#a846be3264e4bc919979a64d2edd6ed9d">QDataStream</a> (<a class="el" href="class_q_array.html">QByteArray</a>, int mode)</td></tr>
+<tr class="separator:a846be3264e4bc919979a64d2edd6ed9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25e9f82f003df6630979901515738a0b"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_data_stream.html#a25e9f82f003df6630979901515738a0b">~QDataStream</a> ()</td></tr>
+<tr class="separator:a25e9f82f003df6630979901515738a0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18846d79bf14c21d749e27eef80bb6a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_i_o_device.html">QIODevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_data_stream.html#a18846d79bf14c21d749e27eef80bb6a0">device</a> () const </td></tr>
+<tr class="separator:a18846d79bf14c21d749e27eef80bb6a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98230cf62c8603a7d0706e3044030f1b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_data_stream.html#a98230cf62c8603a7d0706e3044030f1b">setDevice</a> (<a class="el" href="class_q_i_o_device.html">QIODevice</a> *)</td></tr>
+<tr class="separator:a98230cf62c8603a7d0706e3044030f1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6b00e03249023ce66f02861f5a6ffae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_data_stream.html#aa6b00e03249023ce66f02861f5a6ffae">unsetDevice</a> ()</td></tr>
+<tr class="separator:aa6b00e03249023ce66f02861f5a6ffae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11cbf4ba82ee565cb9eef28b972bf145"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_data_stream.html#a11cbf4ba82ee565cb9eef28b972bf145">atEnd</a> () const </td></tr>
+<tr class="separator:a11cbf4ba82ee565cb9eef28b972bf145"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4bcdb9a2c4adf5c3d247a711a7142cc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_data_stream.html#ac4bcdb9a2c4adf5c3d247a711a7142cc">eof</a> () const </td></tr>
+<tr class="separator:ac4bcdb9a2c4adf5c3d247a711a7142cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fe92c42a87f761c0682da5c613d75d6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_data_stream.html#a8fe92c42a87f761c0682da5c613d75d6">byteOrder</a> () const </td></tr>
+<tr class="separator:a8fe92c42a87f761c0682da5c613d75d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f3acaf002c79fda1af888abbf4dcf8e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_data_stream.html#a6f3acaf002c79fda1af888abbf4dcf8e">setByteOrder</a> (int)</td></tr>
+<tr class="separator:a6f3acaf002c79fda1af888abbf4dcf8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad86c3cb0ae4080139e0ee9376d53215f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_data_stream.html#ad86c3cb0ae4080139e0ee9376d53215f">isPrintableData</a> () const </td></tr>
+<tr class="separator:ad86c3cb0ae4080139e0ee9376d53215f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52c59e5985c0651783e12f7e3edcffe7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_data_stream.html#a52c59e5985c0651783e12f7e3edcffe7">setPrintableData</a> (bool)</td></tr>
+<tr class="separator:a52c59e5985c0651783e12f7e3edcffe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5f30d51d4a86222cd00a2e05826a7db"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_data_stream.html#aa5f30d51d4a86222cd00a2e05826a7db">version</a> () const </td></tr>
+<tr class="separator:aa5f30d51d4a86222cd00a2e05826a7db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a652e7f35c2c3a49cf179fadd55ed16c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_data_stream.html#a652e7f35c2c3a49cf179fadd55ed16c4">setVersion</a> (int)</td></tr>
+<tr class="separator:a652e7f35c2c3a49cf179fadd55ed16c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a918b02e460dd465f3ec86aea51ca59a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_data_stream.html">QDataStream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_data_stream.html#a918b02e460dd465f3ec86aea51ca59a1">operator&gt;&gt;</a> (Q_INT8 &amp;i)</td></tr>
+<tr class="separator:a918b02e460dd465f3ec86aea51ca59a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66919f08c4a4ec99f8dd8ee49e4bd69c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_data_stream.html">QDataStream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_data_stream.html#a66919f08c4a4ec99f8dd8ee49e4bd69c">operator&gt;&gt;</a> (Q_UINT8 &amp;i)</td></tr>
+<tr class="separator:a66919f08c4a4ec99f8dd8ee49e4bd69c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa99d896eebd84b4f50c1a1c4e5147d43"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_data_stream.html">QDataStream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_data_stream.html#aa99d896eebd84b4f50c1a1c4e5147d43">operator&gt;&gt;</a> (Q_INT16 &amp;i)</td></tr>
+<tr class="separator:aa99d896eebd84b4f50c1a1c4e5147d43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf2f3045e740e2e97b7e6be0e26d94da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_data_stream.html">QDataStream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_data_stream.html#acf2f3045e740e2e97b7e6be0e26d94da">operator&gt;&gt;</a> (Q_UINT16 &amp;i)</td></tr>
+<tr class="separator:acf2f3045e740e2e97b7e6be0e26d94da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc29145913bb3865cf02f74dd417504f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_data_stream.html">QDataStream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_data_stream.html#adc29145913bb3865cf02f74dd417504f">operator&gt;&gt;</a> (Q_INT32 &amp;i)</td></tr>
+<tr class="separator:adc29145913bb3865cf02f74dd417504f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58808e7d7474ec9df2a81b96cb944fba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_data_stream.html">QDataStream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_data_stream.html#a58808e7d7474ec9df2a81b96cb944fba">operator&gt;&gt;</a> (Q_UINT32 &amp;i)</td></tr>
+<tr class="separator:a58808e7d7474ec9df2a81b96cb944fba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9754871ea12971a697b650ea0fbdc7f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_data_stream.html">QDataStream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_data_stream.html#af9754871ea12971a697b650ea0fbdc7f">operator&gt;&gt;</a> (Q_INT64 &amp;i)</td></tr>
+<tr class="separator:af9754871ea12971a697b650ea0fbdc7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8959500642c3751593d6654e2f8506d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_data_stream.html">QDataStream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_data_stream.html#af8959500642c3751593d6654e2f8506d">operator&gt;&gt;</a> (Q_UINT64 &amp;i)</td></tr>
+<tr class="separator:af8959500642c3751593d6654e2f8506d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a400c7acc10a87b0283b5d0a4fb438f5e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_data_stream.html">QDataStream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_data_stream.html#a400c7acc10a87b0283b5d0a4fb438f5e">operator&gt;&gt;</a> (float &amp;f)</td></tr>
+<tr class="separator:a400c7acc10a87b0283b5d0a4fb438f5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a552731f71d8528a34d98ae48ad4915a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_data_stream.html">QDataStream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_data_stream.html#a552731f71d8528a34d98ae48ad4915a1">operator&gt;&gt;</a> (double &amp;f)</td></tr>
+<tr class="separator:a552731f71d8528a34d98ae48ad4915a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b27f047be47212548986b8b6cd28635"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_data_stream.html">QDataStream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_data_stream.html#a7b27f047be47212548986b8b6cd28635">operator&gt;&gt;</a> (char *&amp;str)</td></tr>
+<tr class="separator:a7b27f047be47212548986b8b6cd28635"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38426efa1d04bf3cf11d63addec5c9bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_data_stream.html">QDataStream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_data_stream.html#a38426efa1d04bf3cf11d63addec5c9bd">operator&lt;&lt;</a> (Q_INT8 i)</td></tr>
+<tr class="separator:a38426efa1d04bf3cf11d63addec5c9bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a164a62a8bee152fd86a4d8269b6dda"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_data_stream.html">QDataStream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_data_stream.html#a9a164a62a8bee152fd86a4d8269b6dda">operator&lt;&lt;</a> (Q_UINT8 i)</td></tr>
+<tr class="separator:a9a164a62a8bee152fd86a4d8269b6dda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c67acaefeb1d08d1cc2aea62630b8af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_data_stream.html">QDataStream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_data_stream.html#a6c67acaefeb1d08d1cc2aea62630b8af">operator&lt;&lt;</a> (Q_INT16 i)</td></tr>
+<tr class="separator:a6c67acaefeb1d08d1cc2aea62630b8af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f155659247856fc65e54ba7e4a1293b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_data_stream.html">QDataStream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_data_stream.html#a9f155659247856fc65e54ba7e4a1293b">operator&lt;&lt;</a> (Q_UINT16 i)</td></tr>
+<tr class="separator:a9f155659247856fc65e54ba7e4a1293b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c268f6da624a7e70b47e23c7c45599f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_data_stream.html">QDataStream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_data_stream.html#a3c268f6da624a7e70b47e23c7c45599f">operator&lt;&lt;</a> (Q_INT32 i)</td></tr>
+<tr class="separator:a3c268f6da624a7e70b47e23c7c45599f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7665db836b2ca2e78c8f2e5bfdbb5416"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_data_stream.html">QDataStream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_data_stream.html#a7665db836b2ca2e78c8f2e5bfdbb5416">operator&lt;&lt;</a> (Q_UINT32 i)</td></tr>
+<tr class="separator:a7665db836b2ca2e78c8f2e5bfdbb5416"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe970586040db7d5b8fada0aab01ad44"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_data_stream.html">QDataStream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_data_stream.html#afe970586040db7d5b8fada0aab01ad44">operator&lt;&lt;</a> (Q_INT64 i)</td></tr>
+<tr class="separator:afe970586040db7d5b8fada0aab01ad44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6745eca11ccf5e8bf0ae45c46b8bd53f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_data_stream.html">QDataStream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_data_stream.html#a6745eca11ccf5e8bf0ae45c46b8bd53f">operator&lt;&lt;</a> (Q_UINT64 i)</td></tr>
+<tr class="separator:a6745eca11ccf5e8bf0ae45c46b8bd53f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace55e15063ffd570c3fefa496004a92b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_data_stream.html">QDataStream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_data_stream.html#ace55e15063ffd570c3fefa496004a92b">operator&lt;&lt;</a> (float f)</td></tr>
+<tr class="separator:ace55e15063ffd570c3fefa496004a92b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37f7b2c773dce5f323307810635e2509"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_data_stream.html">QDataStream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_data_stream.html#a37f7b2c773dce5f323307810635e2509">operator&lt;&lt;</a> (double f)</td></tr>
+<tr class="separator:a37f7b2c773dce5f323307810635e2509"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d825aede8e30bcfad1a6b0e292d081b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_data_stream.html">QDataStream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_data_stream.html#a3d825aede8e30bcfad1a6b0e292d081b">operator&lt;&lt;</a> (const char *str)</td></tr>
+<tr class="separator:a3d825aede8e30bcfad1a6b0e292d081b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87443ae226d3d7acbf2a0bcf6cd2756f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_data_stream.html">QDataStream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_data_stream.html#a87443ae226d3d7acbf2a0bcf6cd2756f">readBytes</a> (char *&amp;, uint &amp;len)</td></tr>
+<tr class="separator:a87443ae226d3d7acbf2a0bcf6cd2756f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85549d56b50b92d4d67b879f6b0a33d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_data_stream.html">QDataStream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_data_stream.html#a85549d56b50b92d4d67b879f6b0a33d8">readRawBytes</a> (char *, uint len)</td></tr>
+<tr class="separator:a85549d56b50b92d4d67b879f6b0a33d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a858269202c641fccb177800cde17da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_data_stream.html">QDataStream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_data_stream.html#a0a858269202c641fccb177800cde17da">writeBytes</a> (const char *, uint len)</td></tr>
+<tr class="separator:a0a858269202c641fccb177800cde17da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fc63368a2c7f81540020dfa5227497d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_data_stream.html">QDataStream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_data_stream.html#a0fc63368a2c7f81540020dfa5227497d">writeRawBytes</a> (const char *, uint len)</td></tr>
+<tr class="separator:a0fc63368a2c7f81540020dfa5227497d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>The <a class="el" href="class_q_data_stream.html" title="The QDataStream class provides serialization of binary data to a QIODevice. ">QDataStream</a> class provides serialization of binary data to a <a class="el" href="class_q_i_o_device.html" title="The QIODevice class is the base class of I/O devices. ">QIODevice</a>. </p>
+<p><a class="el" href="class_a.html">A</a> data stream is a binary stream of encoded information which is 100% independent of the host computer operation system, CPU or byte order. <a class="el" href="class_a.html">A</a> stream that is written by a PC under DOS/Windows can be read by a Sun SPARC running Solaris.</p>
+<p>The <a class="el" href="class_q_data_stream.html" title="The QDataStream class provides serialization of binary data to a QIODevice. ">QDataStream</a> class implements serialization of primitive types, like <code>char</code>, <code>short</code>, <code>int</code>, <code>char*</code> etc. Serialization of more complex data is accomplished by breaking up the data into primitive units.</p>
+<p>The programmer can select which byte order to use when serializing data. The default setting is big endian (MSB first). Changing it to little endian breaks the portability (unless the reader also changes to little endian). We recommend keeping this setting unless you have special requirements.</p>
+<p><a class="el" href="class_a.html">A</a> data stream cooperates closely with a <a class="el" href="class_q_i_o_device.html" title="The QIODevice class is the base class of I/O devices. ">QIODevice</a>. <a class="el" href="class_a.html">A</a> <a class="el" href="class_q_i_o_device.html" title="The QIODevice class is the base class of I/O devices. ">QIODevice</a> represents an input/output medium one can read data from and write data to. The <a class="el" href="class_q_file.html" title="The QFile class is an I/O device that operates on files. ">QFile</a> class is an example of an IO device.</p>
+<p><a class="el" href="struct_example.html">Example</a> (write data to a stream): </p>
+<div class="fragment"><div class="line"><a class="code" href="class_q_file.html">QFile</a> f( <span class="stringliteral">&quot;file.dta&quot;</span> );</div>
+<div class="line">f.open( IO_WriteOnly );           <span class="comment">// open file for writing</span></div>
+<div class="line"><a class="code" href="class_q_data_stream.html">QDataStream</a> s( &amp;f );          <span class="comment">// serialize using f</span></div>
+<div class="line">s &lt;&lt; <span class="stringliteral">&quot;the answer is&quot;</span>;         <span class="comment">// serialize string</span></div>
+<div class="line">s &lt;&lt; (Q_INT32)42;             <span class="comment">// serialize integer</span></div>
+</div><!-- fragment --><p><a class="el" href="struct_example.html">Example</a> (read data from a stream): </p>
+<div class="fragment"><div class="line"><a class="code" href="class_q_file.html">QFile</a> f( <span class="stringliteral">&quot;file.dta&quot;</span> );</div>
+<div class="line">f.open( IO_ReadOnly );            <span class="comment">// open file for reading</span></div>
+<div class="line"><a class="code" href="class_q_data_stream.html">QDataStream</a> s( &amp;f );          <span class="comment">// serialize using f</span></div>
+<div class="line"><span class="keywordtype">char</span>   *str;</div>
+<div class="line">Q_INT32 a;</div>
+<div class="line">s &gt;&gt; str &gt;&gt; a;                <span class="comment">// &quot;the answer is&quot; and 42</span></div>
+<div class="line"><span class="keyword">delete</span> str;                   <span class="comment">// delete string</span></div>
+</div><!-- fragment --><p>In the last example, if you read into a <a class="el" href="class_q_string.html" title="The QString class provides an abstraction of Unicode text and the classic C null-terminated char arra...">QString</a> instead of a <code>char*</code> you do not have to delete it.</p>
+<p>Normally, each item written to the stream is written in a fixed binary format. For example, a <code>char*</code> is written as a 32-bit integer equal to the length of the string including the NUL byte, followed by all the characters of the string including the NUL byte. Similarly when reading a string, 4 bytes are read to create the 32-bit length value, then that many characters for the string including the NUL. For a complete description of all Qt types supporting data streaming see <a class="el" href="">Format of the QDataStream operators </a> .</p>
+<p>If you want a "parsing" input stream, see <a class="el" href="class_q_text_stream.html" title="The QTextStream class provides basic functions for reading and writing text using a QIODevice...">QTextStream</a>. If you just want the data to be human-readable to aid in debugging, you can set the data stream into printable data mode with <a class="el" href="class_q_data_stream.html#a52c59e5985c0651783e12f7e3edcffe7">setPrintableData()</a>. The data is then written slower, in a human readable bloated form that is sufficient for debugging.</p>
+<p>If you are producing a new binary data format, such as a file format for documents created by your application, you could use a <a class="el" href="class_q_data_stream.html" title="The QDataStream class provides serialization of binary data to a QIODevice. ">QDataStream</a> to write the data in a portable format. Typically, you would write a brief header containing a magic string and a version number to give yourself room for future expansion. For example:</p>
+<div class="fragment"><div class="line"><span class="comment">// Open the file.</span></div>
+<div class="line"><a class="code" href="class_q_file.html">QFile</a> f( <span class="stringliteral">&quot;file.xxx&quot;</span> );</div>
+<div class="line">f.open( IO_WriteOnly );</div>
+<div class="line"><a class="code" href="class_q_data_stream.html">QDataStream</a> s( &amp;f );</div>
+<div class="line"></div>
+<div class="line"><span class="comment">// Write a header with a &quot;magic number&quot; and a version</span></div>
+<div class="line">s &lt;&lt; 0xa0b0c0d0;</div>
+<div class="line">s &lt;&lt; 123;</div>
+<div class="line"></div>
+<div class="line"><span class="comment">// Write the data</span></div>
+<div class="line">s &lt;&lt; [lots of interesting data]</div>
+</div><!-- fragment --><p>Then read it in with:</p>
+<div class="fragment"><div class="line"><span class="comment">// Open the file.</span></div>
+<div class="line"><a class="code" href="class_q_file.html">QFile</a> f( <span class="stringliteral">&quot;file.xxx&quot;</span> );</div>
+<div class="line">f.open( IO_ReadOnly );</div>
+<div class="line"><a class="code" href="class_q_data_stream.html">QDataStream</a> s( &amp;f );</div>
+<div class="line"></div>
+<div class="line"><span class="comment">// Read and check the header</span></div>
+<div class="line">Q_UINT32 magic;</div>
+<div class="line">s &gt;&gt; magic;</div>
+<div class="line"><span class="keywordflow">if</span> ( magic != 0xa0b0c0d0 )</div>
+<div class="line"><span class="keywordflow">return</span> XXX_BAD_FILE_FORMAT;</div>
+<div class="line"></div>
+<div class="line"><span class="comment">// Read the version</span></div>
+<div class="line">Q_INT32 <a class="code" href="class_q_data_stream.html#aa5f30d51d4a86222cd00a2e05826a7db">version</a>;</div>
+<div class="line">s &gt;&gt; <a class="code" href="class_q_data_stream.html#aa5f30d51d4a86222cd00a2e05826a7db">version</a>;</div>
+<div class="line"><span class="keywordflow">if</span> ( version &lt; 100 )</div>
+<div class="line"><span class="keywordflow">return</span> XXX_BAD_FILE_TOO_OLD;</div>
+<div class="line"><span class="keywordflow">if</span> ( version &gt; 123 )</div>
+<div class="line"><span class="keywordflow">return</span> XXX_BAD_FILE_TOO_NEW;</div>
+<div class="line"><span class="keywordflow">if</span> ( version &lt;= 110 )</div>
+<div class="line">s.setVersion(1);</div>
+<div class="line"></div>
+<div class="line"><span class="comment">// Read the data</span></div>
+<div class="line">s &gt;&gt; [lots of interesting data];</div>
+<div class="line"><span class="keywordflow">if</span> ( version &gt; 120 )</div>
+<div class="line">s &gt;&gt; [data <span class="keyword">new</span> in XXX version 1.2];</div>
+<div class="line">s &gt;&gt; [other interesting data];</div>
+</div><!-- fragment --><dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_text_stream.html" title="The QTextStream class provides basic functions for reading and writing text using a QIODevice...">QTextStream</a> QVariant </dd></dl>
+</div><h2 class="groupheader">Documentação dos Construtores &amp; Destrutor</h2>
+<a class="anchor" id="a1d21554b83a077e62f0cbfdae8cfb5fa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_data_stream.html">QDataStream</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Constructs a data stream that has no IO device.</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_data_stream.html#a98230cf62c8603a7d0706e3044030f1b">setDevice()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aed832d35cad653e3665b62592fa8c635"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_data_stream.html">QDataStream</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_q_i_o_device.html">QIODevice</a> *&#160;</td>
+          <td class="paramname"><em>d</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Constructs a data stream that uses the IO device <em>d</em>.</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_data_stream.html#a98230cf62c8603a7d0706e3044030f1b">setDevice()</a>, <a class="el" href="class_q_data_stream.html#a18846d79bf14c21d749e27eef80bb6a0">device()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a846be3264e4bc919979a64d2edd6ed9d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_data_stream.html">QDataStream</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_q_array.html">QByteArray</a>&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Constructs a data stream that operates on a byte array through an internal <a class="el" href="class_q_buffer.html" title="The QBuffer class is an I/O device that operates on a QByteArray. ">QBuffer</a> device.</p>
+<p><a class="el" href="struct_example.html">Example</a>: </p>
+<div class="fragment"><div class="line"><span class="keyword">static</span> <span class="keywordtype">char</span> bindata[] = { 231, 1, 44, ... };</div>
+<div class="line"><a class="code" href="class_q_array.html">QByteArray</a>    a;</div>
+<div class="line">a.setRawData( bindata, <span class="keyword">sizeof</span>(bindata) ); <span class="comment">// a points to bindata</span></div>
+<div class="line"><a class="code" href="class_q_data_stream.html">QDataStream</a> s( a, IO_ReadOnly );      <span class="comment">// open on a&#39;s data</span></div>
+<div class="line">s &gt;&gt; [something];             <span class="comment">// read raw bindata</span></div>
+<div class="line">a.resetRawData( bindata, <span class="keyword">sizeof</span>(bindata) ); <span class="comment">// finished</span></div>
+</div><!-- fragment --><p>The QArray::setRawData() function is not for the inexperienced. </p>
+
+</div>
+</div>
+<a class="anchor" id="a25e9f82f003df6630979901515738a0b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">~<a class="el" href="class_q_data_stream.html">QDataStream</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Destructs the data stream.</p>
+<p>The destructor will not affect the current IO device, unless it is an internal IO device processing a QByteArray passed in the constructor. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentação dos métodos</h2>
+<a class="anchor" id="a11cbf4ba82ee565cb9eef28b972bf145"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool atEnd </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns TRUE if the IO device has reached the end position (end of stream or file) or if there is no IO device set.</p>
+<p>Returns FALSE if the current position of the read/write head of the IO device is somewhere before the end position.</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_i_o_device.html#a11cbf4ba82ee565cb9eef28b972bf145">QIODevice::atEnd()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8fe92c42a87f761c0682da5c613d75d6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int byteOrder </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the current byte order setting - either <code>BigEndian</code> or <code>LittleEndian</code>.</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_data_stream.html#a6f3acaf002c79fda1af888abbf4dcf8e">setByteOrder()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a18846d79bf14c21d749e27eef80bb6a0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_i_o_device.html">QIODevice</a> * device </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the IO device currently set. </p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_data_stream.html#a98230cf62c8603a7d0706e3044030f1b">setDevice()</a>, <a class="el" href="class_q_data_stream.html#aa6b00e03249023ce66f02861f5a6ffae">unsetDevice()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac4bcdb9a2c4adf5c3d247a711a7142cc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool eof </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns TRUE if the IO device has reached the end position (end of stream or file) or if there is no IO device set.</p>
+<p>Returns FALSE if the current position of the read/write head of the IO device is somewhere before the end position.</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_i_o_device.html#a11cbf4ba82ee565cb9eef28b972bf145">QIODevice::atEnd()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad86c3cb0ae4080139e0ee9376d53215f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isPrintableData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns TRUE if the printable data flag has been set. </p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_data_stream.html#a52c59e5985c0651783e12f7e3edcffe7">setPrintableData()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a38426efa1d04bf3cf11d63addec5c9bd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_data_stream.html">QDataStream</a> &amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">Q_INT8&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Writes a signed byte to the stream. </p>
+
+</div>
+</div>
+<a class="anchor" id="a9a164a62a8bee152fd86a4d8269b6dda"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_data_stream.html">QDataStream</a> &amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">Q_UINT8&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Writes an unsigned byte to the stream and returns a reference to the stream. </p>
+
+</div>
+</div>
+<a class="anchor" id="a6c67acaefeb1d08d1cc2aea62630b8af"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_data_stream.html">QDataStream</a> &amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">Q_INT16&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Writes a signed 16-bit integer to the stream and returns a reference to the stream. </p>
+
+</div>
+</div>
+<a class="anchor" id="a9f155659247856fc65e54ba7e4a1293b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_data_stream.html">QDataStream</a> &amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">Q_UINT16&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Writes an unsigned 16-bit integer to the stream and returns a reference to the stream. </p>
+
+</div>
+</div>
+<a class="anchor" id="a3c268f6da624a7e70b47e23c7c45599f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_data_stream.html">QDataStream</a> &amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">Q_INT32&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Writes a signed 32-bit integer to the stream and returns a reference to the stream.</p>
+<p>Writes a signed integer to the stream as a 32-bit signed integer (Q_INT32). Returns a reference to the stream. </p>
+
+</div>
+</div>
+<a class="anchor" id="a7665db836b2ca2e78c8f2e5bfdbb5416"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_data_stream.html">QDataStream</a> &amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">Q_UINT32&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Writes an unsigned 32-bit integer to the stream and returns a reference to the stream. </p>
+
+</div>
+</div>
+<a class="anchor" id="afe970586040db7d5b8fada0aab01ad44"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_data_stream.html">QDataStream</a> &amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">Q_INT64&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Writes a signed 64-bit integer to the stream and returns a reference to the stream, or calls the Q_INT32-operator if 64 bit is not available. </p>
+
+</div>
+</div>
+<a class="anchor" id="a6745eca11ccf5e8bf0ae45c46b8bd53f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_data_stream.html">QDataStream</a> &amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">Q_UINT64&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Writes an unsigned 64-bit integer to the stream and returns a reference to the stream, or uses the Q_UINT32-operator if 64 bit is not available. </p>
+
+</div>
+</div>
+<a class="anchor" id="ace55e15063ffd570c3fefa496004a92b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_data_stream.html">QDataStream</a> &amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Writes a 32-bit floating point number to the stream using the standard IEEE754 format. Returns a reference to the stream. </p>
+
+</div>
+</div>
+<a class="anchor" id="a37f7b2c773dce5f323307810635e2509"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_data_stream.html">QDataStream</a> &amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Writes a 64-bit floating point number to the stream using the standard IEEE754 format. Returns a reference to the stream. </p>
+
+</div>
+</div>
+<a class="anchor" id="a3d825aede8e30bcfad1a6b0e292d081b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_data_stream.html">QDataStream</a> &amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Writes the '\0'-terminated string <em>s</em> to the stream and returns a reference to the stream.</p>
+<p>The string is serialized using <a class="el" href="class_q_data_stream.html#a0a858269202c641fccb177800cde17da">writeBytes()</a>. </p>
+
+</div>
+</div>
+<a class="anchor" id="a918b02e460dd465f3ec86aea51ca59a1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_data_stream.html">QDataStream</a> &amp; operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype">Q_INT8 &amp;&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Reads a signed byte from the stream. </p>
+
+</div>
+</div>
+<a class="anchor" id="a66919f08c4a4ec99f8dd8ee49e4bd69c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_data_stream.html">QDataStream</a> &amp; operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype">Q_UINT8 &amp;&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Reads an unsigned byte from the stream and returns a reference to the stream. </p>
+
+</div>
+</div>
+<a class="anchor" id="aa99d896eebd84b4f50c1a1c4e5147d43"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_data_stream.html">QDataStream</a> &amp; operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype">Q_INT16 &amp;&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Reads a signed 16-bit integer from the stream and returns a reference to the stream. </p>
+
+</div>
+</div>
+<a class="anchor" id="acf2f3045e740e2e97b7e6be0e26d94da"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_data_stream.html">QDataStream</a> &amp; operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype">Q_UINT16 &amp;&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Reads an unsigned 16-bit integer from the stream and returns a reference to the stream. </p>
+
+</div>
+</div>
+<a class="anchor" id="adc29145913bb3865cf02f74dd417504f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_data_stream.html">QDataStream</a> &amp; operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype">Q_INT32 &amp;&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Reads a signed 32-bit integer from the stream and returns a reference to the stream. </p>
+
+</div>
+</div>
+<a class="anchor" id="a58808e7d7474ec9df2a81b96cb944fba"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_data_stream.html">QDataStream</a> &amp; operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype">Q_UINT32 &amp;&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Reads an unsigned 32-bit integer from the stream and returns a reference to the stream. </p>
+
+</div>
+</div>
+<a class="anchor" id="af9754871ea12971a697b650ea0fbdc7f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_data_stream.html">QDataStream</a> &amp; operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype">Q_INT64 &amp;&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Reads a signed 64-bit integer from the stream and returns a reference to the stream, or uses the Q_UINT32 operator if 64 bit is not available. </p>
+
+</div>
+</div>
+<a class="anchor" id="af8959500642c3751593d6654e2f8506d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_data_stream.html">QDataStream</a> &amp; operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype">Q_UINT64 &amp;&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Reads an unsigned 64-bit integer from the stream and returns a reference to the stream, or uses the Q_UINT32 operator if 64 bit is not available. </p>
+
+</div>
+</div>
+<a class="anchor" id="a400c7acc10a87b0283b5d0a4fb438f5e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_data_stream.html">QDataStream</a> &amp; operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype">float &amp;&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Reads a 32-bit floating point number from the stream using the standard IEEE754 format. Returns a reference to the stream. </p>
+
+</div>
+</div>
+<a class="anchor" id="a552731f71d8528a34d98ae48ad4915a1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_data_stream.html">QDataStream</a> &amp; operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Reads a 64-bit floating point number from the stream using the standard IEEE754 format. Returns a reference to the stream. </p>
+
+</div>
+</div>
+<a class="anchor" id="a7b27f047be47212548986b8b6cd28635"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_data_stream.html">QDataStream</a> &amp; operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype">char *&amp;&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Reads the '\0'-terminated string <em>s</em> from the stream and returns a reference to the stream.</p>
+<p>Space for the string is allocated using <code>new</code> - the caller must eventually call delete[] on the value. </p>
+
+</div>
+</div>
+<a class="anchor" id="a87443ae226d3d7acbf2a0bcf6cd2756f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_data_stream.html">QDataStream</a> &amp; readBytes </td>
+          <td>(</td>
+          <td class="paramtype">char *&amp;&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint &amp;&#160;</td>
+          <td class="paramname"><em>l</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Reads the buffer <em>s</em> from the stream and returns a reference to the stream.</p>
+<p>The buffer <em>s</em> is allocated using <code>new</code>. Destroy it with the <code>delete</code>[] operator. If the length is zero or <em>s</em> cannot be allocated, <em>s</em> is set to 0.</p>
+<p>The <em>l</em> parameter will be set to the length of the buffer.</p>
+<p>The serialization format is an Q_UINT32 length specifier first, then the data (<em>l</em> bytes).</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_data_stream.html#a85549d56b50b92d4d67b879f6b0a33d8">readRawBytes()</a>, <a class="el" href="class_q_data_stream.html#a0a858269202c641fccb177800cde17da">writeBytes()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a85549d56b50b92d4d67b879f6b0a33d8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_data_stream.html">QDataStream</a> &amp; readRawBytes </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Reads <em>len</em> bytes from the stream into <em>s</em> and returns a reference to the stream.</p>
+<p>The buffer <em>s</em> must be preallocated.</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_data_stream.html#a87443ae226d3d7acbf2a0bcf6cd2756f">readBytes()</a>, <a class="el" href="class_q_i_o_device.html#ac0c97a10369456c0942192a14f11c188">QIODevice::readBlock()</a>, <a class="el" href="class_q_data_stream.html#a0fc63368a2c7f81540020dfa5227497d">writeRawBytes()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6f3acaf002c79fda1af888abbf4dcf8e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setByteOrder </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bo</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets the serialization byte order to <em>bo</em>.</p>
+<p>The <em>bo</em> parameter can be <code>QDataStream::BigEndian</code> or <code>QDataStream::LittleEndian</code>.</p>
+<p>The default setting is big endian. We recommend leaving this setting unless you have special requirements.</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_data_stream.html#a8fe92c42a87f761c0682da5c613d75d6">byteOrder()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a98230cf62c8603a7d0706e3044030f1b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setDevice </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_q_i_o_device.html">QIODevice</a> *&#160;</td>
+          <td class="paramname"><em>d</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>void <a class="el" href="class_q_data_stream.html#a98230cf62c8603a7d0706e3044030f1b">QDataStream::setDevice(QIODevice *d )</a> Sets the IO device to <em>d</em>. </p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_data_stream.html#a18846d79bf14c21d749e27eef80bb6a0">device()</a>, <a class="el" href="class_q_data_stream.html#aa6b00e03249023ce66f02861f5a6ffae">unsetDevice()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a52c59e5985c0651783e12f7e3edcffe7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setPrintableData </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets or clears the printable data flag.</p>
+<p>If this flag is set, the write functions will generate output that consists of printable characters (7 bit ASCII).</p>
+<p>We recommend enabling printable data only for debugging purposes (it is slower and creates larger output). </p>
+
+</div>
+</div>
+<a class="anchor" id="a652e7f35c2c3a49cf179fadd55ed16c4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setVersion </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the version number of the data serialization format.</p>
+<p>In order to accomodate for new functionality, the datastream serialization format of some Qt classes has changed in some versions of Qt. If you want to read data that was created by an earlier version of Qt, or write data that can be read by a program that was compiled with an earlier version of Qt, use this function to modify the serialization format of <a class="el" href="class_q_data_stream.html" title="The QDataStream class provides serialization of binary data to a QIODevice. ">QDataStream</a>.</p>
+<p>For Qt 1.x compatibility, use <em>v</em> == 1.</p>
+<p>For Qt 2.0.x compatibility, use <em>v</em> == 2 (Not required for reading in Qt 2.1).</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_data_stream.html#aa5f30d51d4a86222cd00a2e05826a7db">version()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa6b00e03249023ce66f02861f5a6ffae"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unsetDevice </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Unsets the IO device. This is the same as calling setDevice( 0 ). </p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_data_stream.html#a18846d79bf14c21d749e27eef80bb6a0">device()</a>, <a class="el" href="class_q_data_stream.html#a98230cf62c8603a7d0706e3044030f1b">setDevice()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa5f30d51d4a86222cd00a2e05826a7db"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int version </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the version number of the data serialization format. In Qt 2.1, this number is by default 3. </p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_data_stream.html#a652e7f35c2c3a49cf179fadd55ed16c4">setVersion()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a0a858269202c641fccb177800cde17da"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_data_stream.html">QDataStream</a> &amp; writeBytes </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Writes the length specifier <em>len</em> and the buffer <em>s</em> to the stream and returns a reference to the stream.</p>
+<p>The <em>len</em> is serialized as an Q_UINT32, followed by <em>len</em> bytes from <em>s</em>.</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_data_stream.html#a0fc63368a2c7f81540020dfa5227497d">writeRawBytes()</a>, <a class="el" href="class_q_data_stream.html#a87443ae226d3d7acbf2a0bcf6cd2756f">readBytes()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a0fc63368a2c7f81540020dfa5227497d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_data_stream.html">QDataStream</a> &amp; writeRawBytes </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Writes <em>len</em> bytes from <em>s</em> to the stream and returns a reference to the stream.</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_data_stream.html#a0a858269202c641fccb177800cde17da">writeBytes()</a>, <a class="el" href="class_q_i_o_device.html#a90a5a6111eca9a444970cf49aea9f9a8">QIODevice::writeBlock()</a>, <a class="el" href="class_q_data_stream.html#a85549d56b50b92d4d67b879f6b0a33d8">readRawBytes()</a> </dd></dl>
+
+</div>
+</div>
+<hr/>A documentação para esta classe foi gerada a partir dos seguintes ficheiros:<ul>
+<li>C:/Users/teste/git/doxygen/qtools/<a class="el" href="qdatastream_8h_source.html">qdatastream.h</a></li>
+<li>C:/Users/teste/git/doxygen/qtools/qdatastream.cpp</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado em Quinta, 28 de Novembro de 2013 22:44:27 para CEM RODAS por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

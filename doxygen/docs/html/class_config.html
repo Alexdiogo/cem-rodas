@@ -1,0 +1,946 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>CEM RODAS: Referência à classe Config</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">CEM RODAS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Localizar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="modules.html"><span>Módulos</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Estruturas&#160;de&#160;dados</span></a></li>
+      <li><a href="files.html"><span>Ficheiros</span></a></li>
+      <li><a href="examples.html"><span>Exemplos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Localizar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Estruturas&#160;de&#160;dados</span></a></li>
+      <li><a href="classes.html"><span>Índice&#160;das&#160;estruturas&#160;de&#160;dados</span></a></li>
+      <li><a href="hierarchy.html"><span>Hierarquia&#160;de&#160;classes</span></a></li>
+      <li><a href="functions.html"><span>Campos&#160;de&#160;dados</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tudo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Estruturas de dados</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Ficheiros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variáveis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Definições de tipos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerações</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Valores da enumeração</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Amigos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Grupos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Membros públicos</a> &#124;
+<a href="#pub-static-methods">Membros públicos estáticos</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência à classe Config</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="src_2config_8h_source.html">config.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Membros públicos</h2></td></tr>
+<tr class="memitem:a2a73a36bdb15195ceea5babf0895841e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_list_iterator.html">QListIterator</a>&lt; <a class="el" href="class_config_option.html">ConfigOption</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#a2a73a36bdb15195ceea5babf0895841e">iterator</a> ()</td></tr>
+<tr class="separator:a2a73a36bdb15195ceea5babf0895841e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50b1ad2951f80e9cf5021f47bad210a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#a50b1ad2951f80e9cf5021f47bad210a5">writeTemplate</a> (<a class="el" href="class_f_text_stream.html">FTextStream</a> &amp;t, bool shortIndex, bool updateOnly)</td></tr>
+<tr class="separator:a50b1ad2951f80e9cf5021f47bad210a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83d1589d35495f9e66971b911650cc7e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a83d1589d35495f9e66971b911650cc7e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setHeader</b> (const char *header)</td></tr>
+<tr class="separator:a83d1589d35495f9e66971b911650cc7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf2580bb1cb265aed049fd1553c658c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#adf2580bb1cb265aed049fd1553c658c2">convertStrToVal</a> ()</td></tr>
+<tr class="separator:adf2580bb1cb265aed049fd1553c658c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3556bfbc11af507151d5e7b2fcfdf181"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#a3556bfbc11af507151d5e7b2fcfdf181">substituteEnvironmentVars</a> ()</td></tr>
+<tr class="separator:a3556bfbc11af507151d5e7b2fcfdf181"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83f8adca24e250bfb5c9a90a35503ae9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#a83f8adca24e250bfb5c9a90a35503ae9">check</a> ()</td></tr>
+<tr class="separator:a83f8adca24e250bfb5c9a90a35503ae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02fd73d861ef2e4aabb38c0c9ff82947"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#a02fd73d861ef2e4aabb38c0c9ff82947">init</a> ()</td></tr>
+<tr class="separator:a02fd73d861ef2e4aabb38c0c9ff82947"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a106dcaa73bd7f5e08ecc8889d607cf12"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#a106dcaa73bd7f5e08ecc8889d607cf12">parseString</a> (const char *fn, const char *str)</td></tr>
+<tr class="separator:a106dcaa73bd7f5e08ecc8889d607cf12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b817186f44e966ea05461d71babaa57"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#a2b817186f44e966ea05461d71babaa57">parse</a> (const char *fn)</td></tr>
+<tr class="separator:a2b817186f44e966ea05461d71babaa57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2ee59f7cc16ee42559c87e81c433039"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#ae2ee59f7cc16ee42559c87e81c433039">create</a> ()</td></tr>
+<tr class="separator:ae2ee59f7cc16ee42559c87e81c433039"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae02f59400e5a733fbe447cb67c6bd3aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#ae02f59400e5a733fbe447cb67c6bd3aa">appendUserComment</a> (const <a class="el" href="class_q_c_string.html">QCString</a> &amp;u)</td></tr>
+<tr class="separator:ae02f59400e5a733fbe447cb67c6bd3aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e741f180f15929a29642359da844226"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#a0e741f180f15929a29642359da844226">takeUserComment</a> ()</td></tr>
+<tr class="separator:a0e741f180f15929a29642359da844226"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Getting configuration values.</div></td></tr>
+<tr class="memitem:a68612104bbf38f8e3f73d777f3bd641a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_c_string.html">QCString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#a68612104bbf38f8e3f73d777f3bd641a">getString</a> (const char *fileName, int num, const char *name) const </td></tr>
+<tr class="separator:a68612104bbf38f8e3f73d777f3bd641a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fb1a4b9d3bc2c3d7712d24526fea32d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_str_list.html">QStrList</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#a8fb1a4b9d3bc2c3d7712d24526fea32d">getList</a> (const char *fileName, int num, const char *name) const </td></tr>
+<tr class="separator:a8fb1a4b9d3bc2c3d7712d24526fea32d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84395f0a27ff06a395259b1aa1376433"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_c_string.html">QCString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#a84395f0a27ff06a395259b1aa1376433">getEnum</a> (const char *fileName, int num, const char *name) const </td></tr>
+<tr class="separator:a84395f0a27ff06a395259b1aa1376433"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0adeb5980707ff5556cbd43458e69b93"><td class="memItemLeft" align="right" valign="top">int &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#a0adeb5980707ff5556cbd43458e69b93">getInt</a> (const char *fileName, int num, const char *name) const </td></tr>
+<tr class="separator:a0adeb5980707ff5556cbd43458e69b93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4636caa43638b30b87018ae139570f86"><td class="memItemLeft" align="right" valign="top">bool &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#a4636caa43638b30b87018ae139570f86">getBool</a> (const char *fileName, int num, const char *name) const </td></tr>
+<tr class="separator:a4636caa43638b30b87018ae139570f86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e7953f08471ba22fa4da26a7f0042ed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_config_option.html">ConfigOption</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#a3e7953f08471ba22fa4da26a7f0042ed">get</a> (const char *name) const </td></tr>
+<tr class="separator:a3e7953f08471ba22fa4da26a7f0042ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Adding configuration options.</div></td></tr>
+<tr class="memitem:adad7d76c6e3e07109796a5ffb9f2c6e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_config_info.html">ConfigInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#adad7d76c6e3e07109796a5ffb9f2c6e4">addInfo</a> (const char *name, const char *doc)</td></tr>
+<tr class="separator:adad7d76c6e3e07109796a5ffb9f2c6e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74b8275821f367fd0c588ccc223d8696"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_config_string.html">ConfigString</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#a74b8275821f367fd0c588ccc223d8696">addString</a> (const char *name, const char *doc)</td></tr>
+<tr class="separator:a74b8275821f367fd0c588ccc223d8696"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3913dcc45810d5073e967a99fe0c2a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_config_enum.html">ConfigEnum</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#ab3913dcc45810d5073e967a99fe0c2a4">addEnum</a> (const char *name, const char *doc, const char *defVal)</td></tr>
+<tr class="separator:ab3913dcc45810d5073e967a99fe0c2a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9566fc8a9d1560eb4181b7e245f6ce96"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_config_list.html">ConfigList</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#a9566fc8a9d1560eb4181b7e245f6ce96">addList</a> (const char *name, const char *doc)</td></tr>
+<tr class="separator:a9566fc8a9d1560eb4181b7e245f6ce96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb7be086fa3130874a722a5a9c30b308"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_config_int.html">ConfigInt</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#abb7be086fa3130874a722a5a9c30b308">addInt</a> (const char *name, const char *doc, int minVal, int maxVal, int defVal)</td></tr>
+<tr class="separator:abb7be086fa3130874a722a5a9c30b308"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa80cc6d1590c228000e21e7c0682f5b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_config_bool.html">ConfigBool</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#aa80cc6d1590c228000e21e7c0682f5b9">addBool</a> (const char *name, const char *doc, bool defVal)</td></tr>
+<tr class="separator:aa80cc6d1590c228000e21e7c0682f5b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeef352ac0af92d9f5df0074aa74d0884"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_config_option.html">ConfigOption</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#aeef352ac0af92d9f5df0074aa74d0884">addObsolete</a> (const char *name)</td></tr>
+<tr class="separator:aeef352ac0af92d9f5df0074aa74d0884"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42614c703f049d415636dd0346ec0314"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_config_option.html">ConfigOption</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#a42614c703f049d415636dd0346ec0314">addDisabled</a> (const char *name)</td></tr>
+<tr class="separator:a42614c703f049d415636dd0346ec0314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Membros públicos estáticos</h2></td></tr>
+<tr class="memitem:aa6def1c3b3abfdaa0df22df0b558c94d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_config.html">Config</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#aa6def1c3b3abfdaa0df22df0b558c94d">instance</a> ()</td></tr>
+<tr class="separator:aa6def1c3b3abfdaa0df22df0b558c94d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5946f8823f24f5bd2b1749d912ea8ba7"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#a5946f8823f24f5bd2b1749d912ea8ba7">deleteInstance</a> ()</td></tr>
+<tr class="separator:a5946f8823f24f5bd2b1749d912ea8ba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Singleton for configuration variables.</p>
+<p>This object holds the global static variables read from a user-supplied configuration file. The static member <a class="el" href="class_config.html#aa6def1c3b3abfdaa0df22df0b558c94d">instance()</a> can be used to get a pointer to the one and only instance.</p>
+<p>Set all variables to their default values by calling <a class="el" href="class_config.html#aa6def1c3b3abfdaa0df22df0b558c94d">Config::instance()</a>-&gt;<a class="el" href="class_config.html#a02fd73d861ef2e4aabb38c0c9ff82947">init()</a> </p>
+</div><h2 class="groupheader">Documentação dos métodos</h2>
+<a class="anchor" id="aa80cc6d1590c228000e21e7c0682f5b9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_config_bool.html">ConfigBool</a>* addBool </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>doc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>defVal</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Adds a new boolean option with <em>name</em> and documentation <em>doc</em>. The boolean has a default value of <em>defVal</em>. </p>
+<dl class="section return"><dt>Retorna</dt><dd>An object representing the option. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a42614c703f049d415636dd0346ec0314"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_config_option.html">ConfigOption</a>* addDisabled </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Adds an option that has been disabled at compile time. </p>
+
+</div>
+</div>
+<a class="anchor" id="ab3913dcc45810d5073e967a99fe0c2a4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_config_enum.html">ConfigEnum</a>* addEnum </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>doc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>defVal</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Adds a new enumeration option with <em>name</em> and documentation <em>doc</em> and initial value <em>defVal</em>. </p>
+<dl class="section return"><dt>Retorna</dt><dd>An object representing the option. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="adad7d76c6e3e07109796a5ffb9f2c6e4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_config_info.html">ConfigInfo</a>* addInfo </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>doc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Starts a new configuration section with <em>name</em> and description <em>doc</em>. </p>
+<dl class="section return"><dt>Retorna</dt><dd>An object representing the option. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="abb7be086fa3130874a722a5a9c30b308"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_config_int.html">ConfigInt</a>* addInt </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>doc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>minVal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxVal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>defVal</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Adds a new integer option with <em>name</em> and documentation <em>doc</em>. The integer has a range between <em>minVal</em> and <em>maxVal</em> and a default value of <em>defVal</em>. </p>
+<dl class="section return"><dt>Retorna</dt><dd>An object representing the option. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9566fc8a9d1560eb4181b7e245f6ce96"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_config_list.html">ConfigList</a>* addList </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>doc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Adds a new string option with <em>name</em> and documentation <em>doc</em>. </p>
+<dl class="section return"><dt>Retorna</dt><dd>An object representing the option. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aeef352ac0af92d9f5df0074aa74d0884"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_config_option.html">ConfigOption</a>* addObsolete </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Adds an option that has become obsolete. </p>
+
+</div>
+</div>
+<a class="anchor" id="a74b8275821f367fd0c588ccc223d8696"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_config_string.html">ConfigString</a>* addString </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>doc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Adds a new string option with <em>name</em> and documentation <em>doc</em>. </p>
+<dl class="section return"><dt>Retorna</dt><dd>An object representing the option. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae02f59400e5a733fbe447cb67c6bd3aa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void appendUserComment </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_q_c_string.html">QCString</a> &amp;&#160;</td>
+          <td class="paramname"><em>u</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Append user comment </p>
+
+</div>
+</div>
+<a class="anchor" id="a83f8adca24e250bfb5c9a90a35503ae9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void check </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Checks if the values of the variable are correct, adjusts them if needed, and report any errors. </p>
+
+</div>
+</div>
+<a class="anchor" id="adf2580bb1cb265aed049fd1553c658c2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void convertStrToVal </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Converts the string values read from the configuration file to real values for non-string type options (like int, and bools) </p>
+
+</div>
+</div>
+<a class="anchor" id="ae2ee59f7cc16ee42559c87e81c433039"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void create </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Called from the constructor, will add doxygen's default options to the configuration object </p>
+
+</div>
+</div>
+<a class="anchor" id="a5946f8823f24f5bd2b1749d912ea8ba7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void deleteInstance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Delete the instance </p>
+
+</div>
+</div>
+<a class="anchor" id="a3e7953f08471ba22fa4da26a7f0042ed"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_config_option.html">ConfigOption</a>* get </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the <a class="el" href="class_config_option.html">ConfigOption</a> corresponding with <em>name</em> or 0 if the option is not supported. </p>
+
+</div>
+</div>
+<a class="anchor" id="a4636caa43638b30b87018ae139570f86"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool&amp; getBool </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the value of the boolean option with name <em>fileName</em>. The arguments <em>num</em> and <em>name</em> are for debugging purposes only. There is a convenience function Config_getBool() for this. </p>
+
+</div>
+</div>
+<a class="anchor" id="a84395f0a27ff06a395259b1aa1376433"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_c_string.html">QCString</a>&amp; getEnum </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the value of the enum option with name <em>fileName</em>. The arguments <em>num</em> and <em>name</em> are for debugging purposes only. There is a convenience function Config_getEnum() for this. </p>
+
+</div>
+</div>
+<a class="anchor" id="a0adeb5980707ff5556cbd43458e69b93"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int&amp; getInt </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the value of the integer option with name <em>fileName</em>. The arguments <em>num</em> and <em>name</em> are for debugging purposes only. There is a convenience function Config_getInt() for this. </p>
+
+</div>
+</div>
+<a class="anchor" id="a8fb1a4b9d3bc2c3d7712d24526fea32d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_str_list.html">QStrList</a>&amp; getList </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the value of the list option with name <em>fileName</em>. The arguments <em>num</em> and <em>name</em> are for debugging purposes only. There is a convenience function Config_getList() for this. </p>
+
+</div>
+</div>
+<a class="anchor" id="a68612104bbf38f8e3f73d777f3bd641a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_c_string.html">QCString</a>&amp; getString </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the value of the string option with name <em>fileName</em>. The arguments <em>num</em> and <em>name</em> are for debugging purposes only. There is a convenience function Config_getString() for this. </p>
+
+</div>
+</div>
+<a class="anchor" id="a02fd73d861ef2e4aabb38c0c9ff82947"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Initialize config variables to their default value </p>
+
+</div>
+</div>
+<a class="anchor" id="aa6def1c3b3abfdaa0df22df0b558c94d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_config.html">Config</a>* instance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the one and only instance of this class </p>
+
+</div>
+</div>
+<a class="anchor" id="a2a73a36bdb15195ceea5babf0895841e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_list_iterator.html">QListIterator</a>&lt;<a class="el" href="class_config_option.html">ConfigOption</a>&gt; iterator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns an iterator that can by used to iterate over the configuration options. </p>
+
+</div>
+</div>
+<a class="anchor" id="a2b817186f44e966ea05461d71babaa57"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool parse </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fn</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Parse a configuration file with name <em>fn</em>. </p>
+<dl class="section return"><dt>Retorna</dt><dd>TRUE if successful, FALSE if the file could not be opened or read. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a106dcaa73bd7f5e08ecc8889d607cf12"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool parseString </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Parse a configuration data in string <em>str</em>. </p>
+<dl class="section return"><dt>Retorna</dt><dd>TRUE if successful, or FALSE if the string could not be parsed. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3556bfbc11af507151d5e7b2fcfdf181"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void substituteEnvironmentVars </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Replaces references to environment variable by the actual value of the environment variable. </p>
+
+</div>
+</div>
+<a class="anchor" id="a0e741f180f15929a29642359da844226"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_c_string.html">QCString</a> takeUserComment </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Take the user comment and reset it internally </p>
+<dl class="section return"><dt>Retorna</dt><dd>user comment </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a50b1ad2951f80e9cf5021f47bad210a5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void writeTemplate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_f_text_stream.html">FTextStream</a> &amp;&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>shortIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>updateOnly</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Writes a template configuration to stream <em>t</em>. If <em>shortIndex</em> is <code>TRUE</code> the description of each configuration option will be omitted. </p>
+
+</div>
+</div>
+<hr/>A documentação para esta classe foi gerada a partir do seguinte ficheiro:<ul>
+<li>C:/Users/teste/git/doxygen/src/<a class="el" href="src_2config_8h_source.html">config.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado em Quinta, 28 de Novembro de 2013 22:43:54 para CEM RODAS por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

@@ -1,0 +1,68 @@
+\hypertarget{class_q_text_decoder}{\section{Referência à classe Q\-Text\-Decoder}
+\label{class_q_text_decoder}\index{Q\-Text\-Decoder@{Q\-Text\-Decoder}}
+}
+
+
+State-\/based decoder.  
+
+
+
+
+{\ttfamily \#include $<$qtextcodec.\-h$>$}
+
+Diagrama de heranças da classe Q\-Text\-Decoder\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.473684cm]{class_q_text_decoder}
+\end{center}
+\end{figure}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_q_text_decoder_aa083432764ae5af7a706e30aaa2eba28}{$\sim$\-Q\-Text\-Decoder} ()
+\item 
+virtual \hyperlink{class_q_string}{Q\-String} \hyperlink{class_q_text_decoder_a69f80ea56957b935500789ca12a5695b}{to\-Unicode} (const char $\ast$chars, int len)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+State-\/based decoder. 
+
+\hyperlink{class_a}{A} \hyperlink{class_q_text_encoder}{Q\-Text\-Encoder} converts a text format into Unicode, remembering any state that is required between calls.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_text_codec_af324249beeb8b0b38aa7b32ba7c8c09f}{Q\-Text\-Codec\-::make\-Encoder()} 
+\end{DoxySeeAlso}
+
+
+\subsection{Documentação dos Construtores \& Destrutor}
+\hypertarget{class_q_text_decoder_aa083432764ae5af7a706e30aaa2eba28}{\index{Q\-Text\-Decoder@{Q\-Text\-Decoder}!$\sim$\-Q\-Text\-Decoder@{$\sim$\-Q\-Text\-Decoder}}
+\index{$\sim$\-Q\-Text\-Decoder@{$\sim$\-Q\-Text\-Decoder}!QTextDecoder@{Q\-Text\-Decoder}}
+\subsubsection[{$\sim$\-Q\-Text\-Decoder}]{\setlength{\rightskip}{0pt plus 5cm}$\sim${\bf Q\-Text\-Decoder} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_text_decoder_aa083432764ae5af7a706e30aaa2eba28}
+Destructs the decoder. 
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_q_text_decoder_a69f80ea56957b935500789ca12a5695b}{\index{Q\-Text\-Decoder@{Q\-Text\-Decoder}!to\-Unicode@{to\-Unicode}}
+\index{to\-Unicode@{to\-Unicode}!QTextDecoder@{Q\-Text\-Decoder}}
+\subsubsection[{to\-Unicode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} to\-Unicode (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{chars, }
+\item[{int}]{len}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_q_text_decoder_a69f80ea56957b935500789ca12a5695b}
+Converts the first {\itshape len} bytes at {\itshape chars} to Unicode, returning the result.
+
+If not all characters are used (eg. only part of a multi-\/byte encoding is at the end of the characters), the decoder remembers enough state to continue with the next call to this function. 
+
+Implementado em \hyperlink{class_q_text_codec_from_i_o_d_decoder_ab712d3ab22ae9428299dfd4de0984cc3}{Q\-Text\-Codec\-From\-I\-O\-D\-Decoder}, \hyperlink{class_q_utf16_decoder_ab712d3ab22ae9428299dfd4de0984cc3}{Q\-Utf16\-Decoder}, \hyperlink{class_q_text_stateless_decoder_ab712d3ab22ae9428299dfd4de0984cc3}{Q\-Text\-Stateless\-Decoder} e \hyperlink{class_q_utf8_decoder_ab712d3ab22ae9428299dfd4de0984cc3}{Q\-Utf8\-Decoder}.
+
+
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/qtools/qtextcodec.\-h\item 
+C\-:/\-Users/teste/git/doxygen/qtools/qtextcodec.\-cpp\end{DoxyCompactItemize}

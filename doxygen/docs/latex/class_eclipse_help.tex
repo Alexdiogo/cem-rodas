@@ -1,0 +1,145 @@
+\hypertarget{class_eclipse_help}{\section{Referência à classe Eclipse\-Help}
+\label{class_eclipse_help}\index{Eclipse\-Help@{Eclipse\-Help}}
+}
+
+
+{\ttfamily \#include $<$eclipsehelp.\-h$>$}
+
+Diagrama de heranças da classe Eclipse\-Help\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_eclipse_help}
+\end{center}
+\end{figure}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_eclipse_help_a25a40b6614565f755233080a384c35f1}{initialize} ()
+\begin{DoxyCompactList}\small\item\em Initialize the Eclipse generator. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_eclipse_help_a32d626626eee0bc4ade146973f6abb1c}{finalize} ()
+\begin{DoxyCompactList}\small\item\em Finish generation of the Eclipse specific help files. \end{DoxyCompactList}\item 
+\hypertarget{class_eclipse_help_a96772b5eeae8044b3308f63fb040c253}{virtual void \hyperlink{class_eclipse_help_a96772b5eeae8044b3308f63fb040c253}{inc\-Contents\-Depth} ()}\label{class_eclipse_help_a96772b5eeae8044b3308f63fb040c253}
+
+\begin{DoxyCompactList}\small\item\em Increase the level of content hierarchy. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_eclipse_help_a3a6a2629dd91105d0048f0d0a9f7f983}{dec\-Contents\-Depth} ()
+\begin{DoxyCompactList}\small\item\em Decrease the level of content hierarchy. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_eclipse_help_a2037325cd2bf36b4a134b87dbb107a94}{add\-Contents\-Item} (bool is\-Dir, const char $\ast$name, const char $\ast$ref, const char $\ast$file, const char $\ast$anchor, bool separate\-Index, bool add\-To\-Nav\-Index, \hyperlink{class_definition}{Definition} $\ast$def)
+\begin{DoxyCompactList}\small\item\em Add an item to the content. \end{DoxyCompactList}\item 
+\hypertarget{class_eclipse_help_acae96bcfb2681e31a0e64854dd3809fe}{virtual void {\bfseries add\-Index\-Item} (\hyperlink{class_definition}{Definition} $\ast$context, \hyperlink{class_member_def}{Member\-Def} $\ast$md, const char $\ast$section\-Anchor, const char $\ast$title)}\label{class_eclipse_help_acae96bcfb2681e31a0e64854dd3809fe}
+
+\item 
+\hypertarget{class_eclipse_help_a8e569c4ea40f30de2accf0a87b7d8d30}{virtual void {\bfseries add\-Index\-File} (const char $\ast$name)}\label{class_eclipse_help_a8e569c4ea40f30de2accf0a87b7d8d30}
+
+\item 
+\hypertarget{class_eclipse_help_aefbd88dbfc0690476b7430a480dcec6c}{virtual void {\bfseries add\-Image\-File} (const char $\ast$name)}\label{class_eclipse_help_aefbd88dbfc0690476b7430a480dcec6c}
+
+\item 
+\hypertarget{class_eclipse_help_a6c501a6ffa3459c75470e5c532073ff5}{virtual void {\bfseries add\-Style\-Sheet\-File} (const char $\ast$name)}\label{class_eclipse_help_a6c501a6ffa3459c75470e5c532073ff5}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+Generator for Eclipse help files.
+
+This class generates the Eclipse specific help files. These files can be used to generate a help plugin readable by the Eclipse I\-D\-E. 
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_eclipse_help_a2037325cd2bf36b4a134b87dbb107a94}{\index{Eclipse\-Help@{Eclipse\-Help}!add\-Contents\-Item@{add\-Contents\-Item}}
+\index{add\-Contents\-Item@{add\-Contents\-Item}!EclipseHelp@{Eclipse\-Help}}
+\subsubsection[{add\-Contents\-Item}]{\setlength{\rightskip}{0pt plus 5cm}void add\-Contents\-Item (
+\begin{DoxyParamCaption}
+\item[{bool}]{is\-Dir, }
+\item[{const char $\ast$}]{name, }
+\item[{const char $\ast$}]{ref, }
+\item[{const char $\ast$}]{file, }
+\item[{const char $\ast$}]{anchor, }
+\item[{bool}]{separate\-Index, }
+\item[{bool}]{add\-To\-Nav\-Index, }
+\item[{{\bf Definition} $\ast$}]{def}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_eclipse_help_a2037325cd2bf36b4a134b87dbb107a94}
+
+
+Add an item to the content. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em is\-Dir} & Flag whether the argument {\itshape file} is a directory or a file entry \\
+\hline
+{\em name} & Name of the item \\
+\hline
+{\em ref} & \hyperlink{struct_u_r_l}{U\-R\-L} of the item \\
+\hline
+{\em file} & Name of a file which the item is defined in (without extension) \\
+\hline
+{\em anchor} & Name of an anchor of the item. \\
+\hline
+{\em separate\-Index} & not used. \\
+\hline
+{\em add\-To\-Nav\-Index} & not used. \\
+\hline
+{\em def} & not used. \\
+\hline
+\end{DoxyParams}
+
+
+Implementa \hyperlink{class_index_intf}{Index\-Intf}.
+
+\hypertarget{class_eclipse_help_a3a6a2629dd91105d0048f0d0a9f7f983}{\index{Eclipse\-Help@{Eclipse\-Help}!dec\-Contents\-Depth@{dec\-Contents\-Depth}}
+\index{dec\-Contents\-Depth@{dec\-Contents\-Depth}!EclipseHelp@{Eclipse\-Help}}
+\subsubsection[{dec\-Contents\-Depth}]{\setlength{\rightskip}{0pt plus 5cm}void dec\-Contents\-Depth (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_eclipse_help_a3a6a2629dd91105d0048f0d0a9f7f983}
+
+
+Decrease the level of content hierarchy. 
+
+It closes currently opened topic tag. 
+
+Implementa \hyperlink{class_index_intf}{Index\-Intf}.
+
+\hypertarget{class_eclipse_help_a32d626626eee0bc4ade146973f6abb1c}{\index{Eclipse\-Help@{Eclipse\-Help}!finalize@{finalize}}
+\index{finalize@{finalize}!EclipseHelp@{Eclipse\-Help}}
+\subsubsection[{finalize}]{\setlength{\rightskip}{0pt plus 5cm}void finalize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_eclipse_help_a32d626626eee0bc4ade146973f6abb1c}
+
+
+Finish generation of the Eclipse specific help files. 
+
+This method writes footers of the files and closes them. \begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_eclipse_help_a25a40b6614565f755233080a384c35f1}{initialize()} 
+\end{DoxySeeAlso}
+
+
+Implementa \hyperlink{class_index_intf}{Index\-Intf}.
+
+\hypertarget{class_eclipse_help_a25a40b6614565f755233080a384c35f1}{\index{Eclipse\-Help@{Eclipse\-Help}!initialize@{initialize}}
+\index{initialize@{initialize}!EclipseHelp@{Eclipse\-Help}}
+\subsubsection[{initialize}]{\setlength{\rightskip}{0pt plus 5cm}void initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_eclipse_help_a25a40b6614565f755233080a384c35f1}
+
+
+Initialize the Eclipse generator. 
+
+This method opens the X\-M\-L T\-O\-C file and writes headers of the files. \begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_eclipse_help_a32d626626eee0bc4ade146973f6abb1c}{finalize()} 
+\end{DoxySeeAlso}
+
+
+Implementa \hyperlink{class_index_intf}{Index\-Intf}.
+
+
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/src/eclipsehelp.\-h\item 
+C\-:/\-Users/teste/git/doxygen/src/eclipsehelp.\-cpp\end{DoxyCompactItemize}

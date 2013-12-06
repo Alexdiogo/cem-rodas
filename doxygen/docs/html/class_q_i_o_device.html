@@ -1,0 +1,1335 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>CEM RODAS: Referência à classe QIODevice</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">CEM RODAS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Localizar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="modules.html"><span>Módulos</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Estruturas&#160;de&#160;dados</span></a></li>
+      <li><a href="files.html"><span>Ficheiros</span></a></li>
+      <li><a href="examples.html"><span>Exemplos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Localizar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Estruturas&#160;de&#160;dados</span></a></li>
+      <li><a href="classes.html"><span>Índice&#160;das&#160;estruturas&#160;de&#160;dados</span></a></li>
+      <li><a href="hierarchy.html"><span>Hierarquia&#160;de&#160;classes</span></a></li>
+      <li><a href="functions.html"><span>Campos&#160;de&#160;dados</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tudo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Estruturas de dados</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Ficheiros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variáveis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Definições de tipos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerações</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Valores da enumeração</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Amigos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Grupos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Membros públicos</a> &#124;
+<a href="#pro-methods">Membros protegidos</a> &#124;
+<a href="#pro-attribs">Atributos Protegidos</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência à classe QIODevice<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>The <a class="el" href="class_q_i_o_device.html" title="The QIODevice class is the base class of I/O devices. ">QIODevice</a> class is the base class of I/O devices.  
+ <a href="class_q_i_o_device.html#details">Mais...</a></p>
+
+<p><code>#include &lt;<a class="el" href="qiodevice_8h_source.html">qiodevice.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagrama de heranças da classe QIODevice</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_q_i_o_device.png" usemap="#QIODevice_map" alt=""/>
+  <map id="QIODevice_map" name="QIODevice_map">
+<area href="class_q_buffer.html" title="The QBuffer class is an I/O device that operates on a QByteArray. " alt="QBuffer" shape="rect" coords="0,56,99,80"/>
+<area href="class_q_file.html" title="The QFile class is an I/O device that operates on files. " alt="QFile" shape="rect" coords="109,56,208,80"/>
+<area href="class_q_g_string_buffer.html" alt="QGStringBuffer" shape="rect" coords="218,56,317,80"/>
+<area href="class_q_string_buffer.html" alt="QStringBuffer" shape="rect" coords="327,56,426,80"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Membros públicos</h2></td></tr>
+<tr class="memitem:a9856548cc04dff1795a43a4053b45944"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_i_o_device.html#a9856548cc04dff1795a43a4053b45944">QIODevice</a> ()</td></tr>
+<tr class="separator:a9856548cc04dff1795a43a4053b45944"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8e1ce02bac1a6585a8652c86f238385"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_i_o_device.html#ae8e1ce02bac1a6585a8652c86f238385">~QIODevice</a> ()</td></tr>
+<tr class="separator:ae8e1ce02bac1a6585a8652c86f238385"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f944e30665d7e6775691e5fc63e9dc7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_i_o_device.html#a5f944e30665d7e6775691e5fc63e9dc7">flags</a> () const </td></tr>
+<tr class="separator:a5f944e30665d7e6775691e5fc63e9dc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a649d73845b061693fc34041ba743191c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_i_o_device.html#a649d73845b061693fc34041ba743191c">mode</a> () const </td></tr>
+<tr class="separator:a649d73845b061693fc34041ba743191c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefe1a1411bb99d7f4ef75e5f869d93c2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_i_o_device.html#aefe1a1411bb99d7f4ef75e5f869d93c2">state</a> () const </td></tr>
+<tr class="separator:aefe1a1411bb99d7f4ef75e5f869d93c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af204d77ff61fe64f8307895683537d0f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_i_o_device.html#af204d77ff61fe64f8307895683537d0f">isDirectAccess</a> () const </td></tr>
+<tr class="separator:af204d77ff61fe64f8307895683537d0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a341a1db499fc669a8d6d928e4ed562c4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_i_o_device.html#a341a1db499fc669a8d6d928e4ed562c4">isSequentialAccess</a> () const </td></tr>
+<tr class="separator:a341a1db499fc669a8d6d928e4ed562c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc932f3d7bdf67d00eb8c16f794c18cb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_i_o_device.html#adc932f3d7bdf67d00eb8c16f794c18cb">isCombinedAccess</a> () const </td></tr>
+<tr class="separator:adc932f3d7bdf67d00eb8c16f794c18cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a461a2120c073ee7296f36e056965e814"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_i_o_device.html#a461a2120c073ee7296f36e056965e814">isBuffered</a> () const </td></tr>
+<tr class="separator:a461a2120c073ee7296f36e056965e814"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac85d64e1707ab9703cbc294172cf433d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_i_o_device.html#ac85d64e1707ab9703cbc294172cf433d">isRaw</a> () const </td></tr>
+<tr class="separator:ac85d64e1707ab9703cbc294172cf433d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23a0e1a575c081f62ce78763c32ed5d1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_i_o_device.html#a23a0e1a575c081f62ce78763c32ed5d1">isSynchronous</a> () const </td></tr>
+<tr class="separator:a23a0e1a575c081f62ce78763c32ed5d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad39f562822866117fb02b85e3251f4bb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_i_o_device.html#ad39f562822866117fb02b85e3251f4bb">isAsynchronous</a> () const </td></tr>
+<tr class="separator:ad39f562822866117fb02b85e3251f4bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa32090c7e1cc3f13f7eb1d419674f0bc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_i_o_device.html#aa32090c7e1cc3f13f7eb1d419674f0bc">isTranslated</a> () const </td></tr>
+<tr class="separator:aa32090c7e1cc3f13f7eb1d419674f0bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d7f091ba732d3899bcb34dde9fbfd63"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_i_o_device.html#a3d7f091ba732d3899bcb34dde9fbfd63">isReadable</a> () const </td></tr>
+<tr class="separator:a3d7f091ba732d3899bcb34dde9fbfd63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa741717fa726eea03300fdde9934808a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_i_o_device.html#aa741717fa726eea03300fdde9934808a">isWritable</a> () const </td></tr>
+<tr class="separator:aa741717fa726eea03300fdde9934808a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa05746eae63aee1fb4758c13d0301a9f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_i_o_device.html#aa05746eae63aee1fb4758c13d0301a9f">isReadWrite</a> () const </td></tr>
+<tr class="separator:aa05746eae63aee1fb4758c13d0301a9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44b7e3231fdb2ff6ee1fb822b2b921eb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_i_o_device.html#a44b7e3231fdb2ff6ee1fb822b2b921eb">isInactive</a> () const </td></tr>
+<tr class="separator:a44b7e3231fdb2ff6ee1fb822b2b921eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c7351cec1380d07f9e4b3ec96b2b1ff"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_i_o_device.html#a3c7351cec1380d07f9e4b3ec96b2b1ff">isOpen</a> () const </td></tr>
+<tr class="separator:a3c7351cec1380d07f9e4b3ec96b2b1ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bcf950a774cbd3106d4c68d3b2f38c9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_i_o_device.html#a8bcf950a774cbd3106d4c68d3b2f38c9">status</a> () const </td></tr>
+<tr class="separator:a8bcf950a774cbd3106d4c68d3b2f38c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1ada06d6d8928f3d31426739e477b19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_i_o_device.html#ab1ada06d6d8928f3d31426739e477b19">resetStatus</a> ()</td></tr>
+<tr class="separator:ab1ada06d6d8928f3d31426739e477b19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab12465ab61dfc4e6de94a9b039d00759"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_i_o_device.html#ab12465ab61dfc4e6de94a9b039d00759">open</a> (int <a class="el" href="class_q_i_o_device.html#a649d73845b061693fc34041ba743191c">mode</a>)=0</td></tr>
+<tr class="separator:ab12465ab61dfc4e6de94a9b039d00759"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99e62b97d3c24562d2dd84c47fab6b06"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_i_o_device.html#a99e62b97d3c24562d2dd84c47fab6b06">close</a> ()=0</td></tr>
+<tr class="separator:a99e62b97d3c24562d2dd84c47fab6b06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d70e7cca08ae728d486c63f4804e63b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_i_o_device.html#a4d70e7cca08ae728d486c63f4804e63b">flush</a> ()=0</td></tr>
+<tr class="separator:a4d70e7cca08ae728d486c63f4804e63b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add26671f6640db9316df9922fef40b38"><td class="memItemLeft" align="right" valign="top">virtual uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_i_o_device.html#add26671f6640db9316df9922fef40b38">size</a> () const =0</td></tr>
+<tr class="separator:add26671f6640db9316df9922fef40b38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bce8d0bb4d6fbaa012b9a61c3910907"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_i_o_device.html#a3bce8d0bb4d6fbaa012b9a61c3910907">at</a> () const </td></tr>
+<tr class="separator:a3bce8d0bb4d6fbaa012b9a61c3910907"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbf6dc03efea5d2f5098b8316a8a66b9"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_i_o_device.html#afbf6dc03efea5d2f5098b8316a8a66b9">at</a> (int)</td></tr>
+<tr class="separator:afbf6dc03efea5d2f5098b8316a8a66b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11cbf4ba82ee565cb9eef28b972bf145"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_i_o_device.html#a11cbf4ba82ee565cb9eef28b972bf145">atEnd</a> () const </td></tr>
+<tr class="separator:a11cbf4ba82ee565cb9eef28b972bf145"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50910ef42a65d4c139af341f1ef2323f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_i_o_device.html#a50910ef42a65d4c139af341f1ef2323f">reset</a> ()</td></tr>
+<tr class="separator:a50910ef42a65d4c139af341f1ef2323f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0c97a10369456c0942192a14f11c188"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_i_o_device.html#ac0c97a10369456c0942192a14f11c188">readBlock</a> (char *data, uint maxlen)=0</td></tr>
+<tr class="separator:ac0c97a10369456c0942192a14f11c188"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90a5a6111eca9a444970cf49aea9f9a8"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_i_o_device.html#a90a5a6111eca9a444970cf49aea9f9a8">writeBlock</a> (const char *data, uint len)=0</td></tr>
+<tr class="separator:a90a5a6111eca9a444970cf49aea9f9a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa360b2281966b05ff25504cf03046c90"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_i_o_device.html#aa360b2281966b05ff25504cf03046c90">readLine</a> (char *data, uint maxlen)</td></tr>
+<tr class="separator:aa360b2281966b05ff25504cf03046c90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2c00524f1222398355427621c705236"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_i_o_device.html#ac2c00524f1222398355427621c705236">writeBlock</a> (const <a class="el" href="class_q_array.html">QByteArray</a> &amp;data)</td></tr>
+<tr class="separator:ac2c00524f1222398355427621c705236"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b6261ecdae0766f83d351e39be9130d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_array.html">QByteArray</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_i_o_device.html#a3b6261ecdae0766f83d351e39be9130d">readAll</a> ()</td></tr>
+<tr class="separator:a3b6261ecdae0766f83d351e39be9130d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fcd2eaee3ba67c6029f9e3e835bb7b1"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_i_o_device.html#a8fcd2eaee3ba67c6029f9e3e835bb7b1">getch</a> ()=0</td></tr>
+<tr class="separator:a8fcd2eaee3ba67c6029f9e3e835bb7b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97247e4849c3038bde0e115215f5b995"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_i_o_device.html#a97247e4849c3038bde0e115215f5b995">putch</a> (int)=0</td></tr>
+<tr class="separator:a97247e4849c3038bde0e115215f5b995"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a5c37807d314cc04d65f1d0825c6e31"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_i_o_device.html#a8a5c37807d314cc04d65f1d0825c6e31">ungetch</a> (int)=0</td></tr>
+<tr class="separator:a8a5c37807d314cc04d65f1d0825c6e31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Membros protegidos</h2></td></tr>
+<tr class="memitem:a9f29e5457641fae1b405b144a8206ca5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9f29e5457641fae1b405b144a8206ca5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setFlags</b> (int f)</td></tr>
+<tr class="separator:a9f29e5457641fae1b405b144a8206ca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa41c1899c8cdb367661ec403982d1199"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa41c1899c8cdb367661ec403982d1199"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setType</b> (int)</td></tr>
+<tr class="separator:aa41c1899c8cdb367661ec403982d1199"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7992c72160a65bc47f44d0d4002cb1c2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7992c72160a65bc47f44d0d4002cb1c2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setMode</b> (int)</td></tr>
+<tr class="separator:a7992c72160a65bc47f44d0d4002cb1c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9189a00434da3f208a730a5deae4337"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab9189a00434da3f208a730a5deae4337"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setState</b> (int)</td></tr>
+<tr class="separator:ab9189a00434da3f208a730a5deae4337"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ecca54834bee96d3b75cb0b6cff0eac"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8ecca54834bee96d3b75cb0b6cff0eac"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setStatus</b> (int)</td></tr>
+<tr class="separator:a8ecca54834bee96d3b75cb0b6cff0eac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Atributos Protegidos</h2></td></tr>
+<tr class="memitem:a8e1a0aabb56d3acb6a7ace40493e79ff"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8e1a0aabb56d3acb6a7ace40493e79ff"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>ioIndex</b></td></tr>
+<tr class="separator:a8e1a0aabb56d3acb6a7ace40493e79ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>The <a class="el" href="class_q_i_o_device.html" title="The QIODevice class is the base class of I/O devices. ">QIODevice</a> class is the base class of I/O devices. </p>
+<p>An I/O device represents a medium that one can read bytes from and/or write bytes to. The <a class="el" href="class_q_i_o_device.html" title="The QIODevice class is the base class of I/O devices. ">QIODevice</a> class is the abstract superclass of all such devices; classes like <a class="el" href="class_q_file.html" title="The QFile class is an I/O device that operates on files. ">QFile</a>, <a class="el" href="class_q_buffer.html" title="The QBuffer class is an I/O device that operates on a QByteArray. ">QBuffer</a> and QSocket inherit <a class="el" href="class_q_i_o_device.html" title="The QIODevice class is the base class of I/O devices. ">QIODevice</a> and implement virtual functions like <a class="el" href="structcmd_8h.html#af2a3ea719b83f672637febdd87c36c36" title="Writes count bytes from buf to the filedescriptor fd. ">write()</a> appropriately.</p>
+<p>While applications sometimes use <a class="el" href="class_q_i_o_device.html" title="The QIODevice class is the base class of I/O devices. ">QIODevice</a> directly, mostly it is better to go through <a class="el" href="class_q_text_stream.html" title="The QTextStream class provides basic functions for reading and writing text using a QIODevice...">QTextStream</a> and <a class="el" href="class_q_data_stream.html" title="The QDataStream class provides serialization of binary data to a QIODevice. ">QDataStream</a>, which provide stream operations on any <a class="el" href="class_q_i_o_device.html" title="The QIODevice class is the base class of I/O devices. ">QIODevice</a> subclass. <a class="el" href="class_q_text_stream.html" title="The QTextStream class provides basic functions for reading and writing text using a QIODevice...">QTextStream</a> provides text-oriented stream functionality (for human-readable ASCII files, for example), while <a class="el" href="class_q_data_stream.html" title="The QDataStream class provides serialization of binary data to a QIODevice. ">QDataStream</a> deals with binary data in a totally platform-independent manner.</p>
+<p>The public member functions in <a class="el" href="class_q_i_o_device.html" title="The QIODevice class is the base class of I/O devices. ">QIODevice</a> roughly fall into two groups: The action functions and the state access functions. The most important action functions are: </p>
+<ul>
+<li>
+<p class="startli"><a class="el" href="class_q_i_o_device.html#ab12465ab61dfc4e6de94a9b039d00759">open()</a> opens a device for reading and/or writing, depending on the argument to <a class="el" href="class_q_i_o_device.html#ab12465ab61dfc4e6de94a9b039d00759">open()</a>.</p>
+<p class="endli"></p>
+</li>
+<li>
+<p class="startli"><a class="el" href="class_q_i_o_device.html#a99e62b97d3c24562d2dd84c47fab6b06">close()</a> closes the device and tidies up.</p>
+<p class="endli"></p>
+</li>
+<li>
+<p class="startli"><a class="el" href="class_q_i_o_device.html#ac0c97a10369456c0942192a14f11c188">readBlock()</a> reads a block of data from the device.</p>
+<p class="endli"></p>
+</li>
+<li>
+<p class="startli"><a class="el" href="class_q_i_o_device.html#a90a5a6111eca9a444970cf49aea9f9a8">writeBlock()</a> writes a block of data to the device.</p>
+<p class="endli"></p>
+</li>
+<li>
+<p class="startli"><a class="el" href="class_q_i_o_device.html#aa360b2281966b05ff25504cf03046c90">readLine()</a> reads a line (of text, usually) from the device.</p>
+<p class="endli"></p>
+</li>
+<li>
+<p class="startli"><a class="el" href="class_q_i_o_device.html#a4d70e7cca08ae728d486c63f4804e63b">flush()</a> ensures that all buffered data are written to the real device.</p>
+<p class="endli"></p>
+</li>
+</ul>
+<p>There are also some other, less used, action functions: </p>
+<ul>
+<li>
+<p class="startli"><a class="el" href="class_q_i_o_device.html#a8fcd2eaee3ba67c6029f9e3e835bb7b1">getch()</a> reads a single character.</p>
+<p class="endli"></p>
+</li>
+<li>
+<p class="startli"><a class="el" href="class_q_i_o_device.html#a8a5c37807d314cc04d65f1d0825c6e31">ungetch()</a> forgets the last call to <a class="el" href="class_q_i_o_device.html#a8fcd2eaee3ba67c6029f9e3e835bb7b1">getch()</a>, if possible.</p>
+<p class="endli"></p>
+</li>
+<li>
+<p class="startli"><a class="el" href="class_q_i_o_device.html#a97247e4849c3038bde0e115215f5b995">putch()</a> writes a single character.</p>
+<p class="endli"></p>
+</li>
+<li>
+<p class="startli"><a class="el" href="class_q_i_o_device.html#add26671f6640db9316df9922fef40b38">size()</a> returns the size of the device, if there is one.</p>
+<p class="endli"></p>
+</li>
+<li>
+<p class="startli"><a class="el" href="class_q_i_o_device.html#a3bce8d0bb4d6fbaa012b9a61c3910907">at()</a> returns the current read/write pointer, if there is one for this device, or it moves the pointer.</p>
+<p class="endli"></p>
+</li>
+<li>
+<p class="startli"><a class="el" href="class_q_i_o_device.html#a11cbf4ba82ee565cb9eef28b972bf145">atEnd()</a> says whether there is more to read, if that is a meaningful question for this device.</p>
+<p class="endli"></p>
+</li>
+<li>
+<p class="startli"><a class="el" href="class_q_i_o_device.html#a50910ef42a65d4c139af341f1ef2323f">reset()</a> moves the read/write pointer to the start of the device, if that is possible for this device.</p>
+<p class="endli"></p>
+</li>
+</ul>
+<p>The state access are all "get" functions. The <a class="el" href="class_q_i_o_device.html" title="The QIODevice class is the base class of I/O devices. ">QIODevice</a> subclass calls setState() to update the state, and simple access functions tell the user of the device what the device's state is. Here are the settings, and their associated access functions: </p>
+<ul>
+<li>
+<p class="startli">Access type. Some devices are direct access (it is possible to read/write anywhere) while others are sequential. <a class="el" href="class_q_i_o_device.html" title="The QIODevice class is the base class of I/O devices. ">QIODevice</a> provides the access functions <a class="el" href="class_q_i_o_device.html#af204d77ff61fe64f8307895683537d0f">isDirectAccess()</a>, <a class="el" href="class_q_i_o_device.html#a341a1db499fc669a8d6d928e4ed562c4">isSequentialAccess()</a> and <a class="el" href="class_q_i_o_device.html#adc932f3d7bdf67d00eb8c16f794c18cb">isCombinedAccess()</a> to tell users what a given I/O device supports.</p>
+<p class="endli"></p>
+</li>
+<li>
+<p class="startli">Buffering. Some devices are accessed in raw mode while others are buffered. Buffering usually provides greater efficiency, particularly for small read/write operations. <a class="el" href="class_q_i_o_device.html#a461a2120c073ee7296f36e056965e814">isBuffered()</a> tells the user whether a given device is buffered. (This can often be set by the application in the call to <a class="el" href="class_q_i_o_device.html#ab12465ab61dfc4e6de94a9b039d00759">open()</a>.)</p>
+<p class="endli"></p>
+</li>
+<li>
+<p class="startli">Synchronicity. Synchronous devices work there and then, for example files. When you read from a file, the file delivers its data right away. Others, such as a socket connected to a HTTP server, may not deliver the data until seconds after you ask to read it. <a class="el" href="class_q_i_o_device.html#a23a0e1a575c081f62ce78763c32ed5d1">isSynchronous()</a> and <a class="el" href="class_q_i_o_device.html#ad39f562822866117fb02b85e3251f4bb">isAsynchronous()</a> tells the user how this device operates.</p>
+<p class="endli"></p>
+</li>
+<li>
+<p class="startli">CR/LF translation. For simplicity, applications often like to see just a single CR/LF style, and <a class="el" href="class_q_i_o_device.html" title="The QIODevice class is the base class of I/O devices. ">QIODevice</a> subclasses can provide that. <a class="el" href="class_q_i_o_device.html#aa32090c7e1cc3f13f7eb1d419674f0bc">isTranslated()</a> returns TRUE if this object translates CR/LF to just LF. (This can often be set by the application in the call to <a class="el" href="class_q_i_o_device.html#ab12465ab61dfc4e6de94a9b039d00759">open()</a>.)</p>
+<p class="endli"></p>
+</li>
+<li>
+<p class="startli">Accessibility. Some files cannot be written, for example. <a class="el" href="class_q_i_o_device.html#a3d7f091ba732d3899bcb34dde9fbfd63">isReadable()</a>, isWritable and <a class="el" href="class_q_i_o_device.html#aa05746eae63aee1fb4758c13d0301a9f">isReadWrite()</a> tells the application whether it can read from and write to a given device. (This can often be set by the application in the call to <a class="el" href="class_q_i_o_device.html#ab12465ab61dfc4e6de94a9b039d00759">open()</a>.)</p>
+<p class="endli"></p>
+</li>
+<li>
+<p class="startli">Finally, <a class="el" href="class_q_i_o_device.html#a3c7351cec1380d07f9e4b3ec96b2b1ff">isOpen()</a> returns TRUE if the device is open. This can quite obviously be set using <a class="el" href="class_q_i_o_device.html#ab12465ab61dfc4e6de94a9b039d00759">open()</a> :)</p>
+<p class="endli"></p>
+</li>
+</ul>
+<p><a class="el" href="class_q_i_o_device.html" title="The QIODevice class is the base class of I/O devices. ">QIODevice</a> provides numerous pure virtual functions you need to implement when subclassing it. Here is a skeleton subclass with all the members you are certain to need, and some it's likely that you will need:</p>
+<div class="fragment"><div class="line"><span class="keyword">class </span>YourDevice : <span class="keyword">public</span> <a class="code" href="class_q_i_o_device.html">QIODevice</a></div>
+<div class="line">{</div>
+<div class="line"><span class="keyword">public</span>:</div>
+<div class="line">YourDevice();</div>
+<div class="line">   ~YourDevice();</div>
+<div class="line"></div>
+<div class="line"><span class="keywordtype">bool</span> <a class="code" href="class_q_i_o_device.html#ab12465ab61dfc4e6de94a9b039d00759">open</a>( <span class="keywordtype">int</span> <a class="code" href="class_q_i_o_device.html#a649d73845b061693fc34041ba743191c">mode</a> );</div>
+<div class="line"><span class="keywordtype">void</span> <a class="code" href="class_q_i_o_device.html#a99e62b97d3c24562d2dd84c47fab6b06">close</a>();</div>
+<div class="line"><span class="keywordtype">void</span> <a class="code" href="class_q_i_o_device.html#a4d70e7cca08ae728d486c63f4804e63b">flush</a>();</div>
+<div class="line"></div>
+<div class="line">uint <a class="code" href="class_q_i_o_device.html#add26671f6640db9316df9922fef40b38">size</a>() <span class="keyword">const</span>;</div>
+<div class="line"><span class="keywordtype">int</span>  <a class="code" href="class_q_i_o_device.html#a3bce8d0bb4d6fbaa012b9a61c3910907">at</a>() <span class="keyword">const</span>;  <span class="comment">// not a pure virtual function</span></div>
+<div class="line"><span class="keywordtype">bool</span> <a class="code" href="class_q_i_o_device.html#a3bce8d0bb4d6fbaa012b9a61c3910907">at</a>( <span class="keywordtype">int</span> );       <span class="comment">// not a pure virtual function</span></div>
+<div class="line"><span class="keywordtype">bool</span> <a class="code" href="class_q_i_o_device.html#a11cbf4ba82ee565cb9eef28b972bf145">atEnd</a>() <span class="keyword">const</span>;   <span class="comment">// not a pure virtual function</span></div>
+<div class="line"></div>
+<div class="line"><span class="keywordtype">int</span> <a class="code" href="class_q_i_o_device.html#ac0c97a10369456c0942192a14f11c188">readBlock</a>( <span class="keywordtype">char</span> *data, uint maxlen );</div>
+<div class="line"><span class="keywordtype">int</span> <a class="code" href="class_q_i_o_device.html#a90a5a6111eca9a444970cf49aea9f9a8">writeBlock</a>( <span class="keyword">const</span> <span class="keywordtype">char</span> *data, uint len );</div>
+<div class="line"><span class="keywordtype">int</span> <a class="code" href="class_q_i_o_device.html#aa360b2281966b05ff25504cf03046c90">readLine</a>( <span class="keywordtype">char</span> *data, uint maxlen );</div>
+<div class="line"></div>
+<div class="line"><span class="keywordtype">int</span> <a class="code" href="class_q_i_o_device.html#a8fcd2eaee3ba67c6029f9e3e835bb7b1">getch</a>();</div>
+<div class="line"><span class="keywordtype">int</span> <a class="code" href="class_q_i_o_device.html#a97247e4849c3038bde0e115215f5b995">putch</a>( <span class="keywordtype">int</span> );</div>
+<div class="line"><span class="keywordtype">int</span> <a class="code" href="class_q_i_o_device.html#a8a5c37807d314cc04d65f1d0825c6e31">ungetch</a>( <span class="keywordtype">int</span> );</div>
+<div class="line">};</div>
+</div><!-- fragment --><p>The three non-pure virtual functions can be ignored if your device is sequential (e.g. an RS-232 port).</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_data_stream.html" title="The QDataStream class provides serialization of binary data to a QIODevice. ">QDataStream</a>, <a class="el" href="class_q_text_stream.html" title="The QTextStream class provides basic functions for reading and writing text using a QIODevice...">QTextStream</a> </dd></dl>
+</div><h2 class="groupheader">Documentação dos Construtores &amp; Destrutor</h2>
+<a class="anchor" id="a9856548cc04dff1795a43a4053b45944"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_i_o_device.html">QIODevice</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Constructs an I/O device. </p>
+
+</div>
+</div>
+<a class="anchor" id="ae8e1ce02bac1a6585a8652c86f238385"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">~<a class="el" href="class_q_i_o_device.html">QIODevice</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Destructs the I/O device. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentação dos métodos</h2>
+<a class="anchor" id="a3bce8d0bb4d6fbaa012b9a61c3910907"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int at </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Virtual function that returns the current I/O device index.</p>
+<p>This index is the data read/write head of the I/O device.</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_i_o_device.html#add26671f6640db9316df9922fef40b38">size()</a> </dd></dl>
+
+<p>Reimplementado em <a class="el" href="class_q_string_buffer.html#a3bce8d0bb4d6fbaa012b9a61c3910907">QStringBuffer</a>, <a class="el" href="class_q_file.html#a3bce8d0bb4d6fbaa012b9a61c3910907">QFile</a>, <a class="el" href="class_q_buffer.html#a3bce8d0bb4d6fbaa012b9a61c3910907">QBuffer</a> e <a class="el" href="class_q_g_string_buffer.html#a3bce8d0bb4d6fbaa012b9a61c3910907">QGStringBuffer</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afbf6dc03efea5d2f5098b8316a8a66b9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool at </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pos</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Virtual function that sets the I/O device index to <em>pos</em>. </p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_i_o_device.html#add26671f6640db9316df9922fef40b38">size()</a> </dd></dl>
+
+<p>Reimplementado em <a class="el" href="class_q_string_buffer.html#aba2e4f48241029c25494e2645d088440">QStringBuffer</a>, <a class="el" href="class_q_file.html#afbf6dc03efea5d2f5098b8316a8a66b9">QFile</a>, <a class="el" href="class_q_buffer.html#afbf6dc03efea5d2f5098b8316a8a66b9">QBuffer</a> e <a class="el" href="class_q_g_string_buffer.html#aba2e4f48241029c25494e2645d088440">QGStringBuffer</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a11cbf4ba82ee565cb9eef28b972bf145"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool atEnd </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Virtual function that returns TRUE if the I/O device index is at the end of the input. </p>
+
+<p>Reimplementado em <a class="el" href="class_q_file.html#a11cbf4ba82ee565cb9eef28b972bf145">QFile</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a99e62b97d3c24562d2dd84c47fab6b06"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void close </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Closes the I/O device.</p>
+<p>This virtual function must be reimplemented by all subclasses.</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_i_o_device.html#ab12465ab61dfc4e6de94a9b039d00759">open()</a> </dd></dl>
+
+<p>Implementado em <a class="el" href="class_q_string_buffer.html#a5ae591df94fc66ccb85cbb6565368bca">QStringBuffer</a>, <a class="el" href="class_q_file.html#a5ae591df94fc66ccb85cbb6565368bca">QFile</a>, <a class="el" href="class_q_buffer.html#a5ae591df94fc66ccb85cbb6565368bca">QBuffer</a> e <a class="el" href="class_q_g_string_buffer.html#a5ae591df94fc66ccb85cbb6565368bca">QGStringBuffer</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5f944e30665d7e6775691e5fc63e9dc7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int flags </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the current I/O device flags setting.</p>
+<p>Flags consists of mode flags and state flags.</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_i_o_device.html#a649d73845b061693fc34041ba743191c">mode()</a>, <a class="el" href="class_q_i_o_device.html#aefe1a1411bb99d7f4ef75e5f869d93c2">state()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4d70e7cca08ae728d486c63f4804e63b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void flush </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Flushes an open I/O device.</p>
+<p>This virtual function must be reimplemented by all subclasses. </p>
+
+<p>Implementado em <a class="el" href="class_q_string_buffer.html#adac116554b543b7c4228c018a85882f5">QStringBuffer</a>, <a class="el" href="class_q_file.html#adac116554b543b7c4228c018a85882f5">QFile</a>, <a class="el" href="class_q_buffer.html#adac116554b543b7c4228c018a85882f5">QBuffer</a> e <a class="el" href="class_q_g_string_buffer.html#adac116554b543b7c4228c018a85882f5">QGStringBuffer</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8fcd2eaee3ba67c6029f9e3e835bb7b1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int getch </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Reads a single byte/character from the I/O device.</p>
+<p>Returns the byte/character read, or -1 if the end of the I/O device has been reached.</p>
+<p>This virtual function must be reimplemented by all subclasses.</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_i_o_device.html#a97247e4849c3038bde0e115215f5b995">putch()</a>, <a class="el" href="class_q_i_o_device.html#a8a5c37807d314cc04d65f1d0825c6e31">ungetch()</a> </dd></dl>
+
+<p>Implementado em <a class="el" href="class_q_string_buffer.html#a160f6d2893bb6b89ab3ad5d863c20e3d">QStringBuffer</a>, <a class="el" href="class_q_file.html#a160f6d2893bb6b89ab3ad5d863c20e3d">QFile</a>, <a class="el" href="class_q_buffer.html#a160f6d2893bb6b89ab3ad5d863c20e3d">QBuffer</a> e <a class="el" href="class_q_g_string_buffer.html#a160f6d2893bb6b89ab3ad5d863c20e3d">QGStringBuffer</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad39f562822866117fb02b85e3251f4bb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isAsynchronous </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns TRUE if the I/O device is a asynchronous device, otherwise FALSE.</p>
+<p>This mode is currently not in use.</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_i_o_device.html#a23a0e1a575c081f62ce78763c32ed5d1">isSynchronous()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a461a2120c073ee7296f36e056965e814"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isBuffered </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns TRUE if the I/O device is a buffered (not raw) device, otherwise FALSE. </p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_i_o_device.html#ac85d64e1707ab9703cbc294172cf433d">isRaw()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="adc932f3d7bdf67d00eb8c16f794c18cb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isCombinedAccess </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns TRUE if the I/O device is a combined access (both direct and sequential) device, otherwise FALSE.</p>
+<p>This access method is currently not in use. </p>
+
+</div>
+</div>
+<a class="anchor" id="af204d77ff61fe64f8307895683537d0f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isDirectAccess </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns TRUE if the I/O device is a direct access (not sequential) device, otherwise FALSE. </p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_i_o_device.html#a341a1db499fc669a8d6d928e4ed562c4">isSequentialAccess()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a44b7e3231fdb2ff6ee1fb822b2b921eb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isInactive </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns TRUE if the I/O device state is 0, i.e. the device is not open. </p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_i_o_device.html#a3c7351cec1380d07f9e4b3ec96b2b1ff">isOpen()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3c7351cec1380d07f9e4b3ec96b2b1ff"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isOpen </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns TRUE if the I/O device state has been opened, otherwise FALSE. </p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_i_o_device.html#a44b7e3231fdb2ff6ee1fb822b2b921eb">isInactive()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac85d64e1707ab9703cbc294172cf433d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isRaw </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns TRUE if the I/O device is a raw (not buffered) device, otherwise FALSE. </p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_i_o_device.html#a461a2120c073ee7296f36e056965e814">isBuffered()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3d7f091ba732d3899bcb34dde9fbfd63"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isReadable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns TRUE if the I/O device was opened using <code>IO_ReadOnly</code> or <code>IO_ReadWrite</code> mode. </p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_i_o_device.html#aa741717fa726eea03300fdde9934808a">isWritable()</a>, <a class="el" href="class_q_i_o_device.html#aa05746eae63aee1fb4758c13d0301a9f">isReadWrite()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa05746eae63aee1fb4758c13d0301a9f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isReadWrite </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns TRUE if the I/O device was opened using <code>IO_ReadWrite</code> mode. </p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_i_o_device.html#a3d7f091ba732d3899bcb34dde9fbfd63">isReadable()</a>, <a class="el" href="class_q_i_o_device.html#aa741717fa726eea03300fdde9934808a">isWritable()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a341a1db499fc669a8d6d928e4ed562c4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isSequentialAccess </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns TRUE if the I/O device is a sequential access (not direct) device, otherwise FALSE. Operations involving <a class="el" href="class_q_i_o_device.html#add26671f6640db9316df9922fef40b38">size()</a> and <a class="el" href="class_q_i_o_device.html#afbf6dc03efea5d2f5098b8316a8a66b9">at(int)</a> are not valid on sequential devices. </p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_i_o_device.html#af204d77ff61fe64f8307895683537d0f">isDirectAccess()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a23a0e1a575c081f62ce78763c32ed5d1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isSynchronous </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns TRUE if the I/O device is a synchronous device, otherwise FALSE. </p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_i_o_device.html#ad39f562822866117fb02b85e3251f4bb">isAsynchronous()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa32090c7e1cc3f13f7eb1d419674f0bc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isTranslated </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns TRUE if the I/O device translates carriage-return and linefeed characters.</p>
+<p><a class="el" href="class_a.html">A</a> <a class="el" href="class_q_file.html" title="The QFile class is an I/O device that operates on files. ">QFile</a> is translated if it is opened with the <code>IO_Translate</code> mode flag. </p>
+
+</div>
+</div>
+<a class="anchor" id="aa741717fa726eea03300fdde9934808a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isWritable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns TRUE if the I/O device was opened using <code>IO_WriteOnly</code> or <code>IO_ReadWrite</code> mode. </p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_i_o_device.html#a3d7f091ba732d3899bcb34dde9fbfd63">isReadable()</a>, <a class="el" href="class_q_i_o_device.html#aa05746eae63aee1fb4758c13d0301a9f">isReadWrite()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a649d73845b061693fc34041ba743191c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns bits OR'ed together that specify the current operation mode.</p>
+<p>These are the flags that were given to the <a class="el" href="class_q_i_o_device.html#ab12465ab61dfc4e6de94a9b039d00759">open()</a> function.</p>
+<p>The flags are: <code>IO_ReadOnly</code>, <code>IO_WriteOnly</code>, <code>IO_ReadWrite</code>, <code>IO_Append</code>, <code>IO_Truncate</code> and <code>IO_Translate</code>. </p>
+
+</div>
+</div>
+<a class="anchor" id="ab12465ab61dfc4e6de94a9b039d00759"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool open </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Opens the I/O device using the specified <em>mode</em>. Returns TRUE if successful, or FALSE if the device could not be opened.</p>
+<p>The mode parameter <em>m</em> must be a combination of the following flags. </p>
+<ul>
+<li>
+<code>IO_Raw</code> specified raw (unbuffered) file access. </li>
+<li>
+<code>IO_ReadOnly</code> opens a file in read-only mode. </li>
+<li>
+<code>IO_WriteOnly</code> opens a file in write-only mode. </li>
+<li>
+<code>IO_ReadWrite</code> opens a file in read/write mode. </li>
+<li>
+<code>IO_Append</code> sets the file index to the end of the file. </li>
+<li>
+<code>IO_Truncate</code> truncates the file. </li>
+<li>
+<code>IO_Translate</code> enables carriage returns and linefeed translation for text files under MS-DOS, Window, OS/2 and Macintosh. On Unix systems this flag has no effect. Use with caution as it will also transform every linefeed written to the file into a CRLF pair. This is likely to corrupt your file when writing binary data to it. Cannot be combined with <code>IO_Raw</code>. </li>
+</ul>
+<p>This virtual function must be reimplemented by all subclasses.</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_i_o_device.html#a99e62b97d3c24562d2dd84c47fab6b06">close()</a> </dd></dl>
+
+<p>Implementado em <a class="el" href="class_q_string_buffer.html#a2c4ec4ed8d34c778b4e7c7b4db3de4b2">QStringBuffer</a>, <a class="el" href="class_q_file.html#ae7331757d844e703f2f6e4727e454193">QFile</a>, <a class="el" href="class_q_buffer.html#ae7331757d844e703f2f6e4727e454193">QBuffer</a> e <a class="el" href="class_q_g_string_buffer.html#a2c4ec4ed8d34c778b4e7c7b4db3de4b2">QGStringBuffer</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a97247e4849c3038bde0e115215f5b995"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int putch </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ch</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Writes the character <em>ch</em> to the I/O device.</p>
+<p>Returns <em>ch</em>, or -1 if some error occurred.</p>
+<p>This virtual function must be reimplemented by all subclasses.</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_i_o_device.html#a8fcd2eaee3ba67c6029f9e3e835bb7b1">getch()</a>, <a class="el" href="class_q_i_o_device.html#a8a5c37807d314cc04d65f1d0825c6e31">ungetch()</a> </dd></dl>
+
+<p>Implementado em <a class="el" href="class_q_string_buffer.html#a5b7f09997f2156ba7b311416fee8a18e">QStringBuffer</a>, <a class="el" href="class_q_file.html#a9e6c0b0babdacae50c15aa246803e771">QFile</a>, <a class="el" href="class_q_buffer.html#a9e6c0b0babdacae50c15aa246803e771">QBuffer</a> e <a class="el" href="class_q_g_string_buffer.html#a5b7f09997f2156ba7b311416fee8a18e">QGStringBuffer</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3b6261ecdae0766f83d351e39be9130d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_array.html">QByteArray</a> readAll </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This convenience function returns all of the remaining data in the device. Note that this only works for direct access devices, such as <a class="el" href="class_q_file.html" title="The QFile class is an I/O device that operates on files. ">QFile</a>.</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_i_o_device.html#af204d77ff61fe64f8307895683537d0f">isDirectAccess()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac0c97a10369456c0942192a14f11c188"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int readBlock </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>maxlen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Reads at most <em>maxlen</em> bytes from the I/O device into <em>data</em> and returns the number of bytes actually read.</p>
+<p>This virtual function must be reimplemented by all subclasses.</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_i_o_device.html#a90a5a6111eca9a444970cf49aea9f9a8">writeBlock()</a> </dd></dl>
+
+<p>Implementado em <a class="el" href="class_q_string_buffer.html#ae8ab7313ab944afd8032aabb8cc86aeb">QStringBuffer</a>, <a class="el" href="class_q_file.html#a728f540fa66b4fe748da2b637e2d72e1">QFile</a>, <a class="el" href="class_q_buffer.html#a391d82301a9f520c9b569522402aed84">QBuffer</a> e <a class="el" href="class_q_g_string_buffer.html#a5b9fb6a6e465fb192ae8a94cfa4341f3">QGStringBuffer</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa360b2281966b05ff25504cf03046c90"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int readLine </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>maxlen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Reads a line of text, up to <em>maxlen</em> bytes including a terminating \0. If there is a newline at the end if the line, it is not stripped.</p>
+<p>Returns the number of bytes read, or -1 in case of error.</p>
+<p>This virtual function can be reimplemented much more efficiently by the most subclasses.</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_i_o_device.html#ac0c97a10369456c0942192a14f11c188">readBlock()</a>, <a class="el" href="class_q_text_stream.html#aa4835afcc121a9e07102e8e98f315483">QTextStream::readLine()</a> </dd></dl>
+
+<p>Reimplementado em <a class="el" href="class_q_file.html#aa360b2281966b05ff25504cf03046c90">QFile</a> e <a class="el" href="class_q_buffer.html#af19c7fb4af1fd67d5d2c17cd10ef6320">QBuffer</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a50910ef42a65d4c139af341f1ef2323f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool reset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the device index to 0. </p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_i_o_device.html#a3bce8d0bb4d6fbaa012b9a61c3910907">at()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab1ada06d6d8928f3d31426739e477b19"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void resetStatus </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the I/O device status to <code>IO_Ok</code>.</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_i_o_device.html#a8bcf950a774cbd3106d4c68d3b2f38c9">status()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="add26671f6640db9316df9922fef40b38"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Virtual function that returns the size of the I/O device. </p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_i_o_device.html#a3bce8d0bb4d6fbaa012b9a61c3910907">at()</a> </dd></dl>
+
+<p>Implementado em <a class="el" href="class_q_string_buffer.html#a7e63723212bed1ca52f0fe57e58b812e">QStringBuffer</a>, <a class="el" href="class_q_file.html#a7e63723212bed1ca52f0fe57e58b812e">QFile</a>, <a class="el" href="class_q_buffer.html#a7e63723212bed1ca52f0fe57e58b812e">QBuffer</a> e <a class="el" href="class_q_g_string_buffer.html#a7e63723212bed1ca52f0fe57e58b812e">QGStringBuffer</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aefe1a1411bb99d7f4ef75e5f869d93c2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int state </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns bits OR'ed together that specify the current state.</p>
+<p>The flags are: <code>IO_Open</code>.</p>
+<p>Subclasses may define more flags. </p>
+
+</div>
+</div>
+<a class="anchor" id="a8bcf950a774cbd3106d4c68d3b2f38c9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int status </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the I/O device status.</p>
+<p>The I/O device status returns an error code. If <a class="el" href="class_q_i_o_device.html#ab12465ab61dfc4e6de94a9b039d00759">open()</a> returns FALSE or <a class="el" href="class_q_i_o_device.html#ac0c97a10369456c0942192a14f11c188">readBlock()</a> or <a class="el" href="class_q_i_o_device.html#a90a5a6111eca9a444970cf49aea9f9a8">writeBlock()</a> return -1, this function can be called to get the reason why the operation did not succeed.</p>
+<p>The status codes are: </p>
+<ul>
+<li>
+<code>IO_Ok</code> The operation was successful. </li>
+<li>
+<code>IO_ReadError</code> Could not read from the device. </li>
+<li>
+<code>IO_WriteError</code> Could not write to the device. </li>
+<li>
+<code>IO_FatalError</code> <a class="el" href="class_a.html">A</a> fatal unrecoverable error occurred. </li>
+<li>
+<code>IO_OpenError</code> Could not open the device. </li>
+<li>
+<code>IO_ConnectError</code> Could not connect to the device. </li>
+<li>
+<code>IO_AbortError</code> The operation was unexpectedly aborted. </li>
+<li>
+<code>IO_TimeOutError</code> The operation timed out. </li>
+<li>
+<code>IO_OnCloseError</code> An unspecified error happened on close. </li>
+</ul>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_i_o_device.html#ab1ada06d6d8928f3d31426739e477b19">resetStatus()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8a5c37807d314cc04d65f1d0825c6e31"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ungetch </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ch</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Puts the character <em>ch</em> back into the I/O device and decrements the index if it is not zero.</p>
+<p>This function is normally called to "undo" a <a class="el" href="class_q_i_o_device.html#a8fcd2eaee3ba67c6029f9e3e835bb7b1">getch()</a> operation.</p>
+<p>Returns <em>ch</em>, or -1 if some error occurred.</p>
+<p>This virtual function must be reimplemented by all subclasses.</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_i_o_device.html#a8fcd2eaee3ba67c6029f9e3e835bb7b1">getch()</a>, <a class="el" href="class_q_i_o_device.html#a97247e4849c3038bde0e115215f5b995">putch()</a> </dd></dl>
+
+<p>Implementado em <a class="el" href="class_q_string_buffer.html#af82349e8f3aff6638f73c78e6c6255a0">QStringBuffer</a>, <a class="el" href="class_q_file.html#a574c1d3f303340347106bf2cdaad5568">QFile</a>, <a class="el" href="class_q_buffer.html#a574c1d3f303340347106bf2cdaad5568">QBuffer</a> e <a class="el" href="class_q_g_string_buffer.html#a574c1d3f303340347106bf2cdaad5568">QGStringBuffer</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a90a5a6111eca9a444970cf49aea9f9a8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int writeBlock </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Writes <em>len</em> bytes from <em>p</em> to the I/O device and returns the number of bytes actually written.</p>
+<p>This virtual function must be reimplemented by all subclasses.</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_i_o_device.html#ac0c97a10369456c0942192a14f11c188">readBlock()</a> </dd></dl>
+
+<p>Implementado em <a class="el" href="class_q_string_buffer.html#abe680b02f9e888aee5900fe3e80d4a3b">QStringBuffer</a>, <a class="el" href="class_q_file.html#ab5cb5ccbfabc30d93dd26f1854258ee6">QFile</a>, <a class="el" href="class_q_buffer.html#abd0e68627d02e1a66a3c8684c04314db">QBuffer</a> e <a class="el" href="class_q_g_string_buffer.html#abe680b02f9e888aee5900fe3e80d4a3b">QGStringBuffer</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac2c00524f1222398355427621c705236"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int writeBlock </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_q_array.html">QByteArray</a> &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This convenience function is the same as calling writeBlock( data.data(), data.size() ). </p>
+
+</div>
+</div>
+<hr/>A documentação para esta classe foi gerada a partir dos seguintes ficheiros:<ul>
+<li>C:/Users/teste/git/doxygen/qtools/<a class="el" href="qiodevice_8h_source.html">qiodevice.h</a></li>
+<li>C:/Users/teste/git/doxygen/qtools/qiodevice.cpp</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado em Quinta, 28 de Novembro de 2013 22:44:29 para CEM RODAS por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

@@ -1,0 +1,665 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>CEM RODAS: Referência à classe QGList</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">CEM RODAS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Localizar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="modules.html"><span>Módulos</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Estruturas&#160;de&#160;dados</span></a></li>
+      <li><a href="files.html"><span>Ficheiros</span></a></li>
+      <li><a href="examples.html"><span>Exemplos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Localizar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Estruturas&#160;de&#160;dados</span></a></li>
+      <li><a href="classes.html"><span>Índice&#160;das&#160;estruturas&#160;de&#160;dados</span></a></li>
+      <li><a href="hierarchy.html"><span>Hierarquia&#160;de&#160;classes</span></a></li>
+      <li><a href="functions.html"><span>Campos&#160;de&#160;dados</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tudo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Estruturas de dados</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Ficheiros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variáveis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Definições de tipos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerações</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Valores da enumeração</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Amigos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Grupos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Membros públicos</a> &#124;
+<a href="#pro-methods">Membros protegidos</a> &#124;
+<a href="#friends">Amigos</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência à classe QGList</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>The <a class="el" href="class_q_g_list.html" title="The QGList class is an internal class for implementing Qt collection classes. ">QGList</a> class is an internal class for implementing Qt collection classes.  
+ <a href="class_q_g_list.html#details">Mais...</a></p>
+
+<p><code>#include &lt;<a class="el" href="qglist_8h_source.html">qglist.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagrama de heranças da classe QGList</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_q_g_list.png" usemap="#QGList_map" alt=""/>
+  <map id="QGList_map" name="QGList_map">
+<area href="class_q_collection.html" title="The QCollection class is the base class of all Qt collections. " alt="QCollection" shape="rect" coords="0,0,231,24"/>
+<area href="class_q_list.html" alt="QList&lt; type &gt;" shape="rect" coords="241,112,472,136"/>
+<area href="class_q_list.html" alt="QList&lt; ActiveRowSpan &gt;" shape="rect" coords="241,168,472,192"/>
+<area href="class_q_list.html" alt="QList&lt; AlphaIndexTableCell &gt;" shape="rect" coords="241,224,472,248"/>
+<area href="class_q_list.html" alt="QList&lt; AlphaIndexTableRows &gt;" shape="rect" coords="241,280,472,304"/>
+<area href="class_q_list.html" alt="QList&lt; Argument &gt;" shape="rect" coords="241,336,472,360"/>
+<area href="class_q_list.html" alt="QList&lt; ArgumentContext &gt;" shape="rect" coords="241,392,472,416"/>
+<area href="class_q_list.html" alt="QList&lt; ArgumentList &gt;" shape="rect" coords="241,448,472,472"/>
+<area href="class_q_list.html" alt="QList&lt; ArgumentListContext &gt;" shape="rect" coords="241,504,472,528"/>
+<area href="class_q_list.html" alt="QList&lt; BaseClassDef &gt;" shape="rect" coords="241,560,472,584"/>
+<area href="class_q_list.html" alt="QList&lt; BaseInfo &gt;" shape="rect" coords="241,616,472,640"/>
+<area href="class_q_list.html" alt="QList&lt; ChildNodeHandler &gt;" shape="rect" coords="241,672,472,696"/>
+<area href="class_q_list.html" alt="QList&lt; ClassContext &gt;" shape="rect" coords="241,728,472,752"/>
+<area href="class_q_list.html" alt="QList&lt; ClassDef &gt;" shape="rect" coords="241,784,472,808"/>
+<area href="class_q_list.html" alt="QList&lt; ClassInheritanceNodeContext &gt;" shape="rect" coords="241,840,472,864"/>
+<area href="class_q_list.html" alt="QList&lt; CodeLineHandler &gt;" shape="rect" coords="241,896,472,920"/>
+<area href="class_q_list.html" alt="QList&lt; CompoundEntry &gt;" shape="rect" coords="241,952,472,976"/>
+<area href="class_q_list.html" alt="QList&lt; ConfigOption &gt;" shape="rect" coords="241,1008,472,1032"/>
+<area href="class_q_list.html" alt="QList&lt; Define &gt;" shape="rect" coords="241,1064,472,1088"/>
+<area href="class_q_list.html" alt="QList&lt; DefineName &gt;" shape="rect" coords="241,1120,472,1144"/>
+<area href="class_q_list.html" alt="QList&lt; Definition &gt;" shape="rect" coords="241,1176,472,1200"/>
+<area href="class_q_list.html" alt="QList&lt; DiagramItem &gt;" shape="rect" coords="241,1232,472,1256"/>
+<area href="class_q_list.html" alt="QList&lt; DiagramRow &gt;" shape="rect" coords="241,1288,472,1312"/>
+<area href="class_q_list.html" alt="QList&lt; DirDef &gt;" shape="rect" coords="241,1344,472,1368"/>
+<area href="class_q_list.html" alt="QList&lt; DirEntry &gt;" shape="rect" coords="241,1400,472,1424"/>
+<area href="class_q_list.html" alt="QList&lt; DirFileNodeContext &gt;" shape="rect" coords="241,1456,472,1480"/>
+<area href="class_q_list.html" alt="QList&lt; DirRelation &gt;" shape="rect" coords="241,1512,472,1536"/>
+<area href="class_q_list.html" alt="QList&lt; DocImpl &gt;" shape="rect" coords="241,1568,472,1592"/>
+<area href="class_q_list.html" alt="QList&lt; DocNode &gt;" shape="rect" coords="241,1624,472,1648"/>
+<area href="class_q_list.html" alt="QList&lt; DocPara &gt;" shape="rect" coords="241,1680,472,1704"/>
+<area href="class_q_list.html" alt="QList&lt; DotFilePatcher &gt;" shape="rect" coords="241,1736,472,1760"/>
+<area href="class_q_list.html" alt="QList&lt; DotFilePatcher::Map &gt;" shape="rect" coords="241,1792,472,1816"/>
+<area href="class_q_list.html" alt="QList&lt; DotGroupCollaboration::Edge &gt;" shape="rect" coords="241,1848,472,1872"/>
+<area href="class_q_list.html" alt="QList&lt; DotGroupCollaboration::Link &gt;" shape="rect" coords="241,1904,472,1928"/>
+<area href="class_q_list.html" alt="QList&lt; DotNode &gt;" shape="rect" coords="241,1960,472,1984"/>
+<area href="class_q_list.html" alt="QList&lt; DotRunner &gt;" shape="rect" coords="241,2016,472,2040"/>
+<area href="class_q_list.html" alt="QList&lt; DotRunner::CleanupItem &gt;" shape="rect" coords="241,2072,472,2096"/>
+<area href="class_q_list.html" alt="QList&lt; DotWorkerThread &gt;" shape="rect" coords="241,2128,472,2152"/>
+<area href="class_q_list.html" alt="QList&lt; EdgeInfo &gt;" shape="rect" coords="241,2184,472,2208"/>
+<area href="class_q_list.html" alt="QList&lt; EdgeLabelHandler &gt;" shape="rect" coords="241,2240,472,2264"/>
+<area href="class_q_list.html" alt="QList&lt; ElementData &gt;" shape="rect" coords="241,2296,472,2320"/>
+<area href="class_q_list.html" alt="QList&lt; Entry &gt;" shape="rect" coords="241,2352,472,2376"/>
+<area href="class_q_list.html" alt="QList&lt; EntryHandler &gt;" shape="rect" coords="241,2408,472,2432"/>
+<area href="class_q_list.html" alt="QList&lt; EntryNav &gt;" shape="rect" coords="241,2464,472,2488"/>
+<area href="class_q_list.html" alt="QList&lt; Example &gt;" shape="rect" coords="241,2520,472,2544"/>
+<area href="class_q_list.html" alt="QList&lt; ExprAst &gt;" shape="rect" coords="241,2576,472,2600"/>
+<area href="class_q_list.html" alt="QList&lt; FileContext &gt;" shape="rect" coords="241,2632,472,2656"/>
+<area href="class_q_list.html" alt="QList&lt; FileDef &gt;" shape="rect" coords="241,2688,472,2712"/>
+<area href="class_q_list.html" alt="QList&lt; FileList &gt;" shape="rect" coords="241,2744,472,2768"/>
+<area href="class_q_list.html" alt="QList&lt; FileName &gt;" shape="rect" coords="241,2800,472,2824"/>
+<area href="class_q_list.html" alt="QList&lt; FilePair &gt;" shape="rect" coords="241,2856,472,2880"/>
+<area href="class_q_list.html" alt="QList&lt; FlowChart &gt;" shape="rect" coords="241,2912,472,2936"/>
+<area href="class_q_list.html" alt="QList&lt; Formula &gt;" shape="rect" coords="241,2968,472,2992"/>
+<area href="class_q_list.html" alt="QList&lt; FTVNode &gt;" shape="rect" coords="241,3024,472,3048"/>
+<area href="class_q_list.html" alt="QList&lt; GenericsCollection &gt;" shape="rect" coords="241,3080,472,3104"/>
+<area href="class_q_list.html" alt="QList&lt; GroupDef &gt;" shape="rect" coords="241,3136,472,3160"/>
+<area href="class_q_list.html" alt="QList&lt; Grouping &gt;" shape="rect" coords="241,3192,472,3216"/>
+<area href="class_q_list.html" alt="QList&lt; HtmlAttrib &gt;" shape="rect" coords="241,3248,472,3272"/>
+<area href="class_q_list.html" alt="QList&lt; IncludeHandler &gt;" shape="rect" coords="241,3304,472,3328"/>
+<area href="class_q_list.html" alt="QList&lt; IncludeInfo &gt;" shape="rect" coords="241,3360,472,3384"/>
+<area href="class_q_list.html" alt="QList&lt; IndexField &gt;" shape="rect" coords="241,3416,472,3440"/>
+<area href="class_q_list.html" alt="QList&lt; IndexIntf &gt;" shape="rect" coords="241,3472,472,3496"/>
+<area href="class_q_list.html" alt="QList&lt; InheritanceNodeContext &gt;" shape="rect" coords="241,3528,472,3552"/>
+<area href="class_q_list.html" alt="QList&lt; Input * &gt;" shape="rect" coords="241,3584,472,3608"/>
+<area href="class_q_list.html" alt="QList&lt; LayoutDocEntry &gt;" shape="rect" coords="241,3640,472,3664"/>
+<area href="class_q_list.html" alt="QList&lt; LayoutNavEntry &gt;" shape="rect" coords="241,3696,472,3720"/>
+<area href="class_q_list.html" alt="QList&lt; LinkedTextImpl &gt;" shape="rect" coords="241,3752,472,3776"/>
+<area href="class_q_list.html" alt="QList&lt; ListItemInfo &gt;" shape="rect" coords="241,3808,472,3832"/>
+<area href="class_q_list.html" alt="QList&lt; Mapping &gt;" shape="rect" coords="241,3864,472,3888"/>
+<area href="class_q_list.html" alt="QList&lt; MemberContext &gt;" shape="rect" coords="241,3920,472,3944"/>
+<area href="class_q_list.html" alt="QList&lt; MemberDef &gt;" shape="rect" coords="241,3976,472,4000"/>
+<area href="class_q_list.html" alt="QList&lt; MemberGroup &gt;" shape="rect" coords="241,4032,472,4056"/>
+<area href="class_q_list.html" alt="QList&lt; MemberHandler &gt;" shape="rect" coords="241,4088,472,4112"/>
+<area href="class_q_list.html" alt="QList&lt; MemberInfo &gt;" shape="rect" coords="241,4144,472,4168"/>
+<area href="class_q_list.html" alt="QList&lt; MemberList &gt;" shape="rect" coords="241,4200,472,4224"/>
+<area href="class_q_list.html" alt="QList&lt; MemberName &gt;" shape="rect" coords="241,4256,472,4280"/>
+<area href="class_q_list.html" alt="QList&lt; MemberNameInfo &gt;" shape="rect" coords="241,4312,472,4336"/>
+<area href="class_q_list.html" alt="QList&lt; MemberReference &gt;" shape="rect" coords="241,4368,472,4392"/>
+<area href="class_q_list.html" alt="QList&lt; ModuleNodeContext &gt;" shape="rect" coords="241,4424,472,4448"/>
+<area href="class_q_list.html" alt="QList&lt; NamespaceContext &gt;" shape="rect" coords="241,4480,472,4504"/>
+<area href="class_q_list.html" alt="QList&lt; NamespaceDef &gt;" shape="rect" coords="241,4536,472,4560"/>
+<area href="class_q_list.html" alt="QList&lt; NavIndexEntry &gt;" shape="rect" coords="241,4592,472,4616"/>
+<area href="class_q_list.html" alt="QList&lt; NestingNodeContext &gt;" shape="rect" coords="241,4648,472,4672"/>
+<area href="class_q_list.html" alt="QList&lt; NodeDef &gt;" shape="rect" coords="241,4704,472,4728"/>
+<area href="class_q_list.html" alt="QList&lt; NodeHandler &gt;" shape="rect" coords="241,4760,472,4784"/>
+<area href="class_q_list.html" alt="QList&lt; OutputGenerator &gt;" shape="rect" coords="241,4816,472,4840"/>
+<area href="class_q_list.html" alt="QList&lt; PageContext &gt;" shape="rect" coords="241,4872,472,4896"/>
+<area href="class_q_list.html" alt="QList&lt; PageDef &gt;" shape="rect" coords="241,4928,472,4952"/>
+<area href="class_q_list.html" alt="QList&lt; PageNodeContext &gt;" shape="rect" coords="241,4984,472,5008"/>
+<area href="class_q_list.html" alt="QList&lt; ParameterHandler &gt;" shape="rect" coords="241,5040,472,5064"/>
+<area href="class_q_list.html" alt="QList&lt; ParameterItemHandler &gt;" shape="rect" coords="241,5096,472,5120"/>
+<area href="class_q_list.html" alt="QList&lt; ParamHandler &gt;" shape="rect" coords="241,5152,472,5176"/>
+<area href="class_q_list.html" alt="QList&lt; QCacheItem &gt;" shape="rect" coords="241,5208,472,5232"/>
+<area href="class_q_list.html" alt="QList&lt; QCString &gt;" shape="rect" coords="241,5264,472,5288"/>
+<area href="class_q_list.html" alt="QList&lt; QDict&lt; TemplateVariant &gt; &gt;" shape="rect" coords="241,5320,472,5344"/>
+<area href="class_q_list.html" alt="QList&lt; QGDictIterator &gt;" shape="rect" coords="241,5376,472,5400"/>
+<area href="class_q_list.html" alt="QList&lt; QString &gt;" shape="rect" coords="241,5432,472,5456"/>
+<area href="class_q_list.html" alt="QList&lt; QWaitConditionEvent &gt;" shape="rect" coords="241,5488,472,5512"/>
+<area href="class_q_list.html" alt="QList&lt; RefItem &gt;" shape="rect" coords="241,5544,472,5568"/>
+<area href="class_q_list.html" alt="QList&lt; RelatedCompound &gt;" shape="rect" coords="241,5600,472,5624"/>
+<area href="class_q_list.html" alt="QList&lt; RowHandler &gt;" shape="rect" coords="241,5656,472,5680"/>
+<area href="class_q_list.html" alt="QList&lt; ScopeData &gt;" shape="rect" coords="241,5712,472,5736"/>
+<area href="class_q_list.html" alt="QList&lt; SearchDefinitionList &gt;" shape="rect" coords="241,5768,472,5792"/>
+<area href="class_q_list.html" alt="QList&lt; SearchDocEntry &gt;" shape="rect" coords="241,5824,472,5848"/>
+<area href="class_q_list.html" alt="QList&lt; SectionHandler &gt;" shape="rect" coords="241,5880,472,5904"/>
+<area href="class_q_list.html" alt="QList&lt; SectionInfo &gt;" shape="rect" coords="241,5936,472,5960"/>
+<area href="class_q_list.html" alt="QList&lt; stat &gt;" shape="rect" coords="241,5992,472,6016"/>
+<area href="class_q_list.html" alt="QList&lt; StructData &gt;" shape="rect" coords="241,6048,472,6072"/>
+<area href="class_q_list.html" alt="QList&lt; T &gt;" shape="rect" coords="241,6104,472,6128"/>
+<area href="class_q_list.html" alt="QList&lt; TagAnchorInfo &gt;" shape="rect" coords="241,6160,472,6184"/>
+<area href="class_q_list.html" alt="QList&lt; TagClassInfo &gt;" shape="rect" coords="241,6216,472,6240"/>
+<area href="class_q_list.html" alt="QList&lt; TagDirInfo &gt;" shape="rect" coords="241,6272,472,6296"/>
+<area href="class_q_list.html" alt="QList&lt; TagEnumValueInfo &gt;" shape="rect" coords="241,6328,472,6352"/>
+<area href="class_q_list.html" alt="QList&lt; TagFileInfo &gt;" shape="rect" coords="241,6384,472,6408"/>
+<area href="class_q_list.html" alt="QList&lt; TagGroupInfo &gt;" shape="rect" coords="241,6440,472,6464"/>
+<area href="class_q_list.html" alt="QList&lt; TagIncludeInfo &gt;" shape="rect" coords="241,6496,472,6520"/>
+<area href="class_q_list.html" alt="QList&lt; TagMemberInfo &gt;" shape="rect" coords="241,6552,472,6576"/>
+<area href="class_q_list.html" alt="QList&lt; TagNamespaceInfo &gt;" shape="rect" coords="241,6608,472,6632"/>
+<area href="class_q_list.html" alt="QList&lt; TagPackageInfo &gt;" shape="rect" coords="241,6664,472,6688"/>
+<area href="class_q_list.html" alt="QList&lt; TagPageInfo &gt;" shape="rect" coords="241,6720,472,6744"/>
+<area href="class_q_list.html" alt="QList&lt; Template &gt;" shape="rect" coords="241,6776,472,6800"/>
+<area href="class_q_list.html" alt="QList&lt; TemplateNode &gt;" shape="rect" coords="241,6832,472,6856"/>
+<area href="class_q_list.html" alt="QList&lt; TemplateToken &gt;" shape="rect" coords="241,6888,472,6912"/>
+<area href="class_q_list.html" alt="QList&lt; uint &gt;" shape="rect" coords="241,6944,472,6968"/>
+<area href="class_q_list.html" alt="QList&lt; VariableListEntryHandler &gt;" shape="rect" coords="241,7000,472,7024"/>
+<area href="class_q_list.html" alt="QList&lt; void &gt;" shape="rect" coords="241,7056,472,7080"/>
+<area href="class_q_queue.html" alt="QQueue&lt; type &gt;" shape="rect" coords="241,7112,472,7136"/>
+<area href="class_q_queue.html" alt="QQueue&lt; DotRunner &gt;" shape="rect" coords="241,7168,472,7192"/>
+<area href="class_q_stack.html" alt="QStack&lt; type &gt;" shape="rect" coords="241,7224,472,7248"/>
+<area href="class_q_stack.html" alt="QStack&lt; bool &gt;" shape="rect" coords="241,7280,472,7304"/>
+<area href="class_q_stack.html" alt="QStack&lt; DocNode &gt;" shape="rect" coords="241,7336,472,7360"/>
+<area href="class_q_stack.html" alt="QStack&lt; DocStyleChange &gt;" shape="rect" coords="241,7392,472,7416"/>
+<area href="class_q_stack.html" alt="QStack&lt; PerlModOutputStream &gt;" shape="rect" coords="241,7448,472,7472"/>
+<area href="class_q_stack.html" alt="QStack&lt; State &gt;" shape="rect" coords="241,7504,472,7528"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Membros públicos</h2></td></tr>
+<tr class="memitem:a774149fc271ebaba2aabcd183a836e8f"><td class="memItemLeft" align="right" valign="top">uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_g_list.html#a774149fc271ebaba2aabcd183a836e8f">count</a> () const </td></tr>
+<tr class="separator:a774149fc271ebaba2aabcd183a836e8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab142b2e34eff3c5158dc9e9b629ac619"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab142b2e34eff3c5158dc9e9b629ac619"></a>
+<a class="el" href="class_q_data_stream.html">QDataStream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>read</b> (<a class="el" href="class_q_data_stream.html">QDataStream</a> &amp;)</td></tr>
+<tr class="separator:ab142b2e34eff3c5158dc9e9b629ac619"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25d3618c02fcc4a8e4fde96b131d5348"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a25d3618c02fcc4a8e4fde96b131d5348"></a>
+<a class="el" href="class_q_data_stream.html">QDataStream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>write</b> (<a class="el" href="class_q_data_stream.html">QDataStream</a> &amp;) const </td></tr>
+<tr class="separator:a25d3618c02fcc4a8e4fde96b131d5348"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_q_collection"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_q_collection')"><img src="closed.png" alt="-"/>&#160;Membros públicos inherited from <a class="el" href="class_q_collection.html">QCollection</a></td></tr>
+<tr class="memitem:a64c0f7f7f99c10922f570668b10acb2f inherit pub_methods_class_q_collection"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_collection.html#a64c0f7f7f99c10922f570668b10acb2f">autoDelete</a> () const </td></tr>
+<tr class="separator:a64c0f7f7f99c10922f570668b10acb2f inherit pub_methods_class_q_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52460a3734e18d6137e869acc2590c88 inherit pub_methods_class_q_collection"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_collection.html#a52460a3734e18d6137e869acc2590c88">setAutoDelete</a> (bool enable)</td></tr>
+<tr class="separator:a52460a3734e18d6137e869acc2590c88 inherit pub_methods_class_q_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Membros protegidos</h2></td></tr>
+<tr class="memitem:a86bc37a69fa7213b9f8ed6fad78a50ee"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a86bc37a69fa7213b9f8ed6fad78a50ee"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>QGList</b> (const <a class="el" href="class_q_g_list.html">QGList</a> &amp;)</td></tr>
+<tr class="separator:a86bc37a69fa7213b9f8ed6fad78a50ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2db7a09a5da56c838857a98ebd8b938"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae2db7a09a5da56c838857a98ebd8b938"></a>
+<a class="el" href="class_q_g_list.html">QGList</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_q_g_list.html">QGList</a> &amp;)</td></tr>
+<tr class="separator:ae2db7a09a5da56c838857a98ebd8b938"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16886f83ef8aab3bcd0dc16d7b2d5434"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_g_list.html#a16886f83ef8aab3bcd0dc16d7b2d5434">operator==</a> (const <a class="el" href="class_q_g_list.html">QGList</a> &amp;) const </td></tr>
+<tr class="separator:a16886f83ef8aab3bcd0dc16d7b2d5434"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76ab50c1f6a3fc5716178ad159328826"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a76ab50c1f6a3fc5716178ad159328826"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>inSort</b> (QCollection::Item)</td></tr>
+<tr class="separator:a76ab50c1f6a3fc5716178ad159328826"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af104b0a12bc58797e843f11e9b8e3358"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af104b0a12bc58797e843f11e9b8e3358"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>append</b> (QCollection::Item)</td></tr>
+<tr class="separator:af104b0a12bc58797e843f11e9b8e3358"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8034994c757205db2fc47550b45f7372"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8034994c757205db2fc47550b45f7372"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>insertAt</b> (uint index, QCollection::Item)</td></tr>
+<tr class="separator:a8034994c757205db2fc47550b45f7372"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b88e69a11e6ca58ff54c746d6752808"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5b88e69a11e6ca58ff54c746d6752808"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>relinkNode</b> (<a class="el" href="class_q_l_node.html">QLNode</a> *)</td></tr>
+<tr class="separator:a5b88e69a11e6ca58ff54c746d6752808"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adadc5ee841a15434c3480a04cf041a5b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adadc5ee841a15434c3480a04cf041a5b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>removeNode</b> (<a class="el" href="class_q_l_node.html">QLNode</a> *)</td></tr>
+<tr class="separator:adadc5ee841a15434c3480a04cf041a5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a219159938a014b3d158b65f5cabbca7e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a219159938a014b3d158b65f5cabbca7e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>remove</b> (QCollection::Item=0)</td></tr>
+<tr class="separator:a219159938a014b3d158b65f5cabbca7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad194cd16951d6be30fbf3691657767f0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad194cd16951d6be30fbf3691657767f0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>removeRef</b> (QCollection::Item=0)</td></tr>
+<tr class="separator:ad194cd16951d6be30fbf3691657767f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a291e68c36bd5cb789a6b8ced5cfb269d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a291e68c36bd5cb789a6b8ced5cfb269d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>removeFirst</b> ()</td></tr>
+<tr class="separator:a291e68c36bd5cb789a6b8ced5cfb269d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae83ce1da44a88a7b0ffc68c82bcede5f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae83ce1da44a88a7b0ffc68c82bcede5f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>removeLast</b> ()</td></tr>
+<tr class="separator:ae83ce1da44a88a7b0ffc68c82bcede5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77754d81e85aa99a7953774d13b35e1d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a77754d81e85aa99a7953774d13b35e1d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>removeAt</b> (uint index)</td></tr>
+<tr class="separator:a77754d81e85aa99a7953774d13b35e1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99a514de06b691d846be92100184580b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a99a514de06b691d846be92100184580b"></a>
+QCollection::Item&#160;</td><td class="memItemRight" valign="bottom"><b>takeNode</b> (<a class="el" href="class_q_l_node.html">QLNode</a> *)</td></tr>
+<tr class="separator:a99a514de06b691d846be92100184580b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd5ca1e12680cd48f09765c634e7c457"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acd5ca1e12680cd48f09765c634e7c457"></a>
+QCollection::Item&#160;</td><td class="memItemRight" valign="bottom"><b>take</b> ()</td></tr>
+<tr class="separator:acd5ca1e12680cd48f09765c634e7c457"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ddff6a9a593ad3ca0d884eba8c997b9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2ddff6a9a593ad3ca0d884eba8c997b9"></a>
+QCollection::Item&#160;</td><td class="memItemRight" valign="bottom"><b>takeAt</b> (uint index)</td></tr>
+<tr class="separator:a2ddff6a9a593ad3ca0d884eba8c997b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48032746fddbfa4cc3b7e4ec9c2421f9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a48032746fddbfa4cc3b7e4ec9c2421f9"></a>
+QCollection::Item&#160;</td><td class="memItemRight" valign="bottom"><b>takeFirst</b> ()</td></tr>
+<tr class="separator:a48032746fddbfa4cc3b7e4ec9c2421f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94d4358bfa55746db7cf8f4be871173d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a94d4358bfa55746db7cf8f4be871173d"></a>
+QCollection::Item&#160;</td><td class="memItemRight" valign="bottom"><b>takeLast</b> ()</td></tr>
+<tr class="separator:a94d4358bfa55746db7cf8f4be871173d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47fdc9eea42b6975cdc835bb2e08810e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_g_list.html#a47fdc9eea42b6975cdc835bb2e08810e">sort</a> ()</td></tr>
+<tr class="separator:a47fdc9eea42b6975cdc835bb2e08810e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8bb3912a3ce86b15842e79d0b421204"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_g_list.html#ac8bb3912a3ce86b15842e79d0b421204">clear</a> ()</td></tr>
+<tr class="separator:ac8bb3912a3ce86b15842e79d0b421204"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad71ba25049dfb9ba449913024264d963"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad71ba25049dfb9ba449913024264d963"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>findRef</b> (QCollection::Item, bool=TRUE)</td></tr>
+<tr class="separator:ad71ba25049dfb9ba449913024264d963"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f6700e6b7fed2a28364ffcc8e792293"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0f6700e6b7fed2a28364ffcc8e792293"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>find</b> (QCollection::Item, bool=TRUE)</td></tr>
+<tr class="separator:a0f6700e6b7fed2a28364ffcc8e792293"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab384c18c63c84425121df7049a88ef14"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab384c18c63c84425121df7049a88ef14"></a>
+uint&#160;</td><td class="memItemRight" valign="bottom"><b>containsRef</b> (QCollection::Item) const </td></tr>
+<tr class="separator:ab384c18c63c84425121df7049a88ef14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70f61c62de5ea79a3b2cc0a7d9ac2366"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a70f61c62de5ea79a3b2cc0a7d9ac2366"></a>
+uint&#160;</td><td class="memItemRight" valign="bottom"><b>contains</b> (QCollection::Item) const </td></tr>
+<tr class="separator:a70f61c62de5ea79a3b2cc0a7d9ac2366"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a0b38a103d1307900b7fa16a7dffcca"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5a0b38a103d1307900b7fa16a7dffcca"></a>
+QCollection::Item&#160;</td><td class="memItemRight" valign="bottom"><b>at</b> (uint index)</td></tr>
+<tr class="separator:a5a0b38a103d1307900b7fa16a7dffcca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bce8d0bb4d6fbaa012b9a61c3910907"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3bce8d0bb4d6fbaa012b9a61c3910907"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>at</b> () const </td></tr>
+<tr class="separator:a3bce8d0bb4d6fbaa012b9a61c3910907"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9133971452e43cafe4ff146d785999f7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9133971452e43cafe4ff146d785999f7"></a>
+<a class="el" href="class_q_l_node.html">QLNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>currentNode</b> () const </td></tr>
+<tr class="separator:a9133971452e43cafe4ff146d785999f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8980e2ae172d1c2e71f5471948fd5524"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8980e2ae172d1c2e71f5471948fd5524"></a>
+QCollection::Item&#160;</td><td class="memItemRight" valign="bottom"><b>get</b> () const </td></tr>
+<tr class="separator:a8980e2ae172d1c2e71f5471948fd5524"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4706f4ab881e855a44c9173c1aa6b9cd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4706f4ab881e855a44c9173c1aa6b9cd"></a>
+QCollection::Item&#160;</td><td class="memItemRight" valign="bottom"><b>cfirst</b> () const </td></tr>
+<tr class="separator:a4706f4ab881e855a44c9173c1aa6b9cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dfdf8c13a2e5da5dc19346a4a6a0317"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6dfdf8c13a2e5da5dc19346a4a6a0317"></a>
+QCollection::Item&#160;</td><td class="memItemRight" valign="bottom"><b>clast</b> () const </td></tr>
+<tr class="separator:a6dfdf8c13a2e5da5dc19346a4a6a0317"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa252117b3e94aede6b1c8c7969843262"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa252117b3e94aede6b1c8c7969843262"></a>
+QCollection::Item&#160;</td><td class="memItemRight" valign="bottom"><b>first</b> ()</td></tr>
+<tr class="separator:aa252117b3e94aede6b1c8c7969843262"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9618a48e64338b9bd2426bb6378772cd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9618a48e64338b9bd2426bb6378772cd"></a>
+QCollection::Item&#160;</td><td class="memItemRight" valign="bottom"><b>last</b> ()</td></tr>
+<tr class="separator:a9618a48e64338b9bd2426bb6378772cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3314e6704fc58a52d4b90f34f6ed20e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad3314e6704fc58a52d4b90f34f6ed20e"></a>
+QCollection::Item&#160;</td><td class="memItemRight" valign="bottom"><b>next</b> ()</td></tr>
+<tr class="separator:ad3314e6704fc58a52d4b90f34f6ed20e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7c47bea4f54fb22f61cf1a9981f2de6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac7c47bea4f54fb22f61cf1a9981f2de6"></a>
+QCollection::Item&#160;</td><td class="memItemRight" valign="bottom"><b>prev</b> ()</td></tr>
+<tr class="separator:ac7c47bea4f54fb22f61cf1a9981f2de6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49819680b3cd102b91cfce427dec7689"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a49819680b3cd102b91cfce427dec7689"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>toVector</b> (<a class="el" href="class_q_g_vector.html">QGVector</a> *) const </td></tr>
+<tr class="separator:a49819680b3cd102b91cfce427dec7689"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac689c6d7a54b6558afbd53845183af8"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_g_list.html#aac689c6d7a54b6558afbd53845183af8">compareItems</a> (QCollection::Item, QCollection::Item)</td></tr>
+<tr class="separator:aac689c6d7a54b6558afbd53845183af8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c0d849cb524232b008db07c0c8d5b7b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_q_data_stream.html">QDataStream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_g_list.html#a0c0d849cb524232b008db07c0c8d5b7b">read</a> (<a class="el" href="class_q_data_stream.html">QDataStream</a> &amp;, QCollection::Item &amp;)</td></tr>
+<tr class="separator:a0c0d849cb524232b008db07c0c8d5b7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a129683a3487b947f59307cb61d2b82"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_q_data_stream.html">QDataStream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_g_list.html#a4a129683a3487b947f59307cb61d2b82">write</a> (<a class="el" href="class_q_data_stream.html">QDataStream</a> &amp;, QCollection::Item) const </td></tr>
+<tr class="separator:a4a129683a3487b947f59307cb61d2b82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_q_collection"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_q_collection')"><img src="closed.png" alt="-"/>&#160;Membros protegidos inherited from <a class="el" href="class_q_collection.html">QCollection</a></td></tr>
+<tr class="memitem:adf77d3cc02325643355ad079d694d8df inherit pro_methods_class_q_collection"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_collection.html#adf77d3cc02325643355ad079d694d8df">QCollection</a> ()</td></tr>
+<tr class="separator:adf77d3cc02325643355ad079d694d8df inherit pro_methods_class_q_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27c8d7b3005c89d8935f27870df2a378 inherit pro_methods_class_q_collection"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_collection.html#a27c8d7b3005c89d8935f27870df2a378">QCollection</a> (const <a class="el" href="class_q_collection.html">QCollection</a> &amp;)</td></tr>
+<tr class="separator:a27c8d7b3005c89d8935f27870df2a378 inherit pro_methods_class_q_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeee410bf0634fae9cdf5c92e10e28fe1 inherit pro_methods_class_q_collection"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_collection.html#aeee410bf0634fae9cdf5c92e10e28fe1">~QCollection</a> ()</td></tr>
+<tr class="separator:aeee410bf0634fae9cdf5c92e10e28fe1 inherit pro_methods_class_q_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a169f61c366d4b162af27e7255032769c inherit pro_methods_class_q_collection"><td class="memItemLeft" align="right" valign="top">virtual Item&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_collection.html#a169f61c366d4b162af27e7255032769c">newItem</a> (Item)</td></tr>
+<tr class="separator:a169f61c366d4b162af27e7255032769c inherit pro_methods_class_q_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9c035d812e5a4a00e3b825db9d02d24 inherit pro_methods_class_q_collection"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_collection.html#aa9c035d812e5a4a00e3b825db9d02d24">deleteItem</a> (Item)</td></tr>
+<tr class="separator:aa9c035d812e5a4a00e3b825db9d02d24 inherit pro_methods_class_q_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Amigos</h2></td></tr>
+<tr class="memitem:a13dc100371e8931a394e57af8df9fbb3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a13dc100371e8931a394e57af8df9fbb3"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>QGListIterator</b></td></tr>
+<tr class="separator:a13dc100371e8931a394e57af8df9fbb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add83e2909bfdb7817ab2363440f946de"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="add83e2909bfdb7817ab2363440f946de"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>QGVector</b></td></tr>
+<tr class="separator:add83e2909bfdb7817ab2363440f946de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_types_class_q_collection"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_q_collection')"><img src="closed.png" alt="-"/>&#160;Tipos Públicos inherited from <a class="el" href="class_q_collection.html">QCollection</a></td></tr>
+<tr class="memitem:a827e8fb836ae3e440727586b7ade5957 inherit pub_types_class_q_collection"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a827e8fb836ae3e440727586b7ade5957"></a>
+typedef void *&#160;</td><td class="memItemRight" valign="bottom"><b>Item</b></td></tr>
+<tr class="separator:a827e8fb836ae3e440727586b7ade5957 inherit pub_types_class_q_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_q_collection"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_q_collection')"><img src="closed.png" alt="-"/>&#160;Atributos Protegidos inherited from <a class="el" href="class_q_collection.html">QCollection</a></td></tr>
+<tr class="memitem:aff7c63decbd32d85aaa83539a9e433e5 inherit pro_attribs_class_q_collection"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aff7c63decbd32d85aaa83539a9e433e5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>del_item</b></td></tr>
+<tr class="separator:aff7c63decbd32d85aaa83539a9e433e5 inherit pro_attribs_class_q_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>The <a class="el" href="class_q_g_list.html" title="The QGList class is an internal class for implementing Qt collection classes. ">QGList</a> class is an internal class for implementing Qt collection classes. </p>
+<p><a class="el" href="class_q_g_list.html" title="The QGList class is an internal class for implementing Qt collection classes. ">QGList</a> is a strictly internal class that acts as a base class for several <a class="el" href="">collection classes</a>; <a class="el" href="class_q_list.html">QList</a>, <a class="el" href="class_q_queue.html">QQueue</a> and <a class="el" href="class_q_stack.html">QStack</a>.</p>
+<p><a class="el" href="class_q_g_list.html" title="The QGList class is an internal class for implementing Qt collection classes. ">QGList</a> has some virtual functions that can be reimplemented to customize the subclasses. </p>
+<ul>
+<li>
+<a class="el" href="class_q_g_list.html#aac689c6d7a54b6558afbd53845183af8">compareItems()</a> compares two collection/list items. </li>
+<li>
+<a class="el" href="structcmd_8h.html#a9c7b76d5266903891c803132d51ccb90" title="Read bytes from a file descriptor. ">read()</a> reads a collection/list item from a <a class="el" href="class_q_data_stream.html" title="The QDataStream class provides serialization of binary data to a QIODevice. ">QDataStream</a>. </li>
+<li>
+<a class="el" href="structcmd_8h.html#af2a3ea719b83f672637febdd87c36c36" title="Writes count bytes from buf to the filedescriptor fd. ">write()</a> writes a collection/list item to a <a class="el" href="class_q_data_stream.html" title="The QDataStream class provides serialization of binary data to a QIODevice. ">QDataStream</a>. </li>
+</ul>
+<p>Normally, you do not have to reimplement any of these functions. If you still want to reimplement them, see the <a class="el" href="class_q_str_list.html">QStrList</a> class (<a class="el" href="qstrlist_8h_source.html">qstrlist.h</a>), which is a good example. </p>
+</div><h2 class="groupheader">Documentação dos métodos</h2>
+<a class="anchor" id="ac8bb3912a3ce86b15842e79d0b421204"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Removes all objects from the collection. The objects will be deleted if auto-delete has been enabled. </p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_collection.html#a52460a3734e18d6137e869acc2590c88">setAutoDelete()</a> </dd></dl>
+
+<p>Implementa <a class="el" href="class_q_collection.html#a893fbba23236417d1abe182ed3aee1a8">QCollection</a>.</p>
+
+<p>Reimplementado em <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; type &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; ArgumentListContext &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; MemberName &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; MemberNameInfo &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; PageDef &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; FileContext &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; DocNode &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; TagFileInfo &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; Grouping &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; ListItemInfo &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; QCString &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; ArgumentContext &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; Definition &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; MemberDef &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; TagPackageInfo &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; SectionHandler &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; DirRelation &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; MemberReference &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; NamespaceContext &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; DotNode &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; HtmlAttrib &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; TagPageInfo &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; Entry &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; IndexIntf &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; NestingNodeContext &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; MemberGroup &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; DiagramItem &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; DotGroupCollaboration::Link &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; TagDirInfo &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; EntryNav &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; IncludeInfo &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; QString &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; RelatedCompound &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; DotFilePatcher &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; ParameterItemHandler &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; VariableListEntryHandler &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; stat &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; TagNamespaceInfo &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; NodeHandler &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; EntryHandler &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; InheritanceNodeContext &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; MemberInfo &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; TagGroupInfo &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; ChildNodeHandler &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; ScopeData &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; DotWorkerThread &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; ExprAst &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; TemplateNode &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; NamespaceDef &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; T &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; void &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; ParamHandler &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; ElementData &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; OutputGenerator &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; QDict&lt; TemplateVariant &gt; &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; GroupDef &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; IndexField &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; ClassContext &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; RowHandler &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; Template &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; DotRunner::CleanupItem &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; PageNodeContext &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; MemberContext &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; Formula &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; ClassInheritanceNodeContext &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; QGDictIterator &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; TemplateToken &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; GenericsCollection &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; DotGroupCollaboration::Edge &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; TagIncludeInfo &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; ActiveRowSpan &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; FilePair &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; ClassDef &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; Define &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; BaseClassDef &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; EdgeInfo &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; NodeDef &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; IncludeHandler &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; TagMemberInfo &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; DotRunner &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; RefItem &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; FileName &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; SearchDocEntry &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; PageContext &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; FlowChart &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; QWaitConditionEvent &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; SearchDefinitionList &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; SectionInfo &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; CodeLineHandler &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; ConfigOption &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; DocPara &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; Input * &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; EdgeLabelHandler &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; LayoutNavEntry &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; DirFileNodeContext &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; ModuleNodeContext &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; uint &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; AlphaIndexTableCell &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; DefineName &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; DirEntry &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; StructData &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; ParameterHandler &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; MemberList &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; LayoutDocEntry &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; CompoundEntry &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; Argument &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; TagAnchorInfo &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; FileList &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; FileDef &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; TagClassInfo &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; MemberHandler &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; DotFilePatcher::Map &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; DocImpl &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; QCacheItem &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; ArgumentList &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; FTVNode &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; BaseInfo &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; Mapping &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; TagEnumValueInfo &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; LinkedTextImpl &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; DiagramRow &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; AlphaIndexTableRows &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; NavIndexEntry &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; Example &gt;</a>, <a class="el" href="class_q_list.html#ac8bb3912a3ce86b15842e79d0b421204">QList&lt; DirDef &gt;</a>, <a class="el" href="class_q_queue.html#ac8bb3912a3ce86b15842e79d0b421204">QQueue&lt; type &gt;</a>, <a class="el" href="class_q_stack.html#ac8bb3912a3ce86b15842e79d0b421204">QStack&lt; type &gt;</a>, <a class="el" href="class_q_queue.html#ac8bb3912a3ce86b15842e79d0b421204">QQueue&lt; DotRunner &gt;</a>, <a class="el" href="class_q_stack.html#ac8bb3912a3ce86b15842e79d0b421204">QStack&lt; DocNode &gt;</a>, <a class="el" href="class_q_stack.html#ac8bb3912a3ce86b15842e79d0b421204">QStack&lt; PerlModOutputStream &gt;</a>, <a class="el" href="class_q_stack.html#ac8bb3912a3ce86b15842e79d0b421204">QStack&lt; bool &gt;</a>, <a class="el" href="class_q_stack.html#ac8bb3912a3ce86b15842e79d0b421204">QStack&lt; DocStyleChange &gt;</a> e <a class="el" href="class_q_stack.html#ac8bb3912a3ce86b15842e79d0b421204">QStack&lt; State &gt;</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aac689c6d7a54b6558afbd53845183af8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int compareItems </td>
+          <td>(</td>
+          <td class="paramtype">QCollection::Item&#160;</td>
+          <td class="paramname"><em>item1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QCollection::Item&#160;</td>
+          <td class="paramname"><em>item2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This virtual function compares two list items.</p>
+<p>Returns: </p>
+<ul>
+<li>
+0 if <em>item1</em> == <em>item2</em> </li>
+<li>
+non-zero if <em>item1</em> != <em>item2</em> </li>
+</ul>
+<p>This function returns <em>int</em> rather than <em>bool</em> so that reimplementations can return three values and use it to sort by:</p>
+<ul>
+<li>
+0 if <em>item1</em> == <em>item2</em> </li>
+<li>
+&gt; 0 (positive integer) if <em>item1</em> &gt; <em>item2</em> </li>
+<li>
+&lt; 0 (negative integer) if <em>item1</em> &lt; <em>item2</em> </li>
+</ul>
+<p>The QList::inSort() function requires that <a class="el" href="class_q_g_list.html#aac689c6d7a54b6558afbd53845183af8">compareItems()</a> is implemented as described here.</p>
+<p>This function should not modify the list because some const functions call <a class="el" href="class_q_g_list.html#aac689c6d7a54b6558afbd53845183af8">compareItems()</a>.</p>
+<p>The default implementation compares the pointers: </p>
+<div class="fragment"></div><!-- fragment --> 
+<p>Reimplementado em <a class="el" href="class_prefix_ignore_class_list.html#aade9045d8c0047e0427d8c6a9c048985">PrefixIgnoreClassList</a>, <a class="el" href="class_nav_index_entry_list.html#a219450accf048597ffc7113ecde4c402">NavIndexEntryList</a>, <a class="el" href="class_dot_node_list.html#a219450accf048597ffc7113ecde4c402">DotNodeList</a>, <a class="el" href="class_base_class_list.html#a219450accf048597ffc7113ecde4c402">BaseClassList</a>, <a class="el" href="class_s_int_list.html#a219450accf048597ffc7113ecde4c402">SIntList&lt; T &gt;</a>, <a class="el" href="class_s_int_list.html#a219450accf048597ffc7113ecde4c402">SIntList&lt; MemberGroup &gt;</a>, <a class="el" href="class_s_int_list.html#a219450accf048597ffc7113ecde4c402">SIntList&lt; uint &gt;</a>, <a class="el" href="class_definition_list.html#a219450accf048597ffc7113ecde4c402">DefinitionList</a>, <a class="el" href="class_output_name_list.html#a219450accf048597ffc7113ecde4c402">OutputNameList</a>, <a class="el" href="class_file_list.html#a219450accf048597ffc7113ecde4c402">FileList</a>, <a class="el" href="class_group_list.html#a219450accf048597ffc7113ecde4c402">GroupList</a>, <a class="el" href="class_namespace_list.html#a219450accf048597ffc7113ecde4c402">NamespaceList</a>, <a class="el" href="class_member_index_list.html#a219450accf048597ffc7113ecde4c402">MemberIndexList</a>, <a class="el" href="class_define_name_list.html#a44ca4833fab8a8d30ea70614e7d47753">DefineNameList</a>, <a class="el" href="class_s_list.html#a219450accf048597ffc7113ecde4c402">SList&lt; T &gt;</a>, <a class="el" href="class_s_list.html#a219450accf048597ffc7113ecde4c402">SList&lt; MemberName &gt;</a>, <a class="el" href="class_s_list.html#a219450accf048597ffc7113ecde4c402">SList&lt; MemberNameInfo &gt;</a>, <a class="el" href="class_s_list.html#a219450accf048597ffc7113ecde4c402">SList&lt; PageDef &gt;</a>, <a class="el" href="class_s_list.html#a219450accf048597ffc7113ecde4c402">SList&lt; QCString &gt;</a>, <a class="el" href="class_s_list.html#a219450accf048597ffc7113ecde4c402">SList&lt; Definition &gt;</a>, <a class="el" href="class_s_list.html#a219450accf048597ffc7113ecde4c402">SList&lt; MemberDef &gt;</a>, <a class="el" href="class_s_list.html#a219450accf048597ffc7113ecde4c402">SList&lt; DirRelation &gt;</a>, <a class="el" href="class_s_list.html#a219450accf048597ffc7113ecde4c402">SList&lt; DotFilePatcher &gt;</a>, <a class="el" href="class_s_list.html#a219450accf048597ffc7113ecde4c402">SList&lt; NamespaceDef &gt;</a>, <a class="el" href="class_s_list.html#a219450accf048597ffc7113ecde4c402">SList&lt; void &gt;</a>, <a class="el" href="class_s_list.html#a219450accf048597ffc7113ecde4c402">SList&lt; GroupDef &gt;</a>, <a class="el" href="class_s_list.html#a219450accf048597ffc7113ecde4c402">SList&lt; IndexField &gt;</a>, <a class="el" href="class_s_list.html#a219450accf048597ffc7113ecde4c402">SList&lt; GenericsCollection &gt;</a>, <a class="el" href="class_s_list.html#a219450accf048597ffc7113ecde4c402">SList&lt; FilePair &gt;</a>, <a class="el" href="class_s_list.html#a219450accf048597ffc7113ecde4c402">SList&lt; ClassDef &gt;</a>, <a class="el" href="class_s_list.html#a219450accf048597ffc7113ecde4c402">SList&lt; NodeDef &gt;</a>, <a class="el" href="class_s_list.html#a219450accf048597ffc7113ecde4c402">SList&lt; RefItem &gt;</a>, <a class="el" href="class_s_list.html#a219450accf048597ffc7113ecde4c402">SList&lt; SearchDocEntry &gt;</a>, <a class="el" href="class_s_list.html#a219450accf048597ffc7113ecde4c402">SList&lt; SearchDefinitionList &gt;</a>, <a class="el" href="class_s_list.html#a219450accf048597ffc7113ecde4c402">SList&lt; SectionInfo &gt;</a>, <a class="el" href="class_s_list.html#a219450accf048597ffc7113ecde4c402">SList&lt; MemberList &gt;</a>, <a class="el" href="class_s_list.html#a219450accf048597ffc7113ecde4c402">SList&lt; DirDef &gt;</a>, <a class="el" href="class_s_list.html#a219450accf048597ffc7113ecde4c402">SList&lt; Example &gt;</a>, <a class="el" href="class_member_name_info.html#a219450accf048597ffc7113ecde4c402">MemberNameInfo</a>, <a class="el" href="class_define_name.html#a44ca4833fab8a8d30ea70614e7d47753">DefineName</a>, <a class="el" href="class_define_list.html#a44ca4833fab8a8d30ea70614e7d47753">DefineList</a>, <a class="el" href="class_q_sorted_list.html#a9a682504b06f4a6e095c74ebce4bfbf1">QSortedList&lt; type &gt;</a>, <a class="el" href="class_file_name_list.html#a219450accf048597ffc7113ecde4c402">FileNameList</a>, <a class="el" href="class_member_list.html#a219450accf048597ffc7113ecde4c402">MemberList</a>, <a class="el" href="class_dir_list.html#a219450accf048597ffc7113ecde4c402">DirList</a>, <a class="el" href="class_class_list.html#a219450accf048597ffc7113ecde4c402">ClassList</a>, <a class="el" href="class_file_name.html#a219450accf048597ffc7113ecde4c402">FileName</a> e <a class="el" href="class_member_name.html#a219450accf048597ffc7113ecde4c402">MemberName</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a774149fc271ebaba2aabcd183a836e8f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint count </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the number of objects in the collection. </p>
+
+<p>Implementa <a class="el" href="class_q_collection.html#aaf61167af3fa10ef1ba47c37568f8f96">QCollection</a>.</p>
+
+<p>Reimplementado em <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; type &gt;</a>, <a class="el" href="class_q_queue.html#a774149fc271ebaba2aabcd183a836e8f">QQueue&lt; type &gt;</a>, <a class="el" href="class_q_stack.html#a774149fc271ebaba2aabcd183a836e8f">QStack&lt; type &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; ArgumentListContext &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; MemberName &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; MemberNameInfo &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; PageDef &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; FileContext &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; DocNode &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; TagFileInfo &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; Grouping &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; ListItemInfo &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; QCString &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; ArgumentContext &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; Definition &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; MemberDef &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; TagPackageInfo &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; SectionHandler &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; DirRelation &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; MemberReference &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; NamespaceContext &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; DotNode &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; HtmlAttrib &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; TagPageInfo &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; Entry &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; IndexIntf &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; NestingNodeContext &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; MemberGroup &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; DiagramItem &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; DotGroupCollaboration::Link &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; TagDirInfo &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; EntryNav &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; IncludeInfo &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; QString &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; RelatedCompound &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; DotFilePatcher &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; ParameterItemHandler &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; VariableListEntryHandler &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; stat &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; TagNamespaceInfo &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; NodeHandler &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; EntryHandler &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; InheritanceNodeContext &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; MemberInfo &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; TagGroupInfo &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; ChildNodeHandler &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; ScopeData &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; DotWorkerThread &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; ExprAst &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; TemplateNode &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; NamespaceDef &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; T &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; void &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; ParamHandler &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; ElementData &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; OutputGenerator &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; QDict&lt; TemplateVariant &gt; &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; GroupDef &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; IndexField &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; ClassContext &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; RowHandler &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; Template &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; DotRunner::CleanupItem &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; PageNodeContext &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; MemberContext &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; Formula &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; ClassInheritanceNodeContext &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; QGDictIterator &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; TemplateToken &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; GenericsCollection &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; DotGroupCollaboration::Edge &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; TagIncludeInfo &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; ActiveRowSpan &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; FilePair &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; ClassDef &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; Define &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; BaseClassDef &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; EdgeInfo &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; NodeDef &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; IncludeHandler &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; TagMemberInfo &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; DotRunner &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; RefItem &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; FileName &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; SearchDocEntry &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; PageContext &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; FlowChart &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; QWaitConditionEvent &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; SearchDefinitionList &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; SectionInfo &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; CodeLineHandler &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; ConfigOption &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; DocPara &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; Input * &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; EdgeLabelHandler &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; LayoutNavEntry &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; DirFileNodeContext &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; ModuleNodeContext &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; uint &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; AlphaIndexTableCell &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; DefineName &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; DirEntry &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; StructData &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; ParameterHandler &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; MemberList &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; LayoutDocEntry &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; CompoundEntry &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; Argument &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; TagAnchorInfo &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; FileList &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; FileDef &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; TagClassInfo &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; MemberHandler &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; DotFilePatcher::Map &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; DocImpl &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; QCacheItem &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; ArgumentList &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; FTVNode &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; BaseInfo &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; Mapping &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; TagEnumValueInfo &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; LinkedTextImpl &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; DiagramRow &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; AlphaIndexTableRows &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; NavIndexEntry &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; Example &gt;</a>, <a class="el" href="class_q_list.html#a774149fc271ebaba2aabcd183a836e8f">QList&lt; DirDef &gt;</a>, <a class="el" href="class_q_queue.html#a774149fc271ebaba2aabcd183a836e8f">QQueue&lt; DotRunner &gt;</a>, <a class="el" href="class_q_stack.html#a774149fc271ebaba2aabcd183a836e8f">QStack&lt; DocNode &gt;</a>, <a class="el" href="class_q_stack.html#a774149fc271ebaba2aabcd183a836e8f">QStack&lt; PerlModOutputStream &gt;</a>, <a class="el" href="class_q_stack.html#a774149fc271ebaba2aabcd183a836e8f">QStack&lt; bool &gt;</a>, <a class="el" href="class_q_stack.html#a774149fc271ebaba2aabcd183a836e8f">QStack&lt; DocStyleChange &gt;</a> e <a class="el" href="class_q_stack.html#a774149fc271ebaba2aabcd183a836e8f">QStack&lt; State &gt;</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a16886f83ef8aab3bcd0dc16d7b2d5434"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_q_g_list.html">QGList</a> &amp;&#160;</td>
+          <td class="paramname"><em>list</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Compares this list with <em>list</em>. Retruns TRUE if the lists contain the same data, else FALSE. </p>
+
+</div>
+</div>
+<a class="anchor" id="a0c0d849cb524232b008db07c0c8d5b7b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_data_stream.html">QDataStream</a> &amp; read </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_q_data_stream.html">QDataStream</a> &amp;&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QCollection::Item &amp;&#160;</td>
+          <td class="paramname"><em>item</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Reads a collection/list item from the stream <em>s</em> and returns a reference to the stream.</p>
+<p>The default implementation sets <em>item</em> to 0.</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="structcmd_8h.html#af2a3ea719b83f672637febdd87c36c36" title="Writes count bytes from buf to the filedescriptor fd. ">write()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a47fdc9eea42b6975cdc835bb2e08810e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sort </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sorts the list by the result of the virtual <a class="el" href="class_q_g_list.html#aac689c6d7a54b6558afbd53845183af8">compareItems()</a> function.</p>
+<p>The Heap-Sort algorithm is used for sorting. It sorts n items with O(n*log n) compares. This is the asymptotic optimal solution of the sorting problem. </p>
+
+</div>
+</div>
+<a class="anchor" id="a4a129683a3487b947f59307cb61d2b82"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_data_stream.html">QDataStream</a> &amp; write </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_q_data_stream.html">QDataStream</a> &amp;&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QCollection::Item&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Writes a collection/list item to the stream <em>s</em> and returns a reference to the stream.</p>
+<p>The default implementation does nothing.</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="structcmd_8h.html#a9c7b76d5266903891c803132d51ccb90" title="Read bytes from a file descriptor. ">read()</a> </dd></dl>
+
+</div>
+</div>
+<hr/>A documentação para esta classe foi gerada a partir dos seguintes ficheiros:<ul>
+<li>C:/Users/teste/git/doxygen/qtools/<a class="el" href="qglist_8h_source.html">qglist.h</a></li>
+<li>C:/Users/teste/git/doxygen/qtools/qglist.cpp</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado em Quinta, 28 de Novembro de 2013 22:44:29 para CEM RODAS por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

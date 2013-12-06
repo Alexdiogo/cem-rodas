@@ -1,0 +1,73 @@
+\hypertarget{class_member_name_info}{\section{Referência à classe Member\-Name\-Info}
+\label{class_member_name_info}\index{Member\-Name\-Info@{Member\-Name\-Info}}
+}
+
+
+{\ttfamily \#include $<$membername.\-h$>$}
+
+Diagrama de heranças da classe Member\-Name\-Info\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_member_name_info}
+\end{center}
+\end{figure}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_member_name_info_a1ca60e6efca6dab0386f13fb3fb6a09f}{{\bfseries Member\-Name\-Info} (const char $\ast$name)}\label{class_member_name_info_a1ca60e6efca6dab0386f13fb3fb6a09f}
+
+\item 
+\hypertarget{class_member_name_info_a95981d16e8c133c83b27e3d5cac18f36}{const char $\ast$ {\bfseries member\-Name} () const }\label{class_member_name_info_a95981d16e8c133c83b27e3d5cac18f36}
+
+\item 
+int \hyperlink{class_member_name_info_a219450accf048597ffc7113ecde4c402}{compare\-Items} (Q\-Collection\-::\-Item item1, Q\-Collection\-::\-Item item2)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Descrição detalhada}
+Class representing all \hyperlink{struct_member_info}{Member\-Info} objects with the same name 
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_member_name_info_a219450accf048597ffc7113ecde4c402}{\index{Member\-Name\-Info@{Member\-Name\-Info}!compare\-Items@{compare\-Items}}
+\index{compare\-Items@{compare\-Items}!MemberNameInfo@{Member\-Name\-Info}}
+\subsubsection[{compare\-Items}]{\setlength{\rightskip}{0pt plus 5cm}int compare\-Items (
+\begin{DoxyParamCaption}
+\item[{Q\-Collection\-::\-Item}]{item1, }
+\item[{Q\-Collection\-::\-Item}]{item2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_member_name_info_a219450accf048597ffc7113ecde4c402}
+This virtual function compares two list items.
+
+Returns\-: 
+\begin{DoxyItemize}
+\item 0 if {\itshape item1} == {\itshape item2} 
+\item non-\/zero if {\itshape item1} != {\itshape item2} 
+\end{DoxyItemize}
+
+This function returns {\itshape int} rather than {\itshape bool} so that reimplementations can return three values and use it to sort by\-:
+
+
+\begin{DoxyItemize}
+\item 0 if {\itshape item1} == {\itshape item2} 
+\item $>$ 0 (positive integer) if {\itshape item1} $>$ {\itshape item2} 
+\item $<$ 0 (negative integer) if {\itshape item1} $<$ {\itshape item2} 
+\end{DoxyItemize}
+
+The Q\-List\-::in\-Sort() function requires that \hyperlink{class_member_name_info_a219450accf048597ffc7113ecde4c402}{compare\-Items()} is implemented as described here.
+
+This function should not modify the list because some const functions call \hyperlink{class_member_name_info_a219450accf048597ffc7113ecde4c402}{compare\-Items()}.
+
+The default implementation compares the pointers\-: 
+\begin{DoxyCode}
+\end{DoxyCode}
+ 
+
+Reimplementado de \hyperlink{class_q_g_list_aac689c6d7a54b6558afbd53845183af8}{Q\-G\-List}.
+
+
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/src/membername.\-h\item 
+C\-:/\-Users/teste/git/doxygen/src/membername.\-cpp\end{DoxyCompactItemize}

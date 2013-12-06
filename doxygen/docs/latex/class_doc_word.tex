@@ -1,0 +1,66 @@
+\hypertarget{class_doc_word}{\section{Referência à classe Doc\-Word}
+\label{class_doc_word}\index{Doc\-Word@{Doc\-Word}}
+}
+
+
+{\ttfamily \#include $<$docparser.\-h$>$}
+
+Diagrama de heranças da classe Doc\-Word\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_doc_word}
+\end{center}
+\end{figure}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_doc_word_a4b8d58b209dc556a5a0c2bb843d4c5ea}{{\bfseries Doc\-Word} (\hyperlink{class_doc_node}{Doc\-Node} $\ast$\hyperlink{class_doc_node_abd7f070d6b0a38b4da71c2806578d19d}{parent}, const \hyperlink{class_q_c_string}{Q\-C\-String} \&word)}\label{class_doc_word_a4b8d58b209dc556a5a0c2bb843d4c5ea}
+
+\item 
+\hypertarget{class_doc_word_a2c052f8584abb7e8711181e45c0ef55e}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries word} () const }\label{class_doc_word_a2c052f8584abb7e8711181e45c0ef55e}
+
+\item 
+\hyperlink{class_doc_node_aa10c9e8951b8ccf714a59ec321bdac5b}{Kind} \hyperlink{class_doc_word_aa9d037bed9f9a083d0cd01485637d843}{kind} () const 
+\item 
+void \hyperlink{class_doc_word_a7ba716e854ae2f8f87a4eb2140e302b6}{accept} (\hyperlink{class_doc_visitor}{Doc\-Visitor} $\ast$v)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Descrição detalhada}
+Node representing a word 
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_doc_word_a7ba716e854ae2f8f87a4eb2140e302b6}{\index{Doc\-Word@{Doc\-Word}!accept@{accept}}
+\index{accept@{accept}!DocWord@{Doc\-Word}}
+\subsubsection[{accept}]{\setlength{\rightskip}{0pt plus 5cm}void accept (
+\begin{DoxyParamCaption}
+\item[{{\bf Doc\-Visitor} $\ast$}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_doc_word_a7ba716e854ae2f8f87a4eb2140e302b6}
+Acceptor function for node visitors. Part of the visitor pattern. 
+\begin{DoxyParams}{Parâmetros}
+{\em v} & Abstract visitor. \\
+\hline
+\end{DoxyParams}
+
+
+Implementa \hyperlink{class_doc_node_ac0816c4a3ba0fb0ca95538f82e13df27}{Doc\-Node}.
+
+\hypertarget{class_doc_word_aa9d037bed9f9a083d0cd01485637d843}{\index{Doc\-Word@{Doc\-Word}!kind@{kind}}
+\index{kind@{kind}!DocWord@{Doc\-Word}}
+\subsubsection[{kind}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Kind} kind (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_doc_word_aa9d037bed9f9a083d0cd01485637d843}
+Returns the kind of node. Provides runtime type information 
+
+Implementa \hyperlink{class_doc_node_a27e5d1dde6c9e861b52afa5a95f71d2d}{Doc\-Node}.
+
+
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/src/docparser.\-h\item 
+C\-:/\-Users/teste/git/doxygen/src/docparser.\-cpp\end{DoxyCompactItemize}

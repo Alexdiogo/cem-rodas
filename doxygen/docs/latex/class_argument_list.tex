@@ -1,0 +1,118 @@
+\hypertarget{class_argument_list}{\section{Referência à classe Argument\-List}
+\label{class_argument_list}\index{Argument\-List@{Argument\-List}}
+}
+
+
+This class represents an function or template argument list.  
+
+
+
+
+{\ttfamily \#include $<$arguments.\-h$>$}
+
+Diagrama de heranças da classe Argument\-List\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_argument_list}
+\end{center}
+\end{figure}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_argument_list_ab6e8f177f57931b8a4dc90e1bbf9bcf9}{Argument\-List} ()
+\item 
+\hyperlink{class_argument_list_a0e37716baa29c469bd5f1cc275481382}{$\sim$\-Argument\-List} ()
+\item 
+\hyperlink{class_argument_list}{Argument\-List} $\ast$ \hyperlink{class_argument_list_a2cfe4a2968e0438d00ef3b2405127fa6}{deep\-Copy} () const 
+\item 
+bool \hyperlink{class_argument_list_a585dcd381ab70014568db8ad457fc8b1}{has\-Documentation} () const 
+\end{DoxyCompactItemize}
+\subsection*{Membros públicos estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_argument_list}{Argument\-List} $\ast$ \hyperlink{class_argument_list_a931d2e722c3f11a736082a0f46c22ba9}{unmarshal} (\hyperlink{class_storage_intf}{Storage\-Intf} $\ast$s)
+\item 
+\hypertarget{class_argument_list_a116d2c2c834eeb43147fd69379f36f9c}{static void {\bfseries marshal} (\hyperlink{class_storage_intf}{Storage\-Intf} $\ast$s, \hyperlink{class_argument_list}{Argument\-List} $\ast$arg\-List)}\label{class_argument_list_a116d2c2c834eeb43147fd69379f36f9c}
+
+\end{DoxyCompactItemize}
+\subsection*{Campos de Dados}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_argument_list_a9ab1475bcbf4f17b50c7b5a3110743db}{const\-Specifier}
+\item 
+bool \hyperlink{class_argument_list_a7d6765f3c1ff9ee13a05a1eabbefc965}{volatile\-Specifier}
+\item 
+bool \hyperlink{class_argument_list_a7606644da45fc7bbd695bad212ede6af}{pure\-Specifier}
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_argument_list_ac2cd23d5da83b9f380f0e0a69bcace02}{trailing\-Return\-Type}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Descrição detalhada}
+This class represents an function or template argument list. 
+
+This class also stores some information about member that is typically put after the argument list, such as whether the member is const, volatile or pure virtual. 
+
+\subsection{Documentação dos Construtores \& Destrutor}
+\hypertarget{class_argument_list_ab6e8f177f57931b8a4dc90e1bbf9bcf9}{\index{Argument\-List@{Argument\-List}!Argument\-List@{Argument\-List}}
+\index{Argument\-List@{Argument\-List}!ArgumentList@{Argument\-List}}
+\subsubsection[{Argument\-List}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Argument\-List} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_argument_list_ab6e8f177f57931b8a4dc90e1bbf9bcf9}
+Creates an empty argument list \hypertarget{class_argument_list_a0e37716baa29c469bd5f1cc275481382}{\index{Argument\-List@{Argument\-List}!$\sim$\-Argument\-List@{$\sim$\-Argument\-List}}
+\index{$\sim$\-Argument\-List@{$\sim$\-Argument\-List}!ArgumentList@{Argument\-List}}
+\subsubsection[{$\sim$\-Argument\-List}]{\setlength{\rightskip}{0pt plus 5cm}$\sim${\bf Argument\-List} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_argument_list_a0e37716baa29c469bd5f1cc275481382}
+Destroys the argument list 
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_argument_list_a2cfe4a2968e0438d00ef3b2405127fa6}{\index{Argument\-List@{Argument\-List}!deep\-Copy@{deep\-Copy}}
+\index{deep\-Copy@{deep\-Copy}!ArgumentList@{Argument\-List}}
+\subsubsection[{deep\-Copy}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Argument\-List} $\ast$ deep\-Copy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_argument_list_a2cfe4a2968e0438d00ef3b2405127fa6}
+Makes a deep copy of this object \hypertarget{class_argument_list_a585dcd381ab70014568db8ad457fc8b1}{\index{Argument\-List@{Argument\-List}!has\-Documentation@{has\-Documentation}}
+\index{has\-Documentation@{has\-Documentation}!ArgumentList@{Argument\-List}}
+\subsubsection[{has\-Documentation}]{\setlength{\rightskip}{0pt plus 5cm}bool has\-Documentation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_argument_list_a585dcd381ab70014568db8ad457fc8b1}
+Does any argument of this list have documentation?
+
+the argument list is documented if one of its arguments is documented \hypertarget{class_argument_list_a931d2e722c3f11a736082a0f46c22ba9}{\index{Argument\-List@{Argument\-List}!unmarshal@{unmarshal}}
+\index{unmarshal@{unmarshal}!ArgumentList@{Argument\-List}}
+\subsubsection[{unmarshal}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Argument\-List} $\ast$ unmarshal (
+\begin{DoxyParamCaption}
+\item[{{\bf Storage\-Intf} $\ast$}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_argument_list_a931d2e722c3f11a736082a0f46c22ba9}
+C++11 defaulted method 
+
+\subsection{Documentação dos campos e atributos}
+\hypertarget{class_argument_list_a9ab1475bcbf4f17b50c7b5a3110743db}{\index{Argument\-List@{Argument\-List}!const\-Specifier@{const\-Specifier}}
+\index{const\-Specifier@{const\-Specifier}!ArgumentList@{Argument\-List}}
+\subsubsection[{const\-Specifier}]{\setlength{\rightskip}{0pt plus 5cm}bool const\-Specifier}}\label{class_argument_list_a9ab1475bcbf4f17b50c7b5a3110743db}
+Does the member modify the state of the class? default\-: F\-A\-L\-S\-E. \hypertarget{class_argument_list_a7606644da45fc7bbd695bad212ede6af}{\index{Argument\-List@{Argument\-List}!pure\-Specifier@{pure\-Specifier}}
+\index{pure\-Specifier@{pure\-Specifier}!ArgumentList@{Argument\-List}}
+\subsubsection[{pure\-Specifier}]{\setlength{\rightskip}{0pt plus 5cm}bool pure\-Specifier}}\label{class_argument_list_a7606644da45fc7bbd695bad212ede6af}
+Is this a pure virtual member? default\-: F\-A\-L\-S\-E \hypertarget{class_argument_list_ac2cd23d5da83b9f380f0e0a69bcace02}{\index{Argument\-List@{Argument\-List}!trailing\-Return\-Type@{trailing\-Return\-Type}}
+\index{trailing\-Return\-Type@{trailing\-Return\-Type}!ArgumentList@{Argument\-List}}
+\subsubsection[{trailing\-Return\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} trailing\-Return\-Type}}\label{class_argument_list_ac2cd23d5da83b9f380f0e0a69bcace02}
+C++11 style Trailing return type? \hypertarget{class_argument_list_a7d6765f3c1ff9ee13a05a1eabbefc965}{\index{Argument\-List@{Argument\-List}!volatile\-Specifier@{volatile\-Specifier}}
+\index{volatile\-Specifier@{volatile\-Specifier}!ArgumentList@{Argument\-List}}
+\subsubsection[{volatile\-Specifier}]{\setlength{\rightskip}{0pt plus 5cm}bool volatile\-Specifier}}\label{class_argument_list_a7d6765f3c1ff9ee13a05a1eabbefc965}
+Is the member volatile? default\-: F\-A\-L\-S\-E. 
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/src/arguments.\-h\item 
+C\-:/\-Users/teste/git/doxygen/src/arguments.\-cpp\end{DoxyCompactItemize}

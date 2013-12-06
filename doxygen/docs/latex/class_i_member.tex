@@ -1,0 +1,153 @@
+\hypertarget{class_i_member}{\section{Referência à classe I\-Member}
+\label{class_i_member}\index{I\-Member@{I\-Member}}
+}
+Diagrama de heranças da classe I\-Member\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{class_i_member}
+\end{center}
+\end{figure}
+\subsection*{Tipos Públicos}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Member\-Kind} \{ \\*
+{\bfseries Invalid} =0, 
+{\bfseries Define}, 
+{\bfseries Property}, 
+{\bfseries Variable}, 
+\\*
+{\bfseries Typedef}, 
+{\bfseries Enum}, 
+{\bfseries Function}, 
+{\bfseries Signal}, 
+\\*
+{\bfseries Prototype}, 
+{\bfseries Friend}, 
+{\bfseries D\-C\-O\-P}, 
+{\bfseries Slot}, 
+\\*
+{\bfseries Enum\-Value}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_i_member_aa6da37037d5aeb4945ada6a9a8f4ce0e}{virtual \hyperlink{class_i_compound}{I\-Compound} $\ast$ {\bfseries compound} () const =0}\label{class_i_member_aa6da37037d5aeb4945ada6a9a8f4ce0e}
+
+\item 
+\hypertarget{class_i_member_a1341a30d5dbc93faead9c8290fdf9c5f}{virtual \hyperlink{class_i_section}{I\-Section} $\ast$ {\bfseries section} () const =0}\label{class_i_member_a1341a30d5dbc93faead9c8290fdf9c5f}
+
+\item 
+\hypertarget{class_i_member_a1e16eda229a3778eaa7c76032a3ee4c6}{virtual Member\-Kind {\bfseries kind} () const =0}\label{class_i_member_a1e16eda229a3778eaa7c76032a3ee4c6}
+
+\item 
+\hypertarget{class_i_member_a872363e5be82229a73bd00d212a703ce}{virtual const \hyperlink{class_i_string}{I\-String} $\ast$ {\bfseries kind\-String} () const =0}\label{class_i_member_a872363e5be82229a73bd00d212a703ce}
+
+\item 
+\hypertarget{class_i_member_aaba28daa272dce8bc14dde330d5b0126}{virtual const \hyperlink{class_i_string}{I\-String} $\ast$ {\bfseries id} () const =0}\label{class_i_member_aaba28daa272dce8bc14dde330d5b0126}
+
+\item 
+\hypertarget{class_i_member_a5dc0cca2aef85806942cccf37d73c47b}{virtual const \hyperlink{class_i_string}{I\-String} $\ast$ {\bfseries protection} () const =0}\label{class_i_member_a5dc0cca2aef85806942cccf37d73c47b}
+
+\item 
+\hypertarget{class_i_member_a31a31d651b7fb29db639dd1da1148bae}{virtual const \hyperlink{class_i_string}{I\-String} $\ast$ {\bfseries virtualness} () const =0}\label{class_i_member_a31a31d651b7fb29db639dd1da1148bae}
+
+\item 
+\hypertarget{class_i_member_a5b2b394697f0afec4166e6342738dfab}{virtual \hyperlink{class_i_linked_text_iterator}{I\-Linked\-Text\-Iterator} $\ast$ {\bfseries type} () const =0}\label{class_i_member_a5b2b394697f0afec4166e6342738dfab}
+
+\item 
+\hypertarget{class_i_member_a6b227ab8a5260d41d25327b442fe90a6}{virtual const \hyperlink{class_i_string}{I\-String} $\ast$ {\bfseries type\-String} () const =0}\label{class_i_member_a6b227ab8a5260d41d25327b442fe90a6}
+
+\item 
+\hypertarget{class_i_member_af687440943d0a80c2b38cd5bb51b7a68}{virtual const \hyperlink{class_i_string}{I\-String} $\ast$ {\bfseries name} () const =0}\label{class_i_member_af687440943d0a80c2b38cd5bb51b7a68}
+
+\item 
+\hypertarget{class_i_member_a981bb3f4a489c31ca2e17582cc687019}{virtual const \hyperlink{class_i_string}{I\-String} $\ast$ {\bfseries read\-Accessor} () const =0}\label{class_i_member_a981bb3f4a489c31ca2e17582cc687019}
+
+\item 
+\hypertarget{class_i_member_a3c64b76bbd02b44584152827575552f3}{virtual const \hyperlink{class_i_string}{I\-String} $\ast$ {\bfseries write\-Accessor} () const =0}\label{class_i_member_a3c64b76bbd02b44584152827575552f3}
+
+\item 
+\hypertarget{class_i_member_a8963fa87be4decd328e09f3901c17605}{virtual const \hyperlink{class_i_string}{I\-String} $\ast$ {\bfseries definition} () const =0}\label{class_i_member_a8963fa87be4decd328e09f3901c17605}
+
+\item 
+\hypertarget{class_i_member_a536e580cd8790da912087a4c99704fed}{virtual const \hyperlink{class_i_string}{I\-String} $\ast$ {\bfseries argsstring} () const =0}\label{class_i_member_a536e580cd8790da912087a4c99704fed}
+
+\item 
+\hypertarget{class_i_member_a7c3a9ca9e5a52323ee7807583d6a0a78}{virtual bool {\bfseries is\-Const} () const =0}\label{class_i_member_a7c3a9ca9e5a52323ee7807583d6a0a78}
+
+\item 
+\hypertarget{class_i_member_adab44fe34e47715b3f6e199f9e97a36e}{virtual bool {\bfseries is\-Volatile} () const =0}\label{class_i_member_adab44fe34e47715b3f6e199f9e97a36e}
+
+\item 
+\hypertarget{class_i_member_a0ed1f9eef230e6f2ccae812d1037aa0f}{virtual bool {\bfseries is\-Static} () const =0}\label{class_i_member_a0ed1f9eef230e6f2ccae812d1037aa0f}
+
+\item 
+\hypertarget{class_i_member_a87310d5423d451c310fdad45417ef5aa}{virtual bool {\bfseries is\-Explicit} () const =0}\label{class_i_member_a87310d5423d451c310fdad45417ef5aa}
+
+\item 
+\hypertarget{class_i_member_aa755498f7637d8881301d54cfce973cc}{virtual bool {\bfseries is\-Inline} () const =0}\label{class_i_member_aa755498f7637d8881301d54cfce973cc}
+
+\item 
+\hypertarget{class_i_member_acd97458dd9b872498c78f10026b085b7}{virtual bool {\bfseries is\-Mutable} () const =0}\label{class_i_member_acd97458dd9b872498c78f10026b085b7}
+
+\item 
+\hypertarget{class_i_member_ae29f9260a18b006742e8d518504f128e}{virtual bool {\bfseries is\-Readable} () const =0}\label{class_i_member_ae29f9260a18b006742e8d518504f128e}
+
+\item 
+\hypertarget{class_i_member_ae7b9eff6518e77dddc274851bf2ae330}{virtual bool {\bfseries is\-Writable} () const =0}\label{class_i_member_ae7b9eff6518e77dddc274851bf2ae330}
+
+\item 
+\hypertarget{class_i_member_aaf64111a0b0ad336375c861b6d9e7d37}{virtual \hyperlink{class_i_param_iterator}{I\-Param\-Iterator} $\ast$ {\bfseries parameters} () const =0}\label{class_i_member_aaf64111a0b0ad336375c861b6d9e7d37}
+
+\item 
+\hypertarget{class_i_member_a833b65bb6ef7e77fad6519309499d2ac}{virtual \hyperlink{class_i_param_iterator}{I\-Param\-Iterator} $\ast$ {\bfseries template\-Parameters} () const =0}\label{class_i_member_a833b65bb6ef7e77fad6519309499d2ac}
+
+\item 
+\hypertarget{class_i_member_ac0ad5b9f3517a82e39b75d6b801fc6bf}{virtual \hyperlink{class_i_linked_text_iterator}{I\-Linked\-Text\-Iterator} $\ast$ {\bfseries initializer} () const =0}\label{class_i_member_ac0ad5b9f3517a82e39b75d6b801fc6bf}
+
+\item 
+\hypertarget{class_i_member_afd0b9d17562744a785b45069a7529f90}{virtual \hyperlink{class_i_linked_text_iterator}{I\-Linked\-Text\-Iterator} $\ast$ {\bfseries exceptions} () const =0}\label{class_i_member_afd0b9d17562744a785b45069a7529f90}
+
+\item 
+\hypertarget{class_i_member_a89d26d675bb0da08d642cad3efdb3c34}{virtual \hyperlink{class_i_member_reference_iterator}{I\-Member\-Reference\-Iterator} $\ast$ {\bfseries references} () const =0}\label{class_i_member_a89d26d675bb0da08d642cad3efdb3c34}
+
+\item 
+\hypertarget{class_i_member_ace1b899b39b81b3fcc9e99a45acd7c67}{virtual \hyperlink{class_i_member_reference_iterator}{I\-Member\-Reference\-Iterator} $\ast$ {\bfseries referenced\-By} () const =0}\label{class_i_member_ace1b899b39b81b3fcc9e99a45acd7c67}
+
+\item 
+\hypertarget{class_i_member_a6920c03ad68066a98e6a6eaf918d8b0a}{virtual const \hyperlink{class_i_string}{I\-String} $\ast$ {\bfseries body\-File} () const =0}\label{class_i_member_a6920c03ad68066a98e6a6eaf918d8b0a}
+
+\item 
+\hypertarget{class_i_member_a98336c30f79bed6227dce1de2be7884c}{virtual int {\bfseries body\-Start} () const =0}\label{class_i_member_a98336c30f79bed6227dce1de2be7884c}
+
+\item 
+\hypertarget{class_i_member_a7c0447e79b207d4c076a34565111aef6}{virtual int {\bfseries body\-End} () const =0}\label{class_i_member_a7c0447e79b207d4c076a34565111aef6}
+
+\item 
+\hypertarget{class_i_member_a918f17fb17e28feaa3101799be8507e5}{virtual const \hyperlink{class_i_string}{I\-String} $\ast$ {\bfseries definition\-File} () const =0}\label{class_i_member_a918f17fb17e28feaa3101799be8507e5}
+
+\item 
+\hypertarget{class_i_member_a04795f8087d1d23109456de2519809f7}{virtual int {\bfseries definition\-Line} () const =0}\label{class_i_member_a04795f8087d1d23109456de2519809f7}
+
+\item 
+\hypertarget{class_i_member_a8ccd37324cd81d39f99f617162ec6279}{virtual \hyperlink{class_i_member_reference}{I\-Member\-Reference} $\ast$ {\bfseries reimplements} () const =0}\label{class_i_member_a8ccd37324cd81d39f99f617162ec6279}
+
+\item 
+\hypertarget{class_i_member_a756204c5017caf98240849bcbfccbc28}{virtual \hyperlink{class_i_member_reference_iterator}{I\-Member\-Reference\-Iterator} $\ast$ {\bfseries reimplemented\-By} () const =0}\label{class_i_member_a756204c5017caf98240849bcbfccbc28}
+
+\item 
+\hypertarget{class_i_member_a8a0da25a8851dfb809394c4d6585efb2}{virtual \hyperlink{class_i_doc_root}{I\-Doc\-Root} $\ast$ {\bfseries brief\-Description} () const =0}\label{class_i_member_a8a0da25a8851dfb809394c4d6585efb2}
+
+\item 
+\hypertarget{class_i_member_a3fd3d8b278a1e0787d51861984fdc73e}{virtual \hyperlink{class_i_doc_root}{I\-Doc\-Root} $\ast$ {\bfseries detailed\-Description} () const =0}\label{class_i_member_a3fd3d8b278a1e0787d51861984fdc73e}
+
+\item 
+\hypertarget{class_i_member_a5ac08a9c710fb5ef98c48edea3be6d4a}{virtual \hyperlink{class_i_doc_root}{I\-Doc\-Root} $\ast$ {\bfseries inbody\-Description} () const =0}\label{class_i_member_a5ac08a9c710fb5ef98c48edea3be6d4a}
+
+\end{DoxyCompactItemize}
+
+
+A documentação para esta classe foi gerada a partir do seguinte ficheiro\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/addon/doxmlparser/include/\hyperlink{include_2doxmlintf_8h}{doxmlintf.\-h}\end{DoxyCompactItemize}

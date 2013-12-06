@@ -1,0 +1,144 @@
+\hypertarget{class_doc_para}{\section{Referência à classe Doc\-Para}
+\label{class_doc_para}\index{Doc\-Para@{Doc\-Para}}
+}
+
+
+{\ttfamily \#include $<$docparser.\-h$>$}
+
+Diagrama de heranças da classe Doc\-Para\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_doc_para}
+\end{center}
+\end{figure}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_doc_para_af998526b3607cfff282fe4ec1cdd89dc}{{\bfseries Doc\-Para} (\hyperlink{class_doc_node}{Doc\-Node} $\ast$\hyperlink{class_doc_node_abd7f070d6b0a38b4da71c2806578d19d}{parent})}\label{class_doc_para_af998526b3607cfff282fe4ec1cdd89dc}
+
+\item 
+\hypertarget{class_doc_para_a67007fc2be130666fbf3b065022756f4}{int {\bfseries parse} ()}\label{class_doc_para_a67007fc2be130666fbf3b065022756f4}
+
+\item 
+\hyperlink{class_doc_node_aa10c9e8951b8ccf714a59ec321bdac5b}{Kind} \hyperlink{class_doc_para_aa9d037bed9f9a083d0cd01485637d843}{kind} () const 
+\item 
+\hypertarget{class_doc_para_a479432127ee77145cc19d6a2d1590821}{bool {\bfseries is\-Empty} () const }\label{class_doc_para_a479432127ee77145cc19d6a2d1590821}
+
+\item 
+void \hyperlink{class_doc_para_a7ba716e854ae2f8f87a4eb2140e302b6}{accept} (\hyperlink{class_doc_visitor}{Doc\-Visitor} $\ast$v)
+\item 
+\hypertarget{class_doc_para_a7d3af17d92bf948006d448691283290c}{void {\bfseries mark\-First} (bool v=T\-R\-U\-E)}\label{class_doc_para_a7d3af17d92bf948006d448691283290c}
+
+\item 
+\hypertarget{class_doc_para_a9d9fd09f1f4baa960c94af1d41c60f95}{void {\bfseries mark\-Last} (bool v=T\-R\-U\-E)}\label{class_doc_para_a9d9fd09f1f4baa960c94af1d41c60f95}
+
+\item 
+\hypertarget{class_doc_para_af018468130393cdae58e14a36980f94c}{bool {\bfseries is\-First} () const }\label{class_doc_para_af018468130393cdae58e14a36980f94c}
+
+\item 
+\hypertarget{class_doc_para_a8dad52a23ff99a58cb64461598a11d5c}{bool {\bfseries is\-Last} () const }\label{class_doc_para_a8dad52a23ff99a58cb64461598a11d5c}
+
+\item 
+\hypertarget{class_doc_para_a916eeb692e39b5bf5a6c372aa4e2f408}{int {\bfseries handle\-Command} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&cmd\-Name)}\label{class_doc_para_a916eeb692e39b5bf5a6c372aa4e2f408}
+
+\item 
+\hypertarget{class_doc_para_aae84d445337c17ec41654c0cef59f221}{int {\bfseries handle\-Html\-Start\-Tag} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&tag\-Name, const \hyperlink{class_html_attrib_list}{Html\-Attrib\-List} \&tag\-Html\-Attribs)}\label{class_doc_para_aae84d445337c17ec41654c0cef59f221}
+
+\item 
+\hypertarget{class_doc_para_a778e5a7e835ca115b14c98f68dbe1660}{int {\bfseries handle\-Html\-End\-Tag} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&tag\-Name)}\label{class_doc_para_a778e5a7e835ca115b14c98f68dbe1660}
+
+\item 
+\hypertarget{class_doc_para_aa1402fc83d107341925d545b7b350534}{int {\bfseries handle\-Simple\-Section} (Doc\-Simple\-Sect\-::\-Type t, bool xml\-Context=F\-A\-L\-S\-E)}\label{class_doc_para_aa1402fc83d107341925d545b7b350534}
+
+\item 
+\hypertarget{class_doc_para_ac30f10029ee4c282f1c49de937f4d33a}{int {\bfseries handle\-X\-Ref\-Item} ()}\label{class_doc_para_ac30f10029ee4c282f1c49de937f4d33a}
+
+\item 
+\hypertarget{class_doc_para_aab67e10ab6b6ac1b5f607ac5717c488b}{int {\bfseries handle\-Param\-Section} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&cmd\-Name, Doc\-Param\-Sect\-::\-Type t, bool xml\-Context, int direction)}\label{class_doc_para_aab67e10ab6b6ac1b5f607ac5717c488b}
+
+\item 
+\hypertarget{class_doc_para_acef9856367355ae85a8c5d96b4b5c5a5}{void {\bfseries handle\-Include\-Operator} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&cmd\-Name, Doc\-Inc\-Operator\-::\-Type t)}\label{class_doc_para_acef9856367355ae85a8c5d96b4b5c5a5}
+
+\item 
+\hypertarget{class_doc_para_afaed3ebd951d07067ffda80577aa08b3}{void {\bfseries handle\-Image} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&cmd\-Name)}\label{class_doc_para_afaed3ebd951d07067ffda80577aa08b3}
+
+\item 
+\hypertarget{class_doc_para_a1a30a82ed71801e1765208a56779fafb}{void {\bfseries handle\-Dot\-File} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&cmd\-Name)}\label{class_doc_para_a1a30a82ed71801e1765208a56779fafb}
+
+\item 
+\hypertarget{class_doc_para_aa553f3eea1480175ba5cb85774329f34}{void {\bfseries handle\-Msc\-File} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&cmd\-Name)}\label{class_doc_para_aa553f3eea1480175ba5cb85774329f34}
+
+\item 
+\hypertarget{class_doc_para_aa1c1fcd2daeed53d9476e09504e720ab}{void {\bfseries handle\-Dia\-File} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&cmd\-Name)}\label{class_doc_para_aa1c1fcd2daeed53d9476e09504e720ab}
+
+\item 
+\hypertarget{class_doc_para_a2cb86c60d771893d3905ca6836dbc133}{void {\bfseries handle\-Include} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&cmd\-Name, Doc\-Include\-::\-Type t)}\label{class_doc_para_a2cb86c60d771893d3905ca6836dbc133}
+
+\item 
+\hypertarget{class_doc_para_afd401f62790198180f1550306ae1f6b4}{void {\bfseries handle\-Link} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&cmd\-Name, bool is\-Java\-Link)}\label{class_doc_para_afd401f62790198180f1550306ae1f6b4}
+
+\item 
+\hypertarget{class_doc_para_a6b156cfca8b2af612f7653e893c84c34}{void {\bfseries handle\-Cite} ()}\label{class_doc_para_a6b156cfca8b2af612f7653e893c84c34}
+
+\item 
+\hypertarget{class_doc_para_aafbc7e581b3f3e2e0f19d13130ec7fc7}{void {\bfseries handle\-Ref} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&cmd\-Name)}\label{class_doc_para_aafbc7e581b3f3e2e0f19d13130ec7fc7}
+
+\item 
+\hypertarget{class_doc_para_acf0c85554f36460d3d121338f7b6609f}{void {\bfseries handle\-Section} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&cmd\-Name)}\label{class_doc_para_acf0c85554f36460d3d121338f7b6609f}
+
+\item 
+\hypertarget{class_doc_para_a3ab331cf94c7fd761ebbfa9c41448c95}{void {\bfseries handle\-Inherit\-Doc} ()}\label{class_doc_para_a3ab331cf94c7fd761ebbfa9c41448c95}
+
+\item 
+\hypertarget{class_doc_para_aa5d5b71860d0a47d79fd1762ac61355f}{void {\bfseries handle\-Vhdl\-Flow} ()}\label{class_doc_para_aa5d5b71860d0a47d79fd1762ac61355f}
+
+\item 
+\hypertarget{class_doc_para_a0de36ad3db47e286ec5d7213b6d4e561}{int {\bfseries handle\-Start\-Code} ()}\label{class_doc_para_a0de36ad3db47e286ec5d7213b6d4e561}
+
+\item 
+\hypertarget{class_doc_para_a1427e442f50ab9ab7e3c614d284c2340}{int {\bfseries handle\-Html\-Header} (const \hyperlink{class_html_attrib_list}{Html\-Attrib\-List} \&tag\-Html\-Attribs, int level)}\label{class_doc_para_a1427e442f50ab9ab7e3c614d284c2340}
+
+\item 
+\hypertarget{class_doc_para_a8ccf294bf9703886d07c208def70e46c}{bool {\bfseries inject\-Token} (int tok, const \hyperlink{class_q_c_string}{Q\-C\-String} \&tok\-Text)}\label{class_doc_para_a8ccf294bf9703886d07c208def70e46c}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Descrição detalhada}
+Node representing a paragraph in the documentation tree 
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_doc_para_a7ba716e854ae2f8f87a4eb2140e302b6}{\index{Doc\-Para@{Doc\-Para}!accept@{accept}}
+\index{accept@{accept}!DocPara@{Doc\-Para}}
+\subsubsection[{accept}]{\setlength{\rightskip}{0pt plus 5cm}void accept (
+\begin{DoxyParamCaption}
+\item[{{\bf Doc\-Visitor} $\ast$}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_doc_para_a7ba716e854ae2f8f87a4eb2140e302b6}
+Acceptor function for node visitors. Part of the visitor pattern. 
+\begin{DoxyParams}{Parâmetros}
+{\em v} & Abstract visitor. \\
+\hline
+\end{DoxyParams}
+
+
+Implementa \hyperlink{class_doc_node_ac0816c4a3ba0fb0ca95538f82e13df27}{Doc\-Node}.
+
+\hypertarget{class_doc_para_aa9d037bed9f9a083d0cd01485637d843}{\index{Doc\-Para@{Doc\-Para}!kind@{kind}}
+\index{kind@{kind}!DocPara@{Doc\-Para}}
+\subsubsection[{kind}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Kind} kind (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_doc_para_aa9d037bed9f9a083d0cd01485637d843}
+Returns the kind of node. Provides runtime type information 
+
+Implementa \hyperlink{class_doc_node_a27e5d1dde6c9e861b52afa5a95f71d2d}{Doc\-Node}.
+
+
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/src/docparser.\-h\item 
+C\-:/\-Users/teste/git/doxygen/src/docparser.\-cpp\end{DoxyCompactItemize}

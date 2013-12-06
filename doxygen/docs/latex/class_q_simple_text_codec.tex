@@ -1,0 +1,126 @@
+\hypertarget{class_q_simple_text_codec}{\section{Referência à classe Q\-Simple\-Text\-Codec}
+\label{class_q_simple_text_codec}\index{Q\-Simple\-Text\-Codec@{Q\-Simple\-Text\-Codec}}
+}
+Diagrama de heranças da classe Q\-Simple\-Text\-Codec\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_q_simple_text_codec}
+\end{center}
+\end{figure}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_q_simple_text_codec_a19e21c6a73f70d9bde20cc5c6d38c77d}{{\bfseries Q\-Simple\-Text\-Codec} (int)}\label{class_q_simple_text_codec_a19e21c6a73f70d9bde20cc5c6d38c77d}
+
+\item 
+\hyperlink{class_q_string}{Q\-String} \hyperlink{class_q_simple_text_codec_a007974789d47a38acb95816cd5486c8c}{to\-Unicode} (const char $\ast$chars, int len) const 
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_q_simple_text_codec_a2c6f9097505dec2780031e680be1c835}{from\-Unicode} (const \hyperlink{class_q_string}{Q\-String} \&uc, int \&len\-In\-Out) const 
+\item 
+const char $\ast$ \hyperlink{class_q_simple_text_codec_a25844783e4bef74ca9a17519c239a27e}{name} () const 
+\item 
+int \hyperlink{class_q_simple_text_codec_a5272a4ca2c3d9cdba1c3f2fac3e4d6bd}{mib\-Enum} () const 
+\item 
+int \hyperlink{class_q_simple_text_codec_ab3ad57260f7cb722cb3b237369d23044}{heuristic\-Content\-Match} (const char $\ast$chars, int len) const 
+\item 
+int \hyperlink{class_q_simple_text_codec_a7fb3e310dd10564c6a7e2b707a336bbf}{heuristic\-Name\-Match} (const char $\ast$hint) const 
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_q_simple_text_codec_a2c6f9097505dec2780031e680be1c835}{\index{Q\-Simple\-Text\-Codec@{Q\-Simple\-Text\-Codec}!from\-Unicode@{from\-Unicode}}
+\index{from\-Unicode@{from\-Unicode}!QSimpleTextCodec@{Q\-Simple\-Text\-Codec}}
+\subsubsection[{from\-Unicode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} from\-Unicode (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{uc, }
+\item[{int \&}]{len\-In\-Out}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_simple_text_codec_a2c6f9097505dec2780031e680be1c835}
+Subclasses of \hyperlink{class_q_text_codec}{Q\-Text\-Codec} must reimplement either this function or \hyperlink{class_q_text_codec_af324249beeb8b0b38aa7b32ba7c8c09f}{make\-Encoder()}. It converts the first {\itshape len\-In\-Out} characters of {\itshape uc} from Unicode to the encoding of the subclass. If {\itshape len\-In\-Out} is negative or too large, the length of {\itshape uc} is used instead.
+
+The value returned is the property of the caller, which is responsible for deleting it with \char`\"{}delete \mbox{[}$\,$\mbox{]}\char`\"{}. The length of the resulting Unicode character sequence is returned in {\itshape len\-In\-Out}.
+
+The default implementation makes an encoder with \hyperlink{class_q_text_codec_af324249beeb8b0b38aa7b32ba7c8c09f}{make\-Encoder()} and converts the input with that. Note that the default \hyperlink{class_q_text_codec_af324249beeb8b0b38aa7b32ba7c8c09f}{make\-Encoder()} implementation makes an encoder that simply calls this function, hence subclasses {\itshape must} reimplement one function or the other to avoid infinite recursion. 
+
+Reimplementado de \hyperlink{class_q_text_codec_a2c6f9097505dec2780031e680be1c835}{Q\-Text\-Codec}.
+
+\hypertarget{class_q_simple_text_codec_ab3ad57260f7cb722cb3b237369d23044}{\index{Q\-Simple\-Text\-Codec@{Q\-Simple\-Text\-Codec}!heuristic\-Content\-Match@{heuristic\-Content\-Match}}
+\index{heuristic\-Content\-Match@{heuristic\-Content\-Match}!QSimpleTextCodec@{Q\-Simple\-Text\-Codec}}
+\subsubsection[{heuristic\-Content\-Match}]{\setlength{\rightskip}{0pt plus 5cm}int heuristic\-Content\-Match (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{chars, }
+\item[{int}]{len}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_simple_text_codec_ab3ad57260f7cb722cb3b237369d23044}
+Subclasses of \hyperlink{class_q_text_codec}{Q\-Text\-Codec} must reimplement this function. It examines the first {\itshape len} bytes of {\itshape chars} and returns a value indicating how likely it is that the string is a prefix of text encoded in the encoding of the subclass. Any negative return value indicates that the text is detectably not in the encoding (eg. it contains undefined characters). \hyperlink{class_a}{A} return value of 0 indicates that the text should be decoded with this codec rather than as A\-S\-C\-I\-I, but there is no particular evidence. The value should range up to {\itshape len}. Thus, most decoders will return -\/1, 0, or -\/{\itshape len}.
+
+The characters are not null terminated.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_text_codec_a36ad11ff7f7a392535f41e9d20fd19c1}{codec\-For\-Content()}. 
+\end{DoxySeeAlso}
+
+
+Implementa \hyperlink{class_q_text_codec_a75f854c61b4c3535f1456db42a014f7a}{Q\-Text\-Codec}.
+
+\hypertarget{class_q_simple_text_codec_a7fb3e310dd10564c6a7e2b707a336bbf}{\index{Q\-Simple\-Text\-Codec@{Q\-Simple\-Text\-Codec}!heuristic\-Name\-Match@{heuristic\-Name\-Match}}
+\index{heuristic\-Name\-Match@{heuristic\-Name\-Match}!QSimpleTextCodec@{Q\-Simple\-Text\-Codec}}
+\subsubsection[{heuristic\-Name\-Match}]{\setlength{\rightskip}{0pt plus 5cm}int heuristic\-Name\-Match (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{hint}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_simple_text_codec_a7fb3e310dd10564c6a7e2b707a336bbf}
+Returns a value indicating how likely this decoder is for decoding some format that has the given name.
+
+\hyperlink{class_a}{A} good match returns a positive number around the length of the string. \hyperlink{class_a}{A} bad match is negative.
+
+The default implementation calls \hyperlink{class_q_text_codec_ab977446514dde5b6663124372812eba5}{simple\-Heuristic\-Name\-Match()} with the name of the codec. 
+
+Reimplementado de \hyperlink{class_q_text_codec_a7fb3e310dd10564c6a7e2b707a336bbf}{Q\-Text\-Codec}.
+
+\hypertarget{class_q_simple_text_codec_a5272a4ca2c3d9cdba1c3f2fac3e4d6bd}{\index{Q\-Simple\-Text\-Codec@{Q\-Simple\-Text\-Codec}!mib\-Enum@{mib\-Enum}}
+\index{mib\-Enum@{mib\-Enum}!QSimpleTextCodec@{Q\-Simple\-Text\-Codec}}
+\subsubsection[{mib\-Enum}]{\setlength{\rightskip}{0pt plus 5cm}int mib\-Enum (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_simple_text_codec_a5272a4ca2c3d9cdba1c3f2fac3e4d6bd}
+Subclasses of \hyperlink{class_q_text_codec}{Q\-Text\-Codec} must reimplement this function. It returns the M\-I\-Benum (see \href{ftp://ftp.isi.edu/in-notes/iana/assignments/character-sets}{\tt the I\-A\-N\-A character-\/sets encoding file} for more information). It is important that each \hyperlink{class_q_text_codec}{Q\-Text\-Codec} subclass return the correct unique value for this function. 
+
+Implementa \hyperlink{class_q_text_codec_a6ab5696c11fafa78429074ae63a794e0}{Q\-Text\-Codec}.
+
+\hypertarget{class_q_simple_text_codec_a25844783e4bef74ca9a17519c239a27e}{\index{Q\-Simple\-Text\-Codec@{Q\-Simple\-Text\-Codec}!name@{name}}
+\index{name@{name}!QSimpleTextCodec@{Q\-Simple\-Text\-Codec}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_simple_text_codec_a25844783e4bef74ca9a17519c239a27e}
+Subclasses of \hyperlink{class_q_text_codec}{Q\-Text\-Codec} must reimplement this function. It returns the name of the encoding supported by the subclass. When choosing a name for an encoding, consider these points\-: 
+\begin{DoxyItemize}
+\item On X11, heuristic\-Name\-Match( const char $\ast$ hint ) is used to test if a the \hyperlink{class_q_text_codec}{Q\-Text\-Codec} can convert between Unicode and the encoding of a font with encoding {\itshape hint}, such as \char`\"{}iso8859-\/1\char`\"{} for Latin-\/1 fonts, \char`\"{}koi8-\/r\char`\"{} for Russian K\-O\-I8 fonts. The default algorithm of \hyperlink{class_q_simple_text_codec_a7fb3e310dd10564c6a7e2b707a336bbf}{heuristic\-Name\-Match()} uses \hyperlink{class_q_simple_text_codec_a25844783e4bef74ca9a17519c239a27e}{name()}. 
+\item Some applications may use this function to present encodings to the end user. 
+\end{DoxyItemize}
+
+Implementa \hyperlink{class_q_text_codec_a5bf2c67878639a29dfd3d648b93f17a2}{Q\-Text\-Codec}.
+
+\hypertarget{class_q_simple_text_codec_a007974789d47a38acb95816cd5486c8c}{\index{Q\-Simple\-Text\-Codec@{Q\-Simple\-Text\-Codec}!to\-Unicode@{to\-Unicode}}
+\index{to\-Unicode@{to\-Unicode}!QSimpleTextCodec@{Q\-Simple\-Text\-Codec}}
+\subsubsection[{to\-Unicode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} to\-Unicode (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{chars, }
+\item[{int}]{len}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_q_simple_text_codec_a007974789d47a38acb95816cd5486c8c}
+Subclasses of \hyperlink{class_q_text_codec}{Q\-Text\-Codec} must reimplement this function or \hyperlink{class_q_text_codec_ad7f6bd53bcbf64bf6f2e75106d229e19}{make\-Decoder()}. It converts the first {\itshape len} characters of {\itshape chars} to Unicode.
+
+The default implementation makes a decoder with \hyperlink{class_q_text_codec_ad7f6bd53bcbf64bf6f2e75106d229e19}{make\-Decoder()} and converts the input with that. Note that the default \hyperlink{class_q_text_codec_ad7f6bd53bcbf64bf6f2e75106d229e19}{make\-Decoder()} implementation makes a decoder that simply calls this function, hence subclasses {\itshape must} reimplement one function or the other to avoid infinite recursion. 
+
+Reimplementado de \hyperlink{class_q_text_codec_a007974789d47a38acb95816cd5486c8c}{Q\-Text\-Codec}.
+
+
+
+A documentação para esta classe foi gerada a partir do seguinte ficheiro\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/qtools/qtextcodec.\-cpp\end{DoxyCompactItemize}

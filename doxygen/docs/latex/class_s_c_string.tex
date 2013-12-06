@@ -1,0 +1,202 @@
+\hypertarget{class_s_c_string}{\section{Referência à classe S\-C\-String}
+\label{class_s_c_string}\index{S\-C\-String@{S\-C\-String}}
+}
+
+
+{\ttfamily \#include $<$scstring.\-h$>$}
+
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_s_c_string_a1666cb8a4fc4e04a738a366275e0e91d}{{\bfseries S\-C\-String} (const \hyperlink{class_s_c_string}{S\-C\-String} \&s)}\label{class_s_c_string_a1666cb8a4fc4e04a738a366275e0e91d}
+
+\item 
+\hypertarget{class_s_c_string_a4412dd6d6d20d7d9ef0ffabac5a3aadd}{{\bfseries S\-C\-String} (int size)}\label{class_s_c_string_a4412dd6d6d20d7d9ef0ffabac5a3aadd}
+
+\item 
+\hypertarget{class_s_c_string_a2b837aa7f9a4043262672f266007b87a}{{\bfseries S\-C\-String} (const char $\ast$str)}\label{class_s_c_string_a2b837aa7f9a4043262672f266007b87a}
+
+\item 
+\hypertarget{class_s_c_string_ab7016c1438b9d35f5160a26304f64b6d}{{\bfseries S\-C\-String} (const char $\ast$str, uint maxlen)}\label{class_s_c_string_ab7016c1438b9d35f5160a26304f64b6d}
+
+\item 
+\hypertarget{class_s_c_string_ad3cef8ce65a5e21539619a6d30663057}{\hyperlink{class_s_c_string}{S\-C\-String} \& {\bfseries operator=} (const \hyperlink{class_s_c_string}{S\-C\-String} \&s)}\label{class_s_c_string_ad3cef8ce65a5e21539619a6d30663057}
+
+\item 
+\hypertarget{class_s_c_string_aa4da8a9ae3a8e7bf0acac717cb156901}{\hyperlink{class_s_c_string}{S\-C\-String} \& {\bfseries operator=} (const char $\ast$str)}\label{class_s_c_string_aa4da8a9ae3a8e7bf0acac717cb156901}
+
+\item 
+\hypertarget{class_s_c_string_ac02f2a4d7312eb91f40980adfd4e31b2}{bool {\bfseries is\-Null} () const }\label{class_s_c_string_ac02f2a4d7312eb91f40980adfd4e31b2}
+
+\item 
+\hypertarget{class_s_c_string_a479432127ee77145cc19d6a2d1590821}{bool {\bfseries is\-Empty} () const }\label{class_s_c_string_a479432127ee77145cc19d6a2d1590821}
+
+\item 
+\hypertarget{class_s_c_string_ab0edbf251efc0562d70132e931e3cf06}{uint {\bfseries length} () const }\label{class_s_c_string_ab0edbf251efc0562d70132e931e3cf06}
+
+\item 
+\hypertarget{class_s_c_string_a7e63723212bed1ca52f0fe57e58b812e}{uint {\bfseries size} () const }\label{class_s_c_string_a7e63723212bed1ca52f0fe57e58b812e}
+
+\item 
+\hypertarget{class_s_c_string_ad9319003da5b44fcac43001237ecb9cd}{char $\ast$ {\bfseries data} () const }\label{class_s_c_string_ad9319003da5b44fcac43001237ecb9cd}
+
+\item 
+\hypertarget{class_s_c_string_a378c0f518d23c55f949bd0dd39c87849}{bool {\bfseries resize} (uint newlen)}\label{class_s_c_string_a378c0f518d23c55f949bd0dd39c87849}
+
+\item 
+\hypertarget{class_s_c_string_a1546e903bdbf7b496b4f8b05a5ff908d}{bool {\bfseries truncate} (uint pos)}\label{class_s_c_string_a1546e903bdbf7b496b4f8b05a5ff908d}
+
+\item 
+\hypertarget{class_s_c_string_a31c02c2c1d3805a87e49dd877b0ca0bd}{bool {\bfseries fill} (char c, int len=-\/1)}\label{class_s_c_string_a31c02c2c1d3805a87e49dd877b0ca0bd}
+
+\item 
+\hypertarget{class_s_c_string_a0a311bdfc4a64b4efa7ab813f874695b}{\hyperlink{class_s_c_string}{S\-C\-String} {\bfseries copy} () const }\label{class_s_c_string_a0a311bdfc4a64b4efa7ab813f874695b}
+
+\item 
+\hypertarget{class_s_c_string_a8acde73a82788396d5498b25f87e5b34}{\hyperlink{class_s_c_string}{S\-C\-String} \& {\bfseries sprintf} (const char $\ast$format,...)}\label{class_s_c_string_a8acde73a82788396d5498b25f87e5b34}
+
+\item 
+\hypertarget{class_s_c_string_ad64e3aef2a281ce7550aee1970a86a7e}{int {\bfseries find} (char c, int index=0, bool cs=T\-R\-U\-E) const }\label{class_s_c_string_ad64e3aef2a281ce7550aee1970a86a7e}
+
+\item 
+\hypertarget{class_s_c_string_ae601972d1298a1aa17a9d2985fad64cc}{int {\bfseries find} (const char $\ast$str, int index=0, bool cs=T\-R\-U\-E) const }\label{class_s_c_string_ae601972d1298a1aa17a9d2985fad64cc}
+
+\item 
+\hypertarget{class_s_c_string_a7d7d4fe2b8d9279521d5b89fbde1052d}{int {\bfseries find} (const \hyperlink{class_q_reg_exp}{Q\-Reg\-Exp} \&, int index=0) const }\label{class_s_c_string_a7d7d4fe2b8d9279521d5b89fbde1052d}
+
+\item 
+\hypertarget{class_s_c_string_a791ea1fc0ebbceedc0bf751f2b790fb1}{int {\bfseries find} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&str, int index, bool cs) const }\label{class_s_c_string_a791ea1fc0ebbceedc0bf751f2b790fb1}
+
+\item 
+\hypertarget{class_s_c_string_a1c9c5fa7edcc9f59b7ad419554a31270}{int {\bfseries find\-Rev} (char c, int index=-\/1, bool cs=T\-R\-U\-E) const }\label{class_s_c_string_a1c9c5fa7edcc9f59b7ad419554a31270}
+
+\item 
+\hypertarget{class_s_c_string_aae624bd3ceb0e99a50f3145450c9657b}{int {\bfseries find\-Rev} (const char $\ast$str, int index=-\/1, bool cs=T\-R\-U\-E) const }\label{class_s_c_string_aae624bd3ceb0e99a50f3145450c9657b}
+
+\item 
+\hypertarget{class_s_c_string_ac8a7fd641cbd6e1d9704c2a37547f7dd}{int {\bfseries find\-Rev} (const \hyperlink{class_q_reg_exp}{Q\-Reg\-Exp} \&, int index=-\/1) const }\label{class_s_c_string_ac8a7fd641cbd6e1d9704c2a37547f7dd}
+
+\item 
+\hypertarget{class_s_c_string_a2ff9ac285923aa8c6f798a030730b80d}{int {\bfseries contains} (char c, bool cs=T\-R\-U\-E) const }\label{class_s_c_string_a2ff9ac285923aa8c6f798a030730b80d}
+
+\item 
+\hypertarget{class_s_c_string_abe7452ce01e2396702f7f158ebf38d22}{int {\bfseries contains} (const char $\ast$str, bool cs=T\-R\-U\-E) const }\label{class_s_c_string_abe7452ce01e2396702f7f158ebf38d22}
+
+\item 
+\hypertarget{class_s_c_string_aedd4a9c1e1ccbd48eec982dd9e6abb44}{int {\bfseries contains} (const \hyperlink{class_q_reg_exp}{Q\-Reg\-Exp} \&) const }\label{class_s_c_string_aedd4a9c1e1ccbd48eec982dd9e6abb44}
+
+\item 
+\hypertarget{class_s_c_string_a8bc9337f47d29d6876ecfc0754a35334}{bool {\bfseries strip\-Prefix} (const char $\ast$prefix)}\label{class_s_c_string_a8bc9337f47d29d6876ecfc0754a35334}
+
+\item 
+\hypertarget{class_s_c_string_a044ed9f641a03c15ee733f772f353744}{\hyperlink{class_s_c_string}{S\-C\-String} {\bfseries left} (uint len) const }\label{class_s_c_string_a044ed9f641a03c15ee733f772f353744}
+
+\item 
+\hypertarget{class_s_c_string_a512edfe64c4fc79254eda16aada38328}{\hyperlink{class_s_c_string}{S\-C\-String} {\bfseries right} (uint len) const }\label{class_s_c_string_a512edfe64c4fc79254eda16aada38328}
+
+\item 
+\hypertarget{class_s_c_string_a6d8344296c6ffa0eecb24c28b429f54e}{\hyperlink{class_s_c_string}{S\-C\-String} {\bfseries mid} (uint index, uint len=0xffffffff) const }\label{class_s_c_string_a6d8344296c6ffa0eecb24c28b429f54e}
+
+\item 
+\hypertarget{class_s_c_string_a874d76b10da46dc72448bb93619b5287}{\hyperlink{class_s_c_string}{S\-C\-String} {\bfseries lower} () const }\label{class_s_c_string_a874d76b10da46dc72448bb93619b5287}
+
+\item 
+\hypertarget{class_s_c_string_accbc9ade5994e46dcff575a89c7b387b}{\hyperlink{class_s_c_string}{S\-C\-String} {\bfseries upper} () const }\label{class_s_c_string_accbc9ade5994e46dcff575a89c7b387b}
+
+\item 
+\hypertarget{class_s_c_string_a511d8da2642de7997fd83e1d2efede46}{\hyperlink{class_s_c_string}{S\-C\-String} {\bfseries strip\-White\-Space} () const }\label{class_s_c_string_a511d8da2642de7997fd83e1d2efede46}
+
+\item 
+\hypertarget{class_s_c_string_aa0309a995f2d50bdf3b7620f31fca73b}{\hyperlink{class_s_c_string}{S\-C\-String} {\bfseries simplify\-White\-Space} () const }\label{class_s_c_string_aa0309a995f2d50bdf3b7620f31fca73b}
+
+\item 
+\hypertarget{class_s_c_string_aa75ea65347f593744254d088cc21d80f}{\hyperlink{class_s_c_string}{S\-C\-String} \& {\bfseries assign} (const char $\ast$str)}\label{class_s_c_string_aa75ea65347f593744254d088cc21d80f}
+
+\item 
+\hypertarget{class_s_c_string_abab16c94f7e98ac51c397e48bf77ef28}{\hyperlink{class_s_c_string}{S\-C\-String} \& {\bfseries insert} (uint index, const char $\ast$)}\label{class_s_c_string_abab16c94f7e98ac51c397e48bf77ef28}
+
+\item 
+\hypertarget{class_s_c_string_ac2bbd2a17a8e11e7f26c5c03f9813249}{\hyperlink{class_s_c_string}{S\-C\-String} \& {\bfseries insert} (uint index, char)}\label{class_s_c_string_ac2bbd2a17a8e11e7f26c5c03f9813249}
+
+\item 
+\hypertarget{class_s_c_string_ab0fed90b41f7924fa673dbba9be734cc}{\hyperlink{class_s_c_string}{S\-C\-String} \& {\bfseries append} (const char $\ast$s)}\label{class_s_c_string_ab0fed90b41f7924fa673dbba9be734cc}
+
+\item 
+\hypertarget{class_s_c_string_a4ab2e898e90805cf41e7b515f90f10f3}{\hyperlink{class_s_c_string}{S\-C\-String} \& {\bfseries prepend} (const char $\ast$s)}\label{class_s_c_string_a4ab2e898e90805cf41e7b515f90f10f3}
+
+\item 
+\hypertarget{class_s_c_string_a2b1aa378843ada77c7f9d8005af3fcc1}{\hyperlink{class_s_c_string}{S\-C\-String} \& {\bfseries remove} (uint index, uint len)}\label{class_s_c_string_a2b1aa378843ada77c7f9d8005af3fcc1}
+
+\item 
+\hypertarget{class_s_c_string_a2a6a5142b1e348a5b69820a803b55cdf}{\hyperlink{class_s_c_string}{S\-C\-String} \& {\bfseries replace} (uint index, uint len, const char $\ast$)}\label{class_s_c_string_a2a6a5142b1e348a5b69820a803b55cdf}
+
+\item 
+\hypertarget{class_s_c_string_af593264b1d56e0a18a2cbe9b649d5fa6}{\hyperlink{class_s_c_string}{S\-C\-String} \& {\bfseries replace} (const \hyperlink{class_q_reg_exp}{Q\-Reg\-Exp} \&, const char $\ast$)}\label{class_s_c_string_af593264b1d56e0a18a2cbe9b649d5fa6}
+
+\item 
+\hypertarget{class_s_c_string_a5b0ed833bd201253bec307df94b5bdad}{short {\bfseries to\-Short} (bool $\ast$ok=0) const }\label{class_s_c_string_a5b0ed833bd201253bec307df94b5bdad}
+
+\item 
+\hypertarget{class_s_c_string_a04cc2d7dcf50661d371e4dadcde6dd2c}{ushort {\bfseries to\-U\-Short} (bool $\ast$ok=0) const }\label{class_s_c_string_a04cc2d7dcf50661d371e4dadcde6dd2c}
+
+\item 
+\hypertarget{class_s_c_string_ae240243ac9701bed470f8a3c0b4880dc}{int {\bfseries to\-Int} (bool $\ast$ok=0) const }\label{class_s_c_string_ae240243ac9701bed470f8a3c0b4880dc}
+
+\item 
+\hypertarget{class_s_c_string_ac7638eeb119659186b380774e8154eb8}{uint {\bfseries to\-U\-Int} (bool $\ast$ok=0) const }\label{class_s_c_string_ac7638eeb119659186b380774e8154eb8}
+
+\item 
+\hypertarget{class_s_c_string_aca2c4b08a078d4a7b35b430d6d82a2c4}{long {\bfseries to\-Long} (bool $\ast$ok=0) const }\label{class_s_c_string_aca2c4b08a078d4a7b35b430d6d82a2c4}
+
+\item 
+\hypertarget{class_s_c_string_a1069b2a298f56bb9682c7fc2cef58276}{ulong {\bfseries to\-U\-Long} (bool $\ast$ok=0) const }\label{class_s_c_string_a1069b2a298f56bb9682c7fc2cef58276}
+
+\item 
+\hypertarget{class_s_c_string_aee5f4e54ae102b006b86da265eadcfe6}{\hyperlink{class_s_c_string}{S\-C\-String} \& {\bfseries set\-Num} (short)}\label{class_s_c_string_aee5f4e54ae102b006b86da265eadcfe6}
+
+\item 
+\hypertarget{class_s_c_string_a68cd220d596be85cd80914784e93ada0}{\hyperlink{class_s_c_string}{S\-C\-String} \& {\bfseries set\-Num} (ushort)}\label{class_s_c_string_a68cd220d596be85cd80914784e93ada0}
+
+\item 
+\hypertarget{class_s_c_string_a5333eae34aa6069ed3ec418cc4c74b37}{\hyperlink{class_s_c_string}{S\-C\-String} \& {\bfseries set\-Num} (int)}\label{class_s_c_string_a5333eae34aa6069ed3ec418cc4c74b37}
+
+\item 
+\hypertarget{class_s_c_string_a80cfbd3b122a8d2186d7a1d2ab05cdfb}{\hyperlink{class_s_c_string}{S\-C\-String} \& {\bfseries set\-Num} (uint)}\label{class_s_c_string_a80cfbd3b122a8d2186d7a1d2ab05cdfb}
+
+\item 
+\hypertarget{class_s_c_string_afa7060652665c26e9f66df9a9de73176}{\hyperlink{class_s_c_string}{S\-C\-String} \& {\bfseries set\-Num} (long)}\label{class_s_c_string_afa7060652665c26e9f66df9a9de73176}
+
+\item 
+\hypertarget{class_s_c_string_a298972e95093fab91a54a3e35a186503}{\hyperlink{class_s_c_string}{S\-C\-String} \& {\bfseries set\-Num} (ulong)}\label{class_s_c_string_a298972e95093fab91a54a3e35a186503}
+
+\item 
+\hypertarget{class_s_c_string_ac12da65c32e9f7ee55af657fbbbf6dbe}{\hyperlink{class_q_c_string}{Q\-C\-String} \& {\bfseries set\-Num} (float, char f='g', int prec=6)}\label{class_s_c_string_ac12da65c32e9f7ee55af657fbbbf6dbe}
+
+\item 
+\hypertarget{class_s_c_string_a15c2915cb5f62ec50a0a0207064bbcf6}{\hyperlink{class_q_c_string}{Q\-C\-String} \& {\bfseries set\-Num} (double, char f='g', int prec=6)}\label{class_s_c_string_a15c2915cb5f62ec50a0a0207064bbcf6}
+
+\item 
+\hypertarget{class_s_c_string_abdd0820f8401e11e09a1e92ab7f4d864}{{\bfseries operator const char $\ast$} () const }\label{class_s_c_string_abdd0820f8401e11e09a1e92ab7f4d864}
+
+\item 
+\hypertarget{class_s_c_string_a86fd377be3dee0acc3bd3f5db1d7d07b}{\hyperlink{class_s_c_string}{S\-C\-String} \& {\bfseries operator+=} (const char $\ast$str)}\label{class_s_c_string_a86fd377be3dee0acc3bd3f5db1d7d07b}
+
+\item 
+\hypertarget{class_s_c_string_af6fc8effa2fd1a56624cfb52f3ff2646}{\hyperlink{class_s_c_string}{S\-C\-String} \& {\bfseries operator+=} (char c)}\label{class_s_c_string_af6fc8effa2fd1a56624cfb52f3ff2646}
+
+\item 
+\hypertarget{class_s_c_string_a6e0620792d6df1c9d4c2de6fcc43d96f}{char \& {\bfseries at} (uint index) const }\label{class_s_c_string_a6e0620792d6df1c9d4c2de6fcc43d96f}
+
+\item 
+\hypertarget{class_s_c_string_aa26690d818962b4f4043781f42d6b350}{char \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (int i) const }\label{class_s_c_string_aa26690d818962b4f4043781f42d6b350}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+This is an alternative implementation of \hyperlink{class_q_c_string}{Q\-C\-String}. It provides basically the same functions but uses less memory for administration. This class is just a wrapper around a plain \hyperlink{class_c}{C} string requiring only 4 bytes \char`\"{}overhead\char`\"{}. \hyperlink{class_q_c_string}{Q\-C\-String} features sharing of data and stores the string length, but requires 4 + 12 bytes for this (even for the empty string). As doxygen uses a L\-O\-T of string during a run it saves a lot of memory to use a more memory efficient implementation at the cost of relatively low runtime overhead. 
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/qtools/scstring.\-h\item 
+C\-:/\-Users/teste/git/doxygen/qtools/scstring.\-cpp\end{DoxyCompactItemize}

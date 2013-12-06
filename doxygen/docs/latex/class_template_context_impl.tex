@@ -1,0 +1,189 @@
+\hypertarget{class_template_context_impl}{\section{Referência à classe Template\-Context\-Impl}
+\label{class_template_context_impl}\index{Template\-Context\-Impl@{Template\-Context\-Impl}}
+}
+
+
+Internal class representing the implementation of a template context.  
+
+
+Diagrama de heranças da classe Template\-Context\-Impl\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_template_context_impl}
+\end{center}
+\end{figure}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_template_context_impl_a98b45e0a7ed122b6710df00209b67827}{push} ()
+\item 
+void \hyperlink{class_template_context_impl_a312e7f6c761a199c1369fbe651e084f0}{pop} ()
+\item 
+void \hyperlink{class_template_context_impl_a258e17f8e7e0f12f8cf405976214f489}{set} (const char $\ast$name, const \hyperlink{class_template_variant}{Template\-Variant} \&v)
+\item 
+\hyperlink{class_template_variant}{Template\-Variant} \hyperlink{class_template_context_impl_a2aac951f4e5ddfe91fc71f55c75730b7}{get} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&name) const 
+\item 
+const \hyperlink{class_template_variant}{Template\-Variant} $\ast$ \hyperlink{class_template_context_impl_adcff56f208600381453d3dc6af9dd887}{get\-Ref} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&name) const 
+\item 
+void \hyperlink{class_template_context_impl_ab6895f5081a3cb25b6d9fae349a3d848}{set\-Output\-Directory} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&dir)
+\item 
+void \hyperlink{class_template_context_impl_aa279b8b31debd1e17e7c37b9630f2e5c}{set\-Escape\-Intf} (\hyperlink{class_template_escape_intf}{Template\-Escape\-Intf} $\ast$intf)
+\item 
+void \hyperlink{class_template_context_impl_a3c2881415b6438de297c967bd3d6bbc4}{set\-Spaceless\-Intf} (\hyperlink{class_template_spaceless_intf}{Template\-Spaceless\-Intf} $\ast$intf)
+\item 
+\hypertarget{class_template_context_impl_af87b8640548acba58538bac7af4dd473}{\hyperlink{class_template_block_context}{Template\-Block\-Context} $\ast$ {\bfseries block\-Context} ()}\label{class_template_context_impl_af87b8640548acba58538bac7af4dd473}
+
+\item 
+\hypertarget{class_template_context_impl_a90aa1f9cb3d5c7b95cb264a928f9863d}{\hyperlink{class_template_variant}{Template\-Variant} {\bfseries get\-Primary} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&name) const }\label{class_template_context_impl_a90aa1f9cb3d5c7b95cb264a928f9863d}
+
+\item 
+\hypertarget{class_template_context_impl_a0338668464dd3ea6d572d475355ac175}{void {\bfseries set\-Location} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&template\-Name, int line)}\label{class_template_context_impl_a0338668464dd3ea6d572d475355ac175}
+
+\item 
+\hypertarget{class_template_context_impl_a252629acf6dbf0a69894af5f525da4a1}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries template\-Name} () const }\label{class_template_context_impl_a252629acf6dbf0a69894af5f525da4a1}
+
+\item 
+\hypertarget{class_template_context_impl_aa6e2444d9f9eb15566a2c8cb42e45788}{int {\bfseries line} () const }\label{class_template_context_impl_aa6e2444d9f9eb15566a2c8cb42e45788}
+
+\item 
+\hypertarget{class_template_context_impl_adc4bb7e1cb5ddf3d521fbe3fdc98da9a}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries output\-Directory} () const }\label{class_template_context_impl_adc4bb7e1cb5ddf3d521fbe3fdc98da9a}
+
+\item 
+\hypertarget{class_template_context_impl_ae54de444d339372b4f6a984a7776e583}{\hyperlink{class_template_escape_intf}{Template\-Escape\-Intf} $\ast$ {\bfseries escape\-Intf} () const }\label{class_template_context_impl_ae54de444d339372b4f6a984a7776e583}
+
+\item 
+\hypertarget{class_template_context_impl_a7f781ee5a5f518108ea2143fa4c95d32}{\hyperlink{class_template_spaceless_intf}{Template\-Spaceless\-Intf} $\ast$ {\bfseries spaceless\-Intf} () const }\label{class_template_context_impl_a7f781ee5a5f518108ea2143fa4c95d32}
+
+\item 
+\hypertarget{class_template_context_impl_a098d626f9758d09b8e0cc61c9c9e3863}{void {\bfseries enable\-Spaceless} (bool b)}\label{class_template_context_impl_a098d626f9758d09b8e0cc61c9c9e3863}
+
+\item 
+\hypertarget{class_template_context_impl_a6d07f0663d72fdd9de1114715751c099}{bool {\bfseries spaceless\-Enabled} () const }\label{class_template_context_impl_a6d07f0663d72fdd9de1114715751c099}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+Internal class representing the implementation of a template context. 
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_template_context_impl_a2aac951f4e5ddfe91fc71f55c75730b7}{\index{Template\-Context\-Impl@{Template\-Context\-Impl}!get@{get}}
+\index{get@{get}!TemplateContextImpl@{Template\-Context\-Impl}}
+\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Template\-Variant} get (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-C\-String} \&}]{name}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_template_context_impl_a2aac951f4e5ddfe91fc71f55c75730b7}
+Gets the value for a given key 
+\begin{DoxyParams}[1]{Parâmetros}
+\mbox{\tt in}  & {\em name} & The name of key. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+The value, which can be an invalid variant in case the key was not found. 
+\end{DoxyReturn}
+
+
+Implementa \hyperlink{class_template_context_adb49a5675ac3cb569a86fbaf8409e9e8}{Template\-Context}.
+
+\hypertarget{class_template_context_impl_adcff56f208600381453d3dc6af9dd887}{\index{Template\-Context\-Impl@{Template\-Context\-Impl}!get\-Ref@{get\-Ref}}
+\index{get\-Ref@{get\-Ref}!TemplateContextImpl@{Template\-Context\-Impl}}
+\subsubsection[{get\-Ref}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Template\-Variant} $\ast$ get\-Ref (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-C\-String} \&}]{name}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_template_context_impl_adcff56f208600381453d3dc6af9dd887}
+Returns a pointer to the value corresponding to a given key. 
+\begin{DoxyParams}[1]{Parâmetros}
+\mbox{\tt in}  & {\em name} & The name of key. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+\hyperlink{class_a}{A} pointer to the value, or 0 in case the key was not found. 
+\end{DoxyReturn}
+
+
+Implementa \hyperlink{class_template_context_a3a146aa3fd2f25dccb45f2b3eda64174}{Template\-Context}.
+
+\hypertarget{class_template_context_impl_a312e7f6c761a199c1369fbe651e084f0}{\index{Template\-Context\-Impl@{Template\-Context\-Impl}!pop@{pop}}
+\index{pop@{pop}!TemplateContextImpl@{Template\-Context\-Impl}}
+\subsubsection[{pop}]{\setlength{\rightskip}{0pt plus 5cm}void pop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_template_context_impl_a312e7f6c761a199c1369fbe651e084f0}
+Pop the current scope from the stack. 
+
+Implementa \hyperlink{class_template_context_a155389a22ff3694e7a6af1777f6d7182}{Template\-Context}.
+
+\hypertarget{class_template_context_impl_a98b45e0a7ed122b6710df00209b67827}{\index{Template\-Context\-Impl@{Template\-Context\-Impl}!push@{push}}
+\index{push@{push}!TemplateContextImpl@{Template\-Context\-Impl}}
+\subsubsection[{push}]{\setlength{\rightskip}{0pt plus 5cm}void push (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_template_context_impl_a98b45e0a7ed122b6710df00209b67827}
+Push a new scope on the stack. 
+
+Implementa \hyperlink{class_template_context_a7a28d6e6a6ded476c1774baac1cb3448}{Template\-Context}.
+
+\hypertarget{class_template_context_impl_a258e17f8e7e0f12f8cf405976214f489}{\index{Template\-Context\-Impl@{Template\-Context\-Impl}!set@{set}}
+\index{set@{set}!TemplateContextImpl@{Template\-Context\-Impl}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}void set (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name, }
+\item[{const {\bf Template\-Variant} \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_template_context_impl_a258e17f8e7e0f12f8cf405976214f489}
+Sets a value in the current scope. 
+\begin{DoxyParams}[1]{Parâmetros}
+\mbox{\tt in}  & {\em name} & The name of the value; the key in the dictionary. \\
+\hline
+\mbox{\tt in}  & {\em v} & The value associated with the key. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Nota}
+When a given key is already present, its value will be replaced by {\itshape v} 
+\end{DoxyNote}
+
+
+Implementa \hyperlink{class_template_context_af83899afa5416ea422089aed8facf318}{Template\-Context}.
+
+\hypertarget{class_template_context_impl_aa279b8b31debd1e17e7c37b9630f2e5c}{\index{Template\-Context\-Impl@{Template\-Context\-Impl}!set\-Escape\-Intf@{set\-Escape\-Intf}}
+\index{set\-Escape\-Intf@{set\-Escape\-Intf}!TemplateContextImpl@{Template\-Context\-Impl}}
+\subsubsection[{set\-Escape\-Intf}]{\setlength{\rightskip}{0pt plus 5cm}void set\-Escape\-Intf (
+\begin{DoxyParamCaption}
+\item[{{\bf Template\-Escape\-Intf} $\ast$}]{intf}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_template_context_impl_aa279b8b31debd1e17e7c37b9630f2e5c}
+Sets the interface that will be used for escaping the result of variable expansion before writing it to the output. 
+
+Implementa \hyperlink{class_template_context_ac592d6d28ead803976089a11e60613af}{Template\-Context}.
+
+\hypertarget{class_template_context_impl_ab6895f5081a3cb25b6d9fae349a3d848}{\index{Template\-Context\-Impl@{Template\-Context\-Impl}!set\-Output\-Directory@{set\-Output\-Directory}}
+\index{set\-Output\-Directory@{set\-Output\-Directory}!TemplateContextImpl@{Template\-Context\-Impl}}
+\subsubsection[{set\-Output\-Directory}]{\setlength{\rightskip}{0pt plus 5cm}void set\-Output\-Directory (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-C\-String} \&}]{dir}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_template_context_impl_ab6895f5081a3cb25b6d9fae349a3d848}
+When files are create (i.\-e. by \{\% create ... \%\}) they written to the directory {\itshape dir}. 
+
+Implementa \hyperlink{class_template_context_ace9ddbfb0b3770eea371a78a16060a73}{Template\-Context}.
+
+\hypertarget{class_template_context_impl_a3c2881415b6438de297c967bd3d6bbc4}{\index{Template\-Context\-Impl@{Template\-Context\-Impl}!set\-Spaceless\-Intf@{set\-Spaceless\-Intf}}
+\index{set\-Spaceless\-Intf@{set\-Spaceless\-Intf}!TemplateContextImpl@{Template\-Context\-Impl}}
+\subsubsection[{set\-Spaceless\-Intf}]{\setlength{\rightskip}{0pt plus 5cm}void set\-Spaceless\-Intf (
+\begin{DoxyParamCaption}
+\item[{{\bf Template\-Spaceless\-Intf} $\ast$}]{intf}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_template_context_impl_a3c2881415b6438de297c967bd3d6bbc4}
+Sets the interface that will be used inside a spaceless block to remove any redundant whitespace. 
+
+Implementa \hyperlink{class_template_context_a01a5c35d9a02935589e8dbef1c8568bf}{Template\-Context}.
+
+
+
+A documentação para esta classe foi gerada a partir do seguinte ficheiro\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/src/template.\-cpp\end{DoxyCompactItemize}

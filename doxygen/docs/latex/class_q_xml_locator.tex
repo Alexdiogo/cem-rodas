@@ -1,0 +1,70 @@
+\hypertarget{class_q_xml_locator}{\section{Referência à classe Q\-Xml\-Locator}
+\label{class_q_xml_locator}\index{Q\-Xml\-Locator@{Q\-Xml\-Locator}}
+}
+
+
+The \hyperlink{class_q_xml_locator}{Q\-Xml\-Locator} class provides the X\-M\-L handler classes with information about the actual parsing position.  
+
+
+
+
+{\ttfamily \#include $<$qxml.\-h$>$}
+
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_q_xml_locator_aea56218e7ed9eb2899f6caae12eeadb0}{Q\-Xml\-Locator} (\hyperlink{class_q_xml_simple_reader}{Q\-Xml\-Simple\-Reader} $\ast$parent)
+\item 
+\hyperlink{class_q_xml_locator_aa64d2598c67d855c95e7836115ac6305}{$\sim$\-Q\-Xml\-Locator} ()
+\item 
+int \hyperlink{class_q_xml_locator_a8600aba4b58138b76472fdb40f325bcd}{column\-Number} ()
+\item 
+int \hyperlink{class_q_xml_locator_a4bc010d37f882a7895ca5b642dc65735}{line\-Number} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+The \hyperlink{class_q_xml_locator}{Q\-Xml\-Locator} class provides the X\-M\-L handler classes with information about the actual parsing position. 
+
+X\-M\-L
+
+The reader reports a \hyperlink{class_q_xml_locator}{Q\-Xml\-Locator} to the content handler before he starts to parse the document. This is done with the \hyperlink{class_q_xml_content_handler_a02c1b0a6086c5d232ae919bbc5abb740}{Q\-Xml\-Content\-Handler\-::set\-Document\-Locator()} function. The handler classes can now use this locator to get the actual position the reader is at. 
+
+\subsection{Documentação dos Construtores \& Destrutor}
+\hypertarget{class_q_xml_locator_aea56218e7ed9eb2899f6caae12eeadb0}{\index{Q\-Xml\-Locator@{Q\-Xml\-Locator}!Q\-Xml\-Locator@{Q\-Xml\-Locator}}
+\index{Q\-Xml\-Locator@{Q\-Xml\-Locator}!QXmlLocator@{Q\-Xml\-Locator}}
+\subsubsection[{Q\-Xml\-Locator}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Xml\-Locator} (
+\begin{DoxyParamCaption}
+\item[{{\bf Q\-Xml\-Simple\-Reader} $\ast$}]{parent}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_xml_locator_aea56218e7ed9eb2899f6caae12eeadb0}
+Constructor. \hypertarget{class_q_xml_locator_aa64d2598c67d855c95e7836115ac6305}{\index{Q\-Xml\-Locator@{Q\-Xml\-Locator}!$\sim$\-Q\-Xml\-Locator@{$\sim$\-Q\-Xml\-Locator}}
+\index{$\sim$\-Q\-Xml\-Locator@{$\sim$\-Q\-Xml\-Locator}!QXmlLocator@{Q\-Xml\-Locator}}
+\subsubsection[{$\sim$\-Q\-Xml\-Locator}]{\setlength{\rightskip}{0pt plus 5cm}$\sim${\bf Q\-Xml\-Locator} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_xml_locator_aa64d2598c67d855c95e7836115ac6305}
+Destructor. 
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_q_xml_locator_a8600aba4b58138b76472fdb40f325bcd}{\index{Q\-Xml\-Locator@{Q\-Xml\-Locator}!column\-Number@{column\-Number}}
+\index{column\-Number@{column\-Number}!QXmlLocator@{Q\-Xml\-Locator}}
+\subsubsection[{column\-Number}]{\setlength{\rightskip}{0pt plus 5cm}int column\-Number (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_q_xml_locator_a8600aba4b58138b76472fdb40f325bcd}
+Gets the column number (starting with 1) or -\/1 if there is no column number available. \hypertarget{class_q_xml_locator_a4bc010d37f882a7895ca5b642dc65735}{\index{Q\-Xml\-Locator@{Q\-Xml\-Locator}!line\-Number@{line\-Number}}
+\index{line\-Number@{line\-Number}!QXmlLocator@{Q\-Xml\-Locator}}
+\subsubsection[{line\-Number}]{\setlength{\rightskip}{0pt plus 5cm}int line\-Number (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_q_xml_locator_a4bc010d37f882a7895ca5b642dc65735}
+Gets the line number (starting with 1) or -\/1 if there is no line number available. 
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/qtools/qxml.\-h\item 
+C\-:/\-Users/teste/git/doxygen/qtools/qxml.\-cpp\end{DoxyCompactItemize}

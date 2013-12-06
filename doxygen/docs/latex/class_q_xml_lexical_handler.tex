@@ -1,0 +1,160 @@
+\hypertarget{class_q_xml_lexical_handler}{\section{Referência à classe Q\-Xml\-Lexical\-Handler}
+\label{class_q_xml_lexical_handler}\index{Q\-Xml\-Lexical\-Handler@{Q\-Xml\-Lexical\-Handler}}
+}
+
+
+The \hyperlink{class_q_xml_lexical_handler}{Q\-Xml\-Lexical\-Handler} class provides an interface to report lexical content of X\-M\-L data.  
+
+
+
+
+{\ttfamily \#include $<$qxml.\-h$>$}
+
+Diagrama de heranças da classe Q\-Xml\-Lexical\-Handler\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{class_q_xml_lexical_handler}
+\end{center}
+\end{figure}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{class_q_xml_lexical_handler_a2ea9d9ea737aebf275346d81eea3e2b7}{start\-D\-T\-D} (const \hyperlink{class_q_string}{Q\-String} \&name, const \hyperlink{class_q_string}{Q\-String} \&public\-Id, const \hyperlink{class_q_string}{Q\-String} \&system\-Id)=0
+\item 
+virtual bool \hyperlink{class_q_xml_lexical_handler_a418bba370ca7d74563c7e66c55c54631}{end\-D\-T\-D} ()=0
+\item 
+virtual bool \hyperlink{class_q_xml_lexical_handler_af94092d3d1e27e2616d4d8ec3ac94b40}{start\-C\-D\-A\-T\-A} ()=0
+\item 
+virtual bool \hyperlink{class_q_xml_lexical_handler_af4e24c106522bb67c6fac75aed4924e3}{end\-C\-D\-A\-T\-A} ()=0
+\item 
+virtual bool \hyperlink{class_q_xml_lexical_handler_a89f4a1fa0b8b370c7c8a9666011bd60e}{comment} (const \hyperlink{class_q_string}{Q\-String} \&ch)=0
+\item 
+virtual \hyperlink{class_q_string}{Q\-String} \hyperlink{class_q_xml_lexical_handler_ac86bbbabef3a52aec7615cbbc0adb3f4}{error\-String} ()=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+The \hyperlink{class_q_xml_lexical_handler}{Q\-Xml\-Lexical\-Handler} class provides an interface to report lexical content of X\-M\-L data. 
+
+X\-M\-L
+
+The events in the lexical handler apply to the entire document, not just to the document element, and all lexical handler events appear between the content handler's start\-Document and end\-Document events.
+
+You can set the lexical handler with \hyperlink{class_q_xml_reader_a5d8760a6bd5b439c78a1c2d925e0ba7f}{Q\-Xml\-Reader\-::set\-Lexical\-Handler()}.
+
+This interface is designed after the S\-A\-X2 extension Lexical\-Handler. The functions start\-Entity() and end\-Entity() are not included though.
+
+See also the \href{xml.html#introSAX2}{\tt Introduction to S\-A\-X2}.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_xml_d_t_d_handler}{Q\-Xml\-D\-T\-D\-Handler} \hyperlink{class_q_xml_decl_handler}{Q\-Xml\-Decl\-Handler} \hyperlink{class_q_xml_content_handler}{Q\-Xml\-Content\-Handler} \hyperlink{class_q_xml_entity_resolver}{Q\-Xml\-Entity\-Resolver} \hyperlink{class_q_xml_error_handler}{Q\-Xml\-Error\-Handler} 
+\end{DoxySeeAlso}
+
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_q_xml_lexical_handler_a89f4a1fa0b8b370c7c8a9666011bd60e}{\index{Q\-Xml\-Lexical\-Handler@{Q\-Xml\-Lexical\-Handler}!comment@{comment}}
+\index{comment@{comment}!QXmlLexicalHandler@{Q\-Xml\-Lexical\-Handler}}
+\subsubsection[{comment}]{\setlength{\rightskip}{0pt plus 5cm}bool comment (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{ch}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_q_xml_lexical_handler_a89f4a1fa0b8b370c7c8a9666011bd60e}
+The reader calls this function to report an X\-M\-L comment anywhere in the document.
+
+If this function returns F\-A\-L\-S\-E the reader will stop parsing and will report an error. The reader will use the function \hyperlink{class_q_xml_lexical_handler_ac86bbbabef3a52aec7615cbbc0adb3f4}{error\-String()} to get the error message that will be used for reporting the error. 
+
+Implementado em \hyperlink{class_q_xml_default_handler_a244025ba6bd8815828678aab134064d0}{Q\-Xml\-Default\-Handler} e \hyperlink{class_d_bus_x_m_l_handler_abe6e6b6cbb1913a33b7d1350b16e9bba}{D\-Bus\-X\-M\-L\-Handler}.
+
+\hypertarget{class_q_xml_lexical_handler_af4e24c106522bb67c6fac75aed4924e3}{\index{Q\-Xml\-Lexical\-Handler@{Q\-Xml\-Lexical\-Handler}!end\-C\-D\-A\-T\-A@{end\-C\-D\-A\-T\-A}}
+\index{end\-C\-D\-A\-T\-A@{end\-C\-D\-A\-T\-A}!QXmlLexicalHandler@{Q\-Xml\-Lexical\-Handler}}
+\subsubsection[{end\-C\-D\-A\-T\-A}]{\setlength{\rightskip}{0pt plus 5cm}bool end\-C\-D\-A\-T\-A (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_q_xml_lexical_handler_af4e24c106522bb67c6fac75aed4924e3}
+The reader calls this function to report the end of a C\-D\-A\-T\-A section.
+
+If this function returns F\-A\-L\-S\-E the reader will stop parsing and will report an error. The reader will use the function \hyperlink{class_q_xml_lexical_handler_ac86bbbabef3a52aec7615cbbc0adb3f4}{error\-String()} to get the error message that will be used for reporting the error.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_xml_lexical_handler_af94092d3d1e27e2616d4d8ec3ac94b40}{start\-C\-D\-A\-T\-A()} 
+\end{DoxySeeAlso}
+
+
+Implementado em \hyperlink{class_q_xml_default_handler_ad7a1723ff154aeffcbaac42e4a591186}{Q\-Xml\-Default\-Handler}.
+
+\hypertarget{class_q_xml_lexical_handler_a418bba370ca7d74563c7e66c55c54631}{\index{Q\-Xml\-Lexical\-Handler@{Q\-Xml\-Lexical\-Handler}!end\-D\-T\-D@{end\-D\-T\-D}}
+\index{end\-D\-T\-D@{end\-D\-T\-D}!QXmlLexicalHandler@{Q\-Xml\-Lexical\-Handler}}
+\subsubsection[{end\-D\-T\-D}]{\setlength{\rightskip}{0pt plus 5cm}bool end\-D\-T\-D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_q_xml_lexical_handler_a418bba370ca7d74563c7e66c55c54631}
+The reader calls this function to report the end of a D\-T\-D declaration, if any.
+
+If this function returns F\-A\-L\-S\-E the reader will stop parsing and will report an error. The reader will use the function \hyperlink{class_q_xml_lexical_handler_ac86bbbabef3a52aec7615cbbc0adb3f4}{error\-String()} to get the error message that will be used for reporting the error.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_xml_lexical_handler_a2ea9d9ea737aebf275346d81eea3e2b7}{start\-D\-T\-D()} 
+\end{DoxySeeAlso}
+
+
+Implementado em \hyperlink{class_q_xml_default_handler_afdbb98bf201ef5e358e6b175958e3433}{Q\-Xml\-Default\-Handler}.
+
+\hypertarget{class_q_xml_lexical_handler_ac86bbbabef3a52aec7615cbbc0adb3f4}{\index{Q\-Xml\-Lexical\-Handler@{Q\-Xml\-Lexical\-Handler}!error\-String@{error\-String}}
+\index{error\-String@{error\-String}!QXmlLexicalHandler@{Q\-Xml\-Lexical\-Handler}}
+\subsubsection[{error\-String}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} error\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_q_xml_lexical_handler_ac86bbbabef3a52aec7615cbbc0adb3f4}
+The reader calls this function to get an error string if any of the handler functions returns F\-A\-L\-S\-E to him. 
+
+Implementado em \hyperlink{class_q_xml_default_handler_af799a7684337babb971e2e0d8cda7cf1}{Q\-Xml\-Default\-Handler} e \hyperlink{class_d_bus_x_m_l_handler_af799a7684337babb971e2e0d8cda7cf1}{D\-Bus\-X\-M\-L\-Handler}.
+
+\hypertarget{class_q_xml_lexical_handler_af94092d3d1e27e2616d4d8ec3ac94b40}{\index{Q\-Xml\-Lexical\-Handler@{Q\-Xml\-Lexical\-Handler}!start\-C\-D\-A\-T\-A@{start\-C\-D\-A\-T\-A}}
+\index{start\-C\-D\-A\-T\-A@{start\-C\-D\-A\-T\-A}!QXmlLexicalHandler@{Q\-Xml\-Lexical\-Handler}}
+\subsubsection[{start\-C\-D\-A\-T\-A}]{\setlength{\rightskip}{0pt plus 5cm}bool start\-C\-D\-A\-T\-A (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_q_xml_lexical_handler_af94092d3d1e27e2616d4d8ec3ac94b40}
+The reader calls this function to report the start of a C\-D\-A\-T\-A section. The content of the C\-D\-A\-T\-A section will be reported through the regular \hyperlink{class_q_xml_content_handler_a63490f0ac6e8b7794a5ebb331c3a4143}{Q\-Xml\-Content\-Handler\-::characters()}. This function is intended only to report the boundary.
+
+If this function returns F\-A\-L\-S\-E the reader will stop parsing and will report an error. The reader will use the function \hyperlink{class_q_xml_lexical_handler_ac86bbbabef3a52aec7615cbbc0adb3f4}{error\-String()} to get the error message that will be used for reporting the error.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_xml_lexical_handler_af4e24c106522bb67c6fac75aed4924e3}{end\-C\-D\-A\-T\-A()} 
+\end{DoxySeeAlso}
+
+
+Implementado em \hyperlink{class_q_xml_default_handler_a492b3e39f8c41a9f98eb477a975cb383}{Q\-Xml\-Default\-Handler}.
+
+\hypertarget{class_q_xml_lexical_handler_a2ea9d9ea737aebf275346d81eea3e2b7}{\index{Q\-Xml\-Lexical\-Handler@{Q\-Xml\-Lexical\-Handler}!start\-D\-T\-D@{start\-D\-T\-D}}
+\index{start\-D\-T\-D@{start\-D\-T\-D}!QXmlLexicalHandler@{Q\-Xml\-Lexical\-Handler}}
+\subsubsection[{start\-D\-T\-D}]{\setlength{\rightskip}{0pt plus 5cm}bool start\-D\-T\-D (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{name, }
+\item[{const {\bf Q\-String} \&}]{public\-Id, }
+\item[{const {\bf Q\-String} \&}]{system\-Id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_q_xml_lexical_handler_a2ea9d9ea737aebf275346d81eea3e2b7}
+The reader calls this function to report the start of a D\-T\-D declaration, if any.
+
+All declarations reported through \hyperlink{class_q_xml_d_t_d_handler}{Q\-Xml\-D\-T\-D\-Handler} or \hyperlink{class_q_xml_decl_handler}{Q\-Xml\-Decl\-Handler} appear between the \hyperlink{class_q_xml_lexical_handler_a2ea9d9ea737aebf275346d81eea3e2b7}{start\-D\-T\-D()} and \hyperlink{class_q_xml_lexical_handler_a418bba370ca7d74563c7e66c55c54631}{end\-D\-T\-D()} calls.
+
+If this function returns F\-A\-L\-S\-E the reader will stop parsing and will report an error. The reader will use the function \hyperlink{class_q_xml_lexical_handler_ac86bbbabef3a52aec7615cbbc0adb3f4}{error\-String()} to get the error message that will be used for reporting the error.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_xml_lexical_handler_a418bba370ca7d74563c7e66c55c54631}{end\-D\-T\-D()} 
+\end{DoxySeeAlso}
+
+
+Implementado em \hyperlink{class_q_xml_default_handler_a4e6d659ffbcf1382f9ac908f987512ae}{Q\-Xml\-Default\-Handler}.
+
+
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/qtools/qxml.\-h\item 
+C\-:/\-Users/teste/git/doxygen/qtools/qxml.\-cpp\end{DoxyCompactItemize}

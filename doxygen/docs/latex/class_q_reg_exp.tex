@@ -1,0 +1,320 @@
+\hypertarget{class_q_reg_exp}{\section{Referência à classe Q\-Reg\-Exp}
+\label{class_q_reg_exp}\index{Q\-Reg\-Exp@{Q\-Reg\-Exp}}
+}
+
+
+The \hyperlink{class_q_reg_exp}{Q\-Reg\-Exp} class provides pattern matching using regular expressions or wildcards.  
+
+
+
+
+{\ttfamily \#include $<$qregexp.\-h$>$}
+
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_q_reg_exp_accfc7c82e1b7db623714eac69afb4bfd}{Q\-Reg\-Exp} ()
+\item 
+\hyperlink{class_q_reg_exp_adfe2e32eb3908054243c8cdc17a874a2}{Q\-Reg\-Exp} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&, bool \hyperlink{class_q_reg_exp_a8ffc24a7e547c9f11973ad94ce366080}{case\-Sensitive}=T\-R\-U\-E, bool \hyperlink{class_q_reg_exp_ad838556c640e5d5c418e8d1fb9cbf5cb}{wildcard}=F\-A\-L\-S\-E)
+\item 
+\hyperlink{class_q_reg_exp_af9b9b013a5504bb99f17e2d271496dfb}{Q\-Reg\-Exp} (const \hyperlink{class_q_reg_exp}{Q\-Reg\-Exp} \&)
+\item 
+\hyperlink{class_q_reg_exp_aec7f8fdca4bbef3530d3d78fd044090c}{$\sim$\-Q\-Reg\-Exp} ()
+\item 
+\hyperlink{class_q_reg_exp}{Q\-Reg\-Exp} \& \hyperlink{class_q_reg_exp_af81cccecd2612b1ac95627572ab019ec}{operator=} (const \hyperlink{class_q_reg_exp}{Q\-Reg\-Exp} \&)
+\item 
+\hyperlink{class_q_reg_exp}{Q\-Reg\-Exp} \& \hyperlink{class_q_reg_exp_a534333e6c045b60718bc3100ad807c89}{operator=} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&\hyperlink{class_q_reg_exp_af38e77edbe06b9cb201001d58a50f49d}{pattern})
+\item 
+bool \hyperlink{class_q_reg_exp_a78a57f859f635432ed344c7c716a787f}{operator==} (const \hyperlink{class_q_reg_exp}{Q\-Reg\-Exp} \&) const 
+\item 
+bool \hyperlink{class_q_reg_exp_a8374ead8ac6a0ebdaf54e440e7d8d9ce}{operator!=} (const \hyperlink{class_q_reg_exp}{Q\-Reg\-Exp} \&r) const 
+\item 
+bool \hyperlink{class_q_reg_exp_a479432127ee77145cc19d6a2d1590821}{is\-Empty} () const 
+\item 
+bool \hyperlink{class_q_reg_exp_aac1b70a2ed67ead038c4d3f5ac4d8a81}{is\-Valid} () const 
+\item 
+bool \hyperlink{class_q_reg_exp_a8ffc24a7e547c9f11973ad94ce366080}{case\-Sensitive} () const 
+\item 
+void \hyperlink{class_q_reg_exp_a032175887f1e496e4099313b7ec1063f}{set\-Case\-Sensitive} (bool)
+\item 
+bool \hyperlink{class_q_reg_exp_ad838556c640e5d5c418e8d1fb9cbf5cb}{wildcard} () const 
+\item 
+void \hyperlink{class_q_reg_exp_a6ac74ec243f51186b8c2e06e00ea0749}{set\-Wildcard} (bool)
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_q_reg_exp_af38e77edbe06b9cb201001d58a50f49d}{pattern} () const 
+\item 
+void \hyperlink{class_q_reg_exp_ae13f3d949a61ba869d63789763374577}{set\-Pattern} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&\hyperlink{class_q_reg_exp_af38e77edbe06b9cb201001d58a50f49d}{pattern})
+\item 
+int \hyperlink{class_q_reg_exp_a8c7e384c5df80bfe711ab7890f6a07db}{match} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&str, int index=0, int $\ast$len=0, bool index\-Is\-Start=T\-R\-U\-E) const 
+\item 
+int \hyperlink{class_q_reg_exp_a464c432b16caef875a4aa96af48a54e3}{find} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&str, int index)
+\end{DoxyCompactItemize}
+\subsection*{Membros protegidos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_q_reg_exp_acafe5ede9412674127cd08795647f26a}{void {\bfseries compile} ()}\label{class_q_reg_exp_acafe5ede9412674127cd08795647f26a}
+
+\item 
+\hypertarget{class_q_reg_exp_a4ddf296f5e56c7c565e1049175fd8c9f}{const char $\ast$ {\bfseries matchstr} (uint $\ast$, const char $\ast$, uint, const char $\ast$) const }\label{class_q_reg_exp_a4ddf296f5e56c7c565e1049175fd8c9f}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+The \hyperlink{class_q_reg_exp}{Q\-Reg\-Exp} class provides pattern matching using regular expressions or wildcards. 
+
+\hyperlink{class_q_reg_exp}{Q\-Reg\-Exp} knows these regexp primitives\-: 
+\begin{DoxyItemize}
+\item {\ttfamily c} matches the character 'c' 
+\item {\ttfamily .} matches any character 
+\item {\ttfamily $^\wedge$} matches start of input 
+\item {\ttfamily \$} matches end of input 
+\item {\ttfamily \mbox{[}\mbox{]}} matches a defined set of characters -\/ see below. 
+\item {\ttfamily a$\ast$} matches a sequence of zero or more a's 
+\item {\ttfamily a+} matches a sequence of one or more a's 
+\item {\ttfamily a?} matches an optional a 
+\item {\ttfamily {\ttfamily } } escape code for matching special characters such as \textbackslash{}, \mbox{[}, $\ast$, +, . etc. 
+\item {\ttfamily } matches the T\-A\-B character (9) 
+\item {\ttfamily \par
+} matches newline (10) 
+\item {\ttfamily } matches return (13) 
+\item {\ttfamily } matches a white space (defined as any character for which \hyperlink{class_q_char_a9aedb2cee15aa1efb95a4b548a22d1f5}{Q\-Char\-::is\-Space()} returns T\-R\-U\-E. This includes at least A\-S\-C\-I\-I characters 9 (T\-A\-B), 10 (L\-F), 11 (V\-T), 12(F\-F), 13 (C\-R) and 32 (Space)). 
+\item {\ttfamily } matches a digit (defined as any character for which \hyperlink{class_q_char_a610bceef174c008df7c7acbbdb76cdf3}{Q\-Char\-::is\-Digit()} returns T\-R\-U\-E. This includes at least A\-S\-C\-I\-I characters '0'-\/'9'). 
+\item {\ttfamily } matches the character with unicode point U1f6b (hexadecimal 1f6b).  will match the A\-S\-C\-I\-I/\-Latin1 character 0x12 (18 decimal, 12 hexadecimal). 
+\item {\ttfamily \textbackslash{}022} matches the A\-S\-C\-I\-I/\-Latin1 character 022 (18 decimal, 22 octal). 
+\end{DoxyItemize}
+
+In wildcard mode, it only knows four primitives\-: 
+\begin{DoxyItemize}
+\item {\ttfamily c} matches the character 'c' 
+\item {\ttfamily ?} matches any character 
+\item {\ttfamily $\ast$} matches any sequence of characters 
+\item {\ttfamily \mbox{[}\mbox{]}} matches a defined set of characters -\/ see below. 
+\end{DoxyItemize}
+
+\hyperlink{class_q_reg_exp}{Q\-Reg\-Exp} supports Unicode both in the pattern strings and in the strings to be matched.
+
+When writing regular expressions in C++ code, remember that C++ processes \textbackslash{} characters. So in order to match e.\-g. a \char`\"{}.\char`\"{} character, you must write \char`\"{}\textbackslash{}\textbackslash{}.\char`\"{} in C++ source, not \char`\"{}\textbackslash{}.\char`\"{}.
+
+\hyperlink{class_a}{A} character set matches a defined set of characters. For example, \mbox{[}B\-S\-D\mbox{]} matches any of '\hyperlink{class_b}{B}', '\hyperlink{class_d}{D}' and '\hyperlink{struct_s}{S}'. Within a character set, the special characters '.', '$\ast$', '?', '$^\wedge$', '\$', '+' and '\mbox{[}' lose their special meanings. The following special characters apply\-: 
+\begin{DoxyItemize}
+\item {\ttfamily $^\wedge$} When placed first in the list, changes the character set to match any character {\itshape not} in the list. To include the character '$^\wedge$' itself in the set, escape it or place it anywhere but first. 
+\item {\ttfamily -\/} Defines a range of characters. To include the character '-\/' itself in the set, escape it or place it last. 
+\item {\ttfamily \mbox{]}} Ends the character set definition. To include the character '\mbox{]}' itself in the set, escape it or place it first (but after the negation operator '$^\wedge$', if present) 
+\end{DoxyItemize}Thus, \mbox{[}a-\/z\-A-\/\-Z0-\/9.\mbox{]} matches upper and lower case A\-S\-C\-I\-I letters, digits and dot; and \mbox{[}$^\wedge$\mbox{]} matches everything except white space.
+
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000003}{Bug}]Case insensitive matching is not supported for non-\/\-A\-S\-C\-I\-I/\-Latin1 (non-\/8bit) characters. Any character with a non-\/zero \hyperlink{class_q_char_aa0362ae052f9a76a268e0d23859a62f5}{Q\-Char.\-row()} is matched case sensitively even if the \hyperlink{class_q_reg_exp}{Q\-Reg\-Exp} is in case insensitive mode.\end{DoxyRefDesc}
+
+
+\begin{DoxyNote}{Nota}
+In Qt 3.\-0, the language of regular expressions will contain five more special characters, namely '(', ')', '\{', '$|$' and '\}'. To ease porting, it's a good idea to escape these characters with a backslash in all the regular expressions you'll write from now on. 
+\end{DoxyNote}
+
+
+\subsection{Documentação dos Construtores \& Destrutor}
+\hypertarget{class_q_reg_exp_accfc7c82e1b7db623714eac69afb4bfd}{\index{Q\-Reg\-Exp@{Q\-Reg\-Exp}!Q\-Reg\-Exp@{Q\-Reg\-Exp}}
+\index{Q\-Reg\-Exp@{Q\-Reg\-Exp}!QRegExp@{Q\-Reg\-Exp}}
+\subsubsection[{Q\-Reg\-Exp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Reg\-Exp} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_q_reg_exp_accfc7c82e1b7db623714eac69afb4bfd}
+Constructs an empty regular expression. \hypertarget{class_q_reg_exp_adfe2e32eb3908054243c8cdc17a874a2}{\index{Q\-Reg\-Exp@{Q\-Reg\-Exp}!Q\-Reg\-Exp@{Q\-Reg\-Exp}}
+\index{Q\-Reg\-Exp@{Q\-Reg\-Exp}!QRegExp@{Q\-Reg\-Exp}}
+\subsubsection[{Q\-Reg\-Exp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Reg\-Exp} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-C\-String} \&}]{pattern, }
+\item[{bool}]{case\-Sensitive = {\ttfamily TRUE}, }
+\item[{bool}]{wildcard = {\ttfamily FALSE}}
+\end{DoxyParamCaption}
+)}}\label{class_q_reg_exp_adfe2e32eb3908054243c8cdc17a874a2}
+Constructs a regular expression.
+
+\begin{DoxyItemize}
+\item {\itshape pattern} is the regular expression pattern string. \item {\itshape case\-Sensitive} specifies whether or not to use case sensitive matching. \item {\itshape wildcard} specifies whether the pattern string should be used for wildcard matching (also called globbing expression), normally used for matching file names.\end{DoxyItemize}
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_reg_exp_a6ac74ec243f51186b8c2e06e00ea0749}{set\-Wildcard()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_reg_exp_af9b9b013a5504bb99f17e2d271496dfb}{\index{Q\-Reg\-Exp@{Q\-Reg\-Exp}!Q\-Reg\-Exp@{Q\-Reg\-Exp}}
+\index{Q\-Reg\-Exp@{Q\-Reg\-Exp}!QRegExp@{Q\-Reg\-Exp}}
+\subsubsection[{Q\-Reg\-Exp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Reg\-Exp} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-Reg\-Exp} \&}]{r}
+\end{DoxyParamCaption}
+)}}\label{class_q_reg_exp_af9b9b013a5504bb99f17e2d271496dfb}
+Constructs a regular expression which is a copy of {\itshape r}. \begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_reg_exp_af81cccecd2612b1ac95627572ab019ec}{operator=(const Q\-Reg\-Exp\&)} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_reg_exp_aec7f8fdca4bbef3530d3d78fd044090c}{\index{Q\-Reg\-Exp@{Q\-Reg\-Exp}!$\sim$\-Q\-Reg\-Exp@{$\sim$\-Q\-Reg\-Exp}}
+\index{$\sim$\-Q\-Reg\-Exp@{$\sim$\-Q\-Reg\-Exp}!QRegExp@{Q\-Reg\-Exp}}
+\subsubsection[{$\sim$\-Q\-Reg\-Exp}]{\setlength{\rightskip}{0pt plus 5cm}$\sim${\bf Q\-Reg\-Exp} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_q_reg_exp_aec7f8fdca4bbef3530d3d78fd044090c}
+Destructs the regular expression and cleans up its internal data. 
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_q_reg_exp_a8ffc24a7e547c9f11973ad94ce366080}{\index{Q\-Reg\-Exp@{Q\-Reg\-Exp}!case\-Sensitive@{case\-Sensitive}}
+\index{case\-Sensitive@{case\-Sensitive}!QRegExp@{Q\-Reg\-Exp}}
+\subsubsection[{case\-Sensitive}]{\setlength{\rightskip}{0pt plus 5cm}bool case\-Sensitive (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_reg_exp_a8ffc24a7e547c9f11973ad94ce366080}
+Returns T\-R\-U\-E if case sensitivity is enabled, otherwise F\-A\-L\-S\-E. The default is T\-R\-U\-E.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_reg_exp_a032175887f1e496e4099313b7ec1063f}{set\-Case\-Sensitive()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_reg_exp_a464c432b16caef875a4aa96af48a54e3}{\index{Q\-Reg\-Exp@{Q\-Reg\-Exp}!find@{find}}
+\index{find@{find}!QRegExp@{Q\-Reg\-Exp}}
+\subsubsection[{find}]{\setlength{\rightskip}{0pt plus 5cm}int find (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-C\-String} \&}]{str, }
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_reg_exp_a464c432b16caef875a4aa96af48a54e3}
+Attempts to match in {\itshape str}, starting from position {\itshape index}. Returns the position of the match, or -\/1 if there was no match.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_reg_exp_a8c7e384c5df80bfe711ab7890f6a07db}{match()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_reg_exp_a479432127ee77145cc19d6a2d1590821}{\index{Q\-Reg\-Exp@{Q\-Reg\-Exp}!is\-Empty@{is\-Empty}}
+\index{is\-Empty@{is\-Empty}!QRegExp@{Q\-Reg\-Exp}}
+\subsubsection[{is\-Empty}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_reg_exp_a479432127ee77145cc19d6a2d1590821}
+Returns T\-R\-U\-E if the regexp is empty. \hypertarget{class_q_reg_exp_aac1b70a2ed67ead038c4d3f5ac4d8a81}{\index{Q\-Reg\-Exp@{Q\-Reg\-Exp}!is\-Valid@{is\-Valid}}
+\index{is\-Valid@{is\-Valid}!QRegExp@{Q\-Reg\-Exp}}
+\subsubsection[{is\-Valid}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-Valid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_reg_exp_aac1b70a2ed67ead038c4d3f5ac4d8a81}
+Returns T\-R\-U\-E if the regexp is valid, or F\-A\-L\-S\-E if it is invalid.
+
+The pattern \char`\"{}\mbox{[}a-\/z\char`\"{} is an example of an invalid pattern, since it lacks a closing bracket. \hypertarget{class_q_reg_exp_a8c7e384c5df80bfe711ab7890f6a07db}{\index{Q\-Reg\-Exp@{Q\-Reg\-Exp}!match@{match}}
+\index{match@{match}!QRegExp@{Q\-Reg\-Exp}}
+\subsubsection[{match}]{\setlength{\rightskip}{0pt plus 5cm}int match (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-C\-String} \&}]{str, }
+\item[{int}]{index = {\ttfamily 0}, }
+\item[{int $\ast$}]{len = {\ttfamily 0}, }
+\item[{bool}]{index\-Is\-Start = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+) const}}\label{class_q_reg_exp_a8c7e384c5df80bfe711ab7890f6a07db}
+Attempts to match in {\itshape str}, starting from position {\itshape index}. Returns the position of the match, or -\/1 if there was no match.
+
+If {\itshape len} is not a null pointer, the length of the match is stored in {\itshape $\ast$len}.
+
+If {\itshape index\-Is\-Start} is T\-R\-U\-E (the default), the position {\itshape index} in the string will match the start-\/of-\/input primitive ($^\wedge$) in the regexp, if present. Otherwise, position 0 in {\itshape str} will match.
+
+\hyperlink{struct_example}{Example}\-: 
+\begin{DoxyCode}
+\hyperlink{class_q_reg_exp}{QRegExp} r(\textcolor{stringliteral}{"[0-9]*\(\backslash\)\(\backslash\).[0-9]+"});     \textcolor{comment}{// matches floating point}
+\textcolor{keywordtype}{int} len;
+r.match(\textcolor{stringliteral}{"pi = 3.1416"}, 0, &len);      \textcolor{comment}{// returns 5, len == 6}
+\end{DoxyCode}
+
+
+\begin{DoxyNote}{Nota}
+In Qt 3.\-0, this function will be replaced by \hyperlink{class_q_reg_exp_a464c432b16caef875a4aa96af48a54e3}{find()}. 
+\end{DoxyNote}
+\hypertarget{class_q_reg_exp_a8374ead8ac6a0ebdaf54e440e7d8d9ce}{\index{Q\-Reg\-Exp@{Q\-Reg\-Exp}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!QRegExp@{Q\-Reg\-Exp}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}bool operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-Reg\-Exp} \&}]{r}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_reg_exp_a8374ead8ac6a0ebdaf54e440e7d8d9ce}
+Returns T\-R\-U\-E if this regexp is {\itshape not} equal to {\itshape r}.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_reg_exp_a78a57f859f635432ed344c7c716a787f}{operator==()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_reg_exp_af81cccecd2612b1ac95627572ab019ec}{\index{Q\-Reg\-Exp@{Q\-Reg\-Exp}!operator=@{operator=}}
+\index{operator=@{operator=}!QRegExp@{Q\-Reg\-Exp}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Reg\-Exp} \& operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-Reg\-Exp} \&}]{r}
+\end{DoxyParamCaption}
+)}}\label{class_q_reg_exp_af81cccecd2612b1ac95627572ab019ec}
+Copies the regexp {\itshape r} and returns a reference to this regexp. The case sensitivity and wildcard options are copied, as well. \hypertarget{class_q_reg_exp_a534333e6c045b60718bc3100ad807c89}{\index{Q\-Reg\-Exp@{Q\-Reg\-Exp}!operator=@{operator=}}
+\index{operator=@{operator=}!QRegExp@{Q\-Reg\-Exp}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Reg\-Exp} \& operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-C\-String} \&}]{pattern}
+\end{DoxyParamCaption}
+)}}\label{class_q_reg_exp_a534333e6c045b60718bc3100ad807c89}
+Consider using \hyperlink{class_q_reg_exp_ae13f3d949a61ba869d63789763374577}{set\-Pattern()} instead of this method.
+
+Sets the pattern string to {\itshape pattern} and returns a reference to this regexp. The case sensitivity or wildcard options do not change. \hypertarget{class_q_reg_exp_a78a57f859f635432ed344c7c716a787f}{\index{Q\-Reg\-Exp@{Q\-Reg\-Exp}!operator==@{operator==}}
+\index{operator==@{operator==}!QRegExp@{Q\-Reg\-Exp}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-Reg\-Exp} \&}]{r}
+\end{DoxyParamCaption}
+) const}}\label{class_q_reg_exp_a78a57f859f635432ed344c7c716a787f}
+Returns T\-R\-U\-E if this regexp is equal to {\itshape r}.
+
+Two regexp objects are equal if they have equal pattern strings, case sensitivity options and wildcard options. \hypertarget{class_q_reg_exp_af38e77edbe06b9cb201001d58a50f49d}{\index{Q\-Reg\-Exp@{Q\-Reg\-Exp}!pattern@{pattern}}
+\index{pattern@{pattern}!QRegExp@{Q\-Reg\-Exp}}
+\subsubsection[{pattern}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} pattern (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_reg_exp_af38e77edbe06b9cb201001d58a50f49d}
+Returns the pattern string of the regexp. \hypertarget{class_q_reg_exp_a032175887f1e496e4099313b7ec1063f}{\index{Q\-Reg\-Exp@{Q\-Reg\-Exp}!set\-Case\-Sensitive@{set\-Case\-Sensitive}}
+\index{set\-Case\-Sensitive@{set\-Case\-Sensitive}!QRegExp@{Q\-Reg\-Exp}}
+\subsubsection[{set\-Case\-Sensitive}]{\setlength{\rightskip}{0pt plus 5cm}void set\-Case\-Sensitive (
+\begin{DoxyParamCaption}
+\item[{bool}]{enable}
+\end{DoxyParamCaption}
+)}}\label{class_q_reg_exp_a032175887f1e496e4099313b7ec1063f}
+Enables or disables case sensitive matching.
+
+In case sensitive mode, \char`\"{}a.\-e\char`\"{} matches \char`\"{}axe\char`\"{} but not \char`\"{}\-Axe\char`\"{}.
+
+See also\-: \hyperlink{class_q_reg_exp_a8ffc24a7e547c9f11973ad94ce366080}{case\-Sensitive()} \hypertarget{class_q_reg_exp_ae13f3d949a61ba869d63789763374577}{\index{Q\-Reg\-Exp@{Q\-Reg\-Exp}!set\-Pattern@{set\-Pattern}}
+\index{set\-Pattern@{set\-Pattern}!QRegExp@{Q\-Reg\-Exp}}
+\subsubsection[{set\-Pattern}]{\setlength{\rightskip}{0pt plus 5cm}void set\-Pattern (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-C\-String} \&}]{pattern}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_reg_exp_ae13f3d949a61ba869d63789763374577}
+Sets the pattern string to {\itshape pattern} and returns a reference to this regexp. The case sensitivity or wildcard options do not change. \hypertarget{class_q_reg_exp_a6ac74ec243f51186b8c2e06e00ea0749}{\index{Q\-Reg\-Exp@{Q\-Reg\-Exp}!set\-Wildcard@{set\-Wildcard}}
+\index{set\-Wildcard@{set\-Wildcard}!QRegExp@{Q\-Reg\-Exp}}
+\subsubsection[{set\-Wildcard}]{\setlength{\rightskip}{0pt plus 5cm}void set\-Wildcard (
+\begin{DoxyParamCaption}
+\item[{bool}]{wildcard}
+\end{DoxyParamCaption}
+)}}\label{class_q_reg_exp_a6ac74ec243f51186b8c2e06e00ea0749}
+Sets the wildcard option for the regular expression. The default is F\-A\-L\-S\-E.
+
+Setting {\itshape wildcard} to T\-R\-U\-E makes it convenient to match filenames instead of plain text.
+
+For example, \char`\"{}qr$\ast$.\-cpp\char`\"{} matches the string \char`\"{}qregexp.\-cpp\char`\"{} in wildcard mode, but not \char`\"{}qicpp\char`\"{} (which would be matched in normal mode).
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_reg_exp_ad838556c640e5d5c418e8d1fb9cbf5cb}{wildcard()} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_reg_exp_ad838556c640e5d5c418e8d1fb9cbf5cb}{\index{Q\-Reg\-Exp@{Q\-Reg\-Exp}!wildcard@{wildcard}}
+\index{wildcard@{wildcard}!QRegExp@{Q\-Reg\-Exp}}
+\subsubsection[{wildcard}]{\setlength{\rightskip}{0pt plus 5cm}bool wildcard (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_reg_exp_ad838556c640e5d5c418e8d1fb9cbf5cb}
+Returns T\-R\-U\-E if wildcard mode is on, otherwise F\-A\-L\-S\-E. \begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_reg_exp_a6ac74ec243f51186b8c2e06e00ea0749}{set\-Wildcard()}. 
+\end{DoxySeeAlso}
+
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/qtools/qregexp.\-h\item 
+C\-:/\-Users/teste/git/doxygen/qtools/qregexp.\-cpp\end{DoxyCompactItemize}

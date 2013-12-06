@@ -1,0 +1,62 @@
+\hypertarget{class_q_l_node}{\section{Referência à classe Q\-L\-Node}
+\label{class_q_l_node}\index{Q\-L\-Node@{Q\-L\-Node}}
+}
+
+
+The \hyperlink{class_q_l_node}{Q\-L\-Node} class is an internal class for the \hyperlink{class_q_list}{Q\-List} template collection.  
+
+
+
+
+{\ttfamily \#include $<$qglist.\-h$>$}
+
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+Q\-Collection\-::\-Item \hyperlink{class_q_l_node_ad19a53b08099dc8fae156c9d91586f34}{get\-Data} ()
+\end{DoxyCompactItemize}
+\subsection*{Amigos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_q_l_node_a9bfde3c3259271cb86b87bd78b399dd5}{class {\bfseries Q\-G\-List}}\label{class_q_l_node_a9bfde3c3259271cb86b87bd78b399dd5}
+
+\item 
+\hypertarget{class_q_l_node_a13dc100371e8931a394e57af8df9fbb3}{class {\bfseries Q\-G\-List\-Iterator}}\label{class_q_l_node_a13dc100371e8931a394e57af8df9fbb3}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+The \hyperlink{class_q_l_node}{Q\-L\-Node} class is an internal class for the \hyperlink{class_q_list}{Q\-List} template collection. 
+
+\hyperlink{class_q_l_node}{Q\-L\-Node} is a doubly linked list node; it has three pointers\-: 
+\begin{DoxyEnumerate}
+\item Pointer to the previous node. 
+\item Pointer to the next node. 
+\item Pointer to the actual data. 
+\end{DoxyEnumerate}
+
+Sometimes it might be practical to have direct access to the list nodes in a \hyperlink{class_q_list}{Q\-List}, but it is seldom required.
+
+\begin{DoxyWarning}{Aviso}
+Be very careful if you want to access the list nodes. The heap can easily get corrupted if you make a mistake.
+\end{DoxyWarning}
+\begin{DoxySeeAlso}{Veja também}
+Q\-List\-::current\-Node(), Q\-List\-::remove\-Node(), Q\-List\-::take\-Node() 
+\end{DoxySeeAlso}
+
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_q_l_node_ad19a53b08099dc8fae156c9d91586f34}{\index{Q\-L\-Node@{Q\-L\-Node}!get\-Data@{get\-Data}}
+\index{get\-Data@{get\-Data}!QLNode@{Q\-L\-Node}}
+\subsubsection[{get\-Data}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Collection\-::\-Item get\-Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_l_node_ad19a53b08099dc8fae156c9d91586f34}
+Returns a pointer ({\ttfamily void$\ast$}) to the actual data in the list node. 
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/qtools/qglist.\-h\item 
+C\-:/\-Users/teste/git/doxygen/qtools/qglist.\-cpp\end{DoxyCompactItemize}

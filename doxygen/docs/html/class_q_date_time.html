@@ -1,0 +1,719 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>CEM RODAS: Referência à classe QDateTime</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">CEM RODAS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Localizar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="modules.html"><span>Módulos</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Estruturas&#160;de&#160;dados</span></a></li>
+      <li><a href="files.html"><span>Ficheiros</span></a></li>
+      <li><a href="examples.html"><span>Exemplos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Localizar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Estruturas&#160;de&#160;dados</span></a></li>
+      <li><a href="classes.html"><span>Índice&#160;das&#160;estruturas&#160;de&#160;dados</span></a></li>
+      <li><a href="hierarchy.html"><span>Hierarquia&#160;de&#160;classes</span></a></li>
+      <li><a href="functions.html"><span>Campos&#160;de&#160;dados</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tudo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Estruturas de dados</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Ficheiros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variáveis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Definições de tipos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerações</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Valores da enumeração</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Amigos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Grupos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Membros públicos</a> &#124;
+<a href="#pub-static-methods">Membros públicos estáticos</a> &#124;
+<a href="#friends">Amigos</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência à classe QDateTime</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>The <a class="el" href="class_q_date_time.html" title="The QDateTime class provides date and time functions. ">QDateTime</a> class provides date and time functions.  
+ <a href="class_q_date_time.html#details">Mais...</a></p>
+
+<p><code>#include &lt;<a class="el" href="qdatetime_8h_source.html">qdatetime.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Membros públicos</h2></td></tr>
+<tr class="memitem:a501ac29e4041e135e8abd360ffd34495"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_date_time.html#a501ac29e4041e135e8abd360ffd34495">QDateTime</a> ()</td></tr>
+<tr class="separator:a501ac29e4041e135e8abd360ffd34495"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc69d7d2a7fab69c78161f00efc939d2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_date_time.html#adc69d7d2a7fab69c78161f00efc939d2">QDateTime</a> (const <a class="el" href="class_q_date.html">QDate</a> &amp;)</td></tr>
+<tr class="separator:adc69d7d2a7fab69c78161f00efc939d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47c01471bb64d4242f1f8dcb05603e67"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_date_time.html#a47c01471bb64d4242f1f8dcb05603e67">QDateTime</a> (const <a class="el" href="class_q_date.html">QDate</a> &amp;, const <a class="el" href="class_q_time.html">QTime</a> &amp;)</td></tr>
+<tr class="separator:a47c01471bb64d4242f1f8dcb05603e67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac02f2a4d7312eb91f40980adfd4e31b2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_date_time.html#ac02f2a4d7312eb91f40980adfd4e31b2">isNull</a> () const </td></tr>
+<tr class="separator:ac02f2a4d7312eb91f40980adfd4e31b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac1b70a2ed67ead038c4d3f5ac4d8a81"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_date_time.html#aac1b70a2ed67ead038c4d3f5ac4d8a81">isValid</a> () const </td></tr>
+<tr class="separator:aac1b70a2ed67ead038c4d3f5ac4d8a81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4528e95d53cf1e50ab2b5b3ef717fad5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_date.html">QDate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_date_time.html#a4528e95d53cf1e50ab2b5b3ef717fad5">date</a> () const </td></tr>
+<tr class="separator:a4528e95d53cf1e50ab2b5b3ef717fad5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a825af88d1599b9f40f7619b5c3f3b702"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_time.html">QTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_date_time.html#a825af88d1599b9f40f7619b5c3f3b702">time</a> () const </td></tr>
+<tr class="separator:a825af88d1599b9f40f7619b5c3f3b702"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb29ae3c034065e637729f3048cf7222"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_date_time.html#adb29ae3c034065e637729f3048cf7222">setDate</a> (const <a class="el" href="class_q_date.html">QDate</a> &amp;<a class="el" href="class_q_date_time.html#a4528e95d53cf1e50ab2b5b3ef717fad5">date</a>)</td></tr>
+<tr class="separator:adb29ae3c034065e637729f3048cf7222"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe14709c137acb27306b8816ea3560f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_date_time.html#afe14709c137acb27306b8816ea3560f3">setTime</a> (const <a class="el" href="class_q_time.html">QTime</a> &amp;<a class="el" href="class_q_date_time.html#a825af88d1599b9f40f7619b5c3f3b702">time</a>)</td></tr>
+<tr class="separator:afe14709c137acb27306b8816ea3560f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b44ee35b1ceffe28b677504f516101f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_date_time.html#a8b44ee35b1ceffe28b677504f516101f">setTime_t</a> (uint secsSince1Jan1970UTC)</td></tr>
+<tr class="separator:a8b44ee35b1ceffe28b677504f516101f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8aabbf2e3c7be33fa5769a5eab3eef6f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_string.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_date_time.html#a8aabbf2e3c7be33fa5769a5eab3eef6f">toString</a> () const </td></tr>
+<tr class="separator:a8aabbf2e3c7be33fa5769a5eab3eef6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d8c67d4432acad9f0a92a599f809e37"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_date_time.html">QDateTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_date_time.html#a6d8c67d4432acad9f0a92a599f809e37">addDays</a> (int days) const </td></tr>
+<tr class="separator:a6d8c67d4432acad9f0a92a599f809e37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36f825b6e25fbf7595f93e8020d97c9f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_date_time.html">QDateTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_date_time.html#a36f825b6e25fbf7595f93e8020d97c9f">addSecs</a> (int secs) const </td></tr>
+<tr class="separator:a36f825b6e25fbf7595f93e8020d97c9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15706508d381f2194b3c84d770d05cea"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_date_time.html#a15706508d381f2194b3c84d770d05cea">daysTo</a> (const <a class="el" href="class_q_date_time.html">QDateTime</a> &amp;) const </td></tr>
+<tr class="separator:a15706508d381f2194b3c84d770d05cea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06d2ad72d253989ee3307407f0170371"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_date_time.html#a06d2ad72d253989ee3307407f0170371">secsTo</a> (const <a class="el" href="class_q_date_time.html">QDateTime</a> &amp;) const </td></tr>
+<tr class="separator:a06d2ad72d253989ee3307407f0170371"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09b0c841ef89c24075646d37737c9f3e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_date_time.html#a09b0c841ef89c24075646d37737c9f3e">operator==</a> (const <a class="el" href="class_q_date_time.html">QDateTime</a> &amp;dt) const </td></tr>
+<tr class="separator:a09b0c841ef89c24075646d37737c9f3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9488a857f8a3dbd4f5895efec811ed65"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_date_time.html#a9488a857f8a3dbd4f5895efec811ed65">operator!=</a> (const <a class="el" href="class_q_date_time.html">QDateTime</a> &amp;dt) const </td></tr>
+<tr class="separator:a9488a857f8a3dbd4f5895efec811ed65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a944abc7ab3238992823f53ab70cbe1d5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_date_time.html#a944abc7ab3238992823f53ab70cbe1d5">operator&lt;</a> (const <a class="el" href="class_q_date_time.html">QDateTime</a> &amp;dt) const </td></tr>
+<tr class="separator:a944abc7ab3238992823f53ab70cbe1d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4db4f1f1a2ebb7e1b5fefa8197eb4369"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_date_time.html#a4db4f1f1a2ebb7e1b5fefa8197eb4369">operator&lt;=</a> (const <a class="el" href="class_q_date_time.html">QDateTime</a> &amp;dt) const </td></tr>
+<tr class="separator:a4db4f1f1a2ebb7e1b5fefa8197eb4369"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a935991a47a7029a279bd9f2652659969"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_date_time.html#a935991a47a7029a279bd9f2652659969">operator&gt;</a> (const <a class="el" href="class_q_date_time.html">QDateTime</a> &amp;dt) const </td></tr>
+<tr class="separator:a935991a47a7029a279bd9f2652659969"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae96cdd5d99cc73ecefa339e85ba6dbbe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_date_time.html#ae96cdd5d99cc73ecefa339e85ba6dbbe">operator&gt;=</a> (const <a class="el" href="class_q_date_time.html">QDateTime</a> &amp;dt) const </td></tr>
+<tr class="separator:ae96cdd5d99cc73ecefa339e85ba6dbbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Membros públicos estáticos</h2></td></tr>
+<tr class="memitem:a5ca9c2823edb0ed2e50376ae331705f5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_q_date_time.html">QDateTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_date_time.html#a5ca9c2823edb0ed2e50376ae331705f5">currentDateTime</a> ()</td></tr>
+<tr class="separator:a5ca9c2823edb0ed2e50376ae331705f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Amigos</h2></td></tr>
+<tr class="memitem:ac4f6ae497406f297a47183ecc265816a"><td class="memItemLeft" align="right" valign="top">Q_EXPORT <a class="el" href="class_q_data_stream.html">QDataStream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_date_time.html#ac4f6ae497406f297a47183ecc265816a">operator&lt;&lt;</a> (<a class="el" href="class_q_data_stream.html">QDataStream</a> &amp;, const <a class="el" href="class_q_date_time.html">QDateTime</a> &amp;)</td></tr>
+<tr class="separator:ac4f6ae497406f297a47183ecc265816a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb6acd9837e7b1d8fc54e6665a9adc29"><td class="memItemLeft" align="right" valign="top">Q_EXPORT <a class="el" href="class_q_data_stream.html">QDataStream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_date_time.html#afb6acd9837e7b1d8fc54e6665a9adc29">operator&gt;&gt;</a> (<a class="el" href="class_q_data_stream.html">QDataStream</a> &amp;, <a class="el" href="class_q_date_time.html">QDateTime</a> &amp;)</td></tr>
+<tr class="separator:afb6acd9837e7b1d8fc54e6665a9adc29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>The <a class="el" href="class_q_date_time.html" title="The QDateTime class provides date and time functions. ">QDateTime</a> class provides date and time functions. </p>
+<p><a class="el" href="class_a.html">A</a> <a class="el" href="class_q_date_time.html" title="The QDateTime class provides date and time functions. ">QDateTime</a> object contains a calendar date and a clock time (a "datetime"). It is a combination of the <a class="el" href="class_q_date.html" title="The QDate class provides date functions. ">QDate</a> and <a class="el" href="class_q_time.html" title="The QTime class provides clock time functions. ">QTime</a> classes. It can read the current datetime from the system clock. It provides functions for comparing datetimes and for manipulating a datetime by adding a number of seconds or days.</p>
+<p><a class="el" href="class_a.html">A</a> <a class="el" href="class_q_date_time.html" title="The QDateTime class provides date and time functions. ">QDateTime</a> object is typically created either by giving a date and time explicitly, or by using the static function currentTime(), which makes a <a class="el" href="class_q_date_time.html" title="The QDateTime class provides date and time functions. ">QDateTime</a> object which contains the system's clock time.</p>
+<p>The <a class="el" href="class_q_date_time.html#a4528e95d53cf1e50ab2b5b3ef717fad5">date()</a> and <a class="el" href="class_q_date_time.html#a825af88d1599b9f40f7619b5c3f3b702">time()</a> functions provide access to the date and time parts of the datetime. The same information is provided in textual format by the <a class="el" href="class_q_date_time.html#a8aabbf2e3c7be33fa5769a5eab3eef6f">toString()</a> function.</p>
+<p><a class="el" href="class_q_date_time.html" title="The QDateTime class provides date and time functions. ">QDateTime</a> provides a full set of operators to compare two <a class="el" href="class_q_date_time.html" title="The QDateTime class provides date and time functions. ">QDateTime</a> objects. <a class="el" href="class_a.html">A</a> datetime is considered smaller than another if it is earlier than the other.</p>
+<p>The datetime a given number of days or seconds later than a given datetime can be found using the <a class="el" href="class_q_date_time.html#a6d8c67d4432acad9f0a92a599f809e37">addDays()</a> and <a class="el" href="class_q_date_time.html#a36f825b6e25fbf7595f93e8020d97c9f">addSecs()</a> functions. Correspondingly, the number of days or seconds between two times can be found using the <a class="el" href="class_q_date_time.html#a15706508d381f2194b3c84d770d05cea">daysTo()</a> or <a class="el" href="class_q_date_time.html#a06d2ad72d253989ee3307407f0170371">secsTo()</a> functions.</p>
+<p><a class="el" href="class_a.html">A</a> datetime can also be set using the <a class="el" href="class_q_date_time.html#a8b44ee35b1ceffe28b677504f516101f">setTime_t()</a> function, which takes a POSIX-standard "number of seconds since 00:00:00 on January
+1, 1970" value.</p>
+<p>The limitations regarding range and resolution mentioned in the <a class="el" href="class_q_date.html" title="The QDate class provides date functions. ">QDate</a> and <a class="el" href="class_q_time.html" title="The QTime class provides clock time functions. ">QTime</a> documentation apply for <a class="el" href="class_q_date_time.html" title="The QDateTime class provides date and time functions. ">QDateTime</a> also.</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_date.html" title="The QDate class provides date functions. ">QDate</a>, <a class="el" href="class_q_time.html" title="The QTime class provides clock time functions. ">QTime</a> </dd></dl>
+</div><h2 class="groupheader">Documentação dos Construtores &amp; Destrutor</h2>
+<a class="anchor" id="a501ac29e4041e135e8abd360ffd34495"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_date_time.html">QDateTime</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Constructs a null datetime (i.e. null date and null time). <a class="el" href="class_a.html">A</a> null datetime is invalid, since the date is invalid.</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_date_time.html#aac1b70a2ed67ead038c4d3f5ac4d8a81">isValid()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="adc69d7d2a7fab69c78161f00efc939d2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_date_time.html">QDateTime</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_q_date.html">QDate</a> &amp;&#160;</td>
+          <td class="paramname"><em>date</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Constructs a datetime with date <em>date</em> and null time (00:00:00.000). </p>
+
+</div>
+</div>
+<a class="anchor" id="a47c01471bb64d4242f1f8dcb05603e67"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_date_time.html">QDateTime</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_q_date.html">QDate</a> &amp;&#160;</td>
+          <td class="paramname"><em>date</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_q_time.html">QTime</a> &amp;&#160;</td>
+          <td class="paramname"><em>time</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Constructs a datetime with date <em>date</em> and time <em>time</em>. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentação dos métodos</h2>
+<a class="anchor" id="a6d8c67d4432acad9f0a92a599f809e37"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_date_time.html">QDateTime</a> addDays </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ndays</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns a <a class="el" href="class_q_date_time.html" title="The QDateTime class provides date and time functions. ">QDateTime</a> object containing a datetime <em>ndays</em> days later than the datetime of this object (or earlier if <em>ndays</em> is negative).</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_date_time.html#a15706508d381f2194b3c84d770d05cea">daysTo()</a>, <a class="el" href="class_q_date_time.html#a36f825b6e25fbf7595f93e8020d97c9f">addSecs()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a36f825b6e25fbf7595f93e8020d97c9f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_date_time.html">QDateTime</a> addSecs </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nsecs</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns a <a class="el" href="class_q_date_time.html" title="The QDateTime class provides date and time functions. ">QDateTime</a> object containing a datetime <em>nsecs</em> seconds later than the datetime of this object (or earlier if <em>nsecs</em> is negative).</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_date_time.html#a06d2ad72d253989ee3307407f0170371">secsTo()</a>, <a class="el" href="class_q_date_time.html#a6d8c67d4432acad9f0a92a599f809e37">addDays()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5ca9c2823edb0ed2e50376ae331705f5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_date_time.html">QDateTime</a> currentDateTime </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the current datetime, as reported by the system clock.</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_date.html#a61ad3df11782433257f49a009a29ac71">QDate::currentDate()</a>, <a class="el" href="class_q_time.html#ab6a608d4dd52b3aa94cffe8548ff21d5">QTime::currentTime()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4528e95d53cf1e50ab2b5b3ef717fad5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_date.html">QDate</a> date </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the date part of this datetime.</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_date_time.html#adb29ae3c034065e637729f3048cf7222">setDate()</a>, <a class="el" href="class_q_date_time.html#a825af88d1599b9f40f7619b5c3f3b702">time()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a15706508d381f2194b3c84d770d05cea"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int daysTo </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_q_date_time.html">QDateTime</a> &amp;&#160;</td>
+          <td class="paramname"><em>dt</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the number of days from this datetime to <em>dt</em> (which is negative if <em>dt</em> is earlier than this datetime).</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_date_time.html#a6d8c67d4432acad9f0a92a599f809e37">addDays()</a>, <a class="el" href="class_q_date_time.html#a06d2ad72d253989ee3307407f0170371">secsTo()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac02f2a4d7312eb91f40980adfd4e31b2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isNull </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns TRUE if both the date and the time are null. <a class="el" href="class_a.html">A</a> null date is invalid.</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_date.html#ac02f2a4d7312eb91f40980adfd4e31b2">QDate::isNull()</a>, <a class="el" href="class_q_time.html#ac02f2a4d7312eb91f40980adfd4e31b2">QTime::isNull()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aac1b70a2ed67ead038c4d3f5ac4d8a81"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isValid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns TRUE if both the date and the time are valid.</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_date.html#aac1b70a2ed67ead038c4d3f5ac4d8a81">QDate::isValid()</a>, <a class="el" href="class_q_time.html#aac1b70a2ed67ead038c4d3f5ac4d8a81">QTime::isValid()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9488a857f8a3dbd4f5895efec811ed65"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_q_date_time.html">QDateTime</a> &amp;&#160;</td>
+          <td class="paramname"><em>dt</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns TRUE if this datetime is different from <em>dt</em>, or FALSE if they are equal. </p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_date_time.html#a09b0c841ef89c24075646d37737c9f3e">operator==()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a944abc7ab3238992823f53ab70cbe1d5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator&lt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_q_date_time.html">QDateTime</a> &amp;&#160;</td>
+          <td class="paramname"><em>dt</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns TRUE if this datetime is earlier than <em>dt</em>, otherwise FALSE. </p>
+
+</div>
+</div>
+<a class="anchor" id="a4db4f1f1a2ebb7e1b5fefa8197eb4369"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator&lt;= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_q_date_time.html">QDateTime</a> &amp;&#160;</td>
+          <td class="paramname"><em>dt</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns TRUE if this datetime is earlier than or equal to <em>dt</em>, otherwise FALSE. </p>
+
+</div>
+</div>
+<a class="anchor" id="a09b0c841ef89c24075646d37737c9f3e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_q_date_time.html">QDateTime</a> &amp;&#160;</td>
+          <td class="paramname"><em>dt</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns TRUE if this datetime is equal to <em>dt</em>, or FALSE if they are different. </p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_date_time.html#a9488a857f8a3dbd4f5895efec811ed65">operator!=()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a935991a47a7029a279bd9f2652659969"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator&gt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_q_date_time.html">QDateTime</a> &amp;&#160;</td>
+          <td class="paramname"><em>dt</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns TRUE if this datetime is later than <em>dt</em>, otherwise FALSE. </p>
+
+</div>
+</div>
+<a class="anchor" id="ae96cdd5d99cc73ecefa339e85ba6dbbe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator&gt;= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_q_date_time.html">QDateTime</a> &amp;&#160;</td>
+          <td class="paramname"><em>dt</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns TRUE if this datetime is later than or equal to <em>dt</em>, otherwise FALSE. </p>
+
+</div>
+</div>
+<a class="anchor" id="a06d2ad72d253989ee3307407f0170371"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int secsTo </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_q_date_time.html">QDateTime</a> &amp;&#160;</td>
+          <td class="paramname"><em>dt</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the number of seconds from this datetime to <em>dt</em> (which is negative if <em>dt</em> is earlier than this datetime).</p>
+<p><a class="el" href="struct_example.html">Example</a>: </p>
+<div class="fragment"><div class="line"><a class="code" href="class_q_date_time.html">QDateTime</a> dt = <a class="code" href="class_q_date_time.html#a5ca9c2823edb0ed2e50376ae331705f5">QDateTime::currentDateTime</a>();</div>
+<div class="line"><a class="code" href="class_q_date_time.html">QDateTime</a> x( <a class="code" href="class_q_date.html">QDate</a>(dt.year(),12,24), <a class="code" href="class_q_time.html">QTime</a>(17,00) );</div>
+<div class="line">qDebug( <span class="stringliteral">&quot;There are %d seconds to Christmas&quot;</span>, dt.<a class="code" href="class_q_date_time.html#a06d2ad72d253989ee3307407f0170371">secsTo</a>(x) );</div>
+</div><!-- fragment --><dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_date_time.html#a36f825b6e25fbf7595f93e8020d97c9f">addSecs()</a>, <a class="el" href="class_q_date_time.html#a15706508d381f2194b3c84d770d05cea">daysTo()</a>, <a class="el" href="class_q_time.html#a5683a7426f32f13254570f80d39def70">QTime::secsTo()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="adb29ae3c034065e637729f3048cf7222"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setDate </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_q_date.html">QDate</a> &amp;&#160;</td>
+          <td class="paramname"><em>date</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the date part of this datetime.</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_date_time.html#a4528e95d53cf1e50ab2b5b3ef717fad5">date()</a>, <a class="el" href="class_q_date_time.html#afe14709c137acb27306b8816ea3560f3">setTime()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="afe14709c137acb27306b8816ea3560f3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setTime </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_q_time.html">QTime</a> &amp;&#160;</td>
+          <td class="paramname"><em>time</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the time part of this datetime.</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_date_time.html#a825af88d1599b9f40f7619b5c3f3b702">time()</a>, <a class="el" href="class_q_date_time.html#adb29ae3c034065e637729f3048cf7222">setDate()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8b44ee35b1ceffe28b677504f516101f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setTime_t </td>
+          <td>(</td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>secsSince1Jan1970UTC</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets the local date and time given the number of seconds that have passed since 00:00:00 on January 1, 1970, Coordinated Universal Time (UTC). On systems that do not support timezones this function will behave as if local time were UTC.</p>
+<p>Note that Microsoft Windows supports only a limited range of values for <em>secsSince1Jan1970UTC</em>. </p>
+
+</div>
+</div>
+<a class="anchor" id="a825af88d1599b9f40f7619b5c3f3b702"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_time.html">QTime</a> time </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the time part of this datetime.</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_q_date_time.html#afe14709c137acb27306b8816ea3560f3">setTime()</a>, <a class="el" href="class_q_date_time.html#a4528e95d53cf1e50ab2b5b3ef717fad5">date()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8aabbf2e3c7be33fa5769a5eab3eef6f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_string.html">QString</a> toString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the datetime as a string.</p>
+<p>The string format is "Sat May 20 03:40:13 1998".</p>
+<p>This function uses <a class="el" href="class_q_date.html#a573efd9ed94bc7a6f0a99dfa1f832ce1">QDate::dayName()</a>, <a class="el" href="class_q_date.html#a00c3489f166c84ce1961b77d8e8196a2">QDate::monthName()</a>, and <a class="el" href="class_q_time.html#a8aabbf2e3c7be33fa5769a5eab3eef6f">QTime::toString()</a> to generate the string. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentação das classes amigas e funções relacionadas</h2>
+<a class="anchor" id="ac4f6ae497406f297a47183ecc265816a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_data_stream.html">QDataStream</a> &amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_q_data_stream.html">QDataStream</a> &amp;&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_q_date_time.html">QDateTime</a> &amp;&#160;</td>
+          <td class="paramname"><em>dt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Writes a datetime to the stream.</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="">Format of the QDataStream operators </a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="afb6acd9837e7b1d8fc54e6665a9adc29"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_data_stream.html">QDataStream</a> &amp; operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_q_data_stream.html">QDataStream</a> &amp;&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_q_date_time.html">QDateTime</a> &amp;&#160;</td>
+          <td class="paramname"><em>dt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Reads a datetime from the stream.</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="">Format of the QDataStream operators </a> </dd></dl>
+
+</div>
+</div>
+<hr/>A documentação para esta classe foi gerada a partir dos seguintes ficheiros:<ul>
+<li>C:/Users/teste/git/doxygen/qtools/<a class="el" href="qdatetime_8h_source.html">qdatetime.h</a></li>
+<li>C:/Users/teste/git/doxygen/qtools/qdatetime.cpp</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado em Quinta, 28 de Novembro de 2013 22:44:27 para CEM RODAS por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

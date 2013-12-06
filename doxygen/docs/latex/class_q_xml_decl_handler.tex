@@ -1,0 +1,111 @@
+\hypertarget{class_q_xml_decl_handler}{\section{Referência à classe Q\-Xml\-Decl\-Handler}
+\label{class_q_xml_decl_handler}\index{Q\-Xml\-Decl\-Handler@{Q\-Xml\-Decl\-Handler}}
+}
+
+
+The \hyperlink{class_q_xml_decl_handler}{Q\-Xml\-Decl\-Handler} class provides an interface to report declaration content of X\-M\-L data.  
+
+
+
+
+{\ttfamily \#include $<$qxml.\-h$>$}
+
+Diagrama de heranças da classe Q\-Xml\-Decl\-Handler\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{class_q_xml_decl_handler}
+\end{center}
+\end{figure}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{class_q_xml_decl_handler_a59637787766b7b5629c20abd1b3bc7fb}{attribute\-Decl} (const \hyperlink{class_q_string}{Q\-String} \&e\-Name, const \hyperlink{class_q_string}{Q\-String} \&a\-Name, const \hyperlink{class_q_string}{Q\-String} \&type, const \hyperlink{class_q_string}{Q\-String} \&value\-Default, const \hyperlink{class_q_string}{Q\-String} \&value)=0
+\item 
+virtual bool \hyperlink{class_q_xml_decl_handler_a27b7fd1eeda25cdb63b720648bd87ee4}{internal\-Entity\-Decl} (const \hyperlink{class_q_string}{Q\-String} \&name, const \hyperlink{class_q_string}{Q\-String} \&value)=0
+\item 
+virtual bool \hyperlink{class_q_xml_decl_handler_acdd5b35534471dc8ad76f8f5e1041361}{external\-Entity\-Decl} (const \hyperlink{class_q_string}{Q\-String} \&name, const \hyperlink{class_q_string}{Q\-String} \&public\-Id, const \hyperlink{class_q_string}{Q\-String} \&system\-Id)=0
+\item 
+virtual \hyperlink{class_q_string}{Q\-String} \hyperlink{class_q_xml_decl_handler_ac86bbbabef3a52aec7615cbbc0adb3f4}{error\-String} ()=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+The \hyperlink{class_q_xml_decl_handler}{Q\-Xml\-Decl\-Handler} class provides an interface to report declaration content of X\-M\-L data. 
+
+X\-M\-L
+
+You can set the declaration handler with \hyperlink{class_q_xml_reader_a00252501a616d2e14f5d51acc2cb1165}{Q\-Xml\-Reader\-::set\-Decl\-Handler()}.
+
+This interface is designed after the S\-A\-X2 extension Decl\-Handler.
+
+See also the \href{xml.html#introSAX2}{\tt Introduction to S\-A\-X2}.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_xml_d_t_d_handler}{Q\-Xml\-D\-T\-D\-Handler} \hyperlink{class_q_xml_content_handler}{Q\-Xml\-Content\-Handler} \hyperlink{class_q_xml_entity_resolver}{Q\-Xml\-Entity\-Resolver} \hyperlink{class_q_xml_error_handler}{Q\-Xml\-Error\-Handler} \hyperlink{class_q_xml_lexical_handler}{Q\-Xml\-Lexical\-Handler} 
+\end{DoxySeeAlso}
+
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_q_xml_decl_handler_a59637787766b7b5629c20abd1b3bc7fb}{\index{Q\-Xml\-Decl\-Handler@{Q\-Xml\-Decl\-Handler}!attribute\-Decl@{attribute\-Decl}}
+\index{attribute\-Decl@{attribute\-Decl}!QXmlDeclHandler@{Q\-Xml\-Decl\-Handler}}
+\subsubsection[{attribute\-Decl}]{\setlength{\rightskip}{0pt plus 5cm}bool attribute\-Decl (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{e\-Name, }
+\item[{const {\bf Q\-String} \&}]{a\-Name, }
+\item[{const {\bf Q\-String} \&}]{type, }
+\item[{const {\bf Q\-String} \&}]{value\-Default, }
+\item[{const {\bf Q\-String} \&}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_q_xml_decl_handler_a59637787766b7b5629c20abd1b3bc7fb}
+The reader calls this function to report an attribute type declaration. Only the effective (first) declaration for an attribute will be reported.
+
+If this function returns F\-A\-L\-S\-E the reader will stop parsing and will report an error. The reader will use the function \hyperlink{class_q_xml_decl_handler_ac86bbbabef3a52aec7615cbbc0adb3f4}{error\-String()} to get the error message that will be used for reporting the error. 
+
+Implementado em \hyperlink{class_q_xml_default_handler_a512b30d75f1836bfe11dfd87cb25a092}{Q\-Xml\-Default\-Handler}.
+
+\hypertarget{class_q_xml_decl_handler_ac86bbbabef3a52aec7615cbbc0adb3f4}{\index{Q\-Xml\-Decl\-Handler@{Q\-Xml\-Decl\-Handler}!error\-String@{error\-String}}
+\index{error\-String@{error\-String}!QXmlDeclHandler@{Q\-Xml\-Decl\-Handler}}
+\subsubsection[{error\-String}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} error\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_q_xml_decl_handler_ac86bbbabef3a52aec7615cbbc0adb3f4}
+The reader calls this function to get an error string if any of the handler functions returns F\-A\-L\-S\-E to him. 
+
+Implementado em \hyperlink{class_q_xml_default_handler_af799a7684337babb971e2e0d8cda7cf1}{Q\-Xml\-Default\-Handler} e \hyperlink{class_d_bus_x_m_l_handler_af799a7684337babb971e2e0d8cda7cf1}{D\-Bus\-X\-M\-L\-Handler}.
+
+\hypertarget{class_q_xml_decl_handler_acdd5b35534471dc8ad76f8f5e1041361}{\index{Q\-Xml\-Decl\-Handler@{Q\-Xml\-Decl\-Handler}!external\-Entity\-Decl@{external\-Entity\-Decl}}
+\index{external\-Entity\-Decl@{external\-Entity\-Decl}!QXmlDeclHandler@{Q\-Xml\-Decl\-Handler}}
+\subsubsection[{external\-Entity\-Decl}]{\setlength{\rightskip}{0pt plus 5cm}bool external\-Entity\-Decl (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{name, }
+\item[{const {\bf Q\-String} \&}]{public\-Id, }
+\item[{const {\bf Q\-String} \&}]{system\-Id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_q_xml_decl_handler_acdd5b35534471dc8ad76f8f5e1041361}
+The reader calls this function to report a parsed external entity declaration. Only the effective (first) declaration for each entity will be reported.
+
+If this function returns F\-A\-L\-S\-E the reader will stop parsing and will report an error. The reader will use the function \hyperlink{class_q_xml_decl_handler_ac86bbbabef3a52aec7615cbbc0adb3f4}{error\-String()} to get the error message that will be used for reporting the error. 
+
+Implementado em \hyperlink{class_q_xml_default_handler_ae811ac152a3a244b2f5dd12401fa055c}{Q\-Xml\-Default\-Handler}.
+
+\hypertarget{class_q_xml_decl_handler_a27b7fd1eeda25cdb63b720648bd87ee4}{\index{Q\-Xml\-Decl\-Handler@{Q\-Xml\-Decl\-Handler}!internal\-Entity\-Decl@{internal\-Entity\-Decl}}
+\index{internal\-Entity\-Decl@{internal\-Entity\-Decl}!QXmlDeclHandler@{Q\-Xml\-Decl\-Handler}}
+\subsubsection[{internal\-Entity\-Decl}]{\setlength{\rightskip}{0pt plus 5cm}bool internal\-Entity\-Decl (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{name, }
+\item[{const {\bf Q\-String} \&}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_q_xml_decl_handler_a27b7fd1eeda25cdb63b720648bd87ee4}
+The reader calls this function to report an internal entity declaration. Only the effective (first) declaration will be reported.
+
+If this function returns F\-A\-L\-S\-E the reader will stop parsing and will report an error. The reader will use the function \hyperlink{class_q_xml_decl_handler_ac86bbbabef3a52aec7615cbbc0adb3f4}{error\-String()} to get the error message that will be used for reporting the error. 
+
+Implementado em \hyperlink{class_q_xml_default_handler_a89792dd1b272b7f45bebb8f1eda7ee99}{Q\-Xml\-Default\-Handler}.
+
+
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/qtools/qxml.\-h\item 
+C\-:/\-Users/teste/git/doxygen/qtools/qxml.\-cpp\end{DoxyCompactItemize}

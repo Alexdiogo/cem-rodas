@@ -1,0 +1,796 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>CEM RODAS: Referência à classe Entry</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">CEM RODAS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Localizar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="modules.html"><span>Módulos</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Estruturas&#160;de&#160;dados</span></a></li>
+      <li><a href="files.html"><span>Ficheiros</span></a></li>
+      <li><a href="examples.html"><span>Exemplos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Localizar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Estruturas&#160;de&#160;dados</span></a></li>
+      <li><a href="classes.html"><span>Índice&#160;das&#160;estruturas&#160;de&#160;dados</span></a></li>
+      <li><a href="hierarchy.html"><span>Hierarquia&#160;de&#160;classes</span></a></li>
+      <li><a href="functions.html"><span>Campos&#160;de&#160;dados</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tudo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Estruturas de dados</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Ficheiros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variáveis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Definições de tipos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerações</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Valores da enumeração</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Amigos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Grupos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Tipos Públicos</a> &#124;
+<a href="#pub-methods">Membros públicos</a> &#124;
+<a href="#pub-attribs">Campos de Dados</a> &#124;
+<a href="#pub-static-attribs">Atributos Públicos Estáticos</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência à classe Entry</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="entry_8h_source.html">entry.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Tipos Públicos</h2></td></tr>
+<tr class="memitem:a6ff2d3555e17f89856c76b840772d461"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#a6ff2d3555e17f89856c76b840772d461">Sections</a> { <br/>
+&#160;&#160;<b>CLASS_SEC</b> = 0x00000001, 
+<b>NAMESPACE_SEC</b> = 0x00000010, 
+<b>COMPOUND_MASK</b> = CLASS_SEC, 
+<b>SCOPE_MASK</b> = COMPOUND_MASK | NAMESPACE_SEC, 
+<br/>
+&#160;&#160;<b>CLASSDOC_SEC</b> = 0x00000800, 
+<b>STRUCTDOC_SEC</b> = 0x00001000, 
+<b>UNIONDOC_SEC</b> = 0x00002000, 
+<b>EXCEPTIONDOC_SEC</b> = 0x00004000, 
+<br/>
+&#160;&#160;<b>NAMESPACEDOC_SEC</b> = 0x00008000, 
+<b>INTERFACEDOC_SEC</b> = 0x00010000, 
+<b>PROTOCOLDOC_SEC</b> = 0x00020000, 
+<b>CATEGORYDOC_SEC</b> = 0x00040000, 
+<br/>
+&#160;&#160;<b>SERVICEDOC_SEC</b> = 0x00080000, 
+<b>SINGLETONDOC_SEC</b> = 0x00100000, 
+<b>COMPOUNDDOC_MASK</b>, 
+<b>SOURCE_SEC</b> = 0x00400000, 
+<br/>
+&#160;&#160;<b>HEADER_SEC</b> = 0x00800000, 
+<b>FILE_MASK</b> = SOURCE_SEC | HEADER_SEC, 
+<b>ENUMDOC_SEC</b> = 0x01000000, 
+<b>ENUM_SEC</b> = 0x02000000, 
+<br/>
+&#160;&#160;<b>EMPTY_SEC</b> = 0x03000000, 
+<b>PAGEDOC_SEC</b> = 0x04000000, 
+<b>VARIABLE_SEC</b> = 0x05000000, 
+<b>FUNCTION_SEC</b> = 0x06000000, 
+<br/>
+&#160;&#160;<b>TYPEDEF_SEC</b> = 0x07000000, 
+<b>MEMBERDOC_SEC</b> = 0x08000000, 
+<b>OVERLOADDOC_SEC</b> = 0x09000000, 
+<b>EXAMPLE_SEC</b> = 0x0a000000, 
+<br/>
+&#160;&#160;<b>VARIABLEDOC_SEC</b> = 0x0b000000, 
+<b>FILEDOC_SEC</b> = 0x0c000000, 
+<b>DEFINEDOC_SEC</b> = 0x0d000000, 
+<b>INCLUDE_SEC</b> = 0x0e000000, 
+<br/>
+&#160;&#160;<b>DEFINE_SEC</b> = 0x0f000000, 
+<b>GROUPDOC_SEC</b> = 0x10000000, 
+<b>USINGDIR_SEC</b> = 0x11000000, 
+<b>MAINPAGEDOC_SEC</b> = 0x12000000, 
+<br/>
+&#160;&#160;<b>MEMBERGRP_SEC</b> = 0x13000000, 
+<b>USINGDECL_SEC</b> = 0x14000000, 
+<b>PACKAGE_SEC</b> = 0x15000000, 
+<b>PACKAGEDOC_SEC</b> = 0x16000000, 
+<br/>
+&#160;&#160;<b>OBJCIMPL_SEC</b> = 0x17000000, 
+<b>DIRDOC_SEC</b> = 0x18000000, 
+<b>EXPORTED_INTERFACE_SEC</b> = 0x19000000, 
+<b>INCLUDED_SERVICE_SEC</b> = 0x1A000000
+<br/>
+ }</td></tr>
+<tr class="separator:a6ff2d3555e17f89856c76b840772d461"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac51ac416856cada4f7237ba7da7f3938"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#ac51ac416856cada4f7237ba7da7f3938">GroupDocType</a> { <a class="el" href="class_entry.html#ac51ac416856cada4f7237ba7da7f3938a0ff533df76bb839903674baa032f7954">GROUPDOC_NORMAL</a>, 
+<a class="el" href="class_entry.html#ac51ac416856cada4f7237ba7da7f3938a78841583472139a970c65120decf9ddf">GROUPDOC_ADD</a>, 
+<a class="el" href="class_entry.html#ac51ac416856cada4f7237ba7da7f3938ab4cca3a9646f958088c5ed9a5799cf4e">GROUPDOC_WEAK</a>
+ }</td></tr>
+<tr class="separator:ac51ac416856cada4f7237ba7da7f3938"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Membros públicos</h2></td></tr>
+<tr class="memitem:a81e72a4ed093c655d6c927ce5aad613a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a81e72a4ed093c655d6c927ce5aad613a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Entry</b> (const <a class="el" href="class_entry.html">Entry</a> &amp;)</td></tr>
+<tr class="separator:a81e72a4ed093c655d6c927ce5aad613a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c4029b904a61a9873e6d12785ce19a1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#a3c4029b904a61a9873e6d12785ce19a1">getSize</a> ()</td></tr>
+<tr class="separator:a3c4029b904a61a9873e6d12785ce19a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa7d682919e0bf1789926d35c2623275"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afa7d682919e0bf1789926d35c2623275"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>addSpecialListItem</b> (const char *listName, int index)</td></tr>
+<tr class="separator:afa7d682919e0bf1789926d35c2623275"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f8fb900ff4b8719653c068a5ee56435"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2f8fb900ff4b8719653c068a5ee56435"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>createNavigationIndex</b> (<a class="el" href="class_entry_nav.html">EntryNav</a> *rootNav, <a class="el" href="class_file_storage.html">FileStorage</a> *storage, <a class="el" href="class_file_def.html">FileDef</a> *fd)</td></tr>
+<tr class="separator:a2f8fb900ff4b8719653c068a5ee56435"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8755d91fef6458f89ad39aa0e1b8af0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad8755d91fef6458f89ad39aa0e1b8af0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setParent</b> (<a class="el" href="class_entry.html">Entry</a> *<a class="el" href="class_entry.html#a91b186338f7942fb250257a72cc4f24d">parent</a>)</td></tr>
+<tr class="separator:ad8755d91fef6458f89ad39aa0e1b8af0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91b186338f7942fb250257a72cc4f24d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_entry.html">Entry</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#a91b186338f7942fb250257a72cc4f24d">parent</a> () const </td></tr>
+<tr class="separator:a91b186338f7942fb250257a72cc4f24d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada9c959bb88621579f8b3efe4fd309b0"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_q_list.html">QList</a>&lt; <a class="el" href="class_entry.html">Entry</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#ada9c959bb88621579f8b3efe4fd309b0">children</a> () const </td></tr>
+<tr class="separator:ada9c959bb88621579f8b3efe4fd309b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa73476091529bb28701f01b8256281f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#aa73476091529bb28701f01b8256281f7">addSubEntry</a> (<a class="el" href="class_entry.html">Entry</a> *e)</td></tr>
+<tr class="separator:aa73476091529bb28701f01b8256281f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bb4eeecfb6d1f565b27d83099f0ea4e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_entry.html">Entry</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#a2bb4eeecfb6d1f565b27d83099f0ea4e">removeSubEntry</a> (<a class="el" href="class_entry.html">Entry</a> *e)</td></tr>
+<tr class="separator:a2bb4eeecfb6d1f565b27d83099f0ea4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad20897c5c8bd47f5d4005989bead0e55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#ad20897c5c8bd47f5d4005989bead0e55">reset</a> ()</td></tr>
+<tr class="separator:ad20897c5c8bd47f5d4005989bead0e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7724557fcfa85c6aa15bc9cc6d5353f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#a7724557fcfa85c6aa15bc9cc6d5353f5">marshall</a> (<a class="el" href="class_storage_intf.html">StorageIntf</a> *)</td></tr>
+<tr class="separator:a7724557fcfa85c6aa15bc9cc6d5353f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d8a1be06f5f14602fcdab73352224cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#a7d8a1be06f5f14602fcdab73352224cd">unmarshall</a> (<a class="el" href="class_storage_intf.html">StorageIntf</a> *)</td></tr>
+<tr class="separator:a7d8a1be06f5f14602fcdab73352224cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca769d162f9505de5608a2eb9c3086d6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aca769d162f9505de5608a2eb9c3086d6"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#aca769d162f9505de5608a2eb9c3086d6">groupDocCmd</a> () const </td></tr>
+<tr class="memdesc:aca769d162f9505de5608a2eb9c3086d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the command name used to define GROUPDOC_SEC <br/></td></tr>
+<tr class="separator:aca769d162f9505de5608a2eb9c3086d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5db3115a83b3912e36706a4270871229"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5db3115a83b3912e36706a4270871229"></a>
+<a class="el" href="struct_grouping.html#ae0be00a2b5dfbbc6c4558e88dddc9d81">Grouping::GroupPri_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>groupingPri</b> () const </td></tr>
+<tr class="separator:a5db3115a83b3912e36706a4270871229"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Campos de Dados</h2></td></tr>
+<tr class="memitem:ab217561ce555727ff977aa053656a686"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab217561ce555727ff977aa053656a686"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#ab217561ce555727ff977aa053656a686">section</a></td></tr>
+<tr class="memdesc:ab217561ce555727ff977aa053656a686"><td class="mdescLeft">&#160;</td><td class="mdescRight">entry type (see Sections); <br/></td></tr>
+<tr class="separator:ab217561ce555727ff977aa053656a686"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d4463771e24026060ae68b04822d7af"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0d4463771e24026060ae68b04822d7af"></a>
+<a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#a0d4463771e24026060ae68b04822d7af">type</a></td></tr>
+<tr class="memdesc:a0d4463771e24026060ae68b04822d7af"><td class="mdescLeft">&#160;</td><td class="mdescRight">member type <br/></td></tr>
+<tr class="separator:a0d4463771e24026060ae68b04822d7af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc0097c7bd1e61ad32058fcde425bc7a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adc0097c7bd1e61ad32058fcde425bc7a"></a>
+<a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#adc0097c7bd1e61ad32058fcde425bc7a">name</a></td></tr>
+<tr class="memdesc:adc0097c7bd1e61ad32058fcde425bc7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">member name <br/></td></tr>
+<tr class="separator:adc0097c7bd1e61ad32058fcde425bc7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb1162dded11db5cb67c8ce3d52ec4e4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abb1162dded11db5cb67c8ce3d52ec4e4"></a>
+<a class="el" href="struct_tag_info.html">TagInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#abb1162dded11db5cb67c8ce3d52ec4e4">tagInfo</a></td></tr>
+<tr class="memdesc:abb1162dded11db5cb67c8ce3d52ec4e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">tag file info <br/></td></tr>
+<tr class="separator:abb1162dded11db5cb67c8ce3d52ec4e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaadb86b22caf2b07f0b45b35bfdbe25f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaadb86b22caf2b07f0b45b35bfdbe25f"></a>
+<a class="el" href="types_8h.html#a90e352184df58cd09455fe9996cd4ded">Protection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#aaadb86b22caf2b07f0b45b35bfdbe25f">protection</a></td></tr>
+<tr class="memdesc:aaadb86b22caf2b07f0b45b35bfdbe25f"><td class="mdescLeft">&#160;</td><td class="mdescRight">class protection <br/></td></tr>
+<tr class="separator:aaadb86b22caf2b07f0b45b35bfdbe25f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33ee87c9268990e6e381e2b622a3a330"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a33ee87c9268990e6e381e2b622a3a330"></a>
+<a class="el" href="types_8h.html#a0872178db42722c310fe6117189ed441">MethodTypes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#a33ee87c9268990e6e381e2b622a3a330">mtype</a></td></tr>
+<tr class="memdesc:a33ee87c9268990e6e381e2b622a3a330"><td class="mdescLeft">&#160;</td><td class="mdescRight">signal, slot, (dcop) method, or property? <br/></td></tr>
+<tr class="separator:a33ee87c9268990e6e381e2b622a3a330"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab185cff582e0684a926b4da23bca207d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab185cff582e0684a926b4da23bca207d"></a>
+uint64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#ab185cff582e0684a926b4da23bca207d">spec</a></td></tr>
+<tr class="memdesc:ab185cff582e0684a926b4da23bca207d"><td class="mdescLeft">&#160;</td><td class="mdescRight">class/member specifiers <br/></td></tr>
+<tr class="separator:ab185cff582e0684a926b4da23bca207d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace9aa92b66f9f1477ec56188a77416ee"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ace9aa92b66f9f1477ec56188a77416ee"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#ace9aa92b66f9f1477ec56188a77416ee">initLines</a></td></tr>
+<tr class="memdesc:ace9aa92b66f9f1477ec56188a77416ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">define/variable initializer lines to show <br/></td></tr>
+<tr class="separator:ace9aa92b66f9f1477ec56188a77416ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56b4ed32e2ef0fbae76b125d7ad98acd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a56b4ed32e2ef0fbae76b125d7ad98acd"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#a56b4ed32e2ef0fbae76b125d7ad98acd">stat</a></td></tr>
+<tr class="memdesc:a56b4ed32e2ef0fbae76b125d7ad98acd"><td class="mdescLeft">&#160;</td><td class="mdescRight">static ? <br/></td></tr>
+<tr class="separator:a56b4ed32e2ef0fbae76b125d7ad98acd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff7273087cbd5150e8a1d35121b767b5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aff7273087cbd5150e8a1d35121b767b5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#aff7273087cbd5150e8a1d35121b767b5">explicitExternal</a></td></tr>
+<tr class="memdesc:aff7273087cbd5150e8a1d35121b767b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">explicitly defined as external? <br/></td></tr>
+<tr class="separator:aff7273087cbd5150e8a1d35121b767b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98b3155ab216f9fbf72c95d6c22bdeb5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a98b3155ab216f9fbf72c95d6c22bdeb5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#a98b3155ab216f9fbf72c95d6c22bdeb5">proto</a></td></tr>
+<tr class="memdesc:a98b3155ab216f9fbf72c95d6c22bdeb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">prototype ? <br/></td></tr>
+<tr class="separator:a98b3155ab216f9fbf72c95d6c22bdeb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c0b6dfd8da3027f83dfdbfeffce7706"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6c0b6dfd8da3027f83dfdbfeffce7706"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#a6c0b6dfd8da3027f83dfdbfeffce7706">subGrouping</a></td></tr>
+<tr class="memdesc:a6c0b6dfd8da3027f83dfdbfeffce7706"><td class="mdescLeft">&#160;</td><td class="mdescRight">automatically group class members? <br/></td></tr>
+<tr class="separator:a6c0b6dfd8da3027f83dfdbfeffce7706"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96821a926ce09ac135f980b6b23e82d7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a96821a926ce09ac135f980b6b23e82d7"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#a96821a926ce09ac135f980b6b23e82d7">callGraph</a></td></tr>
+<tr class="memdesc:a96821a926ce09ac135f980b6b23e82d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">do we need to draw the call graph? <br/></td></tr>
+<tr class="separator:a96821a926ce09ac135f980b6b23e82d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af314ff2b6a29ca01c32849ae6e65d4d6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af314ff2b6a29ca01c32849ae6e65d4d6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#af314ff2b6a29ca01c32849ae6e65d4d6">callerGraph</a></td></tr>
+<tr class="memdesc:af314ff2b6a29ca01c32849ae6e65d4d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">do we need to draw the caller graph? <br/></td></tr>
+<tr class="separator:af314ff2b6a29ca01c32849ae6e65d4d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa05b4729c780621416429c6aac10fccf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa05b4729c780621416429c6aac10fccf"></a>
+<a class="el" href="types_8h.html#ab16236bdd10ddf4d73a9847350f0017e">Specifier</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#aa05b4729c780621416429c6aac10fccf">virt</a></td></tr>
+<tr class="memdesc:aa05b4729c780621416429c6aac10fccf"><td class="mdescLeft">&#160;</td><td class="mdescRight">virtualness of the entry <br/></td></tr>
+<tr class="separator:aa05b4729c780621416429c6aac10fccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5691dacbac7b651cd43288adc0d0328b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5691dacbac7b651cd43288adc0d0328b"></a>
+<a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#a5691dacbac7b651cd43288adc0d0328b">args</a></td></tr>
+<tr class="memdesc:a5691dacbac7b651cd43288adc0d0328b"><td class="mdescLeft">&#160;</td><td class="mdescRight">member argument string <br/></td></tr>
+<tr class="separator:a5691dacbac7b651cd43288adc0d0328b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bef1412e2350a4b21ad3fcecb18771a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3bef1412e2350a4b21ad3fcecb18771a"></a>
+<a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#a3bef1412e2350a4b21ad3fcecb18771a">bitfields</a></td></tr>
+<tr class="memdesc:a3bef1412e2350a4b21ad3fcecb18771a"><td class="mdescLeft">&#160;</td><td class="mdescRight">member's bit fields <br/></td></tr>
+<tr class="separator:a3bef1412e2350a4b21ad3fcecb18771a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7d5b9036bd044781194964d2dfd59bd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab7d5b9036bd044781194964d2dfd59bd"></a>
+<a class="el" href="class_argument_list.html">ArgumentList</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#ab7d5b9036bd044781194964d2dfd59bd">argList</a></td></tr>
+<tr class="memdesc:ab7d5b9036bd044781194964d2dfd59bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">member arguments as a list <br/></td></tr>
+<tr class="separator:ab7d5b9036bd044781194964d2dfd59bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5ebd428a5652b1bd0cf92f0d98618bf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae5ebd428a5652b1bd0cf92f0d98618bf"></a>
+<a class="el" href="class_q_list.html">QList</a>&lt; <a class="el" href="class_argument_list.html">ArgumentList</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#ae5ebd428a5652b1bd0cf92f0d98618bf">tArgLists</a></td></tr>
+<tr class="memdesc:ae5ebd428a5652b1bd0cf92f0d98618bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">template argument declarations <br/></td></tr>
+<tr class="separator:ae5ebd428a5652b1bd0cf92f0d98618bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf5793d76eb2b16815a8017bed81468c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf5793d76eb2b16815a8017bed81468c"></a>
+<a class="el" href="class_q_g_string.html">QGString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#adf5793d76eb2b16815a8017bed81468c">program</a></td></tr>
+<tr class="memdesc:adf5793d76eb2b16815a8017bed81468c"><td class="mdescLeft">&#160;</td><td class="mdescRight">the program text <br/></td></tr>
+<tr class="separator:adf5793d76eb2b16815a8017bed81468c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5efc3fc94544cf734c02ea402c536238"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5efc3fc94544cf734c02ea402c536238"></a>
+<a class="el" href="class_q_g_string.html">QGString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#a5efc3fc94544cf734c02ea402c536238">initializer</a></td></tr>
+<tr class="memdesc:a5efc3fc94544cf734c02ea402c536238"><td class="mdescLeft">&#160;</td><td class="mdescRight">initial value (for variables) <br/></td></tr>
+<tr class="separator:a5efc3fc94544cf734c02ea402c536238"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfe66de2209d5fd9ea9f104c3062456b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acfe66de2209d5fd9ea9f104c3062456b"></a>
+<a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#acfe66de2209d5fd9ea9f104c3062456b">includeFile</a></td></tr>
+<tr class="memdesc:acfe66de2209d5fd9ea9f104c3062456b"><td class="mdescLeft">&#160;</td><td class="mdescRight">include file (2 arg of \class, must be unique) <br/></td></tr>
+<tr class="separator:acfe66de2209d5fd9ea9f104c3062456b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab79d462c125865b06a1d6f9ee3e66260"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab79d462c125865b06a1d6f9ee3e66260"></a>
+<a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#ab79d462c125865b06a1d6f9ee3e66260">includeName</a></td></tr>
+<tr class="memdesc:ab79d462c125865b06a1d6f9ee3e66260"><td class="mdescLeft">&#160;</td><td class="mdescRight">include name (3 arg of \class) <br/></td></tr>
+<tr class="separator:ab79d462c125865b06a1d6f9ee3e66260"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9910424bf5401d657c3b3fdff6fcc152"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9910424bf5401d657c3b3fdff6fcc152"></a>
+<a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#a9910424bf5401d657c3b3fdff6fcc152">doc</a></td></tr>
+<tr class="memdesc:a9910424bf5401d657c3b3fdff6fcc152"><td class="mdescLeft">&#160;</td><td class="mdescRight">documentation block (partly parsed) <br/></td></tr>
+<tr class="separator:a9910424bf5401d657c3b3fdff6fcc152"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6abf8fcedd015c9c2e235d332d2bdb9b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6abf8fcedd015c9c2e235d332d2bdb9b"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#a6abf8fcedd015c9c2e235d332d2bdb9b">docLine</a></td></tr>
+<tr class="memdesc:a6abf8fcedd015c9c2e235d332d2bdb9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">line number at which the documentation was found <br/></td></tr>
+<tr class="separator:a6abf8fcedd015c9c2e235d332d2bdb9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e442ea1f041f60c49f78a7716ef5e20"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9e442ea1f041f60c49f78a7716ef5e20"></a>
+<a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#a9e442ea1f041f60c49f78a7716ef5e20">docFile</a></td></tr>
+<tr class="memdesc:a9e442ea1f041f60c49f78a7716ef5e20"><td class="mdescLeft">&#160;</td><td class="mdescRight">file in which the documentation was found <br/></td></tr>
+<tr class="separator:a9e442ea1f041f60c49f78a7716ef5e20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae58e255b2a13ba38c9d7cbe225ed91cc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae58e255b2a13ba38c9d7cbe225ed91cc"></a>
+<a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#ae58e255b2a13ba38c9d7cbe225ed91cc">brief</a></td></tr>
+<tr class="memdesc:ae58e255b2a13ba38c9d7cbe225ed91cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">brief description (doc block) <br/></td></tr>
+<tr class="separator:ae58e255b2a13ba38c9d7cbe225ed91cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6391b011b6da7907bebc9c8cee6b2754"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6391b011b6da7907bebc9c8cee6b2754"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#a6391b011b6da7907bebc9c8cee6b2754">briefLine</a></td></tr>
+<tr class="memdesc:a6391b011b6da7907bebc9c8cee6b2754"><td class="mdescLeft">&#160;</td><td class="mdescRight">line number at which the brief desc. was found <br/></td></tr>
+<tr class="separator:a6391b011b6da7907bebc9c8cee6b2754"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af327d9fd2f66ee986a26518240cae024"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af327d9fd2f66ee986a26518240cae024"></a>
+<a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#af327d9fd2f66ee986a26518240cae024">briefFile</a></td></tr>
+<tr class="memdesc:af327d9fd2f66ee986a26518240cae024"><td class="mdescLeft">&#160;</td><td class="mdescRight">file in which the brief desc. was found <br/></td></tr>
+<tr class="separator:af327d9fd2f66ee986a26518240cae024"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40e93805b4cee362f6244037609e8fcd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a40e93805b4cee362f6244037609e8fcd"></a>
+<a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#a40e93805b4cee362f6244037609e8fcd">inbodyDocs</a></td></tr>
+<tr class="memdesc:a40e93805b4cee362f6244037609e8fcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">documentation inside the body of a function <br/></td></tr>
+<tr class="separator:a40e93805b4cee362f6244037609e8fcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e3cb6f22c256238cb85a53b53b58ecc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4e3cb6f22c256238cb85a53b53b58ecc"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#a4e3cb6f22c256238cb85a53b53b58ecc">inbodyLine</a></td></tr>
+<tr class="memdesc:a4e3cb6f22c256238cb85a53b53b58ecc"><td class="mdescLeft">&#160;</td><td class="mdescRight">line number at which the body doc was found <br/></td></tr>
+<tr class="separator:a4e3cb6f22c256238cb85a53b53b58ecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ee854f4b1e91af928cf49d00b3f757c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1ee854f4b1e91af928cf49d00b3f757c"></a>
+<a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#a1ee854f4b1e91af928cf49d00b3f757c">inbodyFile</a></td></tr>
+<tr class="memdesc:a1ee854f4b1e91af928cf49d00b3f757c"><td class="mdescLeft">&#160;</td><td class="mdescRight">file in which the body doc was found <br/></td></tr>
+<tr class="separator:a1ee854f4b1e91af928cf49d00b3f757c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f1236e1519f2053aa7f6852a2d10c8a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3f1236e1519f2053aa7f6852a2d10c8a"></a>
+<a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#a3f1236e1519f2053aa7f6852a2d10c8a">relates</a></td></tr>
+<tr class="memdesc:a3f1236e1519f2053aa7f6852a2d10c8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">related class (doc block) <br/></td></tr>
+<tr class="separator:a3f1236e1519f2053aa7f6852a2d10c8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ea807048e777094c808256e2fbf3775"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8ea807048e777094c808256e2fbf3775"></a>
+<a class="el" href="types_8h.html#aa370e9ca1d3ff266cab92689bcc37d9e">RelatesType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#a8ea807048e777094c808256e2fbf3775">relatesType</a></td></tr>
+<tr class="memdesc:a8ea807048e777094c808256e2fbf3775"><td class="mdescLeft">&#160;</td><td class="mdescRight">how relates is handled <br/></td></tr>
+<tr class="separator:a8ea807048e777094c808256e2fbf3775"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abea14364ae37e59a4283801a3e825fac"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abea14364ae37e59a4283801a3e825fac"></a>
+<a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#abea14364ae37e59a4283801a3e825fac">read</a></td></tr>
+<tr class="memdesc:abea14364ae37e59a4283801a3e825fac"><td class="mdescLeft">&#160;</td><td class="mdescRight">property read accessor <br/></td></tr>
+<tr class="separator:abea14364ae37e59a4283801a3e825fac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73384a275627dc3584d6924c03fba6b2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a73384a275627dc3584d6924c03fba6b2"></a>
+<a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#a73384a275627dc3584d6924c03fba6b2">write</a></td></tr>
+<tr class="memdesc:a73384a275627dc3584d6924c03fba6b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">property write accessor <br/></td></tr>
+<tr class="separator:a73384a275627dc3584d6924c03fba6b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adea7bafd4e6307efe73aafc679b304f9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adea7bafd4e6307efe73aafc679b304f9"></a>
+<a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#adea7bafd4e6307efe73aafc679b304f9">inside</a></td></tr>
+<tr class="memdesc:adea7bafd4e6307efe73aafc679b304f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">name of the class in which documents are found <br/></td></tr>
+<tr class="separator:adea7bafd4e6307efe73aafc679b304f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a280291809e546dd34aba1403610c285a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a280291809e546dd34aba1403610c285a"></a>
+<a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#a280291809e546dd34aba1403610c285a">exception</a></td></tr>
+<tr class="memdesc:a280291809e546dd34aba1403610c285a"><td class="mdescLeft">&#160;</td><td class="mdescRight">throw specification <br/></td></tr>
+<tr class="separator:a280291809e546dd34aba1403610c285a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af23889e5103d8fe74c2e27e379c13b7c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af23889e5103d8fe74c2e27e379c13b7c"></a>
+<a class="el" href="class_argument_list.html">ArgumentList</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#af23889e5103d8fe74c2e27e379c13b7c">typeConstr</a></td></tr>
+<tr class="memdesc:af23889e5103d8fe74c2e27e379c13b7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">where clause (<a class="el" href="class_c.html">C</a>#) for type constraints <br/></td></tr>
+<tr class="separator:af23889e5103d8fe74c2e27e379c13b7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65f510d2097d6d763dbfe0d9d338985c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a65f510d2097d6d763dbfe0d9d338985c"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#a65f510d2097d6d763dbfe0d9d338985c">bodyLine</a></td></tr>
+<tr class="memdesc:a65f510d2097d6d763dbfe0d9d338985c"><td class="mdescLeft">&#160;</td><td class="mdescRight">line number of the definition in the source <br/></td></tr>
+<tr class="separator:a65f510d2097d6d763dbfe0d9d338985c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a525bd36b30664a88951a5ddaa21b716d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a525bd36b30664a88951a5ddaa21b716d"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#a525bd36b30664a88951a5ddaa21b716d">endBodyLine</a></td></tr>
+<tr class="memdesc:a525bd36b30664a88951a5ddaa21b716d"><td class="mdescLeft">&#160;</td><td class="mdescRight">line number where the definition ends <br/></td></tr>
+<tr class="separator:a525bd36b30664a88951a5ddaa21b716d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0a0e82223e5b37e410022d8ffe6ec3b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad0a0e82223e5b37e410022d8ffe6ec3b"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#ad0a0e82223e5b37e410022d8ffe6ec3b">mGrpId</a></td></tr>
+<tr class="memdesc:ad0a0e82223e5b37e410022d8ffe6ec3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">member group id <br/></td></tr>
+<tr class="separator:ad0a0e82223e5b37e410022d8ffe6ec3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15940f265602de9ceb62a5aa0b8cd878"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a15940f265602de9ceb62a5aa0b8cd878"></a>
+<a class="el" href="class_q_list.html">QList</a>&lt; <a class="el" href="struct_base_info.html">BaseInfo</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#a15940f265602de9ceb62a5aa0b8cd878">extends</a></td></tr>
+<tr class="memdesc:a15940f265602de9ceb62a5aa0b8cd878"><td class="mdescLeft">&#160;</td><td class="mdescRight">list of base classes <br/></td></tr>
+<tr class="separator:a15940f265602de9ceb62a5aa0b8cd878"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada3048eb609f8d3206b28001468be458"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ada3048eb609f8d3206b28001468be458"></a>
+<a class="el" href="class_q_list.html">QList</a>&lt; <a class="el" href="struct_grouping.html">Grouping</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#ada3048eb609f8d3206b28001468be458">groups</a></td></tr>
+<tr class="memdesc:ada3048eb609f8d3206b28001468be458"><td class="mdescLeft">&#160;</td><td class="mdescRight">list of groups this entry belongs to <br/></td></tr>
+<tr class="separator:ada3048eb609f8d3206b28001468be458"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa8445c98ad707c1defc8261c9ce0b37"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afa8445c98ad707c1defc8261c9ce0b37"></a>
+<a class="el" href="class_q_list.html">QList</a>&lt; <a class="el" href="struct_section_info.html">SectionInfo</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#afa8445c98ad707c1defc8261c9ce0b37">anchors</a></td></tr>
+<tr class="memdesc:afa8445c98ad707c1defc8261c9ce0b37"><td class="mdescLeft">&#160;</td><td class="mdescRight">list of anchors defined in this entry <br/></td></tr>
+<tr class="separator:afa8445c98ad707c1defc8261c9ce0b37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb9cd3e430c4eaf05aa259fa96f32305"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abb9cd3e430c4eaf05aa259fa96f32305"></a>
+<a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#abb9cd3e430c4eaf05aa259fa96f32305">fileName</a></td></tr>
+<tr class="memdesc:abb9cd3e430c4eaf05aa259fa96f32305"><td class="mdescLeft">&#160;</td><td class="mdescRight">file this entry was extracted from <br/></td></tr>
+<tr class="separator:abb9cd3e430c4eaf05aa259fa96f32305"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae69f615454d4cce6fddf760c20e9eb2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aae69f615454d4cce6fddf760c20e9eb2"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#aae69f615454d4cce6fddf760c20e9eb2">startLine</a></td></tr>
+<tr class="memdesc:aae69f615454d4cce6fddf760c20e9eb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">start line of entry in the source <br/></td></tr>
+<tr class="separator:aae69f615454d4cce6fddf760c20e9eb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a812398f271aebf690d281beac813fd64"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a812398f271aebf690d281beac813fd64"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#a812398f271aebf690d281beac813fd64">startColumn</a></td></tr>
+<tr class="memdesc:a812398f271aebf690d281beac813fd64"><td class="mdescLeft">&#160;</td><td class="mdescRight">start column of entry in the source <br/></td></tr>
+<tr class="separator:a812398f271aebf690d281beac813fd64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7e21392b0b15c2488254deb7a88ae43"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab7e21392b0b15c2488254deb7a88ae43"></a>
+<a class="el" href="class_q_list.html">QList</a>&lt; <a class="el" href="struct_list_item_info.html">ListItemInfo</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#ab7e21392b0b15c2488254deb7a88ae43">sli</a></td></tr>
+<tr class="memdesc:ab7e21392b0b15c2488254deb7a88ae43"><td class="mdescLeft">&#160;</td><td class="mdescRight">special lists (test/todo/bug/deprecated/..) this entry is in <br/></td></tr>
+<tr class="separator:ab7e21392b0b15c2488254deb7a88ae43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fb5884a6d7ef3c2caf306ee89a7f79e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8fb5884a6d7ef3c2caf306ee89a7f79e"></a>
+<a class="el" href="types_8h.html#a9974623ce72fc23df5d64426b9178bf2">SrcLangExt</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#a8fb5884a6d7ef3c2caf306ee89a7f79e">lang</a></td></tr>
+<tr class="memdesc:a8fb5884a6d7ef3c2caf306ee89a7f79e"><td class="mdescLeft">&#160;</td><td class="mdescRight">programming language in which this entry was found <br/></td></tr>
+<tr class="separator:a8fb5884a6d7ef3c2caf306ee89a7f79e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4aefc4965852492e2f02de00f05e6698"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4aefc4965852492e2f02de00f05e6698"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#a4aefc4965852492e2f02de00f05e6698">hidden</a></td></tr>
+<tr class="memdesc:a4aefc4965852492e2f02de00f05e6698"><td class="mdescLeft">&#160;</td><td class="mdescRight">does this represent an entity that is hidden from the output <br/></td></tr>
+<tr class="separator:a4aefc4965852492e2f02de00f05e6698"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a222a9730f2a9e6da0081d74932318d87"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a222a9730f2a9e6da0081d74932318d87"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#a222a9730f2a9e6da0081d74932318d87">artificial</a></td></tr>
+<tr class="memdesc:a222a9730f2a9e6da0081d74932318d87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Artificially introduced item. <br/></td></tr>
+<tr class="separator:a222a9730f2a9e6da0081d74932318d87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02055a6eda1a64400d38b3ed37ba9328"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a02055a6eda1a64400d38b3ed37ba9328"></a>
+<a class="el" href="class_entry.html#ac51ac416856cada4f7237ba7da7f3938">GroupDocType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>groupDocType</b></td></tr>
+<tr class="separator:a02055a6eda1a64400d38b3ed37ba9328"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4d9c74c3dc66b375a8567a153a09fc2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac4d9c74c3dc66b375a8567a153a09fc2"></a>
+<a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#ac4d9c74c3dc66b375a8567a153a09fc2">id</a></td></tr>
+<tr class="memdesc:ac4d9c74c3dc66b375a8567a153a09fc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">libclang id <br/></td></tr>
+<tr class="separator:ac4d9c74c3dc66b375a8567a153a09fc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Atributos Públicos Estáticos</h2></td></tr>
+<tr class="memitem:a2b0e47b5cd4ac15479171542157550af"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2b0e47b5cd4ac15479171542157550af"></a>
+static const uint64&#160;</td><td class="memItemRight" valign="bottom"><b>Template</b> = (1ULL&lt;&lt;0)</td></tr>
+<tr class="separator:a2b0e47b5cd4ac15479171542157550af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad359a15af7b39222378e853f0fe4013b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad359a15af7b39222378e853f0fe4013b"></a>
+static const uint64&#160;</td><td class="memItemRight" valign="bottom"><b>Generic</b> = (1ULL&lt;&lt;1)</td></tr>
+<tr class="separator:ad359a15af7b39222378e853f0fe4013b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a976e7874bcc453799a28ff08632dfa3f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a976e7874bcc453799a28ff08632dfa3f"></a>
+static const uint64&#160;</td><td class="memItemRight" valign="bottom"><b>Ref</b> = (1ULL&lt;&lt;2)</td></tr>
+<tr class="separator:a976e7874bcc453799a28ff08632dfa3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bac6187b40d57420acf709dbde30f4b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7bac6187b40d57420acf709dbde30f4b"></a>
+static const uint64&#160;</td><td class="memItemRight" valign="bottom"><b>Value</b> = (1ULL&lt;&lt;3)</td></tr>
+<tr class="separator:a7bac6187b40d57420acf709dbde30f4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d78a9f33d664808c94018b3c263059b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2d78a9f33d664808c94018b3c263059b"></a>
+static const uint64&#160;</td><td class="memItemRight" valign="bottom"><b>Interface</b> = (1ULL&lt;&lt;4)</td></tr>
+<tr class="separator:a2d78a9f33d664808c94018b3c263059b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae23e2515fe8a737f60e9d563daeabb34"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae23e2515fe8a737f60e9d563daeabb34"></a>
+static const uint64&#160;</td><td class="memItemRight" valign="bottom"><b>Struct</b> = (1ULL&lt;&lt;5)</td></tr>
+<tr class="separator:ae23e2515fe8a737f60e9d563daeabb34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87d0202cdb45a47ff533b24588975e7f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a87d0202cdb45a47ff533b24588975e7f"></a>
+static const uint64&#160;</td><td class="memItemRight" valign="bottom"><b>Union</b> = (1ULL&lt;&lt;6)</td></tr>
+<tr class="separator:a87d0202cdb45a47ff533b24588975e7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88b35594247ef004425a1705ddaf9e6a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a88b35594247ef004425a1705ddaf9e6a"></a>
+static const uint64&#160;</td><td class="memItemRight" valign="bottom"><b>Exception</b> = (1ULL&lt;&lt;7)</td></tr>
+<tr class="separator:a88b35594247ef004425a1705ddaf9e6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a228b4fdcf3fe490bc5dfc7ac471d84d8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a228b4fdcf3fe490bc5dfc7ac471d84d8"></a>
+static const uint64&#160;</td><td class="memItemRight" valign="bottom"><b>Protocol</b> = (1ULL&lt;&lt;8)</td></tr>
+<tr class="separator:a228b4fdcf3fe490bc5dfc7ac471d84d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8553ff79a2eb448d989de84158be11f7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8553ff79a2eb448d989de84158be11f7"></a>
+static const uint64&#160;</td><td class="memItemRight" valign="bottom"><b>Category</b> = (1ULL&lt;&lt;9)</td></tr>
+<tr class="separator:a8553ff79a2eb448d989de84158be11f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf493d36e7824c58e7c5d3e990ccb2db"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf493d36e7824c58e7c5d3e990ccb2db"></a>
+static const uint64&#160;</td><td class="memItemRight" valign="bottom"><b>SealedClass</b> = (1ULL&lt;&lt;10)</td></tr>
+<tr class="separator:adf493d36e7824c58e7c5d3e990ccb2db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe4ac42aa2931726328b75e133127c1a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afe4ac42aa2931726328b75e133127c1a"></a>
+static const uint64&#160;</td><td class="memItemRight" valign="bottom"><b>AbstractClass</b> = (1ULL&lt;&lt;11)</td></tr>
+<tr class="separator:afe4ac42aa2931726328b75e133127c1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9e0131ab0b75769cdf2e78ab49d2f1b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae9e0131ab0b75769cdf2e78ab49d2f1b"></a>
+static const uint64&#160;</td><td class="memItemRight" valign="bottom"><b>Enum</b> = (1ULL&lt;&lt;12)</td></tr>
+<tr class="separator:ae9e0131ab0b75769cdf2e78ab49d2f1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af169e4da0c224420f2b0932916f776b5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af169e4da0c224420f2b0932916f776b5"></a>
+static const uint64&#160;</td><td class="memItemRight" valign="bottom"><b>Service</b> = (1ULL&lt;&lt;13)</td></tr>
+<tr class="separator:af169e4da0c224420f2b0932916f776b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2beb99a622ad9c36683b722f7ce3f1f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae2beb99a622ad9c36683b722f7ce3f1f"></a>
+static const uint64&#160;</td><td class="memItemRight" valign="bottom"><b>Singleton</b> = (1ULL&lt;&lt;14)</td></tr>
+<tr class="separator:ae2beb99a622ad9c36683b722f7ce3f1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48c58c5654f0e249c909f7469952da28"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a48c58c5654f0e249c909f7469952da28"></a>
+static const uint64&#160;</td><td class="memItemRight" valign="bottom"><b>Inline</b> = (1ULL&lt;&lt;24)</td></tr>
+<tr class="separator:a48c58c5654f0e249c909f7469952da28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a3e77dca7768313c9414811eaff7ec2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4a3e77dca7768313c9414811eaff7ec2"></a>
+static const uint64&#160;</td><td class="memItemRight" valign="bottom"><b>Explicit</b> = (1ULL&lt;&lt;25)</td></tr>
+<tr class="separator:a4a3e77dca7768313c9414811eaff7ec2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64a009c590753ba70702ea6ca136e7d4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a64a009c590753ba70702ea6ca136e7d4"></a>
+static const uint64&#160;</td><td class="memItemRight" valign="bottom"><b>Mutable</b> = (1ULL&lt;&lt;26)</td></tr>
+<tr class="separator:a64a009c590753ba70702ea6ca136e7d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a815f31685203283ae3efd08535f246ff"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a815f31685203283ae3efd08535f246ff"></a>
+static const uint64&#160;</td><td class="memItemRight" valign="bottom"><b>Settable</b> = (1ULL&lt;&lt;27)</td></tr>
+<tr class="separator:a815f31685203283ae3efd08535f246ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60716f4c18230f0c525942d717ddc1a9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a60716f4c18230f0c525942d717ddc1a9"></a>
+static const uint64&#160;</td><td class="memItemRight" valign="bottom"><b>Gettable</b> = (1ULL&lt;&lt;28)</td></tr>
+<tr class="separator:a60716f4c18230f0c525942d717ddc1a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad03632f35c9065e21a438a80e3f132bd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad03632f35c9065e21a438a80e3f132bd"></a>
+static const uint64&#160;</td><td class="memItemRight" valign="bottom"><b>Readable</b> = (1ULL&lt;&lt;29)</td></tr>
+<tr class="separator:ad03632f35c9065e21a438a80e3f132bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac27432292f9fe943794a08ca75adcb7f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac27432292f9fe943794a08ca75adcb7f"></a>
+static const uint64&#160;</td><td class="memItemRight" valign="bottom"><b>Writable</b> = (1ULL&lt;&lt;30)</td></tr>
+<tr class="separator:ac27432292f9fe943794a08ca75adcb7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4428b3fe059de0241a4ced90352f1b48"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4428b3fe059de0241a4ced90352f1b48"></a>
+static const uint64&#160;</td><td class="memItemRight" valign="bottom"><b>Final</b> = (1ULL&lt;&lt;31)</td></tr>
+<tr class="separator:a4428b3fe059de0241a4ced90352f1b48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa584f178f9face10dc1d5d790b96dcb5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa584f178f9face10dc1d5d790b96dcb5"></a>
+static const uint64&#160;</td><td class="memItemRight" valign="bottom"><b>Abstract</b> = (1ULL&lt;&lt;32)</td></tr>
+<tr class="separator:aa584f178f9face10dc1d5d790b96dcb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcdd502e91eac117a635b51f7ed5b0cd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abcdd502e91eac117a635b51f7ed5b0cd"></a>
+static const uint64&#160;</td><td class="memItemRight" valign="bottom"><b>Addable</b> = (1ULL&lt;&lt;33)</td></tr>
+<tr class="separator:abcdd502e91eac117a635b51f7ed5b0cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a094d98fd6de6d0a7a1e8153e09d38fd3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a094d98fd6de6d0a7a1e8153e09d38fd3"></a>
+static const uint64&#160;</td><td class="memItemRight" valign="bottom"><b>Removable</b> = (1ULL&lt;&lt;34)</td></tr>
+<tr class="separator:a094d98fd6de6d0a7a1e8153e09d38fd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65f63e50efa370d68e64e0acc5226aea"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a65f63e50efa370d68e64e0acc5226aea"></a>
+static const uint64&#160;</td><td class="memItemRight" valign="bottom"><b>Raisable</b> = (1ULL&lt;&lt;35)</td></tr>
+<tr class="separator:a65f63e50efa370d68e64e0acc5226aea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80b8d1eb8fe7f4a2facaaab46860e238"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a80b8d1eb8fe7f4a2facaaab46860e238"></a>
+static const uint64&#160;</td><td class="memItemRight" valign="bottom"><b>Override</b> = (1ULL&lt;&lt;36)</td></tr>
+<tr class="separator:a80b8d1eb8fe7f4a2facaaab46860e238"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef5749e3ed01ac73ab20a0e70333b53d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aef5749e3ed01ac73ab20a0e70333b53d"></a>
+static const uint64&#160;</td><td class="memItemRight" valign="bottom"><b>New</b> = (1ULL&lt;&lt;37)</td></tr>
+<tr class="separator:aef5749e3ed01ac73ab20a0e70333b53d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a387ed35a765c7a28bffdd4ce07720532"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a387ed35a765c7a28bffdd4ce07720532"></a>
+static const uint64&#160;</td><td class="memItemRight" valign="bottom"><b>Sealed</b> = (1ULL&lt;&lt;38)</td></tr>
+<tr class="separator:a387ed35a765c7a28bffdd4ce07720532"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa574a05a8ab18400f14ecefde3d4a778"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa574a05a8ab18400f14ecefde3d4a778"></a>
+static const uint64&#160;</td><td class="memItemRight" valign="bottom"><b>Initonly</b> = (1ULL&lt;&lt;39)</td></tr>
+<tr class="separator:aa574a05a8ab18400f14ecefde3d4a778"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1323402c743aadde59a1f73175ce865c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1323402c743aadde59a1f73175ce865c"></a>
+static const uint64&#160;</td><td class="memItemRight" valign="bottom"><b>Optional</b> = (1ULL&lt;&lt;40)</td></tr>
+<tr class="separator:a1323402c743aadde59a1f73175ce865c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa58fc110cd216a818832212682fc7a51"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa58fc110cd216a818832212682fc7a51"></a>
+static const uint64&#160;</td><td class="memItemRight" valign="bottom"><b>Required</b> = (1ULL&lt;&lt;41)</td></tr>
+<tr class="separator:aa58fc110cd216a818832212682fc7a51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0e79c69ed19fc9a9f5f840b2a364707"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af0e79c69ed19fc9a9f5f840b2a364707"></a>
+static const uint64&#160;</td><td class="memItemRight" valign="bottom"><b>NonAtomic</b> = (1ULL&lt;&lt;42)</td></tr>
+<tr class="separator:af0e79c69ed19fc9a9f5f840b2a364707"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e82a183e0a7ac9b83ff735e2e423b01"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4e82a183e0a7ac9b83ff735e2e423b01"></a>
+static const uint64&#160;</td><td class="memItemRight" valign="bottom"><b>Copy</b> = (1ULL&lt;&lt;43)</td></tr>
+<tr class="separator:a4e82a183e0a7ac9b83ff735e2e423b01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a774a5ed06801b4c9486d2a581221ccf6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a774a5ed06801b4c9486d2a581221ccf6"></a>
+static const uint64&#160;</td><td class="memItemRight" valign="bottom"><b>Retain</b> = (1ULL&lt;&lt;44)</td></tr>
+<tr class="separator:a774a5ed06801b4c9486d2a581221ccf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1323e5a35a8f98e88ad9efce3ec4fb03"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1323e5a35a8f98e88ad9efce3ec4fb03"></a>
+static const uint64&#160;</td><td class="memItemRight" valign="bottom"><b>Assign</b> = (1ULL&lt;&lt;45)</td></tr>
+<tr class="separator:a1323e5a35a8f98e88ad9efce3ec4fb03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2456f0bdcde215139014d6fd67322809"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2456f0bdcde215139014d6fd67322809"></a>
+static const uint64&#160;</td><td class="memItemRight" valign="bottom"><b>Strong</b> = (1ULL&lt;&lt;46)</td></tr>
+<tr class="separator:a2456f0bdcde215139014d6fd67322809"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6473ce0978e316c2323da5727c1da1b4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6473ce0978e316c2323da5727c1da1b4"></a>
+static const uint64&#160;</td><td class="memItemRight" valign="bottom"><b>Weak</b> = (1ULL&lt;&lt;47)</td></tr>
+<tr class="separator:a6473ce0978e316c2323da5727c1da1b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61bf7fa059ac0b1eb8c243bef3c5e5b6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a61bf7fa059ac0b1eb8c243bef3c5e5b6"></a>
+static const uint64&#160;</td><td class="memItemRight" valign="bottom"><b>Unretained</b> = (1ULL&lt;&lt;48)</td></tr>
+<tr class="separator:a61bf7fa059ac0b1eb8c243bef3c5e5b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1aec4360744c5de6187875757aca55d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa1aec4360744c5de6187875757aca55d"></a>
+static const uint64&#160;</td><td class="memItemRight" valign="bottom"><b>Alias</b> = (1ULL&lt;&lt;49)</td></tr>
+<tr class="separator:aa1aec4360744c5de6187875757aca55d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad102a60ca7fc04ba3e974e58076e30a0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad102a60ca7fc04ba3e974e58076e30a0"></a>
+static const uint64&#160;</td><td class="memItemRight" valign="bottom"><b>ConstExp</b> = (1ULL&lt;&lt;50)</td></tr>
+<tr class="separator:ad102a60ca7fc04ba3e974e58076e30a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91674b60f1520366e44a48f57309f1cf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a91674b60f1520366e44a48f57309f1cf"></a>
+static const uint64&#160;</td><td class="memItemRight" valign="bottom"><b>Default</b> = (1ULL&lt;&lt;51)</td></tr>
+<tr class="separator:a91674b60f1520366e44a48f57309f1cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cff8bb2f7efc049b59a65735b093cb3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0cff8bb2f7efc049b59a65735b093cb3"></a>
+static const uint64&#160;</td><td class="memItemRight" valign="bottom"><b>Delete</b> = (1ULL&lt;&lt;52)</td></tr>
+<tr class="separator:a0cff8bb2f7efc049b59a65735b093cb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa14389baa12c2800f010ed33b3fb04d1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa14389baa12c2800f010ed33b3fb04d1"></a>
+static const uint64&#160;</td><td class="memItemRight" valign="bottom"><b>NoExcept</b> = (1ULL&lt;&lt;53)</td></tr>
+<tr class="separator:aa14389baa12c2800f010ed33b3fb04d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67d649daf5b928759597e1f52d5aa212"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a67d649daf5b928759597e1f52d5aa212"></a>
+static const uint64&#160;</td><td class="memItemRight" valign="bottom"><b>Attribute</b> = (1ULL&lt;&lt;54)</td></tr>
+<tr class="separator:a67d649daf5b928759597e1f52d5aa212"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa75e8bcb10826642331314eba1f85d6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afa75e8bcb10826642331314eba1f85d6"></a>
+static const uint64&#160;</td><td class="memItemRight" valign="bottom"><b>Property</b> = (1ULL&lt;&lt;55)</td></tr>
+<tr class="separator:afa75e8bcb10826642331314eba1f85d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc065c94e57bcf994bb28a5ecba65fb8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acc065c94e57bcf994bb28a5ecba65fb8"></a>
+static const uint64&#160;</td><td class="memItemRight" valign="bottom"><b>Readonly</b> = (1ULL&lt;&lt;56)</td></tr>
+<tr class="separator:acc065c94e57bcf994bb28a5ecba65fb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf9fb8196ee2db26a7b9a07897f2643c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf9fb8196ee2db26a7b9a07897f2643c"></a>
+static const uint64&#160;</td><td class="memItemRight" valign="bottom"><b>Bound</b> = (1ULL&lt;&lt;57)</td></tr>
+<tr class="separator:adf9fb8196ee2db26a7b9a07897f2643c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3270eee7656c68d357ba98edf099d74e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3270eee7656c68d357ba98edf099d74e"></a>
+static const uint64&#160;</td><td class="memItemRight" valign="bottom"><b>Constrained</b> = (1ULL&lt;&lt;58)</td></tr>
+<tr class="separator:a3270eee7656c68d357ba98edf099d74e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7106fe96f7abc67a366bfbbd2e1ee850"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7106fe96f7abc67a366bfbbd2e1ee850"></a>
+static const uint64&#160;</td><td class="memItemRight" valign="bottom"><b>Transient</b> = (1ULL&lt;&lt;59)</td></tr>
+<tr class="separator:a7106fe96f7abc67a366bfbbd2e1ee850"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37ff3f5c63fef677986b82f4f528c116"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a37ff3f5c63fef677986b82f4f528c116"></a>
+static const uint64&#160;</td><td class="memItemRight" valign="bottom"><b>MaybeVoid</b> = (1ULL&lt;&lt;60)</td></tr>
+<tr class="separator:a37ff3f5c63fef677986b82f4f528c116"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa225a5e178d805c02e80adb3f67490b6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa225a5e178d805c02e80adb3f67490b6"></a>
+static const uint64&#160;</td><td class="memItemRight" valign="bottom"><b>MaybeDefault</b> = (1ULL&lt;&lt;61)</td></tr>
+<tr class="separator:aa225a5e178d805c02e80adb3f67490b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33ee40d8e6f015305a4d3559f18f56d9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a33ee40d8e6f015305a4d3559f18f56d9"></a>
+static const uint64&#160;</td><td class="memItemRight" valign="bottom"><b>MaybeAmbiguous</b> = (1ULL&lt;&lt;62)</td></tr>
+<tr class="separator:a33ee40d8e6f015305a4d3559f18f56d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a195b099e5245f59a8d7ef10cf78b1fcd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a195b099e5245f59a8d7ef10cf78b1fcd"></a>
+static const uint64&#160;</td><td class="memItemRight" valign="bottom"><b>Published</b> = (1ULL&lt;&lt;63)</td></tr>
+<tr class="separator:a195b099e5245f59a8d7ef10cf78b1fcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86cf672daa4e0ad11ad10efc894d19c8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a86cf672daa4e0ad11ad10efc894d19c8"></a>
+static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entry.html#a86cf672daa4e0ad11ad10efc894d19c8">num</a> =0</td></tr>
+<tr class="memdesc:a86cf672daa4e0ad11ad10efc894d19c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">counts the total number of entries <br/></td></tr>
+<tr class="separator:a86cf672daa4e0ad11ad10efc894d19c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Represents an unstructured piece of information, about an entity found in the sources.</p>
+<p>parseMain() in scanner.l will generate a tree of these entries. </p>
+</div><h2 class="groupheader">Documentação das enumerações</h2>
+<a class="anchor" id="ac51ac416856cada4f7237ba7da7f3938"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_entry.html#ac51ac416856cada4f7237ba7da7f3938">GroupDocType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Valores da enumeração</th></tr><tr><td class="fieldname"><em><a class="anchor" id="ac51ac416856cada4f7237ba7da7f3938a0ff533df76bb839903674baa032f7954"></a>GROUPDOC_NORMAL</em>&nbsp;</td><td class="fielddoc">
+<p>defgroup </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ac51ac416856cada4f7237ba7da7f3938a78841583472139a970c65120decf9ddf"></a>GROUPDOC_ADD</em>&nbsp;</td><td class="fielddoc">
+<p>addgroup </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ac51ac416856cada4f7237ba7da7f3938ab4cca3a9646f958088c5ed9a5799cf4e"></a>GROUPDOC_WEAK</em>&nbsp;</td><td class="fielddoc">
+<p>weakgroup </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="a6ff2d3555e17f89856c76b840772d461"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_entry.html#a6ff2d3555e17f89856c76b840772d461">Sections</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Kind of entries that are supported </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentação dos métodos</h2>
+<a class="anchor" id="aa73476091529bb28701f01b8256281f7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void addSubEntry </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_entry.html">Entry</a> *&#160;</td>
+          <td class="paramname"><em>e</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Adds entry <em>e</em> as a child to this entry </p>
+
+</div>
+</div>
+<a class="anchor" id="ada9c959bb88621579f8b3efe4fd309b0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_q_list.html">QList</a>&lt;<a class="el" href="class_entry.html">Entry</a>&gt;* children </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the list of children for this <a class="el" href="class_entry.html">Entry</a> </p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_entry.html#aa73476091529bb28701f01b8256281f7">addSubEntry()</a> and <a class="el" href="class_entry.html#a2bb4eeecfb6d1f565b27d83099f0ea4e">removeSubEntry()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3c4029b904a61a9873e6d12785ce19a1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int getSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the static size of the <a class="el" href="class_entry.html">Entry</a> (so excluding any dynamic memory) </p>
+
+</div>
+</div>
+<a class="anchor" id="a7724557fcfa85c6aa15bc9cc6d5353f5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void marshall </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_storage_intf.html">StorageIntf</a> *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Serialize this entry to a persistent storage stream. </p>
+
+</div>
+</div>
+<a class="anchor" id="a91b186338f7942fb250257a72cc4f24d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_entry.html">Entry</a>* parent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the parent for this <a class="el" href="class_entry.html">Entry</a> or 0 if this entry has no parent. </p>
+
+</div>
+</div>
+<a class="anchor" id="a2bb4eeecfb6d1f565b27d83099f0ea4e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_entry.html">Entry</a> * removeSubEntry </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_entry.html">Entry</a> *&#160;</td>
+          <td class="paramname"><em>e</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Removes entry <em>e</em> from the list of children. Returns a pointer to the entry or 0 if the entry was not a child. Note the entry will not be deleted. </p>
+
+</div>
+</div>
+<a class="anchor" id="ad20897c5c8bd47f5d4005989bead0e55"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void reset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Restore the state of this <a class="el" href="class_entry.html">Entry</a> to the default value it has at construction time. </p>
+
+</div>
+</div>
+<a class="anchor" id="a7d8a1be06f5f14602fcdab73352224cd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unmarshall </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_storage_intf.html">StorageIntf</a> *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Reinitialize this entry from a persistent storage stream. </p>
+
+</div>
+</div>
+<hr/>A documentação para esta classe foi gerada a partir dos seguintes ficheiros:<ul>
+<li>C:/Users/teste/git/doxygen/src/<a class="el" href="entry_8h_source.html">entry.h</a></li>
+<li>C:/Users/teste/git/doxygen/src/entry.cpp</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado em Quinta, 28 de Novembro de 2013 22:44:03 para CEM RODAS por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

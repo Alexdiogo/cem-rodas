@@ -1,0 +1,79 @@
+\hypertarget{class_parser_manager}{\section{Referência à classe Parser\-Manager}
+\label{class_parser_manager}\index{Parser\-Manager@{Parser\-Manager}}
+}
+
+
+Manages programming language parsers.  
+
+
+
+
+{\ttfamily \#include $<$parserintf.\-h$>$}
+
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_parser_manager_a36ff0a24b9ca8eba4bada4d74664d29e}{Parser\-Manager} ()
+\item 
+void \hyperlink{class_parser_manager_a8339ed2b9f88c75030557c07a7f20d4d}{register\-Parser} (const char $\ast$name, \hyperlink{class_parser_interface}{Parser\-Interface} $\ast$parser, bool def\-Parser=F\-A\-L\-S\-E)
+\item 
+bool \hyperlink{class_parser_manager_ae79e81505562acb47308fdcf7f6db308}{register\-Extension} (const char $\ast$extension, const char $\ast$parser\-Name)
+\item 
+\hyperlink{class_parser_interface}{Parser\-Interface} $\ast$ \hyperlink{class_parser_manager_a3a183cb6cfe2f315f5af6731a0586dbd}{get\-Parser} (const char $\ast$extension)
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+Manages programming language parsers. 
+
+This class manages the language parsers in the system. One can register parsers, and obtain a parser given a file extension. 
+
+\subsection{Documentação dos Construtores \& Destrutor}
+\hypertarget{class_parser_manager_a36ff0a24b9ca8eba4bada4d74664d29e}{\index{Parser\-Manager@{Parser\-Manager}!Parser\-Manager@{Parser\-Manager}}
+\index{Parser\-Manager@{Parser\-Manager}!ParserManager@{Parser\-Manager}}
+\subsubsection[{Parser\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Parser\-Manager} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_parser_manager_a36ff0a24b9ca8eba4bada4d74664d29e}
+Creates the parser manager object. 
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_parser_manager_a3a183cb6cfe2f315f5af6731a0586dbd}{\index{Parser\-Manager@{Parser\-Manager}!get\-Parser@{get\-Parser}}
+\index{get\-Parser@{get\-Parser}!ParserManager@{Parser\-Manager}}
+\subsubsection[{get\-Parser}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Parser\-Interface}$\ast$ get\-Parser (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{extension}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_parser_manager_a3a183cb6cfe2f315f5af6731a0586dbd}
+Gets the interface to the parser associated with given {\itshape extension}. If there is no parser explicitly registered for the supplied extension, the interface to the default parser will be returned. \hypertarget{class_parser_manager_ae79e81505562acb47308fdcf7f6db308}{\index{Parser\-Manager@{Parser\-Manager}!register\-Extension@{register\-Extension}}
+\index{register\-Extension@{register\-Extension}!ParserManager@{Parser\-Manager}}
+\subsubsection[{register\-Extension}]{\setlength{\rightskip}{0pt plus 5cm}bool register\-Extension (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{extension, }
+\item[{const char $\ast$}]{parser\-Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_parser_manager_ae79e81505562acb47308fdcf7f6db308}
+Registers a file {\itshape extension} with a parser with name {\itshape parser\-Name}. Returns T\-R\-U\-E if the extension was successfully registered. \hypertarget{class_parser_manager_a8339ed2b9f88c75030557c07a7f20d4d}{\index{Parser\-Manager@{Parser\-Manager}!register\-Parser@{register\-Parser}}
+\index{register\-Parser@{register\-Parser}!ParserManager@{Parser\-Manager}}
+\subsubsection[{register\-Parser}]{\setlength{\rightskip}{0pt plus 5cm}void register\-Parser (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name, }
+\item[{{\bf Parser\-Interface} $\ast$}]{parser, }
+\item[{bool}]{def\-Parser = {\ttfamily FALSE}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_parser_manager_a8339ed2b9f88c75030557c07a7f20d4d}
+Registers an additional parser. 
+\begin{DoxyParams}[1]{Parâmetros}
+\mbox{\tt in}  & {\em name} & \hyperlink{class_a}{A} symbolic name of the parser, i.\-e. \char`\"{}c\char`\"{}, \char`\"{}python\char`\"{}, \char`\"{}fortran\char`\"{}, \char`\"{}vhdl\char`\"{}, ... \\
+\hline
+\mbox{\tt in}  & {\em parser} & The parser that is to be used for the given name. \\
+\hline
+\mbox{\tt in}  & {\em def\-Parser} & Use this parser as the default parser, used for unregistered file extensions. \\
+\hline
+\end{DoxyParams}
+
+
+A documentação para esta classe foi gerada a partir do seguinte ficheiro\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/src/parserintf.\-h\end{DoxyCompactItemize}

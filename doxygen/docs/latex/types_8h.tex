@@ -1,0 +1,216 @@
+\hypertarget{types_8h}{\section{Referência ao ficheiro C\-:/\-Users/teste/git/doxygen/src/types.h}
+\label{types_8h}\index{C\-:/\-Users/teste/git/doxygen/src/types.\-h@{C\-:/\-Users/teste/git/doxygen/src/types.\-h}}
+}
+
+
+This file contains a number of basic enums and types.  
+
+
+{\ttfamily \#include $<$qcstring.\-h$>$}\\*
+\subsection*{Estruturas de Dados}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_grouping}{Grouping}
+\item 
+struct \hyperlink{struct_list_item_info}{List\-Item\-Info}
+\end{DoxyCompactItemize}
+\subsection*{Enumerações}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{types_8h_a90e352184df58cd09455fe9996cd4ded}{Protection} \{ {\bfseries Public}, 
+{\bfseries Protected}, 
+{\bfseries Private}, 
+{\bfseries Package}
+ \}
+\item 
+enum \hyperlink{types_8h_ab16236bdd10ddf4d73a9847350f0017e}{Specifier} \{ {\bfseries Normal}, 
+{\bfseries Virtual}, 
+{\bfseries Pure}
+ \}
+\item 
+enum \hyperlink{types_8h_a0872178db42722c310fe6117189ed441}{Method\-Types} \{ \\*
+{\bfseries Method}, 
+{\bfseries Signal}, 
+{\bfseries Slot}, 
+{\bfseries D\-C\-O\-P}, 
+\\*
+{\bfseries Property}, 
+{\bfseries Event}
+ \}
+\item 
+enum \hyperlink{types_8h_aa370e9ca1d3ff266cab92689bcc37d9e}{Relates\-Type} \{ {\bfseries Simple}, 
+{\bfseries Duplicate}, 
+{\bfseries Member\-Of}
+ \}
+\item 
+enum \hyperlink{types_8h_a9d625fe894d9313ec78df1d78553f32e}{Relationship} \{ {\bfseries Member}, 
+{\bfseries Related}, 
+{\bfseries Foreign}
+ \}
+\item 
+enum \hyperlink{types_8h_a9974623ce72fc23df5d64426b9178bf2}{Src\-Lang\-Ext} \{ \\*
+{\bfseries Src\-Lang\-Ext\-\_\-\-Unknown} = 0x00000, 
+{\bfseries Src\-Lang\-Ext\-\_\-\-I\-D\-L} = 0x00008, 
+{\bfseries Src\-Lang\-Ext\-\_\-\-Java} = 0x00010, 
+{\bfseries Src\-Lang\-Ext\-\_\-\-C\-Sharp} = 0x00020, 
+\\*
+{\bfseries Src\-Lang\-Ext\-\_\-\-D} = 0x00040, 
+{\bfseries Src\-Lang\-Ext\-\_\-\-P\-H\-P} = 0x00080, 
+{\bfseries Src\-Lang\-Ext\-\_\-\-Obj\-C} = 0x00100, 
+{\bfseries Src\-Lang\-Ext\-\_\-\-Cpp} = 0x00200, 
+\\*
+{\bfseries Src\-Lang\-Ext\-\_\-\-J\-S} = 0x00400, 
+{\bfseries Src\-Lang\-Ext\-\_\-\-Python} = 0x00800, 
+{\bfseries Src\-Lang\-Ext\-\_\-\-Fortran} = 0x01000, 
+{\bfseries Src\-Lang\-Ext\-\_\-\-V\-H\-D\-L} = 0x02000, 
+\\*
+{\bfseries Src\-Lang\-Ext\-\_\-\-X\-M\-L} = 0x04000, 
+{\bfseries Src\-Lang\-Ext\-\_\-\-Tcl} = 0x08000, 
+{\bfseries Src\-Lang\-Ext\-\_\-\-Markdown} = 0x10000
+ \}
+\item 
+enum {\bfseries Member\-List\-Type} \{ \\*
+{\bfseries Member\-List\-Type\-\_\-private\-Lists} = 0x0800, 
+{\bfseries Member\-List\-Type\-\_\-detailed\-Lists} = 0x1000, 
+{\bfseries Member\-List\-Type\-\_\-declaration\-Lists} = 0x2000, 
+{\bfseries Member\-List\-Type\-\_\-documentation\-Lists} = 0x4000, 
+\\*
+{\bfseries Member\-List\-Type\-\_\-pub\-Methods} = 0, 
+{\bfseries Member\-List\-Type\-\_\-pro\-Methods} = 1, 
+{\bfseries Member\-List\-Type\-\_\-pac\-Methods} = 2, 
+{\bfseries Member\-List\-Type\-\_\-pri\-Methods} = 3 + Member\-List\-Type\-\_\-private\-Lists, 
+\\*
+{\bfseries Member\-List\-Type\-\_\-pub\-Static\-Methods} = 4, 
+{\bfseries Member\-List\-Type\-\_\-pro\-Static\-Methods} = 5, 
+{\bfseries Member\-List\-Type\-\_\-pac\-Static\-Methods} = 6, 
+{\bfseries Member\-List\-Type\-\_\-pri\-Static\-Methods} = 7 + Member\-List\-Type\-\_\-private\-Lists, 
+\\*
+{\bfseries Member\-List\-Type\-\_\-pub\-Slots} = 8, 
+{\bfseries Member\-List\-Type\-\_\-pro\-Slots} = 9, 
+{\bfseries Member\-List\-Type\-\_\-pri\-Slots} = 10 + Member\-List\-Type\-\_\-private\-Lists, 
+{\bfseries Member\-List\-Type\-\_\-pub\-Attribs} = 11, 
+\\*
+{\bfseries Member\-List\-Type\-\_\-pro\-Attribs} = 12, 
+{\bfseries Member\-List\-Type\-\_\-pac\-Attribs} = 13, 
+{\bfseries Member\-List\-Type\-\_\-pri\-Attribs} = 14 + Member\-List\-Type\-\_\-private\-Lists, 
+{\bfseries Member\-List\-Type\-\_\-pub\-Static\-Attribs} = 15, 
+\\*
+{\bfseries Member\-List\-Type\-\_\-pro\-Static\-Attribs} = 16, 
+{\bfseries Member\-List\-Type\-\_\-pac\-Static\-Attribs} = 17, 
+{\bfseries Member\-List\-Type\-\_\-pri\-Static\-Attribs} = 18 + Member\-List\-Type\-\_\-private\-Lists, 
+{\bfseries Member\-List\-Type\-\_\-pub\-Types} = 19, 
+\\*
+{\bfseries Member\-List\-Type\-\_\-pro\-Types} = 20, 
+{\bfseries Member\-List\-Type\-\_\-pac\-Types} = 21, 
+{\bfseries Member\-List\-Type\-\_\-pri\-Types} = 22 + Member\-List\-Type\-\_\-private\-Lists, 
+{\bfseries Member\-List\-Type\-\_\-related} = 23, 
+\\*
+{\bfseries Member\-List\-Type\-\_\-signals} = 24, 
+{\bfseries Member\-List\-Type\-\_\-friends} = 25, 
+{\bfseries Member\-List\-Type\-\_\-dcop\-Methods} = 26, 
+{\bfseries Member\-List\-Type\-\_\-properties} = 27, 
+\\*
+{\bfseries Member\-List\-Type\-\_\-events} = 28, 
+{\bfseries Member\-List\-Type\-\_\-typedef\-Members} = 29 + Member\-List\-Type\-\_\-detailed\-Lists, 
+{\bfseries Member\-List\-Type\-\_\-enum\-Members} = 30 + Member\-List\-Type\-\_\-detailed\-Lists, 
+{\bfseries Member\-List\-Type\-\_\-enum\-Val\-Members} = 31 + Member\-List\-Type\-\_\-detailed\-Lists, 
+\\*
+{\bfseries Member\-List\-Type\-\_\-function\-Members} = 32 + Member\-List\-Type\-\_\-detailed\-Lists, 
+{\bfseries Member\-List\-Type\-\_\-related\-Members} = 33 + Member\-List\-Type\-\_\-detailed\-Lists, 
+{\bfseries Member\-List\-Type\-\_\-variable\-Members} = 34 + Member\-List\-Type\-\_\-detailed\-Lists, 
+{\bfseries Member\-List\-Type\-\_\-property\-Members} = 35 + Member\-List\-Type\-\_\-detailed\-Lists, 
+\\*
+{\bfseries Member\-List\-Type\-\_\-event\-Members} = 36 + Member\-List\-Type\-\_\-detailed\-Lists, 
+{\bfseries Member\-List\-Type\-\_\-constructors} = 37 + Member\-List\-Type\-\_\-detailed\-Lists, 
+{\bfseries Member\-List\-Type\-\_\-all\-Members\-List} = 38, 
+{\bfseries Member\-List\-Type\-\_\-dec\-Define\-Members} = 39 + Member\-List\-Type\-\_\-declaration\-Lists, 
+\\*
+{\bfseries Member\-List\-Type\-\_\-dec\-Proto\-Members} = 40 + Member\-List\-Type\-\_\-declaration\-Lists, 
+{\bfseries Member\-List\-Type\-\_\-dec\-Typedef\-Members} = 41 + Member\-List\-Type\-\_\-declaration\-Lists, 
+{\bfseries Member\-List\-Type\-\_\-dec\-Enum\-Members} = 42 + Member\-List\-Type\-\_\-declaration\-Lists, 
+{\bfseries Member\-List\-Type\-\_\-dec\-Func\-Members} = 43 + Member\-List\-Type\-\_\-declaration\-Lists, 
+\\*
+{\bfseries Member\-List\-Type\-\_\-dec\-Var\-Members} = 44 + Member\-List\-Type\-\_\-declaration\-Lists, 
+{\bfseries Member\-List\-Type\-\_\-dec\-Enum\-Val\-Members} = 45 + Member\-List\-Type\-\_\-declaration\-Lists, 
+{\bfseries Member\-List\-Type\-\_\-dec\-Pub\-Slot\-Members} = 46 + Member\-List\-Type\-\_\-declaration\-Lists, 
+{\bfseries Member\-List\-Type\-\_\-dec\-Pro\-Slot\-Members} = 47 + Member\-List\-Type\-\_\-declaration\-Lists, 
+\\*
+{\bfseries Member\-List\-Type\-\_\-dec\-Pri\-Slot\-Members} = 48 + Member\-List\-Type\-\_\-declaration\-Lists, 
+{\bfseries Member\-List\-Type\-\_\-dec\-Signal\-Members} = 49 + Member\-List\-Type\-\_\-declaration\-Lists, 
+{\bfseries Member\-List\-Type\-\_\-dec\-Event\-Members} = 50 + Member\-List\-Type\-\_\-declaration\-Lists, 
+{\bfseries Member\-List\-Type\-\_\-dec\-Friend\-Members} = 51 + Member\-List\-Type\-\_\-declaration\-Lists, 
+\\*
+{\bfseries Member\-List\-Type\-\_\-dec\-Prop\-Members} = 52 + Member\-List\-Type\-\_\-declaration\-Lists, 
+{\bfseries Member\-List\-Type\-\_\-doc\-Define\-Members} = 53 + Member\-List\-Type\-\_\-documentation\-Lists, 
+{\bfseries Member\-List\-Type\-\_\-doc\-Proto\-Members} = 54 + Member\-List\-Type\-\_\-documentation\-Lists, 
+{\bfseries Member\-List\-Type\-\_\-doc\-Typedef\-Members} = 55 + Member\-List\-Type\-\_\-documentation\-Lists, 
+\\*
+{\bfseries Member\-List\-Type\-\_\-doc\-Enum\-Members} = 56 + Member\-List\-Type\-\_\-documentation\-Lists, 
+{\bfseries Member\-List\-Type\-\_\-doc\-Func\-Members} = 57 + Member\-List\-Type\-\_\-documentation\-Lists, 
+{\bfseries Member\-List\-Type\-\_\-doc\-Var\-Members} = 58 + Member\-List\-Type\-\_\-documentation\-Lists, 
+{\bfseries Member\-List\-Type\-\_\-doc\-Enum\-Val\-Members} = 59 + Member\-List\-Type\-\_\-documentation\-Lists, 
+\\*
+{\bfseries Member\-List\-Type\-\_\-doc\-Pub\-Slot\-Members} = 60 + Member\-List\-Type\-\_\-documentation\-Lists, 
+{\bfseries Member\-List\-Type\-\_\-doc\-Pro\-Slot\-Members} = 61 + Member\-List\-Type\-\_\-documentation\-Lists, 
+{\bfseries Member\-List\-Type\-\_\-doc\-Pri\-Slot\-Members} = 62 + Member\-List\-Type\-\_\-documentation\-Lists, 
+{\bfseries Member\-List\-Type\-\_\-doc\-Signal\-Members} = 63 + Member\-List\-Type\-\_\-documentation\-Lists, 
+\\*
+{\bfseries Member\-List\-Type\-\_\-doc\-Event\-Members} = 64 + Member\-List\-Type\-\_\-documentation\-Lists, 
+{\bfseries Member\-List\-Type\-\_\-doc\-Friend\-Members} = 65 + Member\-List\-Type\-\_\-documentation\-Lists, 
+{\bfseries Member\-List\-Type\-\_\-doc\-Prop\-Members} = 66 + Member\-List\-Type\-\_\-documentation\-Lists, 
+{\bfseries Member\-List\-Type\-\_\-redefined\-By} = 67, 
+\\*
+{\bfseries Member\-List\-Type\-\_\-enum\-Fields} = 68, 
+{\bfseries Member\-List\-Type\-\_\-member\-Group} = 69, 
+{\bfseries Member\-List\-Type\-\_\-interfaces} = 70, 
+{\bfseries Member\-List\-Type\-\_\-interface\-Members} = 71 + Member\-List\-Type\-\_\-detailed\-Lists, 
+\\*
+{\bfseries Member\-List\-Type\-\_\-services} = 72, 
+{\bfseries Member\-List\-Type\-\_\-service\-Members} = 73 + Member\-List\-Type\-\_\-detailed\-Lists
+ \}
+\item 
+enum {\bfseries Member\-Type} \{ \\*
+{\bfseries Member\-Type\-\_\-\-Define}, 
+{\bfseries Member\-Type\-\_\-\-Function}, 
+{\bfseries Member\-Type\-\_\-\-Variable}, 
+{\bfseries Member\-Type\-\_\-\-Typedef}, 
+\\*
+{\bfseries Member\-Type\-\_\-\-Enumeration}, 
+{\bfseries Member\-Type\-\_\-\-Enum\-Value}, 
+{\bfseries Member\-Type\-\_\-\-Signal}, 
+{\bfseries Member\-Type\-\_\-\-Slot}, 
+\\*
+{\bfseries Member\-Type\-\_\-\-Friend}, 
+{\bfseries Member\-Type\-\_\-\-D\-C\-O\-P}, 
+{\bfseries Member\-Type\-\_\-\-Property}, 
+{\bfseries Member\-Type\-\_\-\-Event}, 
+\\*
+{\bfseries Member\-Type\-\_\-\-Interface}, 
+{\bfseries Member\-Type\-\_\-\-Service}
+ \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+This file contains a number of basic enums and types. 
+
+\subsection{Documentação dos valores da enumeração}
+\hypertarget{types_8h_a0872178db42722c310fe6117189ed441}{\index{types.\-h@{types.\-h}!Method\-Types@{Method\-Types}}
+\index{Method\-Types@{Method\-Types}!types.h@{types.\-h}}
+\subsubsection[{Method\-Types}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Method\-Types}}}\label{types_8h_a0872178db42722c310fe6117189ed441}
+Kind of method \hypertarget{types_8h_a90e352184df58cd09455fe9996cd4ded}{\index{types.\-h@{types.\-h}!Protection@{Protection}}
+\index{Protection@{Protection}!types.h@{types.\-h}}
+\subsubsection[{Protection}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Protection}}}\label{types_8h_a90e352184df58cd09455fe9996cd4ded}
+Protection level of members \hypertarget{types_8h_aa370e9ca1d3ff266cab92689bcc37d9e}{\index{types.\-h@{types.\-h}!Relates\-Type@{Relates\-Type}}
+\index{Relates\-Type@{Relates\-Type}!types.h@{types.\-h}}
+\subsubsection[{Relates\-Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Relates\-Type}}}\label{types_8h_aa370e9ca1d3ff266cab92689bcc37d9e}
+Type of member relation \hypertarget{types_8h_a9d625fe894d9313ec78df1d78553f32e}{\index{types.\-h@{types.\-h}!Relationship@{Relationship}}
+\index{Relationship@{Relationship}!types.h@{types.\-h}}
+\subsubsection[{Relationship}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Relationship}}}\label{types_8h_a9d625fe894d9313ec78df1d78553f32e}
+Kind of member relationship \hypertarget{types_8h_ab16236bdd10ddf4d73a9847350f0017e}{\index{types.\-h@{types.\-h}!Specifier@{Specifier}}
+\index{Specifier@{Specifier}!types.h@{types.\-h}}
+\subsubsection[{Specifier}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Specifier}}}\label{types_8h_ab16236bdd10ddf4d73a9847350f0017e}
+Virtualness of a member. \hypertarget{types_8h_a9974623ce72fc23df5d64426b9178bf2}{\index{types.\-h@{types.\-h}!Src\-Lang\-Ext@{Src\-Lang\-Ext}}
+\index{Src\-Lang\-Ext@{Src\-Lang\-Ext}!types.h@{types.\-h}}
+\subsubsection[{Src\-Lang\-Ext}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Src\-Lang\-Ext}}}\label{types_8h_a9974623ce72fc23df5d64426b9178bf2}
+Language as given by extension 

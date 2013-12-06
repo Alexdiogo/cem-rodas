@@ -1,0 +1,70 @@
+\hypertarget{class_q_text_o_stream}{\section{Referência à classe Q\-Text\-O\-Stream}
+\label{class_q_text_o_stream}\index{Q\-Text\-O\-Stream@{Q\-Text\-O\-Stream}}
+}
+
+
+\hyperlink{class_a}{A} convenience class for output streams.  
+
+
+
+
+{\ttfamily \#include $<$qtextstream.\-h$>$}
+
+Diagrama de heranças da classe Q\-Text\-O\-Stream\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_q_text_o_stream}
+\end{center}
+\end{figure}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_q_text_o_stream_aa5634f62c20b524e3ed4f09c7b15a575}{Q\-Text\-O\-Stream} (\hyperlink{class_q_string}{Q\-String} $\ast$s)
+\item 
+\hyperlink{class_q_text_o_stream_af777710c21c251449ba824025eb38d0e}{Q\-Text\-O\-Stream} (\hyperlink{class_q_array}{Q\-Byte\-Array} ba)
+\item 
+\hyperlink{class_q_text_o_stream_a4862be151cde154835b5768eb16db453}{Q\-Text\-O\-Stream} (F\-I\-L\-E $\ast$f)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Descrição detalhada}
+\hyperlink{class_a}{A} convenience class for output streams. 
+
+For simple tasks, code should be simple. Hence this class is a shorthand to avoid passing the {\itshape mode} argument to the normal \hyperlink{class_q_text_stream}{Q\-Text\-Stream} constructors.
+
+This makes it easy for example, to write things like this\-: 
+\begin{DoxyCode}
+\hyperlink{class_q_string}{QString} result;
+\hyperlink{class_q_text_o_stream_aa5634f62c20b524e3ed4f09c7b15a575}{QTextOStream}(&result) << \textcolor{stringliteral}{"pi = "} << 3.14;
+\end{DoxyCode}
+ 
+
+\subsection{Documentação dos Construtores \& Destrutor}
+\hypertarget{class_q_text_o_stream_aa5634f62c20b524e3ed4f09c7b15a575}{\index{Q\-Text\-O\-Stream@{Q\-Text\-O\-Stream}!Q\-Text\-O\-Stream@{Q\-Text\-O\-Stream}}
+\index{Q\-Text\-O\-Stream@{Q\-Text\-O\-Stream}!QTextOStream@{Q\-Text\-O\-Stream}}
+\subsubsection[{Q\-Text\-O\-Stream}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Text\-O\-Stream} (
+\begin{DoxyParamCaption}
+\item[{{\bf Q\-String} $\ast$}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_text_o_stream_aa5634f62c20b524e3ed4f09c7b15a575}
+Constructs a stream to write to string {\itshape s}. \hypertarget{class_q_text_o_stream_af777710c21c251449ba824025eb38d0e}{\index{Q\-Text\-O\-Stream@{Q\-Text\-O\-Stream}!Q\-Text\-O\-Stream@{Q\-Text\-O\-Stream}}
+\index{Q\-Text\-O\-Stream@{Q\-Text\-O\-Stream}!QTextOStream@{Q\-Text\-O\-Stream}}
+\subsubsection[{Q\-Text\-O\-Stream}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Text\-O\-Stream} (
+\begin{DoxyParamCaption}
+\item[{{\bf Q\-Byte\-Array}}]{ba}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_text_o_stream_af777710c21c251449ba824025eb38d0e}
+Constructs a stream to write to the array {\itshape ba}. \hypertarget{class_q_text_o_stream_a4862be151cde154835b5768eb16db453}{\index{Q\-Text\-O\-Stream@{Q\-Text\-O\-Stream}!Q\-Text\-O\-Stream@{Q\-Text\-O\-Stream}}
+\index{Q\-Text\-O\-Stream@{Q\-Text\-O\-Stream}!QTextOStream@{Q\-Text\-O\-Stream}}
+\subsubsection[{Q\-Text\-O\-Stream}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Text\-O\-Stream} (
+\begin{DoxyParamCaption}
+\item[{F\-I\-L\-E $\ast$}]{f}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_text_o_stream_a4862be151cde154835b5768eb16db453}
+Constructs a stream to write to the file {\itshape f}. 
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/qtools/qtextstream.\-h\item 
+C\-:/\-Users/teste/git/doxygen/qtools/qtextstream.\-cpp\end{DoxyCompactItemize}

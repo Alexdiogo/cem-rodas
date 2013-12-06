@@ -1,0 +1,1131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>CEM RODAS: Referência à classe VhdlDocGen</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">CEM RODAS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Localizar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="modules.html"><span>Módulos</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Estruturas&#160;de&#160;dados</span></a></li>
+      <li><a href="files.html"><span>Ficheiros</span></a></li>
+      <li><a href="examples.html"><span>Exemplos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Localizar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Estruturas&#160;de&#160;dados</span></a></li>
+      <li><a href="classes.html"><span>Índice&#160;das&#160;estruturas&#160;de&#160;dados</span></a></li>
+      <li><a href="hierarchy.html"><span>Hierarquia&#160;de&#160;classes</span></a></li>
+      <li><a href="functions.html"><span>Campos&#160;de&#160;dados</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tudo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Estruturas de dados</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Ficheiros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variáveis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Definições de tipos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerações</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Valores da enumeração</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Amigos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Grupos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Tipos Públicos</a> &#124;
+<a href="#pub-static-methods">Membros públicos estáticos</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência à classe VhdlDocGen</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="vhdldocgen_8h_source.html">vhdldocgen.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Tipos Públicos</h2></td></tr>
+<tr class="memitem:af0300415d82e510c4dd08c3934c29bc3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>VhdlClasses</b> { <b>ENTITYCLASS</b>, 
+<b>PACKBODYCLASS</b>, 
+<b>ARCHITECTURECLASS</b>, 
+<b>PACKAGECLASS</b>
+ }</td></tr>
+<tr class="separator:af0300415d82e510c4dd08c3934c29bc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2e689edb0ff077dc67daf48a60ca811"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>VhdlKeyWords</b> { <br/>
+&#160;&#160;<b>LIBRARY</b> =1, 
+<b>ENTITY</b>, 
+<b>PACKAGE_BODY</b>, 
+<b>ARCHITECTURE</b>, 
+<br/>
+&#160;&#160;<b>PACKAGE</b>, 
+<b>ATTRIBUTE</b>, 
+<b>SIGNAL</b>, 
+<b>COMPONENT</b>, 
+<br/>
+&#160;&#160;<b>CONSTANT</b>, 
+<b>TYPE</b>, 
+<b>SUBTYPE</b>, 
+<b>FUNCTION</b>, 
+<br/>
+&#160;&#160;<b>RECORD</b>, 
+<b>PROCEDURE</b>, 
+<b>USE</b>, 
+<b>PROCESS</b>, 
+<br/>
+&#160;&#160;<b>PORT</b>, 
+<b>UNITS</b>, 
+<b>GENERIC</b>, 
+<b>INSTANTIATION</b>, 
+<br/>
+&#160;&#160;<b>GROUP</b>, 
+<b>VFILE</b>, 
+<b>SHAREDVARIABLE</b>, 
+<b>CONFIG</b>, 
+<br/>
+&#160;&#160;<b>ALIAS</b>, 
+<b>MISCELLANEOUS</b>, 
+<b>UCF_CONST</b>
+<br/>
+ }</td></tr>
+<tr class="separator:af2e689edb0ff077dc67daf48a60ca811"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Membros públicos estáticos</h2></td></tr>
+<tr class="memitem:a02fd73d861ef2e4aabb38c0c9ff82947"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a02fd73d861ef2e4aabb38c0c9ff82947"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> ()</td></tr>
+<tr class="separator:a02fd73d861ef2e4aabb38c0c9ff82947"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0bb205f41cf85881d47e27b9981bcc4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad0bb205f41cf85881d47e27b9981bcc4"></a>
+static <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>convertFileNameToClassName</b> (<a class="el" href="class_q_c_string.html">QCString</a> name)</td></tr>
+<tr class="separator:ad0bb205f41cf85881d47e27b9981bcc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d71f54a335c7df5f749df7382fa231d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5d71f54a335c7df5f749df7382fa231d"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>isSubClass</b> (<a class="el" href="class_class_def.html">ClassDef</a> *cd, <a class="el" href="class_class_def.html">ClassDef</a> *scd, bool followInstances, int level)</td></tr>
+<tr class="separator:a5d71f54a335c7df5f749df7382fa231d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0aa621380b7c692d483cea9072c4c6d0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0aa621380b7c692d483cea9072c4c6d0"></a>
+static <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getIndexWord</b> (const char *, int index)</td></tr>
+<tr class="separator:a0aa621380b7c692d483cea9072c4c6d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1f39ec7d61cf22470c7869700c136f0"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vhdl_doc_gen.html#ab1f39ec7d61cf22470c7869700c136f0">deleteCharRev</a> (<a class="el" href="class_q_c_string.html">QCString</a> &amp;s, char c)</td></tr>
+<tr class="separator:ab1f39ec7d61cf22470c7869700c136f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bd70d10495c925c8a91595ef49e7873"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3bd70d10495c925c8a91595ef49e7873"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>deleteAllChars</b> (<a class="el" href="class_q_c_string.html">QCString</a> &amp;s, char c)</td></tr>
+<tr class="separator:a3bd70d10495c925c8a91595ef49e7873"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa61248872e13be47a3055ac7ab4f27b4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vhdl_doc_gen.html#aa61248872e13be47a3055ac7ab4f27b4">parseFuncProto</a> (const char *text, <a class="el" href="class_q_list.html">QList</a>&lt; <a class="el" href="struct_argument.html">Argument</a> &gt; &amp;, <a class="el" href="class_q_c_string.html">QCString</a> &amp;name, <a class="el" href="class_q_c_string.html">QCString</a> &amp;ret, bool doc=false)</td></tr>
+<tr class="separator:aa61248872e13be47a3055ac7ab4f27b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6482d30123e6555d52e46eae423b6c5e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6482d30123e6555d52e46eae423b6c5e"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>computeVhdlComponentRelations</b> ()</td></tr>
+<tr class="separator:a6482d30123e6555d52e46eae423b6c5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dff15905a3ffe1ea3ad292b3220f03c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_q_c_string.html">QCString</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vhdl_doc_gen.html#a4dff15905a3ffe1ea3ad292b3220f03c">findKeyWord</a> (const <a class="el" href="class_q_c_string.html">QCString</a> &amp;word)</td></tr>
+<tr class="separator:a4dff15905a3ffe1ea3ad292b3220f03c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6eec66725963cb4a8b406e7e3415a32b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6eec66725963cb4a8b406e7e3415a32b"></a>
+static <a class="el" href="class_class_def.html">ClassDef</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getPackageName</b> (const <a class="el" href="class_q_c_string.html">QCString</a> &amp;name)</td></tr>
+<tr class="separator:a6eec66725963cb4a8b406e7e3415a32b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcebbb81dd5b8d8932a1f6bd40622b4d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abcebbb81dd5b8d8932a1f6bd40622b4d"></a>
+static <a class="el" href="class_member_def.html">MemberDef</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>findMember</b> (const <a class="el" href="class_q_c_string.html">QCString</a> &amp;className, const <a class="el" href="class_q_c_string.html">QCString</a> &amp;memName)</td></tr>
+<tr class="separator:abcebbb81dd5b8d8932a1f6bd40622b4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5e99a13af827855a33d709b978f66a4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vhdl_doc_gen.html#ac5e99a13af827855a33d709b978f66a4">findAllPackages</a> (const <a class="el" href="class_q_c_string.html">QCString</a> &amp;className, QDict&lt; <a class="el" href="class_q_c_string.html">QCString</a> &gt; &amp;)</td></tr>
+<tr class="separator:ac5e99a13af827855a33d709b978f66a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae133cc93c7238573d234f6e610d52529"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_member_def.html">MemberDef</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vhdl_doc_gen.html#ae133cc93c7238573d234f6e610d52529">findMemberDef</a> (<a class="el" href="class_class_def.html">ClassDef</a> *cd, const <a class="el" href="class_q_c_string.html">QCString</a> &amp;key, MemberListType type)</td></tr>
+<tr class="separator:ae133cc93c7238573d234f6e610d52529"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a976b42d4f982a481d6065d0fa0934f64"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a976b42d4f982a481d6065d0fa0934f64"></a>
+static <a class="el" href="class_class_def.html">ClassDef</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getClass</b> (const char *name)</td></tr>
+<tr class="separator:a976b42d4f982a481d6065d0fa0934f64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad227f9422838f2eb6407d93b7e2a756"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_member_def.html">MemberDef</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vhdl_doc_gen.html#aad227f9422838f2eb6407d93b7e2a756">findFunction</a> (const <a class="el" href="class_q_list.html">QList</a>&lt; <a class="el" href="struct_argument.html">Argument</a> &gt; &amp;ql, const <a class="el" href="class_q_c_string.html">QCString</a> &amp;name, const <a class="el" href="class_q_c_string.html">QCString</a> &amp;package, bool type)</td></tr>
+<tr class="separator:aad227f9422838f2eb6407d93b7e2a756"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81f4fb8a32f2a6f3231ec024854f89b7"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vhdl_doc_gen.html#a81f4fb8a32f2a6f3231ec024854f89b7">getClassTitle</a> (const <a class="el" href="class_class_def.html">ClassDef</a> *)</td></tr>
+<tr class="separator:a81f4fb8a32f2a6f3231ec024854f89b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41e9c8e2d0a3cffea74d9daaac90e52b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vhdl_doc_gen.html#a41e9c8e2d0a3cffea74d9daaac90e52b">writeInlineClassLink</a> (const <a class="el" href="class_class_def.html">ClassDef</a> *, <a class="el" href="class_output_list.html">OutputList</a> &amp;ol)</td></tr>
+<tr class="separator:a41e9c8e2d0a3cffea74d9daaac90e52b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b4501165d95c549d49c0367a9097de8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9b4501165d95c549d49c0367a9097de8"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>isConstraint</b> (const <a class="el" href="class_member_def.html">MemberDef</a> *mdef)</td></tr>
+<tr class="separator:a9b4501165d95c549d49c0367a9097de8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affbb87d83fbe69d680cd21b06fd892be"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="affbb87d83fbe69d680cd21b06fd892be"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>isConfig</b> (const <a class="el" href="class_member_def.html">MemberDef</a> *mdef)</td></tr>
+<tr class="separator:affbb87d83fbe69d680cd21b06fd892be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8483aa148019da7e33655b3249003a95"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8483aa148019da7e33655b3249003a95"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>isAlias</b> (const <a class="el" href="class_member_def.html">MemberDef</a> *mdef)</td></tr>
+<tr class="separator:a8483aa148019da7e33655b3249003a95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acff7204891ca1294b72e72081b6c0b21"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acff7204891ca1294b72e72081b6c0b21"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>isLibrary</b> (const <a class="el" href="class_member_def.html">MemberDef</a> *mdef)</td></tr>
+<tr class="separator:acff7204891ca1294b72e72081b6c0b21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73dd21d4d73923d263683ca97f9ffd3d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a73dd21d4d73923d263683ca97f9ffd3d"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>isGeneric</b> (const <a class="el" href="class_member_def.html">MemberDef</a> *mdef)</td></tr>
+<tr class="separator:a73dd21d4d73923d263683ca97f9ffd3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a565f5b33c2f4cda0460425c35f73bfaf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a565f5b33c2f4cda0460425c35f73bfaf"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>isPort</b> (const <a class="el" href="class_member_def.html">MemberDef</a> *mdef)</td></tr>
+<tr class="separator:a565f5b33c2f4cda0460425c35f73bfaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbae6bbaf978e3858df4c40686a685c5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acbae6bbaf978e3858df4c40686a685c5"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>isComponent</b> (const <a class="el" href="class_member_def.html">MemberDef</a> *mdef)</td></tr>
+<tr class="separator:acbae6bbaf978e3858df4c40686a685c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a822a913fa43bd4f0ec1b3f01a8bc6aac"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a822a913fa43bd4f0ec1b3f01a8bc6aac"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>isPackage</b> (const <a class="el" href="class_member_def.html">MemberDef</a> *mdef)</td></tr>
+<tr class="separator:a822a913fa43bd4f0ec1b3f01a8bc6aac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9da5990a9fc64faa386188884060125c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9da5990a9fc64faa386188884060125c"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>isEntity</b> (const <a class="el" href="class_member_def.html">MemberDef</a> *mdef)</td></tr>
+<tr class="separator:a9da5990a9fc64faa386188884060125c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67f3b05d93040f929512aa0d7ff1211b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a67f3b05d93040f929512aa0d7ff1211b"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>isConstant</b> (const <a class="el" href="class_member_def.html">MemberDef</a> *mdef)</td></tr>
+<tr class="separator:a67f3b05d93040f929512aa0d7ff1211b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4f6a245cdab5754c5c48174d3d63797"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad4f6a245cdab5754c5c48174d3d63797"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>isVType</b> (const <a class="el" href="class_member_def.html">MemberDef</a> *mdef)</td></tr>
+<tr class="separator:ad4f6a245cdab5754c5c48174d3d63797"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a488a825b00bc8b3691675f281acc7b5b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a488a825b00bc8b3691675f281acc7b5b"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>isSubType</b> (const <a class="el" href="class_member_def.html">MemberDef</a> *mdef)</td></tr>
+<tr class="separator:a488a825b00bc8b3691675f281acc7b5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4076a14e6c04dc65546e5f650c6f7b71"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4076a14e6c04dc65546e5f650c6f7b71"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>isVhdlFunction</b> (const <a class="el" href="class_member_def.html">MemberDef</a> *mdef)</td></tr>
+<tr class="separator:a4076a14e6c04dc65546e5f650c6f7b71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33e05c29f5fe9ce5c836265372556952"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a33e05c29f5fe9ce5c836265372556952"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>isProcess</b> (const <a class="el" href="class_member_def.html">MemberDef</a> *mdef)</td></tr>
+<tr class="separator:a33e05c29f5fe9ce5c836265372556952"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6c6dec3012ed968a2adf41591794cb1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab6c6dec3012ed968a2adf41591794cb1"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>isSignal</b> (const <a class="el" href="class_member_def.html">MemberDef</a> *mdef)</td></tr>
+<tr class="separator:ab6c6dec3012ed968a2adf41591794cb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8150ef4491e53ca6da9fca5534ebaa99"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8150ef4491e53ca6da9fca5534ebaa99"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>isAttribute</b> (const <a class="el" href="class_member_def.html">MemberDef</a> *mdef)</td></tr>
+<tr class="separator:a8150ef4491e53ca6da9fca5534ebaa99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22e8e5e8342613d0663393db935c0937"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a22e8e5e8342613d0663393db935c0937"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>isSignals</b> (const <a class="el" href="class_member_def.html">MemberDef</a> *mdef)</td></tr>
+<tr class="separator:a22e8e5e8342613d0663393db935c0937"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8a68606e77287c3ba475e5062974ba9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac8a68606e77287c3ba475e5062974ba9"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>isProcedure</b> (const <a class="el" href="class_member_def.html">MemberDef</a> *mdef)</td></tr>
+<tr class="separator:ac8a68606e77287c3ba475e5062974ba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a790ecf0f539a209dd302b371f756e715"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a790ecf0f539a209dd302b371f756e715"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>isRecord</b> (const <a class="el" href="class_member_def.html">MemberDef</a> *mdef)</td></tr>
+<tr class="separator:a790ecf0f539a209dd302b371f756e715"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70bc0f7e1c425824fc848c9d1eaa5af5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a70bc0f7e1c425824fc848c9d1eaa5af5"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>isArchitecture</b> (const <a class="el" href="class_member_def.html">MemberDef</a> *mdef)</td></tr>
+<tr class="separator:a70bc0f7e1c425824fc848c9d1eaa5af5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad09fd50d897efd1d108c90d51a87c0ad"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad09fd50d897efd1d108c90d51a87c0ad"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>isUnit</b> (const <a class="el" href="class_member_def.html">MemberDef</a> *mdef)</td></tr>
+<tr class="separator:ad09fd50d897efd1d108c90d51a87c0ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd1b3b462f582006aea12eec1ed47b30"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acd1b3b462f582006aea12eec1ed47b30"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>isPackageBody</b> (const <a class="el" href="class_member_def.html">MemberDef</a> *mdef)</td></tr>
+<tr class="separator:acd1b3b462f582006aea12eec1ed47b30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc090ca796d4365e4ec079ce4c8e8e07"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abc090ca796d4365e4ec079ce4c8e8e07"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>isVariable</b> (const <a class="el" href="class_member_def.html">MemberDef</a> *mdef)</td></tr>
+<tr class="separator:abc090ca796d4365e4ec079ce4c8e8e07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f35f5521f5b7a7f9751b679c5d2204a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1f35f5521f5b7a7f9751b679c5d2204a"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>isFile</b> (const <a class="el" href="class_member_def.html">MemberDef</a> *mdef)</td></tr>
+<tr class="separator:a1f35f5521f5b7a7f9751b679c5d2204a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac09aca4988991e39e6bfb07fbf60f7cc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac09aca4988991e39e6bfb07fbf60f7cc"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>isGroup</b> (const <a class="el" href="class_member_def.html">MemberDef</a> *mdef)</td></tr>
+<tr class="separator:ac09aca4988991e39e6bfb07fbf60f7cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac53cf28cd95c19ea09df16b1bd949d4f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac53cf28cd95c19ea09df16b1bd949d4f"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>isCompInst</b> (const <a class="el" href="class_member_def.html">MemberDef</a> *mdef)</td></tr>
+<tr class="separator:ac53cf28cd95c19ea09df16b1bd949d4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5529bcf9004c8f48851e15c64e8986fe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5529bcf9004c8f48851e15c64e8986fe"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>isMisc</b> (const <a class="el" href="class_member_def.html">MemberDef</a> *mdef)</td></tr>
+<tr class="separator:a5529bcf9004c8f48851e15c64e8986fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac648fc9c785e6404b2f5801f1d7d5e78"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac648fc9c785e6404b2f5801f1d7d5e78"></a>
+static <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trTypeString</b> (uint64 type)</td></tr>
+<tr class="separator:ac648fc9c785e6404b2f5801f1d7d5e78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a479664f0ea6788dba432a03d2bb70fac"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a479664f0ea6788dba432a03d2bb70fac"></a>
+static <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trVhdlType</b> (uint64 type, bool sing=true)</td></tr>
+<tr class="separator:a479664f0ea6788dba432a03d2bb70fac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc0858275b47da9ca084f52cb3ac2ead"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afc0858275b47da9ca084f52cb3ac2ead"></a>
+static <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trDesignUnitHierarchy</b> ()</td></tr>
+<tr class="separator:afc0858275b47da9ca084f52cb3ac2ead"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6a3664d6372879996896226b4fb1b41"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa6a3664d6372879996896226b4fb1b41"></a>
+static <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trDesignUnitList</b> ()</td></tr>
+<tr class="separator:aa6a3664d6372879996896226b4fb1b41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8706cf236f1d9cfb4f738c3db99d1e72"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8706cf236f1d9cfb4f738c3db99d1e72"></a>
+static <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trDesignUnitMembers</b> ()</td></tr>
+<tr class="separator:a8706cf236f1d9cfb4f738c3db99d1e72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a863dc5d2fc139809a9f1925507862c09"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a863dc5d2fc139809a9f1925507862c09"></a>
+static <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trDesignUnitListDescription</b> ()</td></tr>
+<tr class="separator:a863dc5d2fc139809a9f1925507862c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6a30bd201633ef4974f4bde7654093d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad6a30bd201633ef4974f4bde7654093d"></a>
+static <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trDesignUnits</b> ()</td></tr>
+<tr class="separator:ad6a30bd201633ef4974f4bde7654093d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8aef5d261650a9efb15abf22669a5b9f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8aef5d261650a9efb15abf22669a5b9f"></a>
+static <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trDesignUnitIndex</b> ()</td></tr>
+<tr class="separator:a8aef5d261650a9efb15abf22669a5b9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8257be9159090f6bf649bb54ca0c0d4b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8257be9159090f6bf649bb54ca0c0d4b"></a>
+static <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trFunctionAndProc</b> ()</td></tr>
+<tr class="separator:a8257be9159090f6bf649bb54ca0c0d4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e45941561deb2da7b67dec0e67765bb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vhdl_doc_gen.html#a9e45941561deb2da7b67dec0e67765bb">prepareComment</a> (<a class="el" href="class_q_c_string.html">QCString</a> &amp;)</td></tr>
+<tr class="separator:a9e45941561deb2da7b67dec0e67765bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa849b15192ebee6d42eed8d8f1af853a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vhdl_doc_gen.html#aa849b15192ebee6d42eed8d8f1af853a">formatString</a> (const <a class="el" href="class_q_c_string.html">QCString</a> &amp;, <a class="el" href="class_output_list.html">OutputList</a> &amp;ol, const <a class="el" href="class_member_def.html">MemberDef</a> *)</td></tr>
+<tr class="separator:aa849b15192ebee6d42eed8d8f1af853a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0167a25254de5522492b684f34ef0381"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vhdl_doc_gen.html#a0167a25254de5522492b684f34ef0381">writeFormatString</a> (const <a class="el" href="class_q_c_string.html">QCString</a> &amp;, <a class="el" href="class_output_list.html">OutputList</a> &amp;ol, const <a class="el" href="class_member_def.html">MemberDef</a> *)</td></tr>
+<tr class="separator:a0167a25254de5522492b684f34ef0381"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a555521bd5a3a878e495163bf91ee5183"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vhdl_doc_gen.html#a555521bd5a3a878e495163bf91ee5183">writeFunctionProto</a> (<a class="el" href="class_output_list.html">OutputList</a> &amp;ol, const <a class="el" href="class_argument_list.html">ArgumentList</a> *al, const <a class="el" href="class_member_def.html">MemberDef</a> *)</td></tr>
+<tr class="separator:a555521bd5a3a878e495163bf91ee5183"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c3dc5f2dbbf02fb5069ccdb24932ff5"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vhdl_doc_gen.html#a9c3dc5f2dbbf02fb5069ccdb24932ff5">writeProcessProto</a> (<a class="el" href="class_output_list.html">OutputList</a> &amp;ol, const <a class="el" href="class_argument_list.html">ArgumentList</a> *al, const <a class="el" href="class_member_def.html">MemberDef</a> *)</td></tr>
+<tr class="separator:a9c3dc5f2dbbf02fb5069ccdb24932ff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39ad1b0e4466b1c23383a94f534d4161"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vhdl_doc_gen.html#a39ad1b0e4466b1c23383a94f534d4161">writeProcedureProto</a> (<a class="el" href="class_output_list.html">OutputList</a> &amp;ol, const <a class="el" href="class_argument_list.html">ArgumentList</a> *al, const <a class="el" href="class_member_def.html">MemberDef</a> *)</td></tr>
+<tr class="separator:a39ad1b0e4466b1c23383a94f534d4161"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6df064ed1e6fbbda5f7c9d27126d62fa"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vhdl_doc_gen.html#a6df064ed1e6fbbda5f7c9d27126d62fa">writeFuncProcDocu</a> (const <a class="el" href="class_member_def.html">MemberDef</a> *mdef, <a class="el" href="class_output_list.html">OutputList</a> &amp;ol, const <a class="el" href="class_argument_list.html">ArgumentList</a> *al, bool type=false)</td></tr>
+<tr class="separator:a6df064ed1e6fbbda5f7c9d27126d62fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab538f871c49892142372d7cc7f700ba7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab538f871c49892142372d7cc7f700ba7"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>writeRecordProto</b> (const <a class="el" href="class_member_def.html">MemberDef</a> *mdef, <a class="el" href="class_output_list.html">OutputList</a> &amp;ol, const <a class="el" href="class_argument_list.html">ArgumentList</a> *al)</td></tr>
+<tr class="separator:ab538f871c49892142372d7cc7f700ba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dbd9143ef6004ef23f16d50be2ba5a5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8dbd9143ef6004ef23f16d50be2ba5a5"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>writeVHDLTypeDocumentation</b> (const <a class="el" href="class_member_def.html">MemberDef</a> *mdef, const <a class="el" href="class_definition.html">Definition</a> *d, <a class="el" href="class_output_list.html">OutputList</a> &amp;ol)</td></tr>
+<tr class="separator:a8dbd9143ef6004ef23f16d50be2ba5a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24c93b8f2a3285df8faec4e77a6e270d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a24c93b8f2a3285df8faec4e77a6e270d"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>writeVhdlDeclarations</b> (<a class="el" href="class_member_list.html">MemberList</a> *, <a class="el" href="class_output_list.html">OutputList</a> &amp;, <a class="el" href="class_group_def.html">GroupDef</a> *, <a class="el" href="class_class_def.html">ClassDef</a> *, <a class="el" href="class_file_def.html">FileDef</a> *, <a class="el" href="class_namespace_def.html">NamespaceDef</a> *)</td></tr>
+<tr class="separator:a24c93b8f2a3285df8faec4e77a6e270d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc7705b9712afec388c1c7a794828c44"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vhdl_doc_gen.html#afc7705b9712afec388c1c7a794828c44">writeVHDLDeclaration</a> (<a class="el" href="class_member_def.html">MemberDef</a> *mdef, <a class="el" href="class_output_list.html">OutputList</a> &amp;ol, <a class="el" href="class_class_def.html">ClassDef</a> *cd, <a class="el" href="class_namespace_def.html">NamespaceDef</a> *nd, <a class="el" href="class_file_def.html">FileDef</a> *fd, <a class="el" href="class_group_def.html">GroupDef</a> *gd, bool inGroup)</td></tr>
+<tr class="separator:afc7705b9712afec388c1c7a794828c44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8ca424f1bfba21049456061e36dc1fa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac8ca424f1bfba21049456061e36dc1fa"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>writePlainVHDLDeclarations</b> (<a class="el" href="class_member_list.html">MemberList</a> *ml, <a class="el" href="class_output_list.html">OutputList</a> &amp;ol, <a class="el" href="class_class_def.html">ClassDef</a> *cd, <a class="el" href="class_namespace_def.html">NamespaceDef</a> *nd, <a class="el" href="class_file_def.html">FileDef</a> *fd, <a class="el" href="class_group_def.html">GroupDef</a> *gd, int specifier)</td></tr>
+<tr class="separator:ac8ca424f1bfba21049456061e36dc1fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab69d5b2cc0c3de587b893116db3970a2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab69d5b2cc0c3de587b893116db3970a2"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>writeVHDLDeclarations</b> (<a class="el" href="class_member_list.html">MemberList</a> *ml, <a class="el" href="class_output_list.html">OutputList</a> &amp;ol, <a class="el" href="class_class_def.html">ClassDef</a> *cd, <a class="el" href="class_namespace_def.html">NamespaceDef</a> *nd, <a class="el" href="class_file_def.html">FileDef</a> *fd, <a class="el" href="class_group_def.html">GroupDef</a> *gd, const char *title, const char *subtitle, bool showEnumValues, int type)</td></tr>
+<tr class="separator:ab69d5b2cc0c3de587b893116db3970a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47abdf935ef97abba9f0a41a2d289b25"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a47abdf935ef97abba9f0a41a2d289b25"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>writeClassType</b> (<a class="el" href="class_class_def.html">ClassDef</a> *&amp;, <a class="el" href="class_output_list.html">OutputList</a> &amp;ol, <a class="el" href="class_q_c_string.html">QCString</a> &amp;cname)</td></tr>
+<tr class="separator:a47abdf935ef97abba9f0a41a2d289b25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bb091b1aa64af5cc98c4e3cdb56a6a0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3bb091b1aa64af5cc98c4e3cdb56a6a0"></a>
+static <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>convertArgumentListToString</b> (const <a class="el" href="class_argument_list.html">ArgumentList</a> *al, bool f)</td></tr>
+<tr class="separator:a3bb091b1aa64af5cc98c4e3cdb56a6a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a518eb84d22b09c7cee4e11ea55ba5ee5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vhdl_doc_gen.html#a518eb84d22b09c7cee4e11ea55ba5ee5">getProcessNumber</a> ()</td></tr>
+<tr class="separator:a518eb84d22b09c7cee4e11ea55ba5ee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a7fdba7cc550c0e88f4d3a12db4808c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vhdl_doc_gen.html#a9a7fdba7cc550c0e88f4d3a12db4808c">getRecordNumber</a> ()</td></tr>
+<tr class="separator:a9a7fdba7cc550c0e88f4d3a12db4808c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1254e534fa096e9d461e160fc73a88c0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1254e534fa096e9d461e160fc73a88c0"></a>
+static <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getClassName</b> (const <a class="el" href="class_class_def.html">ClassDef</a> *)</td></tr>
+<tr class="separator:a1254e534fa096e9d461e160fc73a88c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c29fa167190411b4bdf3440c9cc71cd"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vhdl_doc_gen.html#a8c29fa167190411b4bdf3440c9cc71cd">isNumber</a> (const <a class="el" href="class_q_c_string.html">QCString</a> &amp;s)</td></tr>
+<tr class="separator:a8c29fa167190411b4bdf3440c9cc71cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bd29e244534d299615fa6f85ae26518"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8bd29e244534d299615fa6f85ae26518"></a>
+static <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getProtectionName</b> (int prot)</td></tr>
+<tr class="separator:a8bd29e244534d299615fa6f85ae26518"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0177773ba434a06b2964a1dc59780c4a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0177773ba434a06b2964a1dc59780c4a"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>parseUCF</b> (const char *input, <a class="el" href="class_entry.html">Entry</a> *entity, <a class="el" href="class_q_c_string.html">QCString</a> f, bool vendor)</td></tr>
+<tr class="separator:a0177773ba434a06b2964a1dc59780c4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad907e0459c4156bca2a10fa4d8c492f3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad907e0459c4156bca2a10fa4d8c492f3"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>findConstraintFile</b> (<a class="el" href="struct_layout_nav_entry.html">LayoutNavEntry</a> *lne)</td></tr>
+<tr class="separator:ad907e0459c4156bca2a10fa4d8c492f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76e6881560dc632ffb731268166138b2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a76e6881560dc632ffb731268166138b2"></a>
+static <a class="el" href="class_class_def.html">ClassDef</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>findArchitecture</b> (const <a class="el" href="class_class_def.html">ClassDef</a> *cd)</td></tr>
+<tr class="separator:a76e6881560dc632ffb731268166138b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af992c3ad599c82a7b4fa4fd2f49c72bf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af992c3ad599c82a7b4fa4fd2f49c72bf"></a>
+static <a class="el" href="class_class_def.html">ClassDef</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>findArchitecture</b> (<a class="el" href="class_q_c_string.html">QCString</a> identifier, <a class="el" href="class_q_c_string.html">QCString</a> entity_name)</td></tr>
+<tr class="separator:af992c3ad599c82a7b4fa4fd2f49c72bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dcfc6dbb2ea090f1a431d0512bad51a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5dcfc6dbb2ea090f1a431d0512bad51a"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>writeSource</b> (<a class="el" href="class_member_def.html">MemberDef</a> *mdef, <a class="el" href="class_output_list.html">OutputList</a> &amp;ol, <a class="el" href="class_q_c_string.html">QCString</a> &amp;cname)</td></tr>
+<tr class="separator:a5dcfc6dbb2ea090f1a431d0512bad51a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc59a5c9c28df1f76aeb9ffdacce0f73"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adc59a5c9c28df1f76aeb9ffdacce0f73"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>writeAlphbeticalClass</b> (<a class="el" href="class_output_list.html">OutputList</a> &amp;ol, const <a class="el" href="class_class_def.html">ClassDef</a> *cd, const <a class="el" href="class_q_c_string.html">QCString</a> &amp;)</td></tr>
+<tr class="separator:adc59a5c9c28df1f76aeb9ffdacce0f73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa499f11043aa976c0ac2bf01a1fbbfa0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa499f11043aa976c0ac2bf01a1fbbfa0"></a>
+static <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>parseForConfig</b> (<a class="el" href="class_q_c_string.html">QCString</a> &amp;entity, <a class="el" href="class_q_c_string.html">QCString</a> &amp;arch)</td></tr>
+<tr class="separator:aa499f11043aa976c0ac2bf01a1fbbfa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a264c742e8a529a6efee535681e3bcada"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a264c742e8a529a6efee535681e3bcada"></a>
+static <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>parseForBinding</b> (<a class="el" href="class_q_c_string.html">QCString</a> &amp;entity, <a class="el" href="class_q_c_string.html">QCString</a> &amp;arch)</td></tr>
+<tr class="separator:a264c742e8a529a6efee535681e3bcada"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcffc8e731c1f8dae9ac224e39645537"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adcffc8e731c1f8dae9ac224e39645537"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>addBaseClass</b> (<a class="el" href="class_class_def.html">ClassDef</a> *cd, <a class="el" href="class_class_def.html">ClassDef</a> *ent)</td></tr>
+<tr class="separator:adcffc8e731c1f8dae9ac224e39645537"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac740b3075d4b930fafd6e73372a3ed92"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac740b3075d4b930fafd6e73372a3ed92"></a>
+static <a class="el" href="class_class_def.html">ClassDef</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>findVhdlClass</b> (const char *className)</td></tr>
+<tr class="separator:ac740b3075d4b930fafd6e73372a3ed92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f178dbadf5248e1456903a4c0030c4b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6f178dbadf5248e1456903a4c0030c4b"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>writeOverview</b> (<a class="el" href="class_output_list.html">OutputList</a> &amp;ol)</td></tr>
+<tr class="separator:a6f178dbadf5248e1456903a4c0030c4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5d1360dd38f28df497fb2b7e8a49ac6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab5d1360dd38f28df497fb2b7e8a49ac6"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>writeOverview</b> ()</td></tr>
+<tr class="separator:ab5d1360dd38f28df497fb2b7e8a49ac6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac681cd5515228d8bb3c8935cc9db91ba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac681cd5515228d8bb3c8935cc9db91ba"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>createFlowChart</b> (const <a class="el" href="class_member_def.html">MemberDef</a> *)</td></tr>
+<tr class="separator:ac681cd5515228d8bb3c8935cc9db91ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96669058dcfe93b1094a0723e5d053f0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a96669058dcfe93b1094a0723e5d053f0"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>setFlowMember</b> (const <a class="el" href="class_member_def.html">MemberDef</a> *flowMember)</td></tr>
+<tr class="separator:a96669058dcfe93b1094a0723e5d053f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7928c4efbf1276db716bfe5e26325ae2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7928c4efbf1276db716bfe5e26325ae2"></a>
+static const <a class="el" href="class_member_def.html">MemberDef</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getFlowMember</b> ()</td></tr>
+<tr class="separator:a7928c4efbf1276db716bfe5e26325ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7ec88e1992f708d9bd7803df43141d4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa7ec88e1992f708d9bd7803df43141d4"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>isVhdlClass</b> (const <a class="el" href="class_entry.html">Entry</a> *cu)</td></tr>
+<tr class="separator:aa7ec88e1992f708d9bd7803df43141d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Class for generating documentation specific for VHDL </p>
+</div><h2 class="groupheader">Documentação dos métodos</h2>
+<a class="anchor" id="ab1f39ec7d61cf22470c7869700c136f0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool deleteCharRev </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_q_c_string.html">QCString</a> &amp;&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>c</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>deletes a char backwards in a string </p>
+
+</div>
+</div>
+<a class="anchor" id="ac5e99a13af827855a33d709b978f66a4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void findAllPackages </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_q_c_string.html">QCString</a> &amp;&#160;</td>
+          <td class="paramname"><em>className</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QDict&lt; <a class="el" href="class_q_c_string.html">QCString</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>qdict</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>finds all included packages of an Entity or Package </p>
+
+</div>
+</div>
+<a class="anchor" id="aad227f9422838f2eb6407d93b7e2a756"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_member_def.html">MemberDef</a> * findFunction </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_q_list.html">QList</a>&lt; <a class="el" href="struct_argument.html">Argument</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ql</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_q_c_string.html">QCString</a> &amp;&#160;</td>
+          <td class="paramname"><em>funcname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_q_c_string.html">QCString</a> &amp;&#160;</td>
+          <td class="paramname"><em>package</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>returns the function with the matching argument list is called in vhdlcode.l </p>
+
+</div>
+</div>
+<a class="anchor" id="a4dff15905a3ffe1ea3ad292b3220f03c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_c_string.html">QCString</a> * findKeyWord </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_q_c_string.html">QCString</a> &amp;&#160;</td>
+          <td class="paramname"><em>word</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>returns the color of a keyword </p>
+
+</div>
+</div>
+<a class="anchor" id="ae133cc93c7238573d234f6e610d52529"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_member_def.html">MemberDef</a> * findMemberDef </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_class_def.html">ClassDef</a> *&#160;</td>
+          <td class="paramname"><em>cd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_q_c_string.html">QCString</a> &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MemberListType&#160;</td>
+          <td class="paramname"><em>type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This function returns the entity|package in which the key (type) is found </p>
+
+</div>
+</div>
+<a class="anchor" id="aa849b15192ebee6d42eed8d8f1af853a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void formatString </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_q_c_string.html">QCString</a> &amp;&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_output_list.html">OutputList</a> &amp;&#160;</td>
+          <td class="paramname"><em>ol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_member_def.html">MemberDef</a> *&#160;</td>
+          <td class="paramname"><em>mdef</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>inserts white spaces for better readings and writes a colored string to the output </p>
+
+</div>
+</div>
+<a class="anchor" id="a81f4fb8a32f2a6f3231ec024854f89b7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_c_string.html">QCString</a> getClassTitle </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_class_def.html">ClassDef</a> *&#160;</td>
+          <td class="paramname"><em>cd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>returns the class title+ref </p>
+
+</div>
+</div>
+<a class="anchor" id="a518eb84d22b09c7cee4e11ea55ba5ee5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_c_string.html">QCString</a> getProcessNumber </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>returns the next number of an anonymous process </p>
+
+</div>
+</div>
+<a class="anchor" id="a9a7fdba7cc550c0e88f4d3a12db4808c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_c_string.html">QCString</a> getRecordNumber </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>returns the next number of a record|unit member </p>
+
+</div>
+</div>
+<a class="anchor" id="a8c29fa167190411b4bdf3440c9cc71cd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isNumber </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_q_c_string.html">QCString</a> &amp;&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>returns TRUE if this string is a number </p>
+
+</div>
+</div>
+<a class="anchor" id="aa61248872e13be47a3055ac7ab4f27b4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void parseFuncProto </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_q_list.html">QList</a>&lt; <a class="el" href="struct_argument.html">Argument</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>qlist</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_q_c_string.html">QCString</a> &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_q_c_string.html">QCString</a> &amp;&#160;</td>
+          <td class="paramname"><em>ret</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>doc</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>parses a function proto </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>function string </td></tr>
+    <tr><td class="paramname">qlist</td><td>stores the function types </td></tr>
+    <tr><td class="paramname">name</td><td>points to the function name </td></tr>
+    <tr><td class="paramname">ret</td><td>Stores the return type </td></tr>
+    <tr><td class="paramname">doc</td><td>??? </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a9e45941561deb2da7b67dec0e67765bb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void prepareComment </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_q_c_string.html">QCString</a> &amp;&#160;</td>
+          <td class="paramname"><em>qcs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>strips the "--" prefixes of vhdl comments </p>
+
+</div>
+</div>
+<a class="anchor" id="a0167a25254de5522492b684f34ef0381"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void writeFormatString </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_q_c_string.html">QCString</a> &amp;&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_output_list.html">OutputList</a> &amp;&#160;</td>
+          <td class="paramname"><em>ol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_member_def.html">MemberDef</a> *&#160;</td>
+          <td class="paramname"><em>mdef</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>writes a colored and formatted string </p>
+
+</div>
+</div>
+<a class="anchor" id="a6df064ed1e6fbbda5f7c9d27126d62fa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool writeFuncProcDocu </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_member_def.html">MemberDef</a> *&#160;</td>
+          <td class="paramname"><em>md</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_output_list.html">OutputList</a> &amp;&#160;</td>
+          <td class="paramname"><em>ol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_argument_list.html">ArgumentList</a> *&#160;</td>
+          <td class="paramname"><em>al</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>type</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>writes a function|procedure documentation to the output </p>
+
+</div>
+</div>
+<a class="anchor" id="a555521bd5a3a878e495163bf91ee5183"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void writeFunctionProto </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_output_list.html">OutputList</a> &amp;&#160;</td>
+          <td class="paramname"><em>ol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_argument_list.html">ArgumentList</a> *&#160;</td>
+          <td class="paramname"><em>al</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_member_def.html">MemberDef</a> *&#160;</td>
+          <td class="paramname"><em>mdef</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>writes a function prototype to the output </p>
+
+</div>
+</div>
+<a class="anchor" id="a41e9c8e2d0a3cffea74d9daaac90e52b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void writeInlineClassLink </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_class_def.html">ClassDef</a> *&#160;</td>
+          <td class="paramname"><em>cd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_output_list.html">OutputList</a> &amp;&#160;</td>
+          <td class="paramname"><em>ol</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>writes an inline link form entity|package to architecture|package body and vice verca </p>
+
+</div>
+</div>
+<a class="anchor" id="a39ad1b0e4466b1c23383a94f534d4161"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void writeProcedureProto </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_output_list.html">OutputList</a> &amp;&#160;</td>
+          <td class="paramname"><em>ol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_argument_list.html">ArgumentList</a> *&#160;</td>
+          <td class="paramname"><em>al</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_member_def.html">MemberDef</a> *&#160;</td>
+          <td class="paramname"><em>mdef</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>writes a procedure prototype to the output </p>
+
+</div>
+</div>
+<a class="anchor" id="a9c3dc5f2dbbf02fb5069ccdb24932ff5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void writeProcessProto </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_output_list.html">OutputList</a> &amp;&#160;</td>
+          <td class="paramname"><em>ol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_argument_list.html">ArgumentList</a> *&#160;</td>
+          <td class="paramname"><em>al</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_member_def.html">MemberDef</a> *&#160;</td>
+          <td class="paramname"><em>mdef</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>writes a process prototype to the output </p>
+
+</div>
+</div>
+<a class="anchor" id="afc7705b9712afec388c1c7a794828c44"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void writeVHDLDeclaration </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_member_def.html">MemberDef</a> *&#160;</td>
+          <td class="paramname"><em>mdef</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_output_list.html">OutputList</a> &amp;&#160;</td>
+          <td class="paramname"><em>ol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_class_def.html">ClassDef</a> *&#160;</td>
+          <td class="paramname"><em>cd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_namespace_def.html">NamespaceDef</a> *&#160;</td>
+          <td class="paramname"><em>nd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_file_def.html">FileDef</a> *&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_group_def.html">GroupDef</a> *&#160;</td>
+          <td class="paramname"><em>gd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>inGroup</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>printf("startMemberItem for %s\n",name().data()); </p>
+
+</div>
+</div>
+<hr/>A documentação para esta classe foi gerada a partir dos seguintes ficheiros:<ul>
+<li>C:/Users/teste/git/doxygen/src/<a class="el" href="vhdldocgen_8h_source.html">vhdldocgen.h</a></li>
+<li>C:/Users/teste/git/doxygen/src/vhdldocgen.cpp</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado em Quinta, 28 de Novembro de 2013 22:45:01 para CEM RODAS por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

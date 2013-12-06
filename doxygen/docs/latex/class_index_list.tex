@@ -1,0 +1,91 @@
+\hypertarget{class_index_list}{\section{Referência à classe Index\-List}
+\label{class_index_list}\index{Index\-List@{Index\-List}}
+}
+
+
+\hyperlink{class_a}{A} list of index interfaces.  
+
+
+
+
+{\ttfamily \#include $<$index.\-h$>$}
+
+Diagrama de heranças da classe Index\-List\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_index_list}
+\end{center}
+\end{figure}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_index_list_a07a99092edd15c653e57afb84f5ba33e}{Index\-List} ()
+\item 
+void \hyperlink{class_index_list_aaef2ed6fcf52afb255b6c6752805a5ab}{add\-Index} (\hyperlink{class_index_intf}{Index\-Intf} $\ast$intf)
+\item 
+\hypertarget{class_index_list_a8cfbbe53c1cf6e3054736daea3044c0f}{void {\bfseries disable} ()}\label{class_index_list_a8cfbbe53c1cf6e3054736daea3044c0f}
+
+\item 
+\hypertarget{class_index_list_a486f22824bd83c5308a0d70ffac6f758}{void {\bfseries enable} ()}\label{class_index_list_a486f22824bd83c5308a0d70ffac6f758}
+
+\item 
+\hypertarget{class_index_list_ae2931e09e0fd8eac15c83f0254b4e4ac}{bool {\bfseries is\-Enabled} () const }\label{class_index_list_ae2931e09e0fd8eac15c83f0254b4e4ac}
+
+\item 
+\hypertarget{class_index_list_a25a40b6614565f755233080a384c35f1}{void {\bfseries initialize} ()}\label{class_index_list_a25a40b6614565f755233080a384c35f1}
+
+\item 
+\hypertarget{class_index_list_a32d626626eee0bc4ade146973f6abb1c}{void {\bfseries finalize} ()}\label{class_index_list_a32d626626eee0bc4ade146973f6abb1c}
+
+\item 
+\hypertarget{class_index_list_a96772b5eeae8044b3308f63fb040c253}{void {\bfseries inc\-Contents\-Depth} ()}\label{class_index_list_a96772b5eeae8044b3308f63fb040c253}
+
+\item 
+\hypertarget{class_index_list_a3a6a2629dd91105d0048f0d0a9f7f983}{void {\bfseries dec\-Contents\-Depth} ()}\label{class_index_list_a3a6a2629dd91105d0048f0d0a9f7f983}
+
+\item 
+\hypertarget{class_index_list_aa49d319f9fb9c90b564389911af4aac3}{void {\bfseries add\-Contents\-Item} (bool is\-Dir, const char $\ast$name, const char $\ast$ref, const char $\ast$file, const char $\ast$anchor, bool separate\-Index=F\-A\-L\-S\-E, bool add\-To\-Nav\-Index=F\-A\-L\-S\-E, \hyperlink{class_definition}{Definition} $\ast$def=0)}\label{class_index_list_aa49d319f9fb9c90b564389911af4aac3}
+
+\item 
+\hypertarget{class_index_list_ae5e1f2ab9489a1fb7798dcc9cce58fae}{void {\bfseries add\-Index\-Item} (\hyperlink{class_definition}{Definition} $\ast$context, \hyperlink{class_member_def}{Member\-Def} $\ast$md, const char $\ast$section\-Anchor=0, const char $\ast$title=0)}\label{class_index_list_ae5e1f2ab9489a1fb7798dcc9cce58fae}
+
+\item 
+\hypertarget{class_index_list_a8e569c4ea40f30de2accf0a87b7d8d30}{void {\bfseries add\-Index\-File} (const char $\ast$name)}\label{class_index_list_a8e569c4ea40f30de2accf0a87b7d8d30}
+
+\item 
+\hypertarget{class_index_list_aefbd88dbfc0690476b7430a480dcec6c}{void {\bfseries add\-Image\-File} (const char $\ast$name)}\label{class_index_list_aefbd88dbfc0690476b7430a480dcec6c}
+
+\item 
+\hypertarget{class_index_list_a6c501a6ffa3459c75470e5c532073ff5}{void {\bfseries add\-Style\-Sheet\-File} (const char $\ast$name)}\label{class_index_list_a6c501a6ffa3459c75470e5c532073ff5}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+\hyperlink{class_a}{A} list of index interfaces. 
+
+This class itself implements all methods of \hyperlink{class_index_intf}{Index\-Intf} and just forwards the calls to all items in the list. 
+
+\subsection{Documentação dos Construtores \& Destrutor}
+\hypertarget{class_index_list_a07a99092edd15c653e57afb84f5ba33e}{\index{Index\-List@{Index\-List}!Index\-List@{Index\-List}}
+\index{Index\-List@{Index\-List}!IndexList@{Index\-List}}
+\subsubsection[{Index\-List}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Index\-List} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_index_list_a07a99092edd15c653e57afb84f5ba33e}
+Creates a list of indexes 
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_index_list_aaef2ed6fcf52afb255b6c6752805a5ab}{\index{Index\-List@{Index\-List}!add\-Index@{add\-Index}}
+\index{add\-Index@{add\-Index}!IndexList@{Index\-List}}
+\subsubsection[{add\-Index}]{\setlength{\rightskip}{0pt plus 5cm}void add\-Index (
+\begin{DoxyParamCaption}
+\item[{{\bf Index\-Intf} $\ast$}]{intf}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_index_list_aaef2ed6fcf52afb255b6c6752805a5ab}
+Add an index generator to the list 
+
+A documentação para esta classe foi gerada a partir do seguinte ficheiro\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/src/index.\-h\end{DoxyCompactItemize}

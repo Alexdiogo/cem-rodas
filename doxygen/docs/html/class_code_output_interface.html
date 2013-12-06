@@ -1,0 +1,500 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>CEM RODAS: Referência à classe CodeOutputInterface</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">CEM RODAS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Localizar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="modules.html"><span>Módulos</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Estruturas&#160;de&#160;dados</span></a></li>
+      <li><a href="files.html"><span>Ficheiros</span></a></li>
+      <li><a href="examples.html"><span>Exemplos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Localizar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Estruturas&#160;de&#160;dados</span></a></li>
+      <li><a href="classes.html"><span>Índice&#160;das&#160;estruturas&#160;de&#160;dados</span></a></li>
+      <li><a href="hierarchy.html"><span>Hierarquia&#160;de&#160;classes</span></a></li>
+      <li><a href="functions.html"><span>Campos&#160;de&#160;dados</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tudo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Estruturas de dados</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Ficheiros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variáveis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Definições de tipos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerações</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Valores da enumeração</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Amigos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Grupos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Membros públicos</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência à classe CodeOutputInterface<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="outputgen_8h_source.html">outputgen.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagrama de heranças da classe CodeOutputInterface</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_code_output_interface.png" usemap="#CodeOutputInterface_map" alt=""/>
+  <map id="CodeOutputInterface_map" name="CodeOutputInterface_map">
+<area href="class_base_output_doc_interface.html" alt="BaseOutputDocInterface" shape="rect" coords="222,56,390,80"/>
+<area href="class_dev_null_code_doc_interface.html" alt="DevNullCodeDocInterface" shape="rect" coords="400,56,568,80"/>
+<area href="class_docbook_code_generator.html" alt="DocbookCodeGenerator" shape="rect" coords="578,56,746,80"/>
+<area href="class_html_code_generator.html" alt="HtmlCodeGenerator" shape="rect" coords="756,56,924,80"/>
+<area href="class_x_m_l_code_generator.html" alt="XMLCodeGenerator" shape="rect" coords="934,56,1102,80"/>
+<area href="class_x_ref_dummy_code_generator.html" alt="XRefDummyCodeGenerator" shape="rect" coords="1112,56,1280,80"/>
+<area href="class_output_doc_interface.html" alt="OutputDocInterface" shape="rect" coords="0,112,168,136"/>
+<area href="class_output_generator.html" alt="OutputGenerator" shape="rect" coords="445,112,613,136"/>
+<area href="class_output_list.html" alt="OutputList" shape="rect" coords="0,168,168,192"/>
+<area href="class_html_generator.html" alt="HtmlGenerator" shape="rect" coords="178,168,346,192"/>
+<area href="class_latex_generator.html" alt="LatexGenerator" shape="rect" coords="356,168,524,192"/>
+<area href="class_man_generator.html" alt="ManGenerator" shape="rect" coords="534,168,702,192"/>
+<area href="class_r_t_f_generator.html" alt="RTFGenerator" shape="rect" coords="712,168,880,192"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Membros públicos</h2></td></tr>
+<tr class="memitem:abc701d9798e414eae3e9694be75dfa8a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_code_output_interface.html#abc701d9798e414eae3e9694be75dfa8a">codify</a> (const char *s)=0</td></tr>
+<tr class="separator:abc701d9798e414eae3e9694be75dfa8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21e25662f2bc8efbb5bbb8503aeae97f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_code_output_interface.html#a21e25662f2bc8efbb5bbb8503aeae97f">writeCodeLink</a> (const char *ref, const char *file, const char *anchor, const char *name, const char *tooltip)=0</td></tr>
+<tr class="separator:a21e25662f2bc8efbb5bbb8503aeae97f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30af4b3b6e39508a95ba3219d1ba8323"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_code_output_interface.html#a30af4b3b6e39508a95ba3219d1ba8323">writeLineNumber</a> (const char *ref, const char *file, const char *anchor, int lineNumber)=0</td></tr>
+<tr class="separator:a30af4b3b6e39508a95ba3219d1ba8323"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ab86013abbf61a86e9c300eb805939a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_code_output_interface.html#a4ab86013abbf61a86e9c300eb805939a">writeTooltip</a> (const char *id, const <a class="el" href="struct_doc_link_info.html">DocLinkInfo</a> &amp;docInfo, const char *decl, const char *desc, const <a class="el" href="struct_source_link_info.html">SourceLinkInfo</a> &amp;defInfo, const <a class="el" href="struct_source_link_info.html">SourceLinkInfo</a> &amp;declInfo)=0</td></tr>
+<tr class="separator:a4ab86013abbf61a86e9c300eb805939a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06d83d3279f21b34d89fbc6f2a303fb8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a06d83d3279f21b34d89fbc6f2a303fb8"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>startCodeLine</b> (bool hasLineNumbers)=0</td></tr>
+<tr class="separator:a06d83d3279f21b34d89fbc6f2a303fb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a542863fa8a9697696ffc4d4b24678e1f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_code_output_interface.html#a542863fa8a9697696ffc4d4b24678e1f">endCodeLine</a> ()=0</td></tr>
+<tr class="separator:a542863fa8a9697696ffc4d4b24678e1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa0bdadd117e161c87149d902d70c863"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_code_output_interface.html#aaa0bdadd117e161c87149d902d70c863">startFontClass</a> (const char *clsName)=0</td></tr>
+<tr class="separator:aaa0bdadd117e161c87149d902d70c863"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcd22acfbc1c4c011802334b78cf5f01"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_code_output_interface.html#adcd22acfbc1c4c011802334b78cf5f01">endFontClass</a> ()=0</td></tr>
+<tr class="separator:adcd22acfbc1c4c011802334b78cf5f01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa29ff881359360e41a251d1d69fae142"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_code_output_interface.html#aa29ff881359360e41a251d1d69fae142">writeCodeAnchor</a> (const char *name)=0</td></tr>
+<tr class="separator:aa29ff881359360e41a251d1d69fae142"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a502e52b0cfa87df3d69840bb425f41e9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a502e52b0cfa87df3d69840bb425f41e9"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setCurrentDoc</b> (<a class="el" href="class_definition.html">Definition</a> *context, const char *anchor, bool isSourceFile)=0</td></tr>
+<tr class="separator:a502e52b0cfa87df3d69840bb425f41e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a323777067b6847c3e2fa3ab8cd5ed3bc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a323777067b6847c3e2fa3ab8cd5ed3bc"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>addWord</b> (const char *word, bool hiPriority)=0</td></tr>
+<tr class="separator:a323777067b6847c3e2fa3ab8cd5ed3bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Output interface for code parser. </p>
+</div><h2 class="groupheader">Documentação dos métodos</h2>
+<a class="anchor" id="abc701d9798e414eae3e9694be75dfa8a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void codify </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Writes an code fragment to the output. This function should keep spaces visible, should break lines at a newline and should convert tabs to the right number of spaces. </p>
+
+<p>Implementado em <a class="el" href="class_x_m_l_code_generator.html#a96b26b0cb63719fd5370a9a04d2ebb38">XMLCodeGenerator</a>, <a class="el" href="class_docbook_code_generator.html#a96b26b0cb63719fd5370a9a04d2ebb38">DocbookCodeGenerator</a>, <a class="el" href="class_output_list.html#ad58b50196a8176a68df41aabcaf6a8b7">OutputList</a>, <a class="el" href="class_html_generator.html#a96b26b0cb63719fd5370a9a04d2ebb38">HtmlGenerator</a>, <a class="el" href="class_latex_generator.html#a96b26b0cb63719fd5370a9a04d2ebb38">LatexGenerator</a>, <a class="el" href="class_man_generator.html#a96b26b0cb63719fd5370a9a04d2ebb38">ManGenerator</a>, <a class="el" href="class_r_t_f_generator.html#a96b26b0cb63719fd5370a9a04d2ebb38">RTFGenerator</a>, <a class="el" href="class_dev_null_code_doc_interface.html#ae795c13518eb3523e41920859b64bae3">DevNullCodeDocInterface</a>, <a class="el" href="class_x_ref_dummy_code_generator.html#a9e08a84e260e7b42a2dd202bfec80344">XRefDummyCodeGenerator</a> e <a class="el" href="class_html_code_generator.html#a96b26b0cb63719fd5370a9a04d2ebb38">HtmlCodeGenerator</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a542863fa8a9697696ffc4d4b24678e1f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void endCodeLine </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Ends a line of code started with startCodeLine() </p>
+
+<p>Implementado em <a class="el" href="class_x_m_l_code_generator.html#adbe51a89cf6f9573b3434e7cfda81a7c">XMLCodeGenerator</a>, <a class="el" href="class_output_list.html#adbe51a89cf6f9573b3434e7cfda81a7c">OutputList</a>, <a class="el" href="class_docbook_code_generator.html#adbe51a89cf6f9573b3434e7cfda81a7c">DocbookCodeGenerator</a>, <a class="el" href="class_latex_generator.html#adbe51a89cf6f9573b3434e7cfda81a7c">LatexGenerator</a>, <a class="el" href="class_man_generator.html#adbe51a89cf6f9573b3434e7cfda81a7c">ManGenerator</a>, <a class="el" href="class_r_t_f_generator.html#adbe51a89cf6f9573b3434e7cfda81a7c">RTFGenerator</a>, <a class="el" href="class_html_generator.html#adbe51a89cf6f9573b3434e7cfda81a7c">HtmlGenerator</a>, <a class="el" href="class_dev_null_code_doc_interface.html#a9eac5f8973e5f7c2a4500d3daa5c125f">DevNullCodeDocInterface</a>, <a class="el" href="class_x_ref_dummy_code_generator.html#adbe51a89cf6f9573b3434e7cfda81a7c">XRefDummyCodeGenerator</a> e <a class="el" href="class_html_code_generator.html#adbe51a89cf6f9573b3434e7cfda81a7c">HtmlCodeGenerator</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adcd22acfbc1c4c011802334b78cf5f01"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void endFontClass </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Ends a block started with <a class="el" href="class_code_output_interface.html#aaa0bdadd117e161c87149d902d70c863">startFontClass()</a> </p>
+
+<p>Implementado em <a class="el" href="class_output_list.html#ab7851025d80a6d1ed6dd8e25016136e1">OutputList</a>, <a class="el" href="class_x_m_l_code_generator.html#ab7851025d80a6d1ed6dd8e25016136e1">XMLCodeGenerator</a>, <a class="el" href="class_latex_generator.html#ab7851025d80a6d1ed6dd8e25016136e1">LatexGenerator</a>, <a class="el" href="class_r_t_f_generator.html#ab7851025d80a6d1ed6dd8e25016136e1">RTFGenerator</a>, <a class="el" href="class_docbook_code_generator.html#ab7851025d80a6d1ed6dd8e25016136e1">DocbookCodeGenerator</a>, <a class="el" href="class_man_generator.html#ab7851025d80a6d1ed6dd8e25016136e1">ManGenerator</a>, <a class="el" href="class_html_generator.html#ab7851025d80a6d1ed6dd8e25016136e1">HtmlGenerator</a>, <a class="el" href="class_dev_null_code_doc_interface.html#adc05c3c53aeaba27ae7d22334168c413">DevNullCodeDocInterface</a>, <a class="el" href="class_x_ref_dummy_code_generator.html#ab7851025d80a6d1ed6dd8e25016136e1">XRefDummyCodeGenerator</a> e <a class="el" href="class_html_code_generator.html#ab7851025d80a6d1ed6dd8e25016136e1">HtmlCodeGenerator</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aaa0bdadd117e161c87149d902d70c863"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void startFontClass </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>clsName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Starts a block with a certain meaning. Used for syntax highlighting, which elements of the same type are rendered using the same 'font class'. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">clsName</td><td>The category name. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementado em <a class="el" href="class_output_list.html#a253f5e2755f981e67662b662168aa054">OutputList</a>, <a class="el" href="class_x_m_l_code_generator.html#a915a74cafbcb208a8d399fbf12d73769">XMLCodeGenerator</a>, <a class="el" href="class_latex_generator.html#ad907f4c47cf56f8aac603de5537963f0">LatexGenerator</a>, <a class="el" href="class_r_t_f_generator.html#ad907f4c47cf56f8aac603de5537963f0">RTFGenerator</a>, <a class="el" href="class_docbook_code_generator.html#ad907f4c47cf56f8aac603de5537963f0">DocbookCodeGenerator</a>, <a class="el" href="class_man_generator.html#ad907f4c47cf56f8aac603de5537963f0">ManGenerator</a>, <a class="el" href="class_html_generator.html#a9326eecf5c7d10d7f6fece1e7fab75d8">HtmlGenerator</a>, <a class="el" href="class_dev_null_code_doc_interface.html#a3595d576933897558124c28746b819f9">DevNullCodeDocInterface</a>, <a class="el" href="class_x_ref_dummy_code_generator.html#ad907f4c47cf56f8aac603de5537963f0">XRefDummyCodeGenerator</a> e <a class="el" href="class_html_code_generator.html#a9326eecf5c7d10d7f6fece1e7fab75d8">HtmlCodeGenerator</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa29ff881359360e41a251d1d69fae142"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void writeCodeAnchor </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Write an anchor to a source listing. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>The name of the anchor. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementado em <a class="el" href="class_output_list.html#aa813b87ce15931854c2b0b9c1abb9e19">OutputList</a>, <a class="el" href="class_x_m_l_code_generator.html#a688757a1dcb8c6bef1202433a36083a7">XMLCodeGenerator</a>, <a class="el" href="class_latex_generator.html#a688757a1dcb8c6bef1202433a36083a7">LatexGenerator</a>, <a class="el" href="class_r_t_f_generator.html#a688757a1dcb8c6bef1202433a36083a7">RTFGenerator</a>, <a class="el" href="class_man_generator.html#a688757a1dcb8c6bef1202433a36083a7">ManGenerator</a>, <a class="el" href="class_docbook_code_generator.html#a688757a1dcb8c6bef1202433a36083a7">DocbookCodeGenerator</a>, <a class="el" href="class_html_generator.html#a5bdf52860d0fb01aa6bf45625d70abbc">HtmlGenerator</a>, <a class="el" href="class_dev_null_code_doc_interface.html#a0bdf0a5b7ff33f368aa90d95063530ee">DevNullCodeDocInterface</a>, <a class="el" href="class_x_ref_dummy_code_generator.html#a688757a1dcb8c6bef1202433a36083a7">XRefDummyCodeGenerator</a> e <a class="el" href="class_html_code_generator.html#a5bdf52860d0fb01aa6bf45625d70abbc">HtmlCodeGenerator</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a21e25662f2bc8efbb5bbb8503aeae97f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void writeCodeLink </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>ref</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>anchor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>tooltip</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Writes a link to an object in a code fragment. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ref</td><td>If this is non-zero, the object is to be found in an external documentation file. </td></tr>
+    <tr><td class="paramname">file</td><td>The file in which the object is located. </td></tr>
+    <tr><td class="paramname">anchor</td><td>The anchor uniquely identifying the object within the file. </td></tr>
+    <tr><td class="paramname">name</td><td>The text to display as a placeholder for the link. </td></tr>
+    <tr><td class="paramname">tooltip</td><td>The tooltip to display when the mouse is on the link. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementado em <a class="el" href="class_x_m_l_code_generator.html#ab3866da052a840c400b4990dd2ddf61b">XMLCodeGenerator</a>, <a class="el" href="class_docbook_code_generator.html#ab3866da052a840c400b4990dd2ddf61b">DocbookCodeGenerator</a>, <a class="el" href="class_output_list.html#ab3866da052a840c400b4990dd2ddf61b">OutputList</a>, <a class="el" href="class_html_generator.html#ab3866da052a840c400b4990dd2ddf61b">HtmlGenerator</a>, <a class="el" href="class_latex_generator.html#ab3866da052a840c400b4990dd2ddf61b">LatexGenerator</a>, <a class="el" href="class_man_generator.html#ab3866da052a840c400b4990dd2ddf61b">ManGenerator</a>, <a class="el" href="class_r_t_f_generator.html#ab3866da052a840c400b4990dd2ddf61b">RTFGenerator</a>, <a class="el" href="class_dev_null_code_doc_interface.html#a2ced6ffd253f23812cd3db949a305e9e">DevNullCodeDocInterface</a>, <a class="el" href="class_x_ref_dummy_code_generator.html#aee13e3ced7a85258ae400407d4383453">XRefDummyCodeGenerator</a> e <a class="el" href="class_html_code_generator.html#ab3866da052a840c400b4990dd2ddf61b">HtmlCodeGenerator</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a30af4b3b6e39508a95ba3219d1ba8323"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void writeLineNumber </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>ref</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>anchor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lineNumber</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Writes the line number of a source listing </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ref</td><td>External reference (when imported from a tag file) </td></tr>
+    <tr><td class="paramname">file</td><td>The file part of the <a class="el" href="struct_u_r_l.html">URL</a> pointing to the docs. </td></tr>
+    <tr><td class="paramname">anchor</td><td>The anchor part of the <a class="el" href="struct_u_r_l.html">URL</a> pointing to the docs. </td></tr>
+    <tr><td class="paramname">lineNumber</td><td>The line number to write </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementado em <a class="el" href="class_x_m_l_code_generator.html#a0a50ef78e830a1b1949dd97491c29c01">XMLCodeGenerator</a>, <a class="el" href="class_docbook_code_generator.html#a0a50ef78e830a1b1949dd97491c29c01">DocbookCodeGenerator</a>, <a class="el" href="class_output_list.html#a70366bf2bad21036a14d68e9ef532809">OutputList</a>, <a class="el" href="class_latex_generator.html#a041516b65f9f2c22d2c0941419200cbb">LatexGenerator</a>, <a class="el" href="class_man_generator.html#a041516b65f9f2c22d2c0941419200cbb">ManGenerator</a>, <a class="el" href="class_r_t_f_generator.html#a041516b65f9f2c22d2c0941419200cbb">RTFGenerator</a>, <a class="el" href="class_html_generator.html#a70366bf2bad21036a14d68e9ef532809">HtmlGenerator</a>, <a class="el" href="class_dev_null_code_doc_interface.html#ab884475bfa9aae3d714d0583402dc7a6">DevNullCodeDocInterface</a>, <a class="el" href="class_x_ref_dummy_code_generator.html#a68e608aa3fa63507e7545589c3325a91">XRefDummyCodeGenerator</a> e <a class="el" href="class_html_code_generator.html#a68e608aa3fa63507e7545589c3325a91">HtmlCodeGenerator</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4ab86013abbf61a86e9c300eb805939a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void writeTooltip </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_doc_link_info.html">DocLinkInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>docInfo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>decl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>desc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_source_link_info.html">SourceLinkInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>defInfo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_source_link_info.html">SourceLinkInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>declInfo</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Writes a tool tip definition </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>unique identifier for the tooltip </td></tr>
+    <tr><td class="paramname">docInfo</td><td>Info about the symbol's documentation. </td></tr>
+    <tr><td class="paramname">decl</td><td>full declaration of the symbol (for functions) </td></tr>
+    <tr><td class="paramname">desc</td><td>brief description for the symbol </td></tr>
+    <tr><td class="paramname">defInfo</td><td>Info about the symbol's definition in the source code </td></tr>
+    <tr><td class="paramname">declInfo</td><td>Info about the symbol's declaration in the source code </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementado em <a class="el" href="class_x_m_l_code_generator.html#a7ff5de02f14ba4c6b98edcaa3483e386">XMLCodeGenerator</a>, <a class="el" href="class_docbook_code_generator.html#a7ff5de02f14ba4c6b98edcaa3483e386">DocbookCodeGenerator</a>, <a class="el" href="class_output_list.html#acc6f74ac2670196668c05d4156eec872">OutputList</a>, <a class="el" href="class_html_generator.html#acc6f74ac2670196668c05d4156eec872">HtmlGenerator</a>, <a class="el" href="class_latex_generator.html#a7ff5de02f14ba4c6b98edcaa3483e386">LatexGenerator</a>, <a class="el" href="class_man_generator.html#a7ff5de02f14ba4c6b98edcaa3483e386">ManGenerator</a>, <a class="el" href="class_r_t_f_generator.html#a7ff5de02f14ba4c6b98edcaa3483e386">RTFGenerator</a>, <a class="el" href="class_dev_null_code_doc_interface.html#a1009688e232ec64f703d534ece6bd8c6">DevNullCodeDocInterface</a>, <a class="el" href="class_x_ref_dummy_code_generator.html#a1009688e232ec64f703d534ece6bd8c6">XRefDummyCodeGenerator</a> e <a class="el" href="class_html_code_generator.html#acc6f74ac2670196668c05d4156eec872">HtmlCodeGenerator</a>.</p>
+
+</div>
+</div>
+<hr/>A documentação para esta classe foi gerada a partir do seguinte ficheiro:<ul>
+<li>C:/Users/teste/git/doxygen/src/<a class="el" href="outputgen_8h_source.html">outputgen.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado em Quinta, 28 de Novembro de 2013 22:43:54 para CEM RODAS por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

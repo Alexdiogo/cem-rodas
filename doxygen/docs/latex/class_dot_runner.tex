@@ -1,0 +1,70 @@
+\hypertarget{class_dot_runner}{\section{Referência à classe Dot\-Runner}
+\label{class_dot_runner}\index{Dot\-Runner@{Dot\-Runner}}
+}
+
+
+{\ttfamily \#include $<$dot.\-h$>$}
+
+\subsection*{Estruturas de Dados}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_dot_runner_1_1_cleanup_item}{Cleanup\-Item}
+\end{DoxyCompactItemize}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_dot_runner_a312875d6d56dd6a78ed071ed03006441}{Dot\-Runner} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&file, const \hyperlink{class_q_c_string}{Q\-C\-String} \&font\-Path, bool check\-Result, const \hyperlink{class_q_c_string}{Q\-C\-String} \&image\-Name=\hyperlink{class_q_c_string}{Q\-C\-String}())
+\item 
+void \hyperlink{class_dot_runner_a665457eb869b66c8cc35d52795f94a35}{add\-Job} (const char $\ast$format, const char $\ast$output)
+\item 
+\hypertarget{class_dot_runner_a7b47144dbd469da37be13635f32382c5}{void {\bfseries add\-Post\-Processing} (const char $\ast$cmd, const char $\ast$args)}\label{class_dot_runner_a7b47144dbd469da37be13635f32382c5}
+
+\item 
+\hypertarget{class_dot_runner_a80bc7660f0979c68949cfd909a0ac413}{void {\bfseries prevent\-Clean\-Up} ()}\label{class_dot_runner_a80bc7660f0979c68949cfd909a0ac413}
+
+\item 
+bool \hyperlink{class_dot_runner_a149ad6701e3e2414cb566bb414029841}{run} ()
+\item 
+\hypertarget{class_dot_runner_a6581b49f8f6769894c5dab70d6a6f622}{\hyperlink{struct_dot_runner_1_1_cleanup_item}{Cleanup\-Item} {\bfseries cleanup} () const }\label{class_dot_runner_a6581b49f8f6769894c5dab70d6a6f622}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+Helper class to run dot from doxygen. 
+
+\subsection{Documentação dos Construtores \& Destrutor}
+\hypertarget{class_dot_runner_a312875d6d56dd6a78ed071ed03006441}{\index{Dot\-Runner@{Dot\-Runner}!Dot\-Runner@{Dot\-Runner}}
+\index{Dot\-Runner@{Dot\-Runner}!DotRunner@{Dot\-Runner}}
+\subsubsection[{Dot\-Runner}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Dot\-Runner} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-C\-String} \&}]{file, }
+\item[{const {\bf Q\-C\-String} \&}]{font\-Path, }
+\item[{bool}]{check\-Result, }
+\item[{const {\bf Q\-C\-String} \&}]{image\-Name = {\ttfamily {\bf Q\-C\-String}()}}
+\end{DoxyParamCaption}
+)}}\label{class_dot_runner_a312875d6d56dd6a78ed071ed03006441}
+Creates a runner for a dot {\itshape file}. 
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_dot_runner_a665457eb869b66c8cc35d52795f94a35}{\index{Dot\-Runner@{Dot\-Runner}!add\-Job@{add\-Job}}
+\index{add\-Job@{add\-Job}!DotRunner@{Dot\-Runner}}
+\subsubsection[{add\-Job}]{\setlength{\rightskip}{0pt plus 5cm}void add\-Job (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{format, }
+\item[{const char $\ast$}]{output}
+\end{DoxyParamCaption}
+)}}\label{class_dot_runner_a665457eb869b66c8cc35d52795f94a35}
+Adds an additional job to the run. Performing multiple jobs one file can be faster. \hypertarget{class_dot_runner_a149ad6701e3e2414cb566bb414029841}{\index{Dot\-Runner@{Dot\-Runner}!run@{run}}
+\index{run@{run}!DotRunner@{Dot\-Runner}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}bool run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_dot_runner_a149ad6701e3e2414cb566bb414029841}
+Runs dot for all jobs added. 
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/src/dot.\-h\item 
+C\-:/\-Users/teste/git/doxygen/src/dot.\-cpp\end{DoxyCompactItemize}

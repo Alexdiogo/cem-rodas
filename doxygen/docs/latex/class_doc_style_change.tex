@@ -1,0 +1,96 @@
+\hypertarget{class_doc_style_change}{\section{Referência à classe Doc\-Style\-Change}
+\label{class_doc_style_change}\index{Doc\-Style\-Change@{Doc\-Style\-Change}}
+}
+
+
+{\ttfamily \#include $<$docparser.\-h$>$}
+
+Diagrama de heranças da classe Doc\-Style\-Change\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_doc_style_change}
+\end{center}
+\end{figure}
+\subsection*{Tipos Públicos}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Style} \{ \\*
+{\bfseries Bold}, 
+{\bfseries Italic}, 
+{\bfseries Code}, 
+{\bfseries Center}, 
+\\*
+{\bfseries Small}, 
+{\bfseries Subscript}, 
+{\bfseries Superscript}, 
+{\bfseries Preformatted}, 
+\\*
+{\bfseries Span}, 
+{\bfseries Div}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_doc_style_change_ac18d7c97d0c1bbb1c1217b3a3d053a03}{{\bfseries Doc\-Style\-Change} (\hyperlink{class_doc_node}{Doc\-Node} $\ast$\hyperlink{class_doc_node_abd7f070d6b0a38b4da71c2806578d19d}{parent}, uint position, Style s, bool enable, const \hyperlink{class_html_attrib_list}{Html\-Attrib\-List} $\ast$attribs=0)}\label{class_doc_style_change_ac18d7c97d0c1bbb1c1217b3a3d053a03}
+
+\item 
+\hyperlink{class_doc_node_aa10c9e8951b8ccf714a59ec321bdac5b}{Kind} \hyperlink{class_doc_style_change_aa9d037bed9f9a083d0cd01485637d843}{kind} () const 
+\item 
+\hypertarget{class_doc_style_change_aeab0714e3be7962800a3410bbbc0494b}{Style {\bfseries style} () const }\label{class_doc_style_change_aeab0714e3be7962800a3410bbbc0494b}
+
+\item 
+\hypertarget{class_doc_style_change_af8f5db16dd2aad770a82c6630d44b014}{const char $\ast$ {\bfseries style\-String} () const }\label{class_doc_style_change_af8f5db16dd2aad770a82c6630d44b014}
+
+\item 
+\hypertarget{class_doc_style_change_a95a85353493246b0fd221ecfe92b1693}{bool {\bfseries enable} () const }\label{class_doc_style_change_a95a85353493246b0fd221ecfe92b1693}
+
+\item 
+\hypertarget{class_doc_style_change_a7aaa3b8207a9f91310dbc6392a64cbce}{uint {\bfseries position} () const }\label{class_doc_style_change_a7aaa3b8207a9f91310dbc6392a64cbce}
+
+\item 
+void \hyperlink{class_doc_style_change_a7ba716e854ae2f8f87a4eb2140e302b6}{accept} (\hyperlink{class_doc_visitor}{Doc\-Visitor} $\ast$v)
+\item 
+\hypertarget{class_doc_style_change_aae3c838ea3d3273b35d07e9965a8985e}{const \hyperlink{class_html_attrib_list}{Html\-Attrib\-List} \& {\bfseries attribs} () const }\label{class_doc_style_change_aae3c838ea3d3273b35d07e9965a8985e}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Descrição detalhada}
+Node representing a style change 
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_doc_style_change_a7ba716e854ae2f8f87a4eb2140e302b6}{\index{Doc\-Style\-Change@{Doc\-Style\-Change}!accept@{accept}}
+\index{accept@{accept}!DocStyleChange@{Doc\-Style\-Change}}
+\subsubsection[{accept}]{\setlength{\rightskip}{0pt plus 5cm}void accept (
+\begin{DoxyParamCaption}
+\item[{{\bf Doc\-Visitor} $\ast$}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_doc_style_change_a7ba716e854ae2f8f87a4eb2140e302b6}
+Acceptor function for node visitors. Part of the visitor pattern. 
+\begin{DoxyParams}{Parâmetros}
+{\em v} & Abstract visitor. \\
+\hline
+\end{DoxyParams}
+
+
+Implementa \hyperlink{class_doc_node_ac0816c4a3ba0fb0ca95538f82e13df27}{Doc\-Node}.
+
+\hypertarget{class_doc_style_change_aa9d037bed9f9a083d0cd01485637d843}{\index{Doc\-Style\-Change@{Doc\-Style\-Change}!kind@{kind}}
+\index{kind@{kind}!DocStyleChange@{Doc\-Style\-Change}}
+\subsubsection[{kind}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Kind} kind (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_doc_style_change_aa9d037bed9f9a083d0cd01485637d843}
+Returns the kind of node. Provides runtime type information 
+
+Implementa \hyperlink{class_doc_node_a27e5d1dde6c9e861b52afa5a95f71d2d}{Doc\-Node}.
+
+
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/src/docparser.\-h\item 
+C\-:/\-Users/teste/git/doxygen/src/docparser.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,545 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>CEM RODAS: Referência à classe OutputDocInterface</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">CEM RODAS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Localizar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="modules.html"><span>Módulos</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Estruturas&#160;de&#160;dados</span></a></li>
+      <li><a href="files.html"><span>Ficheiros</span></a></li>
+      <li><a href="examples.html"><span>Exemplos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Localizar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Estruturas&#160;de&#160;dados</span></a></li>
+      <li><a href="classes.html"><span>Índice&#160;das&#160;estruturas&#160;de&#160;dados</span></a></li>
+      <li><a href="hierarchy.html"><span>Hierarquia&#160;de&#160;classes</span></a></li>
+      <li><a href="functions.html"><span>Campos&#160;de&#160;dados</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tudo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Estruturas de dados</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Ficheiros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variáveis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Definições de tipos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerações</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Valores da enumeração</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Amigos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Grupos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Membros públicos</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência à classe OutputDocInterface<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="outputgen_8h_source.html">outputgen.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagrama de heranças da classe OutputDocInterface</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_output_doc_interface.png" usemap="#OutputDocInterface_map" alt=""/>
+  <map id="OutputDocInterface_map" name="OutputDocInterface_map">
+<area href="class_base_output_doc_interface.html" alt="BaseOutputDocInterface" shape="rect" coords="0,56,150,80"/>
+<area href="class_code_output_interface.html" alt="CodeOutputInterface" shape="rect" coords="0,0,150,24"/>
+<area href="class_output_list.html" alt="OutputList" shape="rect" coords="0,168,150,192"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Membros públicos</h2></td></tr>
+<tr class="memitem:ae51277470e8341fec8500f34b01ef7c4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_output_doc_interface.html#ae51277470e8341fec8500f34b01ef7c4">disableAllBut</a> (OutputGenerator::OutputType o)=0</td></tr>
+<tr class="separator:ae51277470e8341fec8500f34b01ef7c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a320d024acf52e5030cbd115038dd63b4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_output_doc_interface.html#a320d024acf52e5030cbd115038dd63b4">enableAll</a> ()=0</td></tr>
+<tr class="separator:a320d024acf52e5030cbd115038dd63b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad28260bd5a78968243fe123f42719d1e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_output_doc_interface.html#ad28260bd5a78968243fe123f42719d1e">disableAll</a> ()=0</td></tr>
+<tr class="separator:ad28260bd5a78968243fe123f42719d1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a179ce9b58cecdbe5a430c4bf741aff80"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_output_doc_interface.html#a179ce9b58cecdbe5a430c4bf741aff80">disable</a> (OutputGenerator::OutputType o)=0</td></tr>
+<tr class="separator:a179ce9b58cecdbe5a430c4bf741aff80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae04d1c59d6fbb2fa89ad44d9ef01a298"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_output_doc_interface.html#ae04d1c59d6fbb2fa89ad44d9ef01a298">enable</a> (OutputGenerator::OutputType o)=0</td></tr>
+<tr class="separator:ae04d1c59d6fbb2fa89ad44d9ef01a298"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab8dbaf4e1d5b4993fe18d75ce533f93"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_output_doc_interface.html#aab8dbaf4e1d5b4993fe18d75ce533f93">isEnabled</a> (OutputGenerator::OutputType o)=0</td></tr>
+<tr class="separator:aab8dbaf4e1d5b4993fe18d75ce533f93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ad42fd0ab4788718130d1033012c1a6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_output_doc_interface.html#a0ad42fd0ab4788718130d1033012c1a6">pushGeneratorState</a> ()=0</td></tr>
+<tr class="separator:a0ad42fd0ab4788718130d1033012c1a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ecb0cf2cfdfd572cfd2713c750a0f12"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_output_doc_interface.html#a7ecb0cf2cfdfd572cfd2713c750a0f12">popGeneratorState</a> ()=0</td></tr>
+<tr class="separator:a7ecb0cf2cfdfd572cfd2713c750a0f12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_base_output_doc_interface"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_base_output_doc_interface')"><img src="closed.png" alt="-"/>&#160;Membros públicos inherited from <a class="el" href="class_base_output_doc_interface.html">BaseOutputDocInterface</a></td></tr>
+<tr class="memitem:a4a14fbec28aa838ac6e333e0bcea0216 inherit pub_methods_class_base_output_doc_interface"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4a14fbec28aa838ac6e333e0bcea0216"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>parseText</b> (const <a class="el" href="class_q_c_string.html">QCString</a> &amp;s)</td></tr>
+<tr class="separator:a4a14fbec28aa838ac6e333e0bcea0216 inherit pub_methods_class_base_output_doc_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a432e618b3c8820e00496c6b242947e72 inherit pub_methods_class_base_output_doc_interface"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_output_doc_interface.html#a432e618b3c8820e00496c6b242947e72">startItemList</a> ()=0</td></tr>
+<tr class="separator:a432e618b3c8820e00496c6b242947e72 inherit pub_methods_class_base_output_doc_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cfe1cc2a5fa5cdb1eea280df003903a inherit pub_methods_class_base_output_doc_interface"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_output_doc_interface.html#a6cfe1cc2a5fa5cdb1eea280df003903a">startItemListItem</a> ()=0</td></tr>
+<tr class="separator:a6cfe1cc2a5fa5cdb1eea280df003903a inherit pub_methods_class_base_output_doc_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8161fe76c2c66d47d0eb078be885bec7 inherit pub_methods_class_base_output_doc_interface"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_output_doc_interface.html#a8161fe76c2c66d47d0eb078be885bec7">endItemListItem</a> ()=0</td></tr>
+<tr class="separator:a8161fe76c2c66d47d0eb078be885bec7 inherit pub_methods_class_base_output_doc_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a818d290261244e40e8c70562a7198156 inherit pub_methods_class_base_output_doc_interface"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_output_doc_interface.html#a818d290261244e40e8c70562a7198156">endItemList</a> ()=0</td></tr>
+<tr class="separator:a818d290261244e40e8c70562a7198156 inherit pub_methods_class_base_output_doc_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f6bec326f718b326fb67adb943ebc27 inherit pub_methods_class_base_output_doc_interface"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_output_doc_interface.html#a6f6bec326f718b326fb67adb943ebc27">docify</a> (const char *s)=0</td></tr>
+<tr class="separator:a6f6bec326f718b326fb67adb943ebc27 inherit pub_methods_class_base_output_doc_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a936e81608db3018f2bce9cd3ee58fdcd inherit pub_methods_class_base_output_doc_interface"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_output_doc_interface.html#a936e81608db3018f2bce9cd3ee58fdcd">writeChar</a> (char c)=0</td></tr>
+<tr class="separator:a936e81608db3018f2bce9cd3ee58fdcd inherit pub_methods_class_base_output_doc_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78a005d8c0329ee60cd1994eb4afc58b inherit pub_methods_class_base_output_doc_interface"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_output_doc_interface.html#a78a005d8c0329ee60cd1994eb4afc58b">writeString</a> (const char *text)=0</td></tr>
+<tr class="separator:a78a005d8c0329ee60cd1994eb4afc58b inherit pub_methods_class_base_output_doc_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b8b270f90567b9201c44a6ad2ad206f inherit pub_methods_class_base_output_doc_interface"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_output_doc_interface.html#a4b8b270f90567b9201c44a6ad2ad206f">startParagraph</a> ()=0</td></tr>
+<tr class="separator:a4b8b270f90567b9201c44a6ad2ad206f inherit pub_methods_class_base_output_doc_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a97d4c8fb4e8ac91125f9ff2718d83d inherit pub_methods_class_base_output_doc_interface"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_output_doc_interface.html#a9a97d4c8fb4e8ac91125f9ff2718d83d">endParagraph</a> ()=0</td></tr>
+<tr class="separator:a9a97d4c8fb4e8ac91125f9ff2718d83d inherit pub_methods_class_base_output_doc_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa551443db6cf9e4f51bc12c9d753f9c3 inherit pub_methods_class_base_output_doc_interface"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_output_doc_interface.html#aa551443db6cf9e4f51bc12c9d753f9c3">writeObjectLink</a> (const char *ref, const char *file, const char *anchor, const char *name)=0</td></tr>
+<tr class="separator:aa551443db6cf9e4f51bc12c9d753f9c3 inherit pub_methods_class_base_output_doc_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae514e80c628faa0b5ee62a50185f2397 inherit pub_methods_class_base_output_doc_interface"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_output_doc_interface.html#ae514e80c628faa0b5ee62a50185f2397">startHtmlLink</a> (const char *url)=0</td></tr>
+<tr class="separator:ae514e80c628faa0b5ee62a50185f2397 inherit pub_methods_class_base_output_doc_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a463c695844e8137b388af6e1bbafc19e inherit pub_methods_class_base_output_doc_interface"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_output_doc_interface.html#a463c695844e8137b388af6e1bbafc19e">endHtmlLink</a> ()=0</td></tr>
+<tr class="separator:a463c695844e8137b388af6e1bbafc19e inherit pub_methods_class_base_output_doc_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ad34c5f6672948732a87c4371d2e244 inherit pub_methods_class_base_output_doc_interface"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_output_doc_interface.html#a9ad34c5f6672948732a87c4371d2e244">startBold</a> ()=0</td></tr>
+<tr class="separator:a9ad34c5f6672948732a87c4371d2e244 inherit pub_methods_class_base_output_doc_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a593e371dace7c16866f8bd028905096d inherit pub_methods_class_base_output_doc_interface"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_output_doc_interface.html#a593e371dace7c16866f8bd028905096d">endBold</a> ()=0</td></tr>
+<tr class="separator:a593e371dace7c16866f8bd028905096d inherit pub_methods_class_base_output_doc_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae241cdb69ca06cd0a539dd8b8a0a419f inherit pub_methods_class_base_output_doc_interface"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_output_doc_interface.html#ae241cdb69ca06cd0a539dd8b8a0a419f">startTypewriter</a> ()=0</td></tr>
+<tr class="separator:ae241cdb69ca06cd0a539dd8b8a0a419f inherit pub_methods_class_base_output_doc_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a201cdc35ada3fac3f2f72adcc43308b8 inherit pub_methods_class_base_output_doc_interface"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_output_doc_interface.html#a201cdc35ada3fac3f2f72adcc43308b8">endTypewriter</a> ()=0</td></tr>
+<tr class="separator:a201cdc35ada3fac3f2f72adcc43308b8 inherit pub_methods_class_base_output_doc_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa6a6472913a05d8524804a27aebb56c inherit pub_methods_class_base_output_doc_interface"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_output_doc_interface.html#afa6a6472913a05d8524804a27aebb56c">startEmphasis</a> ()=0</td></tr>
+<tr class="separator:afa6a6472913a05d8524804a27aebb56c inherit pub_methods_class_base_output_doc_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1530746d5ac62d305ff693f0eb2bf90a inherit pub_methods_class_base_output_doc_interface"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_output_doc_interface.html#a1530746d5ac62d305ff693f0eb2bf90a">endEmphasis</a> ()=0</td></tr>
+<tr class="separator:a1530746d5ac62d305ff693f0eb2bf90a inherit pub_methods_class_base_output_doc_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a649cecde411897cea447f103795d8c64 inherit pub_methods_class_base_output_doc_interface"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_output_doc_interface.html#a649cecde411897cea447f103795d8c64">startCodeFragment</a> ()=0</td></tr>
+<tr class="separator:a649cecde411897cea447f103795d8c64 inherit pub_methods_class_base_output_doc_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d0e9c89b22affd8574d3804393d8fa5 inherit pub_methods_class_base_output_doc_interface"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_output_doc_interface.html#a6d0e9c89b22affd8574d3804393d8fa5">endCodeFragment</a> ()=0</td></tr>
+<tr class="separator:a6d0e9c89b22affd8574d3804393d8fa5 inherit pub_methods_class_base_output_doc_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f36f83289e2b6137e9086998c5fb883 inherit pub_methods_class_base_output_doc_interface"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_output_doc_interface.html#a5f36f83289e2b6137e9086998c5fb883">writeRuler</a> ()=0</td></tr>
+<tr class="separator:a5f36f83289e2b6137e9086998c5fb883 inherit pub_methods_class_base_output_doc_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90167ae571c0685acd7934fde582ca7b inherit pub_methods_class_base_output_doc_interface"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_output_doc_interface.html#a90167ae571c0685acd7934fde582ca7b">startDescription</a> ()=0</td></tr>
+<tr class="separator:a90167ae571c0685acd7934fde582ca7b inherit pub_methods_class_base_output_doc_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58e5aab2220d1da0e75a66c294cc9857 inherit pub_methods_class_base_output_doc_interface"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_output_doc_interface.html#a58e5aab2220d1da0e75a66c294cc9857">endDescription</a> ()=0</td></tr>
+<tr class="separator:a58e5aab2220d1da0e75a66c294cc9857 inherit pub_methods_class_base_output_doc_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5392dc059a26e9c650ffee7d28636f74 inherit pub_methods_class_base_output_doc_interface"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_output_doc_interface.html#a5392dc059a26e9c650ffee7d28636f74">startDescItem</a> ()=0</td></tr>
+<tr class="separator:a5392dc059a26e9c650ffee7d28636f74 inherit pub_methods_class_base_output_doc_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0a455f0a2344f6188cde8de697b4433 inherit pub_methods_class_base_output_doc_interface"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad0a455f0a2344f6188cde8de697b4433"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>startDescForItem</b> ()=0</td></tr>
+<tr class="separator:ad0a455f0a2344f6188cde8de697b4433 inherit pub_methods_class_base_output_doc_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a737810958e3c17f65d06050a4d96515a inherit pub_methods_class_base_output_doc_interface"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a737810958e3c17f65d06050a4d96515a"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>endDescForItem</b> ()=0</td></tr>
+<tr class="separator:a737810958e3c17f65d06050a4d96515a inherit pub_methods_class_base_output_doc_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9e2fe1d39b02fcc5a682ace36d7eafa inherit pub_methods_class_base_output_doc_interface"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_output_doc_interface.html#ae9e2fe1d39b02fcc5a682ace36d7eafa">endDescItem</a> ()=0</td></tr>
+<tr class="separator:ae9e2fe1d39b02fcc5a682ace36d7eafa inherit pub_methods_class_base_output_doc_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c705372da335649a67a744d1283afaf inherit pub_methods_class_base_output_doc_interface"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6c705372da335649a67a744d1283afaf"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>startCenter</b> ()=0</td></tr>
+<tr class="separator:a6c705372da335649a67a744d1283afaf inherit pub_methods_class_base_output_doc_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb04dbc9e3cf3296af0295249e3105fe inherit pub_methods_class_base_output_doc_interface"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afb04dbc9e3cf3296af0295249e3105fe"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>endCenter</b> ()=0</td></tr>
+<tr class="separator:afb04dbc9e3cf3296af0295249e3105fe inherit pub_methods_class_base_output_doc_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99a7175c105390ea2dcaf4236c096af2 inherit pub_methods_class_base_output_doc_interface"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a99a7175c105390ea2dcaf4236c096af2"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>startSmall</b> ()=0</td></tr>
+<tr class="separator:a99a7175c105390ea2dcaf4236c096af2 inherit pub_methods_class_base_output_doc_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e1a25540f283ea2ca1a4747ae814079 inherit pub_methods_class_base_output_doc_interface"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6e1a25540f283ea2ca1a4747ae814079"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>endSmall</b> ()=0</td></tr>
+<tr class="separator:a6e1a25540f283ea2ca1a4747ae814079 inherit pub_methods_class_base_output_doc_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98bc450db49fb6704f072b3da99f10b2 inherit pub_methods_class_base_output_doc_interface"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a98bc450db49fb6704f072b3da99f10b2"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>startSimpleSect</b> (SectionTypes t, const char *file, const char *anchor, const char *title)=0</td></tr>
+<tr class="separator:a98bc450db49fb6704f072b3da99f10b2 inherit pub_methods_class_base_output_doc_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0238efa13f3d7590b574327c52569cd9 inherit pub_methods_class_base_output_doc_interface"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0238efa13f3d7590b574327c52569cd9"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>endSimpleSect</b> ()=0</td></tr>
+<tr class="separator:a0238efa13f3d7590b574327c52569cd9 inherit pub_methods_class_base_output_doc_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ec21eff08cdb4e5c08f652f45f1fcfa inherit pub_methods_class_base_output_doc_interface"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7ec21eff08cdb4e5c08f652f45f1fcfa"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>startParamList</b> (ParamListTypes t, const char *title)=0</td></tr>
+<tr class="separator:a7ec21eff08cdb4e5c08f652f45f1fcfa inherit pub_methods_class_base_output_doc_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69fd918e53c97523cbeca8313bd70fe7 inherit pub_methods_class_base_output_doc_interface"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a69fd918e53c97523cbeca8313bd70fe7"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>endParamList</b> ()=0</td></tr>
+<tr class="separator:a69fd918e53c97523cbeca8313bd70fe7 inherit pub_methods_class_base_output_doc_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a341cbab81b0062f7958b87cf6a71d4d6 inherit pub_methods_class_base_output_doc_interface"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a341cbab81b0062f7958b87cf6a71d4d6"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>startTitle</b> ()=0</td></tr>
+<tr class="separator:a341cbab81b0062f7958b87cf6a71d4d6 inherit pub_methods_class_base_output_doc_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3935ba65cff96b85083668a719528b5 inherit pub_methods_class_base_output_doc_interface"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa3935ba65cff96b85083668a719528b5"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>endTitle</b> ()=0</td></tr>
+<tr class="separator:aa3935ba65cff96b85083668a719528b5 inherit pub_methods_class_base_output_doc_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d42feda33a9f9e93cb8029153f75e71 inherit pub_methods_class_base_output_doc_interface"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0d42feda33a9f9e93cb8029153f75e71"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>writeAnchor</b> (const char *fileName, const char *name)=0</td></tr>
+<tr class="separator:a0d42feda33a9f9e93cb8029153f75e71 inherit pub_methods_class_base_output_doc_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4b9e394b4c79f853a1eca24ae4ba484 inherit pub_methods_class_base_output_doc_interface"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad4b9e394b4c79f853a1eca24ae4ba484"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>startSection</b> (const char *, const char *, SectionInfo::SectionType)=0</td></tr>
+<tr class="separator:ad4b9e394b4c79f853a1eca24ae4ba484 inherit pub_methods_class_base_output_doc_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af91f19bb7a7184047d63922c69a54d03 inherit pub_methods_class_base_output_doc_interface"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af91f19bb7a7184047d63922c69a54d03"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>endSection</b> (const char *, SectionInfo::SectionType)=0</td></tr>
+<tr class="separator:af91f19bb7a7184047d63922c69a54d03 inherit pub_methods_class_base_output_doc_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82de4067c71b25dd85188ba11ab8afe9 inherit pub_methods_class_base_output_doc_interface"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a82de4067c71b25dd85188ba11ab8afe9"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>lineBreak</b> (const char *style)=0</td></tr>
+<tr class="separator:a82de4067c71b25dd85188ba11ab8afe9 inherit pub_methods_class_base_output_doc_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74c8bc475204c698ea98a421072c41ac inherit pub_methods_class_base_output_doc_interface"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a74c8bc475204c698ea98a421072c41ac"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>addIndexItem</b> (const char *s1, const char *s2)=0</td></tr>
+<tr class="separator:a74c8bc475204c698ea98a421072c41ac inherit pub_methods_class_base_output_doc_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3caea4d221cbde42831678ae6ceca91 inherit pub_methods_class_base_output_doc_interface"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af3caea4d221cbde42831678ae6ceca91"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>writeNonBreakableSpace</b> (int)=0</td></tr>
+<tr class="separator:af3caea4d221cbde42831678ae6ceca91 inherit pub_methods_class_base_output_doc_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6daf06bdc37871cb56b47d0eadbea62b inherit pub_methods_class_base_output_doc_interface"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6daf06bdc37871cb56b47d0eadbea62b"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>startDescTable</b> (const char *title)=0</td></tr>
+<tr class="separator:a6daf06bdc37871cb56b47d0eadbea62b inherit pub_methods_class_base_output_doc_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c632b8cacd65f2b923b2723561a017d inherit pub_methods_class_base_output_doc_interface"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7c632b8cacd65f2b923b2723561a017d"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>endDescTable</b> ()=0</td></tr>
+<tr class="separator:a7c632b8cacd65f2b923b2723561a017d inherit pub_methods_class_base_output_doc_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a531193736655add8e7d8c72416480fbe inherit pub_methods_class_base_output_doc_interface"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a531193736655add8e7d8c72416480fbe"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>startDescTableTitle</b> ()=0</td></tr>
+<tr class="separator:a531193736655add8e7d8c72416480fbe inherit pub_methods_class_base_output_doc_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaed05f66abc76e55eb0f29b7aa53b1a4 inherit pub_methods_class_base_output_doc_interface"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaed05f66abc76e55eb0f29b7aa53b1a4"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>endDescTableTitle</b> ()=0</td></tr>
+<tr class="separator:aaed05f66abc76e55eb0f29b7aa53b1a4 inherit pub_methods_class_base_output_doc_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4483cdc52a9f793056a2453461694140 inherit pub_methods_class_base_output_doc_interface"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4483cdc52a9f793056a2453461694140"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>startDescTableData</b> ()=0</td></tr>
+<tr class="separator:a4483cdc52a9f793056a2453461694140 inherit pub_methods_class_base_output_doc_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8043221f1b448305052cd20ea217d369 inherit pub_methods_class_base_output_doc_interface"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8043221f1b448305052cd20ea217d369"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>endDescTableData</b> ()=0</td></tr>
+<tr class="separator:a8043221f1b448305052cd20ea217d369 inherit pub_methods_class_base_output_doc_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0957fca439bf053074d836651758546 inherit pub_methods_class_base_output_doc_interface"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae0957fca439bf053074d836651758546"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>startTextLink</b> (const char *file, const char *anchor)=0</td></tr>
+<tr class="separator:ae0957fca439bf053074d836651758546 inherit pub_methods_class_base_output_doc_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a640f630abbcef3317d1cee5e2b826787 inherit pub_methods_class_base_output_doc_interface"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a640f630abbcef3317d1cee5e2b826787"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>endTextLink</b> ()=0</td></tr>
+<tr class="separator:a640f630abbcef3317d1cee5e2b826787 inherit pub_methods_class_base_output_doc_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd43d0892b17aca482d193e2b2e87621 inherit pub_methods_class_base_output_doc_interface"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afd43d0892b17aca482d193e2b2e87621"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>startPageRef</b> ()=0</td></tr>
+<tr class="separator:afd43d0892b17aca482d193e2b2e87621 inherit pub_methods_class_base_output_doc_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69133cf7a4807f45f0d6ace5b0411cc9 inherit pub_methods_class_base_output_doc_interface"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a69133cf7a4807f45f0d6ace5b0411cc9"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>endPageRef</b> (const char *, const char *)=0</td></tr>
+<tr class="separator:a69133cf7a4807f45f0d6ace5b0411cc9 inherit pub_methods_class_base_output_doc_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f305cc66aed16c1413de29887a11932 inherit pub_methods_class_base_output_doc_interface"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5f305cc66aed16c1413de29887a11932"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>startSubsection</b> ()=0</td></tr>
+<tr class="separator:a5f305cc66aed16c1413de29887a11932 inherit pub_methods_class_base_output_doc_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09031f1d85363c381f54acf23ea5b1c9 inherit pub_methods_class_base_output_doc_interface"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a09031f1d85363c381f54acf23ea5b1c9"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>endSubsection</b> ()=0</td></tr>
+<tr class="separator:a09031f1d85363c381f54acf23ea5b1c9 inherit pub_methods_class_base_output_doc_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad876de55d4b1e593752a0675e1808df2 inherit pub_methods_class_base_output_doc_interface"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad876de55d4b1e593752a0675e1808df2"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>startSubsubsection</b> ()=0</td></tr>
+<tr class="separator:ad876de55d4b1e593752a0675e1808df2 inherit pub_methods_class_base_output_doc_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7c34336ef42813d211e7197a019ad11 inherit pub_methods_class_base_output_doc_interface"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad7c34336ef42813d211e7197a019ad11"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>endSubsubsection</b> ()=0</td></tr>
+<tr class="separator:ad7c34336ef42813d211e7197a019ad11 inherit pub_methods_class_base_output_doc_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_code_output_interface"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_code_output_interface')"><img src="closed.png" alt="-"/>&#160;Membros públicos inherited from <a class="el" href="class_code_output_interface.html">CodeOutputInterface</a></td></tr>
+<tr class="memitem:abc701d9798e414eae3e9694be75dfa8a inherit pub_methods_class_code_output_interface"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_code_output_interface.html#abc701d9798e414eae3e9694be75dfa8a">codify</a> (const char *s)=0</td></tr>
+<tr class="separator:abc701d9798e414eae3e9694be75dfa8a inherit pub_methods_class_code_output_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21e25662f2bc8efbb5bbb8503aeae97f inherit pub_methods_class_code_output_interface"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_code_output_interface.html#a21e25662f2bc8efbb5bbb8503aeae97f">writeCodeLink</a> (const char *ref, const char *file, const char *anchor, const char *name, const char *tooltip)=0</td></tr>
+<tr class="separator:a21e25662f2bc8efbb5bbb8503aeae97f inherit pub_methods_class_code_output_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30af4b3b6e39508a95ba3219d1ba8323 inherit pub_methods_class_code_output_interface"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_code_output_interface.html#a30af4b3b6e39508a95ba3219d1ba8323">writeLineNumber</a> (const char *ref, const char *file, const char *anchor, int lineNumber)=0</td></tr>
+<tr class="separator:a30af4b3b6e39508a95ba3219d1ba8323 inherit pub_methods_class_code_output_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ab86013abbf61a86e9c300eb805939a inherit pub_methods_class_code_output_interface"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_code_output_interface.html#a4ab86013abbf61a86e9c300eb805939a">writeTooltip</a> (const char *id, const <a class="el" href="struct_doc_link_info.html">DocLinkInfo</a> &amp;docInfo, const char *decl, const char *desc, const <a class="el" href="struct_source_link_info.html">SourceLinkInfo</a> &amp;defInfo, const <a class="el" href="struct_source_link_info.html">SourceLinkInfo</a> &amp;declInfo)=0</td></tr>
+<tr class="separator:a4ab86013abbf61a86e9c300eb805939a inherit pub_methods_class_code_output_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06d83d3279f21b34d89fbc6f2a303fb8 inherit pub_methods_class_code_output_interface"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a06d83d3279f21b34d89fbc6f2a303fb8"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>startCodeLine</b> (bool hasLineNumbers)=0</td></tr>
+<tr class="separator:a06d83d3279f21b34d89fbc6f2a303fb8 inherit pub_methods_class_code_output_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a542863fa8a9697696ffc4d4b24678e1f inherit pub_methods_class_code_output_interface"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_code_output_interface.html#a542863fa8a9697696ffc4d4b24678e1f">endCodeLine</a> ()=0</td></tr>
+<tr class="separator:a542863fa8a9697696ffc4d4b24678e1f inherit pub_methods_class_code_output_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa0bdadd117e161c87149d902d70c863 inherit pub_methods_class_code_output_interface"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_code_output_interface.html#aaa0bdadd117e161c87149d902d70c863">startFontClass</a> (const char *clsName)=0</td></tr>
+<tr class="separator:aaa0bdadd117e161c87149d902d70c863 inherit pub_methods_class_code_output_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcd22acfbc1c4c011802334b78cf5f01 inherit pub_methods_class_code_output_interface"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_code_output_interface.html#adcd22acfbc1c4c011802334b78cf5f01">endFontClass</a> ()=0</td></tr>
+<tr class="separator:adcd22acfbc1c4c011802334b78cf5f01 inherit pub_methods_class_code_output_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa29ff881359360e41a251d1d69fae142 inherit pub_methods_class_code_output_interface"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_code_output_interface.html#aa29ff881359360e41a251d1d69fae142">writeCodeAnchor</a> (const char *name)=0</td></tr>
+<tr class="separator:aa29ff881359360e41a251d1d69fae142 inherit pub_methods_class_code_output_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a502e52b0cfa87df3d69840bb425f41e9 inherit pub_methods_class_code_output_interface"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a502e52b0cfa87df3d69840bb425f41e9"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setCurrentDoc</b> (<a class="el" href="class_definition.html">Definition</a> *context, const char *anchor, bool isSourceFile)=0</td></tr>
+<tr class="separator:a502e52b0cfa87df3d69840bb425f41e9 inherit pub_methods_class_code_output_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a323777067b6847c3e2fa3ab8cd5ed3bc inherit pub_methods_class_code_output_interface"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a323777067b6847c3e2fa3ab8cd5ed3bc"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>addWord</b> (const char *word, bool hiPriority)=0</td></tr>
+<tr class="separator:a323777067b6847c3e2fa3ab8cd5ed3bc inherit pub_methods_class_code_output_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_types_class_base_output_doc_interface"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_base_output_doc_interface')"><img src="closed.png" alt="-"/>&#160;Tipos Públicos inherited from <a class="el" href="class_base_output_doc_interface.html">BaseOutputDocInterface</a></td></tr>
+<tr class="memitem:a386bbff5471b0975bc07a5c55f0bb083 inherit pub_types_class_base_output_doc_interface"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>ParamListTypes</b> { <b>Param</b>, 
+<b>RetVal</b>, 
+<b>Exception</b>
+ }</td></tr>
+<tr class="separator:a386bbff5471b0975bc07a5c55f0bb083 inherit pub_types_class_base_output_doc_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6362704f9a9c19bad2395c9a206e4598 inherit pub_types_class_base_output_doc_interface"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>SectionTypes</b> { <b>EnumValues</b>, 
+<b>Examples</b>
+ }</td></tr>
+<tr class="separator:a6362704f9a9c19bad2395c9a206e4598 inherit pub_types_class_base_output_doc_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Interface used for generating documentation.</p>
+<p>This abstract class is used by several functions to generate the output for a specific format. This interface contains some state saving and changing functions for dealing with format specific output. </p>
+</div><h2 class="groupheader">Documentação dos métodos</h2>
+<a class="anchor" id="a179ce9b58cecdbe5a430c4bf741aff80"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void disable </td>
+          <td>(</td>
+          <td class="paramtype">OutputGenerator::OutputType&#160;</td>
+          <td class="paramname"><em>o</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Disables a specific output format (useful for <a class="el" href="class_output_list.html">OutputList</a> only) </p>
+
+<p>Implementado em <a class="el" href="class_output_list.html#a518c3abda47a43b82e5ec04ee06a3f94">OutputList</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad28260bd5a78968243fe123f42719d1e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void disableAll </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Disables all output formats (useful for <a class="el" href="class_output_list.html">OutputList</a> only) </p>
+
+<p>Implementado em <a class="el" href="class_output_list.html#a238885c747f586049b766fa4fcd5ec12">OutputList</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae51277470e8341fec8500f34b01ef7c4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void disableAllBut </td>
+          <td>(</td>
+          <td class="paramtype">OutputGenerator::OutputType&#160;</td>
+          <td class="paramname"><em>o</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Create a new output generator. This can later by appended to the current one using append().</p>
+<p>Disables all output formats except format <em>o</em> (useful for <a class="el" href="class_output_list.html">OutputList</a> only) </p>
+
+<p>Implementado em <a class="el" href="class_output_list.html#af6f08b1d8f3504c943adc7626e6336fb">OutputList</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae04d1c59d6fbb2fa89ad44d9ef01a298"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void enable </td>
+          <td>(</td>
+          <td class="paramtype">OutputGenerator::OutputType&#160;</td>
+          <td class="paramname"><em>o</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Enables a specific output format (useful for <a class="el" href="class_output_list.html">OutputList</a> only) </p>
+
+<p>Implementado em <a class="el" href="class_output_list.html#af50cca806934038f9eb543edaddf998f">OutputList</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a320d024acf52e5030cbd115038dd63b4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void enableAll </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Enables all output formats as far as they have been enabled in the config file. (useful for <a class="el" href="class_output_list.html">OutputList</a> only) </p>
+
+<p>Implementado em <a class="el" href="class_output_list.html#ae076f3f35c07044ed812b78871741c15">OutputList</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aab8dbaf4e1d5b4993fe18d75ce533f93"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool isEnabled </td>
+          <td>(</td>
+          <td class="paramtype">OutputGenerator::OutputType&#160;</td>
+          <td class="paramname"><em>o</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Check whether a specific output format is currently enabled (useful for <a class="el" href="class_output_list.html">OutputList</a> only) </p>
+
+<p>Implementado em <a class="el" href="class_output_list.html#ad28f007ae83273a7d1ca6a6b46979af9">OutputList</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7ecb0cf2cfdfd572cfd2713c750a0f12"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void popGeneratorState </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Pops the state of the current generator (or list of generators) on a stack. Should be preceded by a call the <a class="el" href="class_output_doc_interface.html#a0ad42fd0ab4788718130d1033012c1a6">pushGeneratorState()</a>. </p>
+
+<p>Implementado em <a class="el" href="class_output_list.html#a9fd3c9d8d193a665b4b1c233ae573753">OutputList</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0ad42fd0ab4788718130d1033012c1a6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void pushGeneratorState </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Appends the output generated by generator <em>g</em> to this generator.</p>
+<p>Pushes the state of the current generator (or list of generators) on a stack. </p>
+
+<p>Implementado em <a class="el" href="class_output_list.html#aff968dbb6182903ac3a2c899cf1078f3">OutputList</a>.</p>
+
+</div>
+</div>
+<hr/>A documentação para esta classe foi gerada a partir do seguinte ficheiro:<ul>
+<li>C:/Users/teste/git/doxygen/src/<a class="el" href="outputgen_8h_source.html">outputgen.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado em Quinta, 28 de Novembro de 2013 22:44:23 para CEM RODAS por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

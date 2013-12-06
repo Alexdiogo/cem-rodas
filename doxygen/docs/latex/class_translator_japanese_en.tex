@@ -1,0 +1,112 @@
+\hypertarget{class_translator_japanese_en}{\section{Referência à classe Translator\-Japanese\-En}
+\label{class_translator_japanese_en}\index{Translator\-Japanese\-En@{Translator\-Japanese\-En}}
+}
+Diagrama de heranças da classe Translator\-Japanese\-En\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_translator_japanese_en}
+\end{center}
+\end{figure}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_translator_japanese_en_a903bf0b486fd16dfbc84606e8474ff84}{id\-Language} ()
+\item 
+virtual \hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_translator_japanese_en_a38858830a8a30ed8dd67927882d27ff3}{latex\-Language\-Support\-Command} ()
+\item 
+virtual \hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_translator_japanese_en_ac711f1a109c3c8131bf02a9ff6f48e36}{tr\-R\-T\-Fansicp} ()
+\item 
+virtual \hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_translator_japanese_en_af3bba50fd4e382b113171e132e88719b}{tr\-R\-T\-F\-Char\-Set} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_translator_japanese_en_a903bf0b486fd16dfbc84606e8474ff84}{\index{Translator\-Japanese\-En@{Translator\-Japanese\-En}!id\-Language@{id\-Language}}
+\index{id\-Language@{id\-Language}!TranslatorJapaneseEn@{Translator\-Japanese\-En}}
+\subsubsection[{id\-Language}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Q\-C\-String} id\-Language (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_translator_japanese_en_a903bf0b486fd16dfbc84606e8474ff84}
+Used for identification of the language. The identification should not be translated. It should be replaced by the name of the language in English using lower-\/case characters only (e.\-g. \char`\"{}czech\char`\"{}, \char`\"{}japanese\char`\"{}, \char`\"{}russian\char`\"{}, etc.). It should be equal to the identification used in language.\-cpp. 
+
+Reimplementado de \hyperlink{class_translator_english_a903bf0b486fd16dfbc84606e8474ff84}{Translator\-English}.
+
+\hypertarget{class_translator_japanese_en_a38858830a8a30ed8dd67927882d27ff3}{\index{Translator\-Japanese\-En@{Translator\-Japanese\-En}!latex\-Language\-Support\-Command@{latex\-Language\-Support\-Command}}
+\index{latex\-Language\-Support\-Command@{latex\-Language\-Support\-Command}!TranslatorJapaneseEn@{Translator\-Japanese\-En}}
+\subsubsection[{latex\-Language\-Support\-Command}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Q\-C\-String} latex\-Language\-Support\-Command (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_translator_japanese_en_a38858830a8a30ed8dd67927882d27ff3}
+Used to get the La\-Te\-X command(s) for the language support. This method should return string with commands that switch La\-Te\-X to the desired language. For example 
+\begin{DoxyPre}"\(\backslash\)\(\backslash\)usepackage[german]\{babel\}\(\backslash\)n"
+ \end{DoxyPre}
+ or 
+\begin{DoxyPre}"\(\backslash\)\(\backslash\)usepackage\{polski\}\(\backslash\)n"
+ "\(\backslash\)\(\backslash\)usepackage[latin2]\{inputenc\}\(\backslash\)n"
+ "\(\backslash\)\(\backslash\)usepackage[T1]\{fontenc\}\(\backslash\)n"
+ \end{DoxyPre}
+
+
+The English La\-Te\-X does not use such commands. Because of this the empty string is returned in this implementation. 
+
+Reimplementado de \hyperlink{class_translator_english_a38858830a8a30ed8dd67927882d27ff3}{Translator\-English}.
+
+\hypertarget{class_translator_japanese_en_ac711f1a109c3c8131bf02a9ff6f48e36}{\index{Translator\-Japanese\-En@{Translator\-Japanese\-En}!tr\-R\-T\-Fansicp@{tr\-R\-T\-Fansicp}}
+\index{tr\-R\-T\-Fansicp@{tr\-R\-T\-Fansicp}!TranslatorJapaneseEn@{Translator\-Japanese\-En}}
+\subsubsection[{tr\-R\-T\-Fansicp}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Q\-C\-String} tr\-R\-T\-Fansicp (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_translator_japanese_en_ac711f1a109c3c8131bf02a9ff6f48e36}
+Used as ansicpg for R\-T\-F file
+
+The following table shows the correlation of Charset name, Charset Value and 
+\begin{DoxyPre}
+Codepage number:
+\subsubsection*{Charset Name       Charset Value(hex)  Codepage number
+}\end{DoxyPre}
+
+
+
+\begin{DoxyPre}
+DEFAULT\_CHARSET           1 (x01)
+SYMBOL\_CHARSET            2 (x02)
+OEM\_CHARSET             255 (xFF)
+ANSI\_CHARSET              0 (x00)            1252
+RUSSIAN\_CHARSET         204 (xCC)            1251
+EE\_CHARSET              238 (xEE)            1250
+GREEK\_CHARSET           161 (xA1)            1253
+TURKISH\_CHARSET         162 (xA2)            1254
+BALTIC\_CHARSET          186 (xBA)            1257
+HEBREW\_CHARSET          177 (xB1)            1255
+ARABIC \_CHARSET         178 (xB2)            1256
+SHIFTJIS\_CHARSET        128 (x80)             932
+HANGEUL\_CHARSET         129 (x81)             949
+GB2313\_CHARSET          134 (x86)             936
+CHINESEBIG5\_CHARSET     136 (x88)             950
+\end{DoxyPre}
+ 
+
+Reimplementado de \hyperlink{class_translator_english_ac711f1a109c3c8131bf02a9ff6f48e36}{Translator\-English}.
+
+\hypertarget{class_translator_japanese_en_af3bba50fd4e382b113171e132e88719b}{\index{Translator\-Japanese\-En@{Translator\-Japanese\-En}!tr\-R\-T\-F\-Char\-Set@{tr\-R\-T\-F\-Char\-Set}}
+\index{tr\-R\-T\-F\-Char\-Set@{tr\-R\-T\-F\-Char\-Set}!TranslatorJapaneseEn@{Translator\-Japanese\-En}}
+\subsubsection[{tr\-R\-T\-F\-Char\-Set}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Q\-C\-String} tr\-R\-T\-F\-Char\-Set (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_translator_japanese_en_af3bba50fd4e382b113171e132e88719b}
+Used as ansicpg for R\-T\-F fcharset \begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_translator_japanese_en_ac711f1a109c3c8131bf02a9ff6f48e36}{tr\-R\-T\-Fansicp()} for a table of possible values. 
+\end{DoxySeeAlso}
+
+
+Reimplementado de \hyperlink{class_translator_english_af3bba50fd4e382b113171e132e88719b}{Translator\-English}.
+
+
+
+A documentação para esta classe foi gerada a partir do seguinte ficheiro\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/src/translator\-\_\-je.\-h\end{DoxyCompactItemize}

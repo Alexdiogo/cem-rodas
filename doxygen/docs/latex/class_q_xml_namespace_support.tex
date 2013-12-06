@@ -1,0 +1,178 @@
+\hypertarget{class_q_xml_namespace_support}{\section{Referência à classe Q\-Xml\-Namespace\-Support}
+\label{class_q_xml_namespace_support}\index{Q\-Xml\-Namespace\-Support@{Q\-Xml\-Namespace\-Support}}
+}
+
+
+The \hyperlink{class_q_xml_namespace_support}{Q\-Xml\-Namespace\-Support} class is a helper class for X\-M\-L readers which want to include namespace support.  
+
+
+
+
+{\ttfamily \#include $<$qxml.\-h$>$}
+
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_q_xml_namespace_support_a91945add078a281b3c05c5ed7ec29e67}{Q\-Xml\-Namespace\-Support} ()
+\item 
+\hyperlink{class_q_xml_namespace_support_a0af0f500daba06170d6b75377fafbcdf}{$\sim$\-Q\-Xml\-Namespace\-Support} ()
+\item 
+void \hyperlink{class_q_xml_namespace_support_ada78a4ed4212a7e5956a01cea19fc416}{set\-Prefix} (const \hyperlink{class_q_string}{Q\-String} \&, const \hyperlink{class_q_string}{Q\-String} \&)
+\item 
+\hyperlink{class_q_string}{Q\-String} \hyperlink{class_q_xml_namespace_support_a6234801283731e4cb01e275a93374ec3}{prefix} (const \hyperlink{class_q_string}{Q\-String} \&) const 
+\item 
+\hyperlink{class_q_string}{Q\-String} \hyperlink{class_q_xml_namespace_support_aca937387ce3699dbae070c53e8177730}{uri} (const \hyperlink{class_q_string}{Q\-String} \&) const 
+\item 
+void \hyperlink{class_q_xml_namespace_support_a33396201821f86d378bb05dbee5613d5}{split\-Name} (const \hyperlink{class_q_string}{Q\-String} \&, \hyperlink{class_q_string}{Q\-String} \&, \hyperlink{class_q_string}{Q\-String} \&) const 
+\item 
+void \hyperlink{class_q_xml_namespace_support_a56a0e02b6ab12fc0cb16d5cf4047e1d4}{process\-Name} (const \hyperlink{class_q_string}{Q\-String} \&, bool, \hyperlink{class_q_string}{Q\-String} \&, \hyperlink{class_q_string}{Q\-String} \&) const 
+\item 
+\hyperlink{class_q_string_list}{Q\-String\-List} \hyperlink{class_q_xml_namespace_support_ad3b61f2e54b788ad84b85a0150fbbe3b}{prefixes} () const 
+\item 
+\hyperlink{class_q_string_list}{Q\-String\-List} \hyperlink{class_q_xml_namespace_support_ada2e20e99e2a9df78cac2e512aeb045e}{prefixes} (const \hyperlink{class_q_string}{Q\-String} \&) const 
+\item 
+void \hyperlink{class_q_xml_namespace_support_a8145f4a61c1cc91d165269a14c95bc87}{push\-Context} ()
+\item 
+void \hyperlink{class_q_xml_namespace_support_ae6d781cbeaaf441551c7c0f6f2bec1e9}{pop\-Context} ()
+\item 
+void \hyperlink{class_q_xml_namespace_support_ad20897c5c8bd47f5d4005989bead0e55}{reset} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+The \hyperlink{class_q_xml_namespace_support}{Q\-Xml\-Namespace\-Support} class is a helper class for X\-M\-L readers which want to include namespace support. 
+
+X\-M\-L
+
+It provides some functions that makes it easy to handle namespaces. Its main use is for subclasses of \hyperlink{class_q_xml_reader}{Q\-Xml\-Reader} which want to provide namespace support.
+
+See also the \href{xml-sax.html#namespaces}{\tt namespace description}. 
+
+\subsection{Documentação dos Construtores \& Destrutor}
+\hypertarget{class_q_xml_namespace_support_a91945add078a281b3c05c5ed7ec29e67}{\index{Q\-Xml\-Namespace\-Support@{Q\-Xml\-Namespace\-Support}!Q\-Xml\-Namespace\-Support@{Q\-Xml\-Namespace\-Support}}
+\index{Q\-Xml\-Namespace\-Support@{Q\-Xml\-Namespace\-Support}!QXmlNamespaceSupport@{Q\-Xml\-Namespace\-Support}}
+\subsubsection[{Q\-Xml\-Namespace\-Support}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Xml\-Namespace\-Support} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_q_xml_namespace_support_a91945add078a281b3c05c5ed7ec29e67}
+Constructs a \hyperlink{class_q_xml_namespace_support}{Q\-Xml\-Namespace\-Support}. \hypertarget{class_q_xml_namespace_support_a0af0f500daba06170d6b75377fafbcdf}{\index{Q\-Xml\-Namespace\-Support@{Q\-Xml\-Namespace\-Support}!$\sim$\-Q\-Xml\-Namespace\-Support@{$\sim$\-Q\-Xml\-Namespace\-Support}}
+\index{$\sim$\-Q\-Xml\-Namespace\-Support@{$\sim$\-Q\-Xml\-Namespace\-Support}!QXmlNamespaceSupport@{Q\-Xml\-Namespace\-Support}}
+\subsubsection[{$\sim$\-Q\-Xml\-Namespace\-Support}]{\setlength{\rightskip}{0pt plus 5cm}$\sim${\bf Q\-Xml\-Namespace\-Support} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_q_xml_namespace_support_a0af0f500daba06170d6b75377fafbcdf}
+Destructs a \hyperlink{class_q_xml_namespace_support}{Q\-Xml\-Namespace\-Support}. 
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_q_xml_namespace_support_ae6d781cbeaaf441551c7c0f6f2bec1e9}{\index{Q\-Xml\-Namespace\-Support@{Q\-Xml\-Namespace\-Support}!pop\-Context@{pop\-Context}}
+\index{pop\-Context@{pop\-Context}!QXmlNamespaceSupport@{Q\-Xml\-Namespace\-Support}}
+\subsubsection[{pop\-Context}]{\setlength{\rightskip}{0pt plus 5cm}void pop\-Context (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_q_xml_namespace_support_ae6d781cbeaaf441551c7c0f6f2bec1e9}
+Reverts to the previous namespace context.
+
+Normally, you should pop the context at the end of each X\-M\-L element. After popping the context, all namespace prefix mappings that were previously in force are restored. \hypertarget{class_q_xml_namespace_support_a6234801283731e4cb01e275a93374ec3}{\index{Q\-Xml\-Namespace\-Support@{Q\-Xml\-Namespace\-Support}!prefix@{prefix}}
+\index{prefix@{prefix}!QXmlNamespaceSupport@{Q\-Xml\-Namespace\-Support}}
+\subsubsection[{prefix}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} prefix (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{uri}
+\end{DoxyParamCaption}
+) const}}\label{class_q_xml_namespace_support_a6234801283731e4cb01e275a93374ec3}
+Returns one of the prefixes mapped to a namespace U\-R\-I.
+
+If more than one prefix is currently mapped to the same U\-R\-I, this function will make an arbitrary selection; if you want all of the prefixes, use the \hyperlink{class_q_xml_namespace_support_ad3b61f2e54b788ad84b85a0150fbbe3b}{prefixes()} function instead.
+
+Note\-: this will never return the empty (default) prefix; to check for a default prefix, use the \hyperlink{class_q_xml_namespace_support_aca937387ce3699dbae070c53e8177730}{uri()} function with an argument of \char`\"{}\char`\"{}. \hypertarget{class_q_xml_namespace_support_ad3b61f2e54b788ad84b85a0150fbbe3b}{\index{Q\-Xml\-Namespace\-Support@{Q\-Xml\-Namespace\-Support}!prefixes@{prefixes}}
+\index{prefixes@{prefixes}!QXmlNamespaceSupport@{Q\-Xml\-Namespace\-Support}}
+\subsubsection[{prefixes}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String\-List} prefixes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_q_xml_namespace_support_ad3b61f2e54b788ad84b85a0150fbbe3b}
+Returns an enumeration of all prefixes currently declared.
+
+Note\-: if there is a default prefix, it will not be returned in this enumeration; check for the default prefix using \hyperlink{class_q_xml_namespace_support_aca937387ce3699dbae070c53e8177730}{uri()} with an argument of \char`\"{}\char`\"{}. \hypertarget{class_q_xml_namespace_support_ada2e20e99e2a9df78cac2e512aeb045e}{\index{Q\-Xml\-Namespace\-Support@{Q\-Xml\-Namespace\-Support}!prefixes@{prefixes}}
+\index{prefixes@{prefixes}!QXmlNamespaceSupport@{Q\-Xml\-Namespace\-Support}}
+\subsubsection[{prefixes}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String\-List} prefixes (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{uri}
+\end{DoxyParamCaption}
+) const}}\label{class_q_xml_namespace_support_ada2e20e99e2a9df78cac2e512aeb045e}
+Returns a list of all prefixes currently declared for a U\-R\-I.
+
+The xml\-: prefix will be included. If you want only one prefix that's mapped to the namespace U\-R\-I, and you don't care which one you get, use the \hyperlink{class_q_xml_namespace_support_a6234801283731e4cb01e275a93374ec3}{prefix()} function instead.
+
+Note\-: the empty (default) prefix is never included in this enumeration; to check for the presence of a default namespace, use \hyperlink{class_q_xml_namespace_support_aca937387ce3699dbae070c53e8177730}{uri()} with an argument of \char`\"{}\char`\"{}. \hypertarget{class_q_xml_namespace_support_a56a0e02b6ab12fc0cb16d5cf4047e1d4}{\index{Q\-Xml\-Namespace\-Support@{Q\-Xml\-Namespace\-Support}!process\-Name@{process\-Name}}
+\index{process\-Name@{process\-Name}!QXmlNamespaceSupport@{Q\-Xml\-Namespace\-Support}}
+\subsubsection[{process\-Name}]{\setlength{\rightskip}{0pt plus 5cm}void process\-Name (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{qname, }
+\item[{bool}]{is\-Attribute, }
+\item[{{\bf Q\-String} \&}]{nsuri, }
+\item[{{\bf Q\-String} \&}]{localname}
+\end{DoxyParamCaption}
+) const}}\label{class_q_xml_namespace_support_a56a0e02b6ab12fc0cb16d5cf4047e1d4}
+Processes a raw X\-M\-L 1.\-0 name in the current context by removing the prefix and looking it up among the prefixes currently declared.
+
+First parameter is the raw X\-M\-L 1.\-0 name to be processed. The second parameter is a flag wheter the name is the name of an attribute (T\-R\-U\-E) or not (F\-A\-L\-S\-E).
+
+The return values will be stored in the last two parameters as follows\-: 
+\begin{DoxyItemize}
+\item The namespace U\-R\-I, or an empty string if none is in use. 
+\item The local name (without prefix). 
+\end{DoxyItemize}
+
+If the raw name has a prefix that has not been declared, then the return value will be empty.
+
+Note that attribute names are processed differently than element names\-: an unprefixed element name will received the default namespace (if any), while an unprefixed element name will not \hypertarget{class_q_xml_namespace_support_a8145f4a61c1cc91d165269a14c95bc87}{\index{Q\-Xml\-Namespace\-Support@{Q\-Xml\-Namespace\-Support}!push\-Context@{push\-Context}}
+\index{push\-Context@{push\-Context}!QXmlNamespaceSupport@{Q\-Xml\-Namespace\-Support}}
+\subsubsection[{push\-Context}]{\setlength{\rightskip}{0pt plus 5cm}void push\-Context (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_q_xml_namespace_support_a8145f4a61c1cc91d165269a14c95bc87}
+Starts a new namespace context.
+
+Normally, you should push a new context at the beginning of each X\-M\-L element\-: the new context will automatically inherit the declarations of its parent context, but it will also keep track of which declarations were made within this context. \hypertarget{class_q_xml_namespace_support_ad20897c5c8bd47f5d4005989bead0e55}{\index{Q\-Xml\-Namespace\-Support@{Q\-Xml\-Namespace\-Support}!reset@{reset}}
+\index{reset@{reset}!QXmlNamespaceSupport@{Q\-Xml\-Namespace\-Support}}
+\subsubsection[{reset}]{\setlength{\rightskip}{0pt plus 5cm}void reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_q_xml_namespace_support_ad20897c5c8bd47f5d4005989bead0e55}
+Resets this namespace support object for reuse. \hypertarget{class_q_xml_namespace_support_ada78a4ed4212a7e5956a01cea19fc416}{\index{Q\-Xml\-Namespace\-Support@{Q\-Xml\-Namespace\-Support}!set\-Prefix@{set\-Prefix}}
+\index{set\-Prefix@{set\-Prefix}!QXmlNamespaceSupport@{Q\-Xml\-Namespace\-Support}}
+\subsubsection[{set\-Prefix}]{\setlength{\rightskip}{0pt plus 5cm}void set\-Prefix (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{pre, }
+\item[{const {\bf Q\-String} \&}]{uri}
+\end{DoxyParamCaption}
+)}}\label{class_q_xml_namespace_support_ada78a4ed4212a7e5956a01cea19fc416}
+This function declares a prefix in the current namespace context; the prefix will remain in force until this context is popped, unless it is shadowed in a descendant context.
+
+Note that there is an asymmetry in this library\-: while \hyperlink{class_q_xml_namespace_support_a6234801283731e4cb01e275a93374ec3}{prefix()} will not return the default \char`\"{}\char`\"{} prefix, even if you have declared one; to check for a default prefix, you have to look it up explicitly using \hyperlink{class_q_xml_namespace_support_aca937387ce3699dbae070c53e8177730}{uri()}. This asymmetry exists to make it easier to look up prefixes for attribute names, where the default prefix is not allowed. \hypertarget{class_q_xml_namespace_support_a33396201821f86d378bb05dbee5613d5}{\index{Q\-Xml\-Namespace\-Support@{Q\-Xml\-Namespace\-Support}!split\-Name@{split\-Name}}
+\index{split\-Name@{split\-Name}!QXmlNamespaceSupport@{Q\-Xml\-Namespace\-Support}}
+\subsubsection[{split\-Name}]{\setlength{\rightskip}{0pt plus 5cm}void split\-Name (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{qname, }
+\item[{{\bf Q\-String} \&}]{prefix, }
+\item[{{\bf Q\-String} \&}]{localname}
+\end{DoxyParamCaption}
+) const}}\label{class_q_xml_namespace_support_a33396201821f86d378bb05dbee5613d5}
+Splits the name at the '\-:' and returns the prefix and the local name. \hypertarget{class_q_xml_namespace_support_aca937387ce3699dbae070c53e8177730}{\index{Q\-Xml\-Namespace\-Support@{Q\-Xml\-Namespace\-Support}!uri@{uri}}
+\index{uri@{uri}!QXmlNamespaceSupport@{Q\-Xml\-Namespace\-Support}}
+\subsubsection[{uri}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} uri (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{prefix}
+\end{DoxyParamCaption}
+) const}}\label{class_q_xml_namespace_support_aca937387ce3699dbae070c53e8177730}
+Looks up a prefix in the current context and returns the currently-\/mapped namespace U\-R\-I. Use the empty string (\char`\"{}\char`\"{}) for the default namespace. 
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/qtools/qxml.\-h\item 
+C\-:/\-Users/teste/git/doxygen/qtools/qxml.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,66 @@
+\hypertarget{class_define_list}{\section{Referência à classe Define\-List}
+\label{class_define_list}\index{Define\-List@{Define\-List}}
+}
+
+
+{\ttfamily \#include $<$define.\-h$>$}
+
+Diagrama de heranças da classe Define\-List\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_define_list}
+\end{center}
+\end{figure}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_define_list_a44ca4833fab8a8d30ea70614e7d47753}{compare\-Items} (Q\-Collection\-::\-Item i1, Q\-Collection\-::\-Item i2)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Descrição detalhada}
+\hyperlink{class_a}{A} list of \hyperlink{class_define}{Define} objects. 
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_define_list_a44ca4833fab8a8d30ea70614e7d47753}{\index{Define\-List@{Define\-List}!compare\-Items@{compare\-Items}}
+\index{compare\-Items@{compare\-Items}!DefineList@{Define\-List}}
+\subsubsection[{compare\-Items}]{\setlength{\rightskip}{0pt plus 5cm}int compare\-Items (
+\begin{DoxyParamCaption}
+\item[{Q\-Collection\-::\-Item}]{item1, }
+\item[{Q\-Collection\-::\-Item}]{item2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_define_list_a44ca4833fab8a8d30ea70614e7d47753}
+This virtual function compares two list items.
+
+Returns\-: 
+\begin{DoxyItemize}
+\item 0 if {\itshape item1} == {\itshape item2} 
+\item non-\/zero if {\itshape item1} != {\itshape item2} 
+\end{DoxyItemize}
+
+This function returns {\itshape int} rather than {\itshape bool} so that reimplementations can return three values and use it to sort by\-:
+
+
+\begin{DoxyItemize}
+\item 0 if {\itshape item1} == {\itshape item2} 
+\item $>$ 0 (positive integer) if {\itshape item1} $>$ {\itshape item2} 
+\item $<$ 0 (negative integer) if {\itshape item1} $<$ {\itshape item2} 
+\end{DoxyItemize}
+
+The Q\-List\-::in\-Sort() function requires that \hyperlink{class_define_list_a44ca4833fab8a8d30ea70614e7d47753}{compare\-Items()} is implemented as described here.
+
+This function should not modify the list because some const functions call \hyperlink{class_define_list_a44ca4833fab8a8d30ea70614e7d47753}{compare\-Items()}.
+
+The default implementation compares the pointers\-: 
+\begin{DoxyCode}
+\end{DoxyCode}
+ 
+
+Reimplementado de \hyperlink{class_q_g_list_aac689c6d7a54b6558afbd53845183af8}{Q\-G\-List}.
+
+
+
+A documentação para esta classe foi gerada a partir do seguinte ficheiro\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/src/define.\-h\end{DoxyCompactItemize}

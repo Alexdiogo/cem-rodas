@@ -1,0 +1,837 @@
+\hypertarget{class_class_def}{\section{Referência à classe Class\-Def}
+\label{class_class_def}\index{Class\-Def@{Class\-Def}}
+}
+
+
+{\ttfamily \#include $<$classdef.\-h$>$}
+
+Diagrama de heranças da classe Class\-Def\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_class_def}
+\end{center}
+\end{figure}
+\subsection*{Tipos Públicos}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_class_def_a768a6f0a6fd7e9087ff7971abbcc3f36}{Compound\-Type} \{ \\*
+{\bfseries Class}, 
+{\bfseries Struct}, 
+{\bfseries Union}, 
+{\bfseries Interface}, 
+\\*
+{\bfseries Protocol}, 
+{\bfseries Category}, 
+{\bfseries Exception}, 
+{\bfseries Service}, 
+\\*
+{\bfseries Singleton}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_class_def_a389341b271ebaf30cccddd1838c0f597}{Class\-Def} (const char $\ast$file\-Name, int start\-Line, int start\-Column, const char $\ast$\hyperlink{class_definition_a2c310e06c9aadc6fb218f80fcbb5c695}{name}, \hyperlink{class_class_def_a768a6f0a6fd7e9087ff7971abbcc3f36}{Compound\-Type} ct, const char $\ast$ref=0, const char $\ast$f\-Name=0, bool is\-Symbol=T\-R\-U\-E, bool is\-Java\-Enum=F\-A\-L\-S\-E)
+\item 
+\hyperlink{class_class_def_a0da78b18aa5068125435320465f36e31}{$\sim$\-Class\-Def} ()
+\item 
+\hyperlink{class_definition_intf_a2dc566dfec40397b2990e6520536ecb5}{Def\-Type} \hyperlink{class_class_def_aac410235a8bf90e471e649bd9dbf9c5e}{definition\-Type} () const 
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_class_def_af72a982ba8198cd5c98e9fc850b71df6}{get\-Output\-File\-Base} () const 
+\item 
+\hypertarget{class_class_def_a765bb682fdbd4e43d815fad3710f10c5}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries get\-Instance\-Output\-File\-Base} () const }\label{class_class_def_a765bb682fdbd4e43d815fad3710f10c5}
+
+\item 
+\hypertarget{class_class_def_ad47efa4da31f60e593a236751d7e4733}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries get\-File\-Base} () const }\label{class_class_def_ad47efa4da31f60e593a236751d7e4733}
+
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_class_def_a0b24a407e5cd41328e5c64aac0884b6f}{get\-Source\-File\-Base} () const 
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_class_def_a87b81ea7f17740033bf8fb12f796c494}{get\-Reference} () const 
+\item 
+bool \hyperlink{class_class_def_ab7dc8cc872f3cec2e07dace4293989aa}{is\-Reference} () const 
+\item 
+bool \hyperlink{class_class_def_a69fb7e260ed2bc6fa82bfe12c2aeec5a}{is\-Local} () const 
+\item 
+\hyperlink{class_class_s_dict}{Class\-S\-Dict} $\ast$ \hyperlink{class_class_def_a14c0b45a5896c00649594a0951ae30f7}{get\-Class\-S\-Dict} ()
+\item 
+bool \hyperlink{class_class_def_a585dcd381ab70014568db8ad457fc8b1}{has\-Documentation} () const 
+\item 
+bool \hyperlink{class_class_def_ab1e57fff5fd6e501a15f6e992a783995}{has\-Detailed\-Description} () const 
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_class_def_abfd9c72c9c6a40b1689b0671eebc044c}{display\-Name} (bool include\-Scope=T\-R\-U\-E) const 
+\item 
+\hyperlink{class_class_def_a768a6f0a6fd7e9087ff7971abbcc3f36}{Compound\-Type} \hyperlink{class_class_def_ae5dffc6bd9342e513fc2b9902a150abe}{compound\-Type} () const 
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_class_def_a259ebc501d584761467e254f635fd766}{compound\-Type\-String} () const 
+\item 
+\hyperlink{class_base_class_list}{Base\-Class\-List} $\ast$ \hyperlink{class_class_def_af817cb1006279d14dca4b6b6ba3db901}{base\-Classes} () const 
+\item 
+\hyperlink{class_base_class_list}{Base\-Class\-List} $\ast$ \hyperlink{class_class_def_a33f96bac2c9a43e8f6faaeca118d2c73}{sub\-Classes} () const 
+\item 
+\hyperlink{class_member_name_info_s_dict}{Member\-Name\-Info\-S\-Dict} $\ast$ \hyperlink{class_class_def_abbca3615e0d59730e500151d54561416}{member\-Name\-Info\-S\-Dict} () const 
+\item 
+\hyperlink{types_8h_a90e352184df58cd09455fe9996cd4ded}{Protection} \hyperlink{class_class_def_a149b66b75ad6cd6c17457a689e68cd9e}{protection} () const 
+\item 
+bool \hyperlink{class_class_def_a7ff00a84da6e47f3c64c6bf9f6316385}{is\-Linkable\-In\-Project} () const 
+\item 
+bool \hyperlink{class_class_def_afb5645c0dc69c2f1da67da6e33316e3b}{is\-Linkable} () const 
+\item 
+bool \hyperlink{class_class_def_a0903a297b1dfa5e537e21ac1bd42d433}{is\-Visible\-In\-Hierarchy} ()
+\item 
+\hyperlink{class_argument_list}{Argument\-List} $\ast$ \hyperlink{class_class_def_a7a7099c182d85b097ec9b4ac866db827}{template\-Arguments} () const 
+\item 
+\hyperlink{class_namespace_def}{Namespace\-Def} $\ast$ \hyperlink{class_class_def_a7707ce10899d1b0914f2e95b2d4ecc2a}{get\-Namespace\-Def} () const 
+\item 
+\hyperlink{class_file_def}{File\-Def} $\ast$ \hyperlink{class_class_def_a5a292ca6db63e5f4a6012dae2af1de08}{get\-File\-Def} () const 
+\item 
+\hyperlink{class_member_def}{Member\-Def} $\ast$ \hyperlink{class_class_def_ae4b1361bd609c705db962bd9bb8e1afe}{get\-Member\-By\-Name} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&) const 
+\item 
+bool \hyperlink{class_class_def_ab521566f4d878f44bacb0a2560d993af}{is\-Base\-Class} (\hyperlink{class_class_def}{Class\-Def} $\ast$bcd, bool follow\-Instances, int level=0)
+\item 
+bool \hyperlink{class_class_def_a81e8ccaa1ddaa3afb6e821c31aa48a0a}{is\-Sub\-Class} (\hyperlink{class_class_def}{Class\-Def} $\ast$bcd, int level=0)
+\item 
+bool \hyperlink{class_class_def_a9a900cabaf8bd50fa297ea679dfc7716}{is\-Accessible\-Member} (\hyperlink{class_member_def}{Member\-Def} $\ast$md)
+\item 
+Q\-Dict$<$ \hyperlink{class_class_def}{Class\-Def} $>$ $\ast$ \hyperlink{class_class_def_ad40e3e5176f010fe191043509646d755}{get\-Template\-Instances} () const 
+\item 
+\hyperlink{class_class_def}{Class\-Def} $\ast$ \hyperlink{class_class_def_aa05f1773a95fb95fbecf82f8c67514c8}{template\-Master} () const 
+\item 
+bool \hyperlink{class_class_def_a623895be75dc282b0f3af5b18a0cd736}{is\-Template} () const 
+\item 
+\hypertarget{class_class_def_ac58018f1dfa180cc9c8c622e92e8819b}{\hyperlink{struct_include_info}{Include\-Info} $\ast$ {\bfseries include\-Info} () const }\label{class_class_def_ac58018f1dfa180cc9c8c622e92e8819b}
+
+\item 
+\hypertarget{class_class_def_a2b04ff2f8428b80903082077ddbc6388}{\hyperlink{class_uses_class_dict}{Uses\-Class\-Dict} $\ast$ {\bfseries used\-Implementation\-Classes} () const }\label{class_class_def_a2b04ff2f8428b80903082077ddbc6388}
+
+\item 
+\hypertarget{class_class_def_affe536e52200d391064d6424e4cca60a}{\hyperlink{class_uses_class_dict}{Uses\-Class\-Dict} $\ast$ {\bfseries used\-By\-Implementation\-Classes} () const }\label{class_class_def_affe536e52200d391064d6424e4cca60a}
+
+\item 
+\hypertarget{class_class_def_a750addde329b334fcd3a7778be2ab27a}{\hyperlink{class_uses_class_dict}{Uses\-Class\-Dict} $\ast$ {\bfseries used\-Interface\-Classes} () const }\label{class_class_def_a750addde329b334fcd3a7778be2ab27a}
+
+\item 
+\hypertarget{class_class_def_a2a499722bfcb37d7a130073b1582938e}{bool {\bfseries is\-Template\-Argument} () const }\label{class_class_def_a2a499722bfcb37d7a130073b1582938e}
+
+\item 
+virtual \hyperlink{class_definition}{Definition} $\ast$ \hyperlink{class_class_def_a5f4c10da520e9553c62483027168c42c}{find\-Inner\-Compound} (const char $\ast$\hyperlink{class_definition_a2c310e06c9aadc6fb218f80fcbb5c695}{name})
+\item 
+void \hyperlink{class_class_def_aef20cac5706a02dbb50518d24b38f464}{get\-Template\-Parameter\-Lists} (\hyperlink{class_q_list}{Q\-List}$<$ \hyperlink{class_argument_list}{Argument\-List} $>$ \&lists) const 
+\item 
+\hypertarget{class_class_def_ab123fdbde52be05a46788508ce1d464c}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries qualified\-Name\-With\-Template\-Parameters} (\hyperlink{class_q_list}{Q\-List}$<$ \hyperlink{class_argument_list}{Argument\-List} $>$ $\ast$actual\-Params=0) const }\label{class_class_def_ab123fdbde52be05a46788508ce1d464c}
+
+\item 
+bool \hyperlink{class_class_def_ac7f749737f31e5dc070351bbe5214793}{is\-Abstract} () const 
+\item 
+bool \hyperlink{class_class_def_ab5793e9c44df25523354dc0d0210e54f}{is\-Objective\-C} () const 
+\item 
+bool \hyperlink{class_class_def_a06620e645a54d46fb481d2ea594f59cf}{is\-C\-Sharp} () const 
+\item 
+bool \hyperlink{class_class_def_aa1c038a9fa70a19d46c1ea65cbffdb2d}{is\-Final} () const 
+\item 
+bool \hyperlink{class_class_def_a27367a1b9326358f119463c48350f887}{is\-Sealed} () const 
+\item 
+bool \hyperlink{class_class_def_a3d09e3bb6fc4144c31a80fd26d401e69}{is\-Published} () const 
+\item 
+bool \hyperlink{class_class_def_a9ef3fb490d8218394f1091152c631575}{is\-Extension} () const 
+\item 
+\hyperlink{class_class_def}{Class\-Def} $\ast$ \hyperlink{class_class_def_af897ec96b5a2136f22986353269c091a}{category\-Of} () const 
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_class_def_af0a121aefc7a4a8d9fdda94b6d845ca1}{class\-Name} () const 
+\item 
+\hyperlink{class_member_list}{Member\-List} $\ast$ \hyperlink{class_class_def_af9947305eeabd8e482637af1ccb4ec4e}{get\-Member\-List} (Member\-List\-Type lt)
+\item 
+const \hyperlink{class_q_list}{Q\-List}$<$ \hyperlink{class_member_list}{Member\-List} $>$ \& \hyperlink{class_class_def_a958ea00543faccec752fba58fcf79d43}{get\-Member\-Lists} () const 
+\item 
+\hyperlink{class_member_group_s_dict}{Member\-Group\-S\-Dict} $\ast$ \hyperlink{class_class_def_aebe674b96b5f7f7433f7d161e5a2f047}{get\-Member\-Group\-S\-Dict} () const 
+\item 
+\hypertarget{class_class_def_a61227c47a6723ba7a5940edf958606f8}{Q\-Dict$<$ int $>$ $\ast$ {\bfseries get\-Template\-Base\-Class\-Names} () const }\label{class_class_def_a61227c47a6723ba7a5940edf958606f8}
+
+\item 
+\hypertarget{class_class_def_af6ff262fde60dda76af627de607838a0}{\hyperlink{class_class_def}{Class\-Def} $\ast$ {\bfseries get\-Variable\-Instance} (const char $\ast$templ\-Spec)}\label{class_class_def_af6ff262fde60dda76af627de607838a0}
+
+\item 
+\hypertarget{class_class_def_acd998e677fa172f364757bc7c0faa82d}{bool {\bfseries is\-Used\-Only} () const }\label{class_class_def_acd998e677fa172f364757bc7c0faa82d}
+
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_class_def_acd17ae1d9600f864b1beb85dfb99a4f4}{anchor} () const 
+\item 
+\hypertarget{class_class_def_ac676e6830cd4943345b79f6e907198c3}{bool {\bfseries is\-Embedded\-In\-Outer\-Scope} () const }\label{class_class_def_ac676e6830cd4943345b79f6e907198c3}
+
+\item 
+\hypertarget{class_class_def_a1173815e97366bb5478b113f3bdb96f4}{bool {\bfseries is\-Simple} () const }\label{class_class_def_a1173815e97366bb5478b113f3bdb96f4}
+
+\item 
+\hypertarget{class_class_def_a30d0dd8dc490c9107c8b7b4182b56599}{const \hyperlink{class_class_list}{Class\-List} $\ast$ {\bfseries tagged\-Inner\-Classes} () const }\label{class_class_def_a30d0dd8dc490c9107c8b7b4182b56599}
+
+\item 
+\hypertarget{class_class_def_a64b5b53cc3bed64b6e71667b92184f0a}{\hyperlink{class_class_def}{Class\-Def} $\ast$ {\bfseries tag\-Less\-Reference} () const }\label{class_class_def_a64b5b53cc3bed64b6e71667b92184f0a}
+
+\item 
+\hypertarget{class_class_def_ad68ef9c48463aee9303ebf4027a45504}{\hyperlink{class_member_def}{Member\-Def} $\ast$ {\bfseries is\-Smart\-Pointer} () const }\label{class_class_def_ad68ef9c48463aee9303ebf4027a45504}
+
+\item 
+\hypertarget{class_class_def_a6172a152d379e7b464530108fa21abb1}{bool {\bfseries is\-Java\-Enum} () const }\label{class_class_def_a6172a152d379e7b464530108fa21abb1}
+
+\item 
+\hypertarget{class_class_def_a23dc989285849b8207359f6d9e0a0d18}{bool {\bfseries is\-Generic} () const }\label{class_class_def_a23dc989285849b8207359f6d9e0a0d18}
+
+\item 
+\hypertarget{class_class_def_ab3d57806b719dbd83a0c54e149142f01}{const \hyperlink{class_class_s_dict}{Class\-S\-Dict} $\ast$ {\bfseries inner\-Classes} () const }\label{class_class_def_ab3d57806b719dbd83a0c54e149142f01}
+
+\item 
+\hypertarget{class_class_def_adf5241b59706e696c508de8baa4c2f97}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries title} () const }\label{class_class_def_adf5241b59706e696c508de8baa4c2f97}
+
+\item 
+\hypertarget{class_class_def_a374129cf2856a7f42c95fb4c256e8e7d}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries generated\-From\-Files} () const }\label{class_class_def_a374129cf2856a7f42c95fb4c256e8e7d}
+
+\item 
+\hypertarget{class_class_def_a1590bde288fb079fc006f0e17b929332}{const \hyperlink{class_file_list}{File\-List} \& {\bfseries used\-Files} () const }\label{class_class_def_a1590bde288fb079fc006f0e17b929332}
+
+\item 
+\hypertarget{class_class_def_a297d8007cbc86485068414c78e3d625f}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries include\-Statement} () const }\label{class_class_def_a297d8007cbc86485068414c78e3d625f}
+
+\item 
+\hypertarget{class_class_def_a1e60384ae1b4e7337f79b85863e7ee20}{void {\bfseries insert\-Base\-Class} (\hyperlink{class_class_def}{Class\-Def} $\ast$, const char $\ast$\hyperlink{class_definition_a2c310e06c9aadc6fb218f80fcbb5c695}{name}, \hyperlink{types_8h_a90e352184df58cd09455fe9996cd4ded}{Protection} p, \hyperlink{types_8h_ab16236bdd10ddf4d73a9847350f0017e}{Specifier} s, const char $\ast$t=0)}\label{class_class_def_a1e60384ae1b4e7337f79b85863e7ee20}
+
+\item 
+\hypertarget{class_class_def_ac2ad6c1787a5b9b7c493b2d391dc0bac}{void {\bfseries insert\-Sub\-Class} (\hyperlink{class_class_def}{Class\-Def} $\ast$, \hyperlink{types_8h_a90e352184df58cd09455fe9996cd4ded}{Protection} p, \hyperlink{types_8h_ab16236bdd10ddf4d73a9847350f0017e}{Specifier} s, const char $\ast$t=0)}\label{class_class_def_ac2ad6c1787a5b9b7c493b2d391dc0bac}
+
+\item 
+\hypertarget{class_class_def_ab9db640805241ec8533233a1aaf8f3b7}{void {\bfseries set\-Include\-File} (\hyperlink{class_file_def}{File\-Def} $\ast$fd, const char $\ast$inc\-Name, bool local, bool force)}\label{class_class_def_ab9db640805241ec8533233a1aaf8f3b7}
+
+\item 
+\hypertarget{class_class_def_a873393a406532d65fd5014d07276bbc5}{void {\bfseries insert\-Member} (\hyperlink{class_member_def}{Member\-Def} $\ast$)}\label{class_class_def_a873393a406532d65fd5014d07276bbc5}
+
+\item 
+\hypertarget{class_class_def_a00c010c1921cf58a26c39133ed3ef8b3}{void {\bfseries insert\-Used\-File} (\hyperlink{class_file_def}{File\-Def} $\ast$)}\label{class_class_def_a00c010c1921cf58a26c39133ed3ef8b3}
+
+\item 
+\hypertarget{class_class_def_a6465272004bda4a4c659a6a2814154ee}{bool {\bfseries add\-Example} (const char $\ast$\hyperlink{class_class_def_acd17ae1d9600f864b1beb85dfb99a4f4}{anchor}, const char $\ast$\hyperlink{class_definition_a2c310e06c9aadc6fb218f80fcbb5c695}{name}, const char $\ast$file)}\label{class_class_def_a6465272004bda4a4c659a6a2814154ee}
+
+\item 
+void \hyperlink{class_class_def_a6c95a685fad4c9f730fed037fae718e3}{merge\-Category} (\hyperlink{class_class_def}{Class\-Def} $\ast$category)
+\item 
+\hypertarget{class_class_def_a77ef7c03d7ab9059874406ccceb110e8}{void {\bfseries set\-Namespace} (\hyperlink{class_namespace_def}{Namespace\-Def} $\ast$nd)}\label{class_class_def_a77ef7c03d7ab9059874406ccceb110e8}
+
+\item 
+\hypertarget{class_class_def_aaf99d2e7b4d7431a00fe3e970bc7f6e8}{void {\bfseries set\-File\-Def} (\hyperlink{class_file_def}{File\-Def} $\ast$fd)}\label{class_class_def_aaf99d2e7b4d7431a00fe3e970bc7f6e8}
+
+\item 
+\hypertarget{class_class_def_a13399806d6ed5cf731b3a67d8be20c23}{void {\bfseries set\-Sub\-Grouping} (bool enabled)}\label{class_class_def_a13399806d6ed5cf731b3a67d8be20c23}
+
+\item 
+\hypertarget{class_class_def_a6cc19181f99433807b136683170b37d0}{void {\bfseries set\-Protection} (\hyperlink{types_8h_a90e352184df58cd09455fe9996cd4ded}{Protection} p)}\label{class_class_def_a6cc19181f99433807b136683170b37d0}
+
+\item 
+\hypertarget{class_class_def_adb8b90408ea61ceefa9d635a2f13b429}{void {\bfseries set\-Group\-Def\-For\-All\-Members} (\hyperlink{class_group_def}{Group\-Def} $\ast$g, \hyperlink{struct_grouping_ae0be00a2b5dfbbc6c4558e88dddc9d81}{Grouping\-::\-Group\-Pri\-\_\-t} pri, const \hyperlink{class_q_c_string}{Q\-C\-String} \&file\-Name, int start\-Line, bool has\-Docs)}\label{class_class_def_adb8b90408ea61ceefa9d635a2f13b429}
+
+\item 
+\hypertarget{class_class_def_a98509b9197b57394494196e01c70e540}{void {\bfseries add\-Inner\-Compound} (\hyperlink{class_definition}{Definition} $\ast$d)}\label{class_class_def_a98509b9197b57394494196e01c70e540}
+
+\item 
+\hypertarget{class_class_def_a34a34cc736e598b3f87a31b8b7004e67}{\hyperlink{class_class_def}{Class\-Def} $\ast$ {\bfseries insert\-Template\-Instance} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&file\-Name, int start\-Line, int start\-Column, const \hyperlink{class_q_c_string}{Q\-C\-String} \&templ\-Spec, bool \&fresh\-Instance)}\label{class_class_def_a34a34cc736e598b3f87a31b8b7004e67}
+
+\item 
+\hypertarget{class_class_def_a16de2612d86db3891ff4473360df91f2}{void {\bfseries add\-Used\-Class} (\hyperlink{class_class_def}{Class\-Def} $\ast$cd, const char $\ast$access\-Name, \hyperlink{types_8h_a90e352184df58cd09455fe9996cd4ded}{Protection} prot)}\label{class_class_def_a16de2612d86db3891ff4473360df91f2}
+
+\item 
+\hypertarget{class_class_def_acc3c6f6e4c11eab7d9e06eeb4315b5de}{void {\bfseries add\-Used\-By\-Class} (\hyperlink{class_class_def}{Class\-Def} $\ast$cd, const char $\ast$access\-Name, \hyperlink{types_8h_a90e352184df58cd09455fe9996cd4ded}{Protection} prot)}\label{class_class_def_acc3c6f6e4c11eab7d9e06eeb4315b5de}
+
+\item 
+\hypertarget{class_class_def_ac2c6a33bc8e9784c364fe26efb3c5cdf}{void {\bfseries set\-Is\-Static} (bool b)}\label{class_class_def_ac2c6a33bc8e9784c364fe26efb3c5cdf}
+
+\item 
+\hypertarget{class_class_def_aefa06ec54ea76f68fed9ec22c9a2defd}{void {\bfseries set\-Compound\-Type} (\hyperlink{class_class_def_a768a6f0a6fd7e9087ff7971abbcc3f36}{Compound\-Type} t)}\label{class_class_def_aefa06ec54ea76f68fed9ec22c9a2defd}
+
+\item 
+\hypertarget{class_class_def_a90c959892d0ff402cb479f4f673126b4}{void {\bfseries set\-Class\-Name} (const char $\ast$\hyperlink{class_definition_a2c310e06c9aadc6fb218f80fcbb5c695}{name})}\label{class_class_def_a90c959892d0ff402cb479f4f673126b4}
+
+\item 
+\hypertarget{class_class_def_adbc5b8eac2c5ec37df70fcafa90f6281}{void {\bfseries set\-Class\-Specifier} (uint64 spec)}\label{class_class_def_adbc5b8eac2c5ec37df70fcafa90f6281}
+
+\item 
+\hypertarget{class_class_def_a2092cb0ab215a3f70f9024525aa21591}{void {\bfseries set\-Template\-Arguments} (\hyperlink{class_argument_list}{Argument\-List} $\ast$al)}\label{class_class_def_a2092cb0ab215a3f70f9024525aa21591}
+
+\item 
+\hypertarget{class_class_def_a4f3404802c3c0e8943848f2043071ce2}{void {\bfseries set\-Template\-Base\-Class\-Names} (Q\-Dict$<$ int $>$ $\ast$template\-Names)}\label{class_class_def_a4f3404802c3c0e8943848f2043071ce2}
+
+\item 
+\hypertarget{class_class_def_a30f1788720afbe319d8638f4c6a8a060}{void {\bfseries set\-Template\-Master} (\hyperlink{class_class_def}{Class\-Def} $\ast$tm)}\label{class_class_def_a30f1788720afbe319d8638f4c6a8a060}
+
+\item 
+\hypertarget{class_class_def_ac805ef0f9105033770cacf6bb063547c}{void {\bfseries set\-Type\-Constraints} (\hyperlink{class_argument_list}{Argument\-List} $\ast$al)}\label{class_class_def_ac805ef0f9105033770cacf6bb063547c}
+
+\item 
+\hypertarget{class_class_def_a40795fcf3b052c11ea4f3fcf9682dad7}{void {\bfseries add\-Members\-To\-Template\-Instance} (\hyperlink{class_class_def}{Class\-Def} $\ast$cd, const char $\ast$templ\-Spec)}\label{class_class_def_a40795fcf3b052c11ea4f3fcf9682dad7}
+
+\item 
+\hypertarget{class_class_def_a9e66210b07e1de96620b6f1df719f2b2}{void {\bfseries make\-Template\-Argument} (bool b=T\-R\-U\-E)}\label{class_class_def_a9e66210b07e1de96620b6f1df719f2b2}
+
+\item 
+\hypertarget{class_class_def_ab46f4cc1c4c1225a86f6deddd20c4d2e}{void {\bfseries set\-Category\-Of} (\hyperlink{class_class_def}{Class\-Def} $\ast$cd)}\label{class_class_def_ab46f4cc1c4c1225a86f6deddd20c4d2e}
+
+\item 
+\hypertarget{class_class_def_a9be86fca6f0963b5d0b38425e2caac99}{void {\bfseries set\-Used\-Only} (bool b)}\label{class_class_def_a9be86fca6f0963b5d0b38425e2caac99}
+
+\item 
+\hypertarget{class_class_def_ac569051d53fedf74bf3499ff35f7f084}{void {\bfseries add\-Tagged\-Inner\-Class} (\hyperlink{class_class_def}{Class\-Def} $\ast$cd)}\label{class_class_def_ac569051d53fedf74bf3499ff35f7f084}
+
+\item 
+\hypertarget{class_class_def_a7d28692dbcd1f9f59d5f2d7dcfb7e3d7}{void {\bfseries set\-Tag\-Less\-Reference} (\hyperlink{class_class_def}{Class\-Def} $\ast$cd)}\label{class_class_def_a7d28692dbcd1f9f59d5f2d7dcfb7e3d7}
+
+\item 
+\hypertarget{class_class_def_ad714b0e193e95efc23bb5de8dfb76cb6}{void {\bfseries find\-Sections\-In\-Documentation} ()}\label{class_class_def_ad714b0e193e95efc23bb5de8dfb76cb6}
+
+\item 
+\hypertarget{class_class_def_ab9b8dfbf4b834e7f3e6557537a877ed9}{void {\bfseries add\-Members\-To\-Member\-Group} ()}\label{class_class_def_ab9b8dfbf4b834e7f3e6557537a877ed9}
+
+\item 
+\hypertarget{class_class_def_a6b28c57cb8b05f6fe38f771e62b9aa17}{void {\bfseries add\-List\-References} ()}\label{class_class_def_a6b28c57cb8b05f6fe38f771e62b9aa17}
+
+\item 
+\hypertarget{class_class_def_a6bd971b93180dba29a797a5472362d17}{void {\bfseries compute\-Anchors} ()}\label{class_class_def_a6bd971b93180dba29a797a5472362d17}
+
+\item 
+void \hyperlink{class_class_def_a54bb3ccc04cd653fd3056550e5e1ceb4}{merge\-Members} ()
+\item 
+\hypertarget{class_class_def_a8769ab4803a557422b86e565cb6b30d0}{void {\bfseries sort\-Member\-Lists} ()}\label{class_class_def_a8769ab4803a557422b86e565cb6b30d0}
+
+\item 
+\hypertarget{class_class_def_a2422e453d341daa281687fb6a4e7b76f}{void {\bfseries distribute\-Member\-Group\-Documentation} ()}\label{class_class_def_a2422e453d341daa281687fb6a4e7b76f}
+
+\item 
+\hypertarget{class_class_def_a0c85f3695c99f7b1aeb762bbdabc8d62}{void {\bfseries write\-Documentation} (\hyperlink{class_output_list}{Output\-List} \&ol)}\label{class_class_def_a0c85f3695c99f7b1aeb762bbdabc8d62}
+
+\item 
+\hypertarget{class_class_def_a453fbc9a0e3fa0905bdb3cf8fccea263}{void {\bfseries write\-Documentation\-For\-Inner\-Classes} (\hyperlink{class_output_list}{Output\-List} \&ol)}\label{class_class_def_a453fbc9a0e3fa0905bdb3cf8fccea263}
+
+\item 
+\hypertarget{class_class_def_a3ab9294ac3e907a42b200665010f9381}{void {\bfseries write\-Member\-Pages} (\hyperlink{class_output_list}{Output\-List} \&ol)}\label{class_class_def_a3ab9294ac3e907a42b200665010f9381}
+
+\item 
+\hypertarget{class_class_def_aad7a56107e2a38608e1eed2479900a2c}{void {\bfseries write\-Member\-List} (\hyperlink{class_output_list}{Output\-List} \&ol)}\label{class_class_def_aad7a56107e2a38608e1eed2479900a2c}
+
+\item 
+void \hyperlink{class_class_def_a6abd78845db5eba02bf4e71eea182274}{write\-Declaration} (\hyperlink{class_output_list}{Output\-List} \&ol, \hyperlink{class_member_def}{Member\-Def} $\ast$md, bool in\-Group, \hyperlink{class_class_def}{Class\-Def} $\ast$inherited\-From, const char $\ast$inherit\-Id)
+\item 
+\hypertarget{class_class_def_ad26fab38253105173dfb5b116712edb8}{void {\bfseries write\-Quick\-Member\-Links} (\hyperlink{class_output_list}{Output\-List} \&ol, \hyperlink{class_member_def}{Member\-Def} $\ast$md) const }\label{class_class_def_ad26fab38253105173dfb5b116712edb8}
+
+\item 
+\hypertarget{class_class_def_a237e7cf83c23d0d5ac812e3c37800a3f}{void {\bfseries write\-Summary\-Links} (\hyperlink{class_output_list}{Output\-List} \&ol)}\label{class_class_def_a237e7cf83c23d0d5ac812e3c37800a3f}
+
+\item 
+\hypertarget{class_class_def_ad58c00cf5c5b1d7882f427d46b2bdad7}{void {\bfseries reclassify\-Member} (\hyperlink{class_member_def}{Member\-Def} $\ast$md, Member\-Type t)}\label{class_class_def_ad58c00cf5c5b1d7882f427d46b2bdad7}
+
+\item 
+void \hyperlink{class_class_def_af6f05ddea4c40c3d792e60b01a48e7e1}{write\-Inline\-Documentation} (\hyperlink{class_output_list}{Output\-List} \&ol)
+\item 
+\hypertarget{class_class_def_ae5a5d13dcb983865df32a9c64f035128}{void {\bfseries write\-Declaration\-Link} (\hyperlink{class_output_list}{Output\-List} \&ol, bool \&found, const char $\ast$header, bool local\-Names)}\label{class_class_def_ae5a5d13dcb983865df32a9c64f035128}
+
+\item 
+\hypertarget{class_class_def_a1650c8a8dae0160eb845174a66478d8d}{void {\bfseries remove\-Member\-From\-Lists} (\hyperlink{class_member_def}{Member\-Def} $\ast$md)}\label{class_class_def_a1650c8a8dae0160eb845174a66478d8d}
+
+\item 
+\hypertarget{class_class_def_a8ff4b0318a265e6c51e26683bfeb6dca}{void {\bfseries add\-Grouped\-Inherited\-Members} (\hyperlink{class_output_list}{Output\-List} \&ol, Member\-List\-Type lt, \hyperlink{class_class_def}{Class\-Def} $\ast$inherited\-From, const \hyperlink{class_q_c_string}{Q\-C\-String} \&inherit\-Id)}\label{class_class_def_a8ff4b0318a265e6c51e26683bfeb6dca}
+
+\item 
+\hypertarget{class_class_def_a59989b93fab34cfa2021045eb56b8012}{int {\bfseries count\-Members\-Including\-Grouped} (Member\-List\-Type lt, \hyperlink{class_class_def}{Class\-Def} $\ast$inherited\-From, bool additional)}\label{class_class_def_a59989b93fab34cfa2021045eb56b8012}
+
+\item 
+\hypertarget{class_class_def_a9d29d3b79360c12d10be0c49af9bdb05}{int {\bfseries count\-Inheritance\-Nodes} ()}\label{class_class_def_a9d29d3b79360c12d10be0c49af9bdb05}
+
+\end{DoxyCompactItemize}
+\subsection*{Campos de Dados}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_class_def_a1df99df902f5f6e81ec3e21e9c07360e}{bool {\bfseries visited}}\label{class_class_def_a1df99df902f5f6e81ec3e21e9c07360e}
+
+\end{DoxyCompactItemize}
+\subsection*{Membros protegidos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_class_def_acf5a375626d9599b5921a39d03453bf7}{void {\bfseries add\-Used\-Interface\-Classes} (\hyperlink{class_member_def}{Member\-Def} $\ast$md, const char $\ast$type\-Str)}\label{class_class_def_acf5a375626d9599b5921a39d03453bf7}
+
+\item 
+\hypertarget{class_class_def_aedb1f21e05c55f8b390afce2c4b456d9}{bool {\bfseries has\-Examples} ()}\label{class_class_def_aedb1f21e05c55f8b390afce2c4b456d9}
+
+\item 
+bool \hyperlink{class_class_def_a88bf73ff5acb49894f0ca3a6af172565}{has\-Non\-Reference\-Super\-Class} ()
+\item 
+\hypertarget{class_class_def_a2c097a052637695d49d7234503a2c22e}{void {\bfseries show\-Used\-Files} (\hyperlink{class_output_list}{Output\-List} \&ol)}\label{class_class_def_a2c097a052637695d49d7234503a2c22e}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+\hyperlink{class_a}{A} class representing of a compound symbol.
+
+\hyperlink{class_a}{A} compound can be a class, struct, union, interface, service, singleton, or exception. \begin{DoxyNote}{Nota}
+This class should be renamed to Compound\-Def 
+\end{DoxyNote}
+
+
+\subsection{Documentação das enumerações}
+\hypertarget{class_class_def_a768a6f0a6fd7e9087ff7971abbcc3f36}{\index{Class\-Def@{Class\-Def}!Compound\-Type@{Compound\-Type}}
+\index{Compound\-Type@{Compound\-Type}!ClassDef@{Class\-Def}}
+\subsubsection[{Compound\-Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Compound\-Type}}}\label{class_class_def_a768a6f0a6fd7e9087ff7971abbcc3f36}
+The various compound types 
+
+\subsection{Documentação dos Construtores \& Destrutor}
+\hypertarget{class_class_def_a389341b271ebaf30cccddd1838c0f597}{\index{Class\-Def@{Class\-Def}!Class\-Def@{Class\-Def}}
+\index{Class\-Def@{Class\-Def}!ClassDef@{Class\-Def}}
+\subsubsection[{Class\-Def}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Class\-Def} (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{file\-Name, }
+\item[{int}]{start\-Line, }
+\item[{int}]{start\-Column, }
+\item[{const char $\ast$}]{name, }
+\item[{{\bf Compound\-Type}}]{ct, }
+\item[{const char $\ast$}]{ref = {\ttfamily 0}, }
+\item[{const char $\ast$}]{f\-Name = {\ttfamily 0}, }
+\item[{bool}]{is\-Symbol = {\ttfamily TRUE}, }
+\item[{bool}]{is\-Java\-Enum = {\ttfamily FALSE}}
+\end{DoxyParamCaption}
+)}}\label{class_class_def_a389341b271ebaf30cccddd1838c0f597}
+Creates a new compound definition. 
+\begin{DoxyParams}{Parâmetros}
+{\em file\-Name} & full path and file name in which this compound was found. \\
+\hline
+{\em start\-Line} & line number where the definition of this compound starts. \\
+\hline
+{\em start\-Column} & column number where the definition of this compound starts. \\
+\hline
+{\em name} & the name of this compound (including scope) \\
+\hline
+{\em sym\-Id} & unique Id for this symbol \\
+\hline
+{\em ct} & the kind of Compound \\
+\hline
+{\em ref} & the tag file from which this compound is extracted or 0 if the compound doesn't come from a tag file \\
+\hline
+{\em f\-Name} & the file name as found in the tag file. This overwrites the file that doxygen normally generates based on the compound type \& name. \\
+\hline
+{\em is\-Symbol} & If T\-R\-U\-E this class name is added as a publicly visible (and referencable) symbol. \\
+\hline
+{\em is\-Java\-Enum} & If T\-R\-U\-E this class is actually a Java enum. I didn't add this to Compound\-Type to avoid having to adapt all translators. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_class_def_a0da78b18aa5068125435320465f36e31}{\index{Class\-Def@{Class\-Def}!$\sim$\-Class\-Def@{$\sim$\-Class\-Def}}
+\index{$\sim$\-Class\-Def@{$\sim$\-Class\-Def}!ClassDef@{Class\-Def}}
+\subsubsection[{$\sim$\-Class\-Def}]{\setlength{\rightskip}{0pt plus 5cm}$\sim${\bf Class\-Def} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_class_def_a0da78b18aa5068125435320465f36e31}
+Destroys a compound definition. 
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_class_def_acd17ae1d9600f864b1beb85dfb99a4f4}{\index{Class\-Def@{Class\-Def}!anchor@{anchor}}
+\index{anchor@{anchor}!ClassDef@{Class\-Def}}
+\subsubsection[{anchor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} anchor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_class_def_acd17ae1d9600f864b1beb85dfb99a4f4}
+Returns the anchor within a page where this item can be found 
+
+Implementa \hyperlink{class_definition_aeefc9f68d99e616f91c43a3cebf96357}{Definition}.
+
+\hypertarget{class_class_def_af817cb1006279d14dca4b6b6ba3db901}{\index{Class\-Def@{Class\-Def}!base\-Classes@{base\-Classes}}
+\index{base\-Classes@{base\-Classes}!ClassDef@{Class\-Def}}
+\subsubsection[{base\-Classes}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Base\-Class\-List} $\ast$ base\-Classes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_class_def_af817cb1006279d14dca4b6b6ba3db901}
+Returns the list of base classes from which this class directly inherits. \hypertarget{class_class_def_af897ec96b5a2136f22986353269c091a}{\index{Class\-Def@{Class\-Def}!category\-Of@{category\-Of}}
+\index{category\-Of@{category\-Of}!ClassDef@{Class\-Def}}
+\subsubsection[{category\-Of}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Class\-Def} $\ast$ category\-Of (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_class_def_af897ec96b5a2136f22986353269c091a}
+Returns the class of which this is a category (Objective-\/\-C only) \hypertarget{class_class_def_af0a121aefc7a4a8d9fdda94b6d845ca1}{\index{Class\-Def@{Class\-Def}!class\-Name@{class\-Name}}
+\index{class\-Name@{class\-Name}!ClassDef@{Class\-Def}}
+\subsubsection[{class\-Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} class\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_class_def_af0a121aefc7a4a8d9fdda94b6d845ca1}
+Returns the name of the class including outer classes, but not including namespaces. \hypertarget{class_class_def_ae5dffc6bd9342e513fc2b9902a150abe}{\index{Class\-Def@{Class\-Def}!compound\-Type@{compound\-Type}}
+\index{compound\-Type@{compound\-Type}!ClassDef@{Class\-Def}}
+\subsubsection[{compound\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Class\-Def\-::\-Compound\-Type} compound\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_class_def_ae5dffc6bd9342e513fc2b9902a150abe}
+Returns the type of compound this is, i.\-e. class/struct/union/.. \hypertarget{class_class_def_a259ebc501d584761467e254f635fd766}{\index{Class\-Def@{Class\-Def}!compound\-Type\-String@{compound\-Type\-String}}
+\index{compound\-Type\-String@{compound\-Type\-String}!ClassDef@{Class\-Def}}
+\subsubsection[{compound\-Type\-String}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} compound\-Type\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_class_def_a259ebc501d584761467e254f635fd766}
+Returns the type of compound as a string \hypertarget{class_class_def_aac410235a8bf90e471e649bd9dbf9c5e}{\index{Class\-Def@{Class\-Def}!definition\-Type@{definition\-Type}}
+\index{definition\-Type@{definition\-Type}!ClassDef@{Class\-Def}}
+\subsubsection[{definition\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Def\-Type} definition\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_class_def_aac410235a8bf90e471e649bd9dbf9c5e}
+Used for R\-T\-T\-I, this is a class 
+
+Implementa \hyperlink{class_definition_intf_afba7add835518dbf4202846446d667b0}{Definition\-Intf}.
+
+\hypertarget{class_class_def_abfd9c72c9c6a40b1689b0671eebc044c}{\index{Class\-Def@{Class\-Def}!display\-Name@{display\-Name}}
+\index{display\-Name@{display\-Name}!ClassDef@{Class\-Def}}
+\subsubsection[{display\-Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} display\-Name (
+\begin{DoxyParamCaption}
+\item[{bool}]{include\-Scope = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_class_def_abfd9c72c9c6a40b1689b0671eebc044c}
+Returns the name as it is appears in the documentation 
+
+Implementa \hyperlink{class_definition_a98f292cf0fb9a6a1314c7a159b7166ec}{Definition}.
+
+\hypertarget{class_class_def_a5f4c10da520e9553c62483027168c42c}{\index{Class\-Def@{Class\-Def}!find\-Inner\-Compound@{find\-Inner\-Compound}}
+\index{find\-Inner\-Compound@{find\-Inner\-Compound}!ClassDef@{Class\-Def}}
+\subsubsection[{find\-Inner\-Compound}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Definition} $\ast$ find\-Inner\-Compound (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_class_def_a5f4c10da520e9553c62483027168c42c}
+Returns the definition of a nested compound if available, or 0 otherwise. 
+\begin{DoxyParams}{Parâmetros}
+{\em name} & The name of the nested compound \\
+\hline
+\end{DoxyParams}
+
+
+Reimplementado de \hyperlink{class_definition}{Definition}.
+
+\hypertarget{class_class_def_a14c0b45a5896c00649594a0951ae30f7}{\index{Class\-Def@{Class\-Def}!get\-Class\-S\-Dict@{get\-Class\-S\-Dict}}
+\index{get\-Class\-S\-Dict@{get\-Class\-S\-Dict}!ClassDef@{Class\-Def}}
+\subsubsection[{get\-Class\-S\-Dict}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Class\-S\-Dict} $\ast$ get\-Class\-S\-Dict (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_class_def_a14c0b45a5896c00649594a0951ae30f7}
+returns the classes nested into this class \hypertarget{class_class_def_a5a292ca6db63e5f4a6012dae2af1de08}{\index{Class\-Def@{Class\-Def}!get\-File\-Def@{get\-File\-Def}}
+\index{get\-File\-Def@{get\-File\-Def}!ClassDef@{Class\-Def}}
+\subsubsection[{get\-File\-Def}]{\setlength{\rightskip}{0pt plus 5cm}{\bf File\-Def} $\ast$ get\-File\-Def (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_class_def_a5a292ca6db63e5f4a6012dae2af1de08}
+Returns the file in which this compound's definition can be found. Should not return 0 (but it might be a good idea to check anyway). \hypertarget{class_class_def_ae4b1361bd609c705db962bd9bb8e1afe}{\index{Class\-Def@{Class\-Def}!get\-Member\-By\-Name@{get\-Member\-By\-Name}}
+\index{get\-Member\-By\-Name@{get\-Member\-By\-Name}!ClassDef@{Class\-Def}}
+\subsubsection[{get\-Member\-By\-Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Member\-Def} $\ast$ get\-Member\-By\-Name (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-C\-String} \&}]{name}
+\end{DoxyParamCaption}
+) const}}\label{class_class_def_ae4b1361bd609c705db962bd9bb8e1afe}
+Returns the Java package this class is in or 0 if not applicable. \hypertarget{class_class_def_aebe674b96b5f7f7433f7d161e5a2f047}{\index{Class\-Def@{Class\-Def}!get\-Member\-Group\-S\-Dict@{get\-Member\-Group\-S\-Dict}}
+\index{get\-Member\-Group\-S\-Dict@{get\-Member\-Group\-S\-Dict}!ClassDef@{Class\-Def}}
+\subsubsection[{get\-Member\-Group\-S\-Dict}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Member\-Group\-S\-Dict} $\ast$ get\-Member\-Group\-S\-Dict (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_class_def_aebe674b96b5f7f7433f7d161e5a2f047}
+Returns the member groups defined for this class \hypertarget{class_class_def_af9947305eeabd8e482637af1ccb4ec4e}{\index{Class\-Def@{Class\-Def}!get\-Member\-List@{get\-Member\-List}}
+\index{get\-Member\-List@{get\-Member\-List}!ClassDef@{Class\-Def}}
+\subsubsection[{get\-Member\-List}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Member\-List} $\ast$ get\-Member\-List (
+\begin{DoxyParamCaption}
+\item[{Member\-List\-Type}]{lt}
+\end{DoxyParamCaption}
+)}}\label{class_class_def_af9947305eeabd8e482637af1ccb4ec4e}
+Returns the members in the list identified by {\itshape lt} \hypertarget{class_class_def_a958ea00543faccec752fba58fcf79d43}{\index{Class\-Def@{Class\-Def}!get\-Member\-Lists@{get\-Member\-Lists}}
+\index{get\-Member\-Lists@{get\-Member\-Lists}!ClassDef@{Class\-Def}}
+\subsubsection[{get\-Member\-Lists}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Q\-List}$<$ {\bf Member\-List} $>$ \& get\-Member\-Lists (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_class_def_a958ea00543faccec752fba58fcf79d43}
+Returns the list containing the list of members sorted per type \hypertarget{class_class_def_a7707ce10899d1b0914f2e95b2d4ecc2a}{\index{Class\-Def@{Class\-Def}!get\-Namespace\-Def@{get\-Namespace\-Def}}
+\index{get\-Namespace\-Def@{get\-Namespace\-Def}!ClassDef@{Class\-Def}}
+\subsubsection[{get\-Namespace\-Def}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Namespace\-Def} $\ast$ get\-Namespace\-Def (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_class_def_a7707ce10899d1b0914f2e95b2d4ecc2a}
+Returns the namespace this compound is in, or 0 if it has a global scope. \hypertarget{class_class_def_af72a982ba8198cd5c98e9fc850b71df6}{\index{Class\-Def@{Class\-Def}!get\-Output\-File\-Base@{get\-Output\-File\-Base}}
+\index{get\-Output\-File\-Base@{get\-Output\-File\-Base}!ClassDef@{Class\-Def}}
+\subsubsection[{get\-Output\-File\-Base}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} get\-Output\-File\-Base (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_class_def_af72a982ba8198cd5c98e9fc850b71df6}
+Returns the unique base name (without extension) of the class's file on disk 
+
+Implementa \hyperlink{class_definition_a9d86cf13f2c63846c41ef739e4cdadf6}{Definition}.
+
+\hypertarget{class_class_def_a87b81ea7f17740033bf8fb12f796c494}{\index{Class\-Def@{Class\-Def}!get\-Reference@{get\-Reference}}
+\index{get\-Reference@{get\-Reference}!ClassDef@{Class\-Def}}
+\subsubsection[{get\-Reference}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} get\-Reference (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_class_def_a87b81ea7f17740033bf8fb12f796c494}
+If this class originated from a tagfile, this will return the tag file reference 
+
+Reimplementado de \hyperlink{class_definition_a87b81ea7f17740033bf8fb12f796c494}{Definition}.
+
+\hypertarget{class_class_def_a0b24a407e5cd41328e5c64aac0884b6f}{\index{Class\-Def@{Class\-Def}!get\-Source\-File\-Base@{get\-Source\-File\-Base}}
+\index{get\-Source\-File\-Base@{get\-Source\-File\-Base}!ClassDef@{Class\-Def}}
+\subsubsection[{get\-Source\-File\-Base}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} get\-Source\-File\-Base (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_class_def_a0b24a407e5cd41328e5c64aac0884b6f}
+Returns the base name for the source code file 
+
+Reimplementado de \hyperlink{class_definition_a0b24a407e5cd41328e5c64aac0884b6f}{Definition}.
+
+\hypertarget{class_class_def_ad40e3e5176f010fe191043509646d755}{\index{Class\-Def@{Class\-Def}!get\-Template\-Instances@{get\-Template\-Instances}}
+\index{get\-Template\-Instances@{get\-Template\-Instances}!ClassDef@{Class\-Def}}
+\subsubsection[{get\-Template\-Instances}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Dict$<$ {\bf Class\-Def} $>$ $\ast$ get\-Template\-Instances (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_class_def_ad40e3e5176f010fe191043509646d755}
+Returns a sorted dictionary with all template instances found for this template class. Returns 0 if not a template or no instances. \hypertarget{class_class_def_aef20cac5706a02dbb50518d24b38f464}{\index{Class\-Def@{Class\-Def}!get\-Template\-Parameter\-Lists@{get\-Template\-Parameter\-Lists}}
+\index{get\-Template\-Parameter\-Lists@{get\-Template\-Parameter\-Lists}!ClassDef@{Class\-Def}}
+\subsubsection[{get\-Template\-Parameter\-Lists}]{\setlength{\rightskip}{0pt plus 5cm}void get\-Template\-Parameter\-Lists (
+\begin{DoxyParamCaption}
+\item[{{\bf Q\-List}$<$ {\bf Argument\-List} $>$ \&}]{lists}
+\end{DoxyParamCaption}
+) const}}\label{class_class_def_aef20cac5706a02dbb50518d24b38f464}
+Returns the template parameter lists that form the template declaration of this class.
+
+\hyperlink{struct_example}{Example}\-: {\ttfamily template$<$class T$>$ class T\-C \{\};} will return a list with one \hyperlink{class_argument_list}{Argument\-List} containing one argument with type=\char`\"{}class\char`\"{} and name=\char`\"{}\-T\char`\"{}. \hypertarget{class_class_def_ab1e57fff5fd6e501a15f6e992a783995}{\index{Class\-Def@{Class\-Def}!has\-Detailed\-Description@{has\-Detailed\-Description}}
+\index{has\-Detailed\-Description@{has\-Detailed\-Description}!ClassDef@{Class\-Def}}
+\subsubsection[{has\-Detailed\-Description}]{\setlength{\rightskip}{0pt plus 5cm}bool has\-Detailed\-Description (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_class_def_ab1e57fff5fd6e501a15f6e992a783995}
+returns T\-R\-U\-E if this class has a non-\/empty detailed description \hypertarget{class_class_def_a585dcd381ab70014568db8ad457fc8b1}{\index{Class\-Def@{Class\-Def}!has\-Documentation@{has\-Documentation}}
+\index{has\-Documentation@{has\-Documentation}!ClassDef@{Class\-Def}}
+\subsubsection[{has\-Documentation}]{\setlength{\rightskip}{0pt plus 5cm}bool has\-Documentation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_class_def_a585dcd381ab70014568db8ad457fc8b1}
+returns T\-R\-U\-E if this class has documentation 
+
+Reimplementado de \hyperlink{class_definition_a585dcd381ab70014568db8ad457fc8b1}{Definition}.
+
+\hypertarget{class_class_def_a88bf73ff5acb49894f0ca3a6af172565}{\index{Class\-Def@{Class\-Def}!has\-Non\-Reference\-Super\-Class@{has\-Non\-Reference\-Super\-Class}}
+\index{has\-Non\-Reference\-Super\-Class@{has\-Non\-Reference\-Super\-Class}!ClassDef@{Class\-Def}}
+\subsubsection[{has\-Non\-Reference\-Super\-Class}]{\setlength{\rightskip}{0pt plus 5cm}bool has\-Non\-Reference\-Super\-Class (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_class_def_a88bf73ff5acb49894f0ca3a6af172565}
+Returns {\ttfamily T\-R\-U\-E} iff this class or a class inheriting from this class is {\itshape not} defined in an external tag file. \hypertarget{class_class_def_ac7f749737f31e5dc070351bbe5214793}{\index{Class\-Def@{Class\-Def}!is\-Abstract@{is\-Abstract}}
+\index{is\-Abstract@{is\-Abstract}!ClassDef@{Class\-Def}}
+\subsubsection[{is\-Abstract}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-Abstract (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_class_def_ac7f749737f31e5dc070351bbe5214793}
+Returns T\-R\-U\-E if there is at least one pure virtual member in this class. \hypertarget{class_class_def_a9a900cabaf8bd50fa297ea679dfc7716}{\index{Class\-Def@{Class\-Def}!is\-Accessible\-Member@{is\-Accessible\-Member}}
+\index{is\-Accessible\-Member@{is\-Accessible\-Member}!ClassDef@{Class\-Def}}
+\subsubsection[{is\-Accessible\-Member}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-Accessible\-Member (
+\begin{DoxyParamCaption}
+\item[{{\bf Member\-Def} $\ast$}]{md}
+\end{DoxyParamCaption}
+)}}\label{class_class_def_a9a900cabaf8bd50fa297ea679dfc7716}
+returns T\-R\-U\-E iff {\itshape md} is a member of this class or of the the public/protected members of a base class \hypertarget{class_class_def_ab521566f4d878f44bacb0a2560d993af}{\index{Class\-Def@{Class\-Def}!is\-Base\-Class@{is\-Base\-Class}}
+\index{is\-Base\-Class@{is\-Base\-Class}!ClassDef@{Class\-Def}}
+\subsubsection[{is\-Base\-Class}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-Base\-Class (
+\begin{DoxyParamCaption}
+\item[{{\bf Class\-Def} $\ast$}]{bcd, }
+\item[{bool}]{follow\-Instances, }
+\item[{int}]{level = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{class_class_def_ab521566f4d878f44bacb0a2560d993af}
+Returns T\-R\-U\-E iff {\itshape bcd} is a direct or indirect base class of this class. This function will recusively traverse all branches of the inheritance tree. \hypertarget{class_class_def_a06620e645a54d46fb481d2ea594f59cf}{\index{Class\-Def@{Class\-Def}!is\-C\-Sharp@{is\-C\-Sharp}}
+\index{is\-C\-Sharp@{is\-C\-Sharp}!ClassDef@{Class\-Def}}
+\subsubsection[{is\-C\-Sharp}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-C\-Sharp (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_class_def_a06620e645a54d46fb481d2ea594f59cf}
+Returns T\-R\-U\-E if this class is implemented in \hyperlink{class_c}{C}\# \hypertarget{class_class_def_a9ef3fb490d8218394f1091152c631575}{\index{Class\-Def@{Class\-Def}!is\-Extension@{is\-Extension}}
+\index{is\-Extension@{is\-Extension}!ClassDef@{Class\-Def}}
+\subsubsection[{is\-Extension}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-Extension (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_class_def_a9ef3fb490d8218394f1091152c631575}
+Returns T\-R\-U\-E if this class represents an Objective-\/\-C 2.\-0 extension (nameless category) \hypertarget{class_class_def_aa1c038a9fa70a19d46c1ea65cbffdb2d}{\index{Class\-Def@{Class\-Def}!is\-Final@{is\-Final}}
+\index{is\-Final@{is\-Final}!ClassDef@{Class\-Def}}
+\subsubsection[{is\-Final}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-Final (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_class_def_aa1c038a9fa70a19d46c1ea65cbffdb2d}
+Returns T\-R\-U\-E if this class is marked as final \hypertarget{class_class_def_afb5645c0dc69c2f1da67da6e33316e3b}{\index{Class\-Def@{Class\-Def}!is\-Linkable@{is\-Linkable}}
+\index{is\-Linkable@{is\-Linkable}!ClassDef@{Class\-Def}}
+\subsubsection[{is\-Linkable}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-Linkable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_class_def_afb5645c0dc69c2f1da67da6e33316e3b}
+return T\-R\-U\-E iff a link to this class is possible (either within this project, or as a cross-\/reference to another project). 
+
+Implementa \hyperlink{class_definition_a53420387530937059d408a7e4316c375}{Definition}.
+
+\hypertarget{class_class_def_a7ff00a84da6e47f3c64c6bf9f6316385}{\index{Class\-Def@{Class\-Def}!is\-Linkable\-In\-Project@{is\-Linkable\-In\-Project}}
+\index{is\-Linkable\-In\-Project@{is\-Linkable\-In\-Project}!ClassDef@{Class\-Def}}
+\subsubsection[{is\-Linkable\-In\-Project}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-Linkable\-In\-Project (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_class_def_a7ff00a84da6e47f3c64c6bf9f6316385}
+returns T\-R\-U\-E iff a link is possible to this item within this project.
+
+a link to this class is possible within this project 
+
+Implementa \hyperlink{class_definition_a2a4aa56e5209c7fbed15d5c3a3791643}{Definition}.
+
+\hypertarget{class_class_def_a69fb7e260ed2bc6fa82bfe12c2aeec5a}{\index{Class\-Def@{Class\-Def}!is\-Local@{is\-Local}}
+\index{is\-Local@{is\-Local}!ClassDef@{Class\-Def}}
+\subsubsection[{is\-Local}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-Local (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_class_def_a69fb7e260ed2bc6fa82bfe12c2aeec5a}
+Returns T\-R\-U\-E if this is a local class definition, see E\-X\-T\-R\-A\-C\-T\-\_\-\-L\-O\-C\-A\-L\-\_\-\-C\-L\-A\-S\-S\-E\-S \hypertarget{class_class_def_ab5793e9c44df25523354dc0d0210e54f}{\index{Class\-Def@{Class\-Def}!is\-Objective\-C@{is\-Objective\-C}}
+\index{is\-Objective\-C@{is\-Objective\-C}!ClassDef@{Class\-Def}}
+\subsubsection[{is\-Objective\-C}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-Objective\-C (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_class_def_ab5793e9c44df25523354dc0d0210e54f}
+Returns T\-R\-U\-E if this class is implemented in Objective-\/\-C \hypertarget{class_class_def_a3d09e3bb6fc4144c31a80fd26d401e69}{\index{Class\-Def@{Class\-Def}!is\-Published@{is\-Published}}
+\index{is\-Published@{is\-Published}!ClassDef@{Class\-Def}}
+\subsubsection[{is\-Published}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-Published (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_class_def_a3d09e3bb6fc4144c31a80fd26d401e69}
+Returns T\-R\-U\-E if this class is marked as published \hypertarget{class_class_def_ab7dc8cc872f3cec2e07dace4293989aa}{\index{Class\-Def@{Class\-Def}!is\-Reference@{is\-Reference}}
+\index{is\-Reference@{is\-Reference}!ClassDef@{Class\-Def}}
+\subsubsection[{is\-Reference}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-Reference (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_class_def_ab7dc8cc872f3cec2e07dace4293989aa}
+Returns T\-R\-U\-E if this class is imported via a tag file 
+
+Reimplementado de \hyperlink{class_definition_ab7dc8cc872f3cec2e07dace4293989aa}{Definition}.
+
+\hypertarget{class_class_def_a27367a1b9326358f119463c48350f887}{\index{Class\-Def@{Class\-Def}!is\-Sealed@{is\-Sealed}}
+\index{is\-Sealed@{is\-Sealed}!ClassDef@{Class\-Def}}
+\subsubsection[{is\-Sealed}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-Sealed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_class_def_a27367a1b9326358f119463c48350f887}
+Returns T\-R\-U\-E if this class is marked as sealed \hypertarget{class_class_def_a81e8ccaa1ddaa3afb6e821c31aa48a0a}{\index{Class\-Def@{Class\-Def}!is\-Sub\-Class@{is\-Sub\-Class}}
+\index{is\-Sub\-Class@{is\-Sub\-Class}!ClassDef@{Class\-Def}}
+\subsubsection[{is\-Sub\-Class}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-Sub\-Class (
+\begin{DoxyParamCaption}
+\item[{{\bf Class\-Def} $\ast$}]{bcd, }
+\item[{int}]{level = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{class_class_def_a81e8ccaa1ddaa3afb6e821c31aa48a0a}
+Returns T\-R\-U\-E iff {\itshape bcd} is a direct or indirect sub class of this class. \hypertarget{class_class_def_a623895be75dc282b0f3af5b18a0cd736}{\index{Class\-Def@{Class\-Def}!is\-Template@{is\-Template}}
+\index{is\-Template@{is\-Template}!ClassDef@{Class\-Def}}
+\subsubsection[{is\-Template}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-Template (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_class_def_a623895be75dc282b0f3af5b18a0cd736}
+Returns T\-R\-U\-E if this class is a template \hypertarget{class_class_def_a0903a297b1dfa5e537e21ac1bd42d433}{\index{Class\-Def@{Class\-Def}!is\-Visible\-In\-Hierarchy@{is\-Visible\-In\-Hierarchy}}
+\index{is\-Visible\-In\-Hierarchy@{is\-Visible\-In\-Hierarchy}!ClassDef@{Class\-Def}}
+\subsubsection[{is\-Visible\-In\-Hierarchy}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-Visible\-In\-Hierarchy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_class_def_a0903a297b1dfa5e537e21ac1bd42d433}
+the class is visible in a class diagram, or class hierarchy \hyperlink{class_definition_a06a975cbab8499f41525eb70f95815b8}{is\-Artificial()} \&\& \hypertarget{class_class_def_abbca3615e0d59730e500151d54561416}{\index{Class\-Def@{Class\-Def}!member\-Name\-Info\-S\-Dict@{member\-Name\-Info\-S\-Dict}}
+\index{member\-Name\-Info\-S\-Dict@{member\-Name\-Info\-S\-Dict}!ClassDef@{Class\-Def}}
+\subsubsection[{member\-Name\-Info\-S\-Dict}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Member\-Name\-Info\-S\-Dict} $\ast$ member\-Name\-Info\-S\-Dict (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_class_def_abbca3615e0d59730e500151d54561416}
+Returns a dictionary of all members. This includes any inherited members. Members are sorted alphabetically. \hypertarget{class_class_def_a6c95a685fad4c9f730fed037fae718e3}{\index{Class\-Def@{Class\-Def}!merge\-Category@{merge\-Category}}
+\index{merge\-Category@{merge\-Category}!ClassDef@{Class\-Def}}
+\subsubsection[{merge\-Category}]{\setlength{\rightskip}{0pt plus 5cm}void merge\-Category (
+\begin{DoxyParamCaption}
+\item[{{\bf Class\-Def} $\ast$}]{category}
+\end{DoxyParamCaption}
+)}}\label{class_class_def_a6c95a685fad4c9f730fed037fae718e3}
+Merges the members of a Objective-\/\-C category into this class. \hypertarget{class_class_def_a54bb3ccc04cd653fd3056550e5e1ceb4}{\index{Class\-Def@{Class\-Def}!merge\-Members@{merge\-Members}}
+\index{merge\-Members@{merge\-Members}!ClassDef@{Class\-Def}}
+\subsubsection[{merge\-Members}]{\setlength{\rightskip}{0pt plus 5cm}void merge\-Members (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_class_def_a54bb3ccc04cd653fd3056550e5e1ceb4}
+recusively merges the `all members' lists of a class base with that of this class. Must only be called for classes without subclasses! \hypertarget{class_class_def_a149b66b75ad6cd6c17457a689e68cd9e}{\index{Class\-Def@{Class\-Def}!protection@{protection}}
+\index{protection@{protection}!ClassDef@{Class\-Def}}
+\subsubsection[{protection}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Protection} protection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_class_def_a149b66b75ad6cd6c17457a689e68cd9e}
+Return the protection level (Public,Protected,Private) in which this compound was found. \hypertarget{class_class_def_a33f96bac2c9a43e8f6faaeca118d2c73}{\index{Class\-Def@{Class\-Def}!sub\-Classes@{sub\-Classes}}
+\index{sub\-Classes@{sub\-Classes}!ClassDef@{Class\-Def}}
+\subsubsection[{sub\-Classes}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Base\-Class\-List} $\ast$ sub\-Classes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_class_def_a33f96bac2c9a43e8f6faaeca118d2c73}
+Returns the list of sub classes that directly derive from this class \hypertarget{class_class_def_a7a7099c182d85b097ec9b4ac866db827}{\index{Class\-Def@{Class\-Def}!template\-Arguments@{template\-Arguments}}
+\index{template\-Arguments@{template\-Arguments}!ClassDef@{Class\-Def}}
+\subsubsection[{template\-Arguments}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Argument\-List} $\ast$ template\-Arguments (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_class_def_a7a7099c182d85b097ec9b4ac866db827}
+Returns the template arguments of this class Will return 0 if not applicable. \hypertarget{class_class_def_aa05f1773a95fb95fbecf82f8c67514c8}{\index{Class\-Def@{Class\-Def}!template\-Master@{template\-Master}}
+\index{template\-Master@{template\-Master}!ClassDef@{Class\-Def}}
+\subsubsection[{template\-Master}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Class\-Def} $\ast$ template\-Master (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_class_def_aa05f1773a95fb95fbecf82f8c67514c8}
+Returns the template master of which this class is an instance. Returns 0 if not applicable. \hypertarget{class_class_def_a6abd78845db5eba02bf4e71eea182274}{\index{Class\-Def@{Class\-Def}!write\-Declaration@{write\-Declaration}}
+\index{write\-Declaration@{write\-Declaration}!ClassDef@{Class\-Def}}
+\subsubsection[{write\-Declaration}]{\setlength{\rightskip}{0pt plus 5cm}void write\-Declaration (
+\begin{DoxyParamCaption}
+\item[{{\bf Output\-List} \&}]{ol, }
+\item[{{\bf Member\-Def} $\ast$}]{md, }
+\item[{bool}]{in\-Group, }
+\item[{{\bf Class\-Def} $\ast$}]{inherited\-From, }
+\item[{const char $\ast$}]{inherit\-Id}
+\end{DoxyParamCaption}
+)}}\label{class_class_def_a6abd78845db5eba02bf4e71eea182274}
+called from \hyperlink{class_member_def_ab829c9b186aecbe88b238e9dc353e3bb}{Member\-Def\-::write\-Declaration()} to (recusively) write the definition of an anonymous struct, union or class. \hypertarget{class_class_def_af6f05ddea4c40c3d792e60b01a48e7e1}{\index{Class\-Def@{Class\-Def}!write\-Inline\-Documentation@{write\-Inline\-Documentation}}
+\index{write\-Inline\-Documentation@{write\-Inline\-Documentation}!ClassDef@{Class\-Def}}
+\subsubsection[{write\-Inline\-Documentation}]{\setlength{\rightskip}{0pt plus 5cm}void write\-Inline\-Documentation (
+\begin{DoxyParamCaption}
+\item[{{\bf Output\-List} \&}]{ol}
+\end{DoxyParamCaption}
+)}}\label{class_class_def_af6f05ddea4c40c3d792e60b01a48e7e1}
+Write class documentation inside another container (i.\-e. a group) 
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/src/classdef.\-h\item 
+C\-:/\-Users/teste/git/doxygen/src/classdef.\-cpp\end{DoxyCompactItemize}

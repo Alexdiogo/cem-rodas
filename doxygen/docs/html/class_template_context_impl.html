@@ -1,0 +1,416 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>CEM RODAS: Referência à classe TemplateContextImpl</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">CEM RODAS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Localizar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="modules.html"><span>Módulos</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Estruturas&#160;de&#160;dados</span></a></li>
+      <li><a href="files.html"><span>Ficheiros</span></a></li>
+      <li><a href="examples.html"><span>Exemplos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Localizar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Estruturas&#160;de&#160;dados</span></a></li>
+      <li><a href="classes.html"><span>Índice&#160;das&#160;estruturas&#160;de&#160;dados</span></a></li>
+      <li><a href="hierarchy.html"><span>Hierarquia&#160;de&#160;classes</span></a></li>
+      <li><a href="functions.html"><span>Campos&#160;de&#160;dados</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tudo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Estruturas de dados</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Ficheiros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variáveis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Definições de tipos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerações</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Valores da enumeração</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Amigos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Grupos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Membros públicos</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência à classe TemplateContextImpl</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Internal class representing the implementation of a template context.  
+ <a href="class_template_context_impl.html#details">Mais...</a></p>
+<div class="dynheader">
+Diagrama de heranças da classe TemplateContextImpl</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_template_context_impl.png" usemap="#TemplateContextImpl_map" alt=""/>
+  <map id="TemplateContextImpl_map" name="TemplateContextImpl_map">
+<area href="class_template_context.html" title="Abstract interface for a template context. " alt="TemplateContext" shape="rect" coords="0,0,126,24"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Membros públicos</h2></td></tr>
+<tr class="memitem:a98b45e0a7ed122b6710df00209b67827"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_template_context_impl.html#a98b45e0a7ed122b6710df00209b67827">push</a> ()</td></tr>
+<tr class="separator:a98b45e0a7ed122b6710df00209b67827"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a312e7f6c761a199c1369fbe651e084f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_template_context_impl.html#a312e7f6c761a199c1369fbe651e084f0">pop</a> ()</td></tr>
+<tr class="separator:a312e7f6c761a199c1369fbe651e084f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a258e17f8e7e0f12f8cf405976214f489"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_template_context_impl.html#a258e17f8e7e0f12f8cf405976214f489">set</a> (const char *name, const <a class="el" href="class_template_variant.html">TemplateVariant</a> &amp;v)</td></tr>
+<tr class="separator:a258e17f8e7e0f12f8cf405976214f489"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2aac951f4e5ddfe91fc71f55c75730b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_template_variant.html">TemplateVariant</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_template_context_impl.html#a2aac951f4e5ddfe91fc71f55c75730b7">get</a> (const <a class="el" href="class_q_c_string.html">QCString</a> &amp;name) const </td></tr>
+<tr class="separator:a2aac951f4e5ddfe91fc71f55c75730b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcff56f208600381453d3dc6af9dd887"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_template_variant.html">TemplateVariant</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_template_context_impl.html#adcff56f208600381453d3dc6af9dd887">getRef</a> (const <a class="el" href="class_q_c_string.html">QCString</a> &amp;name) const </td></tr>
+<tr class="separator:adcff56f208600381453d3dc6af9dd887"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6895f5081a3cb25b6d9fae349a3d848"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_template_context_impl.html#ab6895f5081a3cb25b6d9fae349a3d848">setOutputDirectory</a> (const <a class="el" href="class_q_c_string.html">QCString</a> &amp;dir)</td></tr>
+<tr class="separator:ab6895f5081a3cb25b6d9fae349a3d848"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa279b8b31debd1e17e7c37b9630f2e5c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_template_context_impl.html#aa279b8b31debd1e17e7c37b9630f2e5c">setEscapeIntf</a> (<a class="el" href="class_template_escape_intf.html">TemplateEscapeIntf</a> *intf)</td></tr>
+<tr class="separator:aa279b8b31debd1e17e7c37b9630f2e5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c2881415b6438de297c967bd3d6bbc4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_template_context_impl.html#a3c2881415b6438de297c967bd3d6bbc4">setSpacelessIntf</a> (<a class="el" href="class_template_spaceless_intf.html">TemplateSpacelessIntf</a> *intf)</td></tr>
+<tr class="separator:a3c2881415b6438de297c967bd3d6bbc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af87b8640548acba58538bac7af4dd473"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af87b8640548acba58538bac7af4dd473"></a>
+<a class="el" href="class_template_block_context.html">TemplateBlockContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>blockContext</b> ()</td></tr>
+<tr class="separator:af87b8640548acba58538bac7af4dd473"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90aa1f9cb3d5c7b95cb264a928f9863d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a90aa1f9cb3d5c7b95cb264a928f9863d"></a>
+<a class="el" href="class_template_variant.html">TemplateVariant</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getPrimary</b> (const <a class="el" href="class_q_c_string.html">QCString</a> &amp;name) const </td></tr>
+<tr class="separator:a90aa1f9cb3d5c7b95cb264a928f9863d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0338668464dd3ea6d572d475355ac175"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0338668464dd3ea6d572d475355ac175"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setLocation</b> (const <a class="el" href="class_q_c_string.html">QCString</a> &amp;templateName, int line)</td></tr>
+<tr class="separator:a0338668464dd3ea6d572d475355ac175"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a252629acf6dbf0a69894af5f525da4a1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a252629acf6dbf0a69894af5f525da4a1"></a>
+<a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>templateName</b> () const </td></tr>
+<tr class="separator:a252629acf6dbf0a69894af5f525da4a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6e2444d9f9eb15566a2c8cb42e45788"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa6e2444d9f9eb15566a2c8cb42e45788"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>line</b> () const </td></tr>
+<tr class="separator:aa6e2444d9f9eb15566a2c8cb42e45788"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc4bb7e1cb5ddf3d521fbe3fdc98da9a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adc4bb7e1cb5ddf3d521fbe3fdc98da9a"></a>
+<a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>outputDirectory</b> () const </td></tr>
+<tr class="separator:adc4bb7e1cb5ddf3d521fbe3fdc98da9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae54de444d339372b4f6a984a7776e583"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae54de444d339372b4f6a984a7776e583"></a>
+<a class="el" href="class_template_escape_intf.html">TemplateEscapeIntf</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>escapeIntf</b> () const </td></tr>
+<tr class="separator:ae54de444d339372b4f6a984a7776e583"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f781ee5a5f518108ea2143fa4c95d32"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7f781ee5a5f518108ea2143fa4c95d32"></a>
+<a class="el" href="class_template_spaceless_intf.html">TemplateSpacelessIntf</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>spacelessIntf</b> () const </td></tr>
+<tr class="separator:a7f781ee5a5f518108ea2143fa4c95d32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a098d626f9758d09b8e0cc61c9c9e3863"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a098d626f9758d09b8e0cc61c9c9e3863"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>enableSpaceless</b> (bool b)</td></tr>
+<tr class="separator:a098d626f9758d09b8e0cc61c9c9e3863"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d07f0663d72fdd9de1114715751c099"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6d07f0663d72fdd9de1114715751c099"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>spacelessEnabled</b> () const </td></tr>
+<tr class="separator:a6d07f0663d72fdd9de1114715751c099"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Internal class representing the implementation of a template context. </p>
+</div><h2 class="groupheader">Documentação dos métodos</h2>
+<a class="anchor" id="a2aac951f4e5ddfe91fc71f55c75730b7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_template_variant.html">TemplateVariant</a> get </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_q_c_string.html">QCString</a> &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Gets the value for a given key </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>The name of key. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>The value, which can be an invalid variant in case the key was not found. </dd></dl>
+
+<p>Implementa <a class="el" href="class_template_context.html#adb49a5675ac3cb569a86fbaf8409e9e8">TemplateContext</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adcff56f208600381453d3dc6af9dd887"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_template_variant.html">TemplateVariant</a> * getRef </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_q_c_string.html">QCString</a> &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns a pointer to the value corresponding to a given key. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>The name of key. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd><a class="el" href="class_a.html">A</a> pointer to the value, or 0 in case the key was not found. </dd></dl>
+
+<p>Implementa <a class="el" href="class_template_context.html#a3a146aa3fd2f25dccb45f2b3eda64174">TemplateContext</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a312e7f6c761a199c1369fbe651e084f0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Pop the current scope from the stack. </p>
+
+<p>Implementa <a class="el" href="class_template_context.html#a155389a22ff3694e7a6af1777f6d7182">TemplateContext</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a98b45e0a7ed122b6710df00209b67827"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void push </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Push a new scope on the stack. </p>
+
+<p>Implementa <a class="el" href="class_template_context.html#a7a28d6e6a6ded476c1774baac1cb3448">TemplateContext</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a258e17f8e7e0f12f8cf405976214f489"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void set </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_template_variant.html">TemplateVariant</a> &amp;&#160;</td>
+          <td class="paramname"><em>v</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets a value in the current scope. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>The name of the value; the key in the dictionary. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">v</td><td>The value associated with the key. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Nota</dt><dd>When a given key is already present, its value will be replaced by <em>v</em> </dd></dl>
+
+<p>Implementa <a class="el" href="class_template_context.html#af83899afa5416ea422089aed8facf318">TemplateContext</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa279b8b31debd1e17e7c37b9630f2e5c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setEscapeIntf </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_template_escape_intf.html">TemplateEscapeIntf</a> *&#160;</td>
+          <td class="paramname"><em>intf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the interface that will be used for escaping the result of variable expansion before writing it to the output. </p>
+
+<p>Implementa <a class="el" href="class_template_context.html#ac592d6d28ead803976089a11e60613af">TemplateContext</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab6895f5081a3cb25b6d9fae349a3d848"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setOutputDirectory </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_q_c_string.html">QCString</a> &amp;&#160;</td>
+          <td class="paramname"><em>dir</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>When files are create (i.e. by {% create ... %}) they written to the directory <em>dir</em>. </p>
+
+<p>Implementa <a class="el" href="class_template_context.html#ace9ddbfb0b3770eea371a78a16060a73">TemplateContext</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3c2881415b6438de297c967bd3d6bbc4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setSpacelessIntf </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_template_spaceless_intf.html">TemplateSpacelessIntf</a> *&#160;</td>
+          <td class="paramname"><em>intf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the interface that will be used inside a spaceless block to remove any redundant whitespace. </p>
+
+<p>Implementa <a class="el" href="class_template_context.html#a01a5c35d9a02935589e8dbef1c8568bf">TemplateContext</a>.</p>
+
+</div>
+</div>
+<hr/>A documentação para esta classe foi gerada a partir do seguinte ficheiro:<ul>
+<li>C:/Users/teste/git/doxygen/src/template.cpp</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado em Quinta, 28 de Novembro de 2013 22:44:39 para CEM RODAS por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

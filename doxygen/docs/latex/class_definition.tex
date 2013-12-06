@@ -1,0 +1,659 @@
+\hypertarget{class_definition}{\section{Referência à classe Definition}
+\label{class_definition}\index{Definition@{Definition}}
+}
+
+
+{\ttfamily \#include $<$definition.\-h$>$}
+
+Diagrama de heranças da classe Definition\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.264151cm]{class_definition}
+\end{center}
+\end{figure}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_definition_a3c3736c3c9b1ba3dae3799258cddd27c}{Definition} (const char $\ast$def\-File\-Name, int def\-Line, int def\-Column, const char $\ast$\hyperlink{class_definition_a2c310e06c9aadc6fb218f80fcbb5c695}{name}, const char $\ast$b=0, const char $\ast$d=0, bool is\-Symbol=T\-R\-U\-E)
+\item 
+virtual \hyperlink{class_definition_af8b3205a2cff0e941e6b026e81440ec6}{$\sim$\-Definition} ()
+\item 
+const \hyperlink{class_q_c_string}{Q\-C\-String} \& \hyperlink{class_definition_a2c310e06c9aadc6fb218f80fcbb5c695}{name} () const 
+\item 
+virtual \hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_definition_a98f292cf0fb9a6a1314c7a159b7166ec}{display\-Name} (bool include\-Scope=T\-R\-U\-E) const =0
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_definition_a85adac6c21b9f8e8f374c9b915f875ee}{local\-Name} () const 
+\item 
+virtual \hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_definition_ab8b1c377b3cff112fdca997c37007944}{qualified\-Name} () const 
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_definition_a2abf0816f6db6ed419d97a01d1242f1a}{symbol\-Name} () const 
+\item 
+virtual \hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_definition_a9d86cf13f2c63846c41ef739e4cdadf6}{get\-Output\-File\-Base} () const =0
+\item 
+virtual \hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_definition_aeefc9f68d99e616f91c43a3cebf96357}{anchor} () const =0
+\item 
+virtual \hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_definition_a0b24a407e5cd41328e5c64aac0884b6f}{get\-Source\-File\-Base} () const 
+\item 
+virtual \hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_definition_a32dc5ecc852dac51949439819e97cc24}{get\-Source\-Anchor} () const 
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_definition_a093581bd7e1c230cb0c851b46798592d}{documentation} () const 
+\item 
+int \hyperlink{class_definition_a3c2a6c87ac432d8a6db51bc52b2379da}{doc\-Line} () const 
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_definition_afadeeb679bb7bda0ad5b4f358f0d33e2}{doc\-File} () const 
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_definition_a84c7fb6a4f2b359bdcaa779ff5635579}{brief\-Description} (bool abbreviate=F\-A\-L\-S\-E) const 
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_definition_abdc2cc8aea016db82f5432401ac10439}{brief\-Description\-As\-Tooltip} () const 
+\item 
+int \hyperlink{class_definition_aca87df70fcd505c2458a6ad75a1ede61}{brief\-Line} () const 
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_definition_aebb6648f7eccccf1306a4e8189a5944e}{inbody\-Documentation} () const 
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_definition_a69f697410a918873614549085444faa4}{inbody\-File} () const 
+\item 
+int \hyperlink{class_definition_ae4b412e67989226ad3ce76f08f3ffaad}{inbody\-Line} () const 
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_definition_a14b9cbdcc30535bcfd2e435667dea5fe}{brief\-File} () const 
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_definition_a15571178c7169aca27071a81b64d5a90}{get\-Def\-File\-Name} () const 
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_definition_aaa008a94c11636ae0724d216a9a93eb6}{get\-Def\-File\-Extension} () const 
+\item 
+int \hyperlink{class_definition_ad0cd42d7ec8233af1c414312feaf9dc2}{get\-Def\-Line} () const 
+\item 
+int \hyperlink{class_definition_a7b5b9b0cf12b422bc40a5e5a3aa47489}{get\-Def\-Column} () const 
+\item 
+virtual bool \hyperlink{class_definition_a585dcd381ab70014568db8ad457fc8b1}{has\-Documentation} () const 
+\item 
+virtual bool \hyperlink{class_definition_af1f0e7584db0d4b918f9c55c9c8ab80a}{has\-User\-Documentation} () const 
+\item 
+virtual bool \hyperlink{class_definition_a2a4aa56e5209c7fbed15d5c3a3791643}{is\-Linkable\-In\-Project} () const =0
+\item 
+virtual bool \hyperlink{class_definition_a53420387530937059d408a7e4316c375}{is\-Linkable} () const =0
+\item 
+virtual bool \hyperlink{class_definition_afadf7236b478e199e25cd5cc6f4b5ce4}{is\-Visible\-In\-Project} () const 
+\item 
+virtual bool \hyperlink{class_definition_a08422ee75ab02691943c1ca87e2bc563}{is\-Visible} () const 
+\item 
+bool \hyperlink{class_definition_a4968ab065e464b725f9e01fdc4f1c607}{is\-Hidden} () const 
+\item 
+bool \hyperlink{class_definition_a06a975cbab8499f41525eb70f95815b8}{is\-Artificial} () const 
+\item 
+virtual \hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_definition_a87b81ea7f17740033bf8fb12f796c494}{get\-Reference} () const 
+\item 
+virtual bool \hyperlink{class_definition_ab7dc8cc872f3cec2e07dace4293989aa}{is\-Reference} () const 
+\item 
+int \hyperlink{class_definition_a2710939b1b9101f428f203f6de224dbc}{get\-Start\-Body\-Line} () const 
+\item 
+int \hyperlink{class_definition_a8f5b9cecf6b3c7fc528fe1b5fcda0843}{get\-End\-Body\-Line} () const 
+\item 
+\hyperlink{class_file_def}{File\-Def} $\ast$ \hyperlink{class_definition_a1f41ecc8895188e421173ae7c095c43d}{get\-Body\-Def} () const 
+\item 
+\hyperlink{types_8h_a9974623ce72fc23df5d64426b9178bf2}{Src\-Lang\-Ext} \hyperlink{class_definition_a31277e4ef87d16d309b3fc5cece4ae65}{get\-Language} () const 
+\item 
+\hypertarget{class_definition_a73f68d6e0aaf6dcd34488958847e17db}{\hyperlink{class_group_list}{Group\-List} $\ast$ {\bfseries part\-Of\-Groups} () const }\label{class_definition_a73f68d6e0aaf6dcd34488958847e17db}
+
+\item 
+\hypertarget{class_definition_a0e27debbb81eb41c3346e4302f04e4c4}{\hyperlink{class_q_list}{Q\-List}$<$ \hyperlink{struct_list_item_info}{List\-Item\-Info} $>$ $\ast$ {\bfseries xref\-List\-Items} () const }\label{class_definition_a0e27debbb81eb41c3346e4302f04e4c4}
+
+\item 
+\hypertarget{class_definition_a5f4c10da520e9553c62483027168c42c}{virtual \hyperlink{class_definition}{Definition} $\ast$ {\bfseries find\-Inner\-Compound} (const char $\ast$\hyperlink{class_definition_a2c310e06c9aadc6fb218f80fcbb5c695}{name})}\label{class_definition_a5f4c10da520e9553c62483027168c42c}
+
+\item 
+\hypertarget{class_definition_a810fdea11067b8943db696963a28b691}{virtual \hyperlink{class_definition}{Definition} $\ast$ {\bfseries get\-Outer\-Scope} () const }\label{class_definition_a810fdea11067b8943db696963a28b691}
+
+\item 
+\hypertarget{class_definition_a63338ee84c8ee7835cd4d6c64bf6e190}{\hyperlink{class_member_s_dict}{Member\-S\-Dict} $\ast$ {\bfseries get\-References\-Members} () const }\label{class_definition_a63338ee84c8ee7835cd4d6c64bf6e190}
+
+\item 
+\hypertarget{class_definition_a8a1b34011aa8ad70d3bbe4ed36017cf2}{\hyperlink{class_member_s_dict}{Member\-S\-Dict} $\ast$ {\bfseries get\-Referenced\-By\-Members} () const }\label{class_definition_a8a1b34011aa8ad70d3bbe4ed36017cf2}
+
+\item 
+\hypertarget{class_definition_a38acc58f067938aaedeef6cf2f28de3d}{bool {\bfseries has\-Sections} () const }\label{class_definition_a38acc58f067938aaedeef6cf2f28de3d}
+
+\item 
+bool \hyperlink{class_definition_ae27579a021a1cc9eb9773665996b2641}{has\-Brief\-Description} () const 
+\item 
+\hypertarget{class_definition_a16d494b2a3ca96cb4fcb0560a52b52f2}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries id} () const }\label{class_definition_a16d494b2a3ca96cb4fcb0560a52b52f2}
+
+\item 
+void \hyperlink{class_definition_ab3a256e7d9fad73fa57de7c1fedf51c5}{set\-Name} (const char $\ast$\hyperlink{class_definition_a2c310e06c9aadc6fb218f80fcbb5c695}{name})
+\item 
+void \hyperlink{class_definition_aa8915a727f5acd71a7e264d86e888835}{set\-Id} (const char $\ast$\hyperlink{class_definition_a2c310e06c9aadc6fb218f80fcbb5c695}{name})
+\item 
+virtual void \hyperlink{class_definition_a49660f42e3320c1022ef04edfbc7c850}{set\-Documentation} (const char $\ast$d, const char $\ast$\hyperlink{class_definition_afadeeb679bb7bda0ad5b4f358f0d33e2}{doc\-File}, int \hyperlink{class_definition_a3c2a6c87ac432d8a6db51bc52b2379da}{doc\-Line}, bool strip\-White\-Space=T\-R\-U\-E)
+\item 
+virtual void \hyperlink{class_definition_a98a2e802a5477e4ece9cd859cb07ec31}{set\-Brief\-Description} (const char $\ast$b, const char $\ast$\hyperlink{class_definition_a14b9cbdcc30535bcfd2e435667dea5fe}{brief\-File}, int \hyperlink{class_definition_aca87df70fcd505c2458a6ad75a1ede61}{brief\-Line})
+\item 
+virtual void \hyperlink{class_definition_ae1d28023753b529dd5a2c5d77e076843}{set\-Inbody\-Documentation} (const char $\ast$d, const char $\ast$\hyperlink{class_definition_afadeeb679bb7bda0ad5b4f358f0d33e2}{doc\-File}, int \hyperlink{class_definition_a3c2a6c87ac432d8a6db51bc52b2379da}{doc\-Line})
+\item 
+void \hyperlink{class_definition_a194917eb0e2f76ca5575658b55982c19}{set\-Reference} (const char $\ast$r)
+\item 
+void \hyperlink{class_definition_a5dff1a1ee0bf59807d724b07a99aad6d}{add\-Sections\-To\-Definition} (\hyperlink{class_q_list}{Q\-List}$<$ \hyperlink{struct_section_info}{Section\-Info} $>$ $\ast$anchor\-List)
+\item 
+\hypertarget{class_definition_ab075bb8e6647768c630064feac926b6d}{void {\bfseries set\-Body\-Segment} (int bls, int ble)}\label{class_definition_ab075bb8e6647768c630064feac926b6d}
+
+\item 
+\hypertarget{class_definition_a55f5ec0489ebade250ca45bc47ddcb9d}{void {\bfseries set\-Body\-Def} (\hyperlink{class_file_def}{File\-Def} $\ast$fd)}\label{class_definition_a55f5ec0489ebade250ca45bc47ddcb9d}
+
+\item 
+\hypertarget{class_definition_a50c00beeefc48cb6e38f299c677f3600}{void {\bfseries add\-Source\-Referenced\-By} (\hyperlink{class_member_def}{Member\-Def} $\ast$d)}\label{class_definition_a50c00beeefc48cb6e38f299c677f3600}
+
+\item 
+\hypertarget{class_definition_ab8506636e378947c77f8f01bb5bbe4bd}{void {\bfseries add\-Source\-References} (\hyperlink{class_member_def}{Member\-Def} $\ast$d)}\label{class_definition_ab8506636e378947c77f8f01bb5bbe4bd}
+
+\item 
+\hypertarget{class_definition_af54a06ad3eb9e93865968f0e10903184}{void {\bfseries set\-Ref\-Items} (const \hyperlink{class_q_list}{Q\-List}$<$ \hyperlink{struct_list_item_info}{List\-Item\-Info} $>$ $\ast$sli)}\label{class_definition_af54a06ad3eb9e93865968f0e10903184}
+
+\item 
+\hypertarget{class_definition_a1dae67d56622e5a9d2728e96afcc4547}{void {\bfseries merge\-Ref\-Items} (\hyperlink{class_definition}{Definition} $\ast$d)}\label{class_definition_a1dae67d56622e5a9d2728e96afcc4547}
+
+\item 
+\hypertarget{class_definition_a98509b9197b57394494196e01c70e540}{virtual void {\bfseries add\-Inner\-Compound} (\hyperlink{class_definition}{Definition} $\ast$d)}\label{class_definition_a98509b9197b57394494196e01c70e540}
+
+\item 
+\hypertarget{class_definition_a24ec2740d4516947e2578b95a281a58a}{virtual void {\bfseries set\-Outer\-Scope} (\hyperlink{class_definition}{Definition} $\ast$d)}\label{class_definition_a24ec2740d4516947e2578b95a281a58a}
+
+\item 
+\hypertarget{class_definition_a85f8b66f6d9e9acf89ae056554f82776}{virtual void {\bfseries set\-Hidden} (bool b)}\label{class_definition_a85f8b66f6d9e9acf89ae056554f82776}
+
+\item 
+\hypertarget{class_definition_ab33b7297907416d26747d5ad190f1638}{void {\bfseries set\-Artificial} (bool b)}\label{class_definition_ab33b7297907416d26747d5ad190f1638}
+
+\item 
+\hypertarget{class_definition_aab9d4a8a3085093c50fff4c540cfd6b1}{void {\bfseries set\-Language} (\hyperlink{types_8h_a9974623ce72fc23df5d64426b9178bf2}{Src\-Lang\-Ext} lang)}\label{class_definition_aab9d4a8a3085093c50fff4c540cfd6b1}
+
+\item 
+\hypertarget{class_definition_a7cbc481b496c988c7998afc0f6f3105f}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries convert\-Name\-To\-File} (const char $\ast$\hyperlink{class_definition_a2c310e06c9aadc6fb218f80fcbb5c695}{name}, bool allow\-Dots=F\-A\-L\-S\-E) const }\label{class_definition_a7cbc481b496c988c7998afc0f6f3105f}
+
+\item 
+void \hyperlink{class_definition_a3743f2020b717483a31b241d35c373be}{write\-Source\-Def} (\hyperlink{class_output_list}{Output\-List} \&ol, const char $\ast$scope\-Name)
+\item 
+void \hyperlink{class_definition_ad05e364c8393849dc22ac69568d96fc5}{write\-Inline\-Code} (\hyperlink{class_output_list}{Output\-List} \&ol, const char $\ast$scope\-Name)
+\item 
+\hypertarget{class_definition_ac96c5b1845765ffca222e47c437dfe35}{void {\bfseries write\-Source\-Refs} (\hyperlink{class_output_list}{Output\-List} \&ol, const char $\ast$scope\-Name)}\label{class_definition_ac96c5b1845765ffca222e47c437dfe35}
+
+\item 
+\hypertarget{class_definition_a0e46032a2257272d2ada587f3ce79388}{void {\bfseries write\-Source\-Reffed\-By} (\hyperlink{class_output_list}{Output\-List} \&ol, const char $\ast$scope\-Name)}\label{class_definition_a0e46032a2257272d2ada587f3ce79388}
+
+\item 
+\hypertarget{class_definition_a0304edb36523800ca53a7ee6f23832b7}{void {\bfseries make\-Part\-Of\-Group} (\hyperlink{class_group_def}{Group\-Def} $\ast$gd)}\label{class_definition_a0304edb36523800ca53a7ee6f23832b7}
+
+\item 
+\hypertarget{class_definition_ab65ecb79aadef32e39c5425889f61e0b}{void {\bfseries write\-Navigation\-Path} (\hyperlink{class_output_list}{Output\-List} \&ol) const }\label{class_definition_ab65ecb79aadef32e39c5425889f61e0b}
+
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_definition_a145ca0e33e5be8b0d08c98e220df90b6}{navigation\-Path\-As\-String} () const 
+\item 
+\hypertarget{class_definition_ab725f086c32e8031bd6b7ef3872b16b7}{virtual void {\bfseries write\-Quick\-Member\-Links} (\hyperlink{class_output_list}{Output\-List} \&, \hyperlink{class_member_def}{Member\-Def} $\ast$) const }\label{class_definition_ab725f086c32e8031bd6b7ef3872b16b7}
+
+\item 
+\hypertarget{class_definition_a9729aba18075a7633d2ab82b44bedda9}{virtual void {\bfseries write\-Summary\-Links} (\hyperlink{class_output_list}{Output\-List} \&)}\label{class_definition_a9729aba18075a7633d2ab82b44bedda9}
+
+\item 
+\hypertarget{class_definition_a9bb8b27ede967f9a5a02ef02647a9faa}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries path\-Fragment} () const }\label{class_definition_a9bb8b27ede967f9a5a02ef02647a9faa}
+
+\item 
+void \hyperlink{class_definition_a0ff8658509384f90b086887377cb2276}{write\-Doc\-Anchors\-To\-Tag\-File} ()
+\item 
+\hypertarget{class_definition_aec1d365c4ce42c7cccb98c105a8f5ddd}{void {\bfseries set\-Local\-Name} (const \hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_definition_a2c310e06c9aadc6fb218f80fcbb5c695}{name})}\label{class_definition_aec1d365c4ce42c7cccb98c105a8f5ddd}
+
+\item 
+\hypertarget{class_definition_a710d558cced0b8b8f015ada3d8536851}{void {\bfseries add\-Sections\-To\-Index} ()}\label{class_definition_a710d558cced0b8b8f015ada3d8536851}
+
+\item 
+\hypertarget{class_definition_a8f24b0dbc9f7cb7cfe6c7ce809d62eb2}{void {\bfseries write\-Toc} (\hyperlink{class_output_list}{Output\-List} \&ol)}\label{class_definition_a8f24b0dbc9f7cb7cfe6c7ce809d62eb2}
+
+\end{DoxyCompactItemize}
+\subsection*{Membros protegidos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_definition_a2c438e546c793e8827074fbf926f1207}{{\bfseries Definition} (const \hyperlink{class_definition}{Definition} \&d)}\label{class_definition_a2c438e546c793e8827074fbf926f1207}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Descrição detalhada}
+The common base class of all entity definitions found in the sources.
+
+This can be a class or a member function, or a file, or a namespace, etc. Use \hyperlink{class_definition_intf_afba7add835518dbf4202846446d667b0}{definition\-Type()} to find which type of definition this is. 
+
+\subsection{Documentação dos Construtores \& Destrutor}
+\hypertarget{class_definition_a3c3736c3c9b1ba3dae3799258cddd27c}{\index{Definition@{Definition}!Definition@{Definition}}
+\index{Definition@{Definition}!Definition@{Definition}}
+\subsubsection[{Definition}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Definition} (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{def\-File\-Name, }
+\item[{int}]{def\-Line, }
+\item[{int}]{def\-Column, }
+\item[{const char $\ast$}]{name, }
+\item[{const char $\ast$}]{b = {\ttfamily 0}, }
+\item[{const char $\ast$}]{d = {\ttfamily 0}, }
+\item[{bool}]{is\-Symbol = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+)}}\label{class_definition_a3c3736c3c9b1ba3dae3799258cddd27c}
+Create a new definition \hypertarget{class_definition_af8b3205a2cff0e941e6b026e81440ec6}{\index{Definition@{Definition}!$\sim$\-Definition@{$\sim$\-Definition}}
+\index{$\sim$\-Definition@{$\sim$\-Definition}!Definition@{Definition}}
+\subsubsection[{$\sim$\-Definition}]{\setlength{\rightskip}{0pt plus 5cm}$\sim${\bf Definition} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_definition_af8b3205a2cff0e941e6b026e81440ec6}
+Destroys the definition 
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_definition_a5dff1a1ee0bf59807d724b07a99aad6d}{\index{Definition@{Definition}!add\-Sections\-To\-Definition@{add\-Sections\-To\-Definition}}
+\index{add\-Sections\-To\-Definition@{add\-Sections\-To\-Definition}!Definition@{Definition}}
+\subsubsection[{add\-Sections\-To\-Definition}]{\setlength{\rightskip}{0pt plus 5cm}void add\-Sections\-To\-Definition (
+\begin{DoxyParamCaption}
+\item[{{\bf Q\-List}$<$ {\bf Section\-Info} $>$ $\ast$}]{anchor\-List}
+\end{DoxyParamCaption}
+)}}\label{class_definition_a5dff1a1ee0bf59807d724b07a99aad6d}
+Add the list of anchors that mark the sections that are found in the documentation. \hypertarget{class_definition_aeefc9f68d99e616f91c43a3cebf96357}{\index{Definition@{Definition}!anchor@{anchor}}
+\index{anchor@{anchor}!Definition@{Definition}}
+\subsubsection[{anchor}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Q\-C\-String} anchor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_definition_aeefc9f68d99e616f91c43a3cebf96357}
+Returns the anchor within a page where this item can be found 
+
+Implementado em \hyperlink{class_class_def_acd17ae1d9600f864b1beb85dfb99a4f4}{Class\-Def}, \hyperlink{class_file_def_acd17ae1d9600f864b1beb85dfb99a4f4}{File\-Def}, \hyperlink{class_member_def_acd17ae1d9600f864b1beb85dfb99a4f4}{Member\-Def}, \hyperlink{class_dir_def_acd17ae1d9600f864b1beb85dfb99a4f4}{Dir\-Def}, \hyperlink{class_group_def_acd17ae1d9600f864b1beb85dfb99a4f4}{Group\-Def}, \hyperlink{class_page_def_acd17ae1d9600f864b1beb85dfb99a4f4}{Page\-Def} e \hyperlink{class_namespace_def_acd17ae1d9600f864b1beb85dfb99a4f4}{Namespace\-Def}.
+
+\hypertarget{class_definition_a84c7fb6a4f2b359bdcaa779ff5635579}{\index{Definition@{Definition}!brief\-Description@{brief\-Description}}
+\index{brief\-Description@{brief\-Description}!Definition@{Definition}}
+\subsubsection[{brief\-Description}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} brief\-Description (
+\begin{DoxyParamCaption}
+\item[{bool}]{abbreviate = {\ttfamily FALSE}}
+\end{DoxyParamCaption}
+) const}}\label{class_definition_a84c7fb6a4f2b359bdcaa779ff5635579}
+Returns the brief description of this definition. This can include commands. \hypertarget{class_definition_abdc2cc8aea016db82f5432401ac10439}{\index{Definition@{Definition}!brief\-Description\-As\-Tooltip@{brief\-Description\-As\-Tooltip}}
+\index{brief\-Description\-As\-Tooltip@{brief\-Description\-As\-Tooltip}!Definition@{Definition}}
+\subsubsection[{brief\-Description\-As\-Tooltip}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} brief\-Description\-As\-Tooltip (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_definition_abdc2cc8aea016db82f5432401ac10439}
+Returns a plain text version of the brief description suitable for use as a tool tip. \hypertarget{class_definition_a14b9cbdcc30535bcfd2e435667dea5fe}{\index{Definition@{Definition}!brief\-File@{brief\-File}}
+\index{brief\-File@{brief\-File}!Definition@{Definition}}
+\subsubsection[{brief\-File}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} brief\-File (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_definition_a14b9cbdcc30535bcfd2e435667dea5fe}
+Returns the file in which the brief description was found. This can differ from \hyperlink{class_definition_a15571178c7169aca27071a81b64d5a90}{get\-Def\-File\-Name()}. \hypertarget{class_definition_aca87df70fcd505c2458a6ad75a1ede61}{\index{Definition@{Definition}!brief\-Line@{brief\-Line}}
+\index{brief\-Line@{brief\-Line}!Definition@{Definition}}
+\subsubsection[{brief\-Line}]{\setlength{\rightskip}{0pt plus 5cm}int brief\-Line (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_definition_aca87df70fcd505c2458a6ad75a1ede61}
+Returns the line number at which the brief description was found. \hypertarget{class_definition_a98f292cf0fb9a6a1314c7a159b7166ec}{\index{Definition@{Definition}!display\-Name@{display\-Name}}
+\index{display\-Name@{display\-Name}!Definition@{Definition}}
+\subsubsection[{display\-Name}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Q\-C\-String} display\-Name (
+\begin{DoxyParamCaption}
+\item[{bool}]{include\-Scope = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_definition_a98f292cf0fb9a6a1314c7a159b7166ec}
+Returns the name of the definition as it appears in the output 
+
+Implementado em \hyperlink{class_member_def_a67d09f414df966d11bbeba6298307bdf}{Member\-Def}, \hyperlink{class_class_def_abfd9c72c9c6a40b1689b0671eebc044c}{Class\-Def}, \hyperlink{class_file_def_a67d09f414df966d11bbeba6298307bdf}{File\-Def}, \hyperlink{class_namespace_def_a67d09f414df966d11bbeba6298307bdf}{Namespace\-Def}, \hyperlink{class_page_def_a67d09f414df966d11bbeba6298307bdf}{Page\-Def}, \hyperlink{class_dir_def_a67d09f414df966d11bbeba6298307bdf}{Dir\-Def} e \hyperlink{class_group_def_a67d09f414df966d11bbeba6298307bdf}{Group\-Def}.
+
+\hypertarget{class_definition_afadeeb679bb7bda0ad5b4f358f0d33e2}{\index{Definition@{Definition}!doc\-File@{doc\-File}}
+\index{doc\-File@{doc\-File}!Definition@{Definition}}
+\subsubsection[{doc\-File}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} doc\-File (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_definition_afadeeb679bb7bda0ad5b4f358f0d33e2}
+Returns the file in which the detailed documentation block was found. This can differ from \hyperlink{class_definition_a15571178c7169aca27071a81b64d5a90}{get\-Def\-File\-Name()}. \hypertarget{class_definition_a3c2a6c87ac432d8a6db51bc52b2379da}{\index{Definition@{Definition}!doc\-Line@{doc\-Line}}
+\index{doc\-Line@{doc\-Line}!Definition@{Definition}}
+\subsubsection[{doc\-Line}]{\setlength{\rightskip}{0pt plus 5cm}int doc\-Line (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_definition_a3c2a6c87ac432d8a6db51bc52b2379da}
+Returns the line number at which the detailed documentation was found. \hypertarget{class_definition_a093581bd7e1c230cb0c851b46798592d}{\index{Definition@{Definition}!documentation@{documentation}}
+\index{documentation@{documentation}!Definition@{Definition}}
+\subsubsection[{documentation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} documentation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_definition_a093581bd7e1c230cb0c851b46798592d}
+Returns the detailed description of this definition \hypertarget{class_definition_a1f41ecc8895188e421173ae7c095c43d}{\index{Definition@{Definition}!get\-Body\-Def@{get\-Body\-Def}}
+\index{get\-Body\-Def@{get\-Body\-Def}!Definition@{Definition}}
+\subsubsection[{get\-Body\-Def}]{\setlength{\rightskip}{0pt plus 5cm}{\bf File\-Def} $\ast$ get\-Body\-Def (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_definition_a1f41ecc8895188e421173ae7c095c43d}
+Returns the file in which the body of this item is located or 0 if no body is available. \hypertarget{class_definition_a7b5b9b0cf12b422bc40a5e5a3aa47489}{\index{Definition@{Definition}!get\-Def\-Column@{get\-Def\-Column}}
+\index{get\-Def\-Column@{get\-Def\-Column}!Definition@{Definition}}
+\subsubsection[{get\-Def\-Column}]{\setlength{\rightskip}{0pt plus 5cm}int get\-Def\-Column (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_definition_a7b5b9b0cf12b422bc40a5e5a3aa47489}
+returns the column number at which the definition was found \hypertarget{class_definition_aaa008a94c11636ae0724d216a9a93eb6}{\index{Definition@{Definition}!get\-Def\-File\-Extension@{get\-Def\-File\-Extension}}
+\index{get\-Def\-File\-Extension@{get\-Def\-File\-Extension}!Definition@{Definition}}
+\subsubsection[{get\-Def\-File\-Extension}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} get\-Def\-File\-Extension (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_definition_aaa008a94c11636ae0724d216a9a93eb6}
+returns the extension of the file in which this definition was found \hypertarget{class_definition_a15571178c7169aca27071a81b64d5a90}{\index{Definition@{Definition}!get\-Def\-File\-Name@{get\-Def\-File\-Name}}
+\index{get\-Def\-File\-Name@{get\-Def\-File\-Name}!Definition@{Definition}}
+\subsubsection[{get\-Def\-File\-Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} get\-Def\-File\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_definition_a15571178c7169aca27071a81b64d5a90}
+returns the file in which this definition was found \hypertarget{class_definition_ad0cd42d7ec8233af1c414312feaf9dc2}{\index{Definition@{Definition}!get\-Def\-Line@{get\-Def\-Line}}
+\index{get\-Def\-Line@{get\-Def\-Line}!Definition@{Definition}}
+\subsubsection[{get\-Def\-Line}]{\setlength{\rightskip}{0pt plus 5cm}int get\-Def\-Line (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_definition_ad0cd42d7ec8233af1c414312feaf9dc2}
+returns the line number at which the definition was found \hypertarget{class_definition_a8f5b9cecf6b3c7fc528fe1b5fcda0843}{\index{Definition@{Definition}!get\-End\-Body\-Line@{get\-End\-Body\-Line}}
+\index{get\-End\-Body\-Line@{get\-End\-Body\-Line}!Definition@{Definition}}
+\subsubsection[{get\-End\-Body\-Line}]{\setlength{\rightskip}{0pt plus 5cm}int get\-End\-Body\-Line (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_definition_a8f5b9cecf6b3c7fc528fe1b5fcda0843}
+Returns the last line of the body of this item (applicable to classes and functions). \hypertarget{class_definition_a31277e4ef87d16d309b3fc5cece4ae65}{\index{Definition@{Definition}!get\-Language@{get\-Language}}
+\index{get\-Language@{get\-Language}!Definition@{Definition}}
+\subsubsection[{get\-Language}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Src\-Lang\-Ext} get\-Language (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_definition_a31277e4ef87d16d309b3fc5cece4ae65}
+Returns the programming language this definition was written in. \hypertarget{class_definition_a9d86cf13f2c63846c41ef739e4cdadf6}{\index{Definition@{Definition}!get\-Output\-File\-Base@{get\-Output\-File\-Base}}
+\index{get\-Output\-File\-Base@{get\-Output\-File\-Base}!Definition@{Definition}}
+\subsubsection[{get\-Output\-File\-Base}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Q\-C\-String} get\-Output\-File\-Base (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_definition_a9d86cf13f2c63846c41ef739e4cdadf6}
+Returns the base file name (without extension) of this definition. as it is referenced to/written to disk. 
+
+Implementado em \hyperlink{class_class_def_af72a982ba8198cd5c98e9fc850b71df6}{Class\-Def}, \hyperlink{class_file_def_af72a982ba8198cd5c98e9fc850b71df6}{File\-Def}, \hyperlink{class_member_def_af72a982ba8198cd5c98e9fc850b71df6}{Member\-Def}, \hyperlink{class_dir_def_af72a982ba8198cd5c98e9fc850b71df6}{Dir\-Def}, \hyperlink{class_group_def_af72a982ba8198cd5c98e9fc850b71df6}{Group\-Def}, \hyperlink{class_page_def_af72a982ba8198cd5c98e9fc850b71df6}{Page\-Def} e \hyperlink{class_namespace_def_af72a982ba8198cd5c98e9fc850b71df6}{Namespace\-Def}.
+
+\hypertarget{class_definition_a87b81ea7f17740033bf8fb12f796c494}{\index{Definition@{Definition}!get\-Reference@{get\-Reference}}
+\index{get\-Reference@{get\-Reference}!Definition@{Definition}}
+\subsubsection[{get\-Reference}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} get\-Reference (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_definition_a87b81ea7f17740033bf8fb12f796c494}
+If this definition was imported via a tag file, this function returns the tagfile for the external project. This can be translated into an external link target via Doxygen\-::tag\-Destination\-Dict 
+
+Reimplementado em \hyperlink{class_class_def_a87b81ea7f17740033bf8fb12f796c494}{Class\-Def} e \hyperlink{class_member_def_a87b81ea7f17740033bf8fb12f796c494}{Member\-Def}.
+
+\hypertarget{class_definition_a32dc5ecc852dac51949439819e97cc24}{\index{Definition@{Definition}!get\-Source\-Anchor@{get\-Source\-Anchor}}
+\index{get\-Source\-Anchor@{get\-Source\-Anchor}!Definition@{Definition}}
+\subsubsection[{get\-Source\-Anchor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} get\-Source\-Anchor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_definition_a32dc5ecc852dac51949439819e97cc24}
+Returns the anchor of the source listing of this definition. \hypertarget{class_definition_a0b24a407e5cd41328e5c64aac0884b6f}{\index{Definition@{Definition}!get\-Source\-File\-Base@{get\-Source\-File\-Base}}
+\index{get\-Source\-File\-Base@{get\-Source\-File\-Base}!Definition@{Definition}}
+\subsubsection[{get\-Source\-File\-Base}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} get\-Source\-File\-Base (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_definition_a0b24a407e5cd41328e5c64aac0884b6f}
+Returns the name of the source listing of this definition. 
+
+Reimplementado em \hyperlink{class_class_def_a0b24a407e5cd41328e5c64aac0884b6f}{Class\-Def} e \hyperlink{class_file_def_a0b24a407e5cd41328e5c64aac0884b6f}{File\-Def}.
+
+\hypertarget{class_definition_a2710939b1b9101f428f203f6de224dbc}{\index{Definition@{Definition}!get\-Start\-Body\-Line@{get\-Start\-Body\-Line}}
+\index{get\-Start\-Body\-Line@{get\-Start\-Body\-Line}!Definition@{Definition}}
+\subsubsection[{get\-Start\-Body\-Line}]{\setlength{\rightskip}{0pt plus 5cm}int get\-Start\-Body\-Line (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_definition_a2710939b1b9101f428f203f6de224dbc}
+Returns the first line of the body of this item (applicable to classes and functions). \hypertarget{class_definition_ae27579a021a1cc9eb9773665996b2641}{\index{Definition@{Definition}!has\-Brief\-Description@{has\-Brief\-Description}}
+\index{has\-Brief\-Description@{has\-Brief\-Description}!Definition@{Definition}}
+\subsubsection[{has\-Brief\-Description}]{\setlength{\rightskip}{0pt plus 5cm}bool has\-Brief\-Description (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_definition_ae27579a021a1cc9eb9773665996b2641}
+returns T\-R\-U\-E if this class has a brief description \hypertarget{class_definition_a585dcd381ab70014568db8ad457fc8b1}{\index{Definition@{Definition}!has\-Documentation@{has\-Documentation}}
+\index{has\-Documentation@{has\-Documentation}!Definition@{Definition}}
+\subsubsection[{has\-Documentation}]{\setlength{\rightskip}{0pt plus 5cm}bool has\-Documentation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_definition_a585dcd381ab70014568db8ad457fc8b1}
+Returns T\-R\-U\-E iff the definition is documented (which could be generated documentation) \begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_definition_af1f0e7584db0d4b918f9c55c9c8ab80a}{has\-User\-Documentation()} 
+\end{DoxySeeAlso}
+
+
+Reimplementado em \hyperlink{class_member_def_a585dcd381ab70014568db8ad457fc8b1}{Member\-Def} e \hyperlink{class_class_def_a585dcd381ab70014568db8ad457fc8b1}{Class\-Def}.
+
+\hypertarget{class_definition_af1f0e7584db0d4b918f9c55c9c8ab80a}{\index{Definition@{Definition}!has\-User\-Documentation@{has\-User\-Documentation}}
+\index{has\-User\-Documentation@{has\-User\-Documentation}!Definition@{Definition}}
+\subsubsection[{has\-User\-Documentation}]{\setlength{\rightskip}{0pt plus 5cm}bool has\-User\-Documentation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_definition_af1f0e7584db0d4b918f9c55c9c8ab80a}
+Returns T\-R\-U\-E iff the definition is documented by the user. \hypertarget{class_definition_aebb6648f7eccccf1306a4e8189a5944e}{\index{Definition@{Definition}!inbody\-Documentation@{inbody\-Documentation}}
+\index{inbody\-Documentation@{inbody\-Documentation}!Definition@{Definition}}
+\subsubsection[{inbody\-Documentation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} inbody\-Documentation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_definition_aebb6648f7eccccf1306a4e8189a5944e}
+Returns the documentation found inside the body of a member \hypertarget{class_definition_a69f697410a918873614549085444faa4}{\index{Definition@{Definition}!inbody\-File@{inbody\-File}}
+\index{inbody\-File@{inbody\-File}!Definition@{Definition}}
+\subsubsection[{inbody\-File}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} inbody\-File (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_definition_a69f697410a918873614549085444faa4}
+Returns the file in which the in body documentation was found \hypertarget{class_definition_ae4b412e67989226ad3ce76f08f3ffaad}{\index{Definition@{Definition}!inbody\-Line@{inbody\-Line}}
+\index{inbody\-Line@{inbody\-Line}!Definition@{Definition}}
+\subsubsection[{inbody\-Line}]{\setlength{\rightskip}{0pt plus 5cm}int inbody\-Line (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_definition_ae4b412e67989226ad3ce76f08f3ffaad}
+Returns the line at which the first in body documentation part was found \hypertarget{class_definition_a06a975cbab8499f41525eb70f95815b8}{\index{Definition@{Definition}!is\-Artificial@{is\-Artificial}}
+\index{is\-Artificial@{is\-Artificial}!Definition@{Definition}}
+\subsubsection[{is\-Artificial}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-Artificial (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_definition_a06a975cbab8499f41525eb70f95815b8}
+returns T\-R\-U\-E if this entity was artificially introduced, for instance because it is used to show a template instantiation relation. \hypertarget{class_definition_a4968ab065e464b725f9e01fdc4f1c607}{\index{Definition@{Definition}!is\-Hidden@{is\-Hidden}}
+\index{is\-Hidden@{is\-Hidden}!Definition@{Definition}}
+\subsubsection[{is\-Hidden}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-Hidden (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_definition_a4968ab065e464b725f9e01fdc4f1c607}
+Returns T\-R\-U\-E iff this item is supposed to be hidden from the output. \hypertarget{class_definition_a53420387530937059d408a7e4316c375}{\index{Definition@{Definition}!is\-Linkable@{is\-Linkable}}
+\index{is\-Linkable@{is\-Linkable}!Definition@{Definition}}
+\subsubsection[{is\-Linkable}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool is\-Linkable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_definition_a53420387530937059d408a7e4316c375}
+Returns T\-R\-U\-E iff it is possible to link to this item. This can be a link to another project imported via a tag file. 
+
+Implementado em \hyperlink{class_member_def_afb5645c0dc69c2f1da67da6e33316e3b}{Member\-Def}, \hyperlink{class_class_def_afb5645c0dc69c2f1da67da6e33316e3b}{Class\-Def}, \hyperlink{class_file_def_afb5645c0dc69c2f1da67da6e33316e3b}{File\-Def}, \hyperlink{class_namespace_def_afb5645c0dc69c2f1da67da6e33316e3b}{Namespace\-Def}, \hyperlink{class_group_def_afb5645c0dc69c2f1da67da6e33316e3b}{Group\-Def}, \hyperlink{class_dir_def_afb5645c0dc69c2f1da67da6e33316e3b}{Dir\-Def} e \hyperlink{class_page_def_afb5645c0dc69c2f1da67da6e33316e3b}{Page\-Def}.
+
+\hypertarget{class_definition_a2a4aa56e5209c7fbed15d5c3a3791643}{\index{Definition@{Definition}!is\-Linkable\-In\-Project@{is\-Linkable\-In\-Project}}
+\index{is\-Linkable\-In\-Project@{is\-Linkable\-In\-Project}!Definition@{Definition}}
+\subsubsection[{is\-Linkable\-In\-Project}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool is\-Linkable\-In\-Project (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_definition_a2a4aa56e5209c7fbed15d5c3a3791643}
+Returns T\-R\-U\-E iff it is possible to link to this item within this project. 
+
+Implementado em \hyperlink{class_member_def_a7ff00a84da6e47f3c64c6bf9f6316385}{Member\-Def}, \hyperlink{class_class_def_a7ff00a84da6e47f3c64c6bf9f6316385}{Class\-Def}, \hyperlink{class_file_def_a7ff00a84da6e47f3c64c6bf9f6316385}{File\-Def}, \hyperlink{class_namespace_def_a7ff00a84da6e47f3c64c6bf9f6316385}{Namespace\-Def}, \hyperlink{class_group_def_a7ff00a84da6e47f3c64c6bf9f6316385}{Group\-Def}, \hyperlink{class_dir_def_a7ff00a84da6e47f3c64c6bf9f6316385}{Dir\-Def} e \hyperlink{class_page_def_a7ff00a84da6e47f3c64c6bf9f6316385}{Page\-Def}.
+
+\hypertarget{class_definition_ab7dc8cc872f3cec2e07dace4293989aa}{\index{Definition@{Definition}!is\-Reference@{is\-Reference}}
+\index{is\-Reference@{is\-Reference}!Definition@{Definition}}
+\subsubsection[{is\-Reference}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-Reference (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_definition_ab7dc8cc872f3cec2e07dace4293989aa}
+Returns T\-R\-U\-E if this definition is imported via a tag file. 
+
+Reimplementado em \hyperlink{class_class_def_ab7dc8cc872f3cec2e07dace4293989aa}{Class\-Def}.
+
+\hypertarget{class_definition_a08422ee75ab02691943c1ca87e2bc563}{\index{Definition@{Definition}!is\-Visible@{is\-Visible}}
+\index{is\-Visible@{is\-Visible}!Definition@{Definition}}
+\subsubsection[{is\-Visible}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-Visible (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_definition_a08422ee75ab02691943c1ca87e2bc563}
+Returns T\-R\-U\-E iff the name may appear in the output \hypertarget{class_definition_afadf7236b478e199e25cd5cc6f4b5ce4}{\index{Definition@{Definition}!is\-Visible\-In\-Project@{is\-Visible\-In\-Project}}
+\index{is\-Visible\-In\-Project@{is\-Visible\-In\-Project}!Definition@{Definition}}
+\subsubsection[{is\-Visible\-In\-Project}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-Visible\-In\-Project (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_definition_afadf7236b478e199e25cd5cc6f4b5ce4}
+Returns T\-R\-U\-E iff the name is part of this project and may appear in the output \hypertarget{class_definition_a85adac6c21b9f8e8f374c9b915f875ee}{\index{Definition@{Definition}!local\-Name@{local\-Name}}
+\index{local\-Name@{local\-Name}!Definition@{Definition}}
+\subsubsection[{local\-Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} local\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_definition_a85adac6c21b9f8e8f374c9b915f875ee}
+Returns the local name without any scope qualifiers. \hypertarget{class_definition_a2c310e06c9aadc6fb218f80fcbb5c695}{\index{Definition@{Definition}!name@{name}}
+\index{name@{name}!Definition@{Definition}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Q\-C\-String}\& name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_definition_a2c310e06c9aadc6fb218f80fcbb5c695}
+Returns the name of the definition \hypertarget{class_definition_a145ca0e33e5be8b0d08c98e220df90b6}{\index{Definition@{Definition}!navigation\-Path\-As\-String@{navigation\-Path\-As\-String}}
+\index{navigation\-Path\-As\-String@{navigation\-Path\-As\-String}!Definition@{Definition}}
+\subsubsection[{navigation\-Path\-As\-String}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} navigation\-Path\-As\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_definition_a145ca0e33e5be8b0d08c98e220df90b6}
+Returns the string used in the footer for \$navpath when G\-E\-N\-E\-R\-A\-T\-E\-\_\-\-T\-R\-E\-E\-V\-I\-E\-W is enabled \hypertarget{class_definition_ab8b1c377b3cff112fdca997c37007944}{\index{Definition@{Definition}!qualified\-Name@{qualified\-Name}}
+\index{qualified\-Name@{qualified\-Name}!Definition@{Definition}}
+\subsubsection[{qualified\-Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} qualified\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_definition_ab8b1c377b3cff112fdca997c37007944}
+Returns the fully qualified name of this definition 
+
+Reimplementado em \hyperlink{class_member_def_ab8b1c377b3cff112fdca997c37007944}{Member\-Def}.
+
+\hypertarget{class_definition_a98a2e802a5477e4ece9cd859cb07ec31}{\index{Definition@{Definition}!set\-Brief\-Description@{set\-Brief\-Description}}
+\index{set\-Brief\-Description@{set\-Brief\-Description}!Definition@{Definition}}
+\subsubsection[{set\-Brief\-Description}]{\setlength{\rightskip}{0pt plus 5cm}void set\-Brief\-Description (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{b, }
+\item[{const char $\ast$}]{brief\-File, }
+\item[{int}]{brief\-Line}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_definition_a98a2e802a5477e4ece9cd859cb07ec31}
+Sets the brief description of this definition to {\itshape b}. \hyperlink{class_a}{A} dot is added to the sentence if not available. 
+
+Reimplementado em \hyperlink{class_member_def_a98a2e802a5477e4ece9cd859cb07ec31}{Member\-Def}.
+
+\hypertarget{class_definition_a49660f42e3320c1022ef04edfbc7c850}{\index{Definition@{Definition}!set\-Documentation@{set\-Documentation}}
+\index{set\-Documentation@{set\-Documentation}!Definition@{Definition}}
+\subsubsection[{set\-Documentation}]{\setlength{\rightskip}{0pt plus 5cm}void set\-Documentation (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{d, }
+\item[{const char $\ast$}]{doc\-File, }
+\item[{int}]{doc\-Line, }
+\item[{bool}]{strip\-White\-Space = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_definition_a49660f42e3320c1022ef04edfbc7c850}
+Sets the documentation of this definition to {\itshape d}. 
+
+Reimplementado em \hyperlink{class_member_def_a49660f42e3320c1022ef04edfbc7c850}{Member\-Def}.
+
+\hypertarget{class_definition_aa8915a727f5acd71a7e264d86e888835}{\index{Definition@{Definition}!set\-Id@{set\-Id}}
+\index{set\-Id@{set\-Id}!Definition@{Definition}}
+\subsubsection[{set\-Id}]{\setlength{\rightskip}{0pt plus 5cm}void set\-Id (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name}
+\end{DoxyParamCaption}
+)}}\label{class_definition_aa8915a727f5acd71a7e264d86e888835}
+Sets a unique id for the symbol. Used for libclang integration. \hypertarget{class_definition_ae1d28023753b529dd5a2c5d77e076843}{\index{Definition@{Definition}!set\-Inbody\-Documentation@{set\-Inbody\-Documentation}}
+\index{set\-Inbody\-Documentation@{set\-Inbody\-Documentation}!Definition@{Definition}}
+\subsubsection[{set\-Inbody\-Documentation}]{\setlength{\rightskip}{0pt plus 5cm}void set\-Inbody\-Documentation (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{d, }
+\item[{const char $\ast$}]{doc\-File, }
+\item[{int}]{doc\-Line}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_definition_ae1d28023753b529dd5a2c5d77e076843}
+Set the documentation that was found inside the body of an item. If there was already some documentation set, the new documentation will be appended. 
+
+Reimplementado em \hyperlink{class_member_def_a0ba4fab93cc2151a4c5c88279846f8fd}{Member\-Def}.
+
+\hypertarget{class_definition_ab3a256e7d9fad73fa57de7c1fedf51c5}{\index{Definition@{Definition}!set\-Name@{set\-Name}}
+\index{set\-Name@{set\-Name}!Definition@{Definition}}
+\subsubsection[{set\-Name}]{\setlength{\rightskip}{0pt plus 5cm}void set\-Name (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name}
+\end{DoxyParamCaption}
+)}}\label{class_definition_ab3a256e7d9fad73fa57de7c1fedf51c5}
+Sets a new {\itshape name} for the definition \hypertarget{class_definition_a194917eb0e2f76ca5575658b55982c19}{\index{Definition@{Definition}!set\-Reference@{set\-Reference}}
+\index{set\-Reference@{set\-Reference}!Definition@{Definition}}
+\subsubsection[{set\-Reference}]{\setlength{\rightskip}{0pt plus 5cm}void set\-Reference (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{r}
+\end{DoxyParamCaption}
+)}}\label{class_definition_a194917eb0e2f76ca5575658b55982c19}
+Sets the tag file id via which this definition was imported. \hypertarget{class_definition_a2abf0816f6db6ed419d97a01d1242f1a}{\index{Definition@{Definition}!symbol\-Name@{symbol\-Name}}
+\index{symbol\-Name@{symbol\-Name}!Definition@{Definition}}
+\subsubsection[{symbol\-Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} symbol\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_definition_a2abf0816f6db6ed419d97a01d1242f1a}
+Returns the name of this definition as it appears in the symbol map. \hypertarget{class_definition_a0ff8658509384f90b086887377cb2276}{\index{Definition@{Definition}!write\-Doc\-Anchors\-To\-Tag\-File@{write\-Doc\-Anchors\-To\-Tag\-File}}
+\index{write\-Doc\-Anchors\-To\-Tag\-File@{write\-Doc\-Anchors\-To\-Tag\-File}!Definition@{Definition}}
+\subsubsection[{write\-Doc\-Anchors\-To\-Tag\-File}]{\setlength{\rightskip}{0pt plus 5cm}void write\-Doc\-Anchors\-To\-Tag\-File (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_definition_a0ff8658509384f90b086887377cb2276}
+Writes the documentation anchors of the definition to the Doxygen\-::tag\-File stream. \hypertarget{class_definition_ad05e364c8393849dc22ac69568d96fc5}{\index{Definition@{Definition}!write\-Inline\-Code@{write\-Inline\-Code}}
+\index{write\-Inline\-Code@{write\-Inline\-Code}!Definition@{Definition}}
+\subsubsection[{write\-Inline\-Code}]{\setlength{\rightskip}{0pt plus 5cm}void write\-Inline\-Code (
+\begin{DoxyParamCaption}
+\item[{{\bf Output\-List} \&}]{ol, }
+\item[{const char $\ast$}]{scope\-Name}
+\end{DoxyParamCaption}
+)}}\label{class_definition_ad05e364c8393849dc22ac69568d96fc5}
+Write code of this definition into the documentation \hypertarget{class_definition_a3743f2020b717483a31b241d35c373be}{\index{Definition@{Definition}!write\-Source\-Def@{write\-Source\-Def}}
+\index{write\-Source\-Def@{write\-Source\-Def}!Definition@{Definition}}
+\subsubsection[{write\-Source\-Def}]{\setlength{\rightskip}{0pt plus 5cm}void write\-Source\-Def (
+\begin{DoxyParamCaption}
+\item[{{\bf Output\-List} \&}]{ol, }
+\item[{const char $\ast$}]{scope\-Name}
+\end{DoxyParamCaption}
+)}}\label{class_definition_a3743f2020b717483a31b241d35c373be}
+Write a reference to the source code defining this definition 
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/src/definition.\-h\item 
+C\-:/\-Users/teste/git/doxygen/src/definition.\-cpp\end{DoxyCompactItemize}

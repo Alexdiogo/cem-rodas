@@ -1,0 +1,587 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>CEM RODAS: Referência à classe ClassDefImpl</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">CEM RODAS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Localizar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="modules.html"><span>Módulos</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Estruturas&#160;de&#160;dados</span></a></li>
+      <li><a href="files.html"><span>Ficheiros</span></a></li>
+      <li><a href="examples.html"><span>Exemplos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Localizar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Estruturas&#160;de&#160;dados</span></a></li>
+      <li><a href="classes.html"><span>Índice&#160;das&#160;estruturas&#160;de&#160;dados</span></a></li>
+      <li><a href="hierarchy.html"><span>Hierarquia&#160;de&#160;classes</span></a></li>
+      <li><a href="functions.html"><span>Campos&#160;de&#160;dados</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tudo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Estruturas de dados</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Ficheiros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variáveis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Definições de tipos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerações</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Valores da enumeração</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Amigos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Grupos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Membros públicos</a> &#124;
+<a href="#pub-attribs">Campos de Dados</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência à classe ClassDefImpl</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Membros públicos</h2></td></tr>
+<tr class="memitem:a5816ee2b1949bd5bf9ef84702448795c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5816ee2b1949bd5bf9ef84702448795c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> (const char *defFileName, const char *name, const <a class="el" href="class_q_c_string.html">QCString</a> &amp;ctStr, const char *fName)</td></tr>
+<tr class="separator:a5816ee2b1949bd5bf9ef84702448795c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Campos de Dados</h2></td></tr>
+<tr class="memitem:abb9cd3e430c4eaf05aa259fa96f32305"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class_def_impl.html#abb9cd3e430c4eaf05aa259fa96f32305">fileName</a></td></tr>
+<tr class="separator:abb9cd3e430c4eaf05aa259fa96f32305"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cba66a9f6ffe861a51b9be202714bb2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_include_info.html">IncludeInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class_def_impl.html#a0cba66a9f6ffe861a51b9be202714bb2">incInfo</a></td></tr>
+<tr class="separator:a0cba66a9f6ffe861a51b9be202714bb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b9018b192f2f9004f8b058ba1d4d4ed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_base_class_list.html">BaseClassList</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class_def_impl.html#a8b9018b192f2f9004f8b058ba1d4d4ed">inherits</a></td></tr>
+<tr class="separator:a8b9018b192f2f9004f8b058ba1d4d4ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a84a13b04588770007b79363d29cd86"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_base_class_list.html">BaseClassList</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class_def_impl.html#a2a84a13b04588770007b79363d29cd86">inheritedBy</a></td></tr>
+<tr class="separator:a2a84a13b04588770007b79363d29cd86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca092109e90d350747ec9ccb7d4805c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_namespace_def.html">NamespaceDef</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class_def_impl.html#aca092109e90d350747ec9ccb7d4805c6">nspace</a></td></tr>
+<tr class="separator:aca092109e90d350747ec9ccb7d4805c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e1ae363ea84baa4340319bb5a163f25"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_file_def.html">FileDef</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class_def_impl.html#a2e1ae363ea84baa4340319bb5a163f25">fileDef</a></td></tr>
+<tr class="separator:a2e1ae363ea84baa4340319bb5a163f25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8f99065fcaf7b17dadea395ff119e81"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_member_name_info_s_dict.html">MemberNameInfoSDict</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class_def_impl.html#aa8f99065fcaf7b17dadea395ff119e81">allMemberNameInfoSDict</a></td></tr>
+<tr class="separator:aa8f99065fcaf7b17dadea395ff119e81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a132135b8994a03a68bf763c6055c5a4b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_argument_list.html">ArgumentList</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class_def_impl.html#a132135b8994a03a68bf763c6055c5a4b">tempArgs</a></td></tr>
+<tr class="separator:a132135b8994a03a68bf763c6055c5a4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adefae2de7d374d135863ba982399500d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_argument_list.html">ArgumentList</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class_def_impl.html#adefae2de7d374d135863ba982399500d">typeConstraints</a></td></tr>
+<tr class="separator:adefae2de7d374d135863ba982399500d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbfe1e3c296fd762e9e717e0e83358e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_file_list.html">FileList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class_def_impl.html#adbfe1e3c296fd762e9e717e0e83358e2">files</a></td></tr>
+<tr class="separator:adbfe1e3c296fd762e9e717e0e83358e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7726dc36df5baed8960272489b15e599"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_example_s_dict.html">ExampleSDict</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class_def_impl.html#a7726dc36df5baed8960272489b15e599">exampleSDict</a></td></tr>
+<tr class="separator:a7726dc36df5baed8960272489b15e599"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78b7fb1883960e1a8935c4254e2de05b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_class_def.html#a768a6f0a6fd7e9087ff7971abbcc3f36">ClassDef::CompoundType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class_def_impl.html#a78b7fb1883960e1a8935c4254e2de05b">compType</a></td></tr>
+<tr class="separator:a78b7fb1883960e1a8935c4254e2de05b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f887065f93ce5f02dea21da35468e8e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a90e352184df58cd09455fe9996cd4ded">Protection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class_def_impl.html#a3f887065f93ce5f02dea21da35468e8e">prot</a></td></tr>
+<tr class="separator:a3f887065f93ce5f02dea21da35468e8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8c782281ef14751085df442d8f248c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_class_s_dict.html">ClassSDict</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class_def_impl.html#af8c782281ef14751085df442d8f248c8">innerClasses</a></td></tr>
+<tr class="separator:af8c782281ef14751085df442d8f248c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10ec86dbc94e39b3f62c9232a31826d9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a10ec86dbc94e39b3f62c9232a31826d9"></a>
+<a class="el" href="class_uses_class_dict.html">UsesClassDict</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>usesImplClassDict</b></td></tr>
+<tr class="separator:a10ec86dbc94e39b3f62c9232a31826d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9db3634550520ac64995c06ad79ec242"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9db3634550520ac64995c06ad79ec242"></a>
+<a class="el" href="class_uses_class_dict.html">UsesClassDict</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>usedByImplClassDict</b></td></tr>
+<tr class="separator:a9db3634550520ac64995c06ad79ec242"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3a5097b8f70233e00f72bd6e5fe9cd7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac3a5097b8f70233e00f72bd6e5fe9cd7"></a>
+<a class="el" href="class_uses_class_dict.html">UsesClassDict</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>usesIntfClassDict</b></td></tr>
+<tr class="separator:ac3a5097b8f70233e00f72bd6e5fe9cd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab49b6d30520603cc9c97579a168808fd"><td class="memItemLeft" align="right" valign="top">QDict&lt; <a class="el" href="class_class_def.html">ClassDef</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class_def_impl.html#ab49b6d30520603cc9c97579a168808fd">templateInstances</a></td></tr>
+<tr class="separator:ab49b6d30520603cc9c97579a168808fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06b615e222cf24da9484fa3ebdc91e3d"><td class="memItemLeft" align="right" valign="top">QDict&lt; <a class="el" href="class_class_def.html">ClassDef</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class_def_impl.html#a06b615e222cf24da9484fa3ebdc91e3d">variableInstances</a></td></tr>
+<tr class="separator:a06b615e222cf24da9484fa3ebdc91e3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84139386938c73eb249976aa3f2c0595"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a84139386938c73eb249976aa3f2c0595"></a>
+QDict&lt; int &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>templBaseClassNames</b></td></tr>
+<tr class="separator:a84139386938c73eb249976aa3f2c0595"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab15069d1a1d6d67311966eb2fbbefd37"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_class_def.html">ClassDef</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class_def_impl.html#ab15069d1a1d6d67311966eb2fbbefd37">templateMaster</a></td></tr>
+<tr class="separator:ab15069d1a1d6d67311966eb2fbbefd37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9c1e1c77226f1a726988c0e07634265"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class_def_impl.html#aa9c1e1c77226f1a726988c0e07634265">className</a></td></tr>
+<tr class="separator:aa9c1e1c77226f1a726988c0e07634265"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8baa5a129ba0c7fca0f16f8941cd2572"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_class_def.html">ClassDef</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class_def_impl.html#a8baa5a129ba0c7fca0f16f8941cd2572">categoryOf</a></td></tr>
+<tr class="separator:a8baa5a129ba0c7fca0f16f8941cd2572"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd7d4981c3150ba315db4421de62a103"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acd7d4981c3150ba315db4421de62a103"></a>
+<a class="el" href="class_q_list.html">QList</a>&lt; <a class="el" href="class_member_list.html">MemberList</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>memberLists</b></td></tr>
+<tr class="separator:acd7d4981c3150ba315db4421de62a103"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05e5d73660b8f595312a3bc5adb93bbe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a05e5d73660b8f595312a3bc5adb93bbe"></a>
+<a class="el" href="class_member_group_s_dict.html">MemberGroupSDict</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>memberGroupSDict</b></td></tr>
+<tr class="separator:a05e5d73660b8f595312a3bc5adb93bbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b6a66ac3f44c050d77ae0b675fe6e00"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class_def_impl.html#a8b6a66ac3f44c050d77ae0b675fe6e00">isAbstract</a></td></tr>
+<tr class="separator:a8b6a66ac3f44c050d77ae0b675fe6e00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e1d0cb67aacaa6d9c38b825147bfe5a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class_def_impl.html#a3e1d0cb67aacaa6d9c38b825147bfe5a">isStatic</a></td></tr>
+<tr class="separator:a3e1d0cb67aacaa6d9c38b825147bfe5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6501a34b597a75c28ebf096b99359b32"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class_def_impl.html#a6501a34b597a75c28ebf096b99359b32">membersMerged</a></td></tr>
+<tr class="separator:a6501a34b597a75c28ebf096b99359b32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac605c13c815eff8fc80f638813621e24"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class_def_impl.html#ac605c13c815eff8fc80f638813621e24">isLocal</a></td></tr>
+<tr class="separator:ac605c13c815eff8fc80f638813621e24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f08dfd420c305d532414b5a86c9b7f6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0f08dfd420c305d532414b5a86c9b7f6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isTemplArg</b></td></tr>
+<tr class="separator:a0f08dfd420c305d532414b5a86c9b7f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c0b6dfd8da3027f83dfdbfeffce7706"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class_def_impl.html#a6c0b6dfd8da3027f83dfdbfeffce7706">subGrouping</a></td></tr>
+<tr class="separator:a6c0b6dfd8da3027f83dfdbfeffce7706"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6220c6b3d9e0fc97dbb0c56d446d37d5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class_def_impl.html#a6220c6b3d9e0fc97dbb0c56d446d37d5">usedOnly</a></td></tr>
+<tr class="separator:a6220c6b3d9e0fc97dbb0c56d446d37d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70b6b23084b915bdfc841b0139d4e331"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_s_dict.html">SDict</a>&lt; <a class="el" href="class_q_c_string.html">QCString</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class_def_impl.html#a70b6b23084b915bdfc841b0139d4e331">vhdlSummaryTitles</a></td></tr>
+<tr class="separator:a70b6b23084b915bdfc841b0139d4e331"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8faf5b670c25ccc13f661f3ab94d1e0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class_def_impl.html#af8faf5b670c25ccc13f661f3ab94d1e0">isSimple</a></td></tr>
+<tr class="separator:af8faf5b670c25ccc13f661f3ab94d1e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb944a90be4237de66127e07bf39d20a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_member_def.html">MemberDef</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class_def_impl.html#afb944a90be4237de66127e07bf39d20a">arrowOperator</a></td></tr>
+<tr class="separator:afb944a90be4237de66127e07bf39d20a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a65fc055a96d942f15c01b42e28797b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1a65fc055a96d942f15c01b42e28797b"></a>
+<a class="el" href="class_class_list.html">ClassList</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>taggedInnerClasses</b></td></tr>
+<tr class="separator:a1a65fc055a96d942f15c01b42e28797b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50c4f38a125049347e84bf9dd6823ed5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a50c4f38a125049347e84bf9dd6823ed5"></a>
+<a class="el" href="class_class_def.html">ClassDef</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>tagLessRef</b></td></tr>
+<tr class="separator:a50c4f38a125049347e84bf9dd6823ed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b9507fb8aad93504c5ef971dc9d25c3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class_def_impl.html#a4b9507fb8aad93504c5ef971dc9d25c3">isJavaEnum</a></td></tr>
+<tr class="separator:a4b9507fb8aad93504c5ef971dc9d25c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8353edb1d69060bc8a7fe42f13fba12"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad8353edb1d69060bc8a7fe42f13fba12"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isGeneric</b></td></tr>
+<tr class="separator:ad8353edb1d69060bc8a7fe42f13fba12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab185cff582e0684a926b4da23bca207d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab185cff582e0684a926b4da23bca207d"></a>
+uint64&#160;</td><td class="memItemRight" valign="bottom"><b>spec</b></td></tr>
+<tr class="separator:ab185cff582e0684a926b4da23bca207d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Private data associated with a <a class="el" href="class_class_def.html">ClassDef</a> object. </p>
+</div><h2 class="groupheader">Documentação dos campos e atributos</h2>
+<a class="anchor" id="aa8f99065fcaf7b17dadea395ff119e81"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_member_name_info_s_dict.html">MemberNameInfoSDict</a>* allMemberNameInfoSDict</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>List of all members (including inherited members) </p>
+
+</div>
+</div>
+<a class="anchor" id="afb944a90be4237de66127e07bf39d20a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_member_def.html">MemberDef</a>* arrowOperator</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Does this class overloaded the -&gt; operator? </p>
+
+</div>
+</div>
+<a class="anchor" id="a8baa5a129ba0c7fca0f16f8941cd2572"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_class_def.html">ClassDef</a>* categoryOf</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>If this class is a Objective-C category, then this points to the class which is extended. </p>
+
+</div>
+</div>
+<a class="anchor" id="aa9c1e1c77226f1a726988c0e07634265"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_c_string.html">QCString</a> className</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>local class name which could be a typedef'ed alias name. </p>
+
+</div>
+</div>
+<a class="anchor" id="a78b7fb1883960e1a8935c4254e2de05b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_class_def.html#a768a6f0a6fd7e9087ff7971abbcc3f36">ClassDef::CompoundType</a> compType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Holds the kind of "class" this is. </p>
+
+</div>
+</div>
+<a class="anchor" id="a7726dc36df5baed8960272489b15e599"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_example_s_dict.html">ExampleSDict</a>* exampleSDict</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Examples that use this class </p>
+
+</div>
+</div>
+<a class="anchor" id="a2e1ae363ea84baa4340319bb5a163f25"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_file_def.html">FileDef</a>* fileDef</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>File this class is defined in </p>
+
+</div>
+</div>
+<a class="anchor" id="abb9cd3e430c4eaf05aa259fa96f32305"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_c_string.html">QCString</a> fileName</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>file name that forms the base for the output file containing the class documentation. For compatibility with Qt (e.g. links via tag files) this name cannot be derived from the class name directly. </p>
+
+</div>
+</div>
+<a class="anchor" id="adbfe1e3c296fd762e9e717e0e83358e2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_file_list.html">FileList</a> files</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Files that were used for generating the class documentation. </p>
+
+</div>
+</div>
+<a class="anchor" id="a0cba66a9f6ffe861a51b9be202714bb2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_include_info.html">IncludeInfo</a>* incInfo</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Include information about the header file should be included in the documentation. 0 by default, set by setIncludeFile(). </p>
+
+</div>
+</div>
+<a class="anchor" id="a2a84a13b04588770007b79363d29cd86"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_base_class_list.html">BaseClassList</a>* inheritedBy</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>List of sub-classes that directly derive from this class </p>
+
+</div>
+</div>
+<a class="anchor" id="a8b9018b192f2f9004f8b058ba1d4d4ed"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_base_class_list.html">BaseClassList</a>* inherits</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>List of base class (or super-classes) from which this class derives directly. </p>
+
+</div>
+</div>
+<a class="anchor" id="af8c782281ef14751085df442d8f248c8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_class_s_dict.html">ClassSDict</a>* innerClasses</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The inner classes contained in this class. Will be 0 if there are no inner classes. </p>
+
+</div>
+</div>
+<a class="anchor" id="a8b6a66ac3f44c050d77ae0b675fe6e00"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isAbstract</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Is this an abstact class? </p>
+
+</div>
+</div>
+<a class="anchor" id="a4b9507fb8aad93504c5ef971dc9d25c3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isJavaEnum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Does this class represent a Java style enum? </p>
+
+</div>
+</div>
+<a class="anchor" id="ac605c13c815eff8fc80f638813621e24"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isLocal</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>TRUE if the class is defined in a source file rather than a header file. </p>
+
+</div>
+</div>
+<a class="anchor" id="af8faf5b670c25ccc13f661f3ab94d1e0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isSimple</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Is this a simple (non-nested) <a class="el" href="class_c.html">C</a> structure? </p>
+
+</div>
+</div>
+<a class="anchor" id="a3e1d0cb67aacaa6d9c38b825147bfe5a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isStatic</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Is the class part of an unnamed namespace? </p>
+
+</div>
+</div>
+<a class="anchor" id="a6501a34b597a75c28ebf096b99359b32"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool membersMerged</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>TRUE if classes members are merged with those of the base classes. </p>
+
+</div>
+</div>
+<a class="anchor" id="aca092109e90d350747ec9ccb7d4805c6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_namespace_def.html">NamespaceDef</a>* nspace</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Namespace this class is part of (this is the inner most namespace in case of nested namespaces) </p>
+
+</div>
+</div>
+<a class="anchor" id="a3f887065f93ce5f02dea21da35468e8e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#a90e352184df58cd09455fe9996cd4ded">Protection</a> prot</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The protection level in which this class was found. Typically Public, but for nested classes this can also be Protected or Private. </p>
+
+</div>
+</div>
+<a class="anchor" id="a6c0b6dfd8da3027f83dfdbfeffce7706"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool subGrouping</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Does this class group its user-grouped members as a sub-section of the normal (public/protected/..) groups? </p>
+
+</div>
+</div>
+<a class="anchor" id="a132135b8994a03a68bf763c6055c5a4b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_argument_list.html">ArgumentList</a>* tempArgs</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><a class="el" href="class_template.html" title="Abstract interface for a template. ">Template</a> arguments of this class </p>
+
+</div>
+</div>
+<a class="anchor" id="ab49b6d30520603cc9c97579a168808fd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QDict&lt;<a class="el" href="class_class_def.html">ClassDef</a>&gt;* templateInstances</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><a class="el" href="class_template.html" title="Abstract interface for a template. ">Template</a> instances that exists of this class, the key in the dictionary is the template argument list. </p>
+
+</div>
+</div>
+<a class="anchor" id="ab15069d1a1d6d67311966eb2fbbefd37"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_class_def.html">ClassDef</a>* templateMaster</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The class this class is an instance of. </p>
+
+</div>
+</div>
+<a class="anchor" id="adefae2de7d374d135863ba982399500d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_argument_list.html">ArgumentList</a>* typeConstraints</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Type constraints for template parameters </p>
+
+</div>
+</div>
+<a class="anchor" id="a6220c6b3d9e0fc97dbb0c56d446d37d5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool usedOnly</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Reason of existence is a "use" relation </p>
+
+</div>
+</div>
+<a class="anchor" id="a06b615e222cf24da9484fa3ebdc91e3d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QDict&lt;<a class="el" href="class_class_def.html">ClassDef</a>&gt;* variableInstances</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><a class="el" href="class_template.html" title="Abstract interface for a template. ">Template</a> instances that exists of this class, as defined by variables. We do NOT want to document these individually. The key in the dictionary is the template argument list. </p>
+
+</div>
+</div>
+<a class="anchor" id="a70b6b23084b915bdfc841b0139d4e331"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_s_dict.html">SDict</a>&lt;<a class="el" href="class_q_c_string.html">QCString</a>&gt; vhdlSummaryTitles</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>List of titles to use for the summary </p>
+
+</div>
+</div>
+<hr/>A documentação para esta classe foi gerada a partir do seguinte ficheiro:<ul>
+<li>C:/Users/teste/git/doxygen/src/classdef.cpp</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado em Quinta, 28 de Novembro de 2013 22:43:53 para CEM RODAS por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

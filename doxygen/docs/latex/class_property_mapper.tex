@@ -1,0 +1,65 @@
+\hypertarget{class_property_mapper}{\section{Referência à classe Property\-Mapper}
+\label{class_property_mapper}\index{Property\-Mapper@{Property\-Mapper}}
+}
+
+
+Helper class to map a property name to a handler member function.  
+
+
+Diagrama de heranças da classe Property\-Mapper\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{class_property_mapper}
+\end{center}
+\end{figure}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{class_property_mapper_a2cbd46fbe5fa152c98e3045347fe7578}{add\-Property} (const char $\ast$name, const T $\ast$obj, typename Property\-Func$<$ T $>$\-::Handler handle)
+\item 
+\hyperlink{class_template_variant}{Template\-Variant} \hyperlink{class_property_mapper_a1bcfea01201f3ea09981a8442842c42d}{get} (const char $\ast$name) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+Helper class to map a property name to a handler member function. 
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_property_mapper_a2cbd46fbe5fa152c98e3045347fe7578}{\index{Property\-Mapper@{Property\-Mapper}!add\-Property@{add\-Property}}
+\index{add\-Property@{add\-Property}!PropertyMapper@{Property\-Mapper}}
+\subsubsection[{add\-Property}]{\setlength{\rightskip}{0pt plus 5cm}void add\-Property (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name, }
+\item[{const T $\ast$}]{obj, }
+\item[{typename Property\-Func$<$ T $>$\-::Handler}]{handle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_property_mapper_a2cbd46fbe5fa152c98e3045347fe7578}
+Add a property to the map 
+\begin{DoxyParams}[1]{Parâmetros}
+\mbox{\tt in}  & {\em name} & The name of the property to add. \\
+\hline
+\mbox{\tt in}  & {\em obj} & The object handling access to the property. \\
+\hline
+\mbox{\tt in}  & {\em handle} & The method to call when the property is accessed. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_property_mapper_a1bcfea01201f3ea09981a8442842c42d}{\index{Property\-Mapper@{Property\-Mapper}!get@{get}}
+\index{get@{get}!PropertyMapper@{Property\-Mapper}}
+\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Template\-Variant} get (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_property_mapper_a1bcfea01201f3ea09981a8442842c42d}
+Gets the value of a property. 
+\begin{DoxyParams}[1]{Parâmetros}
+\mbox{\tt in}  & {\em name} & The name of the property. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+\hyperlink{class_a}{A} variant representing the properties value or an invalid variant if it was not found. 
+\end{DoxyReturn}
+
+
+A documentação para esta classe foi gerada a partir do seguinte ficheiro\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/src/context.\-cpp\end{DoxyCompactItemize}

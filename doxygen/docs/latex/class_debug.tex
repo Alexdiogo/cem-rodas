@@ -1,0 +1,58 @@
+\hypertarget{class_debug}{\section{Referência à classe Debug}
+\label{class_debug}\index{Debug@{Debug}}
+}
+
+
+{\ttfamily \#include $<$debug.\-h$>$}
+
+\subsection*{Tipos Públicos}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Debug\-Mask} \{ \\*
+{\bfseries Quiet} = 0x00000000, 
+{\bfseries Find\-Members} = 0x00000001, 
+{\bfseries Functions} = 0x00000002, 
+{\bfseries Variables} = 0x00000004, 
+\\*
+{\bfseries Preprocessor} = 0x00000008, 
+{\bfseries Classes} = 0x00000010, 
+{\bfseries Comment\-Cnv} = 0x00000020, 
+{\bfseries Comment\-Scan} = 0x00000040, 
+\\*
+{\bfseries Validate} = 0x00000080, 
+{\bfseries Print\-Tree} = 0x00000100, 
+{\bfseries Time} = 0x00000200, 
+{\bfseries Ext\-Cmd} = 0x00000400, 
+\\*
+{\bfseries Markdown} = 0x00000800, 
+{\bfseries Filter\-Output} = 0x00001000, 
+{\bfseries Lex} = 0x00002000
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Membros públicos estáticos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_debug_ae113cd4c0fbcedae32db49e20c01d685}{static void {\bfseries print} (Debug\-Mask mask, int prio, const char $\ast$fmt,...)}\label{class_debug_ae113cd4c0fbcedae32db49e20c01d685}
+
+\item 
+\hypertarget{class_debug_a9348d6aa69122cca496069a0d4fbea9e}{static int {\bfseries set\-Flag} (const char $\ast$label)}\label{class_debug_a9348d6aa69122cca496069a0d4fbea9e}
+
+\item 
+\hypertarget{class_debug_a3e0f37e8fc190da7ce7e0a28dd39e880}{static void {\bfseries clear\-Flag} (const char $\ast$label)}\label{class_debug_a3e0f37e8fc190da7ce7e0a28dd39e880}
+
+\item 
+\hypertarget{class_debug_aadc3ca4ebd07b919e292fb0f25c4b563}{static bool {\bfseries is\-Flag\-Set} (Debug\-Mask mask)}\label{class_debug_aadc3ca4ebd07b919e292fb0f25c4b563}
+
+\item 
+\hypertarget{class_debug_ab1ffd9a5846e0c4c8eadc6d4679ef68a}{static void {\bfseries set\-Priority} (int p)}\label{class_debug_ab1ffd9a5846e0c4c8eadc6d4679ef68a}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+Class containing a print function for diagnostics. 
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/src/debug.\-h\item 
+C\-:/\-Users/teste/git/doxygen/src/debug.\-cpp\end{DoxyCompactItemize}

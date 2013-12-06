@@ -1,0 +1,94 @@
+\hypertarget{class_layout_doc_manager}{\section{Referência à classe Layout\-Doc\-Manager}
+\label{class_layout_doc_manager}\index{Layout\-Doc\-Manager@{Layout\-Doc\-Manager}}
+}
+
+
+Singleton providing access to the (user configurable) layout of the documentation.  
+
+
+
+
+{\ttfamily \#include $<$layout.\-h$>$}
+
+\subsection*{Estruturas de Dados}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_layout_doc_manager_1_1_private}{Private}
+\end{DoxyCompactItemize}
+\subsection*{Tipos Públicos}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Layout\-Part} \{ \\*
+{\bfseries Class}, 
+{\bfseries Namespace}, 
+{\bfseries File}, 
+{\bfseries Group}, 
+\\*
+{\bfseries Directory}, 
+{\bfseries Nr\-Parts}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{class_q_list}{Q\-List}$<$ \hyperlink{struct_layout_doc_entry}{Layout\-Doc\-Entry} $>$ \& \hyperlink{class_layout_doc_manager_ade15ae2bae0d9ab35842edeea4e8f821}{doc\-Entries} (Layout\-Part part) const 
+\item 
+\hyperlink{struct_layout_nav_entry}{Layout\-Nav\-Entry} $\ast$ \hyperlink{class_layout_doc_manager_ad77cc28bdbb6dcfc6914628ec9c13f0d}{root\-Nav\-Entry} () const 
+\item 
+void \hyperlink{class_layout_doc_manager_a7c44290019e76b7ab5b4b1a6587aed8d}{parse} (\hyperlink{class_q_text_stream}{Q\-Text\-Stream} \&t, const char $\ast$file\-Name)
+\item 
+\hypertarget{class_layout_doc_manager_a02fd73d861ef2e4aabb38c0c9ff82947}{void {\bfseries init} ()}\label{class_layout_doc_manager_a02fd73d861ef2e4aabb38c0c9ff82947}
+
+\end{DoxyCompactItemize}
+\subsection*{Membros públicos estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_layout_doc_manager}{Layout\-Doc\-Manager} \& \hyperlink{class_layout_doc_manager_a71438c8d0950671039760608959fa0e2}{instance} ()
+\end{DoxyCompactItemize}
+\subsection*{Amigos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_layout_doc_manager_aaa876b66a7f0c8c8766635655c0dff49}{class {\bfseries Layout\-Parser}}\label{class_layout_doc_manager_aaa876b66a7f0c8c8766635655c0dff49}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+Singleton providing access to the (user configurable) layout of the documentation. 
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_layout_doc_manager_ade15ae2bae0d9ab35842edeea4e8f821}{\index{Layout\-Doc\-Manager@{Layout\-Doc\-Manager}!doc\-Entries@{doc\-Entries}}
+\index{doc\-Entries@{doc\-Entries}!LayoutDocManager@{Layout\-Doc\-Manager}}
+\subsubsection[{doc\-Entries}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Q\-List}$<$ {\bf Layout\-Doc\-Entry} $>$ \& doc\-Entries (
+\begin{DoxyParamCaption}
+\item[{Layout\-Doc\-Manager\-::\-Layout\-Part}]{part}
+\end{DoxyParamCaption}
+) const}}\label{class_layout_doc_manager_ade15ae2bae0d9ab35842edeea4e8f821}
+Returns the list of \hyperlink{struct_layout_doc_entry}{Layout\-Doc\-Entry}'s in representation order for a given page identified by {\itshape part}. \hypertarget{class_layout_doc_manager_a71438c8d0950671039760608959fa0e2}{\index{Layout\-Doc\-Manager@{Layout\-Doc\-Manager}!instance@{instance}}
+\index{instance@{instance}!LayoutDocManager@{Layout\-Doc\-Manager}}
+\subsubsection[{instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Layout\-Doc\-Manager} \& instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_layout_doc_manager_a71438c8d0950671039760608959fa0e2}
+Returns a reference to this singleton. \hypertarget{class_layout_doc_manager_a7c44290019e76b7ab5b4b1a6587aed8d}{\index{Layout\-Doc\-Manager@{Layout\-Doc\-Manager}!parse@{parse}}
+\index{parse@{parse}!LayoutDocManager@{Layout\-Doc\-Manager}}
+\subsubsection[{parse}]{\setlength{\rightskip}{0pt plus 5cm}void parse (
+\begin{DoxyParamCaption}
+\item[{{\bf Q\-Text\-Stream} \&}]{t, }
+\item[{const char $\ast$}]{file\-Name}
+\end{DoxyParamCaption}
+)}}\label{class_layout_doc_manager_a7c44290019e76b7ab5b4b1a6587aed8d}
+Parses a user provided layout \hypertarget{class_layout_doc_manager_ad77cc28bdbb6dcfc6914628ec9c13f0d}{\index{Layout\-Doc\-Manager@{Layout\-Doc\-Manager}!root\-Nav\-Entry@{root\-Nav\-Entry}}
+\index{root\-Nav\-Entry@{root\-Nav\-Entry}!LayoutDocManager@{Layout\-Doc\-Manager}}
+\subsubsection[{root\-Nav\-Entry}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Layout\-Nav\-Entry} $\ast$ root\-Nav\-Entry (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_layout_doc_manager_ad77cc28bdbb6dcfc6914628ec9c13f0d}
+returns the (invisible) root of the navigation tree. 
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/src/layout.\-h\item 
+C\-:/\-Users/teste/git/doxygen/src/layout.\-cpp\end{DoxyCompactItemize}

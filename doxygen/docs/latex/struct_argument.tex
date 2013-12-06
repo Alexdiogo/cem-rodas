@@ -1,0 +1,108 @@
+\hypertarget{struct_argument}{\section{Referência à estrutura Argument}
+\label{struct_argument}\index{Argument@{Argument}}
+}
+
+
+This class contains the information about the argument of a function or template.  
+
+
+
+
+{\ttfamily \#include $<$arguments.\-h$>$}
+
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_argument_aedc8c00f523413f83bf6652cbd05bf30}{Argument} ()
+\item 
+\hyperlink{struct_argument_a60b6d8d358684db956863c177c00ee90}{Argument} (const \hyperlink{struct_argument}{Argument} \&a)
+\item 
+\hyperlink{struct_argument}{Argument} \& \hyperlink{struct_argument_aea8e40db597c56e0dd885bb20b33280c}{operator=} (const \hyperlink{struct_argument}{Argument} \&a)
+\item 
+bool \hyperlink{struct_argument_a585dcd381ab70014568db8ad457fc8b1}{has\-Documentation} () const 
+\end{DoxyCompactItemize}
+\subsection*{Campos de Dados}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{struct_argument_a568fa5bb9141551201cb4822cc8ae7b7}{attrib}
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{struct_argument_a0d4463771e24026060ae68b04822d7af}{type}
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{struct_argument_a74d54ffc237b2b850e50345e7c8fa3a4}{can\-Type}
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{struct_argument_adc0097c7bd1e61ad32058fcde425bc7a}{name}
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{struct_argument_a86c3f26165f8d189358a5496e71a929d}{array}
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{struct_argument_a838035f10d60ad8fc6923ab1bb3f3e51}{defval}
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{struct_argument_a19e06f4d6586ea625f163986a2604c36}{docs}
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+This class contains the information about the argument of a function or template. 
+
+
+
+\subsection{Documentação dos Construtores \& Destrutor}
+\hypertarget{struct_argument_aedc8c00f523413f83bf6652cbd05bf30}{\index{Argument@{Argument}!Argument@{Argument}}
+\index{Argument@{Argument}!Argument@{Argument}}
+\subsubsection[{Argument}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Argument} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{struct_argument_aedc8c00f523413f83bf6652cbd05bf30}
+Construct a new argument. \hypertarget{struct_argument_a60b6d8d358684db956863c177c00ee90}{\index{Argument@{Argument}!Argument@{Argument}}
+\index{Argument@{Argument}!Argument@{Argument}}
+\subsubsection[{Argument}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Argument} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Argument} \&}]{a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{struct_argument_a60b6d8d358684db956863c177c00ee90}
+Copy an argument (does a deep copy of all strings). 
+
+\subsection{Documentação dos métodos}
+\hypertarget{struct_argument_a585dcd381ab70014568db8ad457fc8b1}{\index{Argument@{Argument}!has\-Documentation@{has\-Documentation}}
+\index{has\-Documentation@{has\-Documentation}!Argument@{Argument}}
+\subsubsection[{has\-Documentation}]{\setlength{\rightskip}{0pt plus 5cm}bool has\-Documentation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{struct_argument_a585dcd381ab70014568db8ad457fc8b1}
+return T\-R\-U\-E if this argument is documentation and the argument has a non empty name. \hypertarget{struct_argument_aea8e40db597c56e0dd885bb20b33280c}{\index{Argument@{Argument}!operator=@{operator=}}
+\index{operator=@{operator=}!Argument@{Argument}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Argument}\& operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Argument} \&}]{a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{struct_argument_aea8e40db597c56e0dd885bb20b33280c}
+Assignment of an argument (does a deep copy of all strings). 
+
+\subsection{Documentação dos campos e atributos}
+\hypertarget{struct_argument_a86c3f26165f8d189358a5496e71a929d}{\index{Argument@{Argument}!array@{array}}
+\index{array@{array}!Argument@{Argument}}
+\subsubsection[{array}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} array}}\label{struct_argument_a86c3f26165f8d189358a5496e71a929d}
+\hyperlink{struct_argument}{Argument}'s array specifier (may be empty) \hypertarget{struct_argument_a568fa5bb9141551201cb4822cc8ae7b7}{\index{Argument@{Argument}!attrib@{attrib}}
+\index{attrib@{attrib}!Argument@{Argument}}
+\subsubsection[{attrib}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} attrib}}\label{struct_argument_a568fa5bb9141551201cb4822cc8ae7b7}
+\hyperlink{struct_argument}{Argument}'s attribute (I\-D\-L only) \hypertarget{struct_argument_a74d54ffc237b2b850e50345e7c8fa3a4}{\index{Argument@{Argument}!can\-Type@{can\-Type}}
+\index{can\-Type@{can\-Type}!Argument@{Argument}}
+\subsubsection[{can\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} can\-Type}}\label{struct_argument_a74d54ffc237b2b850e50345e7c8fa3a4}
+Cached value of canonical type (after type resolution). Empty initially. \hypertarget{struct_argument_a838035f10d60ad8fc6923ab1bb3f3e51}{\index{Argument@{Argument}!defval@{defval}}
+\index{defval@{defval}!Argument@{Argument}}
+\subsubsection[{defval}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} defval}}\label{struct_argument_a838035f10d60ad8fc6923ab1bb3f3e51}
+\hyperlink{struct_argument}{Argument}'s default value (may be empty) \hypertarget{struct_argument_a19e06f4d6586ea625f163986a2604c36}{\index{Argument@{Argument}!docs@{docs}}
+\index{docs@{docs}!Argument@{Argument}}
+\subsubsection[{docs}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} docs}}\label{struct_argument_a19e06f4d6586ea625f163986a2604c36}
+\hyperlink{struct_argument}{Argument}'s documentation (may be empty) \hypertarget{struct_argument_adc0097c7bd1e61ad32058fcde425bc7a}{\index{Argument@{Argument}!name@{name}}
+\index{name@{name}!Argument@{Argument}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} name}}\label{struct_argument_adc0097c7bd1e61ad32058fcde425bc7a}
+\hyperlink{struct_argument}{Argument}'s name (may be empty) \hypertarget{struct_argument_a0d4463771e24026060ae68b04822d7af}{\index{Argument@{Argument}!type@{type}}
+\index{type@{type}!Argument@{Argument}}
+\subsubsection[{type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} type}}\label{struct_argument_a0d4463771e24026060ae68b04822d7af}
+\hyperlink{struct_argument}{Argument}'s type 
+
+A documentação para esta estrutura foi gerada a partir do seguinte ficheiro\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/src/arguments.\-h\end{DoxyCompactItemize}

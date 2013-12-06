@@ -1,0 +1,204 @@
+\hypertarget{class_html_code_generator}{\section{Referência à classe Html\-Code\-Generator}
+\label{class_html_code_generator}\index{Html\-Code\-Generator@{Html\-Code\-Generator}}
+}
+Diagrama de heranças da classe Html\-Code\-Generator\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_html_code_generator}
+\end{center}
+\end{figure}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_html_code_generator_a8f7a4670e31644dfa1721de745151b1d}{{\bfseries Html\-Code\-Generator} (\hyperlink{class_f_text_stream}{F\-Text\-Stream} \&t, const \hyperlink{class_q_c_string}{Q\-C\-String} \&rel\-Path)}\label{class_html_code_generator_a8f7a4670e31644dfa1721de745151b1d}
+
+\item 
+\hypertarget{class_html_code_generator_aaa10b058cc2604073709f59c74d1b36a}{void {\bfseries set\-Text\-Stream} (\hyperlink{class_f_text_stream}{F\-Text\-Stream} \&t)}\label{class_html_code_generator_aaa10b058cc2604073709f59c74d1b36a}
+
+\item 
+\hypertarget{class_html_code_generator_a8da29834bee1e0ff4dd5343679d8a41f}{void {\bfseries set\-Relative\-Path} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&path)}\label{class_html_code_generator_a8da29834bee1e0ff4dd5343679d8a41f}
+
+\item 
+void \hyperlink{class_html_code_generator_a96b26b0cb63719fd5370a9a04d2ebb38}{codify} (const char $\ast$text)
+\item 
+void \hyperlink{class_html_code_generator_ab3866da052a840c400b4990dd2ddf61b}{write\-Code\-Link} (const char $\ast$ref, const char $\ast$file, const char $\ast$anchor, const char $\ast$name, const char $\ast$tooltip)
+\item 
+void \hyperlink{class_html_code_generator_acc6f74ac2670196668c05d4156eec872}{write\-Tooltip} (const char $\ast$id, const \hyperlink{struct_doc_link_info}{Doc\-Link\-Info} \&doc\-Info, const char $\ast$decl, const char $\ast$desc, const \hyperlink{struct_source_link_info}{Source\-Link\-Info} \&def\-Info, const \hyperlink{struct_source_link_info}{Source\-Link\-Info} \&decl\-Info)
+\item 
+void \hyperlink{class_html_code_generator_a68e608aa3fa63507e7545589c3325a91}{write\-Line\-Number} (const char $\ast$, const char $\ast$, const char $\ast$, int)
+\item 
+\hypertarget{class_html_code_generator_aa76dc2000bd743981f13bb8953b51499}{void {\bfseries start\-Code\-Line} (bool)}\label{class_html_code_generator_aa76dc2000bd743981f13bb8953b51499}
+
+\item 
+void \hyperlink{class_html_code_generator_adbe51a89cf6f9573b3434e7cfda81a7c}{end\-Code\-Line} ()
+\item 
+void \hyperlink{class_html_code_generator_a9326eecf5c7d10d7f6fece1e7fab75d8}{start\-Font\-Class} (const char $\ast$s)
+\item 
+void \hyperlink{class_html_code_generator_ab7851025d80a6d1ed6dd8e25016136e1}{end\-Font\-Class} ()
+\item 
+void \hyperlink{class_html_code_generator_a5bdf52860d0fb01aa6bf45625d70abbc}{write\-Code\-Anchor} (const char $\ast$anchor)
+\item 
+\hypertarget{class_html_code_generator_a71a2ac1fad218c1ccb067138cdfaae22}{void {\bfseries set\-Current\-Doc} (\hyperlink{class_definition}{Definition} $\ast$, const char $\ast$, bool)}\label{class_html_code_generator_a71a2ac1fad218c1ccb067138cdfaae22}
+
+\item 
+\hypertarget{class_html_code_generator_a1243ea01d31796d179387017700b7d12}{void {\bfseries add\-Word} (const char $\ast$, bool)}\label{class_html_code_generator_a1243ea01d31796d179387017700b7d12}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_html_code_generator_a96b26b0cb63719fd5370a9a04d2ebb38}{\index{Html\-Code\-Generator@{Html\-Code\-Generator}!codify@{codify}}
+\index{codify@{codify}!HtmlCodeGenerator@{Html\-Code\-Generator}}
+\subsubsection[{codify}]{\setlength{\rightskip}{0pt plus 5cm}void codify (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_html_code_generator_a96b26b0cb63719fd5370a9a04d2ebb38}
+Writes an code fragment to the output. This function should keep spaces visible, should break lines at a newline and should convert tabs to the right number of spaces. 
+
+Implementa \hyperlink{class_code_output_interface_abc701d9798e414eae3e9694be75dfa8a}{Code\-Output\-Interface}.
+
+\hypertarget{class_html_code_generator_adbe51a89cf6f9573b3434e7cfda81a7c}{\index{Html\-Code\-Generator@{Html\-Code\-Generator}!end\-Code\-Line@{end\-Code\-Line}}
+\index{end\-Code\-Line@{end\-Code\-Line}!HtmlCodeGenerator@{Html\-Code\-Generator}}
+\subsubsection[{end\-Code\-Line}]{\setlength{\rightskip}{0pt plus 5cm}void end\-Code\-Line (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_html_code_generator_adbe51a89cf6f9573b3434e7cfda81a7c}
+Ends a line of code started with start\-Code\-Line() 
+
+Implementa \hyperlink{class_code_output_interface_a542863fa8a9697696ffc4d4b24678e1f}{Code\-Output\-Interface}.
+
+\hypertarget{class_html_code_generator_ab7851025d80a6d1ed6dd8e25016136e1}{\index{Html\-Code\-Generator@{Html\-Code\-Generator}!end\-Font\-Class@{end\-Font\-Class}}
+\index{end\-Font\-Class@{end\-Font\-Class}!HtmlCodeGenerator@{Html\-Code\-Generator}}
+\subsubsection[{end\-Font\-Class}]{\setlength{\rightskip}{0pt plus 5cm}void end\-Font\-Class (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_html_code_generator_ab7851025d80a6d1ed6dd8e25016136e1}
+Ends a block started with \hyperlink{class_html_code_generator_a9326eecf5c7d10d7f6fece1e7fab75d8}{start\-Font\-Class()} 
+
+Implementa \hyperlink{class_code_output_interface_adcd22acfbc1c4c011802334b78cf5f01}{Code\-Output\-Interface}.
+
+\hypertarget{class_html_code_generator_a9326eecf5c7d10d7f6fece1e7fab75d8}{\index{Html\-Code\-Generator@{Html\-Code\-Generator}!start\-Font\-Class@{start\-Font\-Class}}
+\index{start\-Font\-Class@{start\-Font\-Class}!HtmlCodeGenerator@{Html\-Code\-Generator}}
+\subsubsection[{start\-Font\-Class}]{\setlength{\rightskip}{0pt plus 5cm}void start\-Font\-Class (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{cls\-Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_html_code_generator_a9326eecf5c7d10d7f6fece1e7fab75d8}
+Starts a block with a certain meaning. Used for syntax highlighting, which elements of the same type are rendered using the same 'font class'. 
+\begin{DoxyParams}{Parâmetros}
+{\em cls\-Name} & The category name. \\
+\hline
+\end{DoxyParams}
+
+
+Implementa \hyperlink{class_code_output_interface_aaa0bdadd117e161c87149d902d70c863}{Code\-Output\-Interface}.
+
+\hypertarget{class_html_code_generator_a5bdf52860d0fb01aa6bf45625d70abbc}{\index{Html\-Code\-Generator@{Html\-Code\-Generator}!write\-Code\-Anchor@{write\-Code\-Anchor}}
+\index{write\-Code\-Anchor@{write\-Code\-Anchor}!HtmlCodeGenerator@{Html\-Code\-Generator}}
+\subsubsection[{write\-Code\-Anchor}]{\setlength{\rightskip}{0pt plus 5cm}void write\-Code\-Anchor (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_html_code_generator_a5bdf52860d0fb01aa6bf45625d70abbc}
+Write an anchor to a source listing. 
+\begin{DoxyParams}{Parâmetros}
+{\em name} & The name of the anchor. \\
+\hline
+\end{DoxyParams}
+
+
+Implementa \hyperlink{class_code_output_interface_aa29ff881359360e41a251d1d69fae142}{Code\-Output\-Interface}.
+
+\hypertarget{class_html_code_generator_ab3866da052a840c400b4990dd2ddf61b}{\index{Html\-Code\-Generator@{Html\-Code\-Generator}!write\-Code\-Link@{write\-Code\-Link}}
+\index{write\-Code\-Link@{write\-Code\-Link}!HtmlCodeGenerator@{Html\-Code\-Generator}}
+\subsubsection[{write\-Code\-Link}]{\setlength{\rightskip}{0pt plus 5cm}void write\-Code\-Link (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ref, }
+\item[{const char $\ast$}]{file, }
+\item[{const char $\ast$}]{anchor, }
+\item[{const char $\ast$}]{name, }
+\item[{const char $\ast$}]{tooltip}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_html_code_generator_ab3866da052a840c400b4990dd2ddf61b}
+Writes a link to an object in a code fragment. 
+\begin{DoxyParams}{Parâmetros}
+{\em ref} & If this is non-\/zero, the object is to be found in an external documentation file. \\
+\hline
+{\em file} & The file in which the object is located. \\
+\hline
+{\em anchor} & The anchor uniquely identifying the object within the file. \\
+\hline
+{\em name} & The text to display as a placeholder for the link. \\
+\hline
+{\em tooltip} & The tooltip to display when the mouse is on the link. \\
+\hline
+\end{DoxyParams}
+
+
+Implementa \hyperlink{class_code_output_interface_a21e25662f2bc8efbb5bbb8503aeae97f}{Code\-Output\-Interface}.
+
+\hypertarget{class_html_code_generator_a68e608aa3fa63507e7545589c3325a91}{\index{Html\-Code\-Generator@{Html\-Code\-Generator}!write\-Line\-Number@{write\-Line\-Number}}
+\index{write\-Line\-Number@{write\-Line\-Number}!HtmlCodeGenerator@{Html\-Code\-Generator}}
+\subsubsection[{write\-Line\-Number}]{\setlength{\rightskip}{0pt plus 5cm}void write\-Line\-Number (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ref, }
+\item[{const char $\ast$}]{file, }
+\item[{const char $\ast$}]{anchor, }
+\item[{int}]{line\-Number}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_html_code_generator_a68e608aa3fa63507e7545589c3325a91}
+Writes the line number of a source listing 
+\begin{DoxyParams}{Parâmetros}
+{\em ref} & External reference (when imported from a tag file) \\
+\hline
+{\em file} & The file part of the \hyperlink{struct_u_r_l}{U\-R\-L} pointing to the docs. \\
+\hline
+{\em anchor} & The anchor part of the \hyperlink{struct_u_r_l}{U\-R\-L} pointing to the docs. \\
+\hline
+{\em line\-Number} & The line number to write \\
+\hline
+\end{DoxyParams}
+
+
+Implementa \hyperlink{class_code_output_interface_a30af4b3b6e39508a95ba3219d1ba8323}{Code\-Output\-Interface}.
+
+\hypertarget{class_html_code_generator_acc6f74ac2670196668c05d4156eec872}{\index{Html\-Code\-Generator@{Html\-Code\-Generator}!write\-Tooltip@{write\-Tooltip}}
+\index{write\-Tooltip@{write\-Tooltip}!HtmlCodeGenerator@{Html\-Code\-Generator}}
+\subsubsection[{write\-Tooltip}]{\setlength{\rightskip}{0pt plus 5cm}void write\-Tooltip (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{id, }
+\item[{const {\bf Doc\-Link\-Info} \&}]{doc\-Info, }
+\item[{const char $\ast$}]{decl, }
+\item[{const char $\ast$}]{desc, }
+\item[{const {\bf Source\-Link\-Info} \&}]{def\-Info, }
+\item[{const {\bf Source\-Link\-Info} \&}]{decl\-Info}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_html_code_generator_acc6f74ac2670196668c05d4156eec872}
+Writes a tool tip definition 
+\begin{DoxyParams}{Parâmetros}
+{\em id} & unique identifier for the tooltip \\
+\hline
+{\em doc\-Info} & Info about the symbol's documentation. \\
+\hline
+{\em decl} & full declaration of the symbol (for functions) \\
+\hline
+{\em desc} & brief description for the symbol \\
+\hline
+{\em def\-Info} & Info about the symbol's definition in the source code \\
+\hline
+{\em decl\-Info} & Info about the symbol's declaration in the source code \\
+\hline
+\end{DoxyParams}
+
+
+Implementa \hyperlink{class_code_output_interface_a4ab86013abbf61a86e9c300eb805939a}{Code\-Output\-Interface}.
+
+
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/src/htmlgen.\-h\item 
+C\-:/\-Users/teste/git/doxygen/src/htmlgen.\-cpp\end{DoxyCompactItemize}

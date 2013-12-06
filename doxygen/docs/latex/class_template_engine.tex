@@ -1,0 +1,102 @@
+\hypertarget{class_template_engine}{\section{Referência à classe Template\-Engine}
+\label{class_template_engine}\index{Template\-Engine@{Template\-Engine}}
+}
+
+
+Engine to create templates and template contexts.  
+
+
+
+
+{\ttfamily \#include $<$template.\-h$>$}
+
+\subsection*{Estruturas de Dados}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_template_engine_1_1_private}{Private}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_template_engine_1_1_private}{Private} data of the template engine. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_template_engine_af3b5bb1dcf0478beab55466e2c65ca92}{Template\-Engine} ()
+\item 
+\hyperlink{class_template_engine_a6e95d8f09494c96330e9162a9fbc173d}{$\sim$\-Template\-Engine} ()
+\item 
+\hyperlink{class_template_context}{Template\-Context} $\ast$ \hyperlink{class_template_engine_a2316f3e9044091aa296f578d7bd07f92}{create\-Context} () const 
+\item 
+\hyperlink{class_template}{Template} $\ast$ \hyperlink{class_template_engine_af3109721a422c073797a0541a3e3d57a}{new\-Template} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&name, const \hyperlink{class_q_c_string}{Q\-C\-String} \&data)
+\item 
+\hyperlink{class_template}{Template} $\ast$ \hyperlink{class_template_engine_a2124e90bbdf5e3738289aff07713ebc3}{load\-By\-Name} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&file\-Name)
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+Engine to create templates and template contexts. 
+
+\subsection{Documentação dos Construtores \& Destrutor}
+\hypertarget{class_template_engine_af3b5bb1dcf0478beab55466e2c65ca92}{\index{Template\-Engine@{Template\-Engine}!Template\-Engine@{Template\-Engine}}
+\index{Template\-Engine@{Template\-Engine}!TemplateEngine@{Template\-Engine}}
+\subsubsection[{Template\-Engine}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Template\-Engine} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_template_engine_af3b5bb1dcf0478beab55466e2c65ca92}
+Create a template engine. \hypertarget{class_template_engine_a6e95d8f09494c96330e9162a9fbc173d}{\index{Template\-Engine@{Template\-Engine}!$\sim$\-Template\-Engine@{$\sim$\-Template\-Engine}}
+\index{$\sim$\-Template\-Engine@{$\sim$\-Template\-Engine}!TemplateEngine@{Template\-Engine}}
+\subsubsection[{$\sim$\-Template\-Engine}]{\setlength{\rightskip}{0pt plus 5cm}$\sim${\bf Template\-Engine} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_template_engine_a6e95d8f09494c96330e9162a9fbc173d}
+Destroys the template engine. 
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_template_engine_a2316f3e9044091aa296f578d7bd07f92}{\index{Template\-Engine@{Template\-Engine}!create\-Context@{create\-Context}}
+\index{create\-Context@{create\-Context}!TemplateEngine@{Template\-Engine}}
+\subsubsection[{create\-Context}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Template\-Context} $\ast$ create\-Context (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_template_engine_a2316f3e9044091aa296f578d7bd07f92}
+Creates a new context that can be using to render a template. \begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_template_a65dc31adfae28e2e980b1260bc543d87}{Template\-::render()} 
+\end{DoxySeeAlso}
+\hypertarget{class_template_engine_a2124e90bbdf5e3738289aff07713ebc3}{\index{Template\-Engine@{Template\-Engine}!load\-By\-Name@{load\-By\-Name}}
+\index{load\-By\-Name@{load\-By\-Name}!TemplateEngine@{Template\-Engine}}
+\subsubsection[{load\-By\-Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Template} $\ast$ load\-By\-Name (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-C\-String} \&}]{file\-Name}
+\end{DoxyParamCaption}
+)}}\label{class_template_engine_a2124e90bbdf5e3738289aff07713ebc3}
+Creates a new template whole contents are in a file. 
+\begin{DoxyParams}[1]{Parâmetros}
+\mbox{\tt in}  & {\em file\-Name} & The name of the file containing the template data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+the new template, the caller will be the owner. 
+\end{DoxyReturn}
+\hypertarget{class_template_engine_af3109721a422c073797a0541a3e3d57a}{\index{Template\-Engine@{Template\-Engine}!new\-Template@{new\-Template}}
+\index{new\-Template@{new\-Template}!TemplateEngine@{Template\-Engine}}
+\subsubsection[{new\-Template}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Template} $\ast$ new\-Template (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-C\-String} \&}]{name, }
+\item[{const {\bf Q\-C\-String} \&}]{data}
+\end{DoxyParamCaption}
+)}}\label{class_template_engine_af3109721a422c073797a0541a3e3d57a}
+Creates a new template whose contents are given by a string. 
+\begin{DoxyParams}[1]{Parâmetros}
+\mbox{\tt in}  & {\em name} & The name of the template. \\
+\hline
+\mbox{\tt in}  & {\em data} & The contents of the template. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+the new template, the caller will be the owner. 
+\end{DoxyReturn}
+
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/src/template.\-h\item 
+C\-:/\-Users/teste/git/doxygen/src/template.\-cpp\end{DoxyCompactItemize}

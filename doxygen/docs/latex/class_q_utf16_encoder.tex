@@ -1,0 +1,36 @@
+\hypertarget{class_q_utf16_encoder}{\section{Referência à classe Q\-Utf16\-Encoder}
+\label{class_q_utf16_encoder}\index{Q\-Utf16\-Encoder@{Q\-Utf16\-Encoder}}
+}
+Diagrama de heranças da classe Q\-Utf16\-Encoder\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_q_utf16_encoder}
+\end{center}
+\end{figure}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_q_utf16_encoder_a9a52118940f62558cfbf17d859aaa03e}{from\-Unicode} (const \hyperlink{class_q_string}{Q\-String} \&uc, int \&len\-\_\-in\-\_\-out)
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_q_utf16_encoder_a9a52118940f62558cfbf17d859aaa03e}{\index{Q\-Utf16\-Encoder@{Q\-Utf16\-Encoder}!from\-Unicode@{from\-Unicode}}
+\index{from\-Unicode@{from\-Unicode}!QUtf16Encoder@{Q\-Utf16\-Encoder}}
+\subsubsection[{from\-Unicode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} from\-Unicode (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{uc, }
+\item[{int \&}]{len\-In\-Out}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_q_utf16_encoder_a9a52118940f62558cfbf17d859aaa03e}
+Converts {\itshape len\-In\-Out} characters (not bytes) from {\itshape uc}, producing a \hyperlink{class_q_c_string}{Q\-C\-String}. {\itshape len\-In\-Out} will also be set to the \hyperlink{}{length} of the result (in bytes).
+
+The encoder is free to record state to use when subsequent calls are made to this function (for example, it might change modes with escape sequences if needed during the encoding of one string, then assume that mode applies when a subsequent call begins). 
+
+Implementa \hyperlink{class_q_text_encoder_aacab43367cc5203dd9ec329729914442}{Q\-Text\-Encoder}.
+
+
+
+A documentação para esta classe foi gerada a partir do seguinte ficheiro\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/qtools/qutfcodec.\-cpp\end{DoxyCompactItemize}

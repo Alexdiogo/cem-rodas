@@ -1,0 +1,254 @@
+\hypertarget{outputlist_8cpp}{\section{Referência ao ficheiro C\-:/\-Users/teste/git/doxygen/src/outputlist.cpp}
+\label{outputlist_8cpp}\index{C\-:/\-Users/teste/git/doxygen/src/outputlist.\-cpp@{C\-:/\-Users/teste/git/doxygen/src/outputlist.\-cpp}}
+}
+{\ttfamily \#include \char`\"{}outputlist.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}outputgen.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}config.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}message.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}definition.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}docparser.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}vhdldocgen.\-h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries F\-O\-R\-A\-L\-L1}(a1, p1)
+\item 
+\#define {\bfseries F\-O\-R\-A\-L\-L2}(a1, a2, p1, p2)
+\item 
+\#define {\bfseries F\-O\-R\-A\-L\-L3}(a1, a2, a3, p1, p2, p3)
+\item 
+\#define {\bfseries F\-O\-R\-A\-L\-L4}(a1, a2, a3, a4, p1, p2, p3, p4)
+\item 
+\#define {\bfseries F\-O\-R\-A\-L\-L5}(a1, a2, a3, a4, a5, p1, p2, p3, p4, p5)
+\item 
+\#define {\bfseries F\-O\-R\-A\-L\-L6}(a1, a2, a3, a4, a5, a6, p1, p2, p3, p4, p5, p6)
+\item 
+\#define {\bfseries F\-O\-R\-A\-L\-L7}(a1, a2, a3, a4, a5, a6, a7, p1, p2, p3, p4, p5, p6, p7)
+\item 
+\#define {\bfseries F\-O\-R\-A\-L\-L8}(a1, a2, a3, a4, a5, a6, a7, a8, p1, p2, p3, p4, p5, p6, p7, p8)
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+This class represents a list of output generators that work in \char`\"{}parallel\char`\"{}. The class only knows about the abstract base class Output\-Generators. All output is produced by calling a method of this class, which forwards the call to all output generators. 
+
+\subsection{Documentação das macros}
+\hypertarget{outputlist_8cpp_af7401f29adec030ecfdd74b9de7d8192}{\index{outputlist.\-cpp@{outputlist.\-cpp}!F\-O\-R\-A\-L\-L1@{F\-O\-R\-A\-L\-L1}}
+\index{F\-O\-R\-A\-L\-L1@{F\-O\-R\-A\-L\-L1}!outputlist.cpp@{outputlist.\-cpp}}
+\subsubsection[{F\-O\-R\-A\-L\-L1}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-O\-R\-A\-L\-L1(
+\begin{DoxyParamCaption}
+\item[{}]{a1, }
+\item[{}]{p1}
+\end{DoxyParamCaption}
+)}}\label{outputlist_8cpp_af7401f29adec030ecfdd74b9de7d8192}
+{\bfseries Valor\-:}
+\begin{DoxyCode}
+\textcolor{keywordtype}{void} OutputList::forall(\textcolor{keywordtype}{void} (\hyperlink{class_output_generator}{OutputGenerator}::*\hyperlink{group__group1_ga24f647174760cac13d2624b5ad74b00c}{func})(a1),a1) \(\backslash\)
+\{                                                             \(\backslash\)
+  OutputGenerator *og=outputs->first();                       \(\backslash\)
+  while (og)                                                  \(\backslash\)
+  \{                                                           \(\backslash\)
+    if (og->isEnabled()) (og->*func)(p1);                     \(\backslash\)
+    og=outputs->next();                                       \(\backslash\)
+  \}                                                           \(\backslash\)
+\}
+\end{DoxyCode}
+\hypertarget{outputlist_8cpp_ab5a58e89505ad8c433a86bdf9bd88e43}{\index{outputlist.\-cpp@{outputlist.\-cpp}!F\-O\-R\-A\-L\-L2@{F\-O\-R\-A\-L\-L2}}
+\index{F\-O\-R\-A\-L\-L2@{F\-O\-R\-A\-L\-L2}!outputlist.cpp@{outputlist.\-cpp}}
+\subsubsection[{F\-O\-R\-A\-L\-L2}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-O\-R\-A\-L\-L2(
+\begin{DoxyParamCaption}
+\item[{}]{a1, }
+\item[{}]{a2, }
+\item[{}]{p1, }
+\item[{}]{p2}
+\end{DoxyParamCaption}
+)}}\label{outputlist_8cpp_ab5a58e89505ad8c433a86bdf9bd88e43}
+{\bfseries Valor\-:}
+\begin{DoxyCode}
+\textcolor{keywordtype}{void} OutputList::forall(\textcolor{keywordtype}{void} (\hyperlink{class_output_generator}{OutputGenerator}::*\hyperlink{group__group1_ga24f647174760cac13d2624b5ad74b00c}{func})(a1,a2),a1,a2) \(\backslash\)
+\{                                                                   \(\backslash\)
+  OutputGenerator *og=outputs->first();                             \(\backslash\)
+  while (og)                                                        \(\backslash\)
+  \{                                                                 \(\backslash\)
+    if (og->isEnabled()) (og->*func)(p1,p2);                        \(\backslash\)
+    og=outputs->next();                                             \(\backslash\)
+  \}                                                                 \(\backslash\)
+\}
+\end{DoxyCode}
+\hypertarget{outputlist_8cpp_a851ecbeeb61a7564df1d830ecf0e768f}{\index{outputlist.\-cpp@{outputlist.\-cpp}!F\-O\-R\-A\-L\-L3@{F\-O\-R\-A\-L\-L3}}
+\index{F\-O\-R\-A\-L\-L3@{F\-O\-R\-A\-L\-L3}!outputlist.cpp@{outputlist.\-cpp}}
+\subsubsection[{F\-O\-R\-A\-L\-L3}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-O\-R\-A\-L\-L3(
+\begin{DoxyParamCaption}
+\item[{}]{a1, }
+\item[{}]{a2, }
+\item[{}]{a3, }
+\item[{}]{p1, }
+\item[{}]{p2, }
+\item[{}]{p3}
+\end{DoxyParamCaption}
+)}}\label{outputlist_8cpp_a851ecbeeb61a7564df1d830ecf0e768f}
+{\bfseries Valor\-:}
+\begin{DoxyCode}
+\textcolor{keywordtype}{void} OutputList::forall(\textcolor{keywordtype}{void} (\hyperlink{class_output_generator}{OutputGenerator}::*\hyperlink{group__group1_ga24f647174760cac13d2624b5ad74b00c}{func})(a1,a2,a3),a1,a2,a3) \(\backslash\)
+\{                                                                         \(\backslash\)
+  OutputGenerator *og=outputs->first();                                   \(\backslash\)
+  while (og)                                                              \(\backslash\)
+  \{                                                                       \(\backslash\)
+    if (og->isEnabled()) (og->*func)(p1,p2,p3);                           \(\backslash\)
+    og=outputs->next();                                                   \(\backslash\)
+  \}                                                                       \(\backslash\)
+\}
+\end{DoxyCode}
+\hypertarget{outputlist_8cpp_a0380f3d18f639fbc8044838e52add9c6}{\index{outputlist.\-cpp@{outputlist.\-cpp}!F\-O\-R\-A\-L\-L4@{F\-O\-R\-A\-L\-L4}}
+\index{F\-O\-R\-A\-L\-L4@{F\-O\-R\-A\-L\-L4}!outputlist.cpp@{outputlist.\-cpp}}
+\subsubsection[{F\-O\-R\-A\-L\-L4}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-O\-R\-A\-L\-L4(
+\begin{DoxyParamCaption}
+\item[{}]{a1, }
+\item[{}]{a2, }
+\item[{}]{a3, }
+\item[{}]{a4, }
+\item[{}]{p1, }
+\item[{}]{p2, }
+\item[{}]{p3, }
+\item[{}]{p4}
+\end{DoxyParamCaption}
+)}}\label{outputlist_8cpp_a0380f3d18f639fbc8044838e52add9c6}
+{\bfseries Valor\-:}
+\begin{DoxyCode}
+\textcolor{keywordtype}{void} OutputList::forall(\textcolor{keywordtype}{void} (\hyperlink{class_output_generator}{OutputGenerator}::*\hyperlink{group__group1_ga24f647174760cac13d2624b5ad74b00c}{func})(a1,a2,a3,a4),a1,a2,a3,a4) \(\backslash\)
+\{                                                                               \(\backslash\)
+  OutputGenerator *og=outputs->first();                                         \(\backslash\)
+  while (og)                                                                    \(\backslash\)
+  \{                                                                             \(\backslash\)
+    if (og->isEnabled()) (og->*func)(p1,p2,p3,p4);                              \(\backslash\)
+    og=outputs->next();                                                         \(\backslash\)
+  \}                                                                             \(\backslash\)
+\}
+\end{DoxyCode}
+\hypertarget{outputlist_8cpp_ae4e23d37dfebcfa38a0064ae191864f3}{\index{outputlist.\-cpp@{outputlist.\-cpp}!F\-O\-R\-A\-L\-L5@{F\-O\-R\-A\-L\-L5}}
+\index{F\-O\-R\-A\-L\-L5@{F\-O\-R\-A\-L\-L5}!outputlist.cpp@{outputlist.\-cpp}}
+\subsubsection[{F\-O\-R\-A\-L\-L5}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-O\-R\-A\-L\-L5(
+\begin{DoxyParamCaption}
+\item[{}]{a1, }
+\item[{}]{a2, }
+\item[{}]{a3, }
+\item[{}]{a4, }
+\item[{}]{a5, }
+\item[{}]{p1, }
+\item[{}]{p2, }
+\item[{}]{p3, }
+\item[{}]{p4, }
+\item[{}]{p5}
+\end{DoxyParamCaption}
+)}}\label{outputlist_8cpp_ae4e23d37dfebcfa38a0064ae191864f3}
+{\bfseries Valor\-:}
+\begin{DoxyCode}
+\textcolor{keywordtype}{void} OutputList::forall(\textcolor{keywordtype}{void} (\hyperlink{class_output_generator}{OutputGenerator}::*\hyperlink{group__group1_ga24f647174760cac13d2624b5ad74b00c}{func})(a1,a2,a3,a4,a5),a1,a2,a3,a4,a5) \(\backslash\)
+\{                                                                                     \(\backslash\)
+  OutputGenerator *og=outputs->first();                                               \(\backslash\)
+  while (og)                                                                          \(\backslash\)
+  \{                                                                                   \(\backslash\)
+    if (og->isEnabled()) (og->*func)(p1,p2,p3,p4,p5);                                 \(\backslash\)
+    og=outputs->next();                                                               \(\backslash\)
+  \}                                                                                   \(\backslash\)
+\}
+\end{DoxyCode}
+\hypertarget{outputlist_8cpp_aed434f7818c5abeccbd49e95941036cb}{\index{outputlist.\-cpp@{outputlist.\-cpp}!F\-O\-R\-A\-L\-L6@{F\-O\-R\-A\-L\-L6}}
+\index{F\-O\-R\-A\-L\-L6@{F\-O\-R\-A\-L\-L6}!outputlist.cpp@{outputlist.\-cpp}}
+\subsubsection[{F\-O\-R\-A\-L\-L6}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-O\-R\-A\-L\-L6(
+\begin{DoxyParamCaption}
+\item[{}]{a1, }
+\item[{}]{a2, }
+\item[{}]{a3, }
+\item[{}]{a4, }
+\item[{}]{a5, }
+\item[{}]{a6, }
+\item[{}]{p1, }
+\item[{}]{p2, }
+\item[{}]{p3, }
+\item[{}]{p4, }
+\item[{}]{p5, }
+\item[{}]{p6}
+\end{DoxyParamCaption}
+)}}\label{outputlist_8cpp_aed434f7818c5abeccbd49e95941036cb}
+{\bfseries Valor\-:}
+\begin{DoxyCode}
+\textcolor{keywordtype}{void} OutputList::forall(\textcolor{keywordtype}{void} (\hyperlink{class_output_generator}{OutputGenerator}::*\hyperlink{group__group1_ga24f647174760cac13d2624b5ad74b00c}{func})(a1,a2,a3,a4,a5,a6),a1,a2,a3,a4,a5,
+      a6) \(\backslash\)
+\{                                                                                     \(\backslash\)
+  OutputGenerator *og=outputs->first();                                               \(\backslash\)
+  while (og)                                                                          \(\backslash\)
+  \{                                                                                   \(\backslash\)
+    if (og->isEnabled()) (og->*func)(p1,p2,p3,p4,p5,p6);                              \(\backslash\)
+    og=outputs->next();                                                               \(\backslash\)
+  \}                                                                                   \(\backslash\)
+\}
+\end{DoxyCode}
+\hypertarget{outputlist_8cpp_ad5a50b4519ddf8421e42aefb25294231}{\index{outputlist.\-cpp@{outputlist.\-cpp}!F\-O\-R\-A\-L\-L7@{F\-O\-R\-A\-L\-L7}}
+\index{F\-O\-R\-A\-L\-L7@{F\-O\-R\-A\-L\-L7}!outputlist.cpp@{outputlist.\-cpp}}
+\subsubsection[{F\-O\-R\-A\-L\-L7}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-O\-R\-A\-L\-L7(
+\begin{DoxyParamCaption}
+\item[{}]{a1, }
+\item[{}]{a2, }
+\item[{}]{a3, }
+\item[{}]{a4, }
+\item[{}]{a5, }
+\item[{}]{a6, }
+\item[{}]{a7, }
+\item[{}]{p1, }
+\item[{}]{p2, }
+\item[{}]{p3, }
+\item[{}]{p4, }
+\item[{}]{p5, }
+\item[{}]{p6, }
+\item[{}]{p7}
+\end{DoxyParamCaption}
+)}}\label{outputlist_8cpp_ad5a50b4519ddf8421e42aefb25294231}
+{\bfseries Valor\-:}
+\begin{DoxyCode}
+\textcolor{keywordtype}{void} OutputList::forall(\textcolor{keywordtype}{void} (\hyperlink{class_output_generator}{OutputGenerator}::*\hyperlink{group__group1_ga24f647174760cac13d2624b5ad74b00c}{func})(a1,a2,a3,a4,a5,a6,a7),a1,a2,a3,a4,
+      a5,a6,a7) \(\backslash\)
+\{                                                                                     \(\backslash\)
+  OutputGenerator *og=outputs->first();                                               \(\backslash\)
+  while (og)                                                                          \(\backslash\)
+  \{                                                                                   \(\backslash\)
+    if (og->isEnabled()) (og->*func)(p1,p2,p3,p4,p5,p6,p7);                           \(\backslash\)
+    og=outputs->next();                                                               \(\backslash\)
+  \}                                                                                   \(\backslash\)
+\}
+\end{DoxyCode}
+\hypertarget{outputlist_8cpp_a7696fc1340980d5431ee3a38633d6ac3}{\index{outputlist.\-cpp@{outputlist.\-cpp}!F\-O\-R\-A\-L\-L8@{F\-O\-R\-A\-L\-L8}}
+\index{F\-O\-R\-A\-L\-L8@{F\-O\-R\-A\-L\-L8}!outputlist.cpp@{outputlist.\-cpp}}
+\subsubsection[{F\-O\-R\-A\-L\-L8}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-O\-R\-A\-L\-L8(
+\begin{DoxyParamCaption}
+\item[{}]{a1, }
+\item[{}]{a2, }
+\item[{}]{a3, }
+\item[{}]{a4, }
+\item[{}]{a5, }
+\item[{}]{a6, }
+\item[{}]{a7, }
+\item[{}]{a8, }
+\item[{}]{p1, }
+\item[{}]{p2, }
+\item[{}]{p3, }
+\item[{}]{p4, }
+\item[{}]{p5, }
+\item[{}]{p6, }
+\item[{}]{p7, }
+\item[{}]{p8}
+\end{DoxyParamCaption}
+)}}\label{outputlist_8cpp_a7696fc1340980d5431ee3a38633d6ac3}
+{\bfseries Valor\-:}
+\begin{DoxyCode}
+\textcolor{keywordtype}{void} OutputList::forall(\textcolor{keywordtype}{void} (\hyperlink{class_output_generator}{OutputGenerator}::*\hyperlink{group__group1_ga24f647174760cac13d2624b5ad74b00c}{func})(a1,a2,a3,a4,a5,a6,a7,a8),a1,a2,a3,
+      a4,a5,a6,a7,a8) \(\backslash\)
+\{                                                                                     \(\backslash\)
+  OutputGenerator *og=outputs->first();                                               \(\backslash\)
+  while (og)                                                                          \(\backslash\)
+  \{                                                                                   \(\backslash\)
+    if (og->isEnabled()) (og->*func)(p1,p2,p3,p4,p5,p6,p7,p8);                        \(\backslash\)
+    og=outputs->next();                                                               \(\backslash\)
+  \}                                                                                   \(\backslash\)
+\}
+\end{DoxyCode}

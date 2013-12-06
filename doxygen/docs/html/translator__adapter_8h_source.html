@@ -1,0 +1,446 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>CEM RODAS: Código-Fonte de C:/Users/teste/git/doxygen/src/translator_adapter.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">CEM RODAS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Localizar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="modules.html"><span>Módulos</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li><a href="annotated.html"><span>Estruturas&#160;de&#160;dados</span></a></li>
+      <li class="current"><a href="files.html"><span>Ficheiros</span></a></li>
+      <li><a href="examples.html"><span>Exemplos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Localizar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;ficheiros</span></a></li>
+      <li><a href="globals.html"><span>Globais</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tudo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Estruturas de dados</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Ficheiros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variáveis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Definições de tipos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerações</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Valores da enumeração</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Amigos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Grupos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d522931ffa1371640980b621734a4381.html">Users</a></li><li class="navelem"><a class="el" href="dir_2e4d37bf6c59b7d6a66d896b4b0a78a6.html">teste</a></li><li class="navelem"><a class="el" href="dir_247f86f4b306b1aec49183475e6f51e7.html">git</a></li><li class="navelem"><a class="el" href="dir_36df5c96a2e6385715fd63984863e968.html">doxygen</a></li><li class="navelem"><a class="el" href="dir_69936e1a1079a68ea60497cb7d5edad3.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">translator_adapter.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef TRANSLATOR_ADAPTER_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define TRANSLATOR_ADAPTER_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;version.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;translator.h&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_translator_adapter_base.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_translator_adapter_base.html">TranslatorAdapterBase</a> : <span class="keyword">public</span> <a class="code" href="class_translator.html">Translator</a></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="class_translator_adapter_base.html">TranslatorAdapterBase</a>() {}</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="class_translator_english.html">TranslatorEnglish</a> english;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_translator_adapter_base.html#a5a2e61bbeb05968eed2d1e7fa9030c87">   22</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="class_q_c_string.html">QCString</a> <a class="code" href="class_translator_adapter_base.html#a5a2e61bbeb05968eed2d1e7fa9030c87">createUpdateNeededMessage</a>(<span class="keyword">const</span> <a class="code" href="class_q_c_string.html">QCString</a> &amp; languageName,</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                                              <span class="keyword">const</span> <a class="code" href="class_q_c_string.html">QCString</a> &amp; versionString)</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="class_q_c_string.html">QCString</a>(<span class="stringliteral">&quot;The selected output language \&quot;&quot;</span>)</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;             + languageName</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;             + <span class="stringliteral">&quot;\&quot; has not been updated\nsince &quot;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;             + versionString</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;             + <span class="stringliteral">&quot;.  As a result some sentences may appear in English.\n\n&quot;</span>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    }</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> <a class="code" href="class_translator_adapter_base.html#addce2e9c8b4b31214857d30e816d0b9e">updateNeededMessage</a>() = 0;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;};</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_translator_adapter__1__8__4.html">   44</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_translator_adapter__1__8__4.html">TranslatorAdapter_1_8_4</a> : <span class="keyword">public</span> <a class="code" href="class_translator_adapter_base.html">TranslatorAdapterBase</a></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_translator_adapter__1__8__4.html#aa2c053398a494e36caf5152d9a4fc6cf">   47</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> <a class="code" href="class_translator_adapter__1__8__4.html#aa2c053398a494e36caf5152d9a4fc6cf">updateNeededMessage</a>()</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    { <span class="keywordflow">return</span> <a class="code" href="class_translator_adapter_base.html#a5a2e61bbeb05968eed2d1e7fa9030c87">createUpdateNeededMessage</a>(idLanguage(),<span class="stringliteral">&quot;release 1.8.4&quot;</span>); }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> trInterfaces()</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    { <span class="keywordflow">return</span> english.<a class="code" href="class_translator_english.html#a3e32b2fdb1d61783cd0fa4734beed3da">trInterfaces</a>(); }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> trServices()</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    { <span class="keywordflow">return</span> english.<a class="code" href="class_translator_english.html#a0a0aa68d1d3b75a4b3dd395c7b624f64">trServices</a>(); }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> trConstantGroups()</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    { <span class="keywordflow">return</span> english.<a class="code" href="class_translator_english.html#a92c2fd6605d059463589fcef7b1cea79">trConstantGroups</a>(); }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> trConstantGroupReference(<span class="keyword">const</span> <span class="keywordtype">char</span> *namespaceName)</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    { <span class="keywordflow">return</span> english.<a class="code" href="class_translator_english.html#afee1f6e0599fe1d0938c65e7adce44ba">trConstantGroupReference</a>(namespaceName); }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> trServiceReference(<span class="keyword">const</span> <span class="keywordtype">char</span> *sName)</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    { <span class="keywordflow">return</span> english.<a class="code" href="class_translator_english.html#ade4a083ba7d9b0c1317c6c36f5bce96c">trServiceReference</a>(sName); }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> trSingletonReference(<span class="keyword">const</span> <span class="keywordtype">char</span> *sName)</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    { <span class="keywordflow">return</span> english.<a class="code" href="class_translator_english.html#a548555333d671f53e736a598b1d797a0">trSingletonReference</a>(sName); }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> trServiceGeneratedFromFiles(<span class="keywordtype">bool</span> single)</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    { <span class="keywordflow">return</span> english.<a class="code" href="class_translator_english.html#ab5801f97b602eaa907d969d8cc05be08">trServiceGeneratedFromFiles</a>(single); }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> trSingletonGeneratedFromFiles(<span class="keywordtype">bool</span> single)</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    { <span class="keywordflow">return</span> english.<a class="code" href="class_translator_english.html#aefe3e3adb305c5ae4ea863f4586ab0f0">trSingletonGeneratedFromFiles</a>(single); }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;};</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="class_translator_adapter__1__8__2.html">   75</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_translator_adapter__1__8__2.html">TranslatorAdapter_1_8_2</a> : <span class="keyword">public</span> <a class="code" href="class_translator_adapter__1__8__4.html">TranslatorAdapter_1_8_4</a></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;{</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="class_translator_adapter__1__8__2.html#aa2c053398a494e36caf5152d9a4fc6cf">   78</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> <a class="code" href="class_translator_adapter__1__8__2.html#aa2c053398a494e36caf5152d9a4fc6cf">updateNeededMessage</a>()</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    { <span class="keywordflow">return</span> <a class="code" href="class_translator_adapter_base.html#a5a2e61bbeb05968eed2d1e7fa9030c87">createUpdateNeededMessage</a>(idLanguage(),<span class="stringliteral">&quot;release 1.8.2&quot;</span>); }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> trPanelSynchronisationTooltip(<span class="keywordtype">bool</span> enable)</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    { <span class="keywordflow">return</span> english.<a class="code" href="class_translator_english.html#a1800c322fe577f6dfab2ab8eb463a78e">trPanelSynchronisationTooltip</a>(enable); }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> trProvidedByCategory()</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    { <span class="keywordflow">return</span> english.<a class="code" href="class_translator_english.html#a48bb5cf8c4d20b9215921504ca43c8cf">trProvidedByCategory</a>(); }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> trExtendsClass()</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    { <span class="keywordflow">return</span> english.<a class="code" href="class_translator_english.html#a943bb1d0d3cf3c3ddca3616c21f815da">trExtendsClass</a>(); }</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> trClassMethods()</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    { <span class="keywordflow">return</span> english.<a class="code" href="class_translator_english.html#a00e0dc60db9c989dad1bc310b4bdf08c">trClassMethods</a>(); }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> trInstanceMethods()</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    { <span class="keywordflow">return</span> english.<a class="code" href="class_translator_english.html#ac194051c0538db0a70504f6d11fbf9b7">trInstanceMethods</a>(); }</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> trMethodDocumentation()</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    { <span class="keywordflow">return</span> english.<a class="code" href="class_translator_english.html#a4666cdb4ca29df1818744d88fc17e619">trMethodDocumentation</a>(); }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> trDesignOverview()</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    { <span class="keywordflow">return</span> english.<a class="code" href="class_translator_english.html#a5aeee72580ed889d0f0253be39800cc8">trDesignOverview</a>(); }</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;};</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="class_translator_adapter__1__8__0.html">  107</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_translator_adapter__1__8__0.html">TranslatorAdapter_1_8_0</a> : <span class="keyword">public</span> <a class="code" href="class_translator_adapter__1__8__2.html">TranslatorAdapter_1_8_2</a></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;{</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="class_translator_adapter__1__8__0.html#aa2c053398a494e36caf5152d9a4fc6cf">  110</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> <a class="code" href="class_translator_adapter__1__8__0.html#aa2c053398a494e36caf5152d9a4fc6cf">updateNeededMessage</a>()</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    { <span class="keywordflow">return</span> <a class="code" href="class_translator_adapter_base.html#a5a2e61bbeb05968eed2d1e7fa9030c87">createUpdateNeededMessage</a>(idLanguage(),<span class="stringliteral">&quot;release 1.8.0&quot;</span>); }</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> trDetailLevel()</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    { <span class="keywordflow">return</span> english.<a class="code" href="class_translator_english.html#a138b581235bf64a0338ed25ee0d1ad61">trDetailLevel</a>(); }</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> trTemplateParameters()</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    { <span class="keywordflow">return</span> english.<a class="code" href="class_translator_english.html#ad9599164391093757c91bbe746f694a5">trTemplateParameters</a>(); }</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> trAndMore(<span class="keyword">const</span> <a class="code" href="class_q_c_string.html">QCString</a> &amp;number)</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    { <span class="keywordflow">return</span> english.<a class="code" href="class_translator_english.html#a391327398836ee03f1d00415b80cb997">trAndMore</a>(number); }</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> trEnumGeneratedFromFiles(<span class="keywordtype">bool</span> single)</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    { <span class="keywordflow">return</span> english.<a class="code" href="class_translator_english.html#a2039b9a9624800366462f980e8ebce70">trEnumGeneratedFromFiles</a>(single); }</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> trEnumReference(<span class="keyword">const</span> <span class="keywordtype">char</span> *name)</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    { <span class="keywordflow">return</span> english.<a class="code" href="class_translator_english.html#a0209ef4cc7768fc9abf62f7ffc95534e">trEnumReference</a>(name); }</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> trInheritedFrom(<span class="keyword">const</span> <span class="keywordtype">char</span> *members,<span class="keyword">const</span> <span class="keywordtype">char</span> *what)</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    { <span class="keywordflow">return</span> english.<a class="code" href="class_translator_english.html#af8b8b1bb56a7ea74b11dad76e644968e">trInheritedFrom</a>(members,what); }</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> trAdditionalInheritedMembers()</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    { <span class="keywordflow">return</span> english.<a class="code" href="class_translator_english.html#a62da1a83afa60109108fba6ad327a06f">trAdditionalInheritedMembers</a>(); }</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;};</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
+<div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="class_translator_adapter__1__7__5.html">  139</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_translator_adapter__1__7__5.html">TranslatorAdapter_1_7_5</a> : <span class="keyword">public</span> <a class="code" href="class_translator_adapter__1__8__0.html">TranslatorAdapter_1_8_0</a></div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;{</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00142"></a><span class="lineno"><a class="line" href="class_translator_adapter__1__7__5.html#aa2c053398a494e36caf5152d9a4fc6cf">  142</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> <a class="code" href="class_translator_adapter__1__7__5.html#aa2c053398a494e36caf5152d9a4fc6cf">updateNeededMessage</a>()</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    { <span class="keywordflow">return</span> <a class="code" href="class_translator_adapter_base.html#a5a2e61bbeb05968eed2d1e7fa9030c87">createUpdateNeededMessage</a>(idLanguage(),<span class="stringliteral">&quot;release 1.7.5&quot;</span>); }</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> trCiteReferences()</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    { <span class="keywordflow">return</span> english.<a class="code" href="class_translator_english.html#ae43b2c6dbb1637144e32cd13a0d4704c">trCiteReferences</a>(); }</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> trCopyright()</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    { <span class="keywordflow">return</span> english.<a class="code" href="class_translator_english.html#a840474c30dfc2d4e92d1a29c5d1bf343">trCopyright</a>(); }</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> trDirDepGraph(<span class="keyword">const</span> <span class="keywordtype">char</span> *name)</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    { <span class="keywordflow">return</span> english.<a class="code" href="class_translator_english.html#abbe522be6eed72f54409458a1896323c">trDirDepGraph</a>(name); }</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;};</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
+<div class="line"><a name="l00158"></a><span class="lineno"><a class="line" href="class_translator_adapter__1__6__3.html">  158</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_translator_adapter__1__6__3.html">TranslatorAdapter_1_6_3</a> : <span class="keyword">public</span> <a class="code" href="class_translator_adapter__1__7__5.html">TranslatorAdapter_1_7_5</a></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;{</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00161"></a><span class="lineno"><a class="line" href="class_translator_adapter__1__6__3.html#aa2c053398a494e36caf5152d9a4fc6cf">  161</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> <a class="code" href="class_translator_adapter__1__6__3.html#aa2c053398a494e36caf5152d9a4fc6cf">updateNeededMessage</a>()</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    { <span class="keywordflow">return</span> <a class="code" href="class_translator_adapter_base.html#a5a2e61bbeb05968eed2d1e7fa9030c87">createUpdateNeededMessage</a>(idLanguage(),<span class="stringliteral">&quot;release 1.6.3&quot;</span>); }</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> trFileIn(<span class="keyword">const</span> <span class="keywordtype">char</span> *name)</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    { <span class="keywordflow">return</span> english.<a class="code" href="class_translator_english.html#acf964d17bad4c55c393193fe9708575f">trFileIn</a>(name); }</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> trIncludesFileIn(<span class="keyword">const</span> <span class="keywordtype">char</span> *name)</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    { <span class="keywordflow">return</span> english.<a class="code" href="class_translator_english.html#a53f57c6e2aa0b9dc09bc47b3746d3481">trIncludesFileIn</a>(name); }</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> trDateTime(<span class="keywordtype">int</span> year,<span class="keywordtype">int</span> month,<span class="keywordtype">int</span> day,<span class="keywordtype">int</span> dayOfWeek,</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                                <span class="keywordtype">int</span> hour,<span class="keywordtype">int</span> minutes,<span class="keywordtype">int</span> seconds,</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                                <span class="keywordtype">bool</span> includeTime)</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    { <span class="keywordflow">return</span> english.<a class="code" href="class_translator_english.html#a19c43671f677ae0445fca1fe7a5f62cc">trDateTime</a>(year,month,day,dayOfWeek,hour,minutes,seconds,includeTime); }</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;};</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
+<div class="line"><a name="l00177"></a><span class="lineno"><a class="line" href="class_translator_adapter__1__6__0.html">  177</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_translator_adapter__1__6__0.html">TranslatorAdapter_1_6_0</a> : <span class="keyword">public</span> <a class="code" href="class_translator_adapter__1__6__3.html">TranslatorAdapter_1_6_3</a></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;{</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00180"></a><span class="lineno"><a class="line" href="class_translator_adapter__1__6__0.html#aa2c053398a494e36caf5152d9a4fc6cf">  180</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> <a class="code" href="class_translator_adapter__1__6__0.html#aa2c053398a494e36caf5152d9a4fc6cf">updateNeededMessage</a>()</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    { <span class="keywordflow">return</span> <a class="code" href="class_translator_adapter_base.html#a5a2e61bbeb05968eed2d1e7fa9030c87">createUpdateNeededMessage</a>(idLanguage(),<span class="stringliteral">&quot;release 1.6.0&quot;</span>); }</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> trDirRelation(<span class="keyword">const</span> <span class="keywordtype">char</span> *name)</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    { <span class="keywordflow">return</span> english.<a class="code" href="class_translator_english.html#a38a56cc8bcc5323be9d1f09b0daa5933">trDirRelation</a>(name); }</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> trLoading()</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    { <span class="keywordflow">return</span> english.<a class="code" href="class_translator_english.html#aca8cf7409bceb9f8e6af47f637da5457">trLoading</a>(); }</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> trGlobalNamespace()</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    { <span class="keywordflow">return</span> english.<a class="code" href="class_translator_english.html#aa9fd39641e570165be20c71c67481fee">trGlobalNamespace</a>(); }</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> trSearching()</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    { <span class="keywordflow">return</span> english.<a class="code" href="class_translator_english.html#aea79f5912e787bbb2c441223ccd382c6">trSearching</a>(); }</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> trNoMatches()</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    { <span class="keywordflow">return</span> english.<a class="code" href="class_translator_english.html#a240e49b617153456e0f29bef561cc10f">trNoMatches</a>(); }</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;};</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;</div>
+<div class="line"><a name="l00202"></a><span class="lineno"><a class="line" href="class_translator_adapter__1__5__4.html">  202</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_translator_adapter__1__5__4.html">TranslatorAdapter_1_5_4</a> : <span class="keyword">public</span> <a class="code" href="class_translator_adapter__1__6__0.html">TranslatorAdapter_1_6_0</a></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;{</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00205"></a><span class="lineno"><a class="line" href="class_translator_adapter__1__5__4.html#aa2c053398a494e36caf5152d9a4fc6cf">  205</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> <a class="code" href="class_translator_adapter__1__5__4.html#aa2c053398a494e36caf5152d9a4fc6cf">updateNeededMessage</a>()</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    { <span class="keywordflow">return</span> <a class="code" href="class_translator_adapter_base.html#a5a2e61bbeb05968eed2d1e7fa9030c87">createUpdateNeededMessage</a>(idLanguage(),<span class="stringliteral">&quot;release 1.5.4&quot;</span>); }</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> trMemberFunctionDocumentationFortran()</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    { <span class="keywordflow">return</span> english.<a class="code" href="class_translator_english.html#a006270b30df57f83fe40ad0ed617652e">trMemberFunctionDocumentationFortran</a>(); }</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> trCompoundListFortran()</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    { <span class="keywordflow">return</span> english.<a class="code" href="class_translator_english.html#a17985bd956c4940e53e169cadb659c2b">trCompoundListFortran</a>(); }</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> trCompoundMembersFortran()</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    { <span class="keywordflow">return</span> english.<a class="code" href="class_translator_english.html#add44aa8baf655554ec74dbfac0d43f71">trCompoundMembersFortran</a>(); }</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> trCompoundListDescriptionFortran()</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    { <span class="keywordflow">return</span> english.<a class="code" href="class_translator_english.html#a10aa72b35051f95ba30f2b0312ce705c">trCompoundListDescriptionFortran</a>(); }</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> trCompoundMembersDescriptionFortran(<span class="keywordtype">bool</span> extractAll)</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    { <span class="keywordflow">return</span> english.<a class="code" href="class_translator_english.html#a0c98da65b5772e9c2876855a42d44127">trCompoundMembersDescriptionFortran</a>(extractAll); }</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> trCompoundIndexFortran()</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    { <span class="keywordflow">return</span> english.<a class="code" href="class_translator_english.html#a933624b6cffb8fdc03e9fc4110640fc9">trCompoundIndexFortran</a>(); }</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> trTypeDocumentation()</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    { <span class="keywordflow">return</span> english.<a class="code" href="class_translator_english.html#ae031421205271f1a32fa3838a79b8902">trTypeDocumentation</a>(); }</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> trSubprograms()</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    { <span class="keywordflow">return</span> english.<a class="code" href="class_translator_english.html#a8d4e1de8fb5c2af1fd073c682556f999">trSubprograms</a>(); }</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> trSubprogramDocumentation()</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    { <span class="keywordflow">return</span> english.<a class="code" href="class_translator_english.html#add6df0842eb6016d108814567d677055">trSubprogramDocumentation</a>(); }</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> trDataTypes()</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    { <span class="keywordflow">return</span> english.<a class="code" href="class_translator_english.html#a77941890cf3f7cd1b67bec4cea91439b">trDataTypes</a>(); }</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> trModulesList()</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    { <span class="keywordflow">return</span> english.<a class="code" href="class_translator_english.html#a411e2c242c2707aed706b2b0572292db">trModulesList</a>(); }</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> trModulesListDescription(<span class="keywordtype">bool</span> extractAll)</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    { <span class="keywordflow">return</span> english.<a class="code" href="class_translator_english.html#a4f1ad06ac7478b9058d7f388a2b67566">trModulesListDescription</a>(extractAll); }</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> trCompoundReferenceFortran(<span class="keyword">const</span> <span class="keywordtype">char</span> *clName,</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                                 <a class="code" href="class_class_def.html#a768a6f0a6fd7e9087ff7971abbcc3f36">ClassDef::CompoundType</a> compType,</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                                 <span class="keywordtype">bool</span> isTemplate)</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    { <span class="keywordflow">return</span> english.<a class="code" href="class_translator_english.html#a79d39414275f1cacb484f78806a65869">trCompoundReferenceFortran</a>(clName,compType,isTemplate); }</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> trModuleReference(<span class="keyword">const</span> <span class="keywordtype">char</span> *namespaceName)</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    { <span class="keywordflow">return</span> english.<a class="code" href="class_translator_english.html#a5b0385db8ce8e7c8251e31867c6fa8d5">trModuleReference</a>(namespaceName); }</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> trModulesMembers()</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    { <span class="keywordflow">return</span> english.<a class="code" href="class_translator_english.html#a75279d9914e0cc54ee5f4b15ddaa234c">trModulesMembers</a>(); }</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> trModulesMemberDescription(<span class="keywordtype">bool</span> extractAll)</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    { <span class="keywordflow">return</span> english.<a class="code" href="class_translator_english.html#a26dd0f47c7f59841f901da7f4bd19306">trModulesMemberDescription</a>(extractAll); }</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> trModulesIndex()</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    { <span class="keywordflow">return</span> english.<a class="code" href="class_translator_english.html#a8a71cbe9e0669d3555731c3ebc0aae35">trModulesIndex</a>(); }</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> trModule(<span class="keywordtype">bool</span> first_capital, <span class="keywordtype">bool</span> singular)</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    { <span class="keywordflow">return</span> english.<a class="code" href="class_translator_english.html#a894e0b632e1680e918c78fea5b9b5384">trModule</a>(first_capital,singular); }</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> trGeneratedFromFilesFortran(<a class="code" href="class_class_def.html#a768a6f0a6fd7e9087ff7971abbcc3f36">ClassDef::CompoundType</a> compType,</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;                     <span class="keywordtype">bool</span> single)</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    { <span class="keywordflow">return</span> english.<a class="code" href="class_translator_english.html#ab89226b80b72b0ff8f4fca99626097ba">trGeneratedFromFilesFortran</a>(compType,single); }</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> trType(<span class="keywordtype">bool</span> first_capital, <span class="keywordtype">bool</span> singular)</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    { <span class="keywordflow">return</span> english.<a class="code" href="class_translator_english.html#a2763a6af55d1ca03be54604c2bc4a3b4">trType</a>(first_capital,singular); }</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> trSubprogram(<span class="keywordtype">bool</span> first_capital, <span class="keywordtype">bool</span> singular)</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    { <span class="keywordflow">return</span> english.<a class="code" href="class_translator_english.html#aeceda8d8c2b8645fd2337cb38d293269">trSubprogram</a>(first_capital,singular); }</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> trTypeConstraints()</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    { <span class="keywordflow">return</span> english.<a class="code" href="class_translator_english.html#a196f3eb690f2748ee71f518cf02bd7fe">trTypeConstraints</a>(); }</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;};</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;</div>
+<div class="line"><a name="l00281"></a><span class="lineno"><a class="line" href="class_translator_adapter__1__4__6.html">  281</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_translator_adapter__1__4__6.html">TranslatorAdapter_1_4_6</a> : <span class="keyword">public</span> <a class="code" href="class_translator_adapter__1__5__4.html">TranslatorAdapter_1_5_4</a></div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;{</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00284"></a><span class="lineno"><a class="line" href="class_translator_adapter__1__4__6.html#aa2c053398a494e36caf5152d9a4fc6cf">  284</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> <a class="code" href="class_translator_adapter__1__4__6.html#aa2c053398a494e36caf5152d9a4fc6cf">updateNeededMessage</a>()</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    { <span class="keywordflow">return</span> <a class="code" href="class_translator_adapter_base.html#a5a2e61bbeb05968eed2d1e7fa9030c87">createUpdateNeededMessage</a>(idLanguage(),<span class="stringliteral">&quot;release 1.4.6&quot;</span>); }</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> trCallerGraph()</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    {</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;      <span class="keywordflow">return</span> english.<a class="code" href="class_translator_english.html#ae1d7d38cc426cd25124b1658b1125841">trCallerGraph</a>();</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    }</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_c_string.html">QCString</a> trEnumerationValueDocumentation()</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    {</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;      <span class="keywordflow">return</span> english.<a class="code" href="class_translator_english.html#a4039294191fddf0e9530b920719998fd">trEnumerationValueDocumentation</a>();</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    }</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;};</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;<span class="preprocessor"></span></div>
+<div class="ttc" id="class_translator_english_html"><div class="ttname"><a href="class_translator_english.html">TranslatorEnglish</a></div><div class="ttdef"><b>Definition:</b> translator_en.h:43</div></div>
+<div class="ttc" id="class_translator_english_html_a006270b30df57f83fe40ad0ed617652e"><div class="ttname"><a href="class_translator_english.html#a006270b30df57f83fe40ad0ed617652e">TranslatorEnglish::trMemberFunctionDocumentationFortran</a></div><div class="ttdeci">virtual QCString trMemberFunctionDocumentationFortran()</div><div class="ttdef"><b>Definition:</b> translator_en.h:1541</div></div>
+<div class="ttc" id="class_translator_adapter_base_html"><div class="ttname"><a href="class_translator_adapter_base.html">TranslatorAdapterBase</a></div><div class="ttdef"><b>Definition:</b> translator_adapter.h:13</div></div>
+<div class="ttc" id="class_translator_english_html_a8d4e1de8fb5c2af1fd073c682556f999"><div class="ttname"><a href="class_translator_english.html#a8d4e1de8fb5c2af1fd073c682556f999">TranslatorEnglish::trSubprograms</a></div><div class="ttdeci">virtual QCString trSubprograms()</div><div class="ttdef"><b>Definition:</b> translator_en.h:1592</div></div>
+<div class="ttc" id="class_translator_english_html_a0c98da65b5772e9c2876855a42d44127"><div class="ttname"><a href="class_translator_english.html#a0c98da65b5772e9c2876855a42d44127">TranslatorEnglish::trCompoundMembersDescriptionFortran</a></div><div class="ttdeci">virtual QCString trCompoundMembersDescriptionFortran(bool extractAll)</div><div class="ttdef"><b>Definition:</b> translator_en.h:1557</div></div>
+<div class="ttc" id="class_translator_english_html_aea79f5912e787bbb2c441223ccd382c6"><div class="ttname"><a href="class_translator_english.html#aea79f5912e787bbb2c441223ccd382c6">TranslatorEnglish::trSearching</a></div><div class="ttdeci">virtual QCString trSearching()</div><div class="ttdef"><b>Definition:</b> translator_en.h:1762</div></div>
+<div class="ttc" id="class_translator_english_html_a8a71cbe9e0669d3555731c3ebc0aae35"><div class="ttname"><a href="class_translator_english.html#a8a71cbe9e0669d3555731c3ebc0aae35">TranslatorEnglish::trModulesIndex</a></div><div class="ttdeci">virtual QCString trModulesIndex()</div><div class="ttdef"><b>Definition:</b> translator_en.h:1673</div></div>
+<div class="ttc" id="class_translator_adapter__1__6__0_html_aa2c053398a494e36caf5152d9a4fc6cf"><div class="ttname"><a href="class_translator_adapter__1__6__0.html#aa2c053398a494e36caf5152d9a4fc6cf">TranslatorAdapter_1_6_0::updateNeededMessage</a></div><div class="ttdeci">virtual QCString updateNeededMessage()</div><div class="ttdef"><b>Definition:</b> translator_adapter.h:180</div></div>
+<div class="ttc" id="class_translator_adapter__1__8__4_html_aa2c053398a494e36caf5152d9a4fc6cf"><div class="ttname"><a href="class_translator_adapter__1__8__4.html#aa2c053398a494e36caf5152d9a4fc6cf">TranslatorAdapter_1_8_4::updateNeededMessage</a></div><div class="ttdeci">virtual QCString updateNeededMessage()</div><div class="ttdef"><b>Definition:</b> translator_adapter.h:47</div></div>
+<div class="ttc" id="class_translator_english_html_ab89226b80b72b0ff8f4fca99626097ba"><div class="ttname"><a href="class_translator_english.html#ab89226b80b72b0ff8f4fca99626097ba">TranslatorEnglish::trGeneratedFromFilesFortran</a></div><div class="ttdeci">virtual QCString trGeneratedFromFilesFortran(ClassDef::CompoundType compType, bool single)</div><div class="ttdef"><b>Definition:</b> translator_en.h:1690</div></div>
+<div class="ttc" id="class_translator_english_html_a79d39414275f1cacb484f78806a65869"><div class="ttname"><a href="class_translator_english.html#a79d39414275f1cacb484f78806a65869">TranslatorEnglish::trCompoundReferenceFortran</a></div><div class="ttdeci">virtual QCString trCompoundReferenceFortran(const char *clName, ClassDef::CompoundType compType, bool isTemplate)</div><div class="ttdef"><b>Definition:</b> translator_en.h:1621</div></div>
+<div class="ttc" id="class_translator_english_html_a196f3eb690f2748ee71f518cf02bd7fe"><div class="ttname"><a href="class_translator_english.html#a196f3eb690f2748ee71f518cf02bd7fe">TranslatorEnglish::trTypeConstraints</a></div><div class="ttdeci">virtual QCString trTypeConstraints()</div><div class="ttdef"><b>Definition:</b> translator_en.h:1734</div></div>
+<div class="ttc" id="class_translator_english_html_abbe522be6eed72f54409458a1896323c"><div class="ttname"><a href="class_translator_english.html#abbe522be6eed72f54409458a1896323c">TranslatorEnglish::trDirDepGraph</a></div><div class="ttdeci">virtual QCString trDirDepGraph(const char *name)</div><div class="ttdef"><b>Definition:</b> translator_en.h:1835</div></div>
+<div class="ttc" id="class_translator_english_html_a391327398836ee03f1d00415b80cb997"><div class="ttname"><a href="class_translator_english.html#a391327398836ee03f1d00415b80cb997">TranslatorEnglish::trAndMore</a></div><div class="ttdeci">virtual QCString trAndMore(const QCString &amp;number)</div><div class="ttdef"><b>Definition:</b> translator_en.h:1851</div></div>
+<div class="ttc" id="class_translator_adapter__1__8__0_html_aa2c053398a494e36caf5152d9a4fc6cf"><div class="ttname"><a href="class_translator_adapter__1__8__0.html#aa2c053398a494e36caf5152d9a4fc6cf">TranslatorAdapter_1_8_0::updateNeededMessage</a></div><div class="ttdeci">virtual QCString updateNeededMessage()</div><div class="ttdef"><b>Definition:</b> translator_adapter.h:110</div></div>
+<div class="ttc" id="class_translator_english_html_aeceda8d8c2b8645fd2337cb38d293269"><div class="ttname"><a href="class_translator_english.html#aeceda8d8c2b8645fd2337cb38d293269">TranslatorEnglish::trSubprogram</a></div><div class="ttdeci">virtual QCString trSubprogram(bool first_capital, bool singular)</div><div class="ttdef"><b>Definition:</b> translator_en.h:1726</div></div>
+<div class="ttc" id="class_translator_english_html_a10aa72b35051f95ba30f2b0312ce705c"><div class="ttname"><a href="class_translator_english.html#a10aa72b35051f95ba30f2b0312ce705c">TranslatorEnglish::trCompoundListDescriptionFortran</a></div><div class="ttdeci">virtual QCString trCompoundListDescriptionFortran()</div><div class="ttdef"><b>Definition:</b> translator_en.h:1553</div></div>
+<div class="ttc" id="class_translator_english_html_a840474c30dfc2d4e92d1a29c5d1bf343"><div class="ttname"><a href="class_translator_english.html#a840474c30dfc2d4e92d1a29c5d1bf343">TranslatorEnglish::trCopyright</a></div><div class="ttdeci">virtual QCString trCopyright()</div><div class="ttdef"><b>Definition:</b> translator_en.h:1831</div></div>
+<div class="ttc" id="class_translator_adapter__1__5__4_html"><div class="ttname"><a href="class_translator_adapter__1__5__4.html">TranslatorAdapter_1_5_4</a></div><div class="ttdef"><b>Definition:</b> translator_adapter.h:202</div></div>
+<div class="ttc" id="class_translator_english_html_a26dd0f47c7f59841f901da7f4bd19306"><div class="ttname"><a href="class_translator_english.html#a26dd0f47c7f59841f901da7f4bd19306">TranslatorEnglish::trModulesMemberDescription</a></div><div class="ttdeci">virtual QCString trModulesMemberDescription(bool extractAll)</div><div class="ttdef"><b>Definition:</b> translator_en.h:1654</div></div>
+<div class="ttc" id="class_translator_english_html_a1800c322fe577f6dfab2ab8eb463a78e"><div class="ttname"><a href="class_translator_english.html#a1800c322fe577f6dfab2ab8eb463a78e">TranslatorEnglish::trPanelSynchronisationTooltip</a></div><div class="ttdeci">virtual QCString trPanelSynchronisationTooltip(bool enable)</div><div class="ttdef"><b>Definition:</b> translator_en.h:1884</div></div>
+<div class="ttc" id="class_translator_english_html_a19c43671f677ae0445fca1fe7a5f62cc"><div class="ttname"><a href="class_translator_english.html#a19c43671f677ae0445fca1fe7a5f62cc">TranslatorEnglish::trDateTime</a></div><div class="ttdeci">virtual QCString trDateTime(int year, int month, int day, int dayOfWeek, int hour, int minutes, int seconds, bool includeTime)</div><div class="ttdef"><b>Definition:</b> translator_en.h:1805</div></div>
+<div class="ttc" id="class_class_def_html_a768a6f0a6fd7e9087ff7971abbcc3f36"><div class="ttname"><a href="class_class_def.html#a768a6f0a6fd7e9087ff7971abbcc3f36">ClassDef::CompoundType</a></div><div class="ttdeci">CompoundType</div><div class="ttdef"><b>Definition:</b> classdef.h:60</div></div>
+<div class="ttc" id="class_translator_english_html_ae1d7d38cc426cd25124b1658b1125841"><div class="ttname"><a href="class_translator_english.html#ae1d7d38cc426cd25124b1658b1125841">TranslatorEnglish::trCallerGraph</a></div><div class="ttdeci">virtual QCString trCallerGraph()</div><div class="ttdef"><b>Definition:</b> translator_en.h:1525</div></div>
+<div class="ttc" id="class_translator_english_html_a53f57c6e2aa0b9dc09bc47b3746d3481"><div class="ttname"><a href="class_translator_english.html#a53f57c6e2aa0b9dc09bc47b3746d3481">TranslatorEnglish::trIncludesFileIn</a></div><div class="ttdeci">virtual QCString trIncludesFileIn(const char *name)</div><div class="ttdef"><b>Definition:</b> translator_en.h:1790</div></div>
+<div class="ttc" id="class_translator_english_html_a411e2c242c2707aed706b2b0572292db"><div class="ttname"><a href="class_translator_english.html#a411e2c242c2707aed706b2b0572292db">TranslatorEnglish::trModulesList</a></div><div class="ttdeci">virtual QCString trModulesList()</div><div class="ttdef"><b>Definition:</b> translator_en.h:1608</div></div>
+<div class="ttc" id="class_translator_english_html_ab5801f97b602eaa907d969d8cc05be08"><div class="ttname"><a href="class_translator_english.html#ab5801f97b602eaa907d969d8cc05be08">TranslatorEnglish::trServiceGeneratedFromFiles</a></div><div class="ttdeci">virtual QCString trServiceGeneratedFromFiles(bool single)</div><div class="ttdef"><b>Definition:</b> translator_en.h:1977</div></div>
+<div class="ttc" id="class_translator_english_html_a3e32b2fdb1d61783cd0fa4734beed3da"><div class="ttname"><a href="class_translator_english.html#a3e32b2fdb1d61783cd0fa4734beed3da">TranslatorEnglish::trInterfaces</a></div><div class="ttdeci">virtual QCString trInterfaces()</div><div class="ttdef"><b>Definition:</b> translator_en.h:1944</div></div>
+<div class="ttc" id="class_translator_english_html_a62da1a83afa60109108fba6ad327a06f"><div class="ttname"><a href="class_translator_english.html#a62da1a83afa60109108fba6ad327a06f">TranslatorEnglish::trAdditionalInheritedMembers</a></div><div class="ttdeci">virtual QCString trAdditionalInheritedMembers()</div><div class="ttdef"><b>Definition:</b> translator_en.h:1873</div></div>
+<div class="ttc" id="class_translator_adapter__1__8__2_html"><div class="ttname"><a href="class_translator_adapter__1__8__2.html">TranslatorAdapter_1_8_2</a></div><div class="ttdef"><b>Definition:</b> translator_adapter.h:75</div></div>
+<div class="ttc" id="class_translator_adapter__1__5__4_html_aa2c053398a494e36caf5152d9a4fc6cf"><div class="ttname"><a href="class_translator_adapter__1__5__4.html#aa2c053398a494e36caf5152d9a4fc6cf">TranslatorAdapter_1_5_4::updateNeededMessage</a></div><div class="ttdeci">virtual QCString updateNeededMessage()</div><div class="ttdef"><b>Definition:</b> translator_adapter.h:205</div></div>
+<div class="ttc" id="class_translator_adapter__1__8__4_html"><div class="ttname"><a href="class_translator_adapter__1__8__4.html">TranslatorAdapter_1_8_4</a></div><div class="ttdef"><b>Definition:</b> translator_adapter.h:44</div></div>
+<div class="ttc" id="class_translator_english_html_aca8cf7409bceb9f8e6af47f637da5457"><div class="ttname"><a href="class_translator_english.html#aca8cf7409bceb9f8e6af47f637da5457">TranslatorEnglish::trLoading</a></div><div class="ttdeci">virtual QCString trLoading()</div><div class="ttdef"><b>Definition:</b> translator_en.h:1750</div></div>
+<div class="ttc" id="class_translator_english_html_ade4a083ba7d9b0c1317c6c36f5bce96c"><div class="ttname"><a href="class_translator_english.html#ade4a083ba7d9b0c1317c6c36f5bce96c">TranslatorEnglish::trServiceReference</a></div><div class="ttdeci">virtual QCString trServiceReference(const char *sName)</div><div class="ttdef"><b>Definition:</b> translator_en.h:1963</div></div>
+<div class="ttc" id="class_translator_english_html_a92c2fd6605d059463589fcef7b1cea79"><div class="ttname"><a href="class_translator_english.html#a92c2fd6605d059463589fcef7b1cea79">TranslatorEnglish::trConstantGroups</a></div><div class="ttdeci">virtual QCString trConstantGroups()</div><div class="ttdef"><b>Definition:</b> translator_en.h:1952</div></div>
+<div class="ttc" id="class_translator_adapter__1__7__5_html_aa2c053398a494e36caf5152d9a4fc6cf"><div class="ttname"><a href="class_translator_adapter__1__7__5.html#aa2c053398a494e36caf5152d9a4fc6cf">TranslatorAdapter_1_7_5::updateNeededMessage</a></div><div class="ttdeci">virtual QCString updateNeededMessage()</div><div class="ttdef"><b>Definition:</b> translator_adapter.h:142</div></div>
+<div class="ttc" id="class_translator_adapter__1__4__6_html_aa2c053398a494e36caf5152d9a4fc6cf"><div class="ttname"><a href="class_translator_adapter__1__4__6.html#aa2c053398a494e36caf5152d9a4fc6cf">TranslatorAdapter_1_4_6::updateNeededMessage</a></div><div class="ttdeci">virtual QCString updateNeededMessage()</div><div class="ttdef"><b>Definition:</b> translator_adapter.h:284</div></div>
+<div class="ttc" id="class_translator_english_html_a240e49b617153456e0f29bef561cc10f"><div class="ttname"><a href="class_translator_english.html#a240e49b617153456e0f29bef561cc10f">TranslatorEnglish::trNoMatches</a></div><div class="ttdeci">virtual QCString trNoMatches()</div><div class="ttdef"><b>Definition:</b> translator_en.h:1768</div></div>
+<div class="ttc" id="class_translator_english_html_a4666cdb4ca29df1818744d88fc17e619"><div class="ttname"><a href="class_translator_english.html#a4666cdb4ca29df1818744d88fc17e619">TranslatorEnglish::trMethodDocumentation</a></div><div class="ttdeci">virtual QCString trMethodDocumentation()</div><div class="ttdef"><b>Definition:</b> translator_en.h:1926</div></div>
+<div class="ttc" id="class_translator_adapter_base_html_a5a2e61bbeb05968eed2d1e7fa9030c87"><div class="ttname"><a href="class_translator_adapter_base.html#a5a2e61bbeb05968eed2d1e7fa9030c87">TranslatorAdapterBase::createUpdateNeededMessage</a></div><div class="ttdeci">QCString createUpdateNeededMessage(const QCString &amp;languageName, const QCString &amp;versionString)</div><div class="ttdef"><b>Definition:</b> translator_adapter.h:22</div></div>
+<div class="ttc" id="class_translator_english_html_a894e0b632e1680e918c78fea5b9b5384"><div class="ttname"><a href="class_translator_english.html#a894e0b632e1680e918c78fea5b9b5384">TranslatorEnglish::trModule</a></div><div class="ttdeci">virtual QCString trModule(bool first_capital, bool singular)</div><div class="ttdef"><b>Definition:</b> translator_en.h:1680</div></div>
+<div class="ttc" id="class_translator_english_html_a48bb5cf8c4d20b9215921504ca43c8cf"><div class="ttname"><a href="class_translator_english.html#a48bb5cf8c4d20b9215921504ca43c8cf">TranslatorEnglish::trProvidedByCategory</a></div><div class="ttdeci">virtual QCString trProvidedByCategory()</div><div class="ttdef"><b>Definition:</b> translator_en.h:1894</div></div>
+<div class="ttc" id="class_translator_english_html_a5aeee72580ed889d0f0253be39800cc8"><div class="ttname"><a href="class_translator_english.html#a5aeee72580ed889d0f0253be39800cc8">TranslatorEnglish::trDesignOverview</a></div><div class="ttdeci">virtual QCString trDesignOverview()</div><div class="ttdef"><b>Definition:</b> translator_en.h:1934</div></div>
+<div class="ttc" id="class_translator_english_html_aefe3e3adb305c5ae4ea863f4586ab0f0"><div class="ttname"><a href="class_translator_english.html#aefe3e3adb305c5ae4ea863f4586ab0f0">TranslatorEnglish::trSingletonGeneratedFromFiles</a></div><div class="ttdeci">virtual QCString trSingletonGeneratedFromFiles(bool single)</div><div class="ttdef"><b>Definition:</b> translator_en.h:1986</div></div>
+<div class="ttc" id="class_translator_english_html_aa9fd39641e570165be20c71c67481fee"><div class="ttname"><a href="class_translator_english.html#aa9fd39641e570165be20c71c67481fee">TranslatorEnglish::trGlobalNamespace</a></div><div class="ttdeci">virtual QCString trGlobalNamespace()</div><div class="ttdef"><b>Definition:</b> translator_en.h:1756</div></div>
+<div class="ttc" id="class_translator_adapter__1__6__3_html"><div class="ttname"><a href="class_translator_adapter__1__6__3.html">TranslatorAdapter_1_6_3</a></div><div class="ttdef"><b>Definition:</b> translator_adapter.h:158</div></div>
+<div class="ttc" id="class_translator_english_html_ae031421205271f1a32fa3838a79b8902"><div class="ttname"><a href="class_translator_english.html#ae031421205271f1a32fa3838a79b8902">TranslatorEnglish::trTypeDocumentation</a></div><div class="ttdeci">virtual QCString trTypeDocumentation()</div><div class="ttdef"><b>Definition:</b> translator_en.h:1586</div></div>
+<div class="ttc" id="class_translator_english_html_acf964d17bad4c55c393193fe9708575f"><div class="ttname"><a href="class_translator_english.html#acf964d17bad4c55c393193fe9708575f">TranslatorEnglish::trFileIn</a></div><div class="ttdeci">virtual QCString trFileIn(const char *name)</div><div class="ttdef"><b>Definition:</b> translator_en.h:1781</div></div>
+<div class="ttc" id="class_translator_english_html_ae43b2c6dbb1637144e32cd13a0d4704c"><div class="ttname"><a href="class_translator_english.html#ae43b2c6dbb1637144e32cd13a0d4704c">TranslatorEnglish::trCiteReferences</a></div><div class="ttdeci">virtual QCString trCiteReferences()</div><div class="ttdef"><b>Definition:</b> translator_en.h:1827</div></div>
+<div class="ttc" id="class_translator_adapter_base_html_addce2e9c8b4b31214857d30e816d0b9e"><div class="ttname"><a href="class_translator_adapter_base.html#addce2e9c8b4b31214857d30e816d0b9e">TranslatorAdapterBase::updateNeededMessage</a></div><div class="ttdeci">virtual QCString updateNeededMessage()=0</div></div>
+<div class="ttc" id="class_translator_english_html_ac194051c0538db0a70504f6d11fbf9b7"><div class="ttname"><a href="class_translator_english.html#ac194051c0538db0a70504f6d11fbf9b7">TranslatorEnglish::trInstanceMethods</a></div><div class="ttdeci">virtual QCString trInstanceMethods()</div><div class="ttdef"><b>Definition:</b> translator_en.h:1919</div></div>
+<div class="ttc" id="class_translator_english_html_ad9599164391093757c91bbe746f694a5"><div class="ttname"><a href="class_translator_english.html#ad9599164391093757c91bbe746f694a5">TranslatorEnglish::trTemplateParameters</a></div><div class="ttdeci">virtual QCString trTemplateParameters()</div><div class="ttdef"><b>Definition:</b> translator_en.h:1847</div></div>
+<div class="ttc" id="class_translator_english_html_a138b581235bf64a0338ed25ee0d1ad61"><div class="ttname"><a href="class_translator_english.html#a138b581235bf64a0338ed25ee0d1ad61">TranslatorEnglish::trDetailLevel</a></div><div class="ttdeci">virtual QCString trDetailLevel()</div><div class="ttdef"><b>Definition:</b> translator_en.h:1843</div></div>
+<div class="ttc" id="class_translator_english_html_a0a0aa68d1d3b75a4b3dd395c7b624f64"><div class="ttname"><a href="class_translator_english.html#a0a0aa68d1d3b75a4b3dd395c7b624f64">TranslatorEnglish::trServices</a></div><div class="ttdeci">virtual QCString trServices()</div><div class="ttdef"><b>Definition:</b> translator_en.h:1948</div></div>
+<div class="ttc" id="class_translator_english_html_a00e0dc60db9c989dad1bc310b4bdf08c"><div class="ttname"><a href="class_translator_english.html#a00e0dc60db9c989dad1bc310b4bdf08c">TranslatorEnglish::trClassMethods</a></div><div class="ttdeci">virtual QCString trClassMethods()</div><div class="ttdef"><b>Definition:</b> translator_en.h:1911</div></div>
+<div class="ttc" id="class_translator_english_html_a38a56cc8bcc5323be9d1f09b0daa5933"><div class="ttname"><a href="class_translator_english.html#a38a56cc8bcc5323be9d1f09b0daa5933">TranslatorEnglish::trDirRelation</a></div><div class="ttdeci">virtual QCString trDirRelation(const char *name)</div><div class="ttdef"><b>Definition:</b> translator_en.h:1744</div></div>
+<div class="ttc" id="class_translator_english_html_a2763a6af55d1ca03be54604c2bc4a3b4"><div class="ttname"><a href="class_translator_english.html#a2763a6af55d1ca03be54604c2bc4a3b4">TranslatorEnglish::trType</a></div><div class="ttdeci">virtual QCString trType(bool first_capital, bool singular)</div><div class="ttdef"><b>Definition:</b> translator_en.h:1715</div></div>
+<div class="ttc" id="class_translator_english_html_a5b0385db8ce8e7c8251e31867c6fa8d5"><div class="ttname"><a href="class_translator_english.html#a5b0385db8ce8e7c8251e31867c6fa8d5">TranslatorEnglish::trModuleReference</a></div><div class="ttdeci">virtual QCString trModuleReference(const char *namespaceName)</div><div class="ttdef"><b>Definition:</b> translator_en.h:1642</div></div>
+<div class="ttc" id="class_translator_english_html_add6df0842eb6016d108814567d677055"><div class="ttname"><a href="class_translator_english.html#add6df0842eb6016d108814567d677055">TranslatorEnglish::trSubprogramDocumentation</a></div><div class="ttdeci">virtual QCString trSubprogramDocumentation()</div><div class="ttdef"><b>Definition:</b> translator_en.h:1598</div></div>
+<div class="ttc" id="class_translator_english_html_a2039b9a9624800366462f980e8ebce70"><div class="ttname"><a href="class_translator_english.html#a2039b9a9624800366462f980e8ebce70">TranslatorEnglish::trEnumGeneratedFromFiles</a></div><div class="ttdeci">virtual QCString trEnumGeneratedFromFiles(bool single)</div><div class="ttdef"><b>Definition:</b> translator_en.h:1855</div></div>
+<div class="ttc" id="class_translator_english_html_add44aa8baf655554ec74dbfac0d43f71"><div class="ttname"><a href="class_translator_english.html#add44aa8baf655554ec74dbfac0d43f71">TranslatorEnglish::trCompoundMembersFortran</a></div><div class="ttdeci">virtual QCString trCompoundMembersFortran()</div><div class="ttdef"><b>Definition:</b> translator_en.h:1549</div></div>
+<div class="ttc" id="class_translator_adapter__1__6__0_html"><div class="ttname"><a href="class_translator_adapter__1__6__0.html">TranslatorAdapter_1_6_0</a></div><div class="ttdef"><b>Definition:</b> translator_adapter.h:177</div></div>
+<div class="ttc" id="class_translator_english_html_a77941890cf3f7cd1b67bec4cea91439b"><div class="ttname"><a href="class_translator_english.html#a77941890cf3f7cd1b67bec4cea91439b">TranslatorEnglish::trDataTypes</a></div><div class="ttdeci">virtual QCString trDataTypes()</div><div class="ttdef"><b>Definition:</b> translator_en.h:1604</div></div>
+<div class="ttc" id="class_translator_adapter__1__8__0_html"><div class="ttname"><a href="class_translator_adapter__1__8__0.html">TranslatorAdapter_1_8_0</a></div><div class="ttdef"><b>Definition:</b> translator_adapter.h:107</div></div>
+<div class="ttc" id="class_translator_adapter__1__6__3_html_aa2c053398a494e36caf5152d9a4fc6cf"><div class="ttname"><a href="class_translator_adapter__1__6__3.html#aa2c053398a494e36caf5152d9a4fc6cf">TranslatorAdapter_1_6_3::updateNeededMessage</a></div><div class="ttdeci">virtual QCString updateNeededMessage()</div><div class="ttdef"><b>Definition:</b> translator_adapter.h:161</div></div>
+<div class="ttc" id="class_translator_adapter__1__4__6_html"><div class="ttname"><a href="class_translator_adapter__1__4__6.html">TranslatorAdapter_1_4_6</a></div><div class="ttdef"><b>Definition:</b> translator_adapter.h:281</div></div>
+<div class="ttc" id="class_translator_adapter__1__8__2_html_aa2c053398a494e36caf5152d9a4fc6cf"><div class="ttname"><a href="class_translator_adapter__1__8__2.html#aa2c053398a494e36caf5152d9a4fc6cf">TranslatorAdapter_1_8_2::updateNeededMessage</a></div><div class="ttdeci">virtual QCString updateNeededMessage()</div><div class="ttdef"><b>Definition:</b> translator_adapter.h:78</div></div>
+<div class="ttc" id="class_q_c_string_html"><div class="ttname"><a href="class_q_c_string.html">QCString</a></div><div class="ttdef"><b>Definition:</b> qcstring.h:192</div></div>
+<div class="ttc" id="class_translator_english_html_af8b8b1bb56a7ea74b11dad76e644968e"><div class="ttname"><a href="class_translator_english.html#af8b8b1bb56a7ea74b11dad76e644968e">TranslatorEnglish::trInheritedFrom</a></div><div class="ttdeci">virtual QCString trInheritedFrom(const char *members, const char *what)</div><div class="ttdef"><b>Definition:</b> translator_en.h:1867</div></div>
+<div class="ttc" id="class_translator_english_html_a548555333d671f53e736a598b1d797a0"><div class="ttname"><a href="class_translator_english.html#a548555333d671f53e736a598b1d797a0">TranslatorEnglish::trSingletonReference</a></div><div class="ttdeci">virtual QCString trSingletonReference(const char *sName)</div><div class="ttdef"><b>Definition:</b> translator_en.h:1970</div></div>
+<div class="ttc" id="class_translator_english_html_afee1f6e0599fe1d0938c65e7adce44ba"><div class="ttname"><a href="class_translator_english.html#afee1f6e0599fe1d0938c65e7adce44ba">TranslatorEnglish::trConstantGroupReference</a></div><div class="ttdeci">virtual QCString trConstantGroupReference(const char *namespaceName)</div><div class="ttdef"><b>Definition:</b> translator_en.h:1956</div></div>
+<div class="ttc" id="class_translator_adapter__1__7__5_html"><div class="ttname"><a href="class_translator_adapter__1__7__5.html">TranslatorAdapter_1_7_5</a></div><div class="ttdef"><b>Definition:</b> translator_adapter.h:139</div></div>
+<div class="ttc" id="class_translator_english_html_a75279d9914e0cc54ee5f4b15ddaa234c"><div class="ttname"><a href="class_translator_english.html#a75279d9914e0cc54ee5f4b15ddaa234c">TranslatorEnglish::trModulesMembers</a></div><div class="ttdeci">virtual QCString trModulesMembers()</div><div class="ttdef"><b>Definition:</b> translator_en.h:1650</div></div>
+<div class="ttc" id="class_translator_english_html_a0209ef4cc7768fc9abf62f7ffc95534e"><div class="ttname"><a href="class_translator_english.html#a0209ef4cc7768fc9abf62f7ffc95534e">TranslatorEnglish::trEnumReference</a></div><div class="ttdeci">virtual QCString trEnumReference(const char *name)</div><div class="ttdef"><b>Definition:</b> translator_en.h:1863</div></div>
+<div class="ttc" id="class_translator_english_html_a17985bd956c4940e53e169cadb659c2b"><div class="ttname"><a href="class_translator_english.html#a17985bd956c4940e53e169cadb659c2b">TranslatorEnglish::trCompoundListFortran</a></div><div class="ttdeci">virtual QCString trCompoundListFortran()</div><div class="ttdef"><b>Definition:</b> translator_en.h:1545</div></div>
+<div class="ttc" id="class_translator_english_html_a943bb1d0d3cf3c3ddca3616c21f815da"><div class="ttname"><a href="class_translator_english.html#a943bb1d0d3cf3c3ddca3616c21f815da">TranslatorEnglish::trExtendsClass</a></div><div class="ttdeci">virtual QCString trExtendsClass()</div><div class="ttdef"><b>Definition:</b> translator_en.h:1903</div></div>
+<div class="ttc" id="class_translator_english_html_a4039294191fddf0e9530b920719998fd"><div class="ttname"><a href="class_translator_english.html#a4039294191fddf0e9530b920719998fd">TranslatorEnglish::trEnumerationValueDocumentation</a></div><div class="ttdeci">virtual QCString trEnumerationValueDocumentation()</div><div class="ttdef"><b>Definition:</b> translator_en.h:1533</div></div>
+<div class="ttc" id="class_translator_html"><div class="ttname"><a href="class_translator.html">Translator</a></div><div class="ttdef"><b>Definition:</b> translator.h:24</div></div>
+<div class="ttc" id="class_translator_english_html_a933624b6cffb8fdc03e9fc4110640fc9"><div class="ttname"><a href="class_translator_english.html#a933624b6cffb8fdc03e9fc4110640fc9">TranslatorEnglish::trCompoundIndexFortran</a></div><div class="ttdeci">virtual QCString trCompoundIndexFortran()</div><div class="ttdef"><b>Definition:</b> translator_en.h:1580</div></div>
+<div class="ttc" id="class_translator_english_html_a4f1ad06ac7478b9058d7f388a2b67566"><div class="ttname"><a href="class_translator_english.html#a4f1ad06ac7478b9058d7f388a2b67566">TranslatorEnglish::trModulesListDescription</a></div><div class="ttdeci">virtual QCString trModulesListDescription(bool extractAll)</div><div class="ttdef"><b>Definition:</b> translator_en.h:1612</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado em Quinta, 28 de Novembro de 2013 22:43:41 para CEM RODAS por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

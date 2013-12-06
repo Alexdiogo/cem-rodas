@@ -1,0 +1,65 @@
+\hypertarget{class_q_sorted_list}{\section{Referência à classe Template Q\-Sorted\-List$<$ type $>$}
+\label{class_q_sorted_list}\index{Q\-Sorted\-List$<$ type $>$@{Q\-Sorted\-List$<$ type $>$}}
+}
+Diagrama de heranças da classe Q\-Sorted\-List$<$ type $>$\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_q_sorted_list}
+\end{center}
+\end{figure}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_q_sorted_list_a5b8f8d3fe3374462b806f5e55d003419}{{\bfseries Q\-Sorted\-List} (const \hyperlink{class_q_sorted_list}{Q\-Sorted\-List}$<$ type $>$ \&l)}\label{class_q_sorted_list_a5b8f8d3fe3374462b806f5e55d003419}
+
+\item 
+\hypertarget{class_q_sorted_list_a2cd1e0772bfdc86be6153fb14b78ef56}{\hyperlink{class_q_sorted_list}{Q\-Sorted\-List}$<$ type $>$ \& {\bfseries operator=} (const \hyperlink{class_q_sorted_list}{Q\-Sorted\-List}$<$ type $>$ \&l)}\label{class_q_sorted_list_a2cd1e0772bfdc86be6153fb14b78ef56}
+
+\item 
+virtual int \hyperlink{class_q_sorted_list_a9a682504b06f4a6e095c74ebce4bfbf1}{compare\-Items} (Q\-Collection\-::\-Item s1, Q\-Collection\-::\-Item s2)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_q_sorted_list_a9a682504b06f4a6e095c74ebce4bfbf1}{\index{Q\-Sorted\-List@{Q\-Sorted\-List}!compare\-Items@{compare\-Items}}
+\index{compare\-Items@{compare\-Items}!QSortedList@{Q\-Sorted\-List}}
+\subsubsection[{compare\-Items}]{\setlength{\rightskip}{0pt plus 5cm}virtual int compare\-Items (
+\begin{DoxyParamCaption}
+\item[{Q\-Collection\-::\-Item}]{item1, }
+\item[{Q\-Collection\-::\-Item}]{item2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_q_sorted_list_a9a682504b06f4a6e095c74ebce4bfbf1}
+This virtual function compares two list items.
+
+Returns\-: 
+\begin{DoxyItemize}
+\item 0 if {\itshape item1} == {\itshape item2} 
+\item non-\/zero if {\itshape item1} != {\itshape item2} 
+\end{DoxyItemize}
+
+This function returns {\itshape int} rather than {\itshape bool} so that reimplementations can return three values and use it to sort by\-:
+
+
+\begin{DoxyItemize}
+\item 0 if {\itshape item1} == {\itshape item2} 
+\item $>$ 0 (positive integer) if {\itshape item1} $>$ {\itshape item2} 
+\item $<$ 0 (negative integer) if {\itshape item1} $<$ {\itshape item2} 
+\end{DoxyItemize}
+
+The Q\-List\-::in\-Sort() function requires that \hyperlink{class_q_sorted_list_a9a682504b06f4a6e095c74ebce4bfbf1}{compare\-Items()} is implemented as described here.
+
+This function should not modify the list because some const functions call \hyperlink{class_q_sorted_list_a9a682504b06f4a6e095c74ebce4bfbf1}{compare\-Items()}.
+
+The default implementation compares the pointers\-: 
+\begin{DoxyCode}
+\end{DoxyCode}
+ 
+
+Reimplementado de \hyperlink{class_q_g_list_aac689c6d7a54b6558afbd53845183af8}{Q\-G\-List}.
+
+
+
+A documentação para esta classe foi gerada a partir do seguinte ficheiro\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/qtools/qsortedlist.\-h\end{DoxyCompactItemize}

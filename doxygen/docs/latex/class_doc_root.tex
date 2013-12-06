@@ -1,0 +1,75 @@
+\hypertarget{class_doc_root}{\section{Referência à classe Doc\-Root}
+\label{class_doc_root}\index{Doc\-Root@{Doc\-Root}}
+}
+
+
+{\ttfamily \#include $<$docparser.\-h$>$}
+
+Diagrama de heranças da classe Doc\-Root\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_doc_root}
+\end{center}
+\end{figure}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_doc_root_a8f85d5fa2b23cfee46deddde18a637c7}{{\bfseries Doc\-Root} (bool indent, bool sl)}\label{class_doc_root_a8f85d5fa2b23cfee46deddde18a637c7}
+
+\item 
+\hyperlink{class_doc_node_aa10c9e8951b8ccf714a59ec321bdac5b}{Kind} \hyperlink{class_doc_root_aa9d037bed9f9a083d0cd01485637d843}{kind} () const 
+\item 
+void \hyperlink{class_doc_root_a7ba716e854ae2f8f87a4eb2140e302b6}{accept} (\hyperlink{class_doc_visitor}{Doc\-Visitor} $\ast$v)
+\item 
+\hypertarget{class_doc_root_ad7c704b34912678d95c13243cacf9d7f}{void {\bfseries parse} ()}\label{class_doc_root_ad7c704b34912678d95c13243cacf9d7f}
+
+\item 
+\hypertarget{class_doc_root_a5cfe68974358924752bf7e7f5a687570}{bool {\bfseries indent} () const }\label{class_doc_root_a5cfe68974358924752bf7e7f5a687570}
+
+\item 
+\hypertarget{class_doc_root_aea7a99477670fd5f6d7a438ce5afe39a}{bool {\bfseries single\-Line} () const }\label{class_doc_root_aea7a99477670fd5f6d7a438ce5afe39a}
+
+\item 
+\hypertarget{class_doc_root_a479432127ee77145cc19d6a2d1590821}{bool {\bfseries is\-Empty} () const }\label{class_doc_root_a479432127ee77145cc19d6a2d1590821}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Descrição detalhada}
+Root node of documentation tree 
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_doc_root_a7ba716e854ae2f8f87a4eb2140e302b6}{\index{Doc\-Root@{Doc\-Root}!accept@{accept}}
+\index{accept@{accept}!DocRoot@{Doc\-Root}}
+\subsubsection[{accept}]{\setlength{\rightskip}{0pt plus 5cm}void accept (
+\begin{DoxyParamCaption}
+\item[{{\bf Doc\-Visitor} $\ast$}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_doc_root_a7ba716e854ae2f8f87a4eb2140e302b6}
+Acceptor function for node visitors. Part of the visitor pattern. 
+\begin{DoxyParams}{Parâmetros}
+{\em v} & Abstract visitor. \\
+\hline
+\end{DoxyParams}
+
+
+Implementa \hyperlink{class_doc_node_ac0816c4a3ba0fb0ca95538f82e13df27}{Doc\-Node}.
+
+\hypertarget{class_doc_root_aa9d037bed9f9a083d0cd01485637d843}{\index{Doc\-Root@{Doc\-Root}!kind@{kind}}
+\index{kind@{kind}!DocRoot@{Doc\-Root}}
+\subsubsection[{kind}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Kind} kind (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_doc_root_aa9d037bed9f9a083d0cd01485637d843}
+Returns the kind of node. Provides runtime type information 
+
+Implementa \hyperlink{class_doc_node_a27e5d1dde6c9e861b52afa5a95f71d2d}{Doc\-Node}.
+
+
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/src/docparser.\-h\item 
+C\-:/\-Users/teste/git/doxygen/src/docparser.\-cpp\end{DoxyCompactItemize}

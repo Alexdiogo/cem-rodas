@@ -1,0 +1,108 @@
+\hypertarget{class_d_bus_x_m_l_handler}{\section{Referência à classe D\-Bus\-X\-M\-L\-Handler}
+\label{class_d_bus_x_m_l_handler}\index{D\-Bus\-X\-M\-L\-Handler@{D\-Bus\-X\-M\-L\-Handler}}
+}
+Diagrama de heranças da classe D\-Bus\-X\-M\-L\-Handler\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.014389cm]{class_d_bus_x_m_l_handler}
+\end{center}
+\end{figure}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_d_bus_x_m_l_handler_a14a76dd17c5b063a63dda3a3ebb20c1d}{{\bfseries D\-Bus\-X\-M\-L\-Handler} (\hyperlink{class_parser_interface}{Parser\-Interface} $\ast$parser, \hyperlink{class_q_xml_simple_reader}{Q\-Xml\-Simple\-Reader} $\ast$reader, const char $\ast$file\-\_\-name, \hyperlink{class_entry}{Entry} $\ast$root)}\label{class_d_bus_x_m_l_handler_a14a76dd17c5b063a63dda3a3ebb20c1d}
+
+\item 
+\hyperlink{class_q_string}{Q\-String} \hyperlink{class_d_bus_x_m_l_handler_af799a7684337babb971e2e0d8cda7cf1}{error\-String} ()
+\item 
+bool \hyperlink{class_d_bus_x_m_l_handler_a2d8a6efa278f0675843ac44ddec3b9b9}{start\-Element} (const \hyperlink{class_q_string}{Q\-String} \&namespace\-U\-R\-I, const \hyperlink{class_q_string}{Q\-String} \&local\-Name, const \hyperlink{class_q_string}{Q\-String} \&q\-Name, const \hyperlink{class_q_xml_attributes}{Q\-Xml\-Attributes} \&attributes)
+\item 
+bool \hyperlink{class_d_bus_x_m_l_handler_abd6ff9644b2d6f0a4aab938bd9cdc593}{end\-Element} (const \hyperlink{class_q_string}{Q\-String} \&namespace\-U\-R\-I, const \hyperlink{class_q_string}{Q\-String} \&local\-Name, const \hyperlink{class_q_string}{Q\-String} \&q\-Name)
+\item 
+bool \hyperlink{class_d_bus_x_m_l_handler_a4c0dc64e43b1a283cc948c82ff4ad392}{characters} (const \hyperlink{class_q_string}{Q\-String} \&)
+\item 
+bool \hyperlink{class_d_bus_x_m_l_handler_abe6e6b6cbb1913a33b7d1350b16e9bba}{comment} (const \hyperlink{class_q_string}{Q\-String} \&comment\-\_\-)
+\item 
+\hypertarget{class_d_bus_x_m_l_handler_a854cece148cf8dc514dc91e7d65e2035}{void {\bfseries handle\-Comment} ()}\label{class_d_bus_x_m_l_handler_a854cece148cf8dc514dc91e7d65e2035}
+
+\item 
+\hypertarget{class_d_bus_x_m_l_handler_ae3075792029d8ed95e26b527e305d7a2}{\hyperlink{class_q_xml_locator}{Q\-Xml\-Locator} $\ast$ {\bfseries locator} ()}\label{class_d_bus_x_m_l_handler_ae3075792029d8ed95e26b527e305d7a2}
+
+\item 
+\hypertarget{class_d_bus_x_m_l_handler_a4bc010d37f882a7895ca5b642dc65735}{int {\bfseries line\-Number} ()}\label{class_d_bus_x_m_l_handler_a4bc010d37f882a7895ca5b642dc65735}
+
+\item 
+\hypertarget{class_d_bus_x_m_l_handler_a1408bb8c3d78e622b9033fc7eb1b7ff6}{void {\bfseries set\-Section} ()}\label{class_d_bus_x_m_l_handler_a1408bb8c3d78e622b9033fc7eb1b7ff6}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+D\-Bus implementation of the generic \hyperlink{class_q_xml_default_handler}{Q\-Xml\-Default\-Handler}. 
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_d_bus_x_m_l_handler_a4c0dc64e43b1a283cc948c82ff4ad392}{\index{D\-Bus\-X\-M\-L\-Handler@{D\-Bus\-X\-M\-L\-Handler}!characters@{characters}}
+\index{characters@{characters}!DBusXMLHandler@{D\-Bus\-X\-M\-L\-Handler}}
+\subsubsection[{characters}]{\setlength{\rightskip}{0pt plus 5cm}bool characters (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{ch}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_d_bus_x_m_l_handler_a4c0dc64e43b1a283cc948c82ff4ad392}
+Does nothing. 
+
+Reimplementado de \hyperlink{class_q_xml_default_handler_a6eb7b9d9a6138bf566cc61ae9b5e436a}{Q\-Xml\-Default\-Handler}.
+
+\hypertarget{class_d_bus_x_m_l_handler_abe6e6b6cbb1913a33b7d1350b16e9bba}{\index{D\-Bus\-X\-M\-L\-Handler@{D\-Bus\-X\-M\-L\-Handler}!comment@{comment}}
+\index{comment@{comment}!DBusXMLHandler@{D\-Bus\-X\-M\-L\-Handler}}
+\subsubsection[{comment}]{\setlength{\rightskip}{0pt plus 5cm}bool comment (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{ch}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_d_bus_x_m_l_handler_abe6e6b6cbb1913a33b7d1350b16e9bba}
+Does nothing. 
+
+Reimplementado de \hyperlink{class_q_xml_default_handler_a244025ba6bd8815828678aab134064d0}{Q\-Xml\-Default\-Handler}.
+
+\hypertarget{class_d_bus_x_m_l_handler_abd6ff9644b2d6f0a4aab938bd9cdc593}{\index{D\-Bus\-X\-M\-L\-Handler@{D\-Bus\-X\-M\-L\-Handler}!end\-Element@{end\-Element}}
+\index{end\-Element@{end\-Element}!DBusXMLHandler@{D\-Bus\-X\-M\-L\-Handler}}
+\subsubsection[{end\-Element}]{\setlength{\rightskip}{0pt plus 5cm}bool end\-Element (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{namespace\-U\-R\-I, }
+\item[{const {\bf Q\-String} \&}]{local\-Name, }
+\item[{const {\bf Q\-String} \&}]{q\-Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_d_bus_x_m_l_handler_abd6ff9644b2d6f0a4aab938bd9cdc593}
+Does nothing. 
+
+Reimplementado de \hyperlink{class_q_xml_default_handler_abd6ff9644b2d6f0a4aab938bd9cdc593}{Q\-Xml\-Default\-Handler}.
+
+\hypertarget{class_d_bus_x_m_l_handler_af799a7684337babb971e2e0d8cda7cf1}{\index{D\-Bus\-X\-M\-L\-Handler@{D\-Bus\-X\-M\-L\-Handler}!error\-String@{error\-String}}
+\index{error\-String@{error\-String}!DBusXMLHandler@{D\-Bus\-X\-M\-L\-Handler}}
+\subsubsection[{error\-String}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} error\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_d_bus_x_m_l_handler_af799a7684337babb971e2e0d8cda7cf1}
+Returns the default error string. 
+
+Reimplementado de \hyperlink{class_q_xml_default_handler_af799a7684337babb971e2e0d8cda7cf1}{Q\-Xml\-Default\-Handler}.
+
+\hypertarget{class_d_bus_x_m_l_handler_a2d8a6efa278f0675843ac44ddec3b9b9}{\index{D\-Bus\-X\-M\-L\-Handler@{D\-Bus\-X\-M\-L\-Handler}!start\-Element@{start\-Element}}
+\index{start\-Element@{start\-Element}!DBusXMLHandler@{D\-Bus\-X\-M\-L\-Handler}}
+\subsubsection[{start\-Element}]{\setlength{\rightskip}{0pt plus 5cm}bool start\-Element (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{namespace\-U\-R\-I, }
+\item[{const {\bf Q\-String} \&}]{local\-Name, }
+\item[{const {\bf Q\-String} \&}]{q\-Name, }
+\item[{const {\bf Q\-Xml\-Attributes} \&}]{atts}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_d_bus_x_m_l_handler_a2d8a6efa278f0675843ac44ddec3b9b9}
+Does nothing. 
+
+Reimplementado de \hyperlink{class_q_xml_default_handler_a0712995308713e9df1c0d389568a344b}{Q\-Xml\-Default\-Handler}.
+
+
+
+A documentação para esta classe foi gerada a partir do seguinte ficheiro\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/src/dbusxmlscanner.\-cpp\end{DoxyCompactItemize}

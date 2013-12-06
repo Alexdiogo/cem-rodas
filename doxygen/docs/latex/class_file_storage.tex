@@ -1,0 +1,78 @@
+\hypertarget{class_file_storage}{\section{Referência à classe File\-Storage}
+\label{class_file_storage}\index{File\-Storage@{File\-Storage}}
+}
+
+
+\hyperlink{class_store}{Store} implementation based on a file. Writing is linear, after that the file is re-\/opened for reading. Reading is random (seek+read).  
+
+
+
+
+{\ttfamily \#include $<$filestorage.\-h$>$}
+
+Diagrama de heranças da classe File\-Storage\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_file_storage}
+\end{center}
+\end{figure}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_file_storage_aeeb2d55a90d83620b798e85e1550c288}{{\bfseries File\-Storage} (const \hyperlink{class_q_string}{Q\-String} \&name)}\label{class_file_storage_aeeb2d55a90d83620b798e85e1550c288}
+
+\item 
+int \hyperlink{class_file_storage_a8e47d0de1e7f98cc7af54d4f44e09186}{read} (char $\ast$buf, uint size)
+\item 
+int \hyperlink{class_file_storage_a92a061380ba3dac165ee1a5e92617a6a}{write} (const char $\ast$buf, uint size)
+\item 
+\hypertarget{class_file_storage_a2c4ec4ed8d34c778b4e7c7b4db3de4b2}{bool {\bfseries open} (int m)}\label{class_file_storage_a2c4ec4ed8d34c778b4e7c7b4db3de4b2}
+
+\item 
+\hypertarget{class_file_storage_a0d12eec06745bfbf5249f984717fab38}{bool {\bfseries seek} (int64 pos)}\label{class_file_storage_a0d12eec06745bfbf5249f984717fab38}
+
+\item 
+\hypertarget{class_file_storage_af9f2e0fc2971f8c517ce322c5bce4805}{int64 {\bfseries pos} () const }\label{class_file_storage_af9f2e0fc2971f8c517ce322c5bce4805}
+
+\item 
+\hypertarget{class_file_storage_a5ae591df94fc66ccb85cbb6565368bca}{void {\bfseries close} ()}\label{class_file_storage_a5ae591df94fc66ccb85cbb6565368bca}
+
+\item 
+\hypertarget{class_file_storage_ab3a256e7d9fad73fa57de7c1fedf51c5}{void {\bfseries set\-Name} (const char $\ast$name)}\label{class_file_storage_ab3a256e7d9fad73fa57de7c1fedf51c5}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+\hyperlink{class_store}{Store} implementation based on a file. Writing is linear, after that the file is re-\/opened for reading. Reading is random (seek+read). 
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_file_storage_a8e47d0de1e7f98cc7af54d4f44e09186}{\index{File\-Storage@{File\-Storage}!read@{read}}
+\index{read@{read}!FileStorage@{File\-Storage}}
+\subsubsection[{read}]{\setlength{\rightskip}{0pt plus 5cm}int read (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{buf, }
+\item[{uint}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_file_storage_a8e47d0de1e7f98cc7af54d4f44e09186}
+Read {\itshape size} bytes from the store into {\itshape buf}. 
+
+Implementa \hyperlink{class_storage_intf_ac258f6e9306c3c5737d1a3b27714bf06}{Storage\-Intf}.
+
+\hypertarget{class_file_storage_a92a061380ba3dac165ee1a5e92617a6a}{\index{File\-Storage@{File\-Storage}!write@{write}}
+\index{write@{write}!FileStorage@{File\-Storage}}
+\subsubsection[{write}]{\setlength{\rightskip}{0pt plus 5cm}int write (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{buf, }
+\item[{uint}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_file_storage_a92a061380ba3dac165ee1a5e92617a6a}
+Write {\itshape size} bytes from {\itshape buf} into the store. 
+
+Implementa \hyperlink{class_storage_intf_adac272aa714d1615b328630b6e9df7c6}{Storage\-Intf}.
+
+
+
+A documentação para esta classe foi gerada a partir do seguinte ficheiro\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/src/filestorage.\-h\end{DoxyCompactItemize}

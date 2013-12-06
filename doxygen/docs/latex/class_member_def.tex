@@ -1,0 +1,947 @@
+\hypertarget{class_member_def}{\section{Referência à classe Member\-Def}
+\label{class_member_def}\index{Member\-Def@{Member\-Def}}
+}
+
+
+{\ttfamily \#include $<$memberdef.\-h$>$}
+
+Diagrama de heranças da classe Member\-Def\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_member_def}
+\end{center}
+\end{figure}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_member_def_a99a23c621060bfd3d01cf65d5c235011}{Member\-Def} (const char $\ast$def\-File\-Name, int def\-Line, int def\-Column, const char $\ast$type, const char $\ast$\hyperlink{class_definition_a2c310e06c9aadc6fb218f80fcbb5c695}{name}, const char $\ast$args, const char $\ast$excp, \hyperlink{types_8h_a90e352184df58cd09455fe9996cd4ded}{Protection} prot, \hyperlink{types_8h_ab16236bdd10ddf4d73a9847350f0017e}{Specifier} virt, bool stat, \hyperlink{types_8h_a9d625fe894d9313ec78df1d78553f32e}{Relationship} related, Member\-Type t, const \hyperlink{class_argument_list}{Argument\-List} $\ast$tal, const \hyperlink{class_argument_list}{Argument\-List} $\ast$al)
+\item 
+\hyperlink{class_member_def_abf79fd4952640be8c59f27a53c56d0c9}{$\sim$\-Member\-Def} ()
+\item 
+\hyperlink{class_definition_intf_a2dc566dfec40397b2990e6520536ecb5}{Def\-Type} \hyperlink{class_member_def_aac410235a8bf90e471e649bd9dbf9c5e}{definition\-Type} () const 
+\item 
+\hypertarget{class_member_def_a58301c739a95a209f09029971dd02cf2}{\hyperlink{class_member_def}{Member\-Def} $\ast$ {\bfseries deep\-Copy} () const }\label{class_member_def_a58301c739a95a209f09029971dd02cf2}
+
+\item 
+\hypertarget{class_member_def_a8afcab28f955d5caad49d4b0bdd0fb2c}{void {\bfseries move\-To} (\hyperlink{class_definition}{Definition} $\ast$)}\label{class_member_def_a8afcab28f955d5caad49d4b0bdd0fb2c}
+
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_member_def_af72a982ba8198cd5c98e9fc850b71df6}{get\-Output\-File\-Base} () const 
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_member_def_a87b81ea7f17740033bf8fb12f796c494}{get\-Reference} () const 
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_member_def_acd17ae1d9600f864b1beb85dfb99a4f4}{anchor} () const 
+\item 
+\hypertarget{class_member_def_a849fb32859fc1b0d0b3def83e2141de9}{const char $\ast$ {\bfseries declaration} () const }\label{class_member_def_a849fb32859fc1b0d0b3def83e2141de9}
+
+\item 
+\hypertarget{class_member_def_add42594d9a7e4e6c693a0a8062f8facc}{const char $\ast$ {\bfseries definition} () const }\label{class_member_def_add42594d9a7e4e6c693a0a8062f8facc}
+
+\item 
+\hypertarget{class_member_def_a716dc78d0795a1eff4d74b74b619c6b2}{const char $\ast$ {\bfseries type\-String} () const }\label{class_member_def_a716dc78d0795a1eff4d74b74b619c6b2}
+
+\item 
+\hypertarget{class_member_def_a68660344495cb352fd3dc59408045c4a}{const char $\ast$ {\bfseries args\-String} () const }\label{class_member_def_a68660344495cb352fd3dc59408045c4a}
+
+\item 
+\hypertarget{class_member_def_ae634cc305bc2c02b44a7e3721a1dd8cb}{const char $\ast$ {\bfseries excp\-String} () const }\label{class_member_def_ae634cc305bc2c02b44a7e3721a1dd8cb}
+
+\item 
+\hypertarget{class_member_def_a3bb35d09a74a2f637070b9edab3423fa}{const char $\ast$ {\bfseries bitfield\-String} () const }\label{class_member_def_a3bb35d09a74a2f637070b9edab3423fa}
+
+\item 
+\hypertarget{class_member_def_a52ddcff5d57c4e8007eb1527a9f2102c}{const char $\ast$ {\bfseries extra\-Type\-Chars} () const }\label{class_member_def_a52ddcff5d57c4e8007eb1527a9f2102c}
+
+\item 
+\hypertarget{class_member_def_ac3a6783cc1e75b1f8269e0ea4cbe54bf}{const \hyperlink{class_q_c_string}{Q\-C\-String} \& {\bfseries initializer} () const }\label{class_member_def_ac3a6783cc1e75b1f8269e0ea4cbe54bf}
+
+\item 
+\hypertarget{class_member_def_afcee1637a8950215bb35eb8ebda387b1}{int {\bfseries initializer\-Lines} () const }\label{class_member_def_afcee1637a8950215bb35eb8ebda387b1}
+
+\item 
+\hypertarget{class_member_def_a89485cc934a033fe0ff759e82e174fee}{uint64 {\bfseries get\-Member\-Specifiers} () const }\label{class_member_def_a89485cc934a033fe0ff759e82e174fee}
+
+\item 
+\hypertarget{class_member_def_a4cecfa66326b48ac26fbf475320f1825}{\hyperlink{class_member_list}{Member\-List} $\ast$ {\bfseries get\-Section\-List} (\hyperlink{class_definition}{Definition} $\ast$d) const }\label{class_member_def_a4cecfa66326b48ac26fbf475320f1825}
+
+\item 
+\hypertarget{class_member_def_ada821e779721f4f441a3b97092b78087}{\hyperlink{class_class_def}{Class\-Def} $\ast$ {\bfseries get\-Class\-Def} () const }\label{class_member_def_ada821e779721f4f441a3b97092b78087}
+
+\item 
+\hypertarget{class_member_def_a5a292ca6db63e5f4a6012dae2af1de08}{\hyperlink{class_file_def}{File\-Def} $\ast$ {\bfseries get\-File\-Def} () const }\label{class_member_def_a5a292ca6db63e5f4a6012dae2af1de08}
+
+\item 
+\hypertarget{class_member_def_a7707ce10899d1b0914f2e95b2d4ecc2a}{\hyperlink{class_namespace_def}{Namespace\-Def} $\ast$ {\bfseries get\-Namespace\-Def} () const }\label{class_member_def_a7707ce10899d1b0914f2e95b2d4ecc2a}
+
+\item 
+\hypertarget{class_member_def_ac725d838fc8bf5fac4e612bc90214199}{const char $\ast$ {\bfseries get\-Read\-Accessor} () const }\label{class_member_def_ac725d838fc8bf5fac4e612bc90214199}
+
+\item 
+\hypertarget{class_member_def_ae72032ebafb05df45aebb622713cdeed}{const char $\ast$ {\bfseries get\-Write\-Accessor} () const }\label{class_member_def_ae72032ebafb05df45aebb622713cdeed}
+
+\item 
+\hypertarget{class_member_def_a55e586cb0de5d6be71e43e08c218790a}{\hyperlink{class_group_def}{Group\-Def} $\ast$ {\bfseries get\-Group\-Def} () const }\label{class_member_def_a55e586cb0de5d6be71e43e08c218790a}
+
+\item 
+\hypertarget{class_member_def_ad5b3e9832f14abeb50f6daf0d3ce1d40}{\hyperlink{struct_grouping_ae0be00a2b5dfbbc6c4558e88dddc9d81}{Grouping\-::\-Group\-Pri\-\_\-t} {\bfseries get\-Group\-Pri} () const }\label{class_member_def_ad5b3e9832f14abeb50f6daf0d3ce1d40}
+
+\item 
+\hypertarget{class_member_def_af4efcc2a41c812d11801ee920e269da9}{const char $\ast$ {\bfseries get\-Group\-File\-Name} () const }\label{class_member_def_af4efcc2a41c812d11801ee920e269da9}
+
+\item 
+\hypertarget{class_member_def_a9366e889ccddd834017223ff8245f2aa}{int {\bfseries get\-Group\-Start\-Line} () const }\label{class_member_def_a9366e889ccddd834017223ff8245f2aa}
+
+\item 
+\hypertarget{class_member_def_a9249b746390f493eaed8c9e9e07bb616}{bool {\bfseries get\-Group\-Has\-Docs} () const }\label{class_member_def_a9249b746390f493eaed8c9e9e07bb616}
+
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_member_def_ab8b1c377b3cff112fdca997c37007944}{qualified\-Name} () const 
+\item 
+\hypertarget{class_member_def_abb21b91f09af3a120cc83a750b09fb85}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries obj\-C\-Method\-Name} (bool local\-Link, bool show\-Static) const }\label{class_member_def_abb21b91f09af3a120cc83a750b09fb85}
+
+\item 
+\hypertarget{class_member_def_a149b66b75ad6cd6c17457a689e68cd9e}{\hyperlink{types_8h_a90e352184df58cd09455fe9996cd4ded}{Protection} {\bfseries protection} () const }\label{class_member_def_a149b66b75ad6cd6c17457a689e68cd9e}
+
+\item 
+\hypertarget{class_member_def_ab219c1d82183fa38d9b2e5c831379fa8}{\hyperlink{types_8h_ab16236bdd10ddf4d73a9847350f0017e}{Specifier} {\bfseries virtualness} (int count=0) const }\label{class_member_def_ab219c1d82183fa38d9b2e5c831379fa8}
+
+\item 
+\hypertarget{class_member_def_a4185ff800def732db2b10383099fdbbd}{Member\-Type {\bfseries member\-Type} () const }\label{class_member_def_a4185ff800def732db2b10383099fdbbd}
+
+\item 
+\hypertarget{class_member_def_a8752924926fe1365b7f0089c32a80eda}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries member\-Type\-Name} () const }\label{class_member_def_a8752924926fe1365b7f0089c32a80eda}
+
+\item 
+\hypertarget{class_member_def_ab0fae4d9d9a3aa33411f72858436d75d}{bool {\bfseries is\-Signal} () const }\label{class_member_def_ab0fae4d9d9a3aa33411f72858436d75d}
+
+\item 
+\hypertarget{class_member_def_af3f8ed0da6b1d81642a5b45ab005e076}{bool {\bfseries is\-Slot} () const }\label{class_member_def_af3f8ed0da6b1d81642a5b45ab005e076}
+
+\item 
+\hypertarget{class_member_def_a97b9fd0a9dd72476a300bc8ef5b11a02}{bool {\bfseries is\-Variable} () const }\label{class_member_def_a97b9fd0a9dd72476a300bc8ef5b11a02}
+
+\item 
+\hypertarget{class_member_def_a1cf52b33cfc2c1b989c7b10edea84905}{bool {\bfseries is\-Enumerate} () const }\label{class_member_def_a1cf52b33cfc2c1b989c7b10edea84905}
+
+\item 
+\hypertarget{class_member_def_a2ef2ec9858eeb569205f38d4ee3cbde0}{bool {\bfseries is\-Enum\-Value} () const }\label{class_member_def_a2ef2ec9858eeb569205f38d4ee3cbde0}
+
+\item 
+\hypertarget{class_member_def_afd7114061459fbbf175b3ee9b90e9471}{bool {\bfseries is\-Typedef} () const }\label{class_member_def_afd7114061459fbbf175b3ee9b90e9471}
+
+\item 
+\hypertarget{class_member_def_a708d9062d7209170526841fe64b1b799}{bool {\bfseries is\-Function} () const }\label{class_member_def_a708d9062d7209170526841fe64b1b799}
+
+\item 
+\hypertarget{class_member_def_a5e12da312ca1bfea285cfca0d852dac3}{bool {\bfseries is\-Function\-Ptr} () const }\label{class_member_def_a5e12da312ca1bfea285cfca0d852dac3}
+
+\item 
+\hypertarget{class_member_def_afba76483abe2c546572f5962e59e9279}{bool {\bfseries is\-Define} () const }\label{class_member_def_afba76483abe2c546572f5962e59e9279}
+
+\item 
+\hypertarget{class_member_def_a0fc7904e9482055954585d6026000222}{bool {\bfseries is\-Friend} () const }\label{class_member_def_a0fc7904e9482055954585d6026000222}
+
+\item 
+\hypertarget{class_member_def_a88233a65e413f8cde0c42d5cc394d2ce}{bool {\bfseries is\-D\-C\-O\-P} () const }\label{class_member_def_a88233a65e413f8cde0c42d5cc394d2ce}
+
+\item 
+\hypertarget{class_member_def_af347d82581ab0fc61c35e3053111810c}{bool {\bfseries is\-Property} () const }\label{class_member_def_af347d82581ab0fc61c35e3053111810c}
+
+\item 
+\hypertarget{class_member_def_aa19ab5f65b2647817208c5c1483201d9}{bool {\bfseries is\-Event} () const }\label{class_member_def_aa19ab5f65b2647817208c5c1483201d9}
+
+\item 
+\hypertarget{class_member_def_aa6ed013eb35dd40fb3d8af3b9dba3e95}{bool {\bfseries is\-Related} () const }\label{class_member_def_aa6ed013eb35dd40fb3d8af3b9dba3e95}
+
+\item 
+\hypertarget{class_member_def_a8044ae42724b21a777fa12278cff44f1}{bool {\bfseries is\-Foreign} () const }\label{class_member_def_a8044ae42724b21a777fa12278cff44f1}
+
+\item 
+\hypertarget{class_member_def_a51c3ab7d3991f6fb562449ae8dbc1b4d}{bool {\bfseries is\-Static} () const }\label{class_member_def_a51c3ab7d3991f6fb562449ae8dbc1b4d}
+
+\item 
+\hypertarget{class_member_def_a362d1e6d60eefd85f7f0b87ab64dbbc7}{bool {\bfseries is\-Inline} () const }\label{class_member_def_a362d1e6d60eefd85f7f0b87ab64dbbc7}
+
+\item 
+\hypertarget{class_member_def_a36159243d4e4db337e57ed1e0c5d786c}{bool {\bfseries is\-Explicit} () const }\label{class_member_def_a36159243d4e4db337e57ed1e0c5d786c}
+
+\item 
+\hypertarget{class_member_def_ad687aabba553d1c66bfc253ec7e5bd05}{bool {\bfseries is\-Mutable} () const }\label{class_member_def_ad687aabba553d1c66bfc253ec7e5bd05}
+
+\item 
+\hypertarget{class_member_def_a25581cee2554e23c914e98c85598d5da}{bool {\bfseries is\-Gettable} () const }\label{class_member_def_a25581cee2554e23c914e98c85598d5da}
+
+\item 
+\hypertarget{class_member_def_aefc2aadc79e043027d6c4c70922f20f3}{bool {\bfseries is\-Settable} () const }\label{class_member_def_aefc2aadc79e043027d6c4c70922f20f3}
+
+\item 
+\hypertarget{class_member_def_a3d7f091ba732d3899bcb34dde9fbfd63}{bool {\bfseries is\-Readable} () const }\label{class_member_def_a3d7f091ba732d3899bcb34dde9fbfd63}
+
+\item 
+\hypertarget{class_member_def_aa741717fa726eea03300fdde9934808a}{bool {\bfseries is\-Writable} () const }\label{class_member_def_aa741717fa726eea03300fdde9934808a}
+
+\item 
+\hypertarget{class_member_def_aeb9fcd7d98d281d9957e18be63a27afc}{bool {\bfseries is\-Addable} () const }\label{class_member_def_aeb9fcd7d98d281d9957e18be63a27afc}
+
+\item 
+\hypertarget{class_member_def_ac2a12abea399f80266334ae3b971440f}{bool {\bfseries is\-Removable} () const }\label{class_member_def_ac2a12abea399f80266334ae3b971440f}
+
+\item 
+\hypertarget{class_member_def_acfd20097de4b4f38c47204b173702b84}{bool {\bfseries is\-Raisable} () const }\label{class_member_def_acfd20097de4b4f38c47204b173702b84}
+
+\item 
+\hypertarget{class_member_def_aa1c038a9fa70a19d46c1ea65cbffdb2d}{bool {\bfseries is\-Final} () const }\label{class_member_def_aa1c038a9fa70a19d46c1ea65cbffdb2d}
+
+\item 
+\hypertarget{class_member_def_ac7f749737f31e5dc070351bbe5214793}{bool {\bfseries is\-Abstract} () const }\label{class_member_def_ac7f749737f31e5dc070351bbe5214793}
+
+\item 
+\hypertarget{class_member_def_adb28e90744ce12442666df691cf7d9fd}{bool {\bfseries is\-Override} () const }\label{class_member_def_adb28e90744ce12442666df691cf7d9fd}
+
+\item 
+\hypertarget{class_member_def_a7e1594bcca6354df2f55d21f6c0a9bdc}{bool {\bfseries is\-Initonly} () const }\label{class_member_def_a7e1594bcca6354df2f55d21f6c0a9bdc}
+
+\item 
+\hypertarget{class_member_def_a86197a0f1fafbbbad4641f5b1a0fd0df}{bool {\bfseries is\-Optional} () const }\label{class_member_def_a86197a0f1fafbbbad4641f5b1a0fd0df}
+
+\item 
+\hypertarget{class_member_def_a8c303397983b17e65d96b31dc3de32ba}{bool {\bfseries is\-Required} () const }\label{class_member_def_a8c303397983b17e65d96b31dc3de32ba}
+
+\item 
+\hypertarget{class_member_def_afe6013c2f92e8157b36a8179c03719a4}{bool {\bfseries is\-Non\-Atomic} () const }\label{class_member_def_afe6013c2f92e8157b36a8179c03719a4}
+
+\item 
+\hypertarget{class_member_def_a8dc6e53c404b351ec295caff43de3a48}{bool {\bfseries is\-Copy} () const }\label{class_member_def_a8dc6e53c404b351ec295caff43de3a48}
+
+\item 
+\hypertarget{class_member_def_a6f77bc59e9021774b99d41af3e3c93fb}{bool {\bfseries is\-Assign} () const }\label{class_member_def_a6f77bc59e9021774b99d41af3e3c93fb}
+
+\item 
+\hypertarget{class_member_def_a25fbf3d9ebb3dd743cbb8f0fedeb3439}{bool {\bfseries is\-Retain} () const }\label{class_member_def_a25fbf3d9ebb3dd743cbb8f0fedeb3439}
+
+\item 
+\hypertarget{class_member_def_a18cd5d5f7ca6a240a19fbd47bf7ec1c5}{bool {\bfseries is\-Weak} () const }\label{class_member_def_a18cd5d5f7ca6a240a19fbd47bf7ec1c5}
+
+\item 
+\hypertarget{class_member_def_a5787e596d0063658fdbb40052ccdb92b}{bool {\bfseries is\-Strong} () const }\label{class_member_def_a5787e596d0063658fdbb40052ccdb92b}
+
+\item 
+\hypertarget{class_member_def_a7ef58cb2b669c56310d3174f1c118848}{bool {\bfseries is\-Unretained} () const }\label{class_member_def_a7ef58cb2b669c56310d3174f1c118848}
+
+\item 
+\hypertarget{class_member_def_ae748845e045e651d3aa27aa78186c5a3}{bool {\bfseries is\-New} () const }\label{class_member_def_ae748845e045e651d3aa27aa78186c5a3}
+
+\item 
+\hypertarget{class_member_def_a27367a1b9326358f119463c48350f887}{bool {\bfseries is\-Sealed} () const }\label{class_member_def_a27367a1b9326358f119463c48350f887}
+
+\item 
+\hypertarget{class_member_def_a10cc3288572b8c326f51384f83e7b6f6}{bool {\bfseries is\-Implementation} () const }\label{class_member_def_a10cc3288572b8c326f51384f83e7b6f6}
+
+\item 
+\hypertarget{class_member_def_a731541a36097d39e200fb8872b0f5a97}{bool {\bfseries is\-External} () const }\label{class_member_def_a731541a36097d39e200fb8872b0f5a97}
+
+\item 
+\hypertarget{class_member_def_a9ee5c10e5314f0524bc791135fd0323f}{bool {\bfseries is\-Alias} () const }\label{class_member_def_a9ee5c10e5314f0524bc791135fd0323f}
+
+\item 
+\hypertarget{class_member_def_a3c0ebe326f24d183b76e69b2db54f04f}{bool {\bfseries is\-Default} () const }\label{class_member_def_a3c0ebe326f24d183b76e69b2db54f04f}
+
+\item 
+\hypertarget{class_member_def_aa429b5e11583d414b7a76e751f030eea}{bool {\bfseries is\-Delete} () const }\label{class_member_def_aa429b5e11583d414b7a76e751f030eea}
+
+\item 
+\hypertarget{class_member_def_a6f20baea7bd5d1c81448f4cefa9a2238}{bool {\bfseries is\-No\-Except} () const }\label{class_member_def_a6f20baea7bd5d1c81448f4cefa9a2238}
+
+\item 
+\hypertarget{class_member_def_a4b9b1d587183ba11e1bfbed01a9f742f}{bool {\bfseries is\-Attribute} () const }\label{class_member_def_a4b9b1d587183ba11e1bfbed01a9f742f}
+
+\item 
+\hypertarget{class_member_def_a7963b5f788bd2d4cfe94f4981ebf8fea}{bool {\bfseries is\-U\-N\-O\-Property} () const }\label{class_member_def_a7963b5f788bd2d4cfe94f4981ebf8fea}
+
+\item 
+\hypertarget{class_member_def_aa1cf0d851c469110f2269696ebb99856}{bool {\bfseries is\-Readonly} () const }\label{class_member_def_aa1cf0d851c469110f2269696ebb99856}
+
+\item 
+\hypertarget{class_member_def_a3b29f170eb389b769be3eeb459c7c9ea}{bool {\bfseries is\-Bound} () const }\label{class_member_def_a3b29f170eb389b769be3eeb459c7c9ea}
+
+\item 
+\hypertarget{class_member_def_a4bcfe804203d694b0e7b10aa5b88cddc}{bool {\bfseries is\-Constrained} () const }\label{class_member_def_a4bcfe804203d694b0e7b10aa5b88cddc}
+
+\item 
+\hypertarget{class_member_def_aca8c42607b5a378a5cbc1cd8b0368d4d}{bool {\bfseries is\-Transient} () const }\label{class_member_def_aca8c42607b5a378a5cbc1cd8b0368d4d}
+
+\item 
+\hypertarget{class_member_def_a77f1d6d43f39deb7c3e23fd88dff48fe}{bool {\bfseries is\-Maybe\-Void} () const }\label{class_member_def_a77f1d6d43f39deb7c3e23fd88dff48fe}
+
+\item 
+\hypertarget{class_member_def_a0fb09db995987f24d06706e8eb1ace27}{bool {\bfseries is\-Maybe\-Default} () const }\label{class_member_def_a0fb09db995987f24d06706e8eb1ace27}
+
+\item 
+\hypertarget{class_member_def_aca4724e952f9893b02932a582f55f19e}{bool {\bfseries is\-Maybe\-Ambiguous} () const }\label{class_member_def_aca4724e952f9893b02932a582f55f19e}
+
+\item 
+\hypertarget{class_member_def_a3d09e3bb6fc4144c31a80fd26d401e69}{bool {\bfseries is\-Published} () const }\label{class_member_def_a3d09e3bb6fc4144c31a80fd26d401e69}
+
+\item 
+\hypertarget{class_member_def_a955950fa1fbd2f54e03c14261facc1b6}{bool {\bfseries is\-Template\-Specialization} () const }\label{class_member_def_a955950fa1fbd2f54e03c14261facc1b6}
+
+\item 
+\hypertarget{class_member_def_a19486dbf4843b02193f7c027107d0526}{bool {\bfseries has\-Documented\-Params} () const }\label{class_member_def_a19486dbf4843b02193f7c027107d0526}
+
+\item 
+\hypertarget{class_member_def_aac5265e89cb172f5c65404481bbf8eb6}{bool {\bfseries has\-Documented\-Return\-Type} () const }\label{class_member_def_aac5265e89cb172f5c65404481bbf8eb6}
+
+\item 
+\hypertarget{class_member_def_a17cdfebf29c3d08353e41aa701611490}{bool {\bfseries is\-Obj\-C\-Method} () const }\label{class_member_def_a17cdfebf29c3d08353e41aa701611490}
+
+\item 
+\hypertarget{class_member_def_a19bd1538e8499a467e7538a4defd4c05}{bool {\bfseries is\-Obj\-C\-Property} () const }\label{class_member_def_a19bd1538e8499a467e7538a4defd4c05}
+
+\item 
+\hypertarget{class_member_def_a4ec8e77add4ce0a4994a0993699b01d7}{bool {\bfseries is\-Constructor} () const }\label{class_member_def_a4ec8e77add4ce0a4994a0993699b01d7}
+
+\item 
+\hypertarget{class_member_def_ac375a1091c1191ddacd3931ee7c19a05}{bool {\bfseries is\-Destructor} () const }\label{class_member_def_ac375a1091c1191ddacd3931ee7c19a05}
+
+\item 
+\hypertarget{class_member_def_aca09b933ed4b1e2592d28cb156053b86}{bool {\bfseries has\-One\-Line\-Initializer} () const }\label{class_member_def_aca09b933ed4b1e2592d28cb156053b86}
+
+\item 
+\hypertarget{class_member_def_a7c5f28c289e2a6ba84dbec765e462345}{bool {\bfseries has\-Multi\-Line\-Initializer} () const }\label{class_member_def_a7c5f28c289e2a6ba84dbec765e462345}
+
+\item 
+\hypertarget{class_member_def_a00e0153113da065bcaed837f6098d7ac}{bool {\bfseries protection\-Visible} () const }\label{class_member_def_a00e0153113da065bcaed837f6098d7ac}
+
+\item 
+\hypertarget{class_member_def_ae74f5d38d99f585b2c6624b7e08ceff3}{bool {\bfseries show\-In\-Call\-Graph} () const }\label{class_member_def_ae74f5d38d99f585b2c6624b7e08ceff3}
+
+\item 
+\hypertarget{class_member_def_af5e60e030027845efcf00ce2d73c0cb7}{bool {\bfseries is\-Strong\-Enum\-Value} () const }\label{class_member_def_af5e60e030027845efcf00ce2d73c0cb7}
+
+\item 
+bool \hyperlink{class_member_def_a7ff00a84da6e47f3c64c6bf9f6316385}{is\-Linkable\-In\-Project} () const 
+\item 
+bool \hyperlink{class_member_def_afb5645c0dc69c2f1da67da6e33316e3b}{is\-Linkable} () const 
+\item 
+bool \hyperlink{class_member_def_a585dcd381ab70014568db8ad457fc8b1}{has\-Documentation} () const 
+\item 
+bool \hyperlink{class_member_def_adbe69a2ff48ebe408bf56d8f01509942}{is\-Brief\-Section\-Visible} () const 
+\item 
+\hypertarget{class_member_def_ad7baff8b9ee4a2857d147d23a2c89c86}{bool {\bfseries is\-Detailed\-Section\-Visible} (bool in\-Group, bool in\-File) const }\label{class_member_def_ad7baff8b9ee4a2857d147d23a2c89c86}
+
+\item 
+\hypertarget{class_member_def_a0babea827533bcaf56f976fc59504bf9}{bool {\bfseries is\-Detailed\-Section\-Linkable} () const }\label{class_member_def_a0babea827533bcaf56f976fc59504bf9}
+
+\item 
+\hypertarget{class_member_def_a113cd56379fd1fcc70708f95e2ffbb73}{bool {\bfseries is\-Friend\-Class} () const }\label{class_member_def_a113cd56379fd1fcc70708f95e2ffbb73}
+
+\item 
+\hypertarget{class_member_def_a41bb618437fe812c4258089f4e1389b9}{bool {\bfseries is\-Documented\-Friend\-Class} () const }\label{class_member_def_a41bb618437fe812c4258089f4e1389b9}
+
+\item 
+\hypertarget{class_member_def_a5ad3b0daf1ded995a41ed34bcc96ba2f}{\hyperlink{class_member_def}{Member\-Def} $\ast$ {\bfseries reimplements} () const }\label{class_member_def_a5ad3b0daf1ded995a41ed34bcc96ba2f}
+
+\item 
+\hypertarget{class_member_def_a0ef5b2b4e78a6184a2f1dd49883088cb}{\hyperlink{class_member_list}{Member\-List} $\ast$ {\bfseries reimplemented\-By} () const }\label{class_member_def_a0ef5b2b4e78a6184a2f1dd49883088cb}
+
+\item 
+\hypertarget{class_member_def_a6b607d110ab1b2cb0e2f49a8889ac36c}{bool {\bfseries is\-Reimplemented\-By} (\hyperlink{class_class_def}{Class\-Def} $\ast$cd) const }\label{class_member_def_a6b607d110ab1b2cb0e2f49a8889ac36c}
+
+\item 
+\hypertarget{class_member_def_aa533657737e04b5575ba2f2748fc2e2b}{\hyperlink{class_class_def}{Class\-Def} $\ast$ {\bfseries related\-Also} () const }\label{class_member_def_aa533657737e04b5575ba2f2748fc2e2b}
+
+\item 
+\hypertarget{class_member_def_afb57b17aa62282ec237b3a1832edd6ca}{bool {\bfseries has\-Documented\-Enum\-Values} () const }\label{class_member_def_afb57b17aa62282ec237b3a1832edd6ca}
+
+\item 
+\hypertarget{class_member_def_a61d889cb4a58fcc8ab1225d14c845422}{\hyperlink{class_member_def}{Member\-Def} $\ast$ {\bfseries get\-Anonymous\-Enum\-Type} () const }\label{class_member_def_a61d889cb4a58fcc8ab1225d14c845422}
+
+\item 
+\hypertarget{class_member_def_a99d5f9772aebf20cea992924077e975d}{bool {\bfseries is\-Docs\-For\-Definition} () const }\label{class_member_def_a99d5f9772aebf20cea992924077e975d}
+
+\item 
+\hypertarget{class_member_def_a755d1d2713a2694e50e9a76e3c0d7f49}{\hyperlink{class_member_def}{Member\-Def} $\ast$ {\bfseries get\-Enum\-Scope} () const }\label{class_member_def_a755d1d2713a2694e50e9a76e3c0d7f49}
+
+\item 
+\hypertarget{class_member_def_a4ebdcd9db34fe93b83b72adeb6509c3a}{\hyperlink{class_member_list}{Member\-List} $\ast$ {\bfseries enum\-Field\-List} () const }\label{class_member_def_a4ebdcd9db34fe93b83b72adeb6509c3a}
+
+\item 
+\hypertarget{class_member_def_ae6674ba0bc7403b6dac65154e0986f0c}{void {\bfseries set\-Enum\-Base\-Type} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&type)}\label{class_member_def_ae6674ba0bc7403b6dac65154e0986f0c}
+
+\item 
+\hypertarget{class_member_def_a7fbaac55be7d0189ac4ce094d47a2951}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries enum\-Base\-Type} () const }\label{class_member_def_a7fbaac55be7d0189ac4ce094d47a2951}
+
+\item 
+\hypertarget{class_member_def_aedb1f21e05c55f8b390afce2c4b456d9}{bool {\bfseries has\-Examples} ()}\label{class_member_def_aedb1f21e05c55f8b390afce2c4b456d9}
+
+\item 
+\hypertarget{class_member_def_a02b5e94ada4b0e05383dbe689881e978}{\hyperlink{class_example_s_dict}{Example\-S\-Dict} $\ast$ {\bfseries get\-Examples} () const }\label{class_member_def_a02b5e94ada4b0e05383dbe689881e978}
+
+\item 
+\hypertarget{class_member_def_ae0d29f1a0dfb97f4324cdc3b1c4fa389}{bool {\bfseries is\-Prototype} () const }\label{class_member_def_ae0d29f1a0dfb97f4324cdc3b1c4fa389}
+
+\item 
+\hypertarget{class_member_def_a32f94de82277f8c4386eddc1546c899f}{\hyperlink{class_argument_list}{Argument\-List} $\ast$ {\bfseries argument\-List} () const }\label{class_member_def_a32f94de82277f8c4386eddc1546c899f}
+
+\item 
+\hypertarget{class_member_def_ab9a875b127e3d3bc784a99b8f2c3ff15}{\hyperlink{class_argument_list}{Argument\-List} $\ast$ {\bfseries decl\-Argument\-List} () const }\label{class_member_def_ab9a875b127e3d3bc784a99b8f2c3ff15}
+
+\item 
+\hypertarget{class_member_def_a7a7099c182d85b097ec9b4ac866db827}{\hyperlink{class_argument_list}{Argument\-List} $\ast$ {\bfseries template\-Arguments} () const }\label{class_member_def_a7a7099c182d85b097ec9b4ac866db827}
+
+\item 
+\hypertarget{class_member_def_a431e4308c43d92b7769a3ec67e730d11}{\hyperlink{class_q_list}{Q\-List}$<$ \hyperlink{class_argument_list}{Argument\-List} $>$ $\ast$ {\bfseries definition\-Template\-Parameter\-Lists} () const }\label{class_member_def_a431e4308c43d92b7769a3ec67e730d11}
+
+\item 
+\hypertarget{class_member_def_a675a7039f278ab149ae9429e6b159540}{int {\bfseries get\-Member\-Group\-Id} () const }\label{class_member_def_a675a7039f278ab149ae9429e6b159540}
+
+\item 
+\hypertarget{class_member_def_ae63067cb47048c7a49aa0f239224864e}{\hyperlink{class_member_group}{Member\-Group} $\ast$ {\bfseries get\-Member\-Group} () const }\label{class_member_def_ae63067cb47048c7a49aa0f239224864e}
+
+\item 
+\hypertarget{class_member_def_acc04b7fd7472d0b6071432f57b662703}{bool {\bfseries from\-Anonymous\-Scope} () const }\label{class_member_def_acc04b7fd7472d0b6071432f57b662703}
+
+\item 
+\hypertarget{class_member_def_a09be41b5c2bfcb0df2de2a7cb33da0ba}{bool {\bfseries anonymous\-Decl\-Shown} () const }\label{class_member_def_a09be41b5c2bfcb0df2de2a7cb33da0ba}
+
+\item 
+\hypertarget{class_member_def_adbba13949f96dc1f71d3440e59bc3a9a}{bool {\bfseries has\-Call\-Graph} () const }\label{class_member_def_adbba13949f96dc1f71d3440e59bc3a9a}
+
+\item 
+\hypertarget{class_member_def_aef0ec53bbc5da5eebdb53daaad7a0b65}{bool {\bfseries has\-Caller\-Graph} () const }\label{class_member_def_aef0ec53bbc5da5eebdb53daaad7a0b65}
+
+\item 
+\hypertarget{class_member_def_a0061c7443420efd7c6f683d9b70e2b3f}{bool {\bfseries visible\-Member\-Group} (bool hide\-No\-Header)}\label{class_member_def_a0061c7443420efd7c6f683d9b70e2b3f}
+
+\item 
+\hypertarget{class_member_def_af101fe3cd3ad71dfedac32479fe11087}{\hyperlink{class_member_def}{Member\-Def} $\ast$ {\bfseries template\-Master} () const }\label{class_member_def_af101fe3cd3ad71dfedac32479fe11087}
+
+\item 
+\hypertarget{class_member_def_a5c845a148f8120b99a833fd743c7f117}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries get\-Scope\-String} () const }\label{class_member_def_a5c845a148f8120b99a833fd743c7f117}
+
+\item 
+\hyperlink{class_class_def}{Class\-Def} $\ast$ \hyperlink{class_member_def_a8abd06d384175121e4076ecc16648631}{get\-Class\-Def\-Of\-Anonymous\-Type} ()
+\item 
+\hypertarget{class_member_def_aaf069ecb320e1a19dc290b83e561844f}{bool {\bfseries is\-Typedef\-Val\-Cached} () const }\label{class_member_def_aaf069ecb320e1a19dc290b83e561844f}
+
+\item 
+\hypertarget{class_member_def_a1cdcdf786c3cea05f388a675aa98e170}{\hyperlink{class_class_def}{Class\-Def} $\ast$ {\bfseries get\-Cached\-Typedef\-Val} () const }\label{class_member_def_a1cdcdf786c3cea05f388a675aa98e170}
+
+\item 
+\hypertarget{class_member_def_ae261cff57024cf9a1279eaacb2cbf1c3}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries get\-Cached\-Typedef\-Templ\-Spec} () const }\label{class_member_def_ae261cff57024cf9a1279eaacb2cbf1c3}
+
+\item 
+\hypertarget{class_member_def_a21bd550e666b32616d8cd868ec16d3aa}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries get\-Cached\-Resolved\-Typedef} () const }\label{class_member_def_a21bd550e666b32616d8cd868ec16d3aa}
+
+\item 
+\hypertarget{class_member_def_ae23311b86a005bbaf6b48cb5fe6d336c}{\hyperlink{class_member_def}{Member\-Def} $\ast$ {\bfseries member\-Definition} () const }\label{class_member_def_ae23311b86a005bbaf6b48cb5fe6d336c}
+
+\item 
+\hypertarget{class_member_def_aaa1fe9621965d6c30dcdb57e44621fa7}{\hyperlink{class_member_def}{Member\-Def} $\ast$ {\bfseries member\-Declaration} () const }\label{class_member_def_aaa1fe9621965d6c30dcdb57e44621fa7}
+
+\item 
+\hypertarget{class_member_def_ac29078d777a4dae21c5f80a0b6215fdd}{\hyperlink{class_member_def}{Member\-Def} $\ast$ {\bfseries inherits\-Docs\-From} () const }\label{class_member_def_ac29078d777a4dae21c5f80a0b6215fdd}
+
+\item 
+\hypertarget{class_member_def_a145384ff8ccaa2b0bd298e815886f94b}{\hyperlink{class_member_def}{Member\-Def} $\ast$ {\bfseries get\-Group\-Alias} () const }\label{class_member_def_a145384ff8ccaa2b0bd298e815886f94b}
+
+\item 
+\hypertarget{class_member_def_ac2b88776b2be98cd8fe118aff086c31f}{\hyperlink{class_class_def}{Class\-Def} $\ast$ {\bfseries category} () const }\label{class_member_def_ac2b88776b2be98cd8fe118aff086c31f}
+
+\item 
+\hypertarget{class_member_def_a3d77dbe1e3028e6616438976ca3929e5}{\hyperlink{class_member_def}{Member\-Def} $\ast$ {\bfseries category\-Relation} () const }\label{class_member_def_a3d77dbe1e3028e6616438976ca3929e5}
+
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_member_def_a67d09f414df966d11bbeba6298307bdf}{display\-Name} (bool=T\-R\-U\-E) const 
+\item 
+\hypertarget{class_member_def_a4c6630ebfdf09320ebc9ee8d87ca91f5}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries get\-Decl\-Type} () const }\label{class_member_def_a4c6630ebfdf09320ebc9ee8d87ca91f5}
+
+\item 
+\hypertarget{class_member_def_a758f5b0c542433f8950d5074b782ec94}{void {\bfseries set\-Member\-Type} (Member\-Type t)}\label{class_member_def_a758f5b0c542433f8950d5074b782ec94}
+
+\item 
+\hypertarget{class_member_def_a439127b49dfa4c941e255988ac0be428}{void {\bfseries set\-Definition} (const char $\ast$d)}\label{class_member_def_a439127b49dfa4c941e255988ac0be428}
+
+\item 
+\hypertarget{class_member_def_aaf99d2e7b4d7431a00fe3e970bc7f6e8}{void {\bfseries set\-File\-Def} (\hyperlink{class_file_def}{File\-Def} $\ast$fd)}\label{class_member_def_aaf99d2e7b4d7431a00fe3e970bc7f6e8}
+
+\item 
+\hypertarget{class_member_def_a3830bc7b5425eff7551c69da00ee85f1}{void {\bfseries set\-Anchor} ()}\label{class_member_def_a3830bc7b5425eff7551c69da00ee85f1}
+
+\item 
+\hypertarget{class_member_def_a6cc19181f99433807b136683170b37d0}{void {\bfseries set\-Protection} (\hyperlink{types_8h_a90e352184df58cd09455fe9996cd4ded}{Protection} p)}\label{class_member_def_a6cc19181f99433807b136683170b37d0}
+
+\item 
+\hypertarget{class_member_def_a8e58d27743b10686c867d9fab2010815}{void {\bfseries set\-Member\-Specifiers} (uint64 s)}\label{class_member_def_a8e58d27743b10686c867d9fab2010815}
+
+\item 
+\hypertarget{class_member_def_a1e676aa6ed5578c12176f5022b83a6ac}{void {\bfseries merge\-Member\-Specifiers} (uint64 s)}\label{class_member_def_a1e676aa6ed5578c12176f5022b83a6ac}
+
+\item 
+\hypertarget{class_member_def_a9e26a8a9348d03987f97bc1ac0dc9d88}{void {\bfseries set\-Initializer} (const char $\ast$i)}\label{class_member_def_a9e26a8a9348d03987f97bc1ac0dc9d88}
+
+\item 
+\hypertarget{class_member_def_ad7fc78a5a4d87df7128eb43b7c64d4fb}{void {\bfseries set\-Bitfields} (const char $\ast$s)}\label{class_member_def_ad7fc78a5a4d87df7128eb43b7c64d4fb}
+
+\item 
+\hypertarget{class_member_def_a7f801b33c676ae4bd80f377121583eb1}{void {\bfseries set\-Max\-Init\-Lines} (int lines)}\label{class_member_def_a7f801b33c676ae4bd80f377121583eb1}
+
+\item 
+\hypertarget{class_member_def_a56222a89592e068b4a73f7969fb701f5}{void {\bfseries set\-Member\-Class} (\hyperlink{class_class_def}{Class\-Def} $\ast$cd)}\label{class_member_def_a56222a89592e068b4a73f7969fb701f5}
+
+\item 
+\hypertarget{class_member_def_a0a95e576e13d3ce3b9f3657a44bd8473}{void {\bfseries set\-Section\-List} (\hyperlink{class_definition}{Definition} $\ast$d, \hyperlink{class_member_list}{Member\-List} $\ast$sl)}\label{class_member_def_a0a95e576e13d3ce3b9f3657a44bd8473}
+
+\item 
+\hypertarget{class_member_def_a34fe33a7a7a7d05a9c118c64d2ef7208}{void {\bfseries set\-Group\-Def} (\hyperlink{class_group_def}{Group\-Def} $\ast$gd, \hyperlink{struct_grouping_ae0be00a2b5dfbbc6c4558e88dddc9d81}{Grouping\-::\-Group\-Pri\-\_\-t} pri, const \hyperlink{class_q_c_string}{Q\-C\-String} \&file\-Name, int start\-Line, bool has\-Docs, \hyperlink{class_member_def}{Member\-Def} $\ast$member=0)}\label{class_member_def_a34fe33a7a7a7d05a9c118c64d2ef7208}
+
+\item 
+\hypertarget{class_member_def_a42bd4e948829380ac872e105d3ba728d}{void {\bfseries set\-Explicit\-External} (bool b)}\label{class_member_def_a42bd4e948829380ac872e105d3ba728d}
+
+\item 
+\hypertarget{class_member_def_a63f83e3624daf45fbb8434402897d1c3}{void {\bfseries set\-Read\-Accessor} (const char $\ast$r)}\label{class_member_def_a63f83e3624daf45fbb8434402897d1c3}
+
+\item 
+\hypertarget{class_member_def_a3d23938f0eed33a3131bdbbf8a04cfe9}{void {\bfseries set\-Write\-Accessor} (const char $\ast$w)}\label{class_member_def_a3d23938f0eed33a3131bdbbf8a04cfe9}
+
+\item 
+\hypertarget{class_member_def_a20653f6c472e3354b57e3bf1ebb00af7}{void {\bfseries set\-Template\-Specialization} (bool b)}\label{class_member_def_a20653f6c472e3354b57e3bf1ebb00af7}
+
+\item 
+\hypertarget{class_member_def_a0bca84ab5a332ff314c08cdec6e80646}{void {\bfseries make\-Related} ()}\label{class_member_def_a0bca84ab5a332ff314c08cdec6e80646}
+
+\item 
+\hypertarget{class_member_def_ae466a431c2ff05f45b757c53b81090f2}{void {\bfseries make\-Foreign} ()}\label{class_member_def_ae466a431c2ff05f45b757c53b81090f2}
+
+\item 
+\hypertarget{class_member_def_a8e3f1cdfdfb3a8da8de747988db419a3}{void {\bfseries set\-Has\-Documented\-Params} (bool b)}\label{class_member_def_a8e3f1cdfdfb3a8da8de747988db419a3}
+
+\item 
+\hypertarget{class_member_def_a0003c8229baa08e03abb9dd2ec21e285}{void {\bfseries set\-Has\-Documented\-Return\-Type} (bool b)}\label{class_member_def_a0003c8229baa08e03abb9dd2ec21e285}
+
+\item 
+\hypertarget{class_member_def_ace38f1a2c8a000f53143a9833eb7bedb}{void {\bfseries set\-Inherits\-Docs\-From} (\hyperlink{class_member_def}{Member\-Def} $\ast$md)}\label{class_member_def_ace38f1a2c8a000f53143a9833eb7bedb}
+
+\item 
+\hypertarget{class_member_def_a50c7be7b75a805f08d3224f8f87a95fb}{void {\bfseries set\-Tag\-Info} (\hyperlink{struct_tag_info}{Tag\-Info} $\ast$i)}\label{class_member_def_a50c7be7b75a805f08d3224f8f87a95fb}
+
+\item 
+\hypertarget{class_member_def_af07568eb8fefc8e96e4ff3181bfb56bb}{void {\bfseries set\-Args\-String} (const char $\ast$as)}\label{class_member_def_af07568eb8fefc8e96e4ff3181bfb56bb}
+
+\item 
+\hypertarget{class_member_def_a2c827dcde6226452362880faccbf6fc1}{void {\bfseries set\-Reimplements} (\hyperlink{class_member_def}{Member\-Def} $\ast$md)}\label{class_member_def_a2c827dcde6226452362880faccbf6fc1}
+
+\item 
+\hypertarget{class_member_def_a4cd56a221460a096bc2db31be0bdbfc9}{void {\bfseries insert\-Reimplemented\-By} (\hyperlink{class_member_def}{Member\-Def} $\ast$md)}\label{class_member_def_a4cd56a221460a096bc2db31be0bdbfc9}
+
+\item 
+\hypertarget{class_member_def_a975e978e761a68db89d9116a67ffc5a7}{void {\bfseries set\-Related\-Also} (\hyperlink{class_class_def}{Class\-Def} $\ast$cd)}\label{class_member_def_a975e978e761a68db89d9116a67ffc5a7}
+
+\item 
+\hypertarget{class_member_def_ac7bdfab2bda2d3cf1fa02b0139303bed}{void {\bfseries insert\-Enum\-Field} (\hyperlink{class_member_def}{Member\-Def} $\ast$md)}\label{class_member_def_ac7bdfab2bda2d3cf1fa02b0139303bed}
+
+\item 
+\hypertarget{class_member_def_a25b6d48ab2cae3dc8a22cbe46c96e00c}{void {\bfseries set\-Enum\-Scope} (\hyperlink{class_member_def}{Member\-Def} $\ast$md, bool lives\-Inside\-Enum=F\-A\-L\-S\-E)}\label{class_member_def_a25b6d48ab2cae3dc8a22cbe46c96e00c}
+
+\item 
+\hypertarget{class_member_def_ad4cb074fa224adc1f4a80f1c806f87f3}{void {\bfseries set\-Enum\-Class\-Scope} (\hyperlink{class_class_def}{Class\-Def} $\ast$cd)}\label{class_member_def_ad4cb074fa224adc1f4a80f1c806f87f3}
+
+\item 
+\hypertarget{class_member_def_ac392c68e53ca3630252a0b6f7c5142ba}{void {\bfseries set\-Documented\-Enum\-Values} (bool value)}\label{class_member_def_ac392c68e53ca3630252a0b6f7c5142ba}
+
+\item 
+\hypertarget{class_member_def_a82642b47e585b90debbfcbd7978f68c2}{void {\bfseries set\-Anonymous\-Enum\-Type} (\hyperlink{class_member_def}{Member\-Def} $\ast$md)}\label{class_member_def_a82642b47e585b90debbfcbd7978f68c2}
+
+\item 
+\hypertarget{class_member_def_a6465272004bda4a4c659a6a2814154ee}{bool {\bfseries add\-Example} (const char $\ast$\hyperlink{class_member_def_acd17ae1d9600f864b1beb85dfb99a4f4}{anchor}, const char $\ast$\hyperlink{class_definition_a2c310e06c9aadc6fb218f80fcbb5c695}{name}, const char $\ast$file)}\label{class_member_def_a6465272004bda4a4c659a6a2814154ee}
+
+\item 
+\hypertarget{class_member_def_af3297b54d2b6f0f0aeae089eed468fa3}{void {\bfseries set\-Prototype} (bool p)}\label{class_member_def_af3297b54d2b6f0f0aeae089eed468fa3}
+
+\item 
+\hypertarget{class_member_def_a81fee11b0f473321fe88e113b54a585d}{void {\bfseries set\-Argument\-List} (\hyperlink{class_argument_list}{Argument\-List} $\ast$al)}\label{class_member_def_a81fee11b0f473321fe88e113b54a585d}
+
+\item 
+\hypertarget{class_member_def_abfb6acf3a7f72e76c2fea358d89d138b}{void {\bfseries set\-Decl\-Argument\-List} (\hyperlink{class_argument_list}{Argument\-List} $\ast$al)}\label{class_member_def_abfb6acf3a7f72e76c2fea358d89d138b}
+
+\item 
+\hypertarget{class_member_def_a5c99626a86e852bb96089bbfedd1b3ca}{void {\bfseries set\-Definition\-Template\-Parameter\-Lists} (\hyperlink{class_q_list}{Q\-List}$<$ \hyperlink{class_argument_list}{Argument\-List} $>$ $\ast$lists)}\label{class_member_def_a5c99626a86e852bb96089bbfedd1b3ca}
+
+\item 
+\hypertarget{class_member_def_ac805ef0f9105033770cacf6bb063547c}{void {\bfseries set\-Type\-Constraints} (\hyperlink{class_argument_list}{Argument\-List} $\ast$al)}\label{class_member_def_ac805ef0f9105033770cacf6bb063547c}
+
+\item 
+\hypertarget{class_member_def_a019017f3a56a0c3e4212a9a78eaf586f}{void {\bfseries set\-Type} (const char $\ast$t)}\label{class_member_def_a019017f3a56a0c3e4212a9a78eaf586f}
+
+\item 
+\hypertarget{class_member_def_afd053b937d5e9c3aa7df5de15d2c3b5d}{void {\bfseries set\-Accessor\-Type} (\hyperlink{class_class_def}{Class\-Def} $\ast$cd, const char $\ast$t)}\label{class_member_def_afd053b937d5e9c3aa7df5de15d2c3b5d}
+
+\item 
+\hypertarget{class_member_def_a77ef7c03d7ab9059874406ccceb110e8}{void {\bfseries set\-Namespace} (\hyperlink{class_namespace_def}{Namespace\-Def} $\ast$nd)}\label{class_member_def_a77ef7c03d7ab9059874406ccceb110e8}
+
+\item 
+\hypertarget{class_member_def_a7ecbf301bd88c17e08399ffa5b9a7b98}{void {\bfseries set\-Member\-Group} (\hyperlink{class_member_group}{Member\-Group} $\ast$grp)}\label{class_member_def_a7ecbf301bd88c17e08399ffa5b9a7b98}
+
+\item 
+\hypertarget{class_member_def_a81e574cc0afb9b53fbd684d1b9efe234}{void {\bfseries set\-Member\-Group\-Id} (int id)}\label{class_member_def_a81e574cc0afb9b53fbd684d1b9efe234}
+
+\item 
+\hypertarget{class_member_def_a232954314c4a9444ceef78f28f17e29f}{void {\bfseries make\-Implementation\-Detail} ()}\label{class_member_def_a232954314c4a9444ceef78f28f17e29f}
+
+\item 
+\hypertarget{class_member_def_a051dd452c36a7c146a9bed54a3dcbf7d}{void {\bfseries set\-From\-Anonymous\-Scope} (bool b)}\label{class_member_def_a051dd452c36a7c146a9bed54a3dcbf7d}
+
+\item 
+\hypertarget{class_member_def_a6facf8cfc4022f4f13dd088382e3d863}{void {\bfseries set\-From\-Anonymous\-Member} (\hyperlink{class_member_def}{Member\-Def} $\ast$m)}\label{class_member_def_a6facf8cfc4022f4f13dd088382e3d863}
+
+\item 
+\hypertarget{class_member_def_a4ea74558274c17b18275ccde5525f320}{void {\bfseries enable\-Call\-Graph} (bool e)}\label{class_member_def_a4ea74558274c17b18275ccde5525f320}
+
+\item 
+\hypertarget{class_member_def_a2a53a513b1ef9afcff95f28e473a80d9}{void {\bfseries enable\-Caller\-Graph} (bool e)}\label{class_member_def_a2a53a513b1ef9afcff95f28e473a80d9}
+
+\item 
+\hypertarget{class_member_def_a39b4fa936910fa99550d9eccfb296659}{void {\bfseries set\-Template\-Master} (\hyperlink{class_member_def}{Member\-Def} $\ast$mt)}\label{class_member_def_a39b4fa936910fa99550d9eccfb296659}
+
+\item 
+\hypertarget{class_member_def_a688207d19a334955916121b9cb47e953}{void {\bfseries add\-List\-Reference} (\hyperlink{class_definition}{Definition} $\ast$d)}\label{class_member_def_a688207d19a334955916121b9cb47e953}
+
+\item 
+\hypertarget{class_member_def_a1375f641b5adf8fc8d3a5a0e1677d64f}{void {\bfseries set\-Docs\-For\-Definition} (bool b)}\label{class_member_def_a1375f641b5adf8fc8d3a5a0e1677d64f}
+
+\item 
+\hypertarget{class_member_def_a21912edfa1724fa46419bd10bc833aec}{void {\bfseries set\-Group\-Alias} (\hyperlink{class_member_def}{Member\-Def} $\ast$md)}\label{class_member_def_a21912edfa1724fa46419bd10bc833aec}
+
+\item 
+\hypertarget{class_member_def_a97ffab107f298fb19c4162d4ef9853a6}{void {\bfseries cache\-Typedef\-Val} (\hyperlink{class_class_def}{Class\-Def} $\ast$val, const \hyperlink{class_q_c_string}{Q\-C\-String} \&templ\-Spec, const \hyperlink{class_q_c_string}{Q\-C\-String} \&resolved\-Type)}\label{class_member_def_a97ffab107f298fb19c4162d4ef9853a6}
+
+\item 
+\hypertarget{class_member_def_a465592f31b1af25a9276fcbc573073c1}{void {\bfseries invalidate\-Typedef\-Val\-Cache} ()}\label{class_member_def_a465592f31b1af25a9276fcbc573073c1}
+
+\item 
+\hypertarget{class_member_def_a5ac5f55451786007f15b2332fe144f9e}{void {\bfseries invalidate\-Cached\-Argument\-Types} ()}\label{class_member_def_a5ac5f55451786007f15b2332fe144f9e}
+
+\item 
+\hypertarget{class_member_def_abc86464ab08dee8bd0ebe6406d2373d3}{void {\bfseries set\-Member\-Definition} (\hyperlink{class_member_def}{Member\-Def} $\ast$md)}\label{class_member_def_abc86464ab08dee8bd0ebe6406d2373d3}
+
+\item 
+\hypertarget{class_member_def_a245fb4454fe5d663c9ba9658f11ab1ef}{void {\bfseries set\-Member\-Declaration} (\hyperlink{class_member_def}{Member\-Def} $\ast$md)}\label{class_member_def_a245fb4454fe5d663c9ba9658f11ab1ef}
+
+\item 
+\hypertarget{class_member_def_a3c5df6647cbbd6f7b77490a1a29f3c72}{void {\bfseries set\-Anonymous\-Used} ()}\label{class_member_def_a3c5df6647cbbd6f7b77490a1a29f3c72}
+
+\item 
+\hypertarget{class_member_def_a7a2191f57cdd48f13329e7fcc548aa09}{void {\bfseries copy\-Argument\-Names} (\hyperlink{class_member_def}{Member\-Def} $\ast$bmd)}\label{class_member_def_a7a2191f57cdd48f13329e7fcc548aa09}
+
+\item 
+\hypertarget{class_member_def_a3c2f962d3a925484de8383145b823ca1}{void {\bfseries set\-Category} (\hyperlink{class_class_def}{Class\-Def} $\ast$)}\label{class_member_def_a3c2f962d3a925484de8383145b823ca1}
+
+\item 
+\hypertarget{class_member_def_abb8d2d80d5bb841f1ede6e665a5f9fbf}{void {\bfseries set\-Category\-Relation} (\hyperlink{class_member_def}{Member\-Def} $\ast$)}\label{class_member_def_abb8d2d80d5bb841f1ede6e665a5f9fbf}
+
+\item 
+void \hyperlink{class_member_def_a49660f42e3320c1022ef04edfbc7c850}{set\-Documentation} (const char $\ast$d, const char $\ast$\hyperlink{class_definition_afadeeb679bb7bda0ad5b4f358f0d33e2}{doc\-File}, int \hyperlink{class_definition_a3c2a6c87ac432d8a6db51bc52b2379da}{doc\-Line}, bool strip\-White\-Space=T\-R\-U\-E)
+\item 
+void \hyperlink{class_member_def_a98a2e802a5477e4ece9cd859cb07ec31}{set\-Brief\-Description} (const char $\ast$b, const char $\ast$\hyperlink{class_definition_a14b9cbdcc30535bcfd2e435667dea5fe}{brief\-File}, int \hyperlink{class_definition_aca87df70fcd505c2458a6ad75a1ede61}{brief\-Line})
+\item 
+void \hyperlink{class_member_def_a0ba4fab93cc2151a4c5c88279846f8fd}{set\-Inbody\-Documentation} (const char $\ast$d, const char $\ast$\hyperlink{class_definition_a69f697410a918873614549085444faa4}{inbody\-File}, int \hyperlink{class_definition_ae4b412e67989226ad3ce76f08f3ffaad}{inbody\-Line})
+\item 
+\hypertarget{class_member_def_a85f8b66f6d9e9acf89ae056554f82776}{void {\bfseries set\-Hidden} (bool b)}\label{class_member_def_a85f8b66f6d9e9acf89ae056554f82776}
+
+\item 
+void \hyperlink{class_member_def_ab829c9b186aecbe88b238e9dc353e3bb}{write\-Declaration} (\hyperlink{class_output_list}{Output\-List} \&ol, \hyperlink{class_class_def}{Class\-Def} $\ast$cd, \hyperlink{class_namespace_def}{Namespace\-Def} $\ast$nd, \hyperlink{class_file_def}{File\-Def} $\ast$fd, \hyperlink{class_group_def}{Group\-Def} $\ast$gd, bool in\-Group, const \hyperlink{class_definition_intf_a2dc566dfec40397b2990e6520536ecb5}{Def\-Type} compound\-Type, \hyperlink{class_class_def}{Class\-Def} $\ast$inherit\-From=0, const char $\ast$inherit\-Id=0)
+\item 
+void \hyperlink{class_member_def_abfc62bd6218ead893a878df26c1e3c12}{write\-Documentation} (\hyperlink{class_member_list}{Member\-List} $\ast$ml, \hyperlink{class_output_list}{Output\-List} \&ol, const char $\ast$scope\-Name, \hyperlink{class_definition}{Definition} $\ast$container, bool in\-Group, bool show\-Enum\-Values=F\-A\-L\-S\-E, bool show\-Inline=F\-A\-L\-S\-E)
+\item 
+\hypertarget{class_member_def_ab79ebce2ca5a57b470136cf2e8e950a1}{void {\bfseries write\-Member\-Doc\-Simple} (\hyperlink{class_output_list}{Output\-List} \&ol, \hyperlink{class_definition}{Definition} $\ast$container)}\label{class_member_def_ab79ebce2ca5a57b470136cf2e8e950a1}
+
+\item 
+\hypertarget{class_member_def_aeb585c0cbbb796f99b6ca61326ec059a}{void {\bfseries write\-Enum\-Declaration} (\hyperlink{class_output_list}{Output\-List} \&type\-Decl, \hyperlink{class_class_def}{Class\-Def} $\ast$cd, \hyperlink{class_namespace_def}{Namespace\-Def} $\ast$nd, \hyperlink{class_file_def}{File\-Def} $\ast$fd, \hyperlink{class_group_def}{Group\-Def} $\ast$gd, const \hyperlink{class_definition_intf_a2dc566dfec40397b2990e6520536ecb5}{Def\-Type} compound\-Type)}\label{class_member_def_aeb585c0cbbb796f99b6ca61326ec059a}
+
+\item 
+\hypertarget{class_member_def_a5ba4d6d8b1d7b571c2a7ff87b1e27ea1}{void {\bfseries warn\-If\-Undocumented} ()}\label{class_member_def_a5ba4d6d8b1d7b571c2a7ff87b1e27ea1}
+
+\item 
+\hypertarget{class_member_def_ad6819227b0e540b6c850a10684d548c8}{\hyperlink{class_member_def}{Member\-Def} $\ast$ {\bfseries create\-Template\-Instance\-Member} (\hyperlink{class_argument_list}{Argument\-List} $\ast$formal\-Args, \hyperlink{class_argument_list}{Argument\-List} $\ast$actual\-Args)}\label{class_member_def_ad6819227b0e540b6c850a10684d548c8}
+
+\item 
+\hypertarget{class_member_def_ad714b0e193e95efc23bb5de8dfb76cb6}{void {\bfseries find\-Sections\-In\-Documentation} ()}\label{class_member_def_ad714b0e193e95efc23bb5de8dfb76cb6}
+
+\end{DoxyCompactItemize}
+\subsection*{Campos de Dados}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_member_def_a1df99df902f5f6e81ec3e21e9c07360e}{bool {\bfseries visited}}\label{class_member_def_a1df99df902f5f6e81ec3e21e9c07360e}
+
+\end{DoxyCompactItemize}
+\subsection*{Membros protegidos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_member_def_a5e5c162b785bfad12bcff67ea0d7f232}{void {\bfseries flush\-To\-Disk} () const }\label{class_member_def_a5e5c162b785bfad12bcff67ea0d7f232}
+
+\item 
+\hypertarget{class_member_def_ab314b200ae76bd2d213e1710ea172f81}{void {\bfseries load\-From\-Disk} () const }\label{class_member_def_ab314b200ae76bd2d213e1710ea172f81}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Descrição detalhada}
+\hyperlink{class_a}{A} model of a class/file/namespace member symbol. 
+
+\subsection{Documentação dos Construtores \& Destrutor}
+\hypertarget{class_member_def_a99a23c621060bfd3d01cf65d5c235011}{\index{Member\-Def@{Member\-Def}!Member\-Def@{Member\-Def}}
+\index{Member\-Def@{Member\-Def}!MemberDef@{Member\-Def}}
+\subsubsection[{Member\-Def}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Member\-Def} (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{df, }
+\item[{int}]{dl, }
+\item[{int}]{dc, }
+\item[{const char $\ast$}]{t, }
+\item[{const char $\ast$}]{na, }
+\item[{const char $\ast$}]{a, }
+\item[{const char $\ast$}]{e, }
+\item[{{\bf Protection}}]{p, }
+\item[{{\bf Specifier}}]{v, }
+\item[{bool}]{s, }
+\item[{{\bf Relationship}}]{r, }
+\item[{Member\-Type}]{mt, }
+\item[{const {\bf Argument\-List} $\ast$}]{tal, }
+\item[{const {\bf Argument\-List} $\ast$}]{al}
+\end{DoxyParamCaption}
+)}}\label{class_member_def_a99a23c621060bfd3d01cf65d5c235011}
+Creates a new member definition.
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em df} & File containing the definition of this member. \\
+\hline
+{\em dl} & Line at which the member definition was found. \\
+\hline
+{\em dc} & Column at which the member definition was found. \\
+\hline
+{\em t} & \hyperlink{class_a}{A} string representing the type of the member. \\
+\hline
+{\em na} & \hyperlink{class_a}{A} string representing the name of the member. \\
+\hline
+{\em a} & \hyperlink{class_a}{A} string representing the arguments of the member. \\
+\hline
+{\em e} & \hyperlink{class_a}{A} string representing the throw clause of the members. \\
+\hline
+{\em p} & The protection context of the member, possible values are\-: {\ttfamily Public}, {\ttfamily Protected}, {\ttfamily Private}. \\
+\hline
+{\em v} & The degree of `virtualness' of the member, possible values are\-: {\ttfamily Normal}, {\ttfamily Virtual}, {\ttfamily Pure}. \\
+\hline
+{\em s} & \hyperlink{class_a}{A} boolean that is true iff the member is static. \\
+\hline
+{\em r} & The relationship between the class and the member. \\
+\hline
+{\em mt} & The kind of member. See \#\-Member\-Type for a list of all types. \\
+\hline
+{\em tal} & The template arguments of this member. \\
+\hline
+{\em al} & The arguments of this member. This is a structured form of the string past as argument {\itshape a}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_member_def_abf79fd4952640be8c59f27a53c56d0c9}{\index{Member\-Def@{Member\-Def}!$\sim$\-Member\-Def@{$\sim$\-Member\-Def}}
+\index{$\sim$\-Member\-Def@{$\sim$\-Member\-Def}!MemberDef@{Member\-Def}}
+\subsubsection[{$\sim$\-Member\-Def}]{\setlength{\rightskip}{0pt plus 5cm}$\sim${\bf Member\-Def} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_member_def_abf79fd4952640be8c59f27a53c56d0c9}
+Destroys the member definition. 
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_member_def_acd17ae1d9600f864b1beb85dfb99a4f4}{\index{Member\-Def@{Member\-Def}!anchor@{anchor}}
+\index{anchor@{anchor}!MemberDef@{Member\-Def}}
+\subsubsection[{anchor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} anchor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_member_def_acd17ae1d9600f864b1beb85dfb99a4f4}
+Returns the anchor within a page where this item can be found 
+
+Implementa \hyperlink{class_definition_aeefc9f68d99e616f91c43a3cebf96357}{Definition}.
+
+\hypertarget{class_member_def_aac410235a8bf90e471e649bd9dbf9c5e}{\index{Member\-Def@{Member\-Def}!definition\-Type@{definition\-Type}}
+\index{definition\-Type@{definition\-Type}!MemberDef@{Member\-Def}}
+\subsubsection[{definition\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Def\-Type} definition\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_member_def_aac410235a8bf90e471e649bd9dbf9c5e}
+Use this for dynamic inspection of the type of the derived class 
+
+Implementa \hyperlink{class_definition_intf_afba7add835518dbf4202846446d667b0}{Definition\-Intf}.
+
+\hypertarget{class_member_def_a67d09f414df966d11bbeba6298307bdf}{\index{Member\-Def@{Member\-Def}!display\-Name@{display\-Name}}
+\index{display\-Name@{display\-Name}!MemberDef@{Member\-Def}}
+\subsubsection[{display\-Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} display\-Name (
+\begin{DoxyParamCaption}
+\item[{bool}]{include\-Scope = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_member_def_a67d09f414df966d11bbeba6298307bdf}
+Returns the name of the definition as it appears in the output 
+
+Implementa \hyperlink{class_definition_a98f292cf0fb9a6a1314c7a159b7166ec}{Definition}.
+
+\hypertarget{class_member_def_a8abd06d384175121e4076ecc16648631}{\index{Member\-Def@{Member\-Def}!get\-Class\-Def\-Of\-Anonymous\-Type@{get\-Class\-Def\-Of\-Anonymous\-Type}}
+\index{get\-Class\-Def\-Of\-Anonymous\-Type@{get\-Class\-Def\-Of\-Anonymous\-Type}!MemberDef@{Member\-Def}}
+\subsubsection[{get\-Class\-Def\-Of\-Anonymous\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Class\-Def} $\ast$ get\-Class\-Def\-Of\-Anonymous\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_member_def_a8abd06d384175121e4076ecc16648631}
+If this member has an anonymous class/struct/union as its type, then this method will return the \hyperlink{class_class_def}{Class\-Def} that describes this return type. \hypertarget{class_member_def_af72a982ba8198cd5c98e9fc850b71df6}{\index{Member\-Def@{Member\-Def}!get\-Output\-File\-Base@{get\-Output\-File\-Base}}
+\index{get\-Output\-File\-Base@{get\-Output\-File\-Base}!MemberDef@{Member\-Def}}
+\subsubsection[{get\-Output\-File\-Base}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} get\-Output\-File\-Base (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_member_def_af72a982ba8198cd5c98e9fc850b71df6}
+Returns the base file name (without extension) of this definition. as it is referenced to/written to disk. 
+
+Implementa \hyperlink{class_definition_a9d86cf13f2c63846c41ef739e4cdadf6}{Definition}.
+
+\hypertarget{class_member_def_a87b81ea7f17740033bf8fb12f796c494}{\index{Member\-Def@{Member\-Def}!get\-Reference@{get\-Reference}}
+\index{get\-Reference@{get\-Reference}!MemberDef@{Member\-Def}}
+\subsubsection[{get\-Reference}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} get\-Reference (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_member_def_a87b81ea7f17740033bf8fb12f796c494}
+If this definition was imported via a tag file, this function returns the tagfile for the external project. This can be translated into an external link target via Doxygen\-::tag\-Destination\-Dict 
+
+Reimplementado de \hyperlink{class_definition_a87b81ea7f17740033bf8fb12f796c494}{Definition}.
+
+\hypertarget{class_member_def_a585dcd381ab70014568db8ad457fc8b1}{\index{Member\-Def@{Member\-Def}!has\-Documentation@{has\-Documentation}}
+\index{has\-Documentation@{has\-Documentation}!MemberDef@{Member\-Def}}
+\subsubsection[{has\-Documentation}]{\setlength{\rightskip}{0pt plus 5cm}bool has\-Documentation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_member_def_a585dcd381ab70014568db8ad457fc8b1}
+Returns T\-R\-U\-E iff the definition is documented (which could be generated documentation) \begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_definition_af1f0e7584db0d4b918f9c55c9c8ab80a}{has\-User\-Documentation()} 
+\end{DoxySeeAlso}
+
+
+Reimplementado de \hyperlink{class_definition_a585dcd381ab70014568db8ad457fc8b1}{Definition}.
+
+\hypertarget{class_member_def_adbe69a2ff48ebe408bf56d8f01509942}{\index{Member\-Def@{Member\-Def}!is\-Brief\-Section\-Visible@{is\-Brief\-Section\-Visible}}
+\index{is\-Brief\-Section\-Visible@{is\-Brief\-Section\-Visible}!MemberDef@{Member\-Def}}
+\subsubsection[{is\-Brief\-Section\-Visible}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-Brief\-Section\-Visible (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_member_def_adbe69a2ff48ebe408bf56d8f01509942}
+This methods returns T\-R\-U\-E iff the brief section (also known as declaration section) is visible in the documentation. \hypertarget{class_member_def_afb5645c0dc69c2f1da67da6e33316e3b}{\index{Member\-Def@{Member\-Def}!is\-Linkable@{is\-Linkable}}
+\index{is\-Linkable@{is\-Linkable}!MemberDef@{Member\-Def}}
+\subsubsection[{is\-Linkable}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-Linkable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_member_def_afb5645c0dc69c2f1da67da6e33316e3b}
+Returns T\-R\-U\-E iff it is possible to link to this item. This can be a link to another project imported via a tag file. 
+
+Implementa \hyperlink{class_definition_a53420387530937059d408a7e4316c375}{Definition}.
+
+\hypertarget{class_member_def_a7ff00a84da6e47f3c64c6bf9f6316385}{\index{Member\-Def@{Member\-Def}!is\-Linkable\-In\-Project@{is\-Linkable\-In\-Project}}
+\index{is\-Linkable\-In\-Project@{is\-Linkable\-In\-Project}!MemberDef@{Member\-Def}}
+\subsubsection[{is\-Linkable\-In\-Project}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-Linkable\-In\-Project (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_member_def_a7ff00a84da6e47f3c64c6bf9f6316385}
+Returns T\-R\-U\-E iff it is possible to link to this item within this project. 
+
+Implementa \hyperlink{class_definition_a2a4aa56e5209c7fbed15d5c3a3791643}{Definition}.
+
+\hypertarget{class_member_def_ab8b1c377b3cff112fdca997c37007944}{\index{Member\-Def@{Member\-Def}!qualified\-Name@{qualified\-Name}}
+\index{qualified\-Name@{qualified\-Name}!MemberDef@{Member\-Def}}
+\subsubsection[{qualified\-Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} qualified\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_member_def_ab8b1c377b3cff112fdca997c37007944}
+Returns the fully qualified name of this definition 
+
+Reimplementado de \hyperlink{class_definition_ab8b1c377b3cff112fdca997c37007944}{Definition}.
+
+\hypertarget{class_member_def_a98a2e802a5477e4ece9cd859cb07ec31}{\index{Member\-Def@{Member\-Def}!set\-Brief\-Description@{set\-Brief\-Description}}
+\index{set\-Brief\-Description@{set\-Brief\-Description}!MemberDef@{Member\-Def}}
+\subsubsection[{set\-Brief\-Description}]{\setlength{\rightskip}{0pt plus 5cm}void set\-Brief\-Description (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{b, }
+\item[{const char $\ast$}]{brief\-File, }
+\item[{int}]{brief\-Line}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_member_def_a98a2e802a5477e4ece9cd859cb07ec31}
+Sets the brief description of this definition to {\itshape b}. \hyperlink{class_a}{A} dot is added to the sentence if not available. 
+
+Reimplementado de \hyperlink{class_definition_a98a2e802a5477e4ece9cd859cb07ec31}{Definition}.
+
+\hypertarget{class_member_def_a49660f42e3320c1022ef04edfbc7c850}{\index{Member\-Def@{Member\-Def}!set\-Documentation@{set\-Documentation}}
+\index{set\-Documentation@{set\-Documentation}!MemberDef@{Member\-Def}}
+\subsubsection[{set\-Documentation}]{\setlength{\rightskip}{0pt plus 5cm}void set\-Documentation (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{d, }
+\item[{const char $\ast$}]{doc\-File, }
+\item[{int}]{doc\-Line, }
+\item[{bool}]{strip\-White\-Space = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_member_def_a49660f42e3320c1022ef04edfbc7c850}
+Sets the documentation of this definition to {\itshape d}. 
+
+Reimplementado de \hyperlink{class_definition_a49660f42e3320c1022ef04edfbc7c850}{Definition}.
+
+\hypertarget{class_member_def_a0ba4fab93cc2151a4c5c88279846f8fd}{\index{Member\-Def@{Member\-Def}!set\-Inbody\-Documentation@{set\-Inbody\-Documentation}}
+\index{set\-Inbody\-Documentation@{set\-Inbody\-Documentation}!MemberDef@{Member\-Def}}
+\subsubsection[{set\-Inbody\-Documentation}]{\setlength{\rightskip}{0pt plus 5cm}void set\-Inbody\-Documentation (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{d, }
+\item[{const char $\ast$}]{doc\-File, }
+\item[{int}]{doc\-Line}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_member_def_a0ba4fab93cc2151a4c5c88279846f8fd}
+Set the documentation that was found inside the body of an item. If there was already some documentation set, the new documentation will be appended. 
+
+Reimplementado de \hyperlink{class_definition_ae1d28023753b529dd5a2c5d77e076843}{Definition}.
+
+\hypertarget{class_member_def_ab829c9b186aecbe88b238e9dc353e3bb}{\index{Member\-Def@{Member\-Def}!write\-Declaration@{write\-Declaration}}
+\index{write\-Declaration@{write\-Declaration}!MemberDef@{Member\-Def}}
+\subsubsection[{write\-Declaration}]{\setlength{\rightskip}{0pt plus 5cm}void write\-Declaration (
+\begin{DoxyParamCaption}
+\item[{{\bf Output\-List} \&}]{ol, }
+\item[{{\bf Class\-Def} $\ast$}]{cd, }
+\item[{{\bf Namespace\-Def} $\ast$}]{nd, }
+\item[{{\bf File\-Def} $\ast$}]{fd, }
+\item[{{\bf Group\-Def} $\ast$}]{gd, }
+\item[{bool}]{in\-Group, }
+\item[{const {\bf Def\-Type}}]{compound\-Type, }
+\item[{{\bf Class\-Def} $\ast$}]{inherit\-From = {\ttfamily 0}, }
+\item[{const char $\ast$}]{inherit\-Id = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{class_member_def_ab829c9b186aecbe88b238e9dc353e3bb}
+printf(\char`\"{}start\-Member\-Item for \%s\textbackslash{}n\char`\"{},\hyperlink{class_definition_a2c310e06c9aadc6fb218f80fcbb5c695}{name()}.data());
+
+init.\-is\-Empty() \&\& init\-Lines==0 \&\& // one line initializer \hypertarget{class_member_def_abfc62bd6218ead893a878df26c1e3c12}{\index{Member\-Def@{Member\-Def}!write\-Documentation@{write\-Documentation}}
+\index{write\-Documentation@{write\-Documentation}!MemberDef@{Member\-Def}}
+\subsubsection[{write\-Documentation}]{\setlength{\rightskip}{0pt plus 5cm}void write\-Documentation (
+\begin{DoxyParamCaption}
+\item[{{\bf Member\-List} $\ast$}]{ml, }
+\item[{{\bf Output\-List} \&}]{ol, }
+\item[{const char $\ast$}]{sc\-Name, }
+\item[{{\bf Definition} $\ast$}]{container, }
+\item[{bool}]{in\-Group, }
+\item[{bool}]{show\-Enum\-Values = {\ttfamily FALSE}, }
+\item[{bool}]{show\-Inline = {\ttfamily FALSE}}
+\end{DoxyParamCaption}
+)}}\label{class_member_def_abfc62bd6218ead893a878df26c1e3c12}
+Writes the \char`\"{}detailed documentation\char`\"{} section of this member to all active output formats. 
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/src/memberdef.\-h\item 
+C\-:/\-Users/teste/git/doxygen/src/memberdef.\-cpp\end{DoxyCompactItemize}

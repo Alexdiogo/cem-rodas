@@ -1,0 +1,146 @@
+\hypertarget{class_config_option}{\section{Referência à classe Config\-Option}
+\label{class_config_option}\index{Config\-Option@{Config\-Option}}
+}
+
+
+{\ttfamily \#include $<$config.\-h$>$}
+
+Diagrama de heranças da classe Config\-Option\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=9.000000cm]{class_config_option}
+\end{center}
+\end{figure}
+\subsection*{Tipos Públicos}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_config_option_a976bded296a67e09242af85291a639d6}{Option\-Type} \{ \\*
+{\bfseries O\-\_\-\-Info}, 
+{\bfseries O\-\_\-\-List}, 
+{\bfseries O\-\_\-\-Enum}, 
+{\bfseries O\-\_\-\-String}, 
+\\*
+{\bfseries O\-\_\-\-Int}, 
+{\bfseries O\-\_\-\-Bool}, 
+{\bfseries O\-\_\-\-Obsolete}, 
+{\bfseries O\-\_\-\-Disabled}
+ \}
+\item 
+enum \{ \hyperlink{class_config_option_a61dadd085c1777f559549e05962b2c9eaf9043652ab6c0a36c22f6bdea78d1d5a}{M\-A\-X\-\_\-\-O\-P\-T\-I\-O\-N\-\_\-\-L\-E\-N\-G\-T\-H} = 23
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_config_option_a981c205e18e00a0f9908691190bfba90}{{\bfseries Config\-Option} (\hyperlink{class_config_option_a976bded296a67e09242af85291a639d6}{Option\-Type} t)}\label{class_config_option_a981c205e18e00a0f9908691190bfba90}
+
+\item 
+\hyperlink{class_config_option_a976bded296a67e09242af85291a639d6}{Option\-Type} \hyperlink{class_config_option_a263e7663e23978694a454c4155d10d6b}{kind} () const 
+\item 
+\hypertarget{class_config_option_af92302878527ec555ba9e3fe066925ff}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries name} () const }\label{class_config_option_af92302878527ec555ba9e3fe066925ff}
+
+\item 
+\hypertarget{class_config_option_a382d8459d465104f4b8814838d2feca9}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries docs} () const }\label{class_config_option_a382d8459d465104f4b8814838d2feca9}
+
+\item 
+\hypertarget{class_config_option_ac1e12df41db1966fe2ff8f8703bdd7c7}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries depends\-On} () const }\label{class_config_option_ac1e12df41db1966fe2ff8f8703bdd7c7}
+
+\item 
+\hypertarget{class_config_option_ab7ce57760071e4a76697349f01e8c100}{void {\bfseries add\-Dependency} (const char $\ast$dep)}\label{class_config_option_ab7ce57760071e4a76697349f01e8c100}
+
+\item 
+\hypertarget{class_config_option_a8f08440c4bcc057442af74901a62428a}{void {\bfseries set\-Encoding} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&e)}\label{class_config_option_a8f08440c4bcc057442af74901a62428a}
+
+\item 
+\hypertarget{class_config_option_a91738970409db86f29ad17182728b31c}{void {\bfseries set\-User\-Comment} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&u)}\label{class_config_option_a91738970409db86f29ad17182728b31c}
+
+\end{DoxyCompactItemize}
+\subsection*{Membros protegidos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_config_option_aba8013af8fdfe2786d1a3e6aad982914}{virtual void {\bfseries write\-Template} (\hyperlink{class_f_text_stream}{F\-Text\-Stream} \&t, bool sl, bool upd)=0}\label{class_config_option_aba8013af8fdfe2786d1a3e6aad982914}
+
+\item 
+\hypertarget{class_config_option_ac2fe1963b5e322b6bdc4ea8c75e4335c}{virtual void {\bfseries convert\-Str\-To\-Val} ()}\label{class_config_option_ac2fe1963b5e322b6bdc4ea8c75e4335c}
+
+\item 
+\hypertarget{class_config_option_a3fe7c7c27837cd6f7e6809d81f00ed45}{virtual void {\bfseries subst\-Env\-Vars} ()=0}\label{class_config_option_a3fe7c7c27837cd6f7e6809d81f00ed45}
+
+\item 
+\hypertarget{class_config_option_a9339772ec5ac9fa929938109207f2863}{virtual void {\bfseries init} ()}\label{class_config_option_a9339772ec5ac9fa929938109207f2863}
+
+\item 
+\hypertarget{class_config_option_a424b529d2f4edb93222ff26191484266}{void {\bfseries write\-Bool\-Value} (\hyperlink{class_f_text_stream}{F\-Text\-Stream} \&t, bool v)}\label{class_config_option_a424b529d2f4edb93222ff26191484266}
+
+\item 
+\hypertarget{class_config_option_a3e5e7dbce7de68b4372d6683d6fa41ec}{void {\bfseries write\-Int\-Value} (\hyperlink{class_f_text_stream}{F\-Text\-Stream} \&t, int i)}\label{class_config_option_a3e5e7dbce7de68b4372d6683d6fa41ec}
+
+\item 
+\hypertarget{class_config_option_a0a1f4d85ab9e4d42e353815fd8d9ea27}{void {\bfseries write\-String\-Value} (\hyperlink{class_f_text_stream}{F\-Text\-Stream} \&t, \hyperlink{class_q_c_string}{Q\-C\-String} \&s)}\label{class_config_option_a0a1f4d85ab9e4d42e353815fd8d9ea27}
+
+\item 
+\hypertarget{class_config_option_a5b44863e1c725b636cab847e48bd5f1d}{void {\bfseries write\-String\-List} (\hyperlink{class_f_text_stream}{F\-Text\-Stream} \&t, \hyperlink{class_q_str_list}{Q\-Str\-List} \&l)}\label{class_config_option_a5b44863e1c725b636cab847e48bd5f1d}
+
+\end{DoxyCompactItemize}
+\subsection*{Atributos Protegidos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_config_option_a67f3b0a160a31ef3857558f9cf5d28f0}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries m\-\_\-spaces}}\label{class_config_option_a67f3b0a160a31ef3857558f9cf5d28f0}
+
+\item 
+\hypertarget{class_config_option_a1deac18ce5712c20300cdf5e6e7d5487}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries m\-\_\-name}}\label{class_config_option_a1deac18ce5712c20300cdf5e6e7d5487}
+
+\item 
+\hypertarget{class_config_option_aeb3d8c4cd279017289f24f71ec706449}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries m\-\_\-doc}}\label{class_config_option_aeb3d8c4cd279017289f24f71ec706449}
+
+\item 
+\hypertarget{class_config_option_a004bbf8691ea97d8e6ac0a120ab039d8}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries m\-\_\-dependency}}\label{class_config_option_a004bbf8691ea97d8e6ac0a120ab039d8}
+
+\item 
+\hypertarget{class_config_option_a24958dbeafb4fdb30fd7c4ce73674bb1}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries m\-\_\-encoding}}\label{class_config_option_a24958dbeafb4fdb30fd7c4ce73674bb1}
+
+\item 
+\hypertarget{class_config_option_afe708a88a3934c8d86e521ce0140fbb5}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries m\-\_\-user\-Comment}}\label{class_config_option_afe708a88a3934c8d86e521ce0140fbb5}
+
+\item 
+\hypertarget{class_config_option_adbdd105aaea61a52e29a0e2ff815a18c}{\hyperlink{class_config_option_a976bded296a67e09242af85291a639d6}{Option\-Type} {\bfseries m\-\_\-kind}}\label{class_config_option_adbdd105aaea61a52e29a0e2ff815a18c}
+
+\end{DoxyCompactItemize}
+\subsection*{Amigos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_config_option_ac3da7e21a05bf8852638db7e4dd1b81a}{class {\bfseries Config}}\label{class_config_option_ac3da7e21a05bf8852638db7e4dd1b81a}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+Abstract base class for any configuration option. 
+
+\subsection{Documentação das enumerações}
+\hypertarget{class_config_option_a61dadd085c1777f559549e05962b2c9e}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{class_config_option_a61dadd085c1777f559549e05962b2c9e}
+\begin{Desc}
+\item[Valores da enumeração]\par
+\begin{description}
+\index{M\-A\-X\-\_\-\-O\-P\-T\-I\-O\-N\-\_\-\-L\-E\-N\-G\-T\-H@{M\-A\-X\-\_\-\-O\-P\-T\-I\-O\-N\-\_\-\-L\-E\-N\-G\-T\-H}!Config\-Option@{Config\-Option}}\index{Config\-Option@{Config\-Option}!M\-A\-X\-\_\-\-O\-P\-T\-I\-O\-N\-\_\-\-L\-E\-N\-G\-T\-H@{M\-A\-X\-\_\-\-O\-P\-T\-I\-O\-N\-\_\-\-L\-E\-N\-G\-T\-H}}\item[{\em 
+\hypertarget{class_config_option_a61dadd085c1777f559549e05962b2c9eaf9043652ab6c0a36c22f6bdea78d1d5a}{M\-A\-X\-\_\-\-O\-P\-T\-I\-O\-N\-\_\-\-L\-E\-N\-G\-T\-H}\label{class_config_option_a61dadd085c1777f559549e05962b2c9eaf9043652ab6c0a36c22f6bdea78d1d5a}
+}]Maximum length of an option in the config file. Used for alignment purposes. \end{description}
+\end{Desc}
+\hypertarget{class_config_option_a976bded296a67e09242af85291a639d6}{\index{Config\-Option@{Config\-Option}!Option\-Type@{Option\-Type}}
+\index{Option\-Type@{Option\-Type}!ConfigOption@{Config\-Option}}
+\subsubsection[{Option\-Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Option\-Type}}}\label{class_config_option_a976bded296a67e09242af85291a639d6}
+The type of option 
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_config_option_a263e7663e23978694a454c4155d10d6b}{\index{Config\-Option@{Config\-Option}!kind@{kind}}
+\index{kind@{kind}!ConfigOption@{Config\-Option}}
+\subsubsection[{kind}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Option\-Type} kind (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_config_option_a263e7663e23978694a454c4155d10d6b}
+returns the kind of option this is. 
+
+A documentação para esta classe foi gerada a partir do seguinte ficheiro\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/src/config.\-h\end{DoxyCompactItemize}

@@ -1,0 +1,182 @@
+\hypertarget{class_dir_def}{\section{Referência à classe Dir\-Def}
+\label{class_dir_def}\index{Dir\-Def@{Dir\-Def}}
+}
+
+
+{\ttfamily \#include $<$dirdef.\-h$>$}
+
+Diagrama de heranças da classe Dir\-Def\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_dir_def}
+\end{center}
+\end{figure}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_dir_def_af059611a05df9f478febc3fe5b792ff0}{{\bfseries Dir\-Def} (const char $\ast$path)}\label{class_dir_def_af059611a05df9f478febc3fe5b792ff0}
+
+\item 
+\hyperlink{class_definition_intf_a2dc566dfec40397b2990e6520536ecb5}{Def\-Type} \hyperlink{class_dir_def_aac410235a8bf90e471e649bd9dbf9c5e}{definition\-Type} () const 
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_dir_def_af72a982ba8198cd5c98e9fc850b71df6}{get\-Output\-File\-Base} () const 
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_dir_def_acd17ae1d9600f864b1beb85dfb99a4f4}{anchor} () const 
+\item 
+bool \hyperlink{class_dir_def_a7ff00a84da6e47f3c64c6bf9f6316385}{is\-Linkable\-In\-Project} () const 
+\item 
+bool \hyperlink{class_dir_def_afb5645c0dc69c2f1da67da6e33316e3b}{is\-Linkable} () const 
+\item 
+\hyperlink{class_q_c_string}{Q\-C\-String} \hyperlink{class_dir_def_a67d09f414df966d11bbeba6298307bdf}{display\-Name} (bool=T\-R\-U\-E) const 
+\item 
+\hypertarget{class_dir_def_a1768aec725e6e8d6824efbc6c7438b12}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries short\-Name} () const }\label{class_dir_def_a1768aec725e6e8d6824efbc6c7438b12}
+
+\item 
+\hypertarget{class_dir_def_aaa2e95b878344e83e44008e3d08cbb6a}{void {\bfseries add\-Sub\-Dir} (\hyperlink{class_dir_def}{Dir\-Def} $\ast$subdir)}\label{class_dir_def_aaa2e95b878344e83e44008e3d08cbb6a}
+
+\item 
+\hypertarget{class_dir_def_ae8440604622065ec26bb615bbaf1a16e}{\hyperlink{class_file_list}{File\-List} $\ast$ {\bfseries get\-Files} () const }\label{class_dir_def_ae8440604622065ec26bb615bbaf1a16e}
+
+\item 
+\hypertarget{class_dir_def_af3efe9b1bf1318fd627ece0d7e8bac04}{void {\bfseries add\-File} (\hyperlink{class_file_def}{File\-Def} $\ast$fd)}\label{class_dir_def_af3efe9b1bf1318fd627ece0d7e8bac04}
+
+\item 
+\hypertarget{class_dir_def_a17cde499205d91b455284cd37758a8cb}{const \hyperlink{class_dir_list}{Dir\-List} \& {\bfseries sub\-Dirs} () const }\label{class_dir_def_a17cde499205d91b455284cd37758a8cb}
+
+\item 
+\hypertarget{class_dir_def_a4e82b08f079de43b46df0a4c6e48d5a2}{bool {\bfseries is\-Cluster} () const }\label{class_dir_def_a4e82b08f079de43b46df0a4c6e48d5a2}
+
+\item 
+\hypertarget{class_dir_def_a82c2056cb8c65be6ecfc66a160eb3c0f}{int {\bfseries level} () const }\label{class_dir_def_a82c2056cb8c65be6ecfc66a160eb3c0f}
+
+\item 
+\hypertarget{class_dir_def_ac83d5b0439aa42dcfced369c80347e6a}{\hyperlink{class_dir_def}{Dir\-Def} $\ast$ {\bfseries parent} () const }\label{class_dir_def_ac83d5b0439aa42dcfced369c80347e6a}
+
+\item 
+\hypertarget{class_dir_def_a9af75ec49f33783104fee0d855b4ddae}{int {\bfseries dir\-Count} () const }\label{class_dir_def_a9af75ec49f33783104fee0d855b4ddae}
+
+\item 
+\hypertarget{class_dir_def_a0318344ef012bc0f50b92202302cad22}{const Q\-Dict$<$ \hyperlink{class_used_dir}{Used\-Dir} $>$ $\ast$ {\bfseries used\-Dirs} () const }\label{class_dir_def_a0318344ef012bc0f50b92202302cad22}
+
+\item 
+\hypertarget{class_dir_def_ab3752c7015e92ded6a7faae1bb76b8b8}{bool {\bfseries is\-Parent\-Of} (\hyperlink{class_dir_def}{Dir\-Def} $\ast$dir) const }\label{class_dir_def_ab3752c7015e92ded6a7faae1bb76b8b8}
+
+\item 
+\hypertarget{class_dir_def_a5ffe3359a147cba31cb95fd8cff44815}{bool {\bfseries dep\-Graph\-Is\-Trivial} () const }\label{class_dir_def_a5ffe3359a147cba31cb95fd8cff44815}
+
+\item 
+\hypertarget{class_dir_def_af02d9e727efec6ebc3cc446b249d8fa2}{\hyperlink{class_q_c_string}{Q\-C\-String} {\bfseries short\-Title} () const }\label{class_dir_def_af02d9e727efec6ebc3cc446b249d8fa2}
+
+\item 
+\hypertarget{class_dir_def_a0c85f3695c99f7b1aeb762bbdabc8d62}{void {\bfseries write\-Documentation} (\hyperlink{class_output_list}{Output\-List} \&ol)}\label{class_dir_def_a0c85f3695c99f7b1aeb762bbdabc8d62}
+
+\item 
+\hypertarget{class_dir_def_a8a4c2ace87655b1d62d28c38d287d244}{void {\bfseries write\-Dep\-Graph} (\hyperlink{class_f_text_stream}{F\-Text\-Stream} \&t)}\label{class_dir_def_a8a4c2ace87655b1d62d28c38d287d244}
+
+\item 
+\hypertarget{class_dir_def_a4ca29204a56ab01ca0b1f5e7365d08fc}{void {\bfseries set\-Disk\-Name} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&\hyperlink{class_definition_a2c310e06c9aadc6fb218f80fcbb5c695}{name})}\label{class_dir_def_a4ca29204a56ab01ca0b1f5e7365d08fc}
+
+\end{DoxyCompactItemize}
+\subsection*{Membros públicos estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_dir_def}{Dir\-Def} $\ast$ \hyperlink{class_dir_def_ab01ce958d77b8742a94d2f70e09b999d}{merge\-Directory\-In\-Tree} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&path)
+\end{DoxyCompactItemize}
+\subsection*{Campos de Dados}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_dir_def_a1df99df902f5f6e81ec3e21e9c07360e}{bool {\bfseries visited}}\label{class_dir_def_a1df99df902f5f6e81ec3e21e9c07360e}
+
+\end{DoxyCompactItemize}
+\subsection*{Amigos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_dir_def_abf61ee43dee8d980a631843cd26b71cb}{void {\bfseries compute\-Dir\-Dependencies} ()}\label{class_dir_def_abf61ee43dee8d980a631843cd26b71cb}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Descrição detalhada}
+\hyperlink{class_a}{A} model of a directory symbol. 
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_dir_def_acd17ae1d9600f864b1beb85dfb99a4f4}{\index{Dir\-Def@{Dir\-Def}!anchor@{anchor}}
+\index{anchor@{anchor}!DirDef@{Dir\-Def}}
+\subsubsection[{anchor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} anchor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_dir_def_acd17ae1d9600f864b1beb85dfb99a4f4}
+Returns the anchor within a page where this item can be found 
+
+Implementa \hyperlink{class_definition_aeefc9f68d99e616f91c43a3cebf96357}{Definition}.
+
+\hypertarget{class_dir_def_aac410235a8bf90e471e649bd9dbf9c5e}{\index{Dir\-Def@{Dir\-Def}!definition\-Type@{definition\-Type}}
+\index{definition\-Type@{definition\-Type}!DirDef@{Dir\-Def}}
+\subsubsection[{definition\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Def\-Type} definition\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_dir_def_aac410235a8bf90e471e649bd9dbf9c5e}
+Use this for dynamic inspection of the type of the derived class 
+
+Implementa \hyperlink{class_definition_intf_afba7add835518dbf4202846446d667b0}{Definition\-Intf}.
+
+\hypertarget{class_dir_def_a67d09f414df966d11bbeba6298307bdf}{\index{Dir\-Def@{Dir\-Def}!display\-Name@{display\-Name}}
+\index{display\-Name@{display\-Name}!DirDef@{Dir\-Def}}
+\subsubsection[{display\-Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} display\-Name (
+\begin{DoxyParamCaption}
+\item[{bool}]{include\-Scope = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_dir_def_a67d09f414df966d11bbeba6298307bdf}
+Returns the name of the definition as it appears in the output 
+
+Implementa \hyperlink{class_definition_a98f292cf0fb9a6a1314c7a159b7166ec}{Definition}.
+
+\hypertarget{class_dir_def_af72a982ba8198cd5c98e9fc850b71df6}{\index{Dir\-Def@{Dir\-Def}!get\-Output\-File\-Base@{get\-Output\-File\-Base}}
+\index{get\-Output\-File\-Base@{get\-Output\-File\-Base}!DirDef@{Dir\-Def}}
+\subsubsection[{get\-Output\-File\-Base}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-String} get\-Output\-File\-Base (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_dir_def_af72a982ba8198cd5c98e9fc850b71df6}
+Returns the base file name (without extension) of this definition. as it is referenced to/written to disk. 
+
+Implementa \hyperlink{class_definition_a9d86cf13f2c63846c41ef739e4cdadf6}{Definition}.
+
+\hypertarget{class_dir_def_afb5645c0dc69c2f1da67da6e33316e3b}{\index{Dir\-Def@{Dir\-Def}!is\-Linkable@{is\-Linkable}}
+\index{is\-Linkable@{is\-Linkable}!DirDef@{Dir\-Def}}
+\subsubsection[{is\-Linkable}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-Linkable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_dir_def_afb5645c0dc69c2f1da67da6e33316e3b}
+Returns T\-R\-U\-E iff it is possible to link to this item. This can be a link to another project imported via a tag file. 
+
+Implementa \hyperlink{class_definition_a53420387530937059d408a7e4316c375}{Definition}.
+
+\hypertarget{class_dir_def_a7ff00a84da6e47f3c64c6bf9f6316385}{\index{Dir\-Def@{Dir\-Def}!is\-Linkable\-In\-Project@{is\-Linkable\-In\-Project}}
+\index{is\-Linkable\-In\-Project@{is\-Linkable\-In\-Project}!DirDef@{Dir\-Def}}
+\subsubsection[{is\-Linkable\-In\-Project}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-Linkable\-In\-Project (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_dir_def_a7ff00a84da6e47f3c64c6bf9f6316385}
+Returns T\-R\-U\-E iff it is possible to link to this item within this project. 
+
+Implementa \hyperlink{class_definition_a2a4aa56e5209c7fbed15d5c3a3791643}{Definition}.
+
+\hypertarget{class_dir_def_ab01ce958d77b8742a94d2f70e09b999d}{\index{Dir\-Def@{Dir\-Def}!merge\-Directory\-In\-Tree@{merge\-Directory\-In\-Tree}}
+\index{merge\-Directory\-In\-Tree@{merge\-Directory\-In\-Tree}!DirDef@{Dir\-Def}}
+\subsubsection[{merge\-Directory\-In\-Tree}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Dir\-Def} $\ast$ merge\-Directory\-In\-Tree (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-C\-String} \&}]{path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_dir_def_ab01ce958d77b8742a94d2f70e09b999d}
+strip part of {\itshape path} if it matches one of the paths in the Config\-\_\-get\-List(\char`\"{}\-S\-T\-R\-I\-P\-\_\-\-F\-R\-O\-M\-\_\-\-P\-A\-T\-H\char`\"{}) list 
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/src/dirdef.\-h\item 
+C\-:/\-Users/teste/git/doxygen/src/dirdef.\-cpp\end{DoxyCompactItemize}

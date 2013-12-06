@@ -1,0 +1,907 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>CEM RODAS: Referência à classe TranslatorAdapter_1_6_3</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">CEM RODAS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Localizar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="modules.html"><span>Módulos</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Estruturas&#160;de&#160;dados</span></a></li>
+      <li><a href="files.html"><span>Ficheiros</span></a></li>
+      <li><a href="examples.html"><span>Exemplos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Localizar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Estruturas&#160;de&#160;dados</span></a></li>
+      <li><a href="classes.html"><span>Índice&#160;das&#160;estruturas&#160;de&#160;dados</span></a></li>
+      <li><a href="hierarchy.html"><span>Hierarquia&#160;de&#160;classes</span></a></li>
+      <li><a href="functions.html"><span>Campos&#160;de&#160;dados</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tudo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Estruturas de dados</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Ficheiros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variáveis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Definições de tipos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerações</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Valores da enumeração</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Amigos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Grupos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Membros públicos</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência à classe TranslatorAdapter_1_6_3</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="translator__adapter_8h_source.html">translator_adapter.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagrama de heranças da classe TranslatorAdapter_1_6_3</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_translator_adapter__1__6__3.png" usemap="#TranslatorAdapter_1_6_3_map" alt=""/>
+  <map id="TranslatorAdapter_1_6_3_map" name="TranslatorAdapter_1_6_3_map">
+<area href="class_translator_adapter__1__7__5.html" alt="TranslatorAdapter_1_7_5" shape="rect" coords="0,280,156,304"/>
+<area href="class_translator_adapter__1__8__0.html" alt="TranslatorAdapter_1_8_0" shape="rect" coords="0,224,156,248"/>
+<area href="class_translator_adapter__1__8__2.html" alt="TranslatorAdapter_1_8_2" shape="rect" coords="0,168,156,192"/>
+<area href="class_translator_adapter__1__8__4.html" alt="TranslatorAdapter_1_8_4" shape="rect" coords="0,112,156,136"/>
+<area href="class_translator_adapter_base.html" alt="TranslatorAdapterBase" shape="rect" coords="0,56,156,80"/>
+<area href="class_translator.html" alt="Translator" shape="rect" coords="0,0,156,24"/>
+<area href="class_translator_adapter__1__6__0.html" alt="TranslatorAdapter_1_6_0" shape="rect" coords="0,392,156,416"/>
+<area href="class_translator_adapter__1__5__4.html" alt="TranslatorAdapter_1_5_4" shape="rect" coords="166,448,322,472"/>
+<area href="class_translator_afrikaans.html" alt="TranslatorAfrikaans" shape="rect" coords="166,504,322,528"/>
+<area href="class_translator_finnish.html" alt="TranslatorFinnish" shape="rect" coords="166,560,322,584"/>
+<area href="class_translator_macedonian.html" alt="TranslatorMacedonian" shape="rect" coords="166,616,322,640"/>
+<area href="class_translator_serbian.html" alt="TranslatorSerbian" shape="rect" coords="166,672,322,696"/>
+<area href="class_translator_serbian_cyrillic.html" alt="TranslatorSerbianCyrillic" shape="rect" coords="166,728,322,752"/>
+<area href="class_translator_swedish.html" alt="TranslatorSwedish" shape="rect" coords="166,784,322,808"/>
+<area href="class_translator_vietnamese.html" alt="TranslatorVietnamese" shape="rect" coords="166,840,322,864"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Membros públicos</h2></td></tr>
+<tr class="memitem:aa2c053398a494e36caf5152d9a4fc6cf"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_translator_adapter__1__6__3.html#aa2c053398a494e36caf5152d9a4fc6cf">updateNeededMessage</a> ()</td></tr>
+<tr class="separator:aa2c053398a494e36caf5152d9a4fc6cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf964d17bad4c55c393193fe9708575f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acf964d17bad4c55c393193fe9708575f"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trFileIn</b> (const char *name)</td></tr>
+<tr class="separator:acf964d17bad4c55c393193fe9708575f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53f57c6e2aa0b9dc09bc47b3746d3481"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a53f57c6e2aa0b9dc09bc47b3746d3481"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trIncludesFileIn</b> (const char *name)</td></tr>
+<tr class="separator:a53f57c6e2aa0b9dc09bc47b3746d3481"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19c43671f677ae0445fca1fe7a5f62cc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a19c43671f677ae0445fca1fe7a5f62cc"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trDateTime</b> (int year, int month, int day, int dayOfWeek, int hour, int minutes, int seconds, bool includeTime)</td></tr>
+<tr class="separator:a19c43671f677ae0445fca1fe7a5f62cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_translator_adapter__1__7__5"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_translator_adapter__1__7__5')"><img src="closed.png" alt="-"/>&#160;Membros públicos inherited from <a class="el" href="class_translator_adapter__1__7__5.html">TranslatorAdapter_1_7_5</a></td></tr>
+<tr class="memitem:ae43b2c6dbb1637144e32cd13a0d4704c inherit pub_methods_class_translator_adapter__1__7__5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae43b2c6dbb1637144e32cd13a0d4704c"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trCiteReferences</b> ()</td></tr>
+<tr class="separator:ae43b2c6dbb1637144e32cd13a0d4704c inherit pub_methods_class_translator_adapter__1__7__5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a840474c30dfc2d4e92d1a29c5d1bf343 inherit pub_methods_class_translator_adapter__1__7__5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a840474c30dfc2d4e92d1a29c5d1bf343"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trCopyright</b> ()</td></tr>
+<tr class="separator:a840474c30dfc2d4e92d1a29c5d1bf343 inherit pub_methods_class_translator_adapter__1__7__5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbe522be6eed72f54409458a1896323c inherit pub_methods_class_translator_adapter__1__7__5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abbe522be6eed72f54409458a1896323c"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trDirDepGraph</b> (const char *name)</td></tr>
+<tr class="separator:abbe522be6eed72f54409458a1896323c inherit pub_methods_class_translator_adapter__1__7__5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_translator_adapter__1__8__0"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_translator_adapter__1__8__0')"><img src="closed.png" alt="-"/>&#160;Membros públicos inherited from <a class="el" href="class_translator_adapter__1__8__0.html">TranslatorAdapter_1_8_0</a></td></tr>
+<tr class="memitem:a138b581235bf64a0338ed25ee0d1ad61 inherit pub_methods_class_translator_adapter__1__8__0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a138b581235bf64a0338ed25ee0d1ad61"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trDetailLevel</b> ()</td></tr>
+<tr class="separator:a138b581235bf64a0338ed25ee0d1ad61 inherit pub_methods_class_translator_adapter__1__8__0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9599164391093757c91bbe746f694a5 inherit pub_methods_class_translator_adapter__1__8__0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad9599164391093757c91bbe746f694a5"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trTemplateParameters</b> ()</td></tr>
+<tr class="separator:ad9599164391093757c91bbe746f694a5 inherit pub_methods_class_translator_adapter__1__8__0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a391327398836ee03f1d00415b80cb997 inherit pub_methods_class_translator_adapter__1__8__0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a391327398836ee03f1d00415b80cb997"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trAndMore</b> (const <a class="el" href="class_q_c_string.html">QCString</a> &amp;number)</td></tr>
+<tr class="separator:a391327398836ee03f1d00415b80cb997 inherit pub_methods_class_translator_adapter__1__8__0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2039b9a9624800366462f980e8ebce70 inherit pub_methods_class_translator_adapter__1__8__0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2039b9a9624800366462f980e8ebce70"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trEnumGeneratedFromFiles</b> (bool single)</td></tr>
+<tr class="separator:a2039b9a9624800366462f980e8ebce70 inherit pub_methods_class_translator_adapter__1__8__0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0209ef4cc7768fc9abf62f7ffc95534e inherit pub_methods_class_translator_adapter__1__8__0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0209ef4cc7768fc9abf62f7ffc95534e"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trEnumReference</b> (const char *name)</td></tr>
+<tr class="separator:a0209ef4cc7768fc9abf62f7ffc95534e inherit pub_methods_class_translator_adapter__1__8__0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8b8b1bb56a7ea74b11dad76e644968e inherit pub_methods_class_translator_adapter__1__8__0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af8b8b1bb56a7ea74b11dad76e644968e"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trInheritedFrom</b> (const char *members, const char *what)</td></tr>
+<tr class="separator:af8b8b1bb56a7ea74b11dad76e644968e inherit pub_methods_class_translator_adapter__1__8__0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62da1a83afa60109108fba6ad327a06f inherit pub_methods_class_translator_adapter__1__8__0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a62da1a83afa60109108fba6ad327a06f"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trAdditionalInheritedMembers</b> ()</td></tr>
+<tr class="separator:a62da1a83afa60109108fba6ad327a06f inherit pub_methods_class_translator_adapter__1__8__0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_translator_adapter__1__8__2"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_translator_adapter__1__8__2')"><img src="closed.png" alt="-"/>&#160;Membros públicos inherited from <a class="el" href="class_translator_adapter__1__8__2.html">TranslatorAdapter_1_8_2</a></td></tr>
+<tr class="memitem:a1800c322fe577f6dfab2ab8eb463a78e inherit pub_methods_class_translator_adapter__1__8__2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1800c322fe577f6dfab2ab8eb463a78e"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trPanelSynchronisationTooltip</b> (bool enable)</td></tr>
+<tr class="separator:a1800c322fe577f6dfab2ab8eb463a78e inherit pub_methods_class_translator_adapter__1__8__2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48bb5cf8c4d20b9215921504ca43c8cf inherit pub_methods_class_translator_adapter__1__8__2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a48bb5cf8c4d20b9215921504ca43c8cf"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trProvidedByCategory</b> ()</td></tr>
+<tr class="separator:a48bb5cf8c4d20b9215921504ca43c8cf inherit pub_methods_class_translator_adapter__1__8__2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a943bb1d0d3cf3c3ddca3616c21f815da inherit pub_methods_class_translator_adapter__1__8__2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a943bb1d0d3cf3c3ddca3616c21f815da"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trExtendsClass</b> ()</td></tr>
+<tr class="separator:a943bb1d0d3cf3c3ddca3616c21f815da inherit pub_methods_class_translator_adapter__1__8__2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00e0dc60db9c989dad1bc310b4bdf08c inherit pub_methods_class_translator_adapter__1__8__2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a00e0dc60db9c989dad1bc310b4bdf08c"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trClassMethods</b> ()</td></tr>
+<tr class="separator:a00e0dc60db9c989dad1bc310b4bdf08c inherit pub_methods_class_translator_adapter__1__8__2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac194051c0538db0a70504f6d11fbf9b7 inherit pub_methods_class_translator_adapter__1__8__2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac194051c0538db0a70504f6d11fbf9b7"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trInstanceMethods</b> ()</td></tr>
+<tr class="separator:ac194051c0538db0a70504f6d11fbf9b7 inherit pub_methods_class_translator_adapter__1__8__2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4666cdb4ca29df1818744d88fc17e619 inherit pub_methods_class_translator_adapter__1__8__2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4666cdb4ca29df1818744d88fc17e619"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trMethodDocumentation</b> ()</td></tr>
+<tr class="separator:a4666cdb4ca29df1818744d88fc17e619 inherit pub_methods_class_translator_adapter__1__8__2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5aeee72580ed889d0f0253be39800cc8 inherit pub_methods_class_translator_adapter__1__8__2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5aeee72580ed889d0f0253be39800cc8"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trDesignOverview</b> ()</td></tr>
+<tr class="separator:a5aeee72580ed889d0f0253be39800cc8 inherit pub_methods_class_translator_adapter__1__8__2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_translator_adapter__1__8__4"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_translator_adapter__1__8__4')"><img src="closed.png" alt="-"/>&#160;Membros públicos inherited from <a class="el" href="class_translator_adapter__1__8__4.html">TranslatorAdapter_1_8_4</a></td></tr>
+<tr class="memitem:a3e32b2fdb1d61783cd0fa4734beed3da inherit pub_methods_class_translator_adapter__1__8__4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3e32b2fdb1d61783cd0fa4734beed3da"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trInterfaces</b> ()</td></tr>
+<tr class="separator:a3e32b2fdb1d61783cd0fa4734beed3da inherit pub_methods_class_translator_adapter__1__8__4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a0aa68d1d3b75a4b3dd395c7b624f64 inherit pub_methods_class_translator_adapter__1__8__4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0a0aa68d1d3b75a4b3dd395c7b624f64"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trServices</b> ()</td></tr>
+<tr class="separator:a0a0aa68d1d3b75a4b3dd395c7b624f64 inherit pub_methods_class_translator_adapter__1__8__4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92c2fd6605d059463589fcef7b1cea79 inherit pub_methods_class_translator_adapter__1__8__4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a92c2fd6605d059463589fcef7b1cea79"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trConstantGroups</b> ()</td></tr>
+<tr class="separator:a92c2fd6605d059463589fcef7b1cea79 inherit pub_methods_class_translator_adapter__1__8__4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afee1f6e0599fe1d0938c65e7adce44ba inherit pub_methods_class_translator_adapter__1__8__4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afee1f6e0599fe1d0938c65e7adce44ba"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trConstantGroupReference</b> (const char *namespaceName)</td></tr>
+<tr class="separator:afee1f6e0599fe1d0938c65e7adce44ba inherit pub_methods_class_translator_adapter__1__8__4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade4a083ba7d9b0c1317c6c36f5bce96c inherit pub_methods_class_translator_adapter__1__8__4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ade4a083ba7d9b0c1317c6c36f5bce96c"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trServiceReference</b> (const char *sName)</td></tr>
+<tr class="separator:ade4a083ba7d9b0c1317c6c36f5bce96c inherit pub_methods_class_translator_adapter__1__8__4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a548555333d671f53e736a598b1d797a0 inherit pub_methods_class_translator_adapter__1__8__4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a548555333d671f53e736a598b1d797a0"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trSingletonReference</b> (const char *sName)</td></tr>
+<tr class="separator:a548555333d671f53e736a598b1d797a0 inherit pub_methods_class_translator_adapter__1__8__4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5801f97b602eaa907d969d8cc05be08 inherit pub_methods_class_translator_adapter__1__8__4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab5801f97b602eaa907d969d8cc05be08"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trServiceGeneratedFromFiles</b> (bool single)</td></tr>
+<tr class="separator:ab5801f97b602eaa907d969d8cc05be08 inherit pub_methods_class_translator_adapter__1__8__4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefe3e3adb305c5ae4ea863f4586ab0f0 inherit pub_methods_class_translator_adapter__1__8__4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aefe3e3adb305c5ae4ea863f4586ab0f0"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trSingletonGeneratedFromFiles</b> (bool single)</td></tr>
+<tr class="separator:aefe3e3adb305c5ae4ea863f4586ab0f0 inherit pub_methods_class_translator_adapter__1__8__4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_translator"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_translator')"><img src="closed.png" alt="-"/>&#160;Membros públicos inherited from <a class="el" href="class_translator.html">Translator</a></td></tr>
+<tr class="memitem:a59040066dcfd8ce82fd9d8bf11cc32ec inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a59040066dcfd8ce82fd9d8bf11cc32ec"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>idLanguage</b> ()=0</td></tr>
+<tr class="separator:a59040066dcfd8ce82fd9d8bf11cc32ec inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b6d7fa9137a1abf809672a6e0dd9596 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6b6d7fa9137a1abf809672a6e0dd9596"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>latexLanguageSupportCommand</b> ()=0</td></tr>
+<tr class="separator:a6b6d7fa9137a1abf809672a6e0dd9596 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7a311442dabbcc049b0453e6d1b3ee1 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af7a311442dabbcc049b0453e6d1b3ee1"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trRelatedFunctions</b> ()=0</td></tr>
+<tr class="separator:af7a311442dabbcc049b0453e6d1b3ee1 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d6bf0dee21142dd2c71b5695c8de3b1 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7d6bf0dee21142dd2c71b5695c8de3b1"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trRelatedSubscript</b> ()=0</td></tr>
+<tr class="separator:a7d6bf0dee21142dd2c71b5695c8de3b1 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62c9eedd90bdec6a6677053bb7639ca8 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a62c9eedd90bdec6a6677053bb7639ca8"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trDetailedDescription</b> ()=0</td></tr>
+<tr class="separator:a62c9eedd90bdec6a6677053bb7639ca8 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a800f0c705dfa247abae366bee73871f6 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a800f0c705dfa247abae366bee73871f6"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trMemberTypedefDocumentation</b> ()=0</td></tr>
+<tr class="separator:a800f0c705dfa247abae366bee73871f6 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a932bff359236f27796269b5a6e4ed264 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a932bff359236f27796269b5a6e4ed264"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trMemberEnumerationDocumentation</b> ()=0</td></tr>
+<tr class="separator:a932bff359236f27796269b5a6e4ed264 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a663f70a7b0ceeeb494e3c7753a3723c2 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a663f70a7b0ceeeb494e3c7753a3723c2"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trMemberFunctionDocumentation</b> ()=0</td></tr>
+<tr class="separator:a663f70a7b0ceeeb494e3c7753a3723c2 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d21332daad18f4fa4cba6fc837b4cf4 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4d21332daad18f4fa4cba6fc837b4cf4"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trMemberDataDocumentation</b> ()=0</td></tr>
+<tr class="separator:a4d21332daad18f4fa4cba6fc837b4cf4 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af17b52cc6a1d745cce7b09d2204e762c inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af17b52cc6a1d745cce7b09d2204e762c"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trMore</b> ()=0</td></tr>
+<tr class="separator:af17b52cc6a1d745cce7b09d2204e762c inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae35a728dd94cab5a105e0a7efc4c4333 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae35a728dd94cab5a105e0a7efc4c4333"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trListOfAllMembers</b> ()=0</td></tr>
+<tr class="separator:ae35a728dd94cab5a105e0a7efc4c4333 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a233f196798866d2fdfa9ede351296aae inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a233f196798866d2fdfa9ede351296aae"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trMemberList</b> ()=0</td></tr>
+<tr class="separator:a233f196798866d2fdfa9ede351296aae inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfebadb25eba0aad90512a3ab9ca0fd6 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acfebadb25eba0aad90512a3ab9ca0fd6"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trThisIsTheListOfAllMembers</b> ()=0</td></tr>
+<tr class="separator:acfebadb25eba0aad90512a3ab9ca0fd6 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44fb128886628dc573428a2f9258ebd3 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a44fb128886628dc573428a2f9258ebd3"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trIncludingInheritedMembers</b> ()=0</td></tr>
+<tr class="separator:a44fb128886628dc573428a2f9258ebd3 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acad9e3971228f977359f2766bf79268f inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acad9e3971228f977359f2766bf79268f"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trGeneratedAutomatically</b> (const char *s)=0</td></tr>
+<tr class="separator:acad9e3971228f977359f2766bf79268f inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e0230121d45e1888e32579a61835bfa inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6e0230121d45e1888e32579a61835bfa"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trEnumName</b> ()=0</td></tr>
+<tr class="separator:a6e0230121d45e1888e32579a61835bfa inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27cea58e0dbeadf39703664d45fa964c inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a27cea58e0dbeadf39703664d45fa964c"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trEnumValue</b> ()=0</td></tr>
+<tr class="separator:a27cea58e0dbeadf39703664d45fa964c inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeeec73306fb4b3686c09f6b0727211fc inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeeec73306fb4b3686c09f6b0727211fc"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trDefinedIn</b> ()=0</td></tr>
+<tr class="separator:aeeec73306fb4b3686c09f6b0727211fc inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcdc6f30065920577c468142d7e053d1 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adcdc6f30065920577c468142d7e053d1"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trModules</b> ()=0</td></tr>
+<tr class="separator:adcdc6f30065920577c468142d7e053d1 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5782d63c650c189bf8f72d63acea526c inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5782d63c650c189bf8f72d63acea526c"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trClassHierarchy</b> ()=0</td></tr>
+<tr class="separator:a5782d63c650c189bf8f72d63acea526c inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbef6416f2b2f9b4fadf61acb4a1fb13 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adbef6416f2b2f9b4fadf61acb4a1fb13"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trCompoundList</b> ()=0</td></tr>
+<tr class="separator:adbef6416f2b2f9b4fadf61acb4a1fb13 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cd7cfe5aba48b679e57cd8208180514 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7cd7cfe5aba48b679e57cd8208180514"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trFileList</b> ()=0</td></tr>
+<tr class="separator:a7cd7cfe5aba48b679e57cd8208180514 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a8d970d300c84fce41bccfb6e934141 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5a8d970d300c84fce41bccfb6e934141"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trCompoundMembers</b> ()=0</td></tr>
+<tr class="separator:a5a8d970d300c84fce41bccfb6e934141 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fcbfdb5f57736de6f288c90fd6a257c inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2fcbfdb5f57736de6f288c90fd6a257c"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trFileMembers</b> ()=0</td></tr>
+<tr class="separator:a2fcbfdb5f57736de6f288c90fd6a257c inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab94544ff78c330781213a2c96bfb3f01 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab94544ff78c330781213a2c96bfb3f01"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trRelatedPages</b> ()=0</td></tr>
+<tr class="separator:ab94544ff78c330781213a2c96bfb3f01 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1748447d1cc9eaa2e6eeab39912e1a81 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1748447d1cc9eaa2e6eeab39912e1a81"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trExamples</b> ()=0</td></tr>
+<tr class="separator:a1748447d1cc9eaa2e6eeab39912e1a81 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93777092b9192f293423c567de5d42e2 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a93777092b9192f293423c567de5d42e2"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trSearch</b> ()=0</td></tr>
+<tr class="separator:a93777092b9192f293423c567de5d42e2 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad89d23797e10d645c75053b0ef82ad22 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad89d23797e10d645c75053b0ef82ad22"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trClassHierarchyDescription</b> ()=0</td></tr>
+<tr class="separator:ad89d23797e10d645c75053b0ef82ad22 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86f09d8de1eece65b42d78785080629f inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a86f09d8de1eece65b42d78785080629f"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trFileListDescription</b> (bool extractAll)=0</td></tr>
+<tr class="separator:a86f09d8de1eece65b42d78785080629f inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4461ae784d9f8208a1b71a1bb145a9d2 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4461ae784d9f8208a1b71a1bb145a9d2"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trCompoundListDescription</b> ()=0</td></tr>
+<tr class="separator:a4461ae784d9f8208a1b71a1bb145a9d2 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaab7890f117f5432be872c1d0de0ee5d inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaab7890f117f5432be872c1d0de0ee5d"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trCompoundMembersDescription</b> (bool extractAll)=0</td></tr>
+<tr class="separator:aaab7890f117f5432be872c1d0de0ee5d inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af02a708ef3a3261fbaae8a4a76d571c0 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af02a708ef3a3261fbaae8a4a76d571c0"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trFileMembersDescription</b> (bool extractAll)=0</td></tr>
+<tr class="separator:af02a708ef3a3261fbaae8a4a76d571c0 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab92565a48f6206a939c9aa89e36b9f88 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab92565a48f6206a939c9aa89e36b9f88"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trExamplesDescription</b> ()=0</td></tr>
+<tr class="separator:ab92565a48f6206a939c9aa89e36b9f88 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e865c8e6194005457dd1d7150e2dd53 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4e865c8e6194005457dd1d7150e2dd53"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trRelatedPagesDescription</b> ()=0</td></tr>
+<tr class="separator:a4e865c8e6194005457dd1d7150e2dd53 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed88935b8f50cf1e52f7df36799adc9e inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aed88935b8f50cf1e52f7df36799adc9e"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trModulesDescription</b> ()=0</td></tr>
+<tr class="separator:aed88935b8f50cf1e52f7df36799adc9e inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafb930a40c231e9aae593d86b3ba99c3 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aafb930a40c231e9aae593d86b3ba99c3"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trDocumentation</b> ()=0</td></tr>
+<tr class="separator:aafb930a40c231e9aae593d86b3ba99c3 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf23a881bc88dc11ae61c7611304ca0c inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf23a881bc88dc11ae61c7611304ca0c"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trModuleIndex</b> ()=0</td></tr>
+<tr class="separator:adf23a881bc88dc11ae61c7611304ca0c inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a748ffd77e9f471adb2db553f3dcfa3b0 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a748ffd77e9f471adb2db553f3dcfa3b0"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trHierarchicalIndex</b> ()=0</td></tr>
+<tr class="separator:a748ffd77e9f471adb2db553f3dcfa3b0 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5646eea8d3c18bfe9fee955cfd217b7c inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5646eea8d3c18bfe9fee955cfd217b7c"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trCompoundIndex</b> ()=0</td></tr>
+<tr class="separator:a5646eea8d3c18bfe9fee955cfd217b7c inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af562edcc631a704dbe54e491a51ac128 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af562edcc631a704dbe54e491a51ac128"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trFileIndex</b> ()=0</td></tr>
+<tr class="separator:af562edcc631a704dbe54e491a51ac128 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a979e6b59cb764b059656a8ae9a8ae611 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a979e6b59cb764b059656a8ae9a8ae611"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trModuleDocumentation</b> ()=0</td></tr>
+<tr class="separator:a979e6b59cb764b059656a8ae9a8ae611 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6f4c1184b8a438637a483732a446964 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa6f4c1184b8a438637a483732a446964"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trClassDocumentation</b> ()=0</td></tr>
+<tr class="separator:aa6f4c1184b8a438637a483732a446964 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad626171232048652bbe622c53e742620 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad626171232048652bbe622c53e742620"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trFileDocumentation</b> ()=0</td></tr>
+<tr class="separator:ad626171232048652bbe622c53e742620 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dcd231e2337f995446812409978e647 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5dcd231e2337f995446812409978e647"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trExampleDocumentation</b> ()=0</td></tr>
+<tr class="separator:a5dcd231e2337f995446812409978e647 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14cf5e21b6407a438a4c74bb85c22afd inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a14cf5e21b6407a438a4c74bb85c22afd"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trPageDocumentation</b> ()=0</td></tr>
+<tr class="separator:a14cf5e21b6407a438a4c74bb85c22afd inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9135f98c43efad97dee141b5a2242f08 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9135f98c43efad97dee141b5a2242f08"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trReferenceManual</b> ()=0</td></tr>
+<tr class="separator:a9135f98c43efad97dee141b5a2242f08 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac68037f451244aa6cef414813b141329 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac68037f451244aa6cef414813b141329"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trDefines</b> ()=0</td></tr>
+<tr class="separator:ac68037f451244aa6cef414813b141329 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac176acbd516074e1cf73f971ece1d7a3 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac176acbd516074e1cf73f971ece1d7a3"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trTypedefs</b> ()=0</td></tr>
+<tr class="separator:ac176acbd516074e1cf73f971ece1d7a3 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a118f069f9b8940cc738ea20f700b8b91 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a118f069f9b8940cc738ea20f700b8b91"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trEnumerations</b> ()=0</td></tr>
+<tr class="separator:a118f069f9b8940cc738ea20f700b8b91 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8728b77e1af602358833b02bf7998d21 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8728b77e1af602358833b02bf7998d21"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trFunctions</b> ()=0</td></tr>
+<tr class="separator:a8728b77e1af602358833b02bf7998d21 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a935a8a3fdbba61a50742f980eccb8d46 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a935a8a3fdbba61a50742f980eccb8d46"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trVariables</b> ()=0</td></tr>
+<tr class="separator:a935a8a3fdbba61a50742f980eccb8d46 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46680488a1c8f807e32ea8159bf2814f inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a46680488a1c8f807e32ea8159bf2814f"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trEnumerationValues</b> ()=0</td></tr>
+<tr class="separator:a46680488a1c8f807e32ea8159bf2814f inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7926f0b8d96c1d2688770af5b5d5b190 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7926f0b8d96c1d2688770af5b5d5b190"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trDefineDocumentation</b> ()=0</td></tr>
+<tr class="separator:a7926f0b8d96c1d2688770af5b5d5b190 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6d832cde5d8dfe784bb53a106b47000 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab6d832cde5d8dfe784bb53a106b47000"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trTypedefDocumentation</b> ()=0</td></tr>
+<tr class="separator:ab6d832cde5d8dfe784bb53a106b47000 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd606de7f2dc70f3990523b0802860ef inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acd606de7f2dc70f3990523b0802860ef"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trEnumerationTypeDocumentation</b> ()=0</td></tr>
+<tr class="separator:acd606de7f2dc70f3990523b0802860ef inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca89851e00258629fa561a0abf4dd8b2 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aca89851e00258629fa561a0abf4dd8b2"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trFunctionDocumentation</b> ()=0</td></tr>
+<tr class="separator:aca89851e00258629fa561a0abf4dd8b2 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2e870f7cafc27cfd768f67e6e0d5136 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af2e870f7cafc27cfd768f67e6e0d5136"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trVariableDocumentation</b> ()=0</td></tr>
+<tr class="separator:af2e870f7cafc27cfd768f67e6e0d5136 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab123a55c288a53299ce5a9c450d8db27 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab123a55c288a53299ce5a9c450d8db27"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trCompounds</b> ()=0</td></tr>
+<tr class="separator:ab123a55c288a53299ce5a9c450d8db27 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a449b819d1716c564a46dc8f00ca54106 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a449b819d1716c564a46dc8f00ca54106"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trGeneratedAt</b> (const char *date, const char *projName)=0</td></tr>
+<tr class="separator:a449b819d1716c564a46dc8f00ca54106 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ff24618ed1204aafb80c2d7fce5b0ed inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5ff24618ed1204aafb80c2d7fce5b0ed"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trClassDiagram</b> (const char *clName)=0</td></tr>
+<tr class="separator:a5ff24618ed1204aafb80c2d7fce5b0ed inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd0c39d606f4358de0becbc95e684e89 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abd0c39d606f4358de0becbc95e684e89"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trForInternalUseOnly</b> ()=0</td></tr>
+<tr class="separator:abd0c39d606f4358de0becbc95e684e89 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c00d463b07008d438f5136f7863c6b1 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7c00d463b07008d438f5136f7863c6b1"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trWarning</b> ()=0</td></tr>
+<tr class="separator:a7c00d463b07008d438f5136f7863c6b1 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a531bc7e8104f8cca07241496ac5c99bb inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a531bc7e8104f8cca07241496ac5c99bb"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trVersion</b> ()=0</td></tr>
+<tr class="separator:a531bc7e8104f8cca07241496ac5c99bb inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ccde65bbaccb615c35651fdb628ba7b inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3ccde65bbaccb615c35651fdb628ba7b"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trDate</b> ()=0</td></tr>
+<tr class="separator:a3ccde65bbaccb615c35651fdb628ba7b inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cbffce718ecf4d12036d08709ff54ce inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6cbffce718ecf4d12036d08709ff54ce"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trReturns</b> ()=0</td></tr>
+<tr class="separator:a6cbffce718ecf4d12036d08709ff54ce inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac94600c914b55d66de3d97b2e8744855 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac94600c914b55d66de3d97b2e8744855"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trSeeAlso</b> ()=0</td></tr>
+<tr class="separator:ac94600c914b55d66de3d97b2e8744855 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af835e5e30911d153a0e4e5f313e27aec inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af835e5e30911d153a0e4e5f313e27aec"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trParameters</b> ()=0</td></tr>
+<tr class="separator:af835e5e30911d153a0e4e5f313e27aec inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3845cb53ebea87fef327dcc815e36ce inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab3845cb53ebea87fef327dcc815e36ce"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trExceptions</b> ()=0</td></tr>
+<tr class="separator:ab3845cb53ebea87fef327dcc815e36ce inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c8fd1b3bc0a501de429419515edf772 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1c8fd1b3bc0a501de429419515edf772"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trGeneratedBy</b> ()=0</td></tr>
+<tr class="separator:a1c8fd1b3bc0a501de429419515edf772 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add63900f48d79dd5d2f8585b25c6b2ae inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="add63900f48d79dd5d2f8585b25c6b2ae"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trNamespaceList</b> ()=0</td></tr>
+<tr class="separator:add63900f48d79dd5d2f8585b25c6b2ae inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0436e32ac648cab03b1cf568cc1f6de8 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0436e32ac648cab03b1cf568cc1f6de8"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trNamespaceListDescription</b> (bool extractAll)=0</td></tr>
+<tr class="separator:a0436e32ac648cab03b1cf568cc1f6de8 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5fd66ba2955bb25cf703556ea9b09eb inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac5fd66ba2955bb25cf703556ea9b09eb"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trFriends</b> ()=0</td></tr>
+<tr class="separator:ac5fd66ba2955bb25cf703556ea9b09eb inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49affc9cb6a2cdc037bf699deb601b64 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a49affc9cb6a2cdc037bf699deb601b64"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trRelatedFunctionDocumentation</b> ()=0</td></tr>
+<tr class="separator:a49affc9cb6a2cdc037bf699deb601b64 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c6a74202ba967c79f5d9ed79ca00e3e inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8c6a74202ba967c79f5d9ed79ca00e3e"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trCompoundReference</b> (const char *clName, <a class="el" href="class_class_def.html#a768a6f0a6fd7e9087ff7971abbcc3f36">ClassDef::CompoundType</a> compType, bool isTemplate)=0</td></tr>
+<tr class="separator:a8c6a74202ba967c79f5d9ed79ca00e3e inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af722a392d8b77163513045cd005af036 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af722a392d8b77163513045cd005af036"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trFileReference</b> (const char *fileName)=0</td></tr>
+<tr class="separator:af722a392d8b77163513045cd005af036 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab43d665ef672bc950891637cc52edfae inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab43d665ef672bc950891637cc52edfae"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trNamespaceReference</b> (const char *namespaceName)=0</td></tr>
+<tr class="separator:ab43d665ef672bc950891637cc52edfae inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5973393e31cd79b6fbaebbed09f854e1 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5973393e31cd79b6fbaebbed09f854e1"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trPublicMembers</b> ()=0</td></tr>
+<tr class="separator:a5973393e31cd79b6fbaebbed09f854e1 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e35ac45fc776084f1aa05fee2387a8f inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7e35ac45fc776084f1aa05fee2387a8f"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trPublicSlots</b> ()=0</td></tr>
+<tr class="separator:a7e35ac45fc776084f1aa05fee2387a8f inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a349d5daf76b488338ddcab76009293b3 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a349d5daf76b488338ddcab76009293b3"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trSignals</b> ()=0</td></tr>
+<tr class="separator:a349d5daf76b488338ddcab76009293b3 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe4adaec8a0d30b078bf62ae19b7dd34 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afe4adaec8a0d30b078bf62ae19b7dd34"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trStaticPublicMembers</b> ()=0</td></tr>
+<tr class="separator:afe4adaec8a0d30b078bf62ae19b7dd34 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50116f201c9a1371e8d33e91cda8162d inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a50116f201c9a1371e8d33e91cda8162d"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trProtectedMembers</b> ()=0</td></tr>
+<tr class="separator:a50116f201c9a1371e8d33e91cda8162d inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa83c847678a6e9b03414f1695f4389f0 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa83c847678a6e9b03414f1695f4389f0"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trProtectedSlots</b> ()=0</td></tr>
+<tr class="separator:aa83c847678a6e9b03414f1695f4389f0 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31be9279d5666e5e58e4f12d4931e1f9 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a31be9279d5666e5e58e4f12d4931e1f9"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trStaticProtectedMembers</b> ()=0</td></tr>
+<tr class="separator:a31be9279d5666e5e58e4f12d4931e1f9 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc930c928857a317a1fd9dcc8d949e6b inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afc930c928857a317a1fd9dcc8d949e6b"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trPrivateMembers</b> ()=0</td></tr>
+<tr class="separator:afc930c928857a317a1fd9dcc8d949e6b inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7252543a3b6fb3f642a8c1236fdbdeae inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7252543a3b6fb3f642a8c1236fdbdeae"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trPrivateSlots</b> ()=0</td></tr>
+<tr class="separator:a7252543a3b6fb3f642a8c1236fdbdeae inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8926776a1a676ad155c37db94cd35f1c inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8926776a1a676ad155c37db94cd35f1c"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trStaticPrivateMembers</b> ()=0</td></tr>
+<tr class="separator:a8926776a1a676ad155c37db94cd35f1c inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13db192a1ffa267eb0557ff67012cc66 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a13db192a1ffa267eb0557ff67012cc66"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trWriteList</b> (int numEntries)=0</td></tr>
+<tr class="separator:a13db192a1ffa267eb0557ff67012cc66 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab55ef69cf422b5ccef8136424f2204da inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab55ef69cf422b5ccef8136424f2204da"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trInheritsList</b> (int numEntries)=0</td></tr>
+<tr class="separator:ab55ef69cf422b5ccef8136424f2204da inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06b209131ddd17778480f9818dca12d4 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a06b209131ddd17778480f9818dca12d4"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trInheritedByList</b> (int numEntries)=0</td></tr>
+<tr class="separator:a06b209131ddd17778480f9818dca12d4 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ac53b8305440dc6cb5042efd4b01a6e inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3ac53b8305440dc6cb5042efd4b01a6e"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trReimplementedFromList</b> (int numEntries)=0</td></tr>
+<tr class="separator:a3ac53b8305440dc6cb5042efd4b01a6e inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ecd3d7fc08c9d1bbcb2bbe2bdfec418 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3ecd3d7fc08c9d1bbcb2bbe2bdfec418"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trReimplementedInList</b> (int numEntries)=0</td></tr>
+<tr class="separator:a3ecd3d7fc08c9d1bbcb2bbe2bdfec418 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d12c2028ce36e0655ce3acc89635665 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6d12c2028ce36e0655ce3acc89635665"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trNamespaceMembers</b> ()=0</td></tr>
+<tr class="separator:a6d12c2028ce36e0655ce3acc89635665 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add789f1f5f28b1cdb460d747031ec010 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="add789f1f5f28b1cdb460d747031ec010"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trNamespaceMemberDescription</b> (bool extractAll)=0</td></tr>
+<tr class="separator:add789f1f5f28b1cdb460d747031ec010 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bc742e0a05f2abb36fbd0dea256c338 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8bc742e0a05f2abb36fbd0dea256c338"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trNamespaceIndex</b> ()=0</td></tr>
+<tr class="separator:a8bc742e0a05f2abb36fbd0dea256c338 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70de41b657b6e6fd7647357cef9a6331 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a70de41b657b6e6fd7647357cef9a6331"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trNamespaceDocumentation</b> ()=0</td></tr>
+<tr class="separator:a70de41b657b6e6fd7647357cef9a6331 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af026dc987ae247f2a7e9037fb73e7f74 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af026dc987ae247f2a7e9037fb73e7f74"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trNamespaces</b> ()=0</td></tr>
+<tr class="separator:af026dc987ae247f2a7e9037fb73e7f74 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97f9b79af8da1510a8c449c2cdeb6df0 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a97f9b79af8da1510a8c449c2cdeb6df0"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trGeneratedFromFiles</b> (<a class="el" href="class_class_def.html#a768a6f0a6fd7e9087ff7971abbcc3f36">ClassDef::CompoundType</a> compType, bool single)=0</td></tr>
+<tr class="separator:a97f9b79af8da1510a8c449c2cdeb6df0 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04d3c35e204e7be1c4d8f0b314d022a3 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a04d3c35e204e7be1c4d8f0b314d022a3"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trReturnValues</b> ()=0</td></tr>
+<tr class="separator:a04d3c35e204e7be1c4d8f0b314d022a3 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf0ff2a2c07c73166cfbefd7f820c291 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaf0ff2a2c07c73166cfbefd7f820c291"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trMainPage</b> ()=0</td></tr>
+<tr class="separator:aaf0ff2a2c07c73166cfbefd7f820c291 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27618a1695aa546f430941bff9affe87 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a27618a1695aa546f430941bff9affe87"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trPageAbbreviation</b> ()=0</td></tr>
+<tr class="separator:a27618a1695aa546f430941bff9affe87 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2174eae8342d031bf40ae77b731a244 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae2174eae8342d031bf40ae77b731a244"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trDefinedAtLineInSourceFile</b> ()=0</td></tr>
+<tr class="separator:ae2174eae8342d031bf40ae77b731a244 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82a2027368b675fe331ba959598e908e inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a82a2027368b675fe331ba959598e908e"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trDefinedInSourceFile</b> ()=0</td></tr>
+<tr class="separator:a82a2027368b675fe331ba959598e908e inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a472ee44bc9588d014c039c2afd4e5e06 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a472ee44bc9588d014c039c2afd4e5e06"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trDeprecated</b> ()=0</td></tr>
+<tr class="separator:a472ee44bc9588d014c039c2afd4e5e06 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09d47dbd032d331b41efc957b2eb3812 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a09d47dbd032d331b41efc957b2eb3812"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trCollaborationDiagram</b> (const char *clName)=0</td></tr>
+<tr class="separator:a09d47dbd032d331b41efc957b2eb3812 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e577b4ea1441c3b173ada38e60557ae inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5e577b4ea1441c3b173ada38e60557ae"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trInclDepGraph</b> (const char *fName)=0</td></tr>
+<tr class="separator:a5e577b4ea1441c3b173ada38e60557ae inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa68bf667a9f90891389993066036c115 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa68bf667a9f90891389993066036c115"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trConstructorDocumentation</b> ()=0</td></tr>
+<tr class="separator:aa68bf667a9f90891389993066036c115 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0ffc15f25791db56138c5929da1250d inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad0ffc15f25791db56138c5929da1250d"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trGotoSourceCode</b> ()=0</td></tr>
+<tr class="separator:ad0ffc15f25791db56138c5929da1250d inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91f4a2f28940c0dc0a46f8ba7a7e7dc5 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a91f4a2f28940c0dc0a46f8ba7a7e7dc5"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trGotoDocumentation</b> ()=0</td></tr>
+<tr class="separator:a91f4a2f28940c0dc0a46f8ba7a7e7dc5 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31ef5cfc631ef75a7378d1bdf01a3de2 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a31ef5cfc631ef75a7378d1bdf01a3de2"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trPrecondition</b> ()=0</td></tr>
+<tr class="separator:a31ef5cfc631ef75a7378d1bdf01a3de2 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8572b4ab810c1558e421f285b0aba007 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8572b4ab810c1558e421f285b0aba007"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trPostcondition</b> ()=0</td></tr>
+<tr class="separator:a8572b4ab810c1558e421f285b0aba007 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58cdde0c5ffe5ed4b513b2613d1aae70 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a58cdde0c5ffe5ed4b513b2613d1aae70"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trInvariant</b> ()=0</td></tr>
+<tr class="separator:a58cdde0c5ffe5ed4b513b2613d1aae70 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a168c7699b30781af79718206ae8d871d inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a168c7699b30781af79718206ae8d871d"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trInitialValue</b> ()=0</td></tr>
+<tr class="separator:a168c7699b30781af79718206ae8d871d inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acce676fe63940b2759ae11c1a88d1c75 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acce676fe63940b2759ae11c1a88d1c75"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trCode</b> ()=0</td></tr>
+<tr class="separator:acce676fe63940b2759ae11c1a88d1c75 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaa3ab95f5a0f45095512b528033a93e inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adaa3ab95f5a0f45095512b528033a93e"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trGraphicalHierarchy</b> ()=0</td></tr>
+<tr class="separator:adaa3ab95f5a0f45095512b528033a93e inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6603c284ec70bfeaea08ea86facb2d70 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6603c284ec70bfeaea08ea86facb2d70"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trGotoGraphicalHierarchy</b> ()=0</td></tr>
+<tr class="separator:a6603c284ec70bfeaea08ea86facb2d70 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbb7f3207ff306723af69a95ed8b0d78 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abbb7f3207ff306723af69a95ed8b0d78"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trGotoTextualHierarchy</b> ()=0</td></tr>
+<tr class="separator:abbb7f3207ff306723af69a95ed8b0d78 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f13e3f6d67c69373b1daac334b23f12 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7f13e3f6d67c69373b1daac334b23f12"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trPageIndex</b> ()=0</td></tr>
+<tr class="separator:a7f13e3f6d67c69373b1daac334b23f12 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf0b0b80df531f2e840bccdcd04397fd inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abf0b0b80df531f2e840bccdcd04397fd"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trNote</b> ()=0</td></tr>
+<tr class="separator:abf0b0b80df531f2e840bccdcd04397fd inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa759630e7191ed1ef367bb90a2218984 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa759630e7191ed1ef367bb90a2218984"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trPublicTypes</b> ()=0</td></tr>
+<tr class="separator:aa759630e7191ed1ef367bb90a2218984 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12c13e35ffa56a7375f551bfbfaa54cb inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a12c13e35ffa56a7375f551bfbfaa54cb"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trPublicAttribs</b> ()=0</td></tr>
+<tr class="separator:a12c13e35ffa56a7375f551bfbfaa54cb inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39e0fb6154ed5e774563770c24e2d2bc inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a39e0fb6154ed5e774563770c24e2d2bc"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trStaticPublicAttribs</b> ()=0</td></tr>
+<tr class="separator:a39e0fb6154ed5e774563770c24e2d2bc inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15fea0e101787bed479a9247e47326a3 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a15fea0e101787bed479a9247e47326a3"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trProtectedTypes</b> ()=0</td></tr>
+<tr class="separator:a15fea0e101787bed479a9247e47326a3 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c37e514b0234dee278f56b7bea1ffcf inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9c37e514b0234dee278f56b7bea1ffcf"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trProtectedAttribs</b> ()=0</td></tr>
+<tr class="separator:a9c37e514b0234dee278f56b7bea1ffcf inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ddf8946635747f8b9edca9e4aa34bf3 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2ddf8946635747f8b9edca9e4aa34bf3"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trStaticProtectedAttribs</b> ()=0</td></tr>
+<tr class="separator:a2ddf8946635747f8b9edca9e4aa34bf3 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace82400748d08102fec190d5e6655ab3 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ace82400748d08102fec190d5e6655ab3"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trPrivateTypes</b> ()=0</td></tr>
+<tr class="separator:ace82400748d08102fec190d5e6655ab3 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f84b790002af16bdecc1e16940746b3 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5f84b790002af16bdecc1e16940746b3"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trPrivateAttribs</b> ()=0</td></tr>
+<tr class="separator:a5f84b790002af16bdecc1e16940746b3 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62afa4582c64f416523943a8e317d306 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a62afa4582c64f416523943a8e317d306"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trStaticPrivateAttribs</b> ()=0</td></tr>
+<tr class="separator:a62afa4582c64f416523943a8e317d306 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01ed96438839f3a29dbecb4e726bf839 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a01ed96438839f3a29dbecb4e726bf839"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trTodo</b> ()=0</td></tr>
+<tr class="separator:a01ed96438839f3a29dbecb4e726bf839 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf0cdecf86a74c3861e05de360a97003 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abf0cdecf86a74c3861e05de360a97003"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trTodoList</b> ()=0</td></tr>
+<tr class="separator:abf0cdecf86a74c3861e05de360a97003 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a804ea39df9fcd9ffbd3950a57e2b1707 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a804ea39df9fcd9ffbd3950a57e2b1707"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trReferencedBy</b> ()=0</td></tr>
+<tr class="separator:a804ea39df9fcd9ffbd3950a57e2b1707 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a493c99cefe6ca5f47741ed581cb7804b inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a493c99cefe6ca5f47741ed581cb7804b"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trRemarks</b> ()=0</td></tr>
+<tr class="separator:a493c99cefe6ca5f47741ed581cb7804b inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1f3f6b615b343c44c169e763a0425d6 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa1f3f6b615b343c44c169e763a0425d6"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trAttention</b> ()=0</td></tr>
+<tr class="separator:aa1f3f6b615b343c44c169e763a0425d6 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f359627b6aaccf4d29d0da7454775f1 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1f359627b6aaccf4d29d0da7454775f1"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trInclByDepGraph</b> ()=0</td></tr>
+<tr class="separator:a1f359627b6aaccf4d29d0da7454775f1 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a102a0b1ba7e5f631abf221927595995b inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a102a0b1ba7e5f631abf221927595995b"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trSince</b> ()=0</td></tr>
+<tr class="separator:a102a0b1ba7e5f631abf221927595995b inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e70ba21a9b01d4fdb34e298442f8379 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7e70ba21a9b01d4fdb34e298442f8379"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trLegendTitle</b> ()=0</td></tr>
+<tr class="separator:a7e70ba21a9b01d4fdb34e298442f8379 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b130e06ff2bea8a90db9261902d9a63 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8b130e06ff2bea8a90db9261902d9a63"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trLegendDocs</b> ()=0</td></tr>
+<tr class="separator:a8b130e06ff2bea8a90db9261902d9a63 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dd5012bafd8f57c3910e0cecd06e6db inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8dd5012bafd8f57c3910e0cecd06e6db"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trLegend</b> ()=0</td></tr>
+<tr class="separator:a8dd5012bafd8f57c3910e0cecd06e6db inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe020677ac09ecbe388da5b967e3d524 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abe020677ac09ecbe388da5b967e3d524"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trTest</b> ()=0</td></tr>
+<tr class="separator:abe020677ac09ecbe388da5b967e3d524 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e1f6aeb0d42b93e1cce80b81e0d81da inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5e1f6aeb0d42b93e1cce80b81e0d81da"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trTestList</b> ()=0</td></tr>
+<tr class="separator:a5e1f6aeb0d42b93e1cce80b81e0d81da inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92d5accf0a7fccbe95a8f59ade02df19 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a92d5accf0a7fccbe95a8f59ade02df19"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trProperties</b> ()=0</td></tr>
+<tr class="separator:a92d5accf0a7fccbe95a8f59ade02df19 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a756ed0cdb4915392aa9f9419edf78abf inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a756ed0cdb4915392aa9f9419edf78abf"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trPropertyDocumentation</b> ()=0</td></tr>
+<tr class="separator:a756ed0cdb4915392aa9f9419edf78abf inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a591927464a08680b5ab81c4c5724a8ea inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a591927464a08680b5ab81c4c5724a8ea"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trClasses</b> ()=0</td></tr>
+<tr class="separator:a591927464a08680b5ab81c4c5724a8ea inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec5df5ba2dbc3dcaf8f292d9a6a6262f inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aec5df5ba2dbc3dcaf8f292d9a6a6262f"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trPackage</b> (const char *name)=0</td></tr>
+<tr class="separator:aec5df5ba2dbc3dcaf8f292d9a6a6262f inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a919880e3bab6c868fc245bcb6044d3be inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a919880e3bab6c868fc245bcb6044d3be"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trPackageList</b> ()=0</td></tr>
+<tr class="separator:a919880e3bab6c868fc245bcb6044d3be inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1ba34155a23c78804c441a7442d37a9 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac1ba34155a23c78804c441a7442d37a9"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trPackageListDescription</b> ()=0</td></tr>
+<tr class="separator:ac1ba34155a23c78804c441a7442d37a9 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a8e30ab54e8768f92270fdab78bffd5 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6a8e30ab54e8768f92270fdab78bffd5"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trPackages</b> ()=0</td></tr>
+<tr class="separator:a6a8e30ab54e8768f92270fdab78bffd5 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dcf688d8b716a0b5e784a1ab5041179 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7dcf688d8b716a0b5e784a1ab5041179"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trDefineValue</b> ()=0</td></tr>
+<tr class="separator:a7dcf688d8b716a0b5e784a1ab5041179 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a680cee6516692ef7f6d0184cea240123 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a680cee6516692ef7f6d0184cea240123"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trBug</b> ()=0</td></tr>
+<tr class="separator:a680cee6516692ef7f6d0184cea240123 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad410366413c311bd3831de922a83ea8a inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad410366413c311bd3831de922a83ea8a"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trBugList</b> ()=0</td></tr>
+<tr class="separator:ad410366413c311bd3831de922a83ea8a inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad311c4c9f94a1560635b5bef47ce2562 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_translator.html#ad311c4c9f94a1560635b5bef47ce2562">trRTFansicp</a> ()=0</td></tr>
+<tr class="separator:ad311c4c9f94a1560635b5bef47ce2562 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb781ed8fe17549dcd60a81559a2fb83 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_translator.html#adb781ed8fe17549dcd60a81559a2fb83">trRTFCharSet</a> ()=0</td></tr>
+<tr class="separator:adb781ed8fe17549dcd60a81559a2fb83 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b77cac2b13bf30087da1b17b7597605 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b77cac2b13bf30087da1b17b7597605"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trRTFGeneralIndex</b> ()=0</td></tr>
+<tr class="separator:a4b77cac2b13bf30087da1b17b7597605 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a3f3c2fdd8238c2cfdefcc60f0519fd inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8a3f3c2fdd8238c2cfdefcc60f0519fd"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trClass</b> (bool first_capital, bool singular)=0</td></tr>
+<tr class="separator:a8a3f3c2fdd8238c2cfdefcc60f0519fd inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b2faea77f064bf7ef788024dd442949 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b2faea77f064bf7ef788024dd442949"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trFile</b> (bool first_capital, bool singular)=0</td></tr>
+<tr class="separator:a4b2faea77f064bf7ef788024dd442949 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad16aa0de8192fbd01e6be2fd847fb922 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad16aa0de8192fbd01e6be2fd847fb922"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trNamespace</b> (bool first_capital, bool singular)=0</td></tr>
+<tr class="separator:ad16aa0de8192fbd01e6be2fd847fb922 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a53f5fda06c04d097ec91d5ea822aaf inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5a53f5fda06c04d097ec91d5ea822aaf"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trGroup</b> (bool first_capital, bool singular)=0</td></tr>
+<tr class="separator:a5a53f5fda06c04d097ec91d5ea822aaf inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac79ca8ac33bff8ee999fc7bc3ce2eaa0 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac79ca8ac33bff8ee999fc7bc3ce2eaa0"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trPage</b> (bool first_capital, bool singular)=0</td></tr>
+<tr class="separator:ac79ca8ac33bff8ee999fc7bc3ce2eaa0 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a6070ae3180ebd724f97c236063bc86 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2a6070ae3180ebd724f97c236063bc86"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trMember</b> (bool first_capital, bool singular)=0</td></tr>
+<tr class="separator:a2a6070ae3180ebd724f97c236063bc86 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ccde2cdccee74c8427b8d3105da805b inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8ccde2cdccee74c8427b8d3105da805b"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trGlobal</b> (bool first_capital, bool singular)=0</td></tr>
+<tr class="separator:a8ccde2cdccee74c8427b8d3105da805b inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff05144018c518190b75eb3b65050086 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aff05144018c518190b75eb3b65050086"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trAuthor</b> (bool first_capital, bool singular)=0</td></tr>
+<tr class="separator:aff05144018c518190b75eb3b65050086 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a528de12430b7552f3011daa1de85ebec inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a528de12430b7552f3011daa1de85ebec"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trReferences</b> ()=0</td></tr>
+<tr class="separator:a528de12430b7552f3011daa1de85ebec inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98fa68042b92645c96e440759b7f5ac9 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a98fa68042b92645c96e440759b7f5ac9"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trImplementedFromList</b> (int numEntries)=0</td></tr>
+<tr class="separator:a98fa68042b92645c96e440759b7f5ac9 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e6f585ee0caaee388f7a1af92fd46fb inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6e6f585ee0caaee388f7a1af92fd46fb"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trImplementedInList</b> (int numEntries)=0</td></tr>
+<tr class="separator:a6e6f585ee0caaee388f7a1af92fd46fb inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c4dbe6850023f67d2187bef6440c53f inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1c4dbe6850023f67d2187bef6440c53f"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trRTFTableOfContents</b> ()=0</td></tr>
+<tr class="separator:a1c4dbe6850023f67d2187bef6440c53f inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49f4cfbe80e0356ea0c810f11982c992 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a49f4cfbe80e0356ea0c810f11982c992"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trDeprecatedList</b> ()=0</td></tr>
+<tr class="separator:a49f4cfbe80e0356ea0c810f11982c992 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80cb63c3dfef5eee4d0c57d775056d90 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a80cb63c3dfef5eee4d0c57d775056d90"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trEvents</b> ()=0</td></tr>
+<tr class="separator:a80cb63c3dfef5eee4d0c57d775056d90 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83667d039abff01dfa52187372fbf93d inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a83667d039abff01dfa52187372fbf93d"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trEventDocumentation</b> ()=0</td></tr>
+<tr class="separator:a83667d039abff01dfa52187372fbf93d inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3800c9ba75541da1ef51f97b9559866e inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3800c9ba75541da1ef51f97b9559866e"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trPackageTypes</b> ()=0</td></tr>
+<tr class="separator:a3800c9ba75541da1ef51f97b9559866e inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46ed459c81878fb0fe9bd60842de897b inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a46ed459c81878fb0fe9bd60842de897b"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trPackageMembers</b> ()=0</td></tr>
+<tr class="separator:a46ed459c81878fb0fe9bd60842de897b inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2bad8fa44a8b29f82c15007f94ef1fc inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab2bad8fa44a8b29f82c15007f94ef1fc"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trStaticPackageMembers</b> ()=0</td></tr>
+<tr class="separator:ab2bad8fa44a8b29f82c15007f94ef1fc inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0b3a2d3408656a0af5285a4e1eb041c inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa0b3a2d3408656a0af5285a4e1eb041c"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trPackageAttribs</b> ()=0</td></tr>
+<tr class="separator:aa0b3a2d3408656a0af5285a4e1eb041c inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14709b090fafdcb9921338a6eef5b645 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a14709b090fafdcb9921338a6eef5b645"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trStaticPackageAttribs</b> ()=0</td></tr>
+<tr class="separator:a14709b090fafdcb9921338a6eef5b645 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5e5e8ea7cb2ef0f74d7bfbb82a79226 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af5e5e8ea7cb2ef0f74d7bfbb82a79226"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trAll</b> ()=0</td></tr>
+<tr class="separator:af5e5e8ea7cb2ef0f74d7bfbb82a79226 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1f8bcd70ad1162bf7afff4885d0e29c inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa1f8bcd70ad1162bf7afff4885d0e29c"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trCallGraph</b> ()=0</td></tr>
+<tr class="separator:aa1f8bcd70ad1162bf7afff4885d0e29c inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7df15ba3e5882672efe94c840e493d33 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7df15ba3e5882672efe94c840e493d33"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trSearchResultsTitle</b> ()=0</td></tr>
+<tr class="separator:a7df15ba3e5882672efe94c840e493d33 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acac1cacba9e355e6ee7a9bda2e4dade7 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acac1cacba9e355e6ee7a9bda2e4dade7"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trSearchResults</b> (int numDocuments)=0</td></tr>
+<tr class="separator:acac1cacba9e355e6ee7a9bda2e4dade7 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8804a7b9912459726a3466a9f0090d6 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac8804a7b9912459726a3466a9f0090d6"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trSearchMatches</b> ()=0</td></tr>
+<tr class="separator:ac8804a7b9912459726a3466a9f0090d6 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f2fe304e777e2f34db4845c687947cf inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8f2fe304e777e2f34db4845c687947cf"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trSourceFile</b> (<a class="el" href="class_q_c_string.html">QCString</a> &amp;filename)=0</td></tr>
+<tr class="separator:a8f2fe304e777e2f34db4845c687947cf inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef21626d120305f405b0eb00c07cf09a inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aef21626d120305f405b0eb00c07cf09a"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trDirIndex</b> ()=0</td></tr>
+<tr class="separator:aef21626d120305f405b0eb00c07cf09a inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06c5682aa4ddaaed33e88feebb669b90 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a06c5682aa4ddaaed33e88feebb669b90"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trDirDocumentation</b> ()=0</td></tr>
+<tr class="separator:a06c5682aa4ddaaed33e88feebb669b90 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36531bc02d6bd58dd1ba589576f8c1a3 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a36531bc02d6bd58dd1ba589576f8c1a3"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trDirectories</b> ()=0</td></tr>
+<tr class="separator:a36531bc02d6bd58dd1ba589576f8c1a3 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a957dd414e6b566a10138e1fb8909e421 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a957dd414e6b566a10138e1fb8909e421"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trDirDescription</b> ()=0</td></tr>
+<tr class="separator:a957dd414e6b566a10138e1fb8909e421 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f8bbda86aa6ec99ad86c849747e35f8 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7f8bbda86aa6ec99ad86c849747e35f8"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trDirReference</b> (const char *dirName)=0</td></tr>
+<tr class="separator:a7f8bbda86aa6ec99ad86c849747e35f8 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23811f32a6bcf9d1bd1d16d27b212b93 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a23811f32a6bcf9d1bd1d16d27b212b93"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trDir</b> (bool first_capital, bool singular)=0</td></tr>
+<tr class="separator:a23811f32a6bcf9d1bd1d16d27b212b93 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2d04dc6a287015389c93173348f1083 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae2d04dc6a287015389c93173348f1083"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trOverloadText</b> ()=0</td></tr>
+<tr class="separator:ae2d04dc6a287015389c93173348f1083 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac546bc09cd0175a996f7c947be2a8692 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac546bc09cd0175a996f7c947be2a8692"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trCallerGraph</b> ()=0</td></tr>
+<tr class="separator:ac546bc09cd0175a996f7c947be2a8692 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6762f8e989e8fd4fce9f438efc3b36f0 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6762f8e989e8fd4fce9f438efc3b36f0"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trEnumerationValueDocumentation</b> ()=0</td></tr>
+<tr class="separator:a6762f8e989e8fd4fce9f438efc3b36f0 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5641e677e7425ffcf338f396b251a537 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5641e677e7425ffcf338f396b251a537"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trMemberFunctionDocumentationFortran</b> ()=0</td></tr>
+<tr class="separator:a5641e677e7425ffcf338f396b251a537 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57c8c921f86a651cdaaa9985e4fcc046 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a57c8c921f86a651cdaaa9985e4fcc046"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trCompoundListFortran</b> ()=0</td></tr>
+<tr class="separator:a57c8c921f86a651cdaaa9985e4fcc046 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa45fe80e9abcdd3595d28a5c4b98a1ae inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa45fe80e9abcdd3595d28a5c4b98a1ae"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trCompoundMembersFortran</b> ()=0</td></tr>
+<tr class="separator:aa45fe80e9abcdd3595d28a5c4b98a1ae inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fd6765aae318c6b248a0775ccf890f7 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3fd6765aae318c6b248a0775ccf890f7"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trCompoundListDescriptionFortran</b> ()=0</td></tr>
+<tr class="separator:a3fd6765aae318c6b248a0775ccf890f7 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad90eeaec1c8bdff3bdee2dd372d761d7 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad90eeaec1c8bdff3bdee2dd372d761d7"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trCompoundMembersDescriptionFortran</b> (bool extractAll)=0</td></tr>
+<tr class="separator:ad90eeaec1c8bdff3bdee2dd372d761d7 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7c4ea8a4cf72479b1291e2cf075edf4 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab7c4ea8a4cf72479b1291e2cf075edf4"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trCompoundIndexFortran</b> ()=0</td></tr>
+<tr class="separator:ab7c4ea8a4cf72479b1291e2cf075edf4 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8daac78ae6c1f46306ca9c641b58074f inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8daac78ae6c1f46306ca9c641b58074f"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trTypeDocumentation</b> ()=0</td></tr>
+<tr class="separator:a8daac78ae6c1f46306ca9c641b58074f inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83b9a5964194bb332af838ca0c376063 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a83b9a5964194bb332af838ca0c376063"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trSubprograms</b> ()=0</td></tr>
+<tr class="separator:a83b9a5964194bb332af838ca0c376063 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae113ea0b791f5e127d09bbd29f875617 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae113ea0b791f5e127d09bbd29f875617"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trSubprogramDocumentation</b> ()=0</td></tr>
+<tr class="separator:ae113ea0b791f5e127d09bbd29f875617 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b9af29e36bff8c1dfb4ddb10f449b30 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5b9af29e36bff8c1dfb4ddb10f449b30"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trDataTypes</b> ()=0</td></tr>
+<tr class="separator:a5b9af29e36bff8c1dfb4ddb10f449b30 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d2d61f85a7e12dc9178f9ef73aba2cb inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4d2d61f85a7e12dc9178f9ef73aba2cb"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trModulesList</b> ()=0</td></tr>
+<tr class="separator:a4d2d61f85a7e12dc9178f9ef73aba2cb inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7be452fd7fe43a6bb3b78cc1051102fd inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7be452fd7fe43a6bb3b78cc1051102fd"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trModulesListDescription</b> (bool extractAll)=0</td></tr>
+<tr class="separator:a7be452fd7fe43a6bb3b78cc1051102fd inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad37569014492f7d2d36d1ff0cabfc047 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad37569014492f7d2d36d1ff0cabfc047"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trCompoundReferenceFortran</b> (const char *clName, <a class="el" href="class_class_def.html#a768a6f0a6fd7e9087ff7971abbcc3f36">ClassDef::CompoundType</a> compType, bool isTemplate)=0</td></tr>
+<tr class="separator:ad37569014492f7d2d36d1ff0cabfc047 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4089349e51d9d85da34a0c67deacc62 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad4089349e51d9d85da34a0c67deacc62"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trModuleReference</b> (const char *namespaceName)=0</td></tr>
+<tr class="separator:ad4089349e51d9d85da34a0c67deacc62 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3939d2dadd755a2dbb915b616649c537 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3939d2dadd755a2dbb915b616649c537"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trModulesMembers</b> ()=0</td></tr>
+<tr class="separator:a3939d2dadd755a2dbb915b616649c537 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a069d5062bac4bf9afe30fb8d6279526c inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a069d5062bac4bf9afe30fb8d6279526c"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trModulesMemberDescription</b> (bool extractAll)=0</td></tr>
+<tr class="separator:a069d5062bac4bf9afe30fb8d6279526c inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fb9bbd0d2979417404a0cc45312a4a8 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9fb9bbd0d2979417404a0cc45312a4a8"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trModulesIndex</b> ()=0</td></tr>
+<tr class="separator:a9fb9bbd0d2979417404a0cc45312a4a8 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9384a6e2a58cebef49b198d6ddf8fdae inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9384a6e2a58cebef49b198d6ddf8fdae"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trModule</b> (bool first_capital, bool singular)=0</td></tr>
+<tr class="separator:a9384a6e2a58cebef49b198d6ddf8fdae inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1d6607ef618a0e29f481a8bb042cbd7 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac1d6607ef618a0e29f481a8bb042cbd7"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trGeneratedFromFilesFortran</b> (<a class="el" href="class_class_def.html#a768a6f0a6fd7e9087ff7971abbcc3f36">ClassDef::CompoundType</a> compType, bool single)=0</td></tr>
+<tr class="separator:ac1d6607ef618a0e29f481a8bb042cbd7 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c8d3a8b9ff35aeccdd33ed6ad7b1a27 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6c8d3a8b9ff35aeccdd33ed6ad7b1a27"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trType</b> (bool first_capital, bool singular)=0</td></tr>
+<tr class="separator:a6c8d3a8b9ff35aeccdd33ed6ad7b1a27 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a565d6ef204cf23f6e1170e9eb98cf201 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a565d6ef204cf23f6e1170e9eb98cf201"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trSubprogram</b> (bool first_capital, bool singular)=0</td></tr>
+<tr class="separator:a565d6ef204cf23f6e1170e9eb98cf201 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a908aaf82dac435ad4d1b2207d78bee0e inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a908aaf82dac435ad4d1b2207d78bee0e"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trTypeConstraints</b> ()=0</td></tr>
+<tr class="separator:a908aaf82dac435ad4d1b2207d78bee0e inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ce4be35d5395414127883579dbf3a63 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9ce4be35d5395414127883579dbf3a63"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trDirRelation</b> (const char *name)=0</td></tr>
+<tr class="separator:a9ce4be35d5395414127883579dbf3a63 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a399c362948b3ed1e4e6dd25219d5c653 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a399c362948b3ed1e4e6dd25219d5c653"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trLoading</b> ()=0</td></tr>
+<tr class="separator:a399c362948b3ed1e4e6dd25219d5c653 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af234a109a104045527a463fba62ec8b0 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af234a109a104045527a463fba62ec8b0"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trGlobalNamespace</b> ()=0</td></tr>
+<tr class="separator:af234a109a104045527a463fba62ec8b0 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff3abe07c07a4709181d7c84141ae155 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aff3abe07c07a4709181d7c84141ae155"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trSearching</b> ()=0</td></tr>
+<tr class="separator:aff3abe07c07a4709181d7c84141ae155 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae57b3a464e4737dfa4a41ac05fc489e0 inherit pub_methods_class_translator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae57b3a464e4737dfa4a41ac05fc489e0"></a>
+virtual <a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trNoMatches</b> ()=0</td></tr>
+<tr class="separator:ae57b3a464e4737dfa4a41ac05fc489e0 inherit pub_methods_class_translator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_methods_class_translator_adapter_base"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_translator_adapter_base')"><img src="closed.png" alt="-"/>&#160;Membros protegidos inherited from <a class="el" href="class_translator_adapter_base.html">TranslatorAdapterBase</a></td></tr>
+<tr class="memitem:a5a2e61bbeb05968eed2d1e7fa9030c87 inherit pro_methods_class_translator_adapter_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_translator_adapter_base.html#a5a2e61bbeb05968eed2d1e7fa9030c87">createUpdateNeededMessage</a> (const <a class="el" href="class_q_c_string.html">QCString</a> &amp;languageName, const <a class="el" href="class_q_c_string.html">QCString</a> &amp;versionString)</td></tr>
+<tr class="separator:a5a2e61bbeb05968eed2d1e7fa9030c87 inherit pro_methods_class_translator_adapter_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_translator_adapter_base"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_translator_adapter_base')"><img src="closed.png" alt="-"/>&#160;Atributos Protegidos inherited from <a class="el" href="class_translator_adapter_base.html">TranslatorAdapterBase</a></td></tr>
+<tr class="memitem:a605bc398d985cf08eb4814c3b045e4a9 inherit pro_attribs_class_translator_adapter_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a605bc398d985cf08eb4814c3b045e4a9"></a>
+<a class="el" href="class_translator_english.html">TranslatorEnglish</a>&#160;</td><td class="memItemRight" valign="bottom"><b>english</b></td></tr>
+<tr class="separator:a605bc398d985cf08eb4814c3b045e4a9 inherit pro_attribs_class_translator_adapter_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Adapter class for languages that only contain translations up to version 1.6.3. </p>
+</div><h2 class="groupheader">Documentação dos métodos</h2>
+<a class="anchor" id="aa2c053398a494e36caf5152d9a4fc6cf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_q_c_string.html">QCString</a> updateNeededMessage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This method is used to generate a warning message to signal the user that the translation of his/her language of choice needs updating. It must be implemented by the translator adapter class (pure virtual).</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="class_translator_adapter_base.html#a5a2e61bbeb05968eed2d1e7fa9030c87">createUpdateNeededMessage()</a> </dd></dl>
+
+<p>Reimplementado de <a class="el" href="class_translator_adapter__1__7__5.html#aa2c053398a494e36caf5152d9a4fc6cf">TranslatorAdapter_1_7_5</a>.</p>
+
+<p>Reimplementado em <a class="el" href="class_translator_adapter__1__4__6.html#aa2c053398a494e36caf5152d9a4fc6cf">TranslatorAdapter_1_4_6</a>, <a class="el" href="class_translator_adapter__1__5__4.html#aa2c053398a494e36caf5152d9a4fc6cf">TranslatorAdapter_1_5_4</a> e <a class="el" href="class_translator_adapter__1__6__0.html#aa2c053398a494e36caf5152d9a4fc6cf">TranslatorAdapter_1_6_0</a>.</p>
+
+</div>
+</div>
+<hr/>A documentação para esta classe foi gerada a partir do seguinte ficheiro:<ul>
+<li>C:/Users/teste/git/doxygen/src/<a class="el" href="translator__adapter_8h_source.html">translator_adapter.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado em Quinta, 28 de Novembro de 2013 22:44:44 para CEM RODAS por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

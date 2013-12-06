@@ -1,0 +1,105 @@
+\hypertarget{class_html_help_index}{\section{Referência à classe Html\-Help\-Index}
+\label{class_html_help_index}\index{Html\-Help\-Index@{Html\-Help\-Index}}
+}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_html_help_index_abd8844cb8b52636ebf61b3fbbf06d6f3}{Html\-Help\-Index} (\hyperlink{class_html_help}{Html\-Help} $\ast$help)
+\item 
+\hyperlink{class_html_help_index_a832c2f8f89f244500fa9bfd62d3949d7}{$\sim$\-Html\-Help\-Index} ()
+\item 
+void \hyperlink{class_html_help_index_aaa2b7a11c0408e9650bbff40df609be6}{add\-Item} (const char $\ast$first, const char $\ast$second, const char $\ast$url, const char $\ast$anchor, bool has\-Link, bool reversed)
+\item 
+void \hyperlink{class_html_help_index_aab9e6bc2aec2b10a53939fcb57496376}{write\-Fields} (\hyperlink{class_f_text_stream}{F\-Text\-Stream} \&t)
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+\hyperlink{class_a}{A} helper class for \hyperlink{class_html_help}{Html\-Help} that manages a two level index in alphabetical order. 
+
+\subsection{Documentação dos Construtores \& Destrutor}
+\hypertarget{class_html_help_index_abd8844cb8b52636ebf61b3fbbf06d6f3}{\index{Html\-Help\-Index@{Html\-Help\-Index}!Html\-Help\-Index@{Html\-Help\-Index}}
+\index{Html\-Help\-Index@{Html\-Help\-Index}!HtmlHelpIndex@{Html\-Help\-Index}}
+\subsubsection[{Html\-Help\-Index}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Html\-Help\-Index} (
+\begin{DoxyParamCaption}
+\item[{{\bf Html\-Help} $\ast$}]{help}
+\end{DoxyParamCaption}
+)}}\label{class_html_help_index_abd8844cb8b52636ebf61b3fbbf06d6f3}
+Constructs a new \hyperlink{class_html_help}{Html\-Help} index \hypertarget{class_html_help_index_a832c2f8f89f244500fa9bfd62d3949d7}{\index{Html\-Help\-Index@{Html\-Help\-Index}!$\sim$\-Html\-Help\-Index@{$\sim$\-Html\-Help\-Index}}
+\index{$\sim$\-Html\-Help\-Index@{$\sim$\-Html\-Help\-Index}!HtmlHelpIndex@{Html\-Help\-Index}}
+\subsubsection[{$\sim$\-Html\-Help\-Index}]{\setlength{\rightskip}{0pt plus 5cm}$\sim${\bf Html\-Help\-Index} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_html_help_index_a832c2f8f89f244500fa9bfd62d3949d7}
+Destroys the \hyperlink{class_html_help}{Html\-Help} index 
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_html_help_index_aaa2b7a11c0408e9650bbff40df609be6}{\index{Html\-Help\-Index@{Html\-Help\-Index}!add\-Item@{add\-Item}}
+\index{add\-Item@{add\-Item}!HtmlHelpIndex@{Html\-Help\-Index}}
+\subsubsection[{add\-Item}]{\setlength{\rightskip}{0pt plus 5cm}void add\-Item (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{level1, }
+\item[{const char $\ast$}]{level2, }
+\item[{const char $\ast$}]{url, }
+\item[{const char $\ast$}]{anchor, }
+\item[{bool}]{has\-Link, }
+\item[{bool}]{reversed}
+\end{DoxyParamCaption}
+)}}\label{class_html_help_index_aaa2b7a11c0408e9650bbff40df609be6}
+Stores an item in the index if it is not already present. Items are stored in alphetical order, by sorting on the concatenation of {\itshape level1} and {\itshape level2} (if present).
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em level1} & the string at level 1 in the index. \\
+\hline
+{\em level2} & the string at level 2 in the index (or 0 if not applicable). \\
+\hline
+{\em url} & the url of the documentation (without .html extension). \\
+\hline
+{\em anchor} & the anchor of the documentation within the page. \\
+\hline
+{\em has\-Link} & if true, the url (without anchor) can be used in the level1 item, when writing the header of a list of level2 items. \\
+\hline
+{\em reversed} & T\-R\-U\-E if level1 is the member name and level2 the compound name. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_html_help_index_aab9e6bc2aec2b10a53939fcb57496376}{\index{Html\-Help\-Index@{Html\-Help\-Index}!write\-Fields@{write\-Fields}}
+\index{write\-Fields@{write\-Fields}!HtmlHelpIndex@{Html\-Help\-Index}}
+\subsubsection[{write\-Fields}]{\setlength{\rightskip}{0pt plus 5cm}void write\-Fields (
+\begin{DoxyParamCaption}
+\item[{{\bf F\-Text\-Stream} \&}]{t}
+\end{DoxyParamCaption}
+)}}\label{class_html_help_index_aab9e6bc2aec2b10a53939fcb57496376}
+Writes the sorted list of index items into a html like list.
+
+An list of calls with {\ttfamily name = level1,level2} as follows\-: 
+\begin{DoxyPre}
+  a1,b1
+  a1,b2
+  a2,b1
+  a2,b2
+  a3
+  a4,b1
+\end{DoxyPre}
+
+
+Will result in the following list\-:
+
+
+\begin{DoxyPre}
+  a1       -> link to url if hasLink==TRUE
+    b1     -> link to url::anchor
+    b2     -> link to url::anchor
+  a2       -> link to url if hasLink==TRUE
+    b1     -> link to url::anchor
+    b2     -> link to url::anchor
+  a3       -> link to url if hasLink==TRUE
+  a4       -> link to url if hasLink==TRUE
+    b1     -> link to url::anchor 
+\end{DoxyPre}
+ 
+
+A documentação para esta classe foi gerada a partir do seguinte ficheiro\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/src/htmlhelp.\-cpp\end{DoxyCompactItemize}

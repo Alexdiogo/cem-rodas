@@ -1,0 +1,1140 @@
+\hypertarget{class_output_list}{\section{Referência à classe Output\-List}
+\label{class_output_list}\index{Output\-List@{Output\-List}}
+}
+
+
+{\ttfamily \#include $<$outputlist.\-h$>$}
+
+Diagrama de heranças da classe Output\-List\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_output_list}
+\end{center}
+\end{figure}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_output_list_a1cf20ef0a626c7a04e5d2623b05e6a77}{{\bfseries Output\-List} (bool)}\label{class_output_list_a1cf20ef0a626c7a04e5d2623b05e6a77}
+
+\item 
+\hypertarget{class_output_list_aa3dbc8949501869dd4ded010b0a19cb9}{void {\bfseries add} (const \hyperlink{class_output_generator}{Output\-Generator} $\ast$)}\label{class_output_list_aa3dbc8949501869dd4ded010b0a19cb9}
+
+\item 
+\hypertarget{class_output_list_a774149fc271ebaba2aabcd183a836e8f}{uint {\bfseries count} () const }\label{class_output_list_a774149fc271ebaba2aabcd183a836e8f}
+
+\item 
+void \hyperlink{class_output_list_af6f08b1d8f3504c943adc7626e6336fb}{disable\-All\-But} (Output\-Generator\-::\-Output\-Type o)
+\item 
+void \hyperlink{class_output_list_ae076f3f35c07044ed812b78871741c15}{enable\-All} ()
+\item 
+void \hyperlink{class_output_list_a238885c747f586049b766fa4fcd5ec12}{disable\-All} ()
+\item 
+void \hyperlink{class_output_list_a518c3abda47a43b82e5ec04ee06a3f94}{disable} (Output\-Generator\-::\-Output\-Type o)
+\item 
+void \hyperlink{class_output_list_af50cca806934038f9eb543edaddf998f}{enable} (Output\-Generator\-::\-Output\-Type o)
+\item 
+bool \hyperlink{class_output_list_ad28f007ae83273a7d1ca6a6b46979af9}{is\-Enabled} (Output\-Generator\-::\-Output\-Type o)
+\item 
+void \hyperlink{class_output_list_aff968dbb6182903ac3a2c899cf1078f3}{push\-Generator\-State} ()
+\item 
+void \hyperlink{class_output_list_a9fd3c9d8d193a665b4b1c233ae573753}{pop\-Generator\-State} ()
+\item 
+\hypertarget{class_output_list_a197b538c4355c7fa65472cea5e6f16bf}{bool {\bfseries generate\-Doc} (const char $\ast$file\-Name, int start\-Line, \hyperlink{class_definition}{Definition} $\ast$ctx, \hyperlink{class_member_def}{Member\-Def} $\ast$md, const \hyperlink{class_q_c_string}{Q\-C\-String} \&doc\-Str, bool index\-Words, bool is\-Example, const char $\ast$example\-Name=0, bool single\-Line=F\-A\-L\-S\-E, bool link\-From\-Index=F\-A\-L\-S\-E)}\label{class_output_list_a197b538c4355c7fa65472cea5e6f16bf}
+
+\item 
+\hypertarget{class_output_list_ac54c840e6ab878d410506981d9410392}{void {\bfseries write\-Doc} (\hyperlink{class_doc_root}{Doc\-Root} $\ast$root, \hyperlink{class_definition}{Definition} $\ast$ctx, \hyperlink{class_member_def}{Member\-Def} $\ast$md)}\label{class_output_list_ac54c840e6ab878d410506981d9410392}
+
+\item 
+\hypertarget{class_output_list_af5eeeade05278369878897381f462a59}{bool {\bfseries parse\-Text} (const \hyperlink{class_q_c_string}{Q\-C\-String} \&text\-Str)}\label{class_output_list_af5eeeade05278369878897381f462a59}
+
+\item 
+\hypertarget{class_output_list_a6622e00de24d36580d74ec8c3941dc01}{void {\bfseries start\-Index\-Section} (Index\-Sections is)}\label{class_output_list_a6622e00de24d36580d74ec8c3941dc01}
+
+\item 
+\hypertarget{class_output_list_a05d47fdb387791ffa5aba68a8cd7d64c}{void {\bfseries end\-Index\-Section} (Index\-Sections is)}\label{class_output_list_a05d47fdb387791ffa5aba68a8cd7d64c}
+
+\item 
+\hypertarget{class_output_list_a3b1a0594e6edabdfc1ef16c721a521a4}{void {\bfseries write\-Page\-Link} (const char $\ast$name, bool first)}\label{class_output_list_a3b1a0594e6edabdfc1ef16c721a521a4}
+
+\item 
+\hypertarget{class_output_list_ab49b9a957bcd7cdd43e97cf46ee3fd5b}{void {\bfseries start\-Project\-Number} ()}\label{class_output_list_ab49b9a957bcd7cdd43e97cf46ee3fd5b}
+
+\item 
+\hypertarget{class_output_list_adb778208eb7fefd771008cfeab951888}{void {\bfseries end\-Project\-Number} ()}\label{class_output_list_adb778208eb7fefd771008cfeab951888}
+
+\item 
+\hypertarget{class_output_list_ad3736313034c23173b4eac01d95b43d3}{void {\bfseries write\-Style\-Info} (int part)}\label{class_output_list_ad3736313034c23173b4eac01d95b43d3}
+
+\item 
+\hypertarget{class_output_list_a642331f37add1aa818a86124a5fe4723}{void {\bfseries start\-File} (const char $\ast$name, const char $\ast$man\-Name, const char $\ast$title)}\label{class_output_list_a642331f37add1aa818a86124a5fe4723}
+
+\item 
+\hypertarget{class_output_list_ac9f113172cc5a97370c617e213bcef3d}{void {\bfseries write\-Search\-Info} ()}\label{class_output_list_ac9f113172cc5a97370c617e213bcef3d}
+
+\item 
+\hypertarget{class_output_list_a7a5851ef00c52f6045b3175cfbcb76d2}{void {\bfseries write\-Footer} (const char $\ast$nav\-Path)}\label{class_output_list_a7a5851ef00c52f6045b3175cfbcb76d2}
+
+\item 
+\hypertarget{class_output_list_a91124168a972dfb54e63eb80980bd7c4}{void {\bfseries end\-File} ()}\label{class_output_list_a91124168a972dfb54e63eb80980bd7c4}
+
+\item 
+\hypertarget{class_output_list_a5c1610aed78932790e393969eb5caf3b}{void {\bfseries start\-Title\-Head} (const char $\ast$file\-Name)}\label{class_output_list_a5c1610aed78932790e393969eb5caf3b}
+
+\item 
+\hypertarget{class_output_list_a5c092681d24734b7879d57f03dd95d88}{void {\bfseries end\-Title\-Head} (const char $\ast$file\-Name, const char $\ast$name)}\label{class_output_list_a5c092681d24734b7879d57f03dd95d88}
+
+\item 
+\hypertarget{class_output_list_a1259e131d6695a4bb53ec5e36692840a}{void {\bfseries start\-Title} ()}\label{class_output_list_a1259e131d6695a4bb53ec5e36692840a}
+
+\item 
+\hypertarget{class_output_list_a7b02cc485cad21197a018533aa05fe79}{void {\bfseries end\-Title} ()}\label{class_output_list_a7b02cc485cad21197a018533aa05fe79}
+
+\item 
+void \hyperlink{class_output_list_af7f590b00ecbe6117ddc09f0016df0ec}{start\-Paragraph} ()
+\item 
+void \hyperlink{class_output_list_a3076b52ebe72e4b56c232817cf2a16f0}{end\-Paragraph} ()
+\item 
+void \hyperlink{class_output_list_a02588a2412fdda1d3d31066be2802913}{write\-String} (const char $\ast$text)
+\item 
+\hypertarget{class_output_list_a54bfbe844dbbb52acf519e07a207c2e0}{void {\bfseries start\-Index\-List\-Item} ()}\label{class_output_list_a54bfbe844dbbb52acf519e07a207c2e0}
+
+\item 
+\hypertarget{class_output_list_aec53f232bba59300d9a4fd4b1cf0f753}{void {\bfseries end\-Index\-List\-Item} ()}\label{class_output_list_aec53f232bba59300d9a4fd4b1cf0f753}
+
+\item 
+\hypertarget{class_output_list_a9b31ceb5ba1248cb820bad23a8c6624a}{void {\bfseries start\-Index\-List} ()}\label{class_output_list_a9b31ceb5ba1248cb820bad23a8c6624a}
+
+\item 
+\hypertarget{class_output_list_a38fc8c258fcd3d6196e12c1a51018c9a}{void {\bfseries end\-Index\-List} ()}\label{class_output_list_a38fc8c258fcd3d6196e12c1a51018c9a}
+
+\item 
+\hypertarget{class_output_list_a35efacde67c233f22b5a11becdaaaa13}{void {\bfseries start\-Index\-Key} ()}\label{class_output_list_a35efacde67c233f22b5a11becdaaaa13}
+
+\item 
+\hypertarget{class_output_list_a22c9a476a4b39fc3cffecf763b39b05c}{void {\bfseries end\-Index\-Key} ()}\label{class_output_list_a22c9a476a4b39fc3cffecf763b39b05c}
+
+\item 
+\hypertarget{class_output_list_a0e2219f3dc9f2eae72b2a55db6e45405}{void {\bfseries start\-Index\-Value} (bool b)}\label{class_output_list_a0e2219f3dc9f2eae72b2a55db6e45405}
+
+\item 
+\hypertarget{class_output_list_a28c8ce454459964df73fdcc19ece1f37}{void {\bfseries end\-Index\-Value} (const char $\ast$name, bool b)}\label{class_output_list_a28c8ce454459964df73fdcc19ece1f37}
+
+\item 
+void \hyperlink{class_output_list_af2a17ac8deb6919dda56ae5107ea1529}{start\-Item\-List} ()
+\item 
+void \hyperlink{class_output_list_ab11dc69249cdab99802fe788b9da43d5}{end\-Item\-List} ()
+\item 
+\hypertarget{class_output_list_ad7ab1d36b425503e9dd9656ca85ec6db}{void {\bfseries start\-Index\-Item} (const char $\ast$ref, const char $\ast$file)}\label{class_output_list_ad7ab1d36b425503e9dd9656ca85ec6db}
+
+\item 
+\hypertarget{class_output_list_a05f165444ace049ae9353f93a55da1c6}{void {\bfseries end\-Index\-Item} (const char $\ast$ref, const char $\ast$file)}\label{class_output_list_a05f165444ace049ae9353f93a55da1c6}
+
+\item 
+void \hyperlink{class_output_list_af7ffb65da6beaf5adf9c63da246dc694}{docify} (const char $\ast$s)
+\item 
+void \hyperlink{class_output_list_ad58b50196a8176a68df41aabcaf6a8b7}{codify} (const char $\ast$s)
+\item 
+void \hyperlink{class_output_list_a78d7e4718290246f77043de949c83081}{write\-Object\-Link} (const char $\ast$ref, const char $\ast$file, const char $\ast$anchor, const char $\ast$name)
+\item 
+void \hyperlink{class_output_list_ab3866da052a840c400b4990dd2ddf61b}{write\-Code\-Link} (const char $\ast$ref, const char $\ast$file, const char $\ast$anchor, const char $\ast$name, const char $\ast$tooltip)
+\item 
+void \hyperlink{class_output_list_acc6f74ac2670196668c05d4156eec872}{write\-Tooltip} (const char $\ast$id, const \hyperlink{struct_doc_link_info}{Doc\-Link\-Info} \&doc\-Info, const char $\ast$decl, const char $\ast$desc, const \hyperlink{struct_source_link_info}{Source\-Link\-Info} \&def\-Info, const \hyperlink{struct_source_link_info}{Source\-Link\-Info} \&decl\-Info)
+\item 
+\hypertarget{class_output_list_a7eb8349051c2985097c470a8ad97fdca}{void {\bfseries start\-Text\-Link} (const char $\ast$file, const char $\ast$anchor)}\label{class_output_list_a7eb8349051c2985097c470a8ad97fdca}
+
+\item 
+\hypertarget{class_output_list_a98515ca43c32f8bc616925eb3c683b6e}{void {\bfseries end\-Text\-Link} ()}\label{class_output_list_a98515ca43c32f8bc616925eb3c683b6e}
+
+\item 
+void \hyperlink{class_output_list_a0746b9c06743e1d4fe527b8317457da1}{start\-Html\-Link} (const char $\ast$url)
+\item 
+void \hyperlink{class_output_list_ac2ba450d319270e186e436167c8609ce}{end\-Html\-Link} ()
+\item 
+\hypertarget{class_output_list_a33695af2d50fc8c46a5ba1eb806e7ab5}{void {\bfseries write\-Start\-Anno\-Item} (const char $\ast$type, const char $\ast$file, const char $\ast$path, const char $\ast$name)}\label{class_output_list_a33695af2d50fc8c46a5ba1eb806e7ab5}
+
+\item 
+\hypertarget{class_output_list_aab3b8288c28235bcf5a4b99a84a8c87a}{void {\bfseries write\-End\-Anno\-Item} (const char $\ast$name)}\label{class_output_list_aab3b8288c28235bcf5a4b99a84a8c87a}
+
+\item 
+void \hyperlink{class_output_list_a2e60bda5e249554e2fc264aa32d9d93e}{start\-Typewriter} ()
+\item 
+void \hyperlink{class_output_list_acb220673316232acd7d1050553dafaf6}{end\-Typewriter} ()
+\item 
+\hypertarget{class_output_list_a05d08c1406c9e84fe3e434b95258d6e5}{void {\bfseries start\-Group\-Header} (int extra\-Levels=0)}\label{class_output_list_a05d08c1406c9e84fe3e434b95258d6e5}
+
+\item 
+\hypertarget{class_output_list_ad5eb40fd96c56af8bc48c212af40d8a2}{void {\bfseries end\-Group\-Header} (int extra\-Levels=0)}\label{class_output_list_ad5eb40fd96c56af8bc48c212af40d8a2}
+
+\item 
+void \hyperlink{class_output_list_ab4ab0e8996b14723e45e955fe68f03bc}{start\-Item\-List\-Item} ()
+\item 
+void \hyperlink{class_output_list_a61efca8a19608566df04a45d16e88449}{end\-Item\-List\-Item} ()
+\item 
+\hypertarget{class_output_list_aa363f7f143f8451b0fd035e9856f1b87}{void {\bfseries start\-Member\-Sections} ()}\label{class_output_list_aa363f7f143f8451b0fd035e9856f1b87}
+
+\item 
+\hypertarget{class_output_list_a2f9645e00372366ad64476dbc66cd5ac}{void {\bfseries end\-Member\-Sections} ()}\label{class_output_list_a2f9645e00372366ad64476dbc66cd5ac}
+
+\item 
+\hypertarget{class_output_list_add9e7a492a43830dd3c77cd0e5c06884}{void {\bfseries start\-Header\-Section} ()}\label{class_output_list_add9e7a492a43830dd3c77cd0e5c06884}
+
+\item 
+\hypertarget{class_output_list_aeca202ed7306f7d9aa20f8e707d96301}{void {\bfseries end\-Header\-Section} ()}\label{class_output_list_aeca202ed7306f7d9aa20f8e707d96301}
+
+\item 
+\hypertarget{class_output_list_a76b6507db2808c715c537895bdb93b78}{void {\bfseries start\-Member\-Header} (const char $\ast$anchor)}\label{class_output_list_a76b6507db2808c715c537895bdb93b78}
+
+\item 
+\hypertarget{class_output_list_a618c1bfc8806d29116abac6b5817c137}{void {\bfseries end\-Member\-Header} ()}\label{class_output_list_a618c1bfc8806d29116abac6b5817c137}
+
+\item 
+\hypertarget{class_output_list_a7cf4dbf258928f842c9e96807345bc7a}{void {\bfseries start\-Member\-Subtitle} ()}\label{class_output_list_a7cf4dbf258928f842c9e96807345bc7a}
+
+\item 
+\hypertarget{class_output_list_a8073c2e7983bc4cd328e4229f51f3bbf}{void {\bfseries end\-Member\-Subtitle} ()}\label{class_output_list_a8073c2e7983bc4cd328e4229f51f3bbf}
+
+\item 
+\hypertarget{class_output_list_a45f1ccc157c1f0a3797f633881b4945e}{void {\bfseries start\-Member\-Doc\-List} ()}\label{class_output_list_a45f1ccc157c1f0a3797f633881b4945e}
+
+\item 
+\hypertarget{class_output_list_a1c5248e846cc6987215cd7ae768f7f7c}{void {\bfseries end\-Member\-Doc\-List} ()}\label{class_output_list_a1c5248e846cc6987215cd7ae768f7f7c}
+
+\item 
+\hypertarget{class_output_list_a951526ac3cd02dd43391d611259ec6ab}{void {\bfseries start\-Member\-List} ()}\label{class_output_list_a951526ac3cd02dd43391d611259ec6ab}
+
+\item 
+\hypertarget{class_output_list_a71bf3ec847372dc87b57e6fbbdf012ea}{void {\bfseries end\-Member\-List} ()}\label{class_output_list_a71bf3ec847372dc87b57e6fbbdf012ea}
+
+\item 
+\hypertarget{class_output_list_a427e41a09413570a1c7abf7ee6666385}{void {\bfseries start\-Inline\-Header} ()}\label{class_output_list_a427e41a09413570a1c7abf7ee6666385}
+
+\item 
+\hypertarget{class_output_list_a0d624d7b38eb45de11d16e311a2cc75b}{void {\bfseries end\-Inline\-Header} ()}\label{class_output_list_a0d624d7b38eb45de11d16e311a2cc75b}
+
+\item 
+\hypertarget{class_output_list_aa918ceb52929e7004152c28541bddf30}{void {\bfseries start\-Anon\-Type\-Scope} (int i1)}\label{class_output_list_aa918ceb52929e7004152c28541bddf30}
+
+\item 
+\hypertarget{class_output_list_abc69932b9f8bfefde63c20cbaa959ff5}{void {\bfseries end\-Anon\-Type\-Scope} (int i1)}\label{class_output_list_abc69932b9f8bfefde63c20cbaa959ff5}
+
+\item 
+\hypertarget{class_output_list_a93880b73d428345edb028629b084253e}{void {\bfseries start\-Member\-Item} (const char $\ast$anchor, int i1, const char $\ast$id=0)}\label{class_output_list_a93880b73d428345edb028629b084253e}
+
+\item 
+\hypertarget{class_output_list_aeca4b74189a714a52d2e5837e453a0d6}{void {\bfseries end\-Member\-Item} ()}\label{class_output_list_aeca4b74189a714a52d2e5837e453a0d6}
+
+\item 
+\hypertarget{class_output_list_abeb4730c77d34d8a191a957032cd4008}{void {\bfseries start\-Member\-Template\-Params} ()}\label{class_output_list_abeb4730c77d34d8a191a957032cd4008}
+
+\item 
+\hypertarget{class_output_list_a134f062c16fa5e97c706661cbb1112d0}{void {\bfseries end\-Member\-Template\-Params} (const char $\ast$anchor, const char $\ast$inherit\-Id)}\label{class_output_list_a134f062c16fa5e97c706661cbb1112d0}
+
+\item 
+\hypertarget{class_output_list_aaffb8da1d4abc1634d78343398aaf837}{void {\bfseries start\-Member\-Group\-Header} (bool b)}\label{class_output_list_aaffb8da1d4abc1634d78343398aaf837}
+
+\item 
+\hypertarget{class_output_list_a7e1a44a13d8b22dc7929a9cdbd94b725}{void {\bfseries end\-Member\-Group\-Header} ()}\label{class_output_list_a7e1a44a13d8b22dc7929a9cdbd94b725}
+
+\item 
+\hypertarget{class_output_list_aa8c7357f48d452ccd00a331623c4674a}{void {\bfseries start\-Member\-Group\-Docs} ()}\label{class_output_list_aa8c7357f48d452ccd00a331623c4674a}
+
+\item 
+\hypertarget{class_output_list_a0e63ff5117b5bd3305323117412c6ff1}{void {\bfseries end\-Member\-Group\-Docs} ()}\label{class_output_list_a0e63ff5117b5bd3305323117412c6ff1}
+
+\item 
+\hypertarget{class_output_list_a00a5eb19d218888ab778e3a2805f78a6}{void {\bfseries start\-Member\-Group} ()}\label{class_output_list_a00a5eb19d218888ab778e3a2805f78a6}
+
+\item 
+\hypertarget{class_output_list_ab0445d7ef83a9d4c7fa20dedf431ca52}{void {\bfseries end\-Member\-Group} (bool last)}\label{class_output_list_ab0445d7ef83a9d4c7fa20dedf431ca52}
+
+\item 
+\hypertarget{class_output_list_a9ee5fe2ccc63b3017f8769d37fc17f8e}{void {\bfseries insert\-Member\-Align} (bool templ=F\-A\-L\-S\-E)}\label{class_output_list_a9ee5fe2ccc63b3017f8769d37fc17f8e}
+
+\item 
+void \hyperlink{class_output_list_a9fd641c75c5b5ee59a974c3b476584c2}{write\-Ruler} ()
+\item 
+\hypertarget{class_output_list_ad10e211d7701ea029222192f10efdf8e}{void {\bfseries write\-Anchor} (const char $\ast$file\-Name, const char $\ast$name)}\label{class_output_list_ad10e211d7701ea029222192f10efdf8e}
+
+\item 
+void \hyperlink{class_output_list_a631953fed580c2b82e39426604c928ac}{start\-Code\-Fragment} ()
+\item 
+void \hyperlink{class_output_list_a0d97d57c34ed239bcf916104a71e10bf}{end\-Code\-Fragment} ()
+\item 
+\hypertarget{class_output_list_a87ce1b5dc3773f8bb8c74ca64d99022f}{void {\bfseries start\-Code\-Line} (bool has\-Line\-Numbers)}\label{class_output_list_a87ce1b5dc3773f8bb8c74ca64d99022f}
+
+\item 
+void \hyperlink{class_output_list_adbe51a89cf6f9573b3434e7cfda81a7c}{end\-Code\-Line} ()
+\item 
+void \hyperlink{class_output_list_a70366bf2bad21036a14d68e9ef532809}{write\-Line\-Number} (const char $\ast$ref, const char $\ast$file, const char $\ast$anchor, int line\-Number)
+\item 
+void \hyperlink{class_output_list_ab2f79d1f1a30e329f7ada3e51c04917e}{start\-Emphasis} ()
+\item 
+void \hyperlink{class_output_list_a5c4adfb425dee0e192e5b606eab0114a}{end\-Emphasis} ()
+\item 
+void \hyperlink{class_output_list_a0031a638b9159c2d16d2988da4b901ab}{write\-Char} (char c)
+\item 
+\hypertarget{class_output_list_aa198e247536d4f5cfc5266a5ad6a8097}{void {\bfseries start\-Member\-Doc} (const char $\ast$cl\-Name, const char $\ast$mem\-Name, const char $\ast$anchor, const char $\ast$title, bool show\-Inline)}\label{class_output_list_aa198e247536d4f5cfc5266a5ad6a8097}
+
+\item 
+\hypertarget{class_output_list_a9f9b6887e1f87c3c55ddffa4a447f057}{void {\bfseries end\-Member\-Doc} (bool has\-Args)}\label{class_output_list_a9f9b6887e1f87c3c55ddffa4a447f057}
+
+\item 
+\hypertarget{class_output_list_ae53ee4f22f957f141bdf9df8b626d61c}{void {\bfseries start\-Doxy\-Anchor} (const char $\ast$f\-Name, const char $\ast$man\-Name, const char $\ast$anchor, const char $\ast$name, const char $\ast$args)}\label{class_output_list_ae53ee4f22f957f141bdf9df8b626d61c}
+
+\item 
+\hypertarget{class_output_list_a057bd00d784fc019acec20fc9eee199d}{void {\bfseries end\-Doxy\-Anchor} (const char $\ast$fn, const char $\ast$anchor)}\label{class_output_list_a057bd00d784fc019acec20fc9eee199d}
+
+\item 
+\hypertarget{class_output_list_a0024111efcef4c86c58a90626442526b}{void {\bfseries write\-Latex\-Spacing} ()}\label{class_output_list_a0024111efcef4c86c58a90626442526b}
+
+\item 
+void \hyperlink{class_output_list_ae87205938a124b2eac0d798631d4e5e6}{start\-Description} ()
+\item 
+void \hyperlink{class_output_list_a5a0a6eb710a6b87c5dd8ea82b7a19dc4}{end\-Description} ()
+\item 
+void \hyperlink{class_output_list_ab8a6797fe2e4cb968a4c13eea7c4c968}{start\-Desc\-Item} ()
+\item 
+void \hyperlink{class_output_list_a080b8f2fa36e665da60bcfa982386ac8}{end\-Desc\-Item} ()
+\item 
+\hypertarget{class_output_list_aaeedab997793b96cdfc94f8b628d5a80}{void {\bfseries start\-Desc\-For\-Item} ()}\label{class_output_list_aaeedab997793b96cdfc94f8b628d5a80}
+
+\item 
+\hypertarget{class_output_list_a5cae5c5213649bfad6105e91ac818870}{void {\bfseries end\-Desc\-For\-Item} ()}\label{class_output_list_a5cae5c5213649bfad6105e91ac818870}
+
+\item 
+\hypertarget{class_output_list_a0e68709c755fc3aef30de8ee8ccb3080}{void {\bfseries start\-Subsection} ()}\label{class_output_list_a0e68709c755fc3aef30de8ee8ccb3080}
+
+\item 
+\hypertarget{class_output_list_a3fb66f3466cdfc1a0a77b8b6282dc0e8}{void {\bfseries end\-Subsection} ()}\label{class_output_list_a3fb66f3466cdfc1a0a77b8b6282dc0e8}
+
+\item 
+\hypertarget{class_output_list_a990a0621ea42a9028bb4162b40be4f61}{void {\bfseries start\-Subsubsection} ()}\label{class_output_list_a990a0621ea42a9028bb4162b40be4f61}
+
+\item 
+\hypertarget{class_output_list_af3a0a92b5bad729bb6eeafb07ca54b8f}{void {\bfseries end\-Subsubsection} ()}\label{class_output_list_af3a0a92b5bad729bb6eeafb07ca54b8f}
+
+\item 
+\hypertarget{class_output_list_abdafeba989f102a3656f6b3341ddc79b}{void {\bfseries start\-Center} ()}\label{class_output_list_abdafeba989f102a3656f6b3341ddc79b}
+
+\item 
+\hypertarget{class_output_list_a3e879450d54b627a5d86065b831ca0ac}{void {\bfseries end\-Center} ()}\label{class_output_list_a3e879450d54b627a5d86065b831ca0ac}
+
+\item 
+\hypertarget{class_output_list_a3a61d98acef498d905bd2c3f070a02a1}{void {\bfseries start\-Small} ()}\label{class_output_list_a3a61d98acef498d905bd2c3f070a02a1}
+
+\item 
+\hypertarget{class_output_list_afd1e7cfc27d1c1aa0638c9c4f94ee469}{void {\bfseries end\-Small} ()}\label{class_output_list_afd1e7cfc27d1c1aa0638c9c4f94ee469}
+
+\item 
+\hypertarget{class_output_list_a8c56a0949062c0b6a199c9d9f16a67a5}{void {\bfseries line\-Break} (const char $\ast$style=0)}\label{class_output_list_a8c56a0949062c0b6a199c9d9f16a67a5}
+
+\item 
+void \hyperlink{class_output_list_a6f230bea6c80b0a1847a9608c88fd45a}{start\-Bold} ()
+\item 
+void \hyperlink{class_output_list_a1e1a209879148bfcb4b57ab294b37b90}{end\-Bold} ()
+\item 
+\hypertarget{class_output_list_afb918c1df08cac5747a4ff2d3d3a04c3}{void {\bfseries start\-Member\-Description} (const char $\ast$anchor, const char $\ast$inherit\-Id=0)}\label{class_output_list_afb918c1df08cac5747a4ff2d3d3a04c3}
+
+\item 
+\hypertarget{class_output_list_a0dd91ddf8c2ef96803ec72c46964fdfd}{void {\bfseries end\-Member\-Description} ()}\label{class_output_list_a0dd91ddf8c2ef96803ec72c46964fdfd}
+
+\item 
+\hypertarget{class_output_list_adc7e1ef5ab7013afb090683808aec804}{void {\bfseries start\-Member\-Declaration} ()}\label{class_output_list_adc7e1ef5ab7013afb090683808aec804}
+
+\item 
+\hypertarget{class_output_list_a01efe005797c900e146b39b5b7be446f}{void {\bfseries end\-Member\-Declaration} (const char $\ast$anchor, const char $\ast$inherit\-Id)}\label{class_output_list_a01efe005797c900e146b39b5b7be446f}
+
+\item 
+\hypertarget{class_output_list_aa2c613cc72d6c92ca6ab9a8e6af0948c}{void {\bfseries write\-Inherited\-Section\-Title} (const char $\ast$id, const char $\ast$ref, const char $\ast$file, const char $\ast$anchor, const char $\ast$title, const char $\ast$name)}\label{class_output_list_aa2c613cc72d6c92ca6ab9a8e6af0948c}
+
+\item 
+\hypertarget{class_output_list_a8d8f83f72ee98aa7784cde735ea2e9e9}{void {\bfseries start\-Simple\-Sect} (Section\-Types t, const char $\ast$file, const char $\ast$anchor, const char $\ast$title)}\label{class_output_list_a8d8f83f72ee98aa7784cde735ea2e9e9}
+
+\item 
+\hypertarget{class_output_list_a845408bbcbfed31523c20fd170dd8b45}{void {\bfseries end\-Simple\-Sect} ()}\label{class_output_list_a845408bbcbfed31523c20fd170dd8b45}
+
+\item 
+\hypertarget{class_output_list_a690d000267c59d01eec35f2c76d60a95}{void {\bfseries start\-Param\-List} (Param\-List\-Types t, const char $\ast$title)}\label{class_output_list_a690d000267c59d01eec35f2c76d60a95}
+
+\item 
+\hypertarget{class_output_list_a0cea756e6f65da408378bedffe2b67d1}{void {\bfseries end\-Param\-List} ()}\label{class_output_list_a0cea756e6f65da408378bedffe2b67d1}
+
+\item 
+\hypertarget{class_output_list_a34fb23b9705fd9c97bfb8730b5667822}{void {\bfseries start\-Indent} ()}\label{class_output_list_a34fb23b9705fd9c97bfb8730b5667822}
+
+\item 
+\hypertarget{class_output_list_a3e925c49464a35005365e14899e6c0a8}{void {\bfseries end\-Indent} ()}\label{class_output_list_a3e925c49464a35005365e14899e6c0a8}
+
+\item 
+\hypertarget{class_output_list_a49cd81f5922e473e13f3a232e4c860dc}{void {\bfseries start\-Section} (const char $\ast$lab, const char $\ast$title, Section\-Info\-::\-Section\-Type t)}\label{class_output_list_a49cd81f5922e473e13f3a232e4c860dc}
+
+\item 
+\hypertarget{class_output_list_a63e9f586117c9b5372199256461c7661}{void {\bfseries end\-Section} (const char $\ast$lab, Section\-Info\-::\-Section\-Type t)}\label{class_output_list_a63e9f586117c9b5372199256461c7661}
+
+\item 
+\hypertarget{class_output_list_a3810699d4deafedb9c887394aaedb0af}{void {\bfseries add\-Index\-Item} (const char $\ast$s1, const char $\ast$s2)}\label{class_output_list_a3810699d4deafedb9c887394aaedb0af}
+
+\item 
+\hypertarget{class_output_list_acba0caaf7ea5f4acb9b4bf3ccbf2ee68}{void {\bfseries write\-Synopsis} ()}\label{class_output_list_acba0caaf7ea5f4acb9b4bf3ccbf2ee68}
+
+\item 
+\hypertarget{class_output_list_ab9f199144725218464219039e2e7284e}{void {\bfseries start\-Class\-Diagram} ()}\label{class_output_list_ab9f199144725218464219039e2e7284e}
+
+\item 
+\hypertarget{class_output_list_a85eb98a2abcc5acd52fe8fd1bc43d326}{void {\bfseries end\-Class\-Diagram} (const \hyperlink{class_class_diagram}{Class\-Diagram} \&d, const char $\ast$f, const char $\ast$n)}\label{class_output_list_a85eb98a2abcc5acd52fe8fd1bc43d326}
+
+\item 
+\hypertarget{class_output_list_acb1f8019fc7ab54bdba19c92ef4a223d}{void {\bfseries start\-Page\-Ref} ()}\label{class_output_list_acb1f8019fc7ab54bdba19c92ef4a223d}
+
+\item 
+\hypertarget{class_output_list_acfa5dfc6f9fbbf61ddcf987046642cc9}{void {\bfseries end\-Page\-Ref} (const char $\ast$c, const char $\ast$a)}\label{class_output_list_acfa5dfc6f9fbbf61ddcf987046642cc9}
+
+\item 
+\hypertarget{class_output_list_a1003d38afed51e3e932a61be3b2d71a4}{void {\bfseries start\-Quick\-Indices} ()}\label{class_output_list_a1003d38afed51e3e932a61be3b2d71a4}
+
+\item 
+\hypertarget{class_output_list_a8ccfa7b4cc697673db66d95470901da6}{void {\bfseries end\-Quick\-Indices} ()}\label{class_output_list_a8ccfa7b4cc697673db66d95470901da6}
+
+\item 
+\hypertarget{class_output_list_aa08d5576403aaf7dbdadd40cfdd2ccd7}{void {\bfseries write\-Split\-Bar} (const char $\ast$name)}\label{class_output_list_aa08d5576403aaf7dbdadd40cfdd2ccd7}
+
+\item 
+\hypertarget{class_output_list_a73bd5b677298d5d38c3adeee45889d82}{void {\bfseries write\-Navigation\-Path} (const char $\ast$s)}\label{class_output_list_a73bd5b677298d5d38c3adeee45889d82}
+
+\item 
+\hypertarget{class_output_list_ac7d0ac7d2abfeba04c9c22a3974221ae}{void {\bfseries write\-Logo} ()}\label{class_output_list_ac7d0ac7d2abfeba04c9c22a3974221ae}
+
+\item 
+\hypertarget{class_output_list_aaabc3321e0f41d7c76fc03bfb77ca26a}{void {\bfseries write\-Quick\-Links} (bool compact, Highlighted\-Item hli, const char $\ast$file)}\label{class_output_list_aaabc3321e0f41d7c76fc03bfb77ca26a}
+
+\item 
+\hypertarget{class_output_list_a365f727475781694161eeed7a18c650d}{void {\bfseries write\-Summary\-Link} (const char $\ast$file, const char $\ast$anchor, const char $\ast$title, bool first)}\label{class_output_list_a365f727475781694161eeed7a18c650d}
+
+\item 
+\hypertarget{class_output_list_a4d02a081921a34660b9f11e7c32a303f}{void {\bfseries start\-Contents} ()}\label{class_output_list_a4d02a081921a34660b9f11e7c32a303f}
+
+\item 
+\hypertarget{class_output_list_a89af32c9958f2fc61301a25e7b3360c7}{void {\bfseries end\-Contents} ()}\label{class_output_list_a89af32c9958f2fc61301a25e7b3360c7}
+
+\item 
+\hypertarget{class_output_list_a288d1e41483923656614e1b96da0971c}{void {\bfseries write\-Non\-Breakable\-Space} (int num)}\label{class_output_list_a288d1e41483923656614e1b96da0971c}
+
+\item 
+\hypertarget{class_output_list_a6f7fc449c9d4d715c169881f1a54eea2}{void {\bfseries start\-Desc\-Table} (const char $\ast$title)}\label{class_output_list_a6f7fc449c9d4d715c169881f1a54eea2}
+
+\item 
+\hypertarget{class_output_list_aea3e3db6190b6ec4e0f5c3988cacb40c}{void {\bfseries end\-Desc\-Table} ()}\label{class_output_list_aea3e3db6190b6ec4e0f5c3988cacb40c}
+
+\item 
+\hypertarget{class_output_list_a5ab1218802d388186a056cba7ea439e2}{void {\bfseries start\-Desc\-Table\-Title} ()}\label{class_output_list_a5ab1218802d388186a056cba7ea439e2}
+
+\item 
+\hypertarget{class_output_list_a25c810f32509fa5a79d86d96a3d4a275}{void {\bfseries end\-Desc\-Table\-Title} ()}\label{class_output_list_a25c810f32509fa5a79d86d96a3d4a275}
+
+\item 
+\hypertarget{class_output_list_ade74ab43d9c69e30b4344e7d176bd07e}{void {\bfseries start\-Desc\-Table\-Data} ()}\label{class_output_list_ade74ab43d9c69e30b4344e7d176bd07e}
+
+\item 
+\hypertarget{class_output_list_aba60999e7c19eb5c546be43e157de98d}{void {\bfseries end\-Desc\-Table\-Data} ()}\label{class_output_list_aba60999e7c19eb5c546be43e157de98d}
+
+\item 
+\hypertarget{class_output_list_a3ea98cf1d0374587532fd534eb207de3}{void {\bfseries start\-Dot\-Graph} ()}\label{class_output_list_a3ea98cf1d0374587532fd534eb207de3}
+
+\item 
+\hypertarget{class_output_list_a823fd139095f21ebf78ec23a90cb7a24}{void {\bfseries end\-Dot\-Graph} (const \hyperlink{class_dot_class_graph}{Dot\-Class\-Graph} \&g)}\label{class_output_list_a823fd139095f21ebf78ec23a90cb7a24}
+
+\item 
+\hypertarget{class_output_list_a94461be722782868a8ecb74a7fe44a35}{void {\bfseries start\-Incl\-Dep\-Graph} ()}\label{class_output_list_a94461be722782868a8ecb74a7fe44a35}
+
+\item 
+\hypertarget{class_output_list_af66232045963e5255faf33c600fb1be3}{void {\bfseries end\-Incl\-Dep\-Graph} (const \hyperlink{class_dot_incl_dep_graph}{Dot\-Incl\-Dep\-Graph} \&g)}\label{class_output_list_af66232045963e5255faf33c600fb1be3}
+
+\item 
+\hypertarget{class_output_list_a8b9ae07c2a7ca51c0100e5258c16b663}{void {\bfseries start\-Call\-Graph} ()}\label{class_output_list_a8b9ae07c2a7ca51c0100e5258c16b663}
+
+\item 
+\hypertarget{class_output_list_acdc4833b30336e37e5d0940e49595b70}{void {\bfseries end\-Call\-Graph} (const \hyperlink{class_dot_call_graph}{Dot\-Call\-Graph} \&g)}\label{class_output_list_acdc4833b30336e37e5d0940e49595b70}
+
+\item 
+\hypertarget{class_output_list_a071f06d58679ecf7077e1bb4335b798c}{void {\bfseries start\-Dir\-Dep\-Graph} ()}\label{class_output_list_a071f06d58679ecf7077e1bb4335b798c}
+
+\item 
+\hypertarget{class_output_list_a074b02c465c6db3a6252095c906511ab}{void {\bfseries end\-Dir\-Dep\-Graph} (const \hyperlink{class_dot_dir_deps}{Dot\-Dir\-Deps} \&g)}\label{class_output_list_a074b02c465c6db3a6252095c906511ab}
+
+\item 
+\hypertarget{class_output_list_ac75e421f535cd69ad8b286bb5682f98a}{void {\bfseries start\-Group\-Collaboration} ()}\label{class_output_list_ac75e421f535cd69ad8b286bb5682f98a}
+
+\item 
+\hypertarget{class_output_list_abf4d1f5c7a6de661874865317e848973}{void {\bfseries end\-Group\-Collaboration} (const \hyperlink{class_dot_group_collaboration}{Dot\-Group\-Collaboration} \&g)}\label{class_output_list_abf4d1f5c7a6de661874865317e848973}
+
+\item 
+\hypertarget{class_output_list_ade237967fa53c8c01a1477ebe3fe79e9}{void {\bfseries write\-Graphical\-Hierarchy} (const \hyperlink{class_dot_gfx_hierarchy_table}{Dot\-Gfx\-Hierarchy\-Table} \&g)}\label{class_output_list_ade237967fa53c8c01a1477ebe3fe79e9}
+
+\item 
+\hypertarget{class_output_list_a6861203fdfa560494f56b850c00dc20c}{void {\bfseries start\-Text\-Block} (bool dense=F\-A\-L\-S\-E)}\label{class_output_list_a6861203fdfa560494f56b850c00dc20c}
+
+\item 
+\hypertarget{class_output_list_aec142c7c44bd4460dd45032869c22d8e}{void {\bfseries end\-Text\-Block} (bool para\-Break=F\-A\-L\-S\-E)}\label{class_output_list_aec142c7c44bd4460dd45032869c22d8e}
+
+\item 
+\hypertarget{class_output_list_a9fcbfbb9afd01da287ac464c1da0d778}{void {\bfseries last\-Index\-Page} ()}\label{class_output_list_a9fcbfbb9afd01da287ac464c1da0d778}
+
+\item 
+\hypertarget{class_output_list_a69e0980a62e287e8543cc10ac407483b}{void {\bfseries start\-Member\-Doc\-Prefix\-Item} ()}\label{class_output_list_a69e0980a62e287e8543cc10ac407483b}
+
+\item 
+\hypertarget{class_output_list_a797315065ef118ee81fc1828eb5f7e5d}{void {\bfseries end\-Member\-Doc\-Prefix\-Item} ()}\label{class_output_list_a797315065ef118ee81fc1828eb5f7e5d}
+
+\item 
+\hypertarget{class_output_list_a2abf88a5aa423056ec6e9bcef68f6094}{void {\bfseries start\-Member\-Doc\-Name} (bool align)}\label{class_output_list_a2abf88a5aa423056ec6e9bcef68f6094}
+
+\item 
+\hypertarget{class_output_list_ab8f5f35025a2dfa4026e02e5e586b27e}{void {\bfseries end\-Member\-Doc\-Name} ()}\label{class_output_list_ab8f5f35025a2dfa4026e02e5e586b27e}
+
+\item 
+\hypertarget{class_output_list_a563b7005db4ba17663f4f4b32b816b94}{void {\bfseries start\-Parameter\-Type} (bool first, const char $\ast$key)}\label{class_output_list_a563b7005db4ba17663f4f4b32b816b94}
+
+\item 
+\hypertarget{class_output_list_a1e61ed71851d9423940748df3342715b}{void {\bfseries end\-Parameter\-Type} ()}\label{class_output_list_a1e61ed71851d9423940748df3342715b}
+
+\item 
+\hypertarget{class_output_list_adc242083cf16355c806cca0244f4cd9e}{void {\bfseries start\-Parameter\-Name} (bool one)}\label{class_output_list_adc242083cf16355c806cca0244f4cd9e}
+
+\item 
+\hypertarget{class_output_list_a0c0d481e87d25ee396fb723755b03cf9}{void {\bfseries end\-Parameter\-Name} (bool last, bool one, bool bracket)}\label{class_output_list_a0c0d481e87d25ee396fb723755b03cf9}
+
+\item 
+\hypertarget{class_output_list_a8e132c555a794fce66878c0b0bc020f1}{void {\bfseries start\-Parameter\-List} (bool open\-Bracket)}\label{class_output_list_a8e132c555a794fce66878c0b0bc020f1}
+
+\item 
+\hypertarget{class_output_list_a18eb29acbeb3f72b0d8f4ea23b21f054}{void {\bfseries end\-Parameter\-List} ()}\label{class_output_list_a18eb29acbeb3f72b0d8f4ea23b21f054}
+
+\item 
+\hypertarget{class_output_list_af9649c307bacff5a122096b1c997aa61}{void {\bfseries exception\-Entry} (const char $\ast$prefix, bool close\-Bracket)}\label{class_output_list_af9649c307bacff5a122096b1c997aa61}
+
+\item 
+\hypertarget{class_output_list_aac7d7fcb1bc8612b62674284916df03b}{void {\bfseries start\-Constraint\-List} (const char $\ast$header)}\label{class_output_list_aac7d7fcb1bc8612b62674284916df03b}
+
+\item 
+\hypertarget{class_output_list_afd7a8f4d6caba86120db8bff0fa37422}{void {\bfseries start\-Constraint\-Param} ()}\label{class_output_list_afd7a8f4d6caba86120db8bff0fa37422}
+
+\item 
+\hypertarget{class_output_list_a01ad4ae7d141c58991b7a9575a67b6cb}{void {\bfseries end\-Constraint\-Param} ()}\label{class_output_list_a01ad4ae7d141c58991b7a9575a67b6cb}
+
+\item 
+\hypertarget{class_output_list_a6cb814426440dc7cc3d419d38b2e7d9b}{void {\bfseries start\-Constraint\-Type} ()}\label{class_output_list_a6cb814426440dc7cc3d419d38b2e7d9b}
+
+\item 
+\hypertarget{class_output_list_aa1459dd03b28f1af11a8b2a2a59339b2}{void {\bfseries end\-Constraint\-Type} ()}\label{class_output_list_aa1459dd03b28f1af11a8b2a2a59339b2}
+
+\item 
+\hypertarget{class_output_list_a8656767d36d6246287ba0c6697a66663}{void {\bfseries start\-Constraint\-Docs} ()}\label{class_output_list_a8656767d36d6246287ba0c6697a66663}
+
+\item 
+\hypertarget{class_output_list_aa25401ec889debd3be29cab509260442}{void {\bfseries end\-Constraint\-Docs} ()}\label{class_output_list_aa25401ec889debd3be29cab509260442}
+
+\item 
+\hypertarget{class_output_list_a3933f6db5a43b8de6b152d9c525bfde9}{void {\bfseries end\-Constraint\-List} ()}\label{class_output_list_a3933f6db5a43b8de6b152d9c525bfde9}
+
+\item 
+\hypertarget{class_output_list_af817990b78bf9afa5a2ef48400c3a688}{void {\bfseries start\-Member\-Doc\-Simple} ()}\label{class_output_list_af817990b78bf9afa5a2ef48400c3a688}
+
+\item 
+\hypertarget{class_output_list_aa630e29ae22b40def24a62d2586e8808}{void {\bfseries end\-Member\-Doc\-Simple} ()}\label{class_output_list_aa630e29ae22b40def24a62d2586e8808}
+
+\item 
+\hypertarget{class_output_list_a64d71adb23a46d9cd81eefa97d926cf6}{void {\bfseries start\-Inline\-Member\-Type} ()}\label{class_output_list_a64d71adb23a46d9cd81eefa97d926cf6}
+
+\item 
+\hypertarget{class_output_list_a908e01a4310b5e9fe1e6493a87c3f30e}{void {\bfseries end\-Inline\-Member\-Type} ()}\label{class_output_list_a908e01a4310b5e9fe1e6493a87c3f30e}
+
+\item 
+\hypertarget{class_output_list_a3307ae57ec582f244a790325900c1c96}{void {\bfseries start\-Inline\-Member\-Name} ()}\label{class_output_list_a3307ae57ec582f244a790325900c1c96}
+
+\item 
+\hypertarget{class_output_list_a41cbfeb50f86a4c1531e2012dbcbb209}{void {\bfseries end\-Inline\-Member\-Name} ()}\label{class_output_list_a41cbfeb50f86a4c1531e2012dbcbb209}
+
+\item 
+\hypertarget{class_output_list_a2a23f25caeb56aba89bc2b2c4147a2d2}{void {\bfseries start\-Inline\-Member\-Doc} ()}\label{class_output_list_a2a23f25caeb56aba89bc2b2c4147a2d2}
+
+\item 
+\hypertarget{class_output_list_a7a50d2a68d8d8805c86482012f422cba}{void {\bfseries end\-Inline\-Member\-Doc} ()}\label{class_output_list_a7a50d2a68d8d8805c86482012f422cba}
+
+\item 
+\hypertarget{class_output_list_aa1c00a079e425e24bbbb9291a698cbf2}{void {\bfseries start\-Labels} ()}\label{class_output_list_aa1c00a079e425e24bbbb9291a698cbf2}
+
+\item 
+\hypertarget{class_output_list_a4877c6f161162a399bf051570dee0c4a}{void {\bfseries write\-Label} (const char $\ast$l, bool is\-Last)}\label{class_output_list_a4877c6f161162a399bf051570dee0c4a}
+
+\item 
+\hypertarget{class_output_list_a26e386d6fcaae518c16e018bee486a61}{void {\bfseries end\-Labels} ()}\label{class_output_list_a26e386d6fcaae518c16e018bee486a61}
+
+\item 
+void \hyperlink{class_output_list_a253f5e2755f981e67662b662168aa054}{start\-Font\-Class} (const char $\ast$c)
+\item 
+void \hyperlink{class_output_list_ab7851025d80a6d1ed6dd8e25016136e1}{end\-Font\-Class} ()
+\item 
+void \hyperlink{class_output_list_aa813b87ce15931854c2b0b9c1abb9e19}{write\-Code\-Anchor} (const char $\ast$name)
+\item 
+\hypertarget{class_output_list_a619be3ae6560f96acfc84607ea2d0cd2}{void {\bfseries set\-Current\-Doc} (\hyperlink{class_definition}{Definition} $\ast$context, const char $\ast$anchor, bool is\-Source\-File)}\label{class_output_list_a619be3ae6560f96acfc84607ea2d0cd2}
+
+\item 
+\hypertarget{class_output_list_aef206d2620c6a5bc4afcb9a3874dc6b2}{void {\bfseries add\-Word} (const char $\ast$word, bool hi\-Priority)}\label{class_output_list_aef206d2620c6a5bc4afcb9a3874dc6b2}
+
+\item 
+\hypertarget{class_output_list_a623f6878d1b90ffef03c07892ba076ab}{void {\bfseries start\-Plain\-File} (const char $\ast$name)}\label{class_output_list_a623f6878d1b90ffef03c07892ba076ab}
+
+\item 
+\hypertarget{class_output_list_aae907beb90359ecdfe4086e0a571b8f4}{void {\bfseries end\-Plain\-File} ()}\label{class_output_list_aae907beb90359ecdfe4086e0a571b8f4}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Descrição detalhada}
+Class representing a list of output generators that are written to in parallel. 
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_output_list_ad58b50196a8176a68df41aabcaf6a8b7}{\index{Output\-List@{Output\-List}!codify@{codify}}
+\index{codify@{codify}!OutputList@{Output\-List}}
+\subsubsection[{codify}]{\setlength{\rightskip}{0pt plus 5cm}void codify (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_output_list_ad58b50196a8176a68df41aabcaf6a8b7}
+Writes an code fragment to the output. This function should keep spaces visible, should break lines at a newline and should convert tabs to the right number of spaces. 
+
+Implementa \hyperlink{class_code_output_interface_abc701d9798e414eae3e9694be75dfa8a}{Code\-Output\-Interface}.
+
+\hypertarget{class_output_list_a518c3abda47a43b82e5ec04ee06a3f94}{\index{Output\-List@{Output\-List}!disable@{disable}}
+\index{disable@{disable}!OutputList@{Output\-List}}
+\subsubsection[{disable}]{\setlength{\rightskip}{0pt plus 5cm}void disable (
+\begin{DoxyParamCaption}
+\item[{Output\-Generator\-::\-Output\-Type}]{o}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_output_list_a518c3abda47a43b82e5ec04ee06a3f94}
+Disables a specific output format (useful for \hyperlink{class_output_list}{Output\-List} only) 
+
+Implementa \hyperlink{class_output_doc_interface_a179ce9b58cecdbe5a430c4bf741aff80}{Output\-Doc\-Interface}.
+
+\hypertarget{class_output_list_a238885c747f586049b766fa4fcd5ec12}{\index{Output\-List@{Output\-List}!disable\-All@{disable\-All}}
+\index{disable\-All@{disable\-All}!OutputList@{Output\-List}}
+\subsubsection[{disable\-All}]{\setlength{\rightskip}{0pt plus 5cm}void disable\-All (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_output_list_a238885c747f586049b766fa4fcd5ec12}
+Disables all output formats (useful for \hyperlink{class_output_list}{Output\-List} only) 
+
+Implementa \hyperlink{class_output_doc_interface_ad28260bd5a78968243fe123f42719d1e}{Output\-Doc\-Interface}.
+
+\hypertarget{class_output_list_af6f08b1d8f3504c943adc7626e6336fb}{\index{Output\-List@{Output\-List}!disable\-All\-But@{disable\-All\-But}}
+\index{disable\-All\-But@{disable\-All\-But}!OutputList@{Output\-List}}
+\subsubsection[{disable\-All\-But}]{\setlength{\rightskip}{0pt plus 5cm}void disable\-All\-But (
+\begin{DoxyParamCaption}
+\item[{Output\-Generator\-::\-Output\-Type}]{o}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_output_list_af6f08b1d8f3504c943adc7626e6336fb}
+Create a new output generator. This can later by appended to the current one using append().
+
+Disables all output formats except format {\itshape o} (useful for \hyperlink{class_output_list}{Output\-List} only) 
+
+Implementa \hyperlink{class_output_doc_interface_ae51277470e8341fec8500f34b01ef7c4}{Output\-Doc\-Interface}.
+
+\hypertarget{class_output_list_af7ffb65da6beaf5adf9c63da246dc694}{\index{Output\-List@{Output\-List}!docify@{docify}}
+\index{docify@{docify}!OutputList@{Output\-List}}
+\subsubsection[{docify}]{\setlength{\rightskip}{0pt plus 5cm}void docify (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_output_list_af7ffb65da6beaf5adf9c63da246dc694}
+Writes an A\-S\-C\-I\-I string to the output. Converts characters that have \hyperlink{class_a}{A} special meaning, like {\ttfamily \&} in html. 
+
+Implementa \hyperlink{class_base_output_doc_interface_a6f6bec326f718b326fb67adb943ebc27}{Base\-Output\-Doc\-Interface}.
+
+\hypertarget{class_output_list_af50cca806934038f9eb543edaddf998f}{\index{Output\-List@{Output\-List}!enable@{enable}}
+\index{enable@{enable}!OutputList@{Output\-List}}
+\subsubsection[{enable}]{\setlength{\rightskip}{0pt plus 5cm}void enable (
+\begin{DoxyParamCaption}
+\item[{Output\-Generator\-::\-Output\-Type}]{o}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_output_list_af50cca806934038f9eb543edaddf998f}
+Enables a specific output format (useful for \hyperlink{class_output_list}{Output\-List} only) 
+
+Implementa \hyperlink{class_output_doc_interface_ae04d1c59d6fbb2fa89ad44d9ef01a298}{Output\-Doc\-Interface}.
+
+\hypertarget{class_output_list_ae076f3f35c07044ed812b78871741c15}{\index{Output\-List@{Output\-List}!enable\-All@{enable\-All}}
+\index{enable\-All@{enable\-All}!OutputList@{Output\-List}}
+\subsubsection[{enable\-All}]{\setlength{\rightskip}{0pt plus 5cm}void enable\-All (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_output_list_ae076f3f35c07044ed812b78871741c15}
+Enables all output formats as far as they have been enabled in the config file. (useful for \hyperlink{class_output_list}{Output\-List} only) 
+
+Implementa \hyperlink{class_output_doc_interface_a320d024acf52e5030cbd115038dd63b4}{Output\-Doc\-Interface}.
+
+\hypertarget{class_output_list_a1e1a209879148bfcb4b57ab294b37b90}{\index{Output\-List@{Output\-List}!end\-Bold@{end\-Bold}}
+\index{end\-Bold@{end\-Bold}!OutputList@{Output\-List}}
+\subsubsection[{end\-Bold}]{\setlength{\rightskip}{0pt plus 5cm}void end\-Bold (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_output_list_a1e1a209879148bfcb4b57ab294b37b90}
+End a section of text displayed in bold face. 
+
+Implementa \hyperlink{class_base_output_doc_interface_a593e371dace7c16866f8bd028905096d}{Base\-Output\-Doc\-Interface}.
+
+\hypertarget{class_output_list_a0d97d57c34ed239bcf916104a71e10bf}{\index{Output\-List@{Output\-List}!end\-Code\-Fragment@{end\-Code\-Fragment}}
+\index{end\-Code\-Fragment@{end\-Code\-Fragment}!OutputList@{Output\-List}}
+\subsubsection[{end\-Code\-Fragment}]{\setlength{\rightskip}{0pt plus 5cm}void end\-Code\-Fragment (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_output_list_a0d97d57c34ed239bcf916104a71e10bf}
+Ends a source code fragment 
+
+Implementa \hyperlink{class_base_output_doc_interface_a6d0e9c89b22affd8574d3804393d8fa5}{Base\-Output\-Doc\-Interface}.
+
+\hypertarget{class_output_list_adbe51a89cf6f9573b3434e7cfda81a7c}{\index{Output\-List@{Output\-List}!end\-Code\-Line@{end\-Code\-Line}}
+\index{end\-Code\-Line@{end\-Code\-Line}!OutputList@{Output\-List}}
+\subsubsection[{end\-Code\-Line}]{\setlength{\rightskip}{0pt plus 5cm}void end\-Code\-Line (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_output_list_adbe51a89cf6f9573b3434e7cfda81a7c}
+Ends a line of code started with start\-Code\-Line() 
+
+Implementa \hyperlink{class_code_output_interface_a542863fa8a9697696ffc4d4b24678e1f}{Code\-Output\-Interface}.
+
+\hypertarget{class_output_list_a080b8f2fa36e665da60bcfa982386ac8}{\index{Output\-List@{Output\-List}!end\-Desc\-Item@{end\-Desc\-Item}}
+\index{end\-Desc\-Item@{end\-Desc\-Item}!OutputList@{Output\-List}}
+\subsubsection[{end\-Desc\-Item}]{\setlength{\rightskip}{0pt plus 5cm}void end\-Desc\-Item (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_output_list_a080b8f2fa36e665da60bcfa982386ac8}
+Ends an item of a description list and starts the description itself\-: e.\-g. {\ttfamily $<$/dt$>$} in H\-T\-M\-L. 
+
+Implementa \hyperlink{class_base_output_doc_interface_ae9e2fe1d39b02fcc5a682ace36d7eafa}{Base\-Output\-Doc\-Interface}.
+
+\hypertarget{class_output_list_a5a0a6eb710a6b87c5dd8ea82b7a19dc4}{\index{Output\-List@{Output\-List}!end\-Description@{end\-Description}}
+\index{end\-Description@{end\-Description}!OutputList@{Output\-List}}
+\subsubsection[{end\-Description}]{\setlength{\rightskip}{0pt plus 5cm}void end\-Description (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_output_list_a5a0a6eb710a6b87c5dd8ea82b7a19dc4}
+Ends a description list\-: e.\-g. {\ttfamily $<$/dl$>$} in H\-T\-M\-L 
+
+Implementa \hyperlink{class_base_output_doc_interface_a58e5aab2220d1da0e75a66c294cc9857}{Base\-Output\-Doc\-Interface}.
+
+\hypertarget{class_output_list_a5c4adfb425dee0e192e5b606eab0114a}{\index{Output\-List@{Output\-List}!end\-Emphasis@{end\-Emphasis}}
+\index{end\-Emphasis@{end\-Emphasis}!OutputList@{Output\-List}}
+\subsubsection[{end\-Emphasis}]{\setlength{\rightskip}{0pt plus 5cm}void end\-Emphasis (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_output_list_a5c4adfb425dee0e192e5b606eab0114a}
+Ends a section of text displayed in italic. 
+
+Implementa \hyperlink{class_base_output_doc_interface_a1530746d5ac62d305ff693f0eb2bf90a}{Base\-Output\-Doc\-Interface}.
+
+\hypertarget{class_output_list_ab7851025d80a6d1ed6dd8e25016136e1}{\index{Output\-List@{Output\-List}!end\-Font\-Class@{end\-Font\-Class}}
+\index{end\-Font\-Class@{end\-Font\-Class}!OutputList@{Output\-List}}
+\subsubsection[{end\-Font\-Class}]{\setlength{\rightskip}{0pt plus 5cm}void end\-Font\-Class (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_output_list_ab7851025d80a6d1ed6dd8e25016136e1}
+Ends a block started with \hyperlink{class_output_list_a253f5e2755f981e67662b662168aa054}{start\-Font\-Class()} 
+
+Implementa \hyperlink{class_code_output_interface_adcd22acfbc1c4c011802334b78cf5f01}{Code\-Output\-Interface}.
+
+\hypertarget{class_output_list_ac2ba450d319270e186e436167c8609ce}{\index{Output\-List@{Output\-List}!end\-Html\-Link@{end\-Html\-Link}}
+\index{end\-Html\-Link@{end\-Html\-Link}!OutputList@{Output\-List}}
+\subsubsection[{end\-Html\-Link}]{\setlength{\rightskip}{0pt plus 5cm}void end\-Html\-Link (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_output_list_ac2ba450d319270e186e436167c8609ce}
+Ends a link started by \hyperlink{class_output_list_a0746b9c06743e1d4fe527b8317457da1}{start\-Html\-Link()}. 
+
+Implementa \hyperlink{class_base_output_doc_interface_a463c695844e8137b388af6e1bbafc19e}{Base\-Output\-Doc\-Interface}.
+
+\hypertarget{class_output_list_ab11dc69249cdab99802fe788b9da43d5}{\index{Output\-List@{Output\-List}!end\-Item\-List@{end\-Item\-List}}
+\index{end\-Item\-List@{end\-Item\-List}!OutputList@{Output\-List}}
+\subsubsection[{end\-Item\-List}]{\setlength{\rightskip}{0pt plus 5cm}void end\-Item\-List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_output_list_ab11dc69249cdab99802fe788b9da43d5}
+Ends a bullet list\-: e.\-g. {\ttfamily $<$/ul$>$} in html 
+
+Implementa \hyperlink{class_base_output_doc_interface_a818d290261244e40e8c70562a7198156}{Base\-Output\-Doc\-Interface}.
+
+\hypertarget{class_output_list_a61efca8a19608566df04a45d16e88449}{\index{Output\-List@{Output\-List}!end\-Item\-List\-Item@{end\-Item\-List\-Item}}
+\index{end\-Item\-List\-Item@{end\-Item\-List\-Item}!OutputList@{Output\-List}}
+\subsubsection[{end\-Item\-List\-Item}]{\setlength{\rightskip}{0pt plus 5cm}void end\-Item\-List\-Item (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_output_list_a61efca8a19608566df04a45d16e88449}
+Writes a list item for a bullet or enumerated list\-: e.\-g. {\ttfamily $<$/li$>$} in html 
+
+Implementa \hyperlink{class_base_output_doc_interface_a8161fe76c2c66d47d0eb078be885bec7}{Base\-Output\-Doc\-Interface}.
+
+\hypertarget{class_output_list_a3076b52ebe72e4b56c232817cf2a16f0}{\index{Output\-List@{Output\-List}!end\-Paragraph@{end\-Paragraph}}
+\index{end\-Paragraph@{end\-Paragraph}!OutputList@{Output\-List}}
+\subsubsection[{end\-Paragraph}]{\setlength{\rightskip}{0pt plus 5cm}void end\-Paragraph (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_output_list_a3076b52ebe72e4b56c232817cf2a16f0}
+Ends a paragraph 
+
+Implementa \hyperlink{class_base_output_doc_interface_a9a97d4c8fb4e8ac91125f9ff2718d83d}{Base\-Output\-Doc\-Interface}.
+
+\hypertarget{class_output_list_acb220673316232acd7d1050553dafaf6}{\index{Output\-List@{Output\-List}!end\-Typewriter@{end\-Typewriter}}
+\index{end\-Typewriter@{end\-Typewriter}!OutputList@{Output\-List}}
+\subsubsection[{end\-Typewriter}]{\setlength{\rightskip}{0pt plus 5cm}void end\-Typewriter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_output_list_acb220673316232acd7d1050553dafaf6}
+End a section of text displayed in typewriter style. 
+
+Implementa \hyperlink{class_base_output_doc_interface_a201cdc35ada3fac3f2f72adcc43308b8}{Base\-Output\-Doc\-Interface}.
+
+\hypertarget{class_output_list_ad28f007ae83273a7d1ca6a6b46979af9}{\index{Output\-List@{Output\-List}!is\-Enabled@{is\-Enabled}}
+\index{is\-Enabled@{is\-Enabled}!OutputList@{Output\-List}}
+\subsubsection[{is\-Enabled}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-Enabled (
+\begin{DoxyParamCaption}
+\item[{Output\-Generator\-::\-Output\-Type}]{o}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_output_list_ad28f007ae83273a7d1ca6a6b46979af9}
+Check whether a specific output format is currently enabled (useful for \hyperlink{class_output_list}{Output\-List} only) 
+
+Implementa \hyperlink{class_output_doc_interface_aab8dbaf4e1d5b4993fe18d75ce533f93}{Output\-Doc\-Interface}.
+
+\hypertarget{class_output_list_a9fd3c9d8d193a665b4b1c233ae573753}{\index{Output\-List@{Output\-List}!pop\-Generator\-State@{pop\-Generator\-State}}
+\index{pop\-Generator\-State@{pop\-Generator\-State}!OutputList@{Output\-List}}
+\subsubsection[{pop\-Generator\-State}]{\setlength{\rightskip}{0pt plus 5cm}void pop\-Generator\-State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_output_list_a9fd3c9d8d193a665b4b1c233ae573753}
+Pops the state of the current generator (or list of generators) on a stack. Should be preceded by a call the \hyperlink{class_output_list_aff968dbb6182903ac3a2c899cf1078f3}{push\-Generator\-State()}. 
+
+Implementa \hyperlink{class_output_doc_interface_a7ecb0cf2cfdfd572cfd2713c750a0f12}{Output\-Doc\-Interface}.
+
+\hypertarget{class_output_list_aff968dbb6182903ac3a2c899cf1078f3}{\index{Output\-List@{Output\-List}!push\-Generator\-State@{push\-Generator\-State}}
+\index{push\-Generator\-State@{push\-Generator\-State}!OutputList@{Output\-List}}
+\subsubsection[{push\-Generator\-State}]{\setlength{\rightskip}{0pt plus 5cm}void push\-Generator\-State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_output_list_aff968dbb6182903ac3a2c899cf1078f3}
+Appends the output generated by generator {\itshape g} to this generator.
+
+Pushes the state of the current generator (or list of generators) on a stack. 
+
+Implementa \hyperlink{class_output_doc_interface_a0ad42fd0ab4788718130d1033012c1a6}{Output\-Doc\-Interface}.
+
+\hypertarget{class_output_list_a6f230bea6c80b0a1847a9608c88fd45a}{\index{Output\-List@{Output\-List}!start\-Bold@{start\-Bold}}
+\index{start\-Bold@{start\-Bold}!OutputList@{Output\-List}}
+\subsubsection[{start\-Bold}]{\setlength{\rightskip}{0pt plus 5cm}void start\-Bold (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_output_list_a6f230bea6c80b0a1847a9608c88fd45a}
+Changes the text font to bold face. The bold section ends with \hyperlink{class_output_list_a1e1a209879148bfcb4b57ab294b37b90}{end\-Bold()} 
+
+Implementa \hyperlink{class_base_output_doc_interface_a9ad34c5f6672948732a87c4371d2e244}{Base\-Output\-Doc\-Interface}.
+
+\hypertarget{class_output_list_a631953fed580c2b82e39426604c928ac}{\index{Output\-List@{Output\-List}!start\-Code\-Fragment@{start\-Code\-Fragment}}
+\index{start\-Code\-Fragment@{start\-Code\-Fragment}!OutputList@{Output\-List}}
+\subsubsection[{start\-Code\-Fragment}]{\setlength{\rightskip}{0pt plus 5cm}void start\-Code\-Fragment (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_output_list_a631953fed580c2b82e39426604c928ac}
+Starts a source code fragment. The fragment will be fed to the code parser (see \hyperlink{code_8h_source}{code.\-h}) for syntax highlighting and cross-\/referencing. The fragment ends by a call to \hyperlink{class_output_list_a0d97d57c34ed239bcf916104a71e10bf}{end\-Code\-Fragment()} 
+
+Implementa \hyperlink{class_base_output_doc_interface_a649cecde411897cea447f103795d8c64}{Base\-Output\-Doc\-Interface}.
+
+\hypertarget{class_output_list_ab8a6797fe2e4cb968a4c13eea7c4c968}{\index{Output\-List@{Output\-List}!start\-Desc\-Item@{start\-Desc\-Item}}
+\index{start\-Desc\-Item@{start\-Desc\-Item}!OutputList@{Output\-List}}
+\subsubsection[{start\-Desc\-Item}]{\setlength{\rightskip}{0pt plus 5cm}void start\-Desc\-Item (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_output_list_ab8a6797fe2e4cb968a4c13eea7c4c968}
+Starts an item of a description list\-: e.\-g. {\ttfamily $<$dt$>$} in H\-T\-M\-L. 
+
+Implementa \hyperlink{class_base_output_doc_interface_a5392dc059a26e9c650ffee7d28636f74}{Base\-Output\-Doc\-Interface}.
+
+\hypertarget{class_output_list_ae87205938a124b2eac0d798631d4e5e6}{\index{Output\-List@{Output\-List}!start\-Description@{start\-Description}}
+\index{start\-Description@{start\-Description}!OutputList@{Output\-List}}
+\subsubsection[{start\-Description}]{\setlength{\rightskip}{0pt plus 5cm}void start\-Description (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_output_list_ae87205938a124b2eac0d798631d4e5e6}
+Starts a description list\-: e.\-g. {\ttfamily $<$dl$>$} in H\-T\-M\-L Items are surrounded by \hyperlink{class_output_list_ab8a6797fe2e4cb968a4c13eea7c4c968}{start\-Desc\-Item()} and \hyperlink{class_output_list_a080b8f2fa36e665da60bcfa982386ac8}{end\-Desc\-Item()} 
+
+Implementa \hyperlink{class_base_output_doc_interface_a90167ae571c0685acd7934fde582ca7b}{Base\-Output\-Doc\-Interface}.
+
+\hypertarget{class_output_list_ab2f79d1f1a30e329f7ada3e51c04917e}{\index{Output\-List@{Output\-List}!start\-Emphasis@{start\-Emphasis}}
+\index{start\-Emphasis@{start\-Emphasis}!OutputList@{Output\-List}}
+\subsubsection[{start\-Emphasis}]{\setlength{\rightskip}{0pt plus 5cm}void start\-Emphasis (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_output_list_ab2f79d1f1a30e329f7ada3e51c04917e}
+Changes the text font to italic. The italic section ends with \hyperlink{class_output_list_a5c4adfb425dee0e192e5b606eab0114a}{end\-Emphasis()} 
+
+Implementa \hyperlink{class_base_output_doc_interface_afa6a6472913a05d8524804a27aebb56c}{Base\-Output\-Doc\-Interface}.
+
+\hypertarget{class_output_list_a253f5e2755f981e67662b662168aa054}{\index{Output\-List@{Output\-List}!start\-Font\-Class@{start\-Font\-Class}}
+\index{start\-Font\-Class@{start\-Font\-Class}!OutputList@{Output\-List}}
+\subsubsection[{start\-Font\-Class}]{\setlength{\rightskip}{0pt plus 5cm}void start\-Font\-Class (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{cls\-Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_output_list_a253f5e2755f981e67662b662168aa054}
+Starts a block with a certain meaning. Used for syntax highlighting, which elements of the same type are rendered using the same 'font class'. 
+\begin{DoxyParams}{Parâmetros}
+{\em cls\-Name} & The category name. \\
+\hline
+\end{DoxyParams}
+
+
+Implementa \hyperlink{class_code_output_interface_aaa0bdadd117e161c87149d902d70c863}{Code\-Output\-Interface}.
+
+\hypertarget{class_output_list_a0746b9c06743e1d4fe527b8317457da1}{\index{Output\-List@{Output\-List}!start\-Html\-Link@{start\-Html\-Link}}
+\index{start\-Html\-Link@{start\-Html\-Link}!OutputList@{Output\-List}}
+\subsubsection[{start\-Html\-Link}]{\setlength{\rightskip}{0pt plus 5cm}void start\-Html\-Link (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{url}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_output_list_a0746b9c06743e1d4fe527b8317457da1}
+Starts a (link to an) \hyperlink{struct_u_r_l}{U\-R\-L} found in the documentation. 
+\begin{DoxyParams}{Parâmetros}
+{\em url} & The \hyperlink{struct_u_r_l}{U\-R\-L} to link to. \\
+\hline
+\end{DoxyParams}
+
+
+Implementa \hyperlink{class_base_output_doc_interface_ae514e80c628faa0b5ee62a50185f2397}{Base\-Output\-Doc\-Interface}.
+
+\hypertarget{class_output_list_af2a17ac8deb6919dda56ae5107ea1529}{\index{Output\-List@{Output\-List}!start\-Item\-List@{start\-Item\-List}}
+\index{start\-Item\-List@{start\-Item\-List}!OutputList@{Output\-List}}
+\subsubsection[{start\-Item\-List}]{\setlength{\rightskip}{0pt plus 5cm}void start\-Item\-List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_output_list_af2a17ac8deb6919dda56ae5107ea1529}
+Start of a bullet list\-: e.\-g. {\ttfamily $<$ul$>$} in html. \hyperlink{class_output_list_ab4ab0e8996b14723e45e955fe68f03bc}{start\-Item\-List\-Item()} is Used for the bullet items. 
+
+Implementa \hyperlink{class_base_output_doc_interface_a432e618b3c8820e00496c6b242947e72}{Base\-Output\-Doc\-Interface}.
+
+\hypertarget{class_output_list_ab4ab0e8996b14723e45e955fe68f03bc}{\index{Output\-List@{Output\-List}!start\-Item\-List\-Item@{start\-Item\-List\-Item}}
+\index{start\-Item\-List\-Item@{start\-Item\-List\-Item}!OutputList@{Output\-List}}
+\subsubsection[{start\-Item\-List\-Item}]{\setlength{\rightskip}{0pt plus 5cm}void start\-Item\-List\-Item (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_output_list_ab4ab0e8996b14723e45e955fe68f03bc}
+Writes a list item for a bullet or enumerated list\-: e.\-g. {\ttfamily $<$li$>$} in html 
+
+Implementa \hyperlink{class_base_output_doc_interface_a6cfe1cc2a5fa5cdb1eea280df003903a}{Base\-Output\-Doc\-Interface}.
+
+\hypertarget{class_output_list_af7f590b00ecbe6117ddc09f0016df0ec}{\index{Output\-List@{Output\-List}!start\-Paragraph@{start\-Paragraph}}
+\index{start\-Paragraph@{start\-Paragraph}!OutputList@{Output\-List}}
+\subsubsection[{start\-Paragraph}]{\setlength{\rightskip}{0pt plus 5cm}void start\-Paragraph (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_output_list_af7f590b00ecbe6117ddc09f0016df0ec}
+Starts a new paragraph
+
+Starts a new paragraph 
+
+Implementa \hyperlink{class_base_output_doc_interface_a4b8b270f90567b9201c44a6ad2ad206f}{Base\-Output\-Doc\-Interface}.
+
+\hypertarget{class_output_list_a2e60bda5e249554e2fc264aa32d9d93e}{\index{Output\-List@{Output\-List}!start\-Typewriter@{start\-Typewriter}}
+\index{start\-Typewriter@{start\-Typewriter}!OutputList@{Output\-List}}
+\subsubsection[{start\-Typewriter}]{\setlength{\rightskip}{0pt plus 5cm}void start\-Typewriter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_output_list_a2e60bda5e249554e2fc264aa32d9d93e}
+Changes the text font to fixed size. The section ends with \hyperlink{class_output_list_acb220673316232acd7d1050553dafaf6}{end\-Typewriter()} 
+
+Implementa \hyperlink{class_base_output_doc_interface_ae241cdb69ca06cd0a539dd8b8a0a419f}{Base\-Output\-Doc\-Interface}.
+
+\hypertarget{class_output_list_a0031a638b9159c2d16d2988da4b901ab}{\index{Output\-List@{Output\-List}!write\-Char@{write\-Char}}
+\index{write\-Char@{write\-Char}!OutputList@{Output\-List}}
+\subsubsection[{write\-Char}]{\setlength{\rightskip}{0pt plus 5cm}void write\-Char (
+\begin{DoxyParamCaption}
+\item[{char}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_output_list_a0031a638b9159c2d16d2988da4b901ab}
+Writes a single A\-S\-C\-I\-I character to the output. Converts characters that have a special meaning. 
+
+Implementa \hyperlink{class_base_output_doc_interface_a936e81608db3018f2bce9cd3ee58fdcd}{Base\-Output\-Doc\-Interface}.
+
+\hypertarget{class_output_list_aa813b87ce15931854c2b0b9c1abb9e19}{\index{Output\-List@{Output\-List}!write\-Code\-Anchor@{write\-Code\-Anchor}}
+\index{write\-Code\-Anchor@{write\-Code\-Anchor}!OutputList@{Output\-List}}
+\subsubsection[{write\-Code\-Anchor}]{\setlength{\rightskip}{0pt plus 5cm}void write\-Code\-Anchor (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_output_list_aa813b87ce15931854c2b0b9c1abb9e19}
+Write an anchor to a source listing. 
+\begin{DoxyParams}{Parâmetros}
+{\em name} & The name of the anchor. \\
+\hline
+\end{DoxyParams}
+
+
+Implementa \hyperlink{class_code_output_interface_aa29ff881359360e41a251d1d69fae142}{Code\-Output\-Interface}.
+
+\hypertarget{class_output_list_ab3866da052a840c400b4990dd2ddf61b}{\index{Output\-List@{Output\-List}!write\-Code\-Link@{write\-Code\-Link}}
+\index{write\-Code\-Link@{write\-Code\-Link}!OutputList@{Output\-List}}
+\subsubsection[{write\-Code\-Link}]{\setlength{\rightskip}{0pt plus 5cm}void write\-Code\-Link (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ref, }
+\item[{const char $\ast$}]{file, }
+\item[{const char $\ast$}]{anchor, }
+\item[{const char $\ast$}]{name, }
+\item[{const char $\ast$}]{tooltip}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_output_list_ab3866da052a840c400b4990dd2ddf61b}
+Writes a link to an object in a code fragment. 
+\begin{DoxyParams}{Parâmetros}
+{\em ref} & If this is non-\/zero, the object is to be found in an external documentation file. \\
+\hline
+{\em file} & The file in which the object is located. \\
+\hline
+{\em anchor} & The anchor uniquely identifying the object within the file. \\
+\hline
+{\em name} & The text to display as a placeholder for the link. \\
+\hline
+{\em tooltip} & The tooltip to display when the mouse is on the link. \\
+\hline
+\end{DoxyParams}
+
+
+Implementa \hyperlink{class_code_output_interface_a21e25662f2bc8efbb5bbb8503aeae97f}{Code\-Output\-Interface}.
+
+\hypertarget{class_output_list_a70366bf2bad21036a14d68e9ef532809}{\index{Output\-List@{Output\-List}!write\-Line\-Number@{write\-Line\-Number}}
+\index{write\-Line\-Number@{write\-Line\-Number}!OutputList@{Output\-List}}
+\subsubsection[{write\-Line\-Number}]{\setlength{\rightskip}{0pt plus 5cm}void write\-Line\-Number (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ref, }
+\item[{const char $\ast$}]{file, }
+\item[{const char $\ast$}]{anchor, }
+\item[{int}]{line\-Number}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_output_list_a70366bf2bad21036a14d68e9ef532809}
+Writes the line number of a source listing 
+\begin{DoxyParams}{Parâmetros}
+{\em ref} & External reference (when imported from a tag file) \\
+\hline
+{\em file} & The file part of the \hyperlink{struct_u_r_l}{U\-R\-L} pointing to the docs. \\
+\hline
+{\em anchor} & The anchor part of the \hyperlink{struct_u_r_l}{U\-R\-L} pointing to the docs. \\
+\hline
+{\em line\-Number} & The line number to write \\
+\hline
+\end{DoxyParams}
+
+
+Implementa \hyperlink{class_code_output_interface_a30af4b3b6e39508a95ba3219d1ba8323}{Code\-Output\-Interface}.
+
+\hypertarget{class_output_list_a78d7e4718290246f77043de949c83081}{\index{Output\-List@{Output\-List}!write\-Object\-Link@{write\-Object\-Link}}
+\index{write\-Object\-Link@{write\-Object\-Link}!OutputList@{Output\-List}}
+\subsubsection[{write\-Object\-Link}]{\setlength{\rightskip}{0pt plus 5cm}void write\-Object\-Link (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ref, }
+\item[{const char $\ast$}]{file, }
+\item[{const char $\ast$}]{anchor, }
+\item[{const char $\ast$}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_output_list_a78d7e4718290246f77043de949c83081}
+Writes a link to an object in the documentation. 
+\begin{DoxyParams}{Parâmetros}
+{\em ref} & If this is non-\/zero, the object is to be found in an external documentation file. \\
+\hline
+{\em file} & The file in which the object is located. \\
+\hline
+{\em anchor} & The anchor uniquely identifying the object within the file. \\
+\hline
+{\em name} & The text to display as a placeholder for the link. \\
+\hline
+\end{DoxyParams}
+
+
+Implementa \hyperlink{class_base_output_doc_interface_aa551443db6cf9e4f51bc12c9d753f9c3}{Base\-Output\-Doc\-Interface}.
+
+\hypertarget{class_output_list_a9fd641c75c5b5ee59a974c3b476584c2}{\index{Output\-List@{Output\-List}!write\-Ruler@{write\-Ruler}}
+\index{write\-Ruler@{write\-Ruler}!OutputList@{Output\-List}}
+\subsubsection[{write\-Ruler}]{\setlength{\rightskip}{0pt plus 5cm}void write\-Ruler (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_output_list_a9fd641c75c5b5ee59a974c3b476584c2}
+Writes a horizontal ruler to the output 
+
+Implementa \hyperlink{class_base_output_doc_interface_a5f36f83289e2b6137e9086998c5fb883}{Base\-Output\-Doc\-Interface}.
+
+\hypertarget{class_output_list_a02588a2412fdda1d3d31066be2802913}{\index{Output\-List@{Output\-List}!write\-String@{write\-String}}
+\index{write\-String@{write\-String}!OutputList@{Output\-List}}
+\subsubsection[{write\-String}]{\setlength{\rightskip}{0pt plus 5cm}void write\-String (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{text}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_output_list_a02588a2412fdda1d3d31066be2802913}
+Writes an A\-S\-C\-I\-I string to the output, {\itshape without} converting special characters. 
+
+Implementa \hyperlink{class_base_output_doc_interface_a78a005d8c0329ee60cd1994eb4afc58b}{Base\-Output\-Doc\-Interface}.
+
+\hypertarget{class_output_list_acc6f74ac2670196668c05d4156eec872}{\index{Output\-List@{Output\-List}!write\-Tooltip@{write\-Tooltip}}
+\index{write\-Tooltip@{write\-Tooltip}!OutputList@{Output\-List}}
+\subsubsection[{write\-Tooltip}]{\setlength{\rightskip}{0pt plus 5cm}void write\-Tooltip (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{id, }
+\item[{const {\bf Doc\-Link\-Info} \&}]{doc\-Info, }
+\item[{const char $\ast$}]{decl, }
+\item[{const char $\ast$}]{desc, }
+\item[{const {\bf Source\-Link\-Info} \&}]{def\-Info, }
+\item[{const {\bf Source\-Link\-Info} \&}]{decl\-Info}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_output_list_acc6f74ac2670196668c05d4156eec872}
+Writes a tool tip definition 
+\begin{DoxyParams}{Parâmetros}
+{\em id} & unique identifier for the tooltip \\
+\hline
+{\em doc\-Info} & Info about the symbol's documentation. \\
+\hline
+{\em decl} & full declaration of the symbol (for functions) \\
+\hline
+{\em desc} & brief description for the symbol \\
+\hline
+{\em def\-Info} & Info about the symbol's definition in the source code \\
+\hline
+{\em decl\-Info} & Info about the symbol's declaration in the source code \\
+\hline
+\end{DoxyParams}
+
+
+Implementa \hyperlink{class_code_output_interface_a4ab86013abbf61a86e9c300eb805939a}{Code\-Output\-Interface}.
+
+
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/src/outputlist.\-h\item 
+C\-:/\-Users/teste/git/doxygen/src/\hyperlink{outputlist_8cpp}{outputlist.\-cpp}\end{DoxyCompactItemize}

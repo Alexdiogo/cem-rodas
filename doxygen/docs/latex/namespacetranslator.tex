@@ -1,0 +1,133 @@
+\hypertarget{namespacetranslator}{\section{Referência ao namespace translator}
+\label{namespacetranslator}\index{translator@{translator}}
+}
+\subsection*{Estruturas de Dados}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classtranslator_1_1_transl}{Transl}
+\item 
+class \hyperlink{classtranslator_1_1_tr_manager}{Tr\-Manager}
+\end{DoxyCompactItemize}
+\subsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacetranslator_ab0bbf4a96045d5d4ed933cc6c2f9fc21}{fill}
+\item 
+def \hyperlink{namespacetranslator_a58ffd9a4dc6a31317d7151c87596ea36}{dedent}
+\end{DoxyCompactItemize}
+\subsection*{Variáveis}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{namespacetranslator_a18ddb4531c263d378193bdcf1d2ac618}{tuple {\bfseries tr\-Man} = \hyperlink{classtranslator_1_1_tr_manager}{Tr\-Manager}()}\label{namespacetranslator_a18ddb4531c263d378193bdcf1d2ac618}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+\begin{DoxyVerb}Script to generate reports on translator classes from Doxygen sources.
+
+  The main purpose of the script is to extract the information from sources
+  related to internationalization (the translator classes). It uses the
+  information to generate documentation (language.doc,
+  translator_report.txt) from templates (language.tpl, maintainers.txt).
+
+  Simply run the script without parameters to get the reports and
+  documentation for all supported languages. If you want to generate the
+  translator report only for some languages, pass their codes as arguments
+  to the script. In that case, the language.doc will not be generated.
+  Example:
+
+    python translator.py en nl cz
+
+  Originally, the script was written in Perl and was known as translator.pl.
+  The last Perl version was dated 2002/05/21 (plus some later corrections)
+
+                                         Petr Prikryl (prikryl at atlas dot cz)
+
+  History:
+  --------
+  2002/05/21 - This was the last Perl version.
+  2003/05/16 - List of language marks can be passed as arguments.
+  2004/01/24 - Total reimplementation started: classes TrManager, and Transl.
+  2004/02/05 - First version that produces translator report. No language.doc yet.
+  2004/02/10 - First fully functional version that generates both the translator
+               report and the documentation. It is a bit slower than the
+               Perl version, but is much less tricky and much more flexible.
+               It also solves some problems that were not solved by the Perl
+               version. The translator report content should be more useful
+               for developers.
+  2004/02/11 - Some tuning-up to provide more useful information.
+  2004/04/16 - Added new tokens to the tokenizer (to remove some warnings).
+  2004/05/25 - Added from __future__ import generators not to force Python 2.3.
+  2004/06/03 - Removed dependency on textwrap module.
+  2004/07/07 - Fixed the bug in the fill() function.
+  2004/07/21 - Better e-mail mangling for HTML part of language.doc.
+             - Plural not used for reporting a single missing method.
+             - Removal of not used translator adapters is suggested only
+               when the report is not restricted to selected languages
+               explicitly via script arguments.
+  2004/07/26 - Better reporting of not-needed adapters.
+  2004/10/04 - Reporting of not called translator methods added.
+  2004/10/05 - Modified to check only doxygen/src sources for the previous report.
+  2005/02/28 - Slight modification to generate "mailto.txt" auxiliary file.
+  2005/08/15 - Doxygen's root directory determined primarily from DOXYGEN
+               environment variable. When not found, then relatively to the script.
+  2007/03/20 - The "translate me!" searched in comments and reported if found.
+  2008/06/09 - Warning when the MAX_DOT_GRAPH_HEIGHT is still part of trLegendDocs().
+  2009/05/09 - Changed HTML output to fit it with XHTML DTD
+  2009/09/02 - Added percentage info to the report (implemented / to be implemented).
+  2010/02/09 - Added checking/suggestion 'Reimplementation using UTF-8 suggested.
+  2010/03/03 - Added [unreachable] prefix used in maintainers.txt.
+  2010/05/28 - BOM skipped; minor code cleaning.
+  2010/05/31 - e-mail mangled already in maintainers.txt
+  2010/08/20 - maintainers.txt to UTF-8, related processin of unicode strings
+             - [any mark] introduced instead of [unreachable] only
+             - marks hihglighted in HTML
+  2010/08/30 - Highlighting in what will be the table in langhowto.html modified.
+  2010/09/27 - The underscore in \latexonly part of the generated language.doc
+               was prefixed by backslash (was LaTeX related error).
+  2013/02/19 - Better diagnostics when translator_xx.h is too crippled.
+  2013/06/25 - TranslatorDecoder checks removed after removing the class.
+  2013/09/04 - Coloured status in langhowto. *ALMOST up-to-date* category
+               of translators introduced.\end{DoxyVerb}
+ 
+
+\subsection{Documentação das funções}
+\hypertarget{namespacetranslator_a58ffd9a4dc6a31317d7151c87596ea36}{\index{translator@{translator}!dedent@{dedent}}
+\index{dedent@{dedent}!translator@{translator}}
+\subsubsection[{dedent}]{\setlength{\rightskip}{0pt plus 5cm}def translator.\-dedent (
+\begin{DoxyParamCaption}
+\item[{}]{text}
+\end{DoxyParamCaption}
+)}}\label{namespacetranslator_a58ffd9a4dc6a31317d7151c87596ea36}
+\begin{DoxyVerb}dedent(text : string) -> string
+
+Remove any whitespace than can be uniformly removed from the left
+of every line in `text`.
+
+This can be used e.g. to make triple-quoted strings line up with
+the left edge of screen/whatever, while still presenting it in the
+source code in indented form.
+
+For example:
+
+    def test():
+        # end first line with \ to avoid the empty line!
+        s = '''\
+        hello
+          world
+        '''
+        print repr(s)          # prints '    hello\n      world\n    '
+        print repr(dedent(s))  # prints 'hello\n  world\n'
+\end{DoxyVerb}
+ \hypertarget{namespacetranslator_ab0bbf4a96045d5d4ed933cc6c2f9fc21}{\index{translator@{translator}!fill@{fill}}
+\index{fill@{fill}!translator@{translator}}
+\subsubsection[{fill}]{\setlength{\rightskip}{0pt plus 5cm}def translator.\-fill (
+\begin{DoxyParamCaption}
+\item[{}]{s}
+\end{DoxyParamCaption}
+)}}\label{namespacetranslator_ab0bbf4a96045d5d4ed933cc6c2f9fc21}
+\begin{DoxyVerb}Returns string formated to the wrapped paragraph multiline string.
+
+Replaces whitespaces by one space and then uses he textwrap.fill().\end{DoxyVerb}
+ 

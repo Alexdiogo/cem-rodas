@@ -1,0 +1,69 @@
+\hypertarget{class_q_const_string}{\section{Referência à classe Q\-Const\-String}
+\label{class_q_const_string}\index{Q\-Const\-String@{Q\-Const\-String}}
+}
+
+
+\hyperlink{class_a}{A} \hyperlink{class_q_string}{Q\-String} which uses constant Unicode data.  
+
+
+
+
+{\ttfamily \#include $<$qstring.\-h$>$}
+
+Diagrama de heranças da classe Q\-Const\-String\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_q_const_string}
+\end{center}
+\end{figure}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_q_const_string_a27709b578dc2cebaef8d4dfcc34015b4}{Q\-Const\-String} (\hyperlink{class_q_char}{Q\-Char} $\ast$\hyperlink{class_q_string_a65a250696de2e5cb83a8e01a9603cea0}{unicode}, uint \hyperlink{class_q_string_ab0edbf251efc0562d70132e931e3cf06}{length})
+\item 
+\hyperlink{class_q_const_string_a1b56de3213a21be7dceef30256851c18}{$\sim$\-Q\-Const\-String} ()
+\item 
+const \hyperlink{class_q_string}{Q\-String} \& \hyperlink{class_q_const_string_a349f809b1e7470f041f9e521eba45d95}{string} () const 
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Descrição detalhada}
+\hyperlink{class_a}{A} \hyperlink{class_q_string}{Q\-String} which uses constant Unicode data. 
+
+In order to minimize copying, highly optimized applications can use \hyperlink{class_q_const_string}{Q\-Const\-String} to provide a Q\-String-\/compatible object from existing Unicode data. It is then the user's responsibility to make sure that the Unicode data must exist for the entire lifetime of the \hyperlink{class_q_const_string}{Q\-Const\-String} object. 
+
+\subsection{Documentação dos Construtores \& Destrutor}
+\hypertarget{class_q_const_string_a27709b578dc2cebaef8d4dfcc34015b4}{\index{Q\-Const\-String@{Q\-Const\-String}!Q\-Const\-String@{Q\-Const\-String}}
+\index{Q\-Const\-String@{Q\-Const\-String}!QConstString@{Q\-Const\-String}}
+\subsubsection[{Q\-Const\-String}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-Const\-String} (
+\begin{DoxyParamCaption}
+\item[{{\bf Q\-Char} $\ast$}]{unicode, }
+\item[{uint}]{length}
+\end{DoxyParamCaption}
+)}}\label{class_q_const_string_a27709b578dc2cebaef8d4dfcc34015b4}
+Constructs a \hyperlink{class_q_const_string}{Q\-Const\-String} that uses the first {\itshape length} Unicode characters in the array {\itshape unicode}. Any attempt to modify copies of the string will cause it to create a copy of the data, thus it remains forever unmodified.
+
+Note that {\itshape unicode} is {\itshape not} {\itshape copied}. The caller {\itshape must} be able to guarantee that {\itshape unicode} will not be deleted or modified. Since that is generally not the case with {\ttfamily const} strings (they are references), this constructor demands a non-\/const pointer even though it never modifies {\itshape unicode}. \hypertarget{class_q_const_string_a1b56de3213a21be7dceef30256851c18}{\index{Q\-Const\-String@{Q\-Const\-String}!$\sim$\-Q\-Const\-String@{$\sim$\-Q\-Const\-String}}
+\index{$\sim$\-Q\-Const\-String@{$\sim$\-Q\-Const\-String}!QConstString@{Q\-Const\-String}}
+\subsubsection[{$\sim$\-Q\-Const\-String}]{\setlength{\rightskip}{0pt plus 5cm}$\sim${\bf Q\-Const\-String} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_q_const_string_a1b56de3213a21be7dceef30256851c18}
+Destroys the \hyperlink{class_q_const_string}{Q\-Const\-String}, creating a copy of the data if other strings are still using it. 
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_q_const_string_a349f809b1e7470f041f9e521eba45d95}{\index{Q\-Const\-String@{Q\-Const\-String}!string@{string}}
+\index{string@{string}!QConstString@{Q\-Const\-String}}
+\subsubsection[{string}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Q\-String} \& string (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_q_const_string_a349f809b1e7470f041f9e521eba45d95}
+Returns a constant string referencing the data passed during construction. 
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/qtools/qstring.\-h\item 
+C\-:/\-Users/teste/git/doxygen/qtools/qstring.\-cpp\end{DoxyCompactItemize}

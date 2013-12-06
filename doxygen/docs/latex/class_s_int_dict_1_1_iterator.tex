@@ -1,0 +1,101 @@
+\hypertarget{class_s_int_dict_1_1_iterator}{\section{Referência à classe S\-Int\-Dict$<$ T $>$\-:\-:Iterator}
+\label{class_s_int_dict_1_1_iterator}\index{S\-Int\-Dict$<$ T $>$\-::\-Iterator@{S\-Int\-Dict$<$ T $>$\-::\-Iterator}}
+}
+
+
+{\ttfamily \#include $<$sortdict.\-h$>$}
+
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_s_int_dict_1_1_iterator_a3e86eb187d55fed1b0e6d352e834df8c}{Iterator} (const \hyperlink{class_s_int_dict}{S\-Int\-Dict}$<$ T $>$ \&dict)
+\item 
+virtual \hyperlink{class_s_int_dict_1_1_iterator_a47b331bac1d130f2bab2c40e76ccb54a}{$\sim$\-Iterator} ()
+\item 
+T $\ast$ \hyperlink{class_s_int_dict_1_1_iterator_ade77b001f496006e7017c1ec8620aeb3}{to\-First} () const 
+\item 
+T $\ast$ \hyperlink{class_s_int_dict_1_1_iterator_a72d0e5c78c00ed44b21f29f12ae487e0}{to\-Last} () const 
+\item 
+T $\ast$ \hyperlink{class_s_int_dict_1_1_iterator_ae616144a9897ce6137bce90597583bab}{current} () const 
+\item 
+T $\ast$ \hyperlink{class_s_int_dict_1_1_iterator_a47eb98449264b3d96cf72c29fa3e9049}{operator++} ()
+\item 
+T $\ast$ \hyperlink{class_s_int_dict_1_1_iterator_af941a0327bceddd0cbce3539c100d54d}{operator-\/-\/} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+\subsubsection*{template$<$class T$>$class S\-Int\-Dict$<$ T $>$\-::\-Iterator}
+
+Simple iterator for \hyperlink{class_s_dict}{S\-Dict}. It iterates in the order in which the elements are stored. 
+
+\subsection{Documentação dos Construtores \& Destrutor}
+\hypertarget{class_s_int_dict_1_1_iterator_a3e86eb187d55fed1b0e6d352e834df8c}{\index{S\-Int\-Dict\-::\-Iterator@{S\-Int\-Dict\-::\-Iterator}!Iterator@{Iterator}}
+\index{Iterator@{Iterator}!SIntDict::Iterator@{S\-Int\-Dict\-::\-Iterator}}
+\subsubsection[{Iterator}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Iterator} (
+\begin{DoxyParamCaption}
+\item[{const {\bf S\-Int\-Dict}$<$ T $>$ \&}]{dict}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_s_int_dict_1_1_iterator_a3e86eb187d55fed1b0e6d352e834df8c}
+Create an iterator given the dictionary. \hypertarget{class_s_int_dict_1_1_iterator_a47b331bac1d130f2bab2c40e76ccb54a}{\index{S\-Int\-Dict\-::\-Iterator@{S\-Int\-Dict\-::\-Iterator}!$\sim$\-Iterator@{$\sim$\-Iterator}}
+\index{$\sim$\-Iterator@{$\sim$\-Iterator}!SIntDict::Iterator@{S\-Int\-Dict\-::\-Iterator}}
+\subsubsection[{$\sim$\-Iterator}]{\setlength{\rightskip}{0pt plus 5cm}virtual $\sim${\bf Iterator} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_s_int_dict_1_1_iterator_a47b331bac1d130f2bab2c40e76ccb54a}
+Destroys the dictionary 
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_s_int_dict_1_1_iterator_ae616144a9897ce6137bce90597583bab}{\index{S\-Int\-Dict\-::\-Iterator@{S\-Int\-Dict\-::\-Iterator}!current@{current}}
+\index{current@{current}!SIntDict::Iterator@{S\-Int\-Dict\-::\-Iterator}}
+\subsubsection[{current}]{\setlength{\rightskip}{0pt plus 5cm}T$\ast$ current (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_s_int_dict_1_1_iterator_ae616144a9897ce6137bce90597583bab}
+Returns the current compound \hypertarget{class_s_int_dict_1_1_iterator_a47eb98449264b3d96cf72c29fa3e9049}{\index{S\-Int\-Dict\-::\-Iterator@{S\-Int\-Dict\-::\-Iterator}!operator++@{operator++}}
+\index{operator++@{operator++}!SIntDict::Iterator@{S\-Int\-Dict\-::\-Iterator}}
+\subsubsection[{operator++}]{\setlength{\rightskip}{0pt plus 5cm}T$\ast$ operator++ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_s_int_dict_1_1_iterator_a47eb98449264b3d96cf72c29fa3e9049}
+Moves the iterator to the next element. \begin{DoxyReturn}{Retorna}
+the new \char`\"{}current\char`\"{} element, or zero if the iterator was already pointing at the last element. 
+\end{DoxyReturn}
+\hypertarget{class_s_int_dict_1_1_iterator_af941a0327bceddd0cbce3539c100d54d}{\index{S\-Int\-Dict\-::\-Iterator@{S\-Int\-Dict\-::\-Iterator}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!SIntDict::Iterator@{S\-Int\-Dict\-::\-Iterator}}
+\subsubsection[{operator-\/-\/}]{\setlength{\rightskip}{0pt plus 5cm}T$\ast$ operator-\/-\/ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_s_int_dict_1_1_iterator_af941a0327bceddd0cbce3539c100d54d}
+Moves the iterator to the previous element. \begin{DoxyReturn}{Retorna}
+the new \char`\"{}current\char`\"{} element, or zero if the iterator was already pointing at the first element. 
+\end{DoxyReturn}
+\hypertarget{class_s_int_dict_1_1_iterator_ade77b001f496006e7017c1ec8620aeb3}{\index{S\-Int\-Dict\-::\-Iterator@{S\-Int\-Dict\-::\-Iterator}!to\-First@{to\-First}}
+\index{to\-First@{to\-First}!SIntDict::Iterator@{S\-Int\-Dict\-::\-Iterator}}
+\subsubsection[{to\-First}]{\setlength{\rightskip}{0pt plus 5cm}T$\ast$ to\-First (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_s_int_dict_1_1_iterator_ade77b001f496006e7017c1ec8620aeb3}
+Set the iterator to the first element in the list. \begin{DoxyReturn}{Retorna}
+The first compound, or zero if the list was empty. 
+\end{DoxyReturn}
+\hypertarget{class_s_int_dict_1_1_iterator_a72d0e5c78c00ed44b21f29f12ae487e0}{\index{S\-Int\-Dict\-::\-Iterator@{S\-Int\-Dict\-::\-Iterator}!to\-Last@{to\-Last}}
+\index{to\-Last@{to\-Last}!SIntDict::Iterator@{S\-Int\-Dict\-::\-Iterator}}
+\subsubsection[{to\-Last}]{\setlength{\rightskip}{0pt plus 5cm}T$\ast$ to\-Last (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_s_int_dict_1_1_iterator_a72d0e5c78c00ed44b21f29f12ae487e0}
+Set the iterator to the last element in the list. \begin{DoxyReturn}{Retorna}
+The first compound, or zero if the list was empty. 
+\end{DoxyReturn}
+
+
+A documentação para esta classe foi gerada a partir do seguinte ficheiro\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/src/sortdict.\-h\end{DoxyCompactItemize}

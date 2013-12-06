@@ -1,0 +1,104 @@
+\hypertarget{portable_8h}{\section{Referência ao ficheiro C\-:/\-Users/teste/git/doxygen/src/portable.h}
+\label{portable_8h}\index{C\-:/\-Users/teste/git/doxygen/src/portable.\-h@{C\-:/\-Users/teste/git/doxygen/src/portable.\-h}}
+}
+
+
+Portable versions of functions that are platform dependent.  
+
+
+{\ttfamily \#include $<$sys/types.\-h$>$}\\*
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$qglobal.\-h$>$}\\*
+\subsection*{Definições de tipos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{portable_8h_a25423a5b429a3ee0610315d93938bd0b}{typedef off\-\_\-t {\bfseries portable\-\_\-off\-\_\-t}}\label{portable_8h_a25423a5b429a3ee0610315d93938bd0b}
+
+\end{DoxyCompactItemize}
+\subsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{portable_8h_ab1446c4224056df1eaff8f4123f55fff}{portable\-\_\-system} (const char $\ast$command, const char $\ast$args, bool command\-Has\-Console=T\-R\-U\-E)
+\item 
+\hypertarget{portable_8h_a59f752704c51b3369512e011cb37e821}{uint {\bfseries portable\-\_\-pid} ()}\label{portable_8h_a59f752704c51b3369512e011cb37e821}
+
+\item 
+\hypertarget{portable_8h_a52392b2bf51d0780fc3a7f0e62ab66fa}{const char $\ast$ {\bfseries portable\-\_\-getenv} (const char $\ast$variable)}\label{portable_8h_a52392b2bf51d0780fc3a7f0e62ab66fa}
+
+\item 
+\hypertarget{portable_8h_ae4248edc1676c7fee1b27b35b1a02167}{void {\bfseries portable\-\_\-setenv} (const char $\ast$variable, const char $\ast$value)}\label{portable_8h_ae4248edc1676c7fee1b27b35b1a02167}
+
+\item 
+\hypertarget{portable_8h_a21d2e3a5826400ea3fb385de160a4273}{void {\bfseries portable\-\_\-unsetenv} (const char $\ast$variable)}\label{portable_8h_a21d2e3a5826400ea3fb385de160a4273}
+
+\item 
+\hypertarget{portable_8h_aacd3bfcb8cf704f1a88ef85378f2e3ba}{portable\-\_\-off\-\_\-t {\bfseries portable\-\_\-fseek} (F\-I\-L\-E $\ast$f, portable\-\_\-off\-\_\-t offset, int whence)}\label{portable_8h_aacd3bfcb8cf704f1a88ef85378f2e3ba}
+
+\item 
+\hypertarget{portable_8h_af7bd350e4ac4a9083df7752b95b3d7b4}{portable\-\_\-off\-\_\-t {\bfseries portable\-\_\-ftell} (F\-I\-L\-E $\ast$f)}\label{portable_8h_af7bd350e4ac4a9083df7752b95b3d7b4}
+
+\item 
+\hypertarget{portable_8h_a818dff4c8adef7d6c838c5bff8230a75}{F\-I\-L\-E $\ast$ {\bfseries portable\-\_\-fopen} (const char $\ast$file\-Name, const char $\ast$mode)}\label{portable_8h_a818dff4c8adef7d6c838c5bff8230a75}
+
+\item 
+\hypertarget{portable_8h_a7611f2d585509aaf8b434b416f7f5cba}{char {\bfseries portable\-\_\-path\-Separator} ()}\label{portable_8h_a7611f2d585509aaf8b434b416f7f5cba}
+
+\item 
+\hypertarget{portable_8h_a5eb53a3f72467aaf6dd8814e3650a2b2}{char {\bfseries portable\-\_\-path\-List\-Separator} ()}\label{portable_8h_a5eb53a3f72467aaf6dd8814e3650a2b2}
+
+\item 
+\hypertarget{portable_8h_adb209fd072a146757a74de224438750f}{const char $\ast$ {\bfseries portable\-\_\-ghost\-Script\-Command} ()}\label{portable_8h_adb209fd072a146757a74de224438750f}
+
+\item 
+\hypertarget{portable_8h_a311fb005a4ff8025f7b2fbf121cbdee3}{const char $\ast$ {\bfseries portable\-\_\-command\-Extension} ()}\label{portable_8h_a311fb005a4ff8025f7b2fbf121cbdee3}
+
+\item 
+\hypertarget{portable_8h_a4f160f0e710170d2550709aae5caf49b}{bool {\bfseries portable\-\_\-file\-System\-Is\-Case\-Sensitive} ()}\label{portable_8h_a4f160f0e710170d2550709aae5caf49b}
+
+\item 
+\hypertarget{portable_8h_ad7e56e618c52b0ab659c1b16b81cf4b4}{F\-I\-L\-E $\ast$ {\bfseries portable\-\_\-popen} (const char $\ast$name, const char $\ast$type)}\label{portable_8h_ad7e56e618c52b0ab659c1b16b81cf4b4}
+
+\item 
+\hypertarget{portable_8h_a5c0b9bfa064283bf7495f0530cebeeba}{int {\bfseries portable\-\_\-pclose} (F\-I\-L\-E $\ast$stream)}\label{portable_8h_a5c0b9bfa064283bf7495f0530cebeeba}
+
+\item 
+\hypertarget{portable_8h_a654a634351c19360132a57b4e7745ef9}{void {\bfseries portable\-\_\-sys\-Timer\-Start} ()}\label{portable_8h_a654a634351c19360132a57b4e7745ef9}
+
+\item 
+\hypertarget{portable_8h_a29ee4e275e02c776c5d89ee0c9855b16}{void {\bfseries portable\-\_\-sys\-Timer\-Stop} ()}\label{portable_8h_a29ee4e275e02c776c5d89ee0c9855b16}
+
+\item 
+\hypertarget{portable_8h_a4756803d96f0305e9c6c9e49543bd590}{double {\bfseries portable\-\_\-get\-Sys\-Elapsed\-Time} ()}\label{portable_8h_a4756803d96f0305e9c6c9e49543bd590}
+
+\item 
+\hypertarget{portable_8h_a64953440ea1cc6f46222c8f854dbe5f0}{void {\bfseries portable\-\_\-sleep} (int ms)}\label{portable_8h_a64953440ea1cc6f46222c8f854dbe5f0}
+
+\item 
+\hypertarget{portable_8h_a77da33ed6eafa47f239efc6ba65dec33}{bool {\bfseries portable\-\_\-is\-Absolute\-Path} (const char $\ast$file\-Name)}\label{portable_8h_a77da33ed6eafa47f239efc6ba65dec33}
+
+\item 
+\hypertarget{portable_8h_a265cc0f73ee132a66ce0669949359399}{void $\ast$ {\bfseries portable\-\_\-iconv\-\_\-open} (const char $\ast$tocode, const char $\ast$fromcode)}\label{portable_8h_a265cc0f73ee132a66ce0669949359399}
+
+\item 
+\hypertarget{portable_8h_a8ca77f1a4e1ca459169752103338ab0c}{size\-\_\-t {\bfseries portable\-\_\-iconv} (void $\ast$cd, char $\ast$$\ast$inbuf, size\-\_\-t $\ast$inbytesleft, char $\ast$$\ast$outbuf, size\-\_\-t $\ast$outbytesleft)}\label{portable_8h_a8ca77f1a4e1ca459169752103338ab0c}
+
+\item 
+\hypertarget{portable_8h_a3f98144680118aada1a93d2d4ba6173b}{int {\bfseries portable\-\_\-iconv\-\_\-close} (void $\ast$cd)}\label{portable_8h_a3f98144680118aada1a93d2d4ba6173b}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+Portable versions of functions that are platform dependent. 
+
+\subsection{Documentação das funções}
+\hypertarget{portable_8h_ab1446c4224056df1eaff8f4123f55fff}{\index{portable.\-h@{portable.\-h}!portable\-\_\-system@{portable\-\_\-system}}
+\index{portable\-\_\-system@{portable\-\_\-system}!portable.h@{portable.\-h}}
+\subsubsection[{portable\-\_\-system}]{\setlength{\rightskip}{0pt plus 5cm}int portable\-\_\-system (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{command, }
+\item[{const char $\ast$}]{args, }
+\item[{bool}]{command\-Has\-Console = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+)}}\label{portable_8h_ab1446c4224056df1eaff8f4123f55fff}
+taken from the system() manpage on my Linux box 

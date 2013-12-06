@@ -1,0 +1,78 @@
+\hypertarget{class_q_xml_entity_resolver}{\section{Referência à classe Q\-Xml\-Entity\-Resolver}
+\label{class_q_xml_entity_resolver}\index{Q\-Xml\-Entity\-Resolver@{Q\-Xml\-Entity\-Resolver}}
+}
+
+
+The \hyperlink{class_q_xml_entity_resolver}{Q\-Xml\-Entity\-Resolver} class provides an interface to resolve extern entities contained in X\-M\-L data.  
+
+
+
+
+{\ttfamily \#include $<$qxml.\-h$>$}
+
+Diagrama de heranças da classe Q\-Xml\-Entity\-Resolver\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{class_q_xml_entity_resolver}
+\end{center}
+\end{figure}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{class_q_xml_entity_resolver_acfb103872f68c3167db3aa42f51bee81}{resolve\-Entity} (const \hyperlink{class_q_string}{Q\-String} \&public\-Id, const \hyperlink{class_q_string}{Q\-String} \&system\-Id, \hyperlink{class_q_xml_input_source}{Q\-Xml\-Input\-Source} $\ast$\&ret)=0
+\item 
+virtual \hyperlink{class_q_string}{Q\-String} \hyperlink{class_q_xml_entity_resolver_ac86bbbabef3a52aec7615cbbc0adb3f4}{error\-String} ()=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+The \hyperlink{class_q_xml_entity_resolver}{Q\-Xml\-Entity\-Resolver} class provides an interface to resolve extern entities contained in X\-M\-L data. 
+
+X\-M\-L
+
+If an application needs to implement customized handling for external entities, it must implement this interface and register it with \hyperlink{class_q_xml_reader_a993026a62a7ba0b4ebc2e84e8df18d82}{Q\-Xml\-Reader\-::set\-Entity\-Resolver()}.
+
+See also the \href{xml.html#introSAX2}{\tt Introduction to S\-A\-X2}.
+
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{class_q_xml_d_t_d_handler}{Q\-Xml\-D\-T\-D\-Handler} \hyperlink{class_q_xml_decl_handler}{Q\-Xml\-Decl\-Handler} \hyperlink{class_q_xml_content_handler}{Q\-Xml\-Content\-Handler} \hyperlink{class_q_xml_error_handler}{Q\-Xml\-Error\-Handler} \hyperlink{class_q_xml_lexical_handler}{Q\-Xml\-Lexical\-Handler} 
+\end{DoxySeeAlso}
+
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_q_xml_entity_resolver_ac86bbbabef3a52aec7615cbbc0adb3f4}{\index{Q\-Xml\-Entity\-Resolver@{Q\-Xml\-Entity\-Resolver}!error\-String@{error\-String}}
+\index{error\-String@{error\-String}!QXmlEntityResolver@{Q\-Xml\-Entity\-Resolver}}
+\subsubsection[{error\-String}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-String} error\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_q_xml_entity_resolver_ac86bbbabef3a52aec7615cbbc0adb3f4}
+The reader calls this function to get an error string if any of the handler functions returns F\-A\-L\-S\-E to him. 
+
+Implementado em \hyperlink{class_q_xml_default_handler_af799a7684337babb971e2e0d8cda7cf1}{Q\-Xml\-Default\-Handler} e \hyperlink{class_d_bus_x_m_l_handler_af799a7684337babb971e2e0d8cda7cf1}{D\-Bus\-X\-M\-L\-Handler}.
+
+\hypertarget{class_q_xml_entity_resolver_acfb103872f68c3167db3aa42f51bee81}{\index{Q\-Xml\-Entity\-Resolver@{Q\-Xml\-Entity\-Resolver}!resolve\-Entity@{resolve\-Entity}}
+\index{resolve\-Entity@{resolve\-Entity}!QXmlEntityResolver@{Q\-Xml\-Entity\-Resolver}}
+\subsubsection[{resolve\-Entity}]{\setlength{\rightskip}{0pt plus 5cm}bool resolve\-Entity (
+\begin{DoxyParamCaption}
+\item[{const {\bf Q\-String} \&}]{public\-Id, }
+\item[{const {\bf Q\-String} \&}]{system\-Id, }
+\item[{{\bf Q\-Xml\-Input\-Source} $\ast$\&}]{ret}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_q_xml_entity_resolver_acfb103872f68c3167db3aa42f51bee81}
+The reader will call this function before he opens any external entity, except the top-\/level document entity. The application may request the reader to resolve the entity itself ({\itshape ret} is 0) or to use an entirely different input source ({\itshape ret} points to the input source).
+
+The reader will delete the input source {\itshape ret} when he no longer needs it. So you should allocate it on the heap with {\ttfamily new}.
+
+The argument {\itshape public\-Id} is the public identifier of the external entity, {\itshape system\-Id} is the system identifier of the external entity and {\itshape ret} is the return value of this function\-: if it is 0 the reader should resolve the entity itself, if it is non-\/zero it must point to an input source which the reader will use instead.
+
+If this function returns F\-A\-L\-S\-E the reader will stop parsing and will report an error. The reader will use the function \hyperlink{class_q_xml_entity_resolver_ac86bbbabef3a52aec7615cbbc0adb3f4}{error\-String()} to get the error message that will be used for reporting the error. 
+
+Implementado em \hyperlink{class_q_xml_default_handler_a838be71a40beadc4eac9429fd727c9e8}{Q\-Xml\-Default\-Handler}.
+
+
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/qtools/qxml.\-h\item 
+C\-:/\-Users/teste/git/doxygen/qtools/qxml.\-cpp\end{DoxyCompactItemize}

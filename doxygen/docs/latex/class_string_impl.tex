@@ -1,0 +1,92 @@
+\hypertarget{class_string_impl}{\section{Referência à classe String\-Impl}
+\label{class_string_impl}\index{String\-Impl@{String\-Impl}}
+}
+Diagrama de heranças da classe String\-Impl\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_string_impl}
+\end{center}
+\end{figure}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_string_impl_a075d2d08703ebf6bda5337a22375ad6a}{{\bfseries String\-Impl} (const \hyperlink{class_q_string}{Q\-String} \&str)}\label{class_string_impl_a075d2d08703ebf6bda5337a22375ad6a}
+
+\item 
+\hypertarget{class_string_impl_ab69df6b5855966dc74a4b08476d1e609}{\hyperlink{class_string_impl}{String\-Impl} \& {\bfseries operator=} (const \hyperlink{class_q_string}{Q\-String} \&str)}\label{class_string_impl_ab69df6b5855966dc74a4b08476d1e609}
+
+\item 
+const char $\ast$ \hyperlink{class_string_impl_a09fbe42f18f9a02a40c43f16441d91fe}{latin1} () const 
+\item 
+const char $\ast$ \hyperlink{class_string_impl_aa12de8c3161c3670af576c0bcbf2ea6f}{utf8} () const 
+\item 
+unsigned short \hyperlink{class_string_impl_aa6da5680d890fcccd1d5086b07d1c348}{unicode\-Char\-At} (int index) const 
+\item 
+bool \hyperlink{class_string_impl_a479432127ee77145cc19d6a2d1590821}{is\-Empty} () const 
+\item 
+int \hyperlink{class_string_impl_a57b988236ee6a3a5e572d126d3fbccc1}{length} () const 
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_string_impl_a479432127ee77145cc19d6a2d1590821}{\index{String\-Impl@{String\-Impl}!is\-Empty@{is\-Empty}}
+\index{is\-Empty@{is\-Empty}!StringImpl@{String\-Impl}}
+\subsubsection[{is\-Empty}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_string_impl_a479432127ee77145cc19d6a2d1590821}
+Returns true if this string is empty or false otherwise 
+
+Implementa \hyperlink{class_i_string_a0429f9eb647b986ea609536de0143219}{I\-String}.
+
+\hypertarget{class_string_impl_a09fbe42f18f9a02a40c43f16441d91fe}{\index{String\-Impl@{String\-Impl}!latin1@{latin1}}
+\index{latin1@{latin1}!StringImpl@{String\-Impl}}
+\subsubsection[{latin1}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ latin1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_string_impl_a09fbe42f18f9a02a40c43f16441d91fe}
+Returns a latin1 character representation of the string. 
+
+Implementa \hyperlink{class_i_string_a04a794e826e8f86a3349dd1e6f50f2e2}{I\-String}.
+
+\hypertarget{class_string_impl_a57b988236ee6a3a5e572d126d3fbccc1}{\index{String\-Impl@{String\-Impl}!length@{length}}
+\index{length@{length}!StringImpl@{String\-Impl}}
+\subsubsection[{length}]{\setlength{\rightskip}{0pt plus 5cm}int length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_string_impl_a57b988236ee6a3a5e572d126d3fbccc1}
+Returns the number of characters in the string. 
+
+Implementa \hyperlink{class_i_string_a2baf0487209466bdc41c491b9b40fb32}{I\-String}.
+
+\hypertarget{class_string_impl_aa6da5680d890fcccd1d5086b07d1c348}{\index{String\-Impl@{String\-Impl}!unicode\-Char\-At@{unicode\-Char\-At}}
+\index{unicode\-Char\-At@{unicode\-Char\-At}!StringImpl@{String\-Impl}}
+\subsubsection[{unicode\-Char\-At}]{\setlength{\rightskip}{0pt plus 5cm}unsigned short unicode\-Char\-At (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_string_impl_aa6da5680d890fcccd1d5086b07d1c348}
+Returns a 16-\/bit unicode character representation of the character at position {\itshape index} in the string. The first character is at index 0. 
+
+Implementa \hyperlink{class_i_string_ab7f1e75958f6dce8ee31b6c0d8a8d21f}{I\-String}.
+
+\hypertarget{class_string_impl_aa12de8c3161c3670af576c0bcbf2ea6f}{\index{String\-Impl@{String\-Impl}!utf8@{utf8}}
+\index{utf8@{utf8}!StringImpl@{String\-Impl}}
+\subsubsection[{utf8}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ utf8 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_string_impl_aa12de8c3161c3670af576c0bcbf2ea6f}
+Returns a utf8 character representation of the string. 
+
+Implementa \hyperlink{class_i_string_a9f3cf0c1f0c333269bff7ba2fb86c8cc}{I\-String}.
+
+
+
+A documentação para esta classe foi gerada a partir do seguinte ficheiro\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/teste/git/doxygen/addon/doxmlparser/src/stringimpl.\-h\end{DoxyCompactItemize}
