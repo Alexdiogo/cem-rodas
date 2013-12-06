@@ -50,7 +50,7 @@ void gravar(motorista *x)
 {
 	FILE *f;
 	int n;
-	if(!(f=fopen("i:\\motoristas1.txt","a")))
+	if(!(f=fopen("i:\\motoristas1.txt","w")))
 	{
 		printf("\n\n\nErro na Abertura para Gravar <Enter para Sair>");
 		getch();  exit(0);
@@ -60,12 +60,64 @@ void gravar(motorista *x)
 	{
 		if(x[n].estado==1)
 		{
-			fprintf(f,"%ld\n%s\n%d\n%d\n%d\n%ld\n%s\n",x[n].numero,x[n].nome,x[n].data_nas.dia,x[n].data_nas.mes,x[n].data_nas.ano,
+			fprintf(f,"%ld\n%s\n%d\n%d\n%d\n%ld\n%s\n%d\n",x[n].numero,x[n].nome,x[n].data_nas.dia,x[n].data_nas.mes,x[n].data_nas.ano,
 						      x[n].telefone,x[n].morada, x[n].estado);
 		}
 	}
 	fclose(f);
 	printf("\n\n\nFicheiro Gravado <Enter para Continuar>"); getch();
+}
+
+void ler(motorista *x)
+{
+	FILE *f;
+	int n;
+	if(!(f=fopen("i:\\motoristas1.txt","r")))
+	{
+		printf("Erro na Abertura de Leitura <Enter para Sair>");
+		getch(); exit(0);
+	}
+	for(n=1;n<NR;n++)
+	{
+		fscanf(f,"%ld\n%s\n%d\n%d\n%d\n%ld\n%s\n%d\n",&x[n].numero,x[n].nome,&x[n].data_nas.dia,&x[n].data_nas.mes,&x[n].data_nas.ano,
+						      &x[n].telefone,&x[n].morada, &x[n].estado);
+	}
+	fclose(f);
+	printf("\n\n\nFicheiro Lido <Enter para Continuar>");getch();
+}
+
+int eliminar(motorista *x)
+{
+	char confere;
+	int n;
+	long int eli;
+	system("cls");
+	printf("Qual o Numero do motorista que quer Eliminar? "); scanf("%ld",&eli);
+	for(n=1;n<NR;n++)
+	{
+		if(x[n].numero==eli)
+		{
+			printf("\n\Numero=%ld\nNome=%s\nDia De Nascimento=%d\nMes De Nascimento=%d\n \
+Ano De Nascimento=%d\nTelefone=%ld\nMorada=%s\nEstado=%d\n\n"
+		,x[n].numero,
+        x[n].nome,
+        x[n].data_nas.dia,
+        x[n].data_nas.mes,
+        x[n].data_nas.ano,
+        x[n].telefone,
+        x[n].morada, 
+        x[n].estado);
+			printf("\n\nQuer mesmo eliminar? <S/N>");confere=getch();
+
+			if (confere!='S' && confere!='s')    return(0);
+
+			x[n].estado=0;
+			printf("\n\n\nRegisto eliminado <enter para continuar>");
+			getch();  return (1);
+		}
+	}
+	printf("ERRO! Numero nao Encontrado <Enter para Continuar>");
+	getch(); return(0);
 }
 
 int main()
@@ -82,18 +134,19 @@ int main()
 	printf("\n|             C E M   R O D A S              |");
 	printf("\n|                                            |");
 	printf("\n|============================================|");
-		printf("L - Ler Ficheiro\nM - Mostrar Registos\n");
+		printf("\nL - Ler Ficheiro\nM - Mostrar Registos\n");
 		printf("I - Inserir Registo\nE - Eliminar Registo\n");
 		printf("G - Gravar Ficheiro\nS - Sair\n\n");
 		printf("Qual a sua opcao? "); op=getch();
 		switch(op)
 		{
-		//	case 'L': case 'l': ler(alu); break;
+			case 'L': case 'l': ler(mot); break;
 //			case 'M': case 'm': mostrar(alu); break;
 			case 'I': case 'i': inserir(mot); break;
-		//	case 'E': case 'e': eliminar(alu); break;
+			case 'E': case 'e': eliminar(mot); break;
 			case 'G': case 'g': gravar(mot); break;
 			case 'S': case 's': exit(0);
 		}
 	}while (op!='S' && op!='s');
 }
+
