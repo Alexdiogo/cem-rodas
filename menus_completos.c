@@ -1,7 +1,175 @@
 #include <stdio.h>
+#include <windows.h> 
+#include <unistd.h>
+#include <stdlib.h>
 #include <math.h>
+#define NR 200
 
-//Menus completos e menu_orcamento a funcionar (Falta completar)
+typedef struct
+{
+    int dia;
+    int mes;
+    int ano;
+}data;       
+
+typedef struct
+{
+	int numero;
+	char nome_cliente[50];
+	char local_origem[30];
+	char local_destino[30];
+	int distancia;
+	float peso;
+	data data_trans;
+	int estado;
+}cargas;
+
+int inserir(cargas *x)
+{
+	int ca;
+	int inser;
+	system ("cls");
+	printf("Insira um numero para a carga? ");
+	scanf("%d",&inser);
+	for(ca=1;ca<NR;ca++)
+	{
+		if(x[ca].estado!=1)
+		{
+			x[ca].numero=inser;
+			printf("\n\nNome do cliente: ");scanf("\n%[^\n]s", x[ca].nome_cliente);
+			printf("\n\nLocal de Origem da Carga: ");scanf("%s",(x[ca].local_origem));
+			printf("\n\nLocal de Destino da Carga: ");scanf("%s",(x[ca].local_destino));
+			printf("\n\nDistancia da Origem ao Destino: ");scanf("%d",&(x[ca].distancia));
+			printf("\n\nPeso da Carga: ");scanf("%f", &x[ca].peso);
+			printf("\n\nDia do Transporte: ");scanf("%d",&(x[ca].data_trans.dia));
+			printf("\n\nMes do Transporte: ");scanf("%d",&(x[ca].data_trans.mes));
+			printf("\n\nAno do Transporte: ");scanf("%d",&(x[ca].data_trans.ano));
+		
+			x[ca].estado=1;
+			printf("\n\n\nRegisto Inserido <Enter para Continuar>");
+			getch();
+			return(1);
+		}
+	}
+	printf("ERRO! Nao foi possivel Inserir"); getch(); return(0);
+}
+
+void gravar(cargas *x)
+{
+	FILE *f;
+	int ca;
+	if(!(f=fopen("cargas.txt","a+")))
+	{
+		printf("\n\n\nErro na Abertura para Gravar <Enter para Sair>");
+		getch();  exit(0);
+	}
+
+	for(ca=1;ca<NR;ca++)
+	{
+		if(x[ca].estado==1)
+		{
+			fprintf(f,"%d\n%s\n%s\n%s\n%d\n%.2f\n%d\n%d",x[ca].numero,x[ca].nome_cliente,
+			x[ca].local_origem,x[ca].local_destino,x[ca].distancia,
+			x[ca].peso,x[ca].data_trans.dia, x[ca].data_trans.mes, x[ca].data_trans.ano);
+		}
+	}
+	fclose(f);
+	printf("\n\n\nFicheiro Gravado <Enter para Continuar>"); getch();
+}
+
+void ler(cargas *x)
+{
+	FILE *f;
+	int n, ca;
+	if(!(f=fopen("cargas.txt","r")))
+	{
+		printf("Erro na Abertura de Leitura <Enter para Sair>");
+		getch(); exit(0);
+	}
+	for(ca=1;ca<NR;ca++)
+	{
+		fprintf(f,"%d\n%s\n%s\n%s\n%d\n%.2f\n%d\n%d",x[ca].numero,x[ca].nome_cliente,
+		x[ca].local_origem,x[ca].local_destino,x[ca].distancia,
+		x[ca].peso,x[ca].data_trans.dia, x[ca].data_trans.mes, x[ca].data_trans.ano);
+	}
+	fclose(f);
+	printf("\n\n\nFicheiro Lido <Enter para Continuar>");getch();
+}
+
+
+int eliminar(cargas *x)
+{
+	char confere;
+	int ca; 
+	long int eli;
+	system("cls");
+	printf("Qual o Numero da carga que quer Eliminar? "); scanf("%ld",&eli);
+	for(ca=1;ca<NR;ca++)
+	{
+		if(x[ca].numero==eli)
+		{
+		printf("\nNome do Cliente: %s\nLocal de Origem da Carga: %s\nLocal de Destino da Carga: %s\nDistancia da Origem ao Destino: %d\nPeso da Carga: %.2f\nDia do Transporte: %d\nMes do Transporte: %d\nAno do Transporte: %d\n\n",
+		x[ca].nome_cliente,
+        x[ca].local_origem,
+        x[ca].local_destino,
+        x[ca].distancia,
+        x[ca].peso,
+        x[ca].data_trans.dia,
+        x[ca].data_trans.mes, 
+        x[ca].data_trans.ano);
+		
+		printf("\n\nQuer mesmo eliminar? <S/N>");confere=getch();
+
+		if (confere!='S' && confere!='s')    return(0);
+
+		x[ca].estado=0;
+		printf("\n\n\nRegisto eliminado <enter para continuar>");
+		getch();  return (1);
+		}
+	}
+	printf("ERRO! Numero nao Encontrado <Enter para Continuar>");
+	getch(); return(0);
+}
+
+
+int alterar(cargas *x)
+	{
+	int ca;
+	long int alte;
+	system("cls");
+	printf("Qual o Numero da carga que quer Alterar? "); scanf("%ld",&alte);
+	for(ca=1;ca<NR;ca++)
+	{
+		if(x[ca].numero==alte)
+		{
+		printf("\nNome do Cliente: %s\nLocal de Origem da Carga: %s\nLocal de Destino da Carga: %s\nDistancia da Origem ao Destino: %d\nPeso da Carga: %.2f\nDia do Transporte: %d\nMes do Transporte: %d\nAno do Transporte: %d\n\n",
+		x[ca].nome_cliente,
+        x[ca].local_origem,
+        x[ca].local_destino,
+        x[ca].distancia,
+        x[ca].peso,
+        x[ca].data_trans.dia,
+        x[ca].data_trans.mes, 
+        x[ca].data_trans.ano);
+		
+       		printf("\n\nNome do cliente: ");scanf("\n%[^\n]s", x[ca].nome_cliente);
+			printf("\n\nLocal de Origem da Carga: ");scanf("%s",(x[ca].local_origem));
+			printf("\n\nLocal de Destino da Carga: ");scanf("%s",(x[ca].local_destino));
+			printf("\n\nDistancia da Origem ao Destino: ");scanf("%d",&(x[ca].distancia));
+			printf("\n\nPeso da Carga: ");scanf("%f", &x[ca].peso);
+			printf("\n\nDia do Transporte: ");scanf("%d",&(x[ca].data_trans.dia));
+			printf("\n\nMes do Transporte: ");scanf("%d",&(x[ca].data_trans.mes));
+			printf("\n\nAno do Transporte: ");scanf("%d",&(x[ca].data_trans.ano));
+		
+			printf("\n\n\nRegisto alterado <enter para continuar>");
+			getch();  return (1);
+		}
+	}
+	printf("ERRO! Numero nao Encontrado <Enter para Continuar>");
+	getch(); return(0);
+
+}
+
 
 int menu_clientes() 
 		{
@@ -23,7 +191,9 @@ int menu_clientes()
 		printf("\n\t*                                            *"); 
         printf("\n\t*               3 - Eliminar                 *");
         printf("\n\t*                                            *");
-        printf("\n\t*               0 - Menu Principal           *");
+        printf("\n\t*               4 - Gravar                   *");
+		printf("\n\t*                                            *");
+		printf("\n\t*               0 - Menu Principal           *");
 		printf("\n\t*                                            *");
         printf("\n\t**********************************************");
         printf("\n\n\t             Qual a sua opcao? ");
@@ -34,6 +204,7 @@ int menu_clientes()
                         case 1: printf("..."); break;
                         case 2: printf("..."); break;
                         case 3: printf("..."); break;
+						case 4: printf("..."); break;
 						case 0: system ("cls"); break;
                         default: printf("Opcao invalida!\n");
                 }
@@ -120,10 +291,16 @@ int menu_condutores ()
 
 int menu_cargas ()
 {
+	
 	int op;
+	int ca;
+	cargas car[NR];
+	for(ca=0;ca<NR;ca++)
+	car[ca].estado=0; 
+	
 	do {
 		system ("cls");						        
-		printf("\n\t|============================================|"); system("COLOR 08");
+		printf("\n\t|============================================|"); system("COLOR 0A");
     	printf("\n\t|              C E M  R O D A S              |");
     	printf("\n\t|                                            |");
 	   	printf("\n\t|                                            |");
@@ -133,11 +310,15 @@ int menu_cargas ()
         printf("\n\t*                                            *"); 
         printf("\n\t*               1 - Inserir                  *");
         printf("\n\t*                                            *"); 
-        printf("\n\t*               2 - Alterar                  *");
+        printf("\n\t*               2 - Ler                      *");
 		printf("\n\t*                                            *"); 
-        printf("\n\t*               3 - Eliminar                 *");
+        printf("\n\t*               3 - Alterar                  *");
         printf("\n\t*                                            *");
-        printf("\n\t*               0 - Menu Principal           *");
+        printf("\n\t*               4 - Eliminar                 *");
+	    printf("\n\t*                                            *");
+        printf("\n\t*               5 - Gravar                   *");
+		printf("\n\t*                                            *");
+		printf("\n\t*               0 - Menu Principal           *");
 		printf("\n\t*                                            *");
         printf("\n\t**********************************************");
         printf("\n\n\t             Qual a sua opcao? ");
@@ -145,9 +326,11 @@ int menu_cargas ()
 				scanf("%d",&op);
                
 				switch (op) {
-                        case 1: printf("..."); break;
-                        case 2: printf("..."); break;
-                        case 3: printf("..."); break;
+                        case 1: inserir(car); break;
+                        case 2: ler(car); break;
+                        case 3: alterar(car); break;
+					    case 4: eliminar(car); break;
+						case 5: gravar(car); break;
 						case 0: system ("cls"); break;
                         default: printf("Opcao invalida!\n");
                 }
@@ -330,8 +513,8 @@ int menu_inic_viag ()			// Falta acabar o menu
 
 int main(void) 
 {
-        
-	int op;
+    	
+		int op;
         do {
         printf("\n\t|============================================|"); system("COLOR 0A");
     	printf("\n\t|       G E S T A O  D E  C A R G A S        |");
@@ -384,26 +567,4 @@ int main(void)
         printf("Fim!\n");
         return 0;
 }
-	
 
-		
-		/*int op;
-        do {
-                printf("-- MENU --\n");
-                printf("1 - Opcao 1\n2 - Opcao 2\n3 - Opcao 3\n0 - Sair\n");
-                printf("\nIntroduza a opcao: ");
-                scanf("%d",&op);
-                scanf("%*c");
-                switch(op) {
-                        case 1: menu1();
-                                break;
-                        case 2: printf("Escolheu a opcao2.\n");
-                                break;
-                        case 3: printf("Escolheu a opcao3.\n");
-                                break;
-                        case 0: break;
-                        default: printf("Opcao invalida.\n");
-                }
-       } while (op!=0);
-        printf("Fim!\n");
-        return 0;*/
