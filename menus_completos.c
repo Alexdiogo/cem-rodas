@@ -137,7 +137,7 @@ int alterar(cargas *x)
 	int ca;
 	long int alte;
 	system("cls");
-	printf("Qual o Numero da carga que quer Alterar? "); scanf("%ld",&alte);
+	printf("Qual o numero da carga que deseja alterar? "); scanf("%ld",&alte);
 	for(ca=1;ca<NR;ca++)
 	{
 		if(x[ca].numero==alte)
