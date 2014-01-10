@@ -8,8 +8,27 @@
 #define NO 10             // numero maximo de condutores
 #define NA 10             // numero maximo de cargas
 
+/*!
+*
+*\file
+*\brief Programa de gestão de uma empresa de transporte de cargas
+*\author Filipa Amaro, Humberto Alexandre, Nelson Reis, João Fernandes
+*\date 10 Janeiro 2014
+*\bug Sem erros
+*\copyright GNU publisher
+*\version 1.0
+*
+*/
+
 char historico [100];
-//estrutura tipo data	
+
+/**
+*
+*Estrutura do tipo data
+*\param dia : int
+*\param mes : int
+*\param ano : int
+*/		
 typedef struct
 {
     int dia;
@@ -17,7 +36,15 @@ typedef struct
     int ano;
 }data; 
 
-//estrutura dos clientes
+/**
+*
+*Estrutura dos clientes
+*\param numero : long int
+*\param nome : char
+*\param morada : char
+*\param telefone : long int
+*\param estado : int
+*/
 typedef struct  
     {
 		long int numero;
@@ -27,7 +54,18 @@ typedef struct
 		int estado;
 	}clientes;
 
-//estrutura dos camioes
+/**
+*
+*Estrutura dos camioes
+*\param ncam : int
+*\param matricula : char
+*\param cm : int
+*\param dpi : data
+*\param custo : int
+*\param ma : int
+*\param situacao : int
+*\param estado : int
+*/
 typedef struct
   {
 	int ncam;				// numero de camiao 
@@ -40,7 +78,17 @@ typedef struct
 	int estado;				// 1 = activo 0 = apagado  
 }camioes;
   
-//estrutura dos condutores
+/*
+*
+*Estrutura dos clientes
+*\param numero : int
+*\param nome : char
+*\param data_nas : data
+*\param telefone : int
+*\param morada : char
+*\param situacao : int
+*\param estado : int
+*/
 typedef struct{
 	int numero;
 	char nome[50];
@@ -51,7 +99,19 @@ typedef struct{
 	int estado;			// 1=activo 0=apagado		
 }condutores;
 
-//estrutura das cargas
+/**
+*
+*Estrutura das cargas
+*\param numero : int
+*\param nome_cliente : char
+*\param local_origem : char
+*\param local_destino : char
+*\param distancia : int
+*\param peso : int
+*\param data_trans : data
+*\param situacao : int
+*\param estado : int
+*/
 typedef struct
 {
 	int numero;
@@ -66,7 +126,14 @@ typedef struct
 }cargas;
 
 
-// iniciar ficheiros txt
+/*
+*
+*Função criar ficheiros (Clientes, Camiões, Condutores, Cargas e Histórico)
+*\param n : int
+*\param m : int
+*\param d : int
+*\param c : int
+*/
 void iniciar_ficheiros (clientes *cli, camioes *cam, condutores *con, cargas *car)
 {
     int n, m, d, c;
@@ -115,12 +182,16 @@ void iniciar_ficheiros (clientes *cli, camioes *cam, condutores *con, cargas *ca
      
 }
 
-//funcao pra ler e carregar a estrutura clientes do ficheiro clientes.txt
+/*
+*
+*Função pra ler e carregar os clientes do ficheiro clientes.txt
+*\param n : int
+*/
 void ler_clientes(clientes *cli)
 {
 			
 	FILE *fi;
-	int n,c;
+	int n;
 	
 	if(!(fi=fopen("clientes.txt","r")))
 	{
@@ -140,11 +211,15 @@ void ler_clientes(clientes *cli)
 	printf("\n\nFicheiro Lido\n<Enter para continuar>\n"); getch();
 }
 
-//funcao para listagem da estrutura clientes
+/*
+*
+*Função para listagem dos clientes
+*\param n : int
+*/
 void listar_clientes (clientes *cli)
 {
     
-    int n,c;
+    int n;
 	system ("cls");printf("\n...A LISTAR CLIENTES...\n");	
 	for(n=1;n<NI;n++)										//Lista todos os clientes
 	{
@@ -159,7 +234,12 @@ void listar_clientes (clientes *cli)
 	printf("\nListagem concluida <Enter para voltar>");getch();
 }
 
-//Inserir clientes 
+/*
+*
+*Função para inserir clientes
+*\param n : int
+*\param inser: long int
+*/
 int inserir_clientes(clientes *cli)
 {
 		
@@ -197,7 +277,13 @@ int inserir_clientes(clientes *cli)
 	
 }
 
-//Alterar clientes
+/*
+*
+*Função para alterar clientes
+*\param n : int
+*\param confere : char
+*\param alte : long int
+*/
 int alterar_clientes(clientes *cli)
 {
 	int n;
@@ -228,7 +314,13 @@ int alterar_clientes(clientes *cli)
 
 }
 
-//Eliminar clientes
+/*
+*
+*Função para eliminar clientes
+*\param confere : char
+*\param n : int
+*\param eli : long int
+*/
 int eliminar_clientes(clientes *cli)
 {
 	char confere;
@@ -252,7 +344,11 @@ int eliminar_clientes(clientes *cli)
 	printf("ERRO! Numero não Encontrado\n");system("pause");return(0);
 }
 
-//Gravar clientes
+/*
+*
+*Função para gravar clientes
+*\param n : int
+*/
 void gravar_clientes(clientes *cli)
 {
 	FILE *fi;		//ponteiro para o ficheiro clientes.txt
@@ -273,7 +369,12 @@ void gravar_clientes(clientes *cli)
 	printf("\n\n\nFicheiro Gravado\n");getch();
 }
 
-// MENU CLIENTES
+/**
+*
+*Menu Clientes
+*\param op : int
+*\param n : int
+*/
 int menu_clientes() 
 		{
         	int op;
@@ -326,11 +427,15 @@ int menu_clientes()
 
 // MENU CAMIOES INICIO
 
-//funcao para ler e carregar do ficheiro camioes.txt
+/*
+*
+*Função para ler e carregar os camiões do ficheiro camioes.txt
+*\param c : int
+*/
 void ler_camioes(camioes *cam)
 {
 	FILE *fc;		//apontador para o ficheiro camioes.txt
-	int n,c;
+	int c;
 	
 	if(!(fc=fopen("camioes.txt","r")))
 	{
@@ -350,10 +455,14 @@ void ler_camioes(camioes *cam)
 	printf("\n\nFicheiro Lido\n<Enter para continuar>\n"); getch();
 }
 
-//Listar camioes
+/*
+*
+*Função para listar camiões
+*\parm c : int
+*/
 void listar_camioes (camioes *cam)
 {
-    int n,c;
+    int c;
 	system ("cls");
 	printf("\n...A LISTAR CAMIOES...\n");
 	for(c=1;c<NC;c++)
@@ -367,10 +476,15 @@ void listar_camioes (camioes *cam)
 	printf("\nListagem concluida <Enter para voltar>");getch();
 }
 
-//Inserir camioes 
+/*
+*
+*Função para inserir camiões
+*\param c : int
+*\param inser : long int
+*/
 int inserir_camioes(camioes *cam)
 {
-	int n,c;
+	int c;
 	long int inser;
 	system ("cls");
 	printf("Qual o numero do camiao que quer inserir? [1-%d]?", NC);
@@ -408,11 +522,17 @@ int inserir_camioes(camioes *cam)
 	printf("ERRO! Não foi possivel inserir"); getch(); return(0);
 }
 
-//Alterar camioes 
+/*
+*
+*Função para alterar camiões
+*\param confere : char
+*\param c : int
+*\param alte : long int
+*/ 
 int alterar_camioes(camioes *cam)
 {
 	char confere;
-	int n,c;
+	int c;
 	long int alte;
 	system("cls");
 	printf("Qual o numero do Camiao que quer alterar? "); scanf("%ld",&alte);
@@ -443,7 +563,13 @@ int alterar_camioes(camioes *cam)
 	getch(); return(0);
 }
 
-//Eliminar camioes
+/*
+*
+*Função para eliminar camiões
+*\param confere : char
+*\param c : int
+*\param eli : long int
+*/
 int eliminar_camioes(camioes *cam)
 {
 	char confere;
@@ -469,7 +595,11 @@ int eliminar_camioes(camioes *cam)
 	printf("ERRO! Numero não Encontrado\n");system("pause");return(0);
 }
 
-//Gravar camioes
+/*
+*
+*Função para gravar camiões
+*\param c : int
+*/
 void gravar_camioes(camioes *cam)
 {
 	FILE *fc;
@@ -492,7 +622,12 @@ void gravar_camioes(camioes *cam)
 	printf("\n\n\nFicheiro Gravado\n");getch();
 }
 
-// MENU CAMIOES
+/*
+*
+*Menu camiões
+*\param op : int
+*\param c : int
+*/
 void menu_camioes ()
 {
 		int op;
@@ -545,7 +680,11 @@ void menu_camioes ()
 
 //MENU CONDUTORES INICIO
 
-//Ler condutores
+/*
+*
+*Função para ler condutores
+*\param n : int
+*/
 void ler_condutores(condutores *con)
 {
 	FILE *fo;
@@ -568,7 +707,11 @@ void ler_condutores(condutores *con)
 	printf("\n\nFicheiro Lido\n<Enter para continuar>\n"); getch();
 }
 
-// listar condutores
+/*
+*
+*Função para listar condutores
+*\param n : int
+*/
 int listar_condutores (condutores *con)
 {
     int n;
@@ -585,7 +728,12 @@ int listar_condutores (condutores *con)
 		printf("\nListagem concluida <Enter> para voltar");getch();
 }
 
-//Inserir condutores
+/*
+*
+*Função para inserir condutores
+*\param n : int
+*\param inser : long int
+*/
 int inserir_condutores(condutores *con)
 {
 	int n;
@@ -626,7 +774,13 @@ int inserir_condutores(condutores *con)
 	printf("ERRO! Não foi possivel inserir"); getch(); return(0);
 }
 
-//Alterar condutores
+/*
+*
+*Função para alterar condutores
+*\param n : int
+*\param confere : char
+*\param alte : long int
+*/
 int alterar_condutores(condutores *con)
 {
 	int n;
@@ -661,7 +815,13 @@ int alterar_condutores(condutores *con)
 
 }
 
-//Eliminar condutores
+/*
+*
+*Função para eliminar condutores
+*\param confere : char
+*\param n : int
+*\param eli : long int
+*/
 int eliminar_condutores(condutores *con)
 {
 	char confere;
@@ -686,7 +846,11 @@ int eliminar_condutores(condutores *con)
 	printf("ERRO! Numero não Encontrado\n");system("pause");return(0);
 }
 
-//Gravar condutores
+/*
+*
+*Função para gravar condutores
+*\param n : int
+*/
 void gravar_condutores (condutores *con)
 {
 	FILE *fo;
@@ -708,7 +872,12 @@ void gravar_condutores (condutores *con)
 	printf("\n\n\nFicheiro Gravado\n");getch();
 }
 
-//MENU CONDUTORES
+/*
+*
+*Menu condutores
+*\param op : int
+*\param n : int
+*/
 int menu_condutores()
 {
 	int op;
@@ -759,7 +928,11 @@ int menu_condutores()
 
 //INICIO MENU CARGAS
 
-//Ler cargas
+/*
+*
+*Função para ler cargas
+*\param ca : int
+*/
 void ler_cargas(cargas *car)
 {
 	FILE *fa;
@@ -779,7 +952,11 @@ void ler_cargas(cargas *car)
 	printf("\n\n\nFicheiro Lido <Enter para Continuar>");getch();
 }
 
-//Listar cargas
+/*
+*
+*Função para listar cargas
+*\param ca : int
+*/
 int listar_cargas(cargas *car)
 {
 	
@@ -800,7 +977,12 @@ int listar_cargas(cargas *car)
 	getch();
 }
 
-//Inserir cargas
+/*
+*
+*Função para inserir cargas
+*\param ca : int
+*\param inser : long int
+*/
 int inserir_cargas(cargas *car)
 {
 	int ca;
@@ -842,7 +1024,13 @@ int inserir_cargas(cargas *car)
 	printf("ERRO! Nao foi possivel Inserir"); getch(); return(0);
 }
 
-//Alterar cargas
+/*
+*
+*Função para alterar cargas
+*\param ca : int
+*\param confere : char
+*\param alte : long int
+*/
 int alterar_cargas(cargas *car)
 	{
 	int ca;
@@ -887,7 +1075,13 @@ int alterar_cargas(cargas *car)
 
 }
 
-//Eliminar cargas
+/*
+*
+*Função para eliminar cargas
+*\param confere : char
+*\param ca : int
+*\param eli : long int
+*/
 int eliminar_cargas(cargas *car)
 {
 	char confere;
@@ -924,7 +1118,11 @@ int eliminar_cargas(cargas *car)
 	getch(); return(0);
 }
 
-//Gravar cargas
+/*
+*
+*Função para gravar cargas
+*\param ca : int
+*/
 void gravar_cargas(cargas *car)
 {
 	FILE *fa;
@@ -947,7 +1145,12 @@ void gravar_cargas(cargas *car)
 	printf("\n\n\nFicheiro Gravado <Enter para Continuar>"); getch();
 }
 
-//MENU CARGAS
+/*
+*
+*Menu cargas
+*\param op : int
+*\param ca : int
+*/
 int menu_cargas ()
 {
 	FILE *fa;
@@ -1005,11 +1208,15 @@ int menu_cargas ()
 //INICIO DO MENU LISTAGENS
 
 
-//listar 1
+/*
+*
+*Função para listar a frota de camiões
+*\param c : int
+*/
 void listar_1 ()
 {
     camioes cam[NC];
-	int n,c;
+	int c;
 	system ("cls");
 	for(c=0;c<NC;c++) //limpa array de registos
 	cam[c].estado=0;
@@ -1025,7 +1232,11 @@ void listar_1 ()
 	printf("\nListagem concluida <Enter para voltar>");getch();
 }
 
-//Listar cargas por camiao
+/*
+*
+*Função para listar cargas por camião
+*\param ca : int
+*/
 void listar_2 ()
 {
 	cargas car[NA];
@@ -1061,11 +1272,17 @@ void listar_2 ()
 	printf("\n\n\nFicheiro Lido <Enter para Continuar>");getch();
 
 }
-//Listar camioes com inspeccao mes corrente
+
+/*
+*
+*Função para listar camiões com inspecção mês corrente
+*\param c : int
+*\param insp : char
+*/
 void listar_4 ()
 {
     camioes cam[NC];
-	int c,m;
+	int c;
 	char insp;
 	system("cls");
 	printf("Qual o Mes que quer verificar? "); scanf("%s",&insp);
@@ -1084,10 +1301,14 @@ void listar_4 ()
 }
 
 
-
+/*
+*
+*Função para listar clientes
+*\param n : int
+*/
 void listar_6 ()
 {
-	int n,c;
+	int n;
 	
 	clientes cli[NI];
 	for(n=0;n<NI;n++) //limpa array de registos
@@ -1109,10 +1330,18 @@ void listar_6 ()
 }
 
 
-// INICIO MENU LISTAGENS
+/*
+*
+*Menu listagens
+*\param n : int
+*\param c : int
+*\param m : int
+*\param op : int
+*/
 void menu_listagens ()
 {
 	int n, c, m;
+	int op;
 	clientes cli[NI];
 	for(n=0;n<NI;n++) //limpa array de registos
 	cli[n].estado=0; 
@@ -1129,7 +1358,7 @@ void menu_listagens ()
 	ler_clientes(cli);
 	ler_camioes(cam);
 	ler_condutores(con);
-	int op;
+	
 	do {
 		system ("cls");						        
 		printf("\n\t|============================================|"); system("COLOR 0A");
@@ -1172,13 +1401,21 @@ void menu_listagens ()
     } while (op!=0);
 	
 }
+//Fim do menu listagens
 
-//camioes por destino
+//Menu Pesquisa
+
+/*
+*
+*Função para pesquisar camiões por destino
+*\param ca : int
+*\param destino : char
+*/
 void pesquisa_2 ()
 {
     camioes cam[NC];
 	cargas car[NA];
-	int n,ca;
+	int ca;
 	char destino;
 	system ("cls");
 	//ler_camioes(cam);
@@ -1196,7 +1433,12 @@ void pesquisa_2 ()
 }
 
  
-
+/*
+*
+*Menu pesquisa
+*\param op : int
+*\param c : int
+*/
 int menu_pesquisa ()
 {
 	int op;
@@ -1242,7 +1484,11 @@ int menu_pesquisa ()
 	
 }
 
-
+/*
+*
+*Menu estatística
+*\param op : int
+*/
 int menu_estatistica ()
 {
 	int op;
@@ -1283,13 +1529,18 @@ int menu_estatistica ()
 	
 }
         
-        
+/*
+*
+*Menu Orçamento
+*\param klm : float
+*\param toneladas : float
+*\param res1 : float
+*/        
 int orcamento()
 {
-    float klm,toneladas;
-    float res1;
-    char op;
-    system("cls");
+    	float klm,toneladas;
+    	float res1;
+    	system("cls");
         printf("\n\t|======================================================|"); system("COLOR 0A");
     	printf("\n\t|                  C E M  R O D A S                    |");
     	printf("\n\t|                                                      |");
@@ -1298,8 +1549,7 @@ int orcamento()
     	printf("\n\t|                                                      |");
     	printf("\n\t|======================================================|");
          
-		 do 
-		 { 
+	
 	    	do {
 			printf("\n\t Introduza o numero de kilometros da viagem: ");
 	    	scanf("%f",&klm);
@@ -1320,10 +1570,23 @@ int orcamento()
 	    	printf("\n\t A sua viagem tem o valor de: %.2f euros",res1);
 	        printf("\n\n\n\t Orcamento Concluido <Enter para Continuar>");
 	        getch();system ("cls");return(0);
-	     }while(op!='0');
+	
 }  
 
-int menu_inic_viag ()			// inicio de um transporte
+
+/*
+*
+*Menu para iniciar um transporte
+*\param carga : long int
+*\param camiao : long int
+*\param cliente : long int
+*\param condutor : long int
+*\param n : int
+*\param ca : int
+*\param o : int
+*\param c : int
+*/
+int menu_inic_viag ()
 {
 	FILE *fh;
 	FILE *fa;
@@ -1411,7 +1674,11 @@ int menu_inic_viag ()			// inicio de um transporte
 */	
 }
 
-
+/*
+*
+*Main (Menu Principal)
+*\param op : int
+*/
 int main(void) 
 {
 
@@ -1475,3 +1742,4 @@ int main(void)
         printf("Fim!\n");
         return 0;
 }
+
