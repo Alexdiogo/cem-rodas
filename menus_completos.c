@@ -3,10 +3,10 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <math.h>
-#define NI 10              // numero maximo de clientes
-#define NC 10             // numero maximo de camioes
-#define NO 10             // numero maximo de condutores
-#define NA 10             // numero maximo de cargas
+#define NI 100              // numero maximo de clientes
+#define NC 100             // numero maximo de camioes
+#define NO 100             // numero maximo de condutores
+#define NA 100             // numero maximo de cargas
 
 /*!
 *
@@ -20,7 +20,6 @@
 *
 */
 
-char historico [100];
 
 /**
 *
@@ -403,7 +402,6 @@ int menu_clientes()
         printf("\n\t*                                            *");
         printf("\n\t*               4 - Gravar                   *");
 		printf("\n\t*                                            *");
-		printf("\n\t*               5 - Listar                   *");
 		printf("\n\t*                                            *");
 		printf("\n\t*               0 - Menu Principal           *");
 		printf("\n\t*                                            *");
@@ -417,7 +415,6 @@ int menu_clientes()
                         case 2: alterar_clientes(cli); break;
                         case 3: eliminar_clientes(cli); break;
 						case 4: gravar_clientes(cli); break;
-						case 5: listar_clientes(cli); break;
 						case 0: system ("cls"); break;
                         default: printf("Opcao invalida!\n");
                 }
@@ -467,7 +464,7 @@ void listar_camioes (camioes *cam)
 	printf("\n...A LISTAR CAMIOES...\n");
 	for(c=1;c<NC;c++)
 		
-		if(cam[c].estado==1)
+		if(cam[c].estado==1 && cam[c].situacao==0)
 		{
         printf("\nNumero: %d\nMatricula: %s\nCarga Maxima KG: %d\nData inspeccao: %d/%d/%d\nCusto KM(EUROS): %d\nMotorista Camiao: %d\nSituacao 1-Ocupado 0-Livre: %d\nEstado: %d\n",
 		cam[c].ncam,cam[c].matricula,cam[c].cm,cam[c].dpi.dia,cam[c].dpi.mes,cam[c].dpi.ano,cam[c].custo,cam[c].ma,cam[c].situacao,cam[c].estado);
@@ -655,7 +652,6 @@ void menu_camioes ()
         printf("\n\t*                                            *");
         printf("\n\t*               4 - Gravar                   *");
 		printf("\n\t*                                            *");
-		printf("\n\t*               5 - Listar                   *");
 		printf("\n\t*                                            *");
 		printf("\n\t*               0 - Menu Principal           *");
 		printf("\n\t*                                            *");
@@ -669,7 +665,6 @@ void menu_camioes ()
                         case 2: alterar_camioes(cam); break;
                         case 3: eliminar_camioes(cam); break;
 						case 4: gravar_camioes(cam); break;
-						case 5: listar_camioes(cam); break;
 						case 0: system ("cls"); break;
                         default: printf("Opcao invalida!\n");
                 }
@@ -905,7 +900,6 @@ int menu_condutores()
 		printf("\n\t*                                            *");
 		printf("\n\t*               4 - Gravar                   *"); 
 		printf("\n\t*                                            *");
-		printf("\n\t*               5 - Listar                   *");
 		printf("\n\t*                                            *");
 		printf("\n\t*               0 - Menu Principal           *");
 		printf("\n\t*                                            *");
@@ -917,7 +911,6 @@ int menu_condutores()
 			case 2: alterar_condutores(con); break;
 			case 3: eliminar_condutores(con); break;
 			case 4: gravar_condutores(con);break;
-			case 5: listar_condutores(con);break;
 			case 0: system ("cls"); break;
             default: printf("Opcao invalida!\n");
 		}
@@ -1181,7 +1174,6 @@ int menu_cargas ()
 	    printf("\n\t*                                            *");
         printf("\n\t*               4 - Gravar                   *");
 		printf("\n\t*                                            *");
-		printf("\n\t*               5 - Listar                   *");
 		printf("\n\t*                                            *");
 		printf("\n\t*               0 - Menu Principal           *");
 		printf("\n\t*                                            *");
@@ -1196,7 +1188,6 @@ int menu_cargas ()
                         case 2: alterar_cargas(car); break;
 					    case 3: eliminar_cargas(car); break;
 						case 4: gravar_cargas(car); break;
-						case 5: listar_cargas(car); break;
 						case 0: system ("cls"); break;
                         default: printf("Opcao invalida!\n");
                 }
@@ -1282,18 +1273,18 @@ void listar_2 ()
 void listar_4 ()
 {
     camioes cam[NC];
-	int c;
-	char insp;
+	int c, insp;
 	system("cls");
-	printf("Qual o Mes que quer verificar? "); scanf("%s",&insp);
-	printf("\n...CAMIOES COM INSPECCAO NO MES (%ld):\n\n",insp);
+	printf("Qual o Mes que quer verificar? "); scanf("%d",&insp);
+	printf("\n...CAMIOES COM INSPECCAO NO MES (%d):\n\n",insp);
+	
 	for(c=1;c<NC;c++)
 	{
 		
 		if(cam[c].estado==1 && cam[c].dpi.mes==insp)
     	
 		{
-        printf("\nNumero: %d\nMatricula: %s\nCarga Maxima KG: %d\nData inspeccao: %d\t%d\t%d\nCusto KM: %d\nMotorista Camiao: %d\nSituacao 1-Ocupado 0-Livre: %d\nEstado: %d\n",
+        printf("\nNumero: %d\nMatricula: %s\nCarga Maxima KG: %d\nData inspeccao: %d/%d/%d\nCusto KM: %d\nMotorista Camiao: %d\nSituacao 1-Ocupado 0-Livre: %d\nEstado: %d\n",
 		cam[c].ncam,cam[c].matricula,cam[c].cm,cam[c].dpi.dia,cam[c].dpi.mes,cam[c].dpi.ano,cam[c].custo,cam[c].ma,cam[c].situacao,cam[c].estado);
 		}
 	}
@@ -1410,7 +1401,33 @@ void menu_listagens ()
 
 /**
 *
-*Funcao para pesquisar camioes por destino
+*Funcao para pesquisar camioes por carga
+*\param c : int
+*\param carga : char
+*/
+void pesquisa_1 ()
+{
+    camioes cam[NC];
+	int c;
+	int carga;
+	system ("cls");
+	printf("\nQual a Carga maxima pretendida? "); scanf("%d",&carga);
+	
+	printf("\n...A LISTAR CAMIOES...\n");
+	for(c=1;c<NC;c++)
+	
+		
+		if(carga<=cam[c].cm  && cam[c].estado==1);
+		{
+       printf("\nNumero: %d\nMatricula: %s\nCarga Maxima KG: %d",cam[c].ncam,cam[c].matricula,cam[c].cm);
+		}
+	
+	printf("\nListagem concluida <Enter para voltar>");getch();
+}
+
+/**
+*
+*Funcao para pesquisar camiao por destino
 *\param ca : int
 *\param destino : char
 */
@@ -1442,6 +1459,7 @@ void pesquisa_2 ()
 *Menu pesquisa
 *\param op : int
 *\param c : int
+*\param n : int
 */
 int menu_pesquisa ()
 {
@@ -1482,7 +1500,7 @@ int menu_pesquisa ()
 				switch (op) {
                         case 1: printf("..."); break;
                         case 2: pesquisa_2(cam, car); break;
-                        case 3: printf("..."); break;
+                        case 3: pesquisa_1(cam); break;
 						case 0: system ("cls"); break;
                         default: printf("Opcao invalida!\n");
                 }
@@ -1591,13 +1609,15 @@ int orcamento()
 *\param ca : int
 *\param o : int
 *\param c : int
+*\param preco : int
 */
 int menu_inic_viag ()
 {
 	FILE *fh;
 	FILE *fa;
 	fa=fopen("cargas.txt","r");
-		
+	
+	int preco;
 	long int carga, camiao, cliente, condutor;
 	int n,ca,o,c;
 	cargas car[NA];
@@ -1619,22 +1639,26 @@ int menu_inic_viag ()
     	printf("\n\t|                                                      |");
     	printf("\n\t|======================================================|");
     	
-    	system ("cls");
-		printf("Introduza a carga a ser entregue [1-%d]: ", NA);
+    	
+		printf("\n\n\nIntroduza a carga a ser entregue [1-%d]: ", NA);
 			scanf("%ld",&carga);
-			printf("\nCarga a ser transportada: ");
+			
 			
 			for(ca=1;ca<NA;ca++)
 	    {
-	    	       		
+	    	    		
 			if (car[ca].numero==carga && car[ca].estado==1)
 			{
+				printf("\nCarga a ser transportada: ");   
 				printf("\n\nNumero: %d\nNome do Cliente: %s\nLocal de Origem da Carga: %s\nLocal de Destino da Carga: %s\nDistancia da Origem ao Destino KM: %d\nPeso da Carga KG: %d\nData do Transporte: %d/%d/%d\n\n",
 				car[ca].numero,car[ca].nome_cliente,car[ca].local_origem,car[ca].local_destino,car[ca].distancia,car[ca].peso,
         		car[ca].data_trans.dia,car[ca].data_trans.mes,car[ca].data_trans.ano);
-				printf("\nCarga atribuida\n");	     
+				printf("\nCarga atribuida\n"); 
+				preco=(car[ca].distancia)+50*(car[ca].peso/1000); 
+				car[ca].situacao=1;
+				
 			}
-		}				
+		}					
 						
 			printf("\nIntroduza o camiao para efectuar o transporte [1-%d]: ", NC);
 		
@@ -1647,22 +1671,18 @@ int menu_inic_viag ()
 			{
 				printf("\nNumero: %d\nMatricula: %s\nCarga Maxima KG: %d\nData inspeccao: %d/%d/%d\nCusto KM(EUROS): %d\nMotorista Camiao: %d\n",
 				cam[c].ncam,cam[c].matricula,cam[c].cm,cam[c].dpi.dia,cam[c].dpi.mes,cam[c].dpi.ano,cam[c].custo,cam[c].ma);
-			    printf("\n\nCamiao atribuido <enter para continuar>");getch();
+			    printf("\n\nCamiao atribuido <enter para continuar>");
+			    cam[c].situacao=1;
 			}
 		}
 			system("cls");
-			
-			printf ("O camiao %ld \niniciou viagem transportando a carga %d ",camiao,car[ca].numero);getch();
-			fh=fopen("historico.txt","a+");
-			fprintf (fh,"%ld\n%d\n%s",camiao,car[ca].numero, car[ca].local_destino);system("cls");
-			
-			car[ca].situacao=1;
-			cam[c].ncam=1;	
 						
-				
+			printf ("\nO camiao %ld \n\niniciou viagem transportando a carga %d",camiao,carga);
+			printf("\n\nValor do transporte: %d  Euros <enter para voltar>", preco);getch();
+			fh=fopen("historico.txt","a+");
+			fprintf (fh,"%ld\n%s\n%s\n%d",camiao,car[ca].nome_cliente,car[ca].local_destino,preco);system("cls");
 			fclose(fh);
 			fclose(fa);
-		
 }
 
 /**
@@ -1673,7 +1693,7 @@ int menu_inic_viag ()
 int main(void) 
 {
 
-    	
+    	char historico [100];
 		clientes cli[NI];
 	    camioes cam[NC];
 	    condutores con[NO]; 
@@ -1733,3 +1753,4 @@ int main(void)
         printf("Fim!\n");
         return 0;
 }
+
